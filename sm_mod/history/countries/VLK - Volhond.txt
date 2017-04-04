@@ -1,0 +1,205 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = volkdau
+add_accepted_culture = nerazc
+religion = domin_pagan
+technology_group = domin_group
+capital = 269
+
+# Полумифические князья западных земель
+
+450.1.6 = {
+	monarch = {
+		name = "Олаф"
+		dynasty = "Вольхионд"
+		adm = 6
+		dip = 3
+		mil = 2
+		birth_date = 425.3.23
+	}
+}
+
+458.4.21 = {
+	heir = {
+		name = "Амадей"
+		monarch_name = "Амадей"
+		dynasty = "Вольхионд"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 458.4.21
+		death_date = 524.6.29
+	}
+}
+
+503.1.1 = { government_rank = 2 } # Королевство с 503 года
+
+506.1.24 = {
+	monarch = {
+		name = "Амадей"
+		dynasty = "Вольхионд"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 458.4.21
+	}
+	heir = {
+		name = "Фердинант"
+		monarch_name = "Фердинант"
+		dynasty = "Вольхионд"
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 2
+		birth_date = 489.3.16
+		death_date = 557.12.9
+	}
+}
+
+524.6.29 = {
+	monarch = {
+		name = "Фердинант"
+		dynasty = "Вольхионд"
+		adm = 5
+		dip = 4
+		mil = 2
+		birth_date = 489.3.16
+	}
+	heir = {
+		name = "Амадей"
+		monarch_name = "Амадей II"
+		dynasty = "Вольхионд"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 522.3.16
+		death_date = 578.5.2
+	}
+}
+
+550.1.1 = { government = absolute_monarchy }
+
+557.12.9 = {
+	monarch = {
+		name = "Амадей II"
+		dynasty = "Вольхионд"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 522.3.16
+	}
+}
+
+562.1.1 = { government = enlightened_despotism }
+
+578.5.2 = {
+	monarch = {
+		name = "Маттеас Великий"
+		dynasty = "Вольхионд"
+		adm = 6
+		dip = 5
+		mil = 3
+		birth_date = 530.1.24
+	}
+}
+
+615.7.9 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Вольхионд"
+		birth_date = 596.4.11
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+664.9.17 = {
+	monarch = {
+		name = "Олаф II"
+		dynasty = "Вольхионд"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+697.11.3 = {
+	monarch = {
+		name = "Олаф III"
+		dynasty = "Вольхионд"
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+	heir = {
+		name = "Вимель"
+		monarch_name = "Вимель"
+		dynasty = "Вольхионд"
+		claim = 75
+		adm = 1
+		dip = 2
+		mil = 1
+		birth_date = 676.12.22
+		death_date = 698.3.14
+	}
+}
+
+735.12.26 = {
+	monarch = {
+		name = "Вимель"
+		dynasty = "Вольхионд"
+		birth_date = 714.12.22
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+741.1.1 = { government = absolute_monarchy } # Реакционные реформы
+
+746.11.15 = { government = constitutional_monarchy } # Революция
+
+# Падение монархии
+754.12.18 = {
+	government = constitutional_republic
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+755.1.1 = { religion = tolerance }
+
+757.4.21 = {
+	government = communist_dictatorship
+	monarch = {
+		name = "(Рабочий совет Волкодава)"
+		regent = yes
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+775.2.17 = {
+	government = constitutional_republic
+	monarch = {
+		name = "(Статхарнт)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+877.1.1 = {
+	government = karteval_monarchic
+	government_rank = 1
+	capital = 269
+} # Графство в составе САМ

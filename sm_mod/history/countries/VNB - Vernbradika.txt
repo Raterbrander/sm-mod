@@ -1,0 +1,88 @@
+government = feudal_monarchy
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 763
+fixed_capital = 763
+
+385.1.1 = {
+	monarch = {
+		name = "Чарльз"
+		dynasty = "Кервони"
+		adm = 1
+		dip = 4
+		mil = 1
+		birth_date = 359.5.21
+	}
+}
+
+# После поражения во Второй Венердской войне входит в состав Венерда
+
+489.3.21 = {
+	government = despotic_monarchy
+	government_rank = 2
+	monarch = {
+		name = "Якув"
+		dynasty = "Хальсценбург"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 446.1.1
+	}
+	heir = {
+		name = "Александер"
+		monarch_name = "Александер"
+		dynasty = "Хальсценбург"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 470.1.1
+		death_date = 538.3.14
+	}
+}
+
+511.2.24 = {
+	monarch = {
+		name = "Александер"
+		dynasty = "Хальсценбург"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 470.1.1
+	}
+	heir = {
+		name = "Рихард"
+		monarch_name = "Рихард II"
+		dynasty = "Хальсценбург"
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 3
+		birth_date = 497.1.1
+		death_date = 1093.9.23
+	}
+}
+
+538.3.14 = {
+	monarch = {
+		name = "Рихард II"
+		dynasty = "Хальсценбург"
+		adm = 1
+		dip = 3
+		mil = 3
+		birth_date = 497.1.1
+	}
+}
+
+554.5.4 = {
+	monarch = {
+		name = "(Регентство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# Уния с Фонксом и аннексия

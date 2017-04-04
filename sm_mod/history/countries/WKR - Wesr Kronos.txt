@@ -1,0 +1,6 @@
+government = constitutional_republic
+primary_culture = mixed_kronossian
+add_accepted_culture = kro_greek
+religion = tolerance
+technology_group = continental
+capital = 131

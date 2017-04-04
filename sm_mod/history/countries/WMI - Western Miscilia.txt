@@ -1,0 +1,35 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = ellar_tech
+primary_culture = miscilian
+religion = miscilian_pagan
+capital = 38
+
+# 462.2.17
+# Вторая великая смута и феодальная война
+
+462.11.16 = {
+	monarch = {
+		name = "Сафельпаб"
+		dynasty = "Гартон"
+		adm = 2
+		dip = 1
+		mil = 0
+		birth_date = 425.11.17
+	}
+}
+
+472.1.25 = {
+	monarch = {
+		name = "Ханс"
+		dynasty = "Цедер"
+		adm = 2
+		dip = 2
+		mil = 5
+		birth_date = 435.3.31
+	}
+}
+
+# К 476 - завоевание Синими
+
+532.1.1 = { religion = helgarn }

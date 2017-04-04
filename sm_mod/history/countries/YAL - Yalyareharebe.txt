@@ -1,0 +1,21 @@
+government = zmooromfian_government
+government_rank = 3
+technology_group = old_zmooromfian
+religion = old_shamanism
+primary_culture = zmooromfian
+capital = 367
+
+458.1.1 = {
+	monarch = {
+		name = "’алъибс"
+		dynasty = "яль€рЄхаребе"
+		adm = 1
+		dip = 1
+		mil = 2
+		birth_date = 417.1.1
+	}
+	add_country_modifier = {
+		name = YAL_tribal_wars
+		duration = -1
+	}
+}

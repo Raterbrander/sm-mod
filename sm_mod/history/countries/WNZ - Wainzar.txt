@@ -1,0 +1,26 @@
+government = free_city_aristocratical
+primary_culture = turbalhian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 914
+fixed_capital = 914
+
+100.1.1 = {
+	#add_country_modifier = {
+	#	name = gervein_union_member
+	#	duration = -1
+	#}
+	monarch = {
+		name = "(Вайнзарский Высший Совет)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+#478.10.16 = { remove_country_modifier = gervein_union_member }
+
+550.1.1 = { religion = helgarn }

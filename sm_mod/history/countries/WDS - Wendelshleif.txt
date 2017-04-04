@@ -1,0 +1,107 @@
+government = distraseyem_monarchy
+government_rank = 1
+technology_group = ellar_tech
+religion = ellar_pagan
+primary_culture = tardian
+add_accepted_culture = yellow
+capital = 929
+#fixed_capital = 929
+
+historical_friend = ERC
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Вильгельм II"
+		dynasty = "фон Вендельшлейф"
+		adm = 4
+		dip = 4
+		mil = 1
+		birth_date = 914.5.14
+	}
+}
+
+465.12.19 = {
+	monarch = {
+		name = "Фридрих II"
+		dynasty = "Эрвецеллар"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 424.9.21
+	}
+	heir = {
+		name = "Альберхт"
+		monarch_name = "Альберхт II"
+		dynasty = "Эрвецеллар"
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 6
+		birth_date = 458.1.10
+		death_date = 530.4.9
+	}
+}
+
+467.6.12 = { decision = abolish_serfdom }
+
+486.4.17 = {
+	monarch = {
+		name = "Альберхт II"
+		dynasty = "Эрвецеллар"
+		adm = 5
+		dip = 4
+		mil = 6
+		birth_date = 458.1.10
+	}
+}
+
+491.2.17 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд II"
+		dynasty = "Эрвецеллар"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 491.2.17
+		death_date = 538.4.9
+	}
+}
+
+530.4.9 = {
+	monarch = {
+		name = "Фердинанд II"
+		dynasty = "Эрвецеллар"
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 491.2.17
+	}
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл"
+		dynasty = "Эрвецеллар"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 523.7.18
+		death_date = 599.9.6
+	}
+}
+
+538.4.9 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Эрвецеллар"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 523.7.18
+	}
+}
+
+541.4.9 = { religion = helgarn }

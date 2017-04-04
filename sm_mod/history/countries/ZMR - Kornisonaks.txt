@@ -1,0 +1,287 @@
+government = zmooromfian_government
+government_rank = 1
+technology_group = old_zmooromfian
+religion = old_shamanism
+primary_culture = zmooromfian
+capital = 353
+
+442.10.15 = {
+	#government = despotic_monarchy
+	government_rank = 2
+	decision = use_battle_zmoor
+	decision = use_animals_in_army
+	monarch = {
+		name = "Альхермейяйебейтомалазавеермайеисеамт"
+		dynasty = "Альбертозаврист"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 421.10.21
+		leader = {
+			name = "Альхермейяйебейтомалазавеермайеисеамт"
+			type = general
+			rank = 1
+			fire = 3
+			shock = 3
+			manuever = 0
+			siege = 4
+		}
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = just_personality
+	add_ruler_personality = incorruptible_personality
+}
+
+450.10.7 = {
+	heir = {
+		name = "Льярхуот"
+		monarch_name = "Льярхуот"
+		dynasty = "Альбертозаврист"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 450.10.7
+		death_date = 498.9.8
+	}
+}
+
+458.1.1 = {
+	leader = {
+		name = "Батерсайдар"
+		type = general
+		rank = 3
+		fire = 4
+		shock = 4
+		manuever = 4
+		siege = 4
+		death_date = 524.4.12
+	}
+}
+
+463.9.3 = { government_rank = 3 }
+
+482.1.1 = { decision = use_battle_magic }
+
+482.3.22 = {
+	monarch = {
+		name = "Льярхуот"
+		dynasty = "Альбертозаврист"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 450.10.7
+	}
+	heir = {
+		name = "Дьялгьях"
+		monarch_name = "Дьялгьях"
+		dynasty = "Альбертозаврист"
+		birth_date = 480.3.12
+		death_date = 487.12.2
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+482.11.29 = {
+	monarch = {
+		name = "Хицхельх I Завоеватель"
+		dynasty = "Альбертозаврист"
+		adm = 3
+		dip = 4
+		mil = 6
+		birth_date = 449.8.11
+	}
+	heir = {
+		name = "Юсейп"
+		monarch_name = "Юсейп I Злобный"
+		dynasty = "Альбертозаврист"
+		birth_date = 459.2.16
+		death_date = 535.3.6 # ?
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = strict_personality
+}
+
+502.12.25 = {
+	monarch = {
+		name = "Юсейп I Злобный"
+		dynasty = "Альбертозаврист"
+		birth_date = 459.2.16
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = strict_personality
+	add_ruler_personality = conqueror_personality
+}
+
+535.3.6 = {
+	monarch = {
+		name = "Канхум"
+		dynasty = "Альянх"
+		adm = 2
+		dip = 3
+		mil = 5
+		birth_date = 498.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = cruel_personality
+}
+
+543.2.23 = {
+	monarch = {
+		name = "Льярхуот II"
+		dynasty = "Альбертозаврист"
+		adm = 2
+		dip = 2
+		mil = 4
+		birth_date = 502.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = greedy_personality
+}
+
+548.7.21 = {
+	monarch = {
+		name = "Япай"
+		dynasty = "Альбертозаврист"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 504.1.1
+	}
+	heir = {
+		name = "Зморальх"
+		monarch_name = "Зморальх"
+		dynasty = "Альбертозаврист"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 527.1.1
+		death_date = 563.9.24
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = drunkard_personality
+}
+
+562.4.27 = {
+	monarch = {
+		name = "Зморальх"
+		dynasty = "Альбертозаврист"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 527.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = craven_personality
+	add_ruler_personality = scholar_personality
+}
+
+563.9.24 = { # Переворот знати
+	monarch = {
+		name = "Йормас"
+		dynasty = "Альбертозаврист"
+		adm = 2
+		dip = 4
+		mil = 4
+		birth_date = 523.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = just_personality
+	add_ruler_personality = tolerant_personality
+}
+
+566.2.6 = {
+	monarch = {
+		name = "Альяз"
+		dynasty = "Альбертозаврист"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 531.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = incorruptible_personality
+}
+
+571.4.10 = {
+	government = administrative_republic
+	government_rank = 2
+	monarch = {
+		name = "Дьявас"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 533.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = naive_personality
+	add_ruler_personality = kind_hearted_personality
+}
+
+577.6.23 = {
+	monarch = {
+		name = "Махрайб"
+		adm = 2
+		dip = 2
+		mil = 4
+		birth_date = 533.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = strict_personality
+}
+
+587.3.1 = { government = absolute_monarchy }
+
+587.6.22 = {
+	government = administrative_republic
+	monarch = {
+		name = "Хольгу Майяхярейяризз"
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = well_connected_personality
+}
+
+615.1.1 = {
+	monarch = {
+		name = "(Междуцарствие)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+745.1.1 = { technology_group = continental }
