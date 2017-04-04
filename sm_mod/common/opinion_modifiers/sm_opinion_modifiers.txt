@@ -1,0 +1,148 @@
+opinion_order_ts_1 = {
+	opinion = -100
+	years = 25
+	yearly_decay = 4
+}
+
+opinion_order_ts_2 = {
+	opinion = 50
+	years = 10
+	yearly_decay = 5
+}
+
+sm_supported_USS_coalition = {
+	opinion = -50
+	years = 25
+	yearly_decay = 2
+}
+
+sm_supported_GRU = {
+	opinion = 75
+	years = 25
+	yearly_decay = 3
+}
+
+sm_supported_GRU_2 = {
+	opinion = -25
+	years = 10
+	yearly_decay = 2.5
+}
+
+sm_agressor_1 = {
+	opinion = -35
+	years = 20
+	yearly_decay = 1.75
+}
+
+sm_ellar_danger = {
+	opinion = -50
+	years = 10
+	yearly_decay = 5
+}
+
+sm_ellar_revolutionary_country_too = {
+	opinion = 50
+	years = 10
+	yearly_decay = 5
+}
+
+sm_ellar_traitor = {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+
+sm_leave_sphere_ellar = {
+	opinion = -25
+	years = 5
+	yearly_decay = 5
+}
+
+sm_raid = {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+
+ERC_WDS_heir = {
+	opinion = 50
+	years = 25
+	yearly_decay = 2
+}
+
+sm_save_elector = {
+	opinion = 50
+	years = 25
+	yearly_decay = 2
+}
+
+sm_vmesh = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+sm_altras_danger = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+ingoring_traditions = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+opinion_cede_tedenerusail = {
+	opinion = 50
+	yearly_decay = 2
+}
+	
+opinion_provocations = {
+	opinion = -50
+	years = 10
+	yearly_decay = 2
+}
+
+opinion_tedenerusail_claims = {
+	opinion = -25
+	yearly_decay = 2
+}
+
+opinion_confrontation_1 = {
+	opinion = -100
+	years = 50
+}
+
+sm_chaypitie_tension = {
+	opinion = -25
+	years = 15
+}
+
+sm_refused_integration = {
+	opinion = -50
+	years = 25
+}
+
+chayua_crisis = {
+	opinion = -50
+	years = 50
+}
+
+opinion_confrontation_2 = {
+	opinion = -25
+	years = 10
+}
+
+chayua_crisis_peace = {
+	opinion = 50
+	years = 25
+}
+
+sm_vassal_leave = {
+	opinion = -100
+	years = 50
+}
+
+SUM_amian_opinion = {
+	opinion = -100
+	yearly_decay = 0
+}

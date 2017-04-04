@@ -1,0 +1,1058 @@
+# Национальные идеи стран СМ
+# Сюда входят как идеи одиночных стран, так и групп
+
+ASM_ideas = {
+
+	start = {
+		land_forcelimit_modifier = 0.33
+		global_manpower_modifier = 0.25
+	}
+
+	bonus = {
+		colonists = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = KRO
+			AND = {
+				tag = ASM
+				NOT = { exists = KRO }
+			}
+			AND = {
+				primary_culture = smesh_english
+				NOT = { exists = ASM }
+				NOT = { exists = KRO }
+			}
+		}
+	}
+	free = yes		#wibe added at load.
+	
+	asm_idea_1 = { # Страна плантаций
+		trade_efficiency = 0.1
+	}
+	
+	asm_idea_2 = { # Морская держава
+		naval_forcelimit_modifier = 0.45
+	}
+	
+	asm_idea_3 = { # Колониальный фронтир
+		colonists = 1
+	}
+	
+	asm_idea_4 = { # Пуританская мораль
+		stability_cost_modifier = -0.33
+	}
+	
+	asm_idea_5 = {
+		range = 0.5
+	}
+	
+	asm_idea_6 = {
+		legitimacy = 1
+	}
+	
+	asm_idea_7 = {
+		development_cost = -0.15
+	}
+}
+
+# Имбидеи ИЖ
+EOE_ideas = {
+	start = {
+		prestige = 1
+		legitimacy = 0.5
+		republican_tradition = 0.5
+	}
+
+	bonus = {
+		discipline = 0.075
+	}
+	
+	trigger = {
+		OR = {
+			tag = EOY
+			tag = ELL
+		}
+	}
+	free = yes
+	
+	EOE_idea_1 = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	EOE_idea_2 = {
+		development_cost = -0.25
+	}
+	#EOE_idea_2_old = {
+	#	naval_forcelimit_modifier = 0.25
+	#}
+	EOE_idea_3 = {
+		may_explore = yes
+		colonists = 1
+	}
+	EOE_idea_4 = {
+		range = 0.5
+		global_colonial_growth = 25
+	}
+	EOE_idea_5 = {
+		global_unrest = -2
+	}
+	EOE_idea_7 = {
+		global_regiment_cost = -0.10
+	}
+	EOE_idea_6 = {
+		idea_cost = -0.1
+	}
+}
+
+# Идеи Фонкса и Элапейриенов
+elapeyrien_ideas = {
+	start = {
+		prestige = 1
+		legitimacy = 0.5
+	}
+
+	bonus = {
+		discipline = 0.075
+	}
+	
+	trigger = {
+		OR = {
+			tag = SMF
+			dynasty = "Элапейриен"
+		}
+	}
+	free = yes
+	
+	SMF_idea_1 = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	SMF_idea_3 = {
+		idea_cost = -0.1
+		rebel_support_efficiency = 0.5
+	}
+	SMF_idea_2 = {
+		global_institution_spread = 0.25
+	}
+	EOE_idea_5 = {
+	}
+	EOE_idea_2 = {
+	}
+	EOE_idea_2_old = {
+		naval_forcelimit_modifier = 0.25
+	}
+	#EOE_idea_4 = {
+	#}
+	EOE_idea_7 = {
+	}
+}
+
+GRU_ideas = {
+	start = {
+		global_unrest = -1
+		#stability_cost_modifier = -0.10
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	bonus = {
+		legitimacy = 1
+	}
+	
+	trigger = {
+		primary_culture = smesh_russian
+		OR = {
+			tag = MRT
+			tag = BEL
+			tag = GRU
+		}
+	}
+	free = yes
+	
+	GRU_idea_6 = {
+		cb_on_government_enemies = yes
+	}
+	GRU_idea_1 = {
+		land_forcelimit_modifier = 0.25
+		vassal_forcelimit_bonus = 0.25
+	}
+	GRU_idea_7 = {
+		diplomatic_upkeep = 2
+	}
+	GRU_idea_2 = {
+		global_tax_modifier = 0.1
+	}
+	GRU_idea_4 = {
+		colonists = 1
+	}
+	GRU_idea_5 = {
+		legitimacy = 1
+	}
+	GRU_idea_3 = {
+		no_religion_penalty = yes
+	}
+}
+
+altras_ideas = {
+	start = {
+		core_creation = -0.15
+		land_forcelimit_modifier = 0.33
+	}
+	
+	bonus = {
+	}
+	
+	trigger = {
+		tag = ALR
+	}
+	free = yes
+	
+	altras_idea_1 = {
+		culture_conversion_cost = -0.25
+	}
+	altras_idea_2 = {
+		land_attrition = -0.10
+		global_regiment_cost = -0.15
+	}
+	altras_idea_3 = {
+		vassal_forcelimit_bonus = 0.25
+		discipline = 0.05
+	}
+	altras_idea_4 = {
+		enemy_core_creation = 0.35
+	}
+	altras_idea_5 = {
+		stability_cost_modifier = -0.1
+	}
+	altras_idea_6 = {
+		tolerance_own = 2
+		legitimacy = 1
+	}
+	altras_idea_7 = {
+		development_cost = -0.15
+	}
+}
+
+old_altras_ideas = {
+	start = {
+		diplomatic_upkeep = 3
+		enemy_core_creation = 0.25
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.25
+	}
+	
+	trigger = {
+		tag = AL1
+	}
+	free = yes
+	
+	altras_idea_3 = {
+	}
+	altras_idea_2 = {
+	}
+	altras_court = {
+		advisor_cost = -0.25
+		idea_cost = -0.05
+		#technology_cost = -0.025
+		global_institution_spread = 0.1
+	}
+	altras_clans_tax = {
+		vassal_income = 0.5
+		global_tax_modifier = 0.025
+	}
+	altras_stronger_kaydgedan = {
+		land_forcelimit_modifier = 0.35
+	}
+	altras_idea_5 = {
+	}
+	altras_reforming_village = {
+		global_trade_goods_size_modifier = 0.075
+		development_cost = -0.1
+	}
+}
+
+siniusdan_ideas = {
+	start = {
+		global_unrest = -2
+		prestige_decay = -0.01
+	}
+	
+	bonus = {
+		technology_cost = -0.05
+	}
+	
+	trigger = {
+		tag = SIN
+	}
+	free = yes
+	
+	SIN_idea_2 = {
+		diplomats = 1
+	}
+	SIN_idea_1 = {
+		republican_tradition = 0.005
+		legitimacy = 0.5
+	}
+	SIN_idea_5 = {
+		land_morale = 0.05
+		global_unrest = -1
+	}
+	SIN_idea_6 = {
+		enemy_core_creation = 0.25
+	}
+	SIN_idea_4 = {
+		diplomatic_upkeep = 3
+		reduced_liberty_desire = -15
+	}
+	SIN_idea_3 = {
+		mercenary_cost = -0.35
+		vassal_forcelimit_bonus = 0.25
+	}
+	SIN_idea_7 = {
+		core_creation = -0.10
+	}
+}
+
+DRA_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.5
+		global_manpower_modifier = 0.25
+	}
+	
+	bonus = {
+		core_creation = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = DRA
+			AND = {
+				tag = SUM
+				NOT = { exists = DRA }
+				is_year = 750
+			}
+		}
+	}
+	free = yes
+	
+	DRA_idea_1 = {
+		land_morale = 0.075
+		global_unrest = -1
+	}
+	DRA_idea_6 = {
+		colonists = 1
+		global_colonial_growth = 10
+	}
+	DRA_idea_2 = {
+		naval_forcelimit_modifier = 0.25
+	}
+	DRA_rust_mercenaries = {
+		mercenary_cost = -0.20
+	}
+	DRA_idea_3 = {
+		republican_tradition = 0.005
+		#prestige = 1
+	}
+	DRA_idea_4 = {
+		global_tax_modifier = 0.05
+		build_cost = -0.1
+	}
+	DRA_idea_7 = {
+		culture_conversion_cost = -0.25
+	}
+}
+
+SME_ideas = {
+	start = {
+		global_unrest = -2
+	}
+	
+	bonus = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = SME
+			tag = IOD
+			tag = NGI
+		}
+	}
+	free = yes
+	
+	imperial_army = {
+		land_forcelimit_modifier = 0.55
+	}
+	colonisation_of_central_lands = {
+		colonists = 1
+	}
+	imperial_lordships = {
+		diplomatic_upkeep = 2
+	}
+	emperor_church = {
+		legitimacy = 1
+		tolerance_own = 3
+	}
+	imperial_faith_idea = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+		devotion = 0.5
+		tolerance_heretic = -3
+	}
+	mad_king = {
+		defensiveness = 0.25
+	}
+	imperial_conquest = {
+		culture_conversion_cost = -0.25
+		core_creation = -0.15
+	}
+}
+
+dominionian_ideas = {
+	start = {
+		development_cost = -0.10
+		may_recruit_female_generals = yes
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = DOM
+	}
+	free = yes
+	
+	dominionian_east = {
+		global_colonial_growth = 25
+	}
+	
+	dominionian_rebels = {
+		enemy_core_creation = 0.25
+		land_morale = 0.05
+	}
+	
+	dominionian_kos_molot = {
+		cavalry_power = 0.1
+	}
+	
+	dominionian_center_of_war_tech = {
+		mil_tech_cost_modifier = -0.1
+	}
+	
+	dominionian_parl = {
+		republican_tradition = 0.1
+	}
+	
+	dominionian_production = {
+		production_efficiency = 0.15
+	}
+	
+	dominionian_east_liberty = {
+		ae_impact = -0.15
+	}
+}
+
+CH2_ideas = {
+	start = {
+		num_accepted_cultures = 1
+		republican_tradition = 0.005
+		legitimacy = 1
+	}
+	
+	bonus = {
+		enemy_core_creation = 0.5
+	}
+	
+	trigger = {
+		tag = CH2
+	}
+	free = yes
+	
+	CH2_roads = {
+		trade_efficiency = 0.05
+		global_prov_trade_power_modifier = 0.1
+	}
+	CH2_cities = {
+		development_cost = -0.15
+	}
+	CH2_colonisation = {
+		global_colonial_growth = 25
+	}
+	CH2_confederative_government = {
+		stability_cost_modifier = -0.1
+	}
+	CH2_confederative_army = {
+		vassal_forcelimit_bonus = 0.33
+	}
+	CH2_social_mobility = {
+		advisor_pool = 1
+		free_leader_pool = 1
+		may_recruit_female_generals = yes
+	}
+	CH2_NGR_school = {
+		technology_cost = -0.10
+	}
+}
+
+brintenian_ideas = {
+	start = {
+		enemy_core_creation = 0.50
+	}
+	bonus = {
+		ae_impact = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = SRE
+			tag = BRN
+		}
+	}
+	free = yes
+	
+	brintenian_adaptation = {
+		global_colonial_growth = 25
+	}
+	
+	evil_fighter = {
+		unjustified_demands = -0.5
+	}
+	
+	brintenian_stability = {
+		stability_cost_modifier = -0.10
+	}
+	
+	brintenian_boom = {
+		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.10
+	}
+	
+	brian_films = {
+		prestige = 1
+		diplomatic_reputation = 1
+	}
+	
+	brintenian_baptist = {
+		religious_unity = 0.15
+		tolerance_own = 2
+	}
+	
+	brintenian_commanding = {
+		free_leader_pool = 1
+	}
+}
+
+ramzahian_ideas = {
+	start = {
+		discipline = -0.035
+		hostile_attrition = 1
+	}
+	bonus = {
+		land_morale = -0.15
+	}
+	
+	trigger = {
+		tag = RZH
+	}
+	free = yes
+	
+	razdeli_ramzahii = {
+		enemy_core_creation = -0.5
+	}
+	
+	ramzahian_economic = {
+		global_tax_modifier = -0.25
+		production_efficiency = -0.25
+	}
+	
+	ramzahian_peoples = {
+		global_unrest = 4
+	}
+	
+	bilou_neighbor = {
+		fort_maintenance_modifier = 0.5
+	}
+	
+	pavlin_streams = {
+		prestige = 1
+		diplomatic_reputation = 1
+	}
+	
+	ramzahian_stability = {
+		stability_cost_modifier = 0.5
+	}
+	
+	ramzahian_expansion = {
+		core_creation = 0.5
+	}
+}
+
+smeshiks_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		land_forcelimit_modifier = 0.25
+	}
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = SHK
+	}
+	free = yes
+	
+	SHK_consul_tradition = {
+		republican_tradition = 0.05
+	}
+	
+	SHK_technologies_for_people = {
+		adm_tech_cost_modifier = -0.15
+		global_unrest = -2
+	}
+	
+	SHK_two_cities = {
+		development_cost = -0.35
+	}
+	
+	SHK_discipline = {
+		discipline = 0.055
+	}
+	
+	SHK_controlling_chaepit_sea = {
+		trade_efficiency = 0.15
+	}
+	
+	SHK_inflation = {
+		inflation_action_cost = -0.5
+		global_tax_modifier = 0.05
+	}
+	
+	SHK_government = {
+		stability_cost_modifier = -0.15
+	}
+}
+
+order_ideas = {
+	start = {
+		defensiveness = 0.25
+		mercenary_cost = -0.25
+	}
+	bonus = {
+		land_morale = 0.15
+	}
+	
+	trigger = {
+		tag = ORD
+	}
+	free = yes
+	
+	
+	ORD_all_for_army = {
+		land_attrition = -0.25
+	}
+	
+	ORD_destroy_world = {
+		war_exhaustion_cost = -0.25
+	}
+	
+	ORD_stability = {
+		stability_cost_modifier = -0.15
+	}
+	
+	ORD_development = {
+		development_cost = -0.1
+	}
+	
+	ORD_sinius_rebirth = {
+		unjustified_demands = -0.5
+	}
+	
+	ORD_extended_army = {
+		land_forcelimit_modifier = 0.33
+	}
+	
+	ORD_war_school = {
+		army_tradition_decay = -0.01
+	}
+}
+
+HLC_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		heir_chance = 0.5
+	}
+	
+	bonus = {
+		land_morale = 0.05
+	}
+	
+	trigger = {
+		tag = HLC
+	}
+	free = yes
+	
+	hlc_banks = {
+		global_tax_modifier = 0.10
+		interest = -1
+	}
+	
+	hlc_royal_marriages = {
+		diplomatic_upkeep = 2
+	}
+	
+	hlc_legions = {
+		mercenary_cost = -0.25
+	}
+	
+	hlc_buy_cities = {
+		development_cost = -0.25
+		diplomatic_annexation_cost = -0.10
+	}
+	
+	hlc_absolutist_government = {
+		stability_cost_modifier = -0.1
+	}
+	
+	hlc_tolerance = {
+		tolerance_heretic = 3
+		#no_religion_penalty = yes
+	}
+	
+	hlc_war_school = {
+		discipline = 0.05
+	}
+}
+
+hydra_ideas = {
+	start = {
+		idea_cost = -0.1
+		unjustified_demands = -0.5
+	}
+	
+	bonus = {
+		land_morale = 0.075
+	}
+	
+	trigger = {
+		tag = GDR
+	}
+	free = yes
+	
+	ozanvalt_academy = {
+		global_institution_spread = 0.1
+		#technology_cost = -0.075
+		advisor_cost = -0.5
+	}
+	
+	GDR_colonisation = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	altras_reforming_village = {
+	}
+	
+	altras_ealtwelhat_laws = { # Также используется Хианлуксом
+		stability_cost_modifier = -0.10
+		global_unrest = -1
+	}
+	
+	altras_col = { # Также используется Хианлуксом (?)
+		global_tax_modifier = 0.05
+		production_efficiency = 0.05
+	}
+	
+	altras_legitimacy = {
+		legitimacy = 0.5
+		global_unrest = -1
+	}
+	
+	altras_generalitet = { # Также используется Хианлуксом
+		army_tradition_decay = -0.01
+	}
+}
+
+malishian_ideas = {
+	start = {
+		manpower_recovery_speed = 0.25
+		defensiveness = 0.20
+	}
+	
+	bonus = {
+		core_creation = -0.25
+	}
+	
+	trigger = {
+		#tag = SUM
+		primary_culture = malishian
+		capital_scope = {
+			continent = malishian_island
+		}
+	}
+	free = yes
+	
+	DRA_idea_6 = {
+	}
+	malishian_boom = {
+		land_forcelimit_modifier = 0.5
+		global_manpower_modifier = 0.25
+	}
+	DRA_idea_2 = {
+	}
+	DRA_idea_4 = {
+	}
+	malishian_assimilation = {
+		culture_conversion_cost = -0.25
+	}
+	#DRA_idea_1 = {
+	#}
+	malishian_f = {
+		years_of_nationalism = -5
+	}
+	DRA_idea_3 = {
+	}
+}
+
+utenian_ideas = {
+	start = {
+		cavalry_cost = -0.1
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		free_leader_pool = 1
+	}
+	
+	trigger = {
+		tag = UTN
+	}
+	free = yes
+	
+	UTN_finish_colonisation = {
+		colonists = 1
+	}
+	
+	UTN_oil = {
+		global_trade_goods_size_modifier = 0.1
+		trade_efficiency = 0.025
+	}
+	
+	#UTN_sud = {
+	#	global_unrest = -3
+	#}
+	
+	UTN_administrative_reforms = {
+		stability_cost_modifier = -0.1
+	}
+	
+	UTN_defend_uten = {
+		defensiveness = 0.25
+	}
+	
+	south_antiimperialist_diplomacy = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+	}
+	
+	UTN_concerns = {
+		cavalry_power = 0.25
+	}
+	
+	UTN_fleet = {
+		naval_forcelimit_modifier = 0.25
+	}
+}
+
+CHT_ideas = {
+	start = {
+		land_morale = 0.05
+		diplomats = 1
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = CHT
+	}
+	free = yes
+	
+	CHT_infrastructure = {
+		build_cost = -0.2
+	}
+	
+	CHT_smeshweb = {
+		global_tax_modifier = 0.025
+		global_manpower_modifier = 0.1
+	}
+	
+	CHT_diplomatic = {
+		diplomatic_upkeep = 1
+	}
+	
+	CHT_open_sentshark = {
+		trade_efficiency = 0.05
+		improve_relation_modifier = 0.25
+	}
+	
+	south_antiimperialist_diplomacy = {
+	}
+	
+	CHT_patriots = {
+		land_morale = 0.05
+		global_unrest = -2
+	}
+	
+	CHT_government = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+miscilian_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		global_unrest = -2
+	}
+	
+	bonus = {
+		war_exhaustion = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = MSC
+			primary_culture = miscilian
+			primary_culture = mescil
+		}
+	}
+	free = yes
+	
+	MSC_ellar_feudalism = {
+		vassal_income = 0.25
+	}
+	
+	MSC_marks = {
+		fort_maintenance_modifier = -0.1
+		defensiveness = 0.25
+	}
+	
+	MSC_priests = {
+		global_missionary_strength = 0.02
+	}
+	
+	MSC_culture = {
+		core_creation = -0.1
+	}
+	
+	MSC_diplomacy = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	
+	MSC_partisans = {
+		hostile_attrition = 1
+	}
+	
+	MSC_land_reforms = {
+		global_tax_modifier = 0.05
+		production_efficiency = 0.05
+	}
+	
+}
+
+tonderros_ideas = {
+	start = {
+		legitimacy = 0.5
+		war_exhaustion_cost = -0.15
+	}
+	
+	bonus = {
+		defensiveness = 0.25
+	}
+	
+	trigger = {
+		tag = TND
+	}
+	free = yes
+	
+	TND_architecture = {
+		build_cost = -0.1
+	}
+	
+	TND_mercenaries = {
+		merc_maintenance_modifier = -0.25
+	}
+	
+	TND_fun = {
+		global_unrest = -1
+		land_morale = 0.05
+	}
+	
+	TND_wolf_spirit = {
+		hostile_attrition = 2
+	}
+	
+	TND_lords_end = {
+		development_cost = -0.1
+	}
+	
+	TND_politics = {
+		yearly_corruption = -0.1
+	}
+	
+	TND_ancap = {
+		production_efficiency = 0.1
+	}
+	
+}
+
+ADN_ideas = {
+	start = {
+		republican_tradition = 0.5
+		merchants = 1
+	}
+	
+	bonus = {
+		global_unrest = -3
+	}
+	
+	trigger = {
+		tag = ADN
+	}
+	free = yes
+	
+	ADN_chaepit_sea = {
+		trade_efficiency = 0.1
+	}
+	
+	ADN_fleet = {
+		naval_forcelimit_modifier = 0.33
+	}
+	
+	ADN_reforms = {
+		stability_cost_modifier = -0.15
+	}
+	
+	ADN_kochegora_strategy = {
+		diplomatic_upkeep = 3
+	}
+	
+	ADN_colonies = {
+		colonists = 1
+	}
+	
+	ADN_capitalism = {
+		production_efficiency = 0.05
+		global_tax_modifier = 0.05
+	}
+	
+	ADN_fatherland_and_my_rigths = {
+		core_creation = -0.15
+		diplomatic_annexation_cost = -0.25
+	}
+}

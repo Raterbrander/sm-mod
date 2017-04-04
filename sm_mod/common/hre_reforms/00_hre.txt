@@ -1,0 +1,99 @@
+general_council = {
+	member = {
+		land_maintenance_modifier = -0.10
+		reinforce_speed = 0.25
+	}
+	emperor = {
+		free_leader_pool = 1
+		advisor_pool = 1
+		army_tradition_decay = -0.01
+	}
+}
+
+imperial_government = {
+	member = {
+		stability_cost_modifier = -0.1
+	}
+	emperor = {
+		imperial_authority = 0.05
+		diplomatic_reputation = 1
+	}
+}
+
+imperial_army_standartisation = {
+	member = {
+		army_tradition_decay = -0.01
+		discipline = 0.025
+	}
+	emperor = {
+		land_forcelimit = 20
+		discipline = 0.05
+		imperial_authority = 0.05
+	}
+}
+
+imperial_reconquest = { 
+	member = {
+		war_exhaustion_cost = -0.10
+	}
+	emperor = {
+		war_exhaustion_cost = -0.10
+		core_creation = -0.10
+	}
+	on_effect = {
+		imperial_ban_allowed = yes
+	}
+	off_effect = {
+		imperial_ban_allowed = no
+	}
+}
+
+fixed_emperor = {
+	emperor = {
+		legitimacy = 0.05
+		stability_cost_modifier = -0.1
+	}
+	on_effect = {
+		hre_inheritable = yes
+	}
+	off_effect = {
+		hre_inheritable = no
+	}
+}
+
+member_without_rights = {
+
+	war = yes			#this may cause a war, so special AI check needed, to not lose many.
+	
+	emperor = {
+		imperial_authority = 0.1
+	}
+	on_effect = {
+		internal_hre_cb = no
+		emperor = {
+			country_event = { id = sm_ame.100 tooltip = vassalize_empire2 }
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					is_emperor = no
+					num_of_cities = 1
+					NOT = { vassal_of = ROOT }
+				}
+				country_event = { id = sm_ame.101 }
+			}
+		}
+	}
+	off_effect = {
+		internal_hre_cb = yes
+	}
+}
+
+restore_empire = {
+	on_effect = {
+		emperor = {
+			country_event = { id = sm_ame.102 tooltip = renovatio_effect }
+		}
+	}	
+}

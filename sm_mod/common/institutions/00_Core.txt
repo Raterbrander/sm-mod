@@ -1,0 +1,549 @@
+#
+# remember to add graphics for relevant ones when you add to this
+#
+# if a modifier is scaled, its multiplied with development in the province.
+
+
+#######################################
+# Statehood
+# 
+# Most start with it.
+#######################################
+
+statehood = {
+	penalty = 1.0
+	bonus = {
+		free_leader_pool = 1
+		diplomats = 1
+		advisor_pool = 1
+	}
+
+
+	historical_start_date = 10.1.1
+	historical_start_province = 967 # Smeshburg
+
+
+	history = {
+		is_year = 10
+		OR = {
+			AND = { #If this is changed costs for Nation Designer may also need to be changed.
+				NOT = {
+					OR = {
+						continent = europe
+						continent = kronos
+						continent = malishian_island
+					}
+				}
+				owner = {
+					is_playing_custom_nation = yes
+					OR = {
+						technology_group = continental
+						technology_group = southern
+						technology_group = imperial_group
+						technology_group = high_domin
+						technology_group = domin_group
+						technology_group = ellar_tech
+						technology_group = anarendilian_tech
+						technology_group = old_kronossian_tech
+						technology_group = middle_land_group
+						technology_group = old_altras_tech
+						#technology_group = high_american #Is listed below as High Americans get it regardless of if Nation Designer is used.
+						tag = MSC
+					}
+				}
+			}
+			culture_group = yellow_group
+			
+			owner = { tag = NGR }
+			owner = { tag = NHN }
+			
+			continent = malishian_island
+			
+			#owner = { technology_group = high_american }
+			owner = {
+				is_tribal = no
+			}
+			owner = {
+				government = altras_horde
+			}
+			AND = {
+				is_year = 955
+				owner = { technology_group = taifalian }
+			}
+			AND = {
+				is_year = 600
+				owner = { technology_group = rolevik }
+			}
+			AND = {
+				is_year = 480
+				owner = { technology_group = amian }
+			}
+		}
+	}
+	
+	# no need for events, as its there from the start.
+	#can_start = {	is_year = 480	}
+	#start_chance = 100
+	#on_start = institution_events.1
+
+	can_embrace = {
+		always = yes
+	}
+
+	embracement_speed = {
+		modifier = {
+			factor = 0.5
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
+				any_friendly_coast_border_province = {
+					statehood = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = NEIGHBOR_NOT_OWNED_IS_WITH_STATEHOOD
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					statehood = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = PORT_OR_CAPITAL_IN_COLONY_IS_WITH_STATEHOOD
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = statehood }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			potential = {
+				owner = { is_colonial_nation = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = CAPITAL_IN_OLD_WORLD_IS_WITH_STATEHOOD
+			
+				is_capital = yes
+				OR = {
+					continent = europe
+					continent = kronos
+					continent = south_main
+					continent = malishian_island
+				}
+				owner = {
+					is_tribal = no
+					#NOT = { government = tribal_democracy }
+					#NOT = { government = tribal_kingdom }
+					#NOT = { government = tribal_despotism }
+					#NOT = { government = tribal_federation }
+					#NOT = { government = siberian_native_council }
+					#NOT = { government = native_council }
+					#NOT = { government = steppe_horde }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			potential = {
+				culture_group = smeshesfongs_group
+			}
+			custom_trigger_tooltip = {
+				tooltip = SMESHESFONGS_STATEHOOD
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					owner = {
+						culture_group = smeshesfongs_group
+					}
+					statehood = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = statehood
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_statehood_embraced
+				owner = {
+					has_institution = statehood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+
+#######################################
+# Индустриальное общество
+#######################################
+industrialisation = {
+	penalty = 0.5
+
+	bonus = {
+		production_efficiency = 0.10
+		development_cost = -0.05
+		build_cost = -0.05
+	}
+
+
+	historical_start_date = 200.1.1
+	historical_start_province = 202 # ?
+
+	history = {
+		owner = {
+			has_institution = statehood
+			OR = {
+				technology_group = continental
+				technology_group = imperial_group
+				technology_group = high_domin
+				technology_group = southern
+				AND = {
+					technology_group = middle_land_group
+					is_year = 600
+				}
+				AND = {
+					technology_group = old_kronossian_tech
+					is_year = 600
+				}
+				AND = {
+					is_year = 1200
+					owner = { technology_group = anarendilian_tech }
+				}
+				tag = SMF
+				primitive_manufactories = 3
+			}
+		}
+		OR = {
+			has_building = traditional_factories
+			
+			continent = malishian_island
+			
+			AND = {
+				is_year = 570
+				region = general_ellar_region
+			}
+			
+			owner = {
+				OR = {
+					NOT = { tag = ECH }
+					is_year = 900
+				}
+				OR = {
+					NOT = { tag = KST }
+					is_year = 650
+				}
+				NOT = { tag = DVI }
+				OR = {
+					NOT = { tag = ADN }
+					is_year = 470
+				}
+			}
+		}
+	}
+	
+	#can_start = {
+	#	is_year = 200
+	#}
+	#start_chance = 5		#in 100 for when a province can_start
+	#
+	#
+	#on_start = institution_events.2
+	
+	can_embrace = {
+		owner = { has_institution = statehood }
+		owner = {
+			OR = {
+				NOT = { tag = ADN }
+				has_country_flag = was_asked_by_smeshiks
+			}
+		}
+	}
+	
+	embracement_speed = {
+		modifier = {
+			scale = yes
+			factor = 0.5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_industrialisation
+				any_friendly_coast_border_province = {
+					industrialisation = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_industrialisation
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					industrialisation = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.05
+			scale = yes
+			has_building = primitive_manufactories
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			has_building = traditional_factories
+		}
+		modifier = {
+			factor = 0.015
+			scale = yes
+			has_building = railroad_1
+		}
+		modifier = {
+			factor = 0.025
+			scale = yes
+			has_building = railroad_2
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_industrialisation
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = industrialisation }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = industrialisation
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_industrialisation_embraced
+				owner = {
+					has_institution = industrialisation
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+
+
+#######################################
+# Империализм
+#######################################
+imperialism = {
+	penalty = 0.5
+	
+	bonus = {
+		core_creation = -0.05
+		ae_impact = -0.1
+	}
+	
+	historical_start_date = 585.1.1
+	historical_start_province = 912
+	
+	history = {
+		owner = {
+			OR = {
+				AND = {
+					is_year = 585
+					OR = {
+						technology_group = continental
+						technology_group = imperial_group
+						technology_group = high_domin
+					}
+				}
+				AND = {
+					is_year = 650
+					technology_group = ellar_tech
+				}
+			}
+			num_of_cities = 10
+		}
+	}
+	
+	can_start = {
+		is_year = 585
+		 is_capital = yes
+		owner = {
+			OR = {
+				government_rank = 3
+				mil = 5
+				is_year = 600
+			}
+		}
+	}
+	start_chance = 25		#in 100 for when a province can_start
+	
+	
+	on_start = sm_institution_events.1
+	
+	can_embrace = {
+		always = yes
+	}
+	
+	embracement_speed = {
+	
+		modifier = {
+			factor = 1
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_imperialism
+				any_friendly_coast_border_province = {
+					imperialism = 100
+				}
+			}
+			
+		}
+		
+		modifier = {
+			factor = 0.5
+			scale = yes
+			potential = {
+				has_port = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_port_province_new_world
+				has_port = yes
+				any_neighbor_province = {
+					imperialism = 100
+				}
+			}
+		}
+		
+		#Port provinces in countries with colonial subjects
+		modifier = {
+			factor = 10
+			potential = {
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				NOT = { capital_on_traditional_continents = yes }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_colonial_subject_in_new_world
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					num_of_colonial_subjects = 1
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_on_traditional_continents = no
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_imperialism
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = imperialism }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = modern_i
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_imperialism_embraced
+				owner = {
+					has_institution = imperialism
+				}
+			}
+		}
+		modifier = {
+			factor = -2
+			potential = {
+				owner = { is_subject = yes }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_imperialism_in_subjects
+				owner = {
+					is_subject = yes
+					is_lesser_in_union = no
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
+		factor = 24
+		
+		#modifier = {
+		#	factor = 0.25
+		#	is_at_war = yes
+		#}
+	}
+}

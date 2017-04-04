@@ -1,0 +1,255 @@
+yellow_duches_ideas = {
+	start = {
+		global_tax_modifier = 0.10
+		fort_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		production_efficiency = 0.25
+	}
+	
+	trigger = {
+		primary_culture = yellow
+		NOT = { tag = EOY }
+		NOT = { tag = SMF }
+		NOT = { tag = KTN }
+		is_colonial_nation = no
+	}
+	#free = yes
+	
+	ydi_1 = {
+		prestige_decay = -0.01 
+	}
+	
+	ydi_2 = {
+		legitimacy = 0.5
+		tolerance_own = 1
+	}
+	
+	ydi_3 = {
+		tolerance_heretic = 1
+		global_missionary_strength = 0.02
+	}
+	
+	ydi_4 = {
+		colonists = 1
+	}
+	
+	ydi_5 = {
+		may_explore = yes
+		range = 0.35
+	}
+	
+	ydi_6 = {
+		trade_efficiency = 0.15
+	}
+	
+	ydi_7 = {
+		land_forcelimit_modifier = 0.33
+	}
+}
+
+kronossian_ideas = {
+	start = {
+		core_creation = -0.1
+		prestige_decay = -0.01
+	}
+	
+	bonus = {
+		land_morale = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = KRN
+			primary_culture = kro_greek
+			capital_scope = { region = ellin_kronos_region }
+		}
+	}
+	free = yes
+	
+	kro_defender_of_faith = {
+		tolerance_own = 2
+		extra_manpower_at_religious_war = yes
+	}
+	
+	kro_colon = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	kro_okian_controlling = {
+		trade_efficiency = 0.1
+	}
+	
+	kro_cultures = {
+		num_accepted_cultures = 1
+	}
+	
+	kro_discipline = {
+		discipline = 0.055
+	}
+	
+	kro_patriots = {
+		enemy_core_creation = 0.35
+	}
+	
+	kro_greek_legitimacy = {
+		legitimacy = 1
+	}
+}
+
+zmooromfian_ideas = {
+	start = {
+		land_maintenance_modifier = -0.33
+		infantry_power = 0.1
+	}
+	bonus = {
+		core_creation = -0.25
+	}
+	
+	trigger = {
+		primary_culture = zmooromfian
+	}
+	free = yes
+	
+	zmooromfian_uniting = {
+		land_forcelimit_modifier = 0.5
+	}
+	
+	zmr_clans = {
+		free_leader_pool = 1
+		reinforce_cost_modifier = -0.25
+	}
+	
+	zmr_patriotism = {
+		enemy_core_creation = 0.5
+	}
+	
+	#zmr_gervein = {
+	#	trade_steering = 0.25
+	#	trade_efficiency = 0.025
+	#}
+	
+	zmr_ar = {
+		global_unrest = -1
+		#global_tax_modifier = 0.025
+		trade_efficiency = 0.025
+	}
+	
+	zmr_tribute = {
+		diplomatic_upkeep = 2
+		vassal_income = 0.25
+	}
+	
+	zmr_ellar = {
+		stability_cost_modifier = -0.1
+	}
+	
+	zmr_p = {
+		global_institution_spread = 0.25
+	}
+}
+
+igorian_ideas=  {
+	start = {
+		enemy_core_creation = 0.5
+		may_perform_slave_raid = yes
+	}
+	bonus = {
+		light_ship_cost = -0.25
+	}
+	
+	trigger = {
+		primary_culture = igorian
+	}
+	free = yes
+	
+	igorian_two_ways = {
+		legitimacy = 0.5
+		republican_tradition = 0.01
+	}
+	
+	igorian_pirates = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	igorian_trade = {
+		trade_efficiency = 0.05
+	}
+	
+	igorian_fleet = {
+		naval_morale = 0.1
+	}
+	
+	igorian_dev = {
+		development_cost = -0.1
+		build_cost = -0.1
+	}
+	
+	igorian_holy_city = {
+		advisor_cost = -0.25
+	}
+	
+	igorian_people = {
+		global_unrest = -3
+	}
+}
+
+gervein_ideas = {
+	start = {
+		trade_efficiency = 0.05
+		global_trade_power = 0.1
+	}
+	
+	bonus = {
+		trade_steering = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					province_group = gervein_region
+					has_province_modifier = gervein_union_city
+				}
+			}
+			tag = GRV
+		}
+		culture_group = yellow_group
+		government = republic
+	}
+	free = yes
+	
+	tonsilian_hartia = {
+		advisor_pool = 1
+		advisor_cost = -0.25
+	}
+	
+	gervein_factories_idea = {
+		global_foreign_trade_power = 0.1
+	}
+	
+	gervein_tribunal = {
+		stability_cost_modifier = -0.1
+		global_unrest = -1
+	}
+	
+	grv_naval_effort = {
+		global_ship_cost = -0.1
+	}
+	
+	aileiv_pact = {
+		republican_tradition = 0.05
+	}
+	
+	grv_free_thinkers_home = {
+		idea_cost = -0.05
+		global_institution_spread = 0.05
+	}
+	
+	grv_mercenaries = {
+		merc_maintenance_modifier = -0.25
+	}
+	
+}
