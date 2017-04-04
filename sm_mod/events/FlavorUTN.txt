@@ -1,0 +1,58 @@
+namespace = flavor_utn
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_utn.1
+	title = flavor_utn.1.t
+	desc = flavor_utn.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_global_flag = chayua_crisis_event_flag }
+	}
+	
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = chayua_crisis_event_flag
+		}
+	}
+	
+	option = {
+		name = flavor_utn.1.a
+		ai_chance = {
+			factor = 55
+		}
+		add_opinion = {
+			who = CHT
+			modifier = chayua_crisis
+		}
+		reverse_add_opinion = {
+			who = CHT
+			modifier = opinion_confrontation_2
+		}
+	}
+	
+	option = {
+		name = flavor_utn.1.b
+		ai_chance = {
+			factor = 45
+			
+			modifier = {
+				factor = 0
+				CHT = {
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		1159 = { remove_core = UTN }
+		add_prestige = -5
+		reverse_add_opinion = {
+			who = CHT
+			modifier = chayua_crisis_peace
+		}
+	}
+}

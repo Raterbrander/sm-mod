@@ -1,0 +1,378 @@
+normal_or_historical_nations = yes
+namespace = sinius_events
+
+country_event = {
+	id = sinius_events.1
+	title = sinius_events.1.t
+	desc = sinius_events.1.d
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SIN
+		primary_culture = sinius
+		#OR = {
+			NOT = { has_country_flag = had_sinius_racism_event }
+		#	had_country_flag = {
+		#		flag = had_sinius_racism_event
+		#		days = 36500
+		#	}
+		#}
+		#NOT = {
+		#	OR = {
+		#		has_country_modifier = sinius_racism
+		#		has_country_modifier = sinius_tolerance
+		#	}
+		#}
+		NOT = {
+			OR = {
+				has_faction = sin_racist_faction
+				has_faction = sin_tolerance_faction
+			}
+		}
+		#stability = -1
+		#prestige = -10
+		#num_of_cities = 5
+		#is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		#set_country_flag = had_sinius_racism_event
+		add_faction = sin_racist_faction
+		add_faction = sin_tolerance_faction
+		hidden_effect = {
+			add_faction_influence = {
+				faction = sin_racist_faction
+				influence = 45
+			}
+			add_faction_influence = {
+				faction = sin_tolerance_faction
+				influence = 55
+			}
+		}
+	}
+	
+	option = {
+		name = sinius_events.1.a
+		ai_chance = {
+			factor = 90
+		}
+		add_faction_influence = {
+			faction = sin_racist_faction
+			influence = 10
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_culture = no
+			}
+			add_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_culture = no
+				NOT = { has_province_modifier = sm_people_unpleased_prov }
+			}
+			add_permanent_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		add_mil_power = 25
+	}
+	
+	option = {
+		name = sinius_events.1.b
+		ai_chance = {
+			factor = 5
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_culture = no
+			}
+			add_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = sinius
+			}
+			add_permanent_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		add_adm_power = -25
+	}
+	
+	option = {
+		name = sinius_events.1.c
+		ai_chance = {
+			factor = 5
+		}
+		add_faction_influence = {
+			faction = sin_tolerance_faction
+			influence = 10
+		}
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = sinius
+			}
+			add_permanent_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = sinius
+				NOT = { has_province_modifier = sm_people_unpleased_prov }
+			}
+			add_permanent_province_modifier = {
+				name = sm_people_unpleased_prov
+				duration = 1825
+			}
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = sinius_events.100
+	title = sinius_events.100.t
+	desc = sinius_events.100.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sinius_events.100.a
+		trigger = {
+			tag = IRL
+		}
+		ai_chance = {
+			factor = 75
+			
+			modifier = {
+				factor = 0.75
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 100
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 150
+					}
+				}
+			}
+		}
+		SIN = {
+			vassalize = IRL
+			hidden_effect = {
+				country_event = { id = sinius_events.101 }
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns = 873
+					873 = {
+						owner = { is_subject_of = IRL }
+					}
+				}
+			}
+			873 = { cede_province = SIN }
+		}
+		if = {
+			limit = {
+				OR = {
+					owns = 112
+					112 = {
+						owner = { is_subject_of = IRL }
+					}
+				}
+			}
+			112 = { cede_province = ITL }
+		}
+	}
+	option = {
+		name = sinius_events.100.a
+		trigger = {
+			tag = ITL
+		}
+		ai_chance = {
+			factor = 80
+			
+			modifier = {
+				factor = 0.75
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 100
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 150
+					}
+				}
+			}
+		}
+		SIN = {
+			vassalize = ITL
+			hidden_effect = {
+				country_event = { id = sinius_events.101 }
+			}
+		}
+		if = {
+			limit = {  owns = 120 }
+			120 = { cede_province = SIN }
+		}
+	}
+	option = {
+		name = sinius_events.100.a
+		trigger = {
+			tag = BLK
+		}
+		ai_chance = {
+			factor = 75
+			
+			modifier = {
+				factor = 0.75
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 100
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = SIN
+						value = 150
+					}
+				}
+			}
+		}
+		SIN = {
+			vassalize = BLK
+			hidden_effect = {
+				country_event = { id = sinius_events.101 }
+			}
+		}
+		if = {
+			limit = { owns = 112 }
+			112 = { cede_province = ITL }
+		}
+	}
+	option = {
+		name = sinius_events.100.b
+		ai_chance = {
+			factor = 25
+			
+			modifier = {
+				factor = 0.5
+				tag = ITL
+			}
+		}
+		hidden_effect = {
+			SIN = {
+				country_event = { id = sinius_events.102 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sinius_events.101
+	title = sinius_events.101.t
+	desc = sinius_events.101.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sinius_events.101.a
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = sinius_events.102
+	title = sinius_events.102.t
+	desc = sinius_events.102.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sinius_events.102.a
+		add_prestige = -5
+	}
+}

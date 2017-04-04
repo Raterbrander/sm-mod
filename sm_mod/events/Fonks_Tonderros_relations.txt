@@ -1,0 +1,509 @@
+namespace = fonks_tonderros
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = fonks_tonderros.1
+	title = fonks_tonderros.1.t
+	desc = fonks_tonderros.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		tag = SMF
+		is_subject = no
+		is_at_war = no
+		NOT = { has_country_flag = fonks_had_tedenerusail_event }
+		TED = {
+			exists = yes
+			is_subject_of = TND
+		}
+		TND = {
+			exists = yes
+			is_subject = no
+			is_emperor = no
+		}
+		NOT = { is_year = 465 }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		
+		#modifier = {
+		#	factor = 0.25
+		#	TBS = {
+		#		NOT = { is_subject_of = SMF }
+		#	}
+		#}
+	}
+	
+	immediate = {
+		set_country_flag = fonks_had_tedenerusail_event
+	}
+	
+	option = {
+		name = fonks_tonderros.1.a
+		ai_chance = {
+			factor = 90
+		}
+		add_prestige = 5
+		TND = {
+			add_opinion = {
+				who = SMF
+				modifier = opinion_tedenerusail_claims
+			}
+			country_event = {
+				id = fonks_tonderros.2
+			}
+		}
+		#set_country_flag = SMF_tedenerusail_claims
+	}
+	
+	option = {
+		name = fonks_tonderros.1.b
+		ai_chance = {
+			factor = 10
+		}
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.2
+	title = fonks_tonderros.2.t
+	desc = fonks_tonderros.2.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fonks_tonderros.2.a
+		ai_chance = {
+			factor = 65
+			
+			modifier = {
+				factor = 0.35
+				has_country_flag = tonder_apathy
+			}
+		}
+		SMF = {
+			country_event = {
+				id = fonks_tonderros.3
+			}
+		}
+	}
+	
+	option = {
+		name = fonks_tonderros.2.b
+		ai_chance = {
+			factor = 35
+		}
+		break_union = TED
+		add_prestige = -10
+		SMF = {
+			country_event = {
+				id = fonks_tonderros.4
+			}
+			add_opinion = {
+				who = TND
+				modifier = opinion_cede_tedenerusail
+			}
+		}
+		set_global_flag = TND_surrenders_early
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.3
+	title = fonks_tonderros.3.t
+	desc = fonks_tonderros.3.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = fonks_tonderros.3.a
+		set_global_flag = fonks_tonderros_confrontation
+		add_opinion = {
+			who = TND
+			modifier = opinion_confrontation_1
+		}
+		TND = {
+			add_opinion = {
+				who = SMF
+				modifier = opinion_confrontation_1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.4
+	title = fonks_tonderros.4.t
+	desc = fonks_tonderros.4.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = fonks_tonderros.4.a
+		create_union = TED
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.5
+	title = fonks_tonderros.5.t
+	desc = fonks_tonderros.5.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	trigger = {
+		tag = SMF
+		owns = 922
+		has_global_flag = fonks_tonderros_confrontation
+		NOT = { has_country_flag = giefa_provocation }
+		NOT = { war_with = TND }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = fonks_tonderros.5.a
+		set_country_flag = giefa_provocation
+		add_opinion = {
+			who = TND
+			modifier = opinion_provocations
+		}
+		add_casus_belli = {
+			target = TND
+			type = cb_insult
+			months = 12
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.6
+	title = fonks_tonderros.6.t
+	desc = fonks_tonderros.6.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	trigger = {
+		tag = TND
+		owns = 298
+		has_global_flag = fonks_tonderros_confrontation
+		SMF = { has_country_flag = giefa_provocation }
+		NOT = { has_country_flag = esemberg_provocation }
+		NOT = { war_with = SMF }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = fonks_tonderros.6.a
+		set_country_flag = esemberg_provocation
+		add_opinion = {
+			who = SMF
+			modifier = opinion_provocations
+		}
+		add_casus_belli = {
+			target = SMF
+			type = cb_insult
+			months = 12
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.7
+	title = fonks_tonderros.7.t
+	desc = fonks_tonderros.7.d
+	picture = LAND_MILITARY_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = SMF
+		ai = yes
+		is_at_war = no
+		stability = 0
+		has_global_flag = fonks_tonderros_confrontation
+		NOT = { has_global_flag = fonks_tonderros_war }
+		has_country_flag = giefa_provocation
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = fonks_tonderros.7.a
+		declare_war_with_cb = {
+			who = TND
+			casus_belli = cb_amian
+		}
+		set_global_flag = fonks_tonderros_war
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.8
+	title = fonks_tonderros.8.t
+	desc = fonks_tonderros.8.d
+	picture = LAND_MILITARY_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = TND
+		ai = yes
+		is_at_war = no
+		stability = 0
+		has_global_flag = fonks_tonderros_confrontation
+		NOT = { has_global_flag = fonks_tonderros_war }
+		has_country_flag = esemberg_provocation
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = fonks_tonderros.7.a
+		declare_war_with_cb = {
+			who = SMF
+			casus_belli = cb_amian
+		}
+		set_global_flag = fonks_tonderros_war
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.9
+	title = fonks_tonderros.9.t
+	desc = fonks_tonderros.9.d
+	picture = LAND_MILITARY_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = SMF
+		has_global_flag = fonks_tonderros_war
+	}
+	
+	option = {
+		name = fonks_tonderros.9.a
+		TND = {
+			if = {
+				limit = {
+					owns = 298
+				}
+				298 = {
+					cede_province = SMF
+				}
+			}
+			if = {
+				limit = {
+					TED = { junior_union_with = TND }
+				}
+				break_union = TED
+				SMF = { create_union = TED }
+			}
+		}
+		vassalize = TND
+		create_march = TND
+		TND = { elector = no }
+		add_prestige = 10
+		hidden_effect = {
+			clr_global_flag = fonks_tonderros_war
+			clr_global_flag = fonks_tonderros_confrontation
+			set_global_flag = fonks_tonderros_conflict_ended
+			reverse_remove_opinion = {
+				who = TND
+				modifier = opinion_provocations
+			}
+			#reverse_remove_opinion = {
+			#	who = TND
+			#	modifier = opinion_opinion_tedenerusail_claims
+			#}
+			reverse_remove_opinion = {
+				who = TND
+				modifier = opinion_confrontation_1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.10
+	title = fonks_tonderros.10.t
+	desc = fonks_tonderros.10.d
+	picture = LAND_MILITARY_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = TND
+		has_global_flag = fonks_tonderros_war
+	}
+	
+	option = {
+		name = fonks_tonderros.9.a
+		SMF = {
+			if = {
+				limit = {
+					owns = 977
+				}
+				977 = {
+					cede_province = TND
+				}
+			}
+		}
+		vassalize = SMF
+		create_march = SMF
+		add_prestige = 10
+		hidden_effect = {
+			clr_global_flag = fonks_tonderros_war
+			clr_global_flag = fonks_tonderros_confrontation
+			set_global_flag = fonks_tonderros_conflict_ended
+			reverse_remove_opinion = {
+				who = SMF
+				modifier = opinion_provocations
+			}
+			reverse_remove_opinion = {
+				who = SMF
+				modifier = opinion_confrontation_1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.11
+	title = fonks_tonderros.11.t
+	desc = fonks_tonderros.11.d
+	picture = LAND_MILITARY_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = fonks_tonderros_confrontation
+		NOT = { has_global_flag = fonks_tonderros_war }
+		OR = {
+			AND = {
+				tag = TND
+				war_with = SMF
+			}
+			AND = {
+				tag = SMF
+				war_with = TND
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = fonks_tonderros.11.a
+		set_global_flag = fonks_tonderros_war
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.12
+	title = fonks_tonderros.9.t
+	desc = fonks_tonderros.12.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fonks_tonderros.12.a
+		ai_chance = {
+			factor = 50 # 60
+			#modifier = {
+			#	factor = 0.25
+			#	has_country_flag = tonder_apathy
+			#}
+		}
+		SMF = {
+			country_event = {
+				id = fonks_tonderros.13
+				days = 2
+			}
+		}
+	}
+	
+	option = {
+		name = fonks_tonderros.12.b
+		ai_chance = {
+			factor = 50 # 40
+			modifier = {
+				factor = 2
+				has_country_flag = tonder_apathy
+			}
+		}
+		add_prestige = -10
+		SMF = {
+			country_event = {
+				id = fonks_tonderros.14
+				days = 3
+			}
+		}
+		tooltip = {
+			SMF = {
+				vassalize = TND
+				create_march = TND
+			}
+			elector = no
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.13
+	title = fonks_tonderros.13.t
+	desc = fonks_tonderros.13.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fonks_tonderros.13.a
+		add_prestige = -1
+		add_opinion = {
+			who = TND
+			modifier = opinion_displeased
+		}
+	}
+}
+
+country_event = {
+	id = fonks_tonderros.14
+	title = fonks_tonderros.9.t
+	desc = fonks_tonderros.14.d
+	picture = DIPLOMACY_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fonks_tonderros.14.a
+		add_prestige = 10
+		vassalize = TND
+		create_march = TND
+		TND = { elector = no }
+	}
+}

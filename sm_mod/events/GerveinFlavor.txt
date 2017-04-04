@@ -1,0 +1,798 @@
+normal_or_historical_nations = yes
+namespace = gervein
+
+###########################################################
+# Выборы в Гервейне
+###########################################################
+country_event = {
+	id = gervein.1
+	title = gervein.1.t
+	desc = gervein.1.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gervein.1.b
+		country_event = {
+			id = gervein.2
+		}
+	}
+	
+	option = {
+		name = gervein.1.a
+	}
+}
+
+country_event = {
+	id = gervein.2
+	title = gervein.2.t
+	desc = gervein.2.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gervein.2.small
+		trigger = {
+			adm_power = 25
+			dip_power = 50
+			prestige = 10
+		}
+		add_adm_power = -25
+		add_dip_power = -50
+		add_prestige = -10
+		change_variable = {
+			which = gervein_authority
+			value = 5
+		}
+	}
+	
+	option = {
+		name = gervein.2.normal
+		trigger = {
+			adm_power = 50
+			dip_power = 100
+			prestige = 20
+		}
+		add_adm_power = -50
+		add_dip_power = -100
+		add_prestige = -20
+		change_variable = {
+			which = gervein_authority
+			value = 10
+		}
+	}
+	
+	option = {
+		name = gervein.2.big
+		trigger = {
+			adm_power = 125
+			dip_power = 250
+			prestige = 50
+		}
+		add_adm_power = -125
+		add_dip_power = -250
+		add_prestige = -50
+		change_variable = {
+			which = gervein_authority
+			value = 25
+		}
+	}
+	
+	option = {
+		name = gervein.2.no
+	}
+}
+
+country_event = {
+	id = gervein.3
+	title = gervein.3.t
+	desc = gervein.3.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = gervein.10.a
+		FROM = {
+			country_event = {
+				id = gervein.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gervein.10
+	title = gervein.10.t
+	desc = gervein.10.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_modifier = gervein_union_leader
+		NOT = { has_global_flag = gervein_elections_abolished }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = gervein_elections_in_progress
+			set_country_flag = gervein_former_leader
+			clear_global_event_target = gervein_union_leader_target
+		}
+	}
+	
+	option = {
+		name = gervein.10.a
+		country_event = {
+			id = gervein.11
+		}
+	}
+}
+
+country_event = {
+	id = gervein.11
+	title = gervein.10.t
+	desc = gervein.11.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = had_gervein_elections
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = gervein.11.a
+		gervein_elections_check_authority = yes
+		gervein_next_in_elections = yes
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+		name = gervein.11.b
+		add_prestige = -5
+		gervein_next_in_elections = yes
+	}
+}
+	
+country_event = {
+	id = gervein.12
+	title = gervein.12.t
+	desc = gervein.12.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_global_flag = gervein_elections_in_progress
+		has_country_flag = gervein_elections_leader
+		all_country = {
+			OR = {
+				NOT = { has_country_modifier = gervein_union_member }
+				has_country_flag = had_gervein_elections
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = had_gervein_elections }
+				clr_country_flag = had_gervein_elections
+			}
+			clr_global_flag = gervein_elections_in_progress
+		}
+	}
+	
+	option = {
+		name = gervein.12.a
+		gervein_leader_effect = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = gervein_former_leader }
+				}
+				set_country_flag = flag_gmtl
+				every_country = {
+					limit = { has_country_flag = gervein_former_leader }
+					every_subject_country = {
+						limit = { has_country_modifier = gervein_union_member }
+						set_country_flag = flag_gmtl
+					}
+					ROOT = {
+						set_variable = {
+							which = gervein_leader_authority
+							which = FROM
+						}
+						vassalize = PREV
+					}
+					set_variable = {
+						which = gervein_leader_authority
+						value = 0
+					}
+					clr_country_flag = gervein_former_leader
+					set_variable = {
+						which = gervein_country_was_leader
+						value = 0
+					}
+					remove_country_modifier = gervein_union_leader
+				}
+				every_country = {
+					limit = { has_country_flag = flag_gmtl }
+					overlord = { free_vassal = PREV }
+					event_target:gervein_union_leader_target = {
+						vassalize = PREV
+					}
+					clr_country_flag = flag_gmtl
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = gervein_former_leader }
+			change_variable = {
+				which = gervein_leader_authority
+				value = 5
+			}
+			hidden_effect = {
+				change_variable = {
+					which = gervein_country_was_leader
+					value = 1
+				}
+				clr_country_flag = gervein_former_leader
+			}
+		}
+		clr_country_flag = gervein_elections_leader
+	}
+}
+
+###########################################################
+# Ликвидация Гервейна
+###########################################################
+country_event = {
+	id = gervein.13
+	title = gervein.13.t
+	desc = gervein.13.d
+	picture = BANKRUPTCY_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				has_global_flag = gervein_union_united
+				NOT = {
+					any_country = { has_country_modifier = gervein_union_state }
+				}
+			}
+			AND = {
+				NOT = { has_global_flag = gervein_union_united }
+				all_country = {
+					NOT = { has_country_modifier = gervein_union_member }
+				}
+			}
+		}
+		any_owned_province = {
+			has_province_modifier = gervein_union_city
+		}
+		NOT = { has_global_flag = gervein_abolished }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = gervein.13.a
+		hidden_effect = {
+			set_global_flag = gervein_abolished
+			every_country = {
+				limit = { has_country_modifier = gervein_union_member }
+				remove_country_modifier = gervein_union_member
+			}
+			every_country = {
+				limit = { has_country_modifier = gervein_union_associated_member }
+				remove_country_modifier = gervein_union_associated_member
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						has_province_modifier = gervein_union_city
+					}
+				}
+				remove_province_modifier = gervein_union_city
+				remove_province_modifier = gervein_guard
+			}
+		}
+		add_prestige = -5
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = gervein.50
+	title = gervein.50.t
+	desc = gervein.50.d
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = gervein_abolished }
+		NOT = { has_country_modifier = gervein_union_member }
+		NOT = { has_country_modifier = gervein_union_leader }
+		any_subject_country = {
+			has_country_modifier = gervein_union_member
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = gervein.50.a
+		ai_chance = {
+			factor = 55
+		}
+		every_subject_country = {
+			limit = { has_country_modifier = gervein_union_member }
+			remove_country_modifier = gervein_union_member
+			add_country_modifier = {
+				name = gervein_union_associated_member
+				duration = -1
+			}
+			add_liberty_desire = -15
+		}
+	}
+	
+	option = {
+		name = gervein.50.b
+		ai_chance = {
+			factor = 45
+		}
+		every_subject_country = {
+			limit = { has_country_modifier = gervein_union_member }
+			remove_country_modifier = gervein_union_member
+		}
+	}
+}
+
+###########################################################
+# Гервейн и Латвия
+###########################################################
+country_event = {
+	id = gervein.20
+	title = gervein.20.t
+	desc = gervein.20.d
+	picture = EXPLORERS_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = gervein_union_member
+			has_country_modifier = gervein_union_state
+		}
+		OR = {
+			is_year = 460
+			northern_latvia_region = {
+				has_discovered = ROOT
+			}
+		}
+		NOT = { has_global_flag = gervein_latvia_discovered }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = gervein.20.a
+		add_prestige = 5
+		change_variable = {
+			which = gervein_authority
+			value = 5
+		}
+		#hidden_effect = {
+			281 = {
+				every_country = {
+					limit = { has_country_modifier = gervein_union_member }
+					discover_province = PREV
+				}
+			}
+			282 = {
+				every_country = {
+					limit = { has_country_modifier = gervein_union_member }
+					discover_province = PREV
+				}
+			}
+			set_global_flag = gervein_latvia_discovered
+		#}
+	}
+}
+
+country_event = {
+	id = gervein.21
+	title = gervein.21.t
+	desc = gervein.21.d
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = gervein_union_member
+			has_country_modifier = gervein_union_state
+		}
+		northern_latvia_region = {
+			has_discovered = ROOT
+		}
+		has_global_flag = gervein_latvia_discovered
+		stability = 0
+		NOT = {
+			any_country = {
+				OR = {
+					has_country_flag = factories_in_latvia_founder
+					has_country_flag = expedition_in_latvia
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = {
+			factor = 0.75
+			has_country_modifier = gervein_union_leader
+		}
+		
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		
+		modifier = {
+			factor = 4
+			has_country_flag = latvia_failed_expedition
+		}
+	}
+	
+	option = {
+		name = gervein.21.a
+		ai_chance = {
+			factor = 70
+			
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.36 }
+			}
+		}
+		add_years_of_income = -0.35
+		add_prestige = 5
+		set_country_flag = expedition_in_latvia
+		custom_tooltip = gervein21atooltip
+	}
+	
+	option = {
+		name = gervein.21.b
+		ai_chance = {
+			factor = 30
+		}
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = gervein.22
+	title = gervein.22.t
+	desc = gervein.22.d
+	picture = HARBOUR_eventPicture
+	
+	trigger = {
+		has_country_flag = expedition_in_latvia
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = gervein.22.a
+		add_prestige = 1
+		281 = {
+			add_permanent_province_modifier = {
+				name = gervein_factories_northern_latvia
+				duration = -1
+			}
+			hidden_effect = {
+				owner = {
+					country_event = {
+						id = gervein.23
+						days = 30
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gervein.23
+	title = gervein.23.t
+	desc = gervein.23.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					ROOT = { discover_province = PREV }
+				}
+				ROOT = {
+					capital_scope = {
+						FROM = { discover_province = PREV }
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = gervein.23.a
+		ai_chance = {
+			factor = 90
+		}
+		FROM = {
+			country_event = {
+				id = gervein.24
+			}
+		}
+	}
+	option = {
+		name = gervein.23.b
+		ai_chance = {
+			factor = 10
+		}
+		FROM = {
+			country_event = {
+				id = gervein.25
+			}
+		}
+		281 = { remove_province_modifier = gervein_factories_northern_latvia }
+	}
+}
+
+country_event = {
+	id = gervein.24
+	title = gervein.24.t
+	desc = gervein.24.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gervein.24.a
+		add_years_of_income = 1.55
+		add_prestige = 10
+		change_variable = {
+			which = gervein_authority
+			value = 10
+		}
+		1371 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = -1
+				power = 25
+				key = factories_in_northern_latvia_key
+			}
+		}
+		set_country_flag = factories_in_latvia_founder
+		clr_country_flag = expedition_in_latvia
+	}
+}
+
+country_event = {
+	id = gervein.25
+	title = gervein.25.t
+	desc = gervein.25.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gervein.25.a
+		add_prestige = -10
+		set_country_flag = latvia_failed_expedition
+		clr_country_flag = expedition_in_latvia
+	}
+}
+
+country_event = {
+	id = gervein.26
+	title = gervein.26.t
+	desc = gervein.26.d
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = gervein_factories_northern_latvia
+			NOT = { has_province_flag = ealegil_assimilated_province }
+		}
+		NOT = { culture_group = yellow_group }
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.85
+			NOT = { adm = 3 }
+		}
+	}
+	
+	option = {
+		name = gervein.26.a
+		every_owned_province = {
+			limit = {
+				#has_port = yes
+				has_province_modifier = gervein_factories_northern_latvia
+			}
+			change_culture = ealegil
+			hidden_effect = {
+				set_province_flag = ealegil_assimilated_province
+				every_country = {
+					limit = {
+						OR = {
+							has_country_flag = factories_in_latvia_founder
+							has_country_modifier = gervein_union_leader
+						}
+					}
+					every_owned_province = {
+						limit = { culture = ealegil }
+						change_religion = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gervein.27
+	title = gervein.27.t
+	desc = gervein.27.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		religion = helgarn
+		NOT = {
+			any_province = {
+				has_province_modifier = gervein_factories_northern_latvia
+				religion = helgarn
+			}
+		}
+		OR = {
+			has_country_flag = factories_in_latvia_founder
+			has_country_modifier = gervein_union_leader
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = gervein.27.a
+		every_province = {
+			limit = {
+				has_province_modifier = gervein_factories_northern_latvia
+				NOT = { religion = helgarn }
+			}
+			change_religion = helgarn
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = gervein.30
+	title = gervein.30.t
+	desc = gervein.30.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = gervein_factories_northern_latvia
+				has_province_modifier = gervein_union_city
+			}
+		}
+		num_of_cities = 4
+		NOT = { has_country_modifier = gervein_influence_grow }
+		#NOT = { has_country_modifier = sm_protection_of_our_merchants }
+		has_estate = estate_burghers
+		NOT = { has_country_modifier = gervein_union_member }
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+		
+		modifier = {
+			factor = 2
+			has_country_modifier = gervein_union_associated_member
+		}
+		
+		modifier = {
+			factor = 3
+			has_country_modifier = antihelgarnist_laws
+		}
+	}
+	
+	option = {
+		name = gervein.30.a
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = sm_protecting_free_trade
+			duration = 9125
+		}
+		add_country_modifier = {
+			name = gervein_influence_grow
+			duration = 9125
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_burghers
+			loyalty = -15
+			duration = 9125
+			desc = EST_VAL_GERVEIN_MERCHANTS_IN_POWER
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			influence = -15
+			duration = 5475
+			desc = EST_VAL_GERVEIN_MERCHANTS_IN_POWER
+		}
+	}
+	
+	option = {
+		name = gervein.30.b
+		ai_chance = {
+			factor = 50
+		}
+		#add_country_modifier = {
+		#	name = sm_protection_of_our_merchants
+		#	duration = 9125
+		#}
+		#add mercantilism?
+		add_estate_loyalty_modifier = {
+			estate = estate_burghers
+			loyalty = 10
+			duration = 9125
+			desc = EST_VAL_PROTECTION_SM
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			influence = 15
+			duration = 9125
+			desc = EST_VAL_INL_PROTECTION_SM
+		}
+	}
+}

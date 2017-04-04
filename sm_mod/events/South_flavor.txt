@@ -1,0 +1,40 @@
+namespace = south_events
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = south_events.1
+	title = south_events.1.t
+	desc = south_events.1.d
+	picture = ANTI_SMESHIKS_COALITION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = CHT
+			tag = UTN
+		}
+		exists = SHK
+		NOT = { is_year = 460 }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = south_events.1.a
+		ai_chance = {
+			factor = 80
+		}
+		form_coalition_against = SHK
+	}
+	
+	option = {
+		name = south_events.1.b
+		ai_chance = {
+			factor = 20
+		}
+	}
+}

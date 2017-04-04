@@ -1,0 +1,57 @@
+namespace = flavorWDS
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavorWDS.1
+	title = sm_ede.20.t
+	desc = sm_ede.20.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WDS
+		has_heir = no
+		has_ruler = "Вильгельм II"
+		dynasty = "фон Вендельшлейф"
+		is_year = 459
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = sm_ede.20.a
+		ai_chance = { factor = 90 }
+		define_heir = {
+			name = "Фридрих II"
+			dynasty = "Эрвецеллар"
+			claim = 85
+			adm = 4
+			dip = 4
+			mil = 4
+			birth_date = 944.9.21
+			#fixed = yes
+		}
+		970 = { remove_estate = estate_nobles }
+		959 = { remove_estate = estate_nobles }
+	}
+	
+	option = {
+		name = sm_ede.20.c
+		ai_chance = { factor = 5 }
+		define_heir = {
+			dynasty = ROOT
+			claim = 25
+		}
+		add_legitimacy = -10
+		add_prestige = -5
+	}
+	
+	option = {
+		name = sm_ede.20.b
+		ai_chance = { factor = 5 }
+	}
+}

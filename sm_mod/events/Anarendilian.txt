@@ -1,0 +1,405 @@
+namespace = anarendilian_event
+normal_or_historical_nations = yes
+
+country_event = {
+	id = anarendilian_event.1
+	title = anarendilian_event.1.t
+	desc = anarendilian_event.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+		tag = UKI
+		NOT = { has_country_flag = no_afe }
+		NOT = { has_global_flag = anor_diplomacy }
+		NOT = { has_country_modifier = anarendilian_event_1_timer }
+		NOT = { exists = AFE }
+		stability = 0
+		has_regency = no
+		is_subject = no
+		is_at_war = no
+		ASR = {
+			ai = yes
+			exists = yes
+			was_player = no
+			is_subject = no
+			has_opinion = {
+				who = ROOT
+				value = 25
+			}
+		}
+		NOT = { is_year = 500 }
+		prestige = 0
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.5
+			is_year = 460
+		}
+		
+		modifier = {
+			factor = 0.25
+			is_year = 465
+		}
+		
+		modifier = {
+			factor = 0.1
+			is_year = 470
+		}
+		
+		modifier = {
+			factor = 2
+			has_country_flag = anarendilian_event_first_time
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = anarendilian_event_1_timer
+				duration = 1825
+				hidden = yes
+			}
+			set_global_flag = anor_diplomacy
+		}
+	}
+	
+	option = {
+		name = anarendilian_event.1.a
+		trigger = {
+			NOT = { has_country_flag = anarendilian_event_first_time }
+		}
+		ai_chance = {
+			factor = 80
+		}
+		ASR = {
+			country_event = {
+				id = anarendilian_event.2
+				days = 1
+			}
+		}
+		set_country_flag = anarendilian_event_first_time
+		add_dip_power = -25
+	}
+	
+	option = {
+		name = anarendilian_event.1.b
+		trigger = {
+			has_country_flag = anarendilian_event_first_time
+		}
+		ai_chance = {
+			factor = 80
+		}
+		ASR = {
+			country_event = {
+				id = anarendilian_event.2
+				days = 2
+			}
+		}
+		add_dip_power = -25
+	}
+	
+	option = {
+		name = anarendilian_event.1.c
+		ai_chance = {
+			factor = 20
+			
+			modifier = {
+				factor = 4
+				
+				is_rival = ASR
+			}
+		}
+		set_country_flag = no_afe
+	}
+}
+
+country_event = {
+	id = anarendilian_event.2
+	title = anarendilian_event.2.t
+	desc = anarendilian_event.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anarendilian_event.2.a
+		ai_chance = {
+			factor = 70
+			
+			modifier = {
+				factor = 1.5
+				
+				OR = {
+					FROM = { dip = 4 }
+					has_opinion = {
+						who = UKI
+						value = 75
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				45 = {
+					UKI = {
+						country_event = { id = anarendilian_event.3 }
+					}
+				}
+				55 = {
+					country_event = { id = anarendilian_event.4 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = anarendilian_event.2.b
+		ai_chance = {
+			factor = 30
+			
+			modifier = {
+				factor = 4
+				is_rival = UKI
+			}
+		}
+		UKI = {
+			country_event = { id = anarendilian_event.5 }
+			random_list = {
+				10 = {
+					kill_ruler = yes
+				}
+				90 = { }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = anarendilian_event.3
+	title = anarendilian_event.3.t
+	desc = anarendilian_event.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anarendilian_event.3.a
+		clr_global_flag = anor_diplomacy
+		add_prestige = -1
+	}
+}
+
+country_event = {
+	id = anarendilian_event.4
+	title = anarendilian_event.4.t
+	desc = anarendilian_event.4.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anarendilian_event.4.a
+		ai_chance = { factor = 90 }
+		UKI = {
+			country_event = { id = anarendilian_event.6 }
+		}
+	}
+	
+	option = {
+		name = anarendilian_event.6.b
+		ai_chance = { factor = 10 }
+		UKI = {
+			country_event = { id = anarendilian_event.3 }
+			set_country_flag = no_afe
+		}
+	}
+}
+
+country_event = {
+	id = anarendilian_event.5
+	title = anarendilian_event.5.t
+	desc = anarendilian_event.5.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anarendilian_event.4.a
+		clr_global_flag = anor_diplomacy
+		set_country_flag = no_afe
+		add_casus_belli = {
+			target = FROM
+			type = cb_insult
+			months = 12
+		}
+	}
+}
+
+country_event = {
+	id = anarendilian_event.6
+	title = anarendilian_event.6.t
+	desc = anarendilian_event.6.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = anor_diplomacy
+		}
+	}
+	
+	option = {
+		name = anarendilian_event.4.a
+		ai_chance = {
+			factor = 90
+		}
+		inherit = ASR
+		country_event = {
+			id = anarendilian_event.7
+		}
+	}
+	
+	option = {
+		name = anarendilian_event.6.b
+		ai_chance = {
+			factor = 10
+		}
+		add_prestige = -5
+		set_country_flag = no_afe
+	}
+}
+
+country_event = {
+	id = anarendilian_event.7
+	title = anarendilian_event.7.t
+	desc = anarendilian_event.7.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anarendilian_event.7.a
+		change_tag = AFE
+		latvia_superregion = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = AFE
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = ASR
+				}
+				remove_core = ASR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = anarendilian_event.8
+	title = anarendilian_event.8.t
+	desc = anarendilian_event.8.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFE
+		num_of_cities = 30
+		any_owned_province = {
+			OR = {
+				is_core = AMN
+				is_core = SRG
+				is_core = MIL
+				is_core = KAY
+				is_core = IRI
+				is_core = ELK
+				is_core = HVL
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = {
+		name = anarendilian_event.8.a
+		if = {
+			limit = {
+				NOT = { exists = AMN }
+			}
+			every_owned_province = {
+				limit = { is_core = AMN }
+				remove_core = AMN
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = SRG }
+			}
+			every_owned_province = {
+				limit = { is_core = SRG }
+				remove_core = SRG
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = MIL }
+			}
+			every_owned_province = {
+				limit = { is_core = MIL }
+				remove_core = MIL
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = KAY }
+			}
+			every_owned_province = {
+				limit = { is_core = KAY }
+				remove_core = KAY
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = IRI }
+			}
+			every_owned_province = {
+				limit = { is_core = IRI }
+				remove_core = IRI
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = ELK }
+			}
+			every_owned_province = {
+				limit = { is_core = ELK }
+				remove_core = ELK
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = HVL }
+			}
+			every_owned_province = {
+				limit = { is_core = HVL }
+				remove_core = HVL
+			}
+		}
+	}
+}

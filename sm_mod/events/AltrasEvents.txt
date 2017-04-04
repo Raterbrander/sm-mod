@@ -1,0 +1,481 @@
+##########################################################################
+# Общие Альтрасские ивенты
+##########################################################################
+namespace = flavor_alr
+
+# Альтрасская Дистра Неимадика
+#country_event = {
+#	id = flavor_alr.1
+#	title = flavor_alr.1.t
+#	desc = flavor_alr.1.d
+#	picture = DIPLOMACY_eventPicture
+#	
+#	trigger = {
+#		tag = EOY
+#		NOT = { has_country_flag = EOY_had_event_adn }
+#		has_global_flag = IOD_divived
+#		any_owned_province = {
+#			is_core = yes
+#			culture = altras
+#			local_autonomy = 50
+#		}
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#			every_owned_province = {
+#				limit = {
+#					culture = altras
+#					controlled_by = owner
+#					OR = {
+#						unrest = 2
+#						AND = {
+#							local_autonomy = 35
+#							NOT = { local_autonomy = 75 }
+#						}
+#					}
+#				}
+#				set_province_flag = EOY_event_adn_target
+#			}
+#			set_country_flag = EOY_had_event_adn
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 12
+#	}
+#	
+#	option = {
+#		name = flavor_alr.1.a
+#		ai_chance = {
+#			factor = 40
+#		}
+#		every_owned_province = {
+#			limit = {
+#				culture = altras
+#				NOT = { local_autonomy = 75 }
+#			}
+#			add_local_autonomy = 50
+#			add_permanent_province_modifier = {
+#				name = distra_neimadika
+#				duration = -1
+#			}
+#			hidden_effect = {
+#				if = {
+#					limit = { has_province_flag = EOY_event_adn_target }
+#				}
+#				clr_province_flag = EOY_event_adn_target
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = flavor_alr.1.b
+#		ai_chance = {
+#			factor = 60
+#		}
+#		every_owned_province = {
+#			limit = { has_province_flag = EOY_event_adn_target }
+#			clr_province_flag = EOY_event_adn_target
+#			add_province_modifier = {
+#				name = sm_nomad_province_unpleased
+#				duration = 3650
+#			}
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = flavor_alr.2
+#	title = flavor_alr.2.t
+#	desc = flavor_alr.2.d
+#	picture = DIPLOMACY_eventPicture
+#	
+#	trigger = {
+#		NOT = { tag = EOY }
+#		any_owned_province = {
+#			has_province_modifier = distra_neimadika
+#			OR =  {
+#				NOT = { has_province_flag = distra_neimadika_allowed }
+#				had_province_flag = {
+#					flag = distra_neimadika_allowed
+#					days = 3650
+#				}
+#			}
+#		}
+#		NOT = { has_country_flag = distra_neimadika_allowed_in_state }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 7
+#	}
+#	
+#	option = {
+#		name = flavor_alr.2.a # Поддержать политику дистра неимадика
+#		set_country_flag = distra_neimadika_allowed_in_state
+#		every_owned_province = {
+#			limit = {
+#				has_province_modifier = distra_neimadika
+#			}
+#			add_province_modifier = {
+#				name = sm_nomad_province_pleased
+#				duration = 1825
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = flavor_alr.2.b # Разрешить на 10 лет
+#		every_owned_province = {
+#			limit = {
+#				has_province_modifier = distra_neimadika
+#			}
+#			add_province_modifier = {
+#				name = sm_nomad_province_pleased
+#				duration = 1825
+#			}
+#			set_province_flag = distra_neimadika_allowed
+#		}
+#	}
+#	
+#	option = {
+#		name = flavor_alr.2.c # Не разрешать
+#		every_owned_province = {
+#			limit = {
+#				has_province_modifier = distra_neimadika
+#			}
+#			remove_province_modifier = distra_neimadika
+#			add_province_modifier = {
+#				name = sm_nomad_province_unpleased
+#				duration = 3650
+#			}
+#		}
+#	}
+#}
+
+# Присоединение к Кайдгедану
+country_event = {
+	id = flavor_alr.3
+	title = flavor_alr.3.t
+	desc = flavor_alr.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_alr.3.a
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = { is_core = ROOT }
+				remove_core = ROOT
+			}
+		}
+		FROM = { inherit = PREV }
+	}
+	
+	option = {
+		name = flavor_alr.3.b
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 2
+				OR = {
+					army_size = FROM
+					num_of_cities = FROM
+				}
+			}
+		}
+		FROM = {
+			free_vassal = PREV
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_annex
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_alr.4
+	title = flavor_alr.4.t
+	desc = flavor_alr.4.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_alr.4.a
+		ai_chance = {
+			factor = 75
+		}
+		FROM = { vassalize = ROOT }
+		if = {
+			limit = {
+				NOT = { government = altras_ulus }
+			}
+			change_government = altras_ulus
+		}
+	}
+	
+	option = {
+		name = flavor_alr.4.b
+		ai_chance = {
+			factor = 25
+		}
+		add_prestige = 1
+	}
+}
+
+country_event = {
+	id = flavor_alr.5
+	title = flavor_alr.5.t
+	desc = flavor_alr.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = flavor_alr.5.a
+		hidden_effect = {
+			AL1 = {
+				capital_scope = {
+					set_province_flag = kaydgedanate_capital
+				}
+			}
+			set_global_flag = kaydgedanate_abolished
+		}
+		inherit = AL1
+		change_government = altras_enzelkhanate
+		set_government_rank = 2
+		add_prestige = 10
+		add_stability = 1
+	}
+}
+
+# Возвращение Кайдгедана
+country_event = {
+	id = flavor_alr.10
+	title = flavor_alr.10.t
+	desc = flavor_alr.10.d
+	picture = NOMAD_ESTATE_eventPicture
+	
+	trigger = {
+		has_global_flag = kaydgedanate_abolished
+		NOT = { has_global_flag = no_kaydgedanate }
+		any_owned_province = { has_province_flag = kaydgedanate_capital }
+		culture_group = altras_culture_group
+		NOT = { government = altras_enzelkhanate }
+		NOT = { exists = AL1 }
+		NOT = { exists = ALR }
+	}
+	
+	mean_time_to_happen = {
+		months = 1500
+		
+		modifier = {
+			factor = 1.25
+			has_country_flag = had_fa10_event
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_fa10_event
+		}
+	}
+	
+	option = {
+		name = flavor_alr.10.a
+		ai_chance = {
+			factor = 50
+		}
+		set_global_flag = kaydgedanate_revolt
+		every_country = {
+			limit = { government = altras_enzelkhanate }
+			add_opinion = {
+				who = ROOT
+				modifier = sm_altras_danger
+			}
+			ROOT = {
+				form_coalition_against = PREV
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = kaydgedanate_capital
+			}
+			cede_province = AL1
+		}
+		create_alliance = AL1
+		hidden_effect = {
+			AL1 = {
+				change_government = altras_horde
+			}
+			every_country = {
+				limit = {
+					government = altras_ulus
+				}
+				country_event = {
+					id = flavor_alr.11
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_alr.10.b
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 10
+				any_country = {
+					government = altras_enzelkhanate
+					ROOT = {
+						has_opinion = {
+							who = PREV
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = { government = altras_enzelkhanate }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_pleased
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_alr.11
+	title = flavor_alr.10.t
+	desc = flavor_alr.10.d
+	picture = NOMAD_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_fa11_event
+		}
+	}
+	
+	option = {
+		name = flavor_alr.10.a
+		every_country = {
+			limit = {
+				government = altras_enzelkhanate
+			}
+			ROOT = {
+				form_coalition_against = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_alr.11.b
+		form_coalition_against = AL1
+	}
+}
+
+# Объявление войны
+country_event = {
+	id = flavor_alr.12
+	title = flavor_alr.12.t
+	desc = flavor_alr.12.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			tag = AL1
+			government = altras_enzelkhanate
+		}
+		NOT = { has_global_flag = altras_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+		
+		modifier = {
+			factor = 0.5
+			ai = no
+		}
+	}
+	
+	option = {
+		name = flavor_alr.3.a
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = AL1
+				}
+				every_country = {
+					limit = { government = altras_enzelkhanate }
+					ROOT = {
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_civil_war
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					government = altras_enzelkhanate
+				}
+				declare_war_with_cb = {
+					who = AL1
+					casus_belli = cb_civil_war
+				}
+			}
+			set_global_flag = altras_civil_war
+			AL1 = {
+				add_country_modifier = {
+					name = civil_war_nation
+					duration = -1
+				}
+				set_country_flag = only_ideological_nation
+			}
+			every_country = {
+				limit = { government = altras_enzelkhanate }
+				add_country_modifier = {
+					name = civil_war_nation
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_alr.13
+	title = flavor_alr.13.t
+	desc = flavor_alr.13.d
+	picture = NOMAD_ESTATE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_alr.13.a
+		change_government = feudal_monarchy
+		hidden_effect = {
+			every_subject_country = {
+				country_event = { id = flavor_alr.3 days = 3 }
+			}
+		}
+	}
+}

@@ -1,0 +1,758 @@
+namespace = sm_smsr
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = sm_smsr.1
+	title = sm_smsr.1.t
+	desc = sm_smsr.1.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = SUM
+		OR = {
+			government = socialist_state
+			government = dictatorship
+			government = technocrat_dictatorship
+			government = presidental_dictatorship
+		}
+		has_factions = yes
+		OR = {
+			faction_influence = {
+				faction = mal_reformist_faction
+				influence = 25
+			}
+			faction_influence = {
+				faction = mal_democrat_faction
+				influence = 25
+			}
+		}
+		is_at_war = no
+		faction_in_power = mal_totalitarian_faction
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.75
+			faction_influence = {
+				faction = mal_reformist_faction
+				influence = 25
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			faction_influence = {
+				faction = mal_reformist_faction
+				influence = 35
+			}
+		}
+	}
+	
+	option = {
+		name = sm_smsr.1.a
+		ai_chance = { factor = 65 }
+		add_country_modifier = {
+			name = democratic_forces_unpleased
+			duration = 548
+		}
+	}
+	
+	option = {
+		name = sm_smsr.1.b
+		ai_chance = { factor = 35 }
+		custom_tooltip = sm_smsr.elections.tooltips
+		add_republican_tradition = 0.1
+		hidden_effect = {
+			if = {
+				limit = {
+					faction_influence = {
+						faction = mal_reformist_faction
+						influence = 45
+					}
+					faction_influence = {
+						faction = mal_democrat_faction
+						influence = 10
+					}
+				}
+				country_event = {
+					id = sm_smsr.2
+					days = 3
+				}
+			}
+			if = {
+				limit = {
+					faction_influence = {
+						faction = mal_democrat_faction
+						influence = 45
+					}
+					faction_influence = {
+						faction = mal_reformist_faction
+						influence = 10
+					}
+				}
+				country_event = {
+					id = sm_smsr.2
+					days = 3
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						faction_influence = {
+							faction = mal_reformist_faction
+							influence = 50
+						}
+						faction_influence = {
+							faction = mal_democrat_faction
+							influence = 50
+						}
+					}
+				}
+				country_event = {
+					id = sm_smsr.2
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_smsr.2
+	title = sm_smsr.2.t
+	desc = sm_smsr.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_smsr.2.a
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						faction_influence = {
+							faction = mal_reformist_faction
+							influence = 50
+						}
+						faction_influence = {
+							faction = mal_democrat_faction
+							influence = 50
+						}
+					}
+				}
+				country_event = {
+					id = sm_smsr.3
+					days = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = sm_smsr.2.b
+		country_event = { id = sm_smsr.4 }
+	}
+}
+
+country_event = {
+	id = sm_smsr.3
+	title = sm_smsr.3.t
+	desc = sm_smsr.3.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_smsr.3.a
+		add_stability = -1
+		add_republican_tradition = -0.15
+		add_country_modifier = {
+			name = democratic_forces_unpleased
+			duration = 548
+		}
+	}
+}
+
+country_event = {
+	id = sm_smsr.4
+	title = sm_smsr.4.t
+	desc = sm_smsr.4.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_smsr.4.a
+		kill_ruler = yes
+		if = {
+			limit = {
+				faction_in_power = mal_democrat_faction
+			}
+			change_government = presidental_republic_6
+		}
+		if = {
+			limit = {
+				faction_in_power = mal_reformist_faction
+			}
+			change_government = socialist_republic
+		}
+		add_country_modifier = {
+			name = totalitarian_regime_crushed
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = sm_smsr.5
+	title = sm_smsr.5.t
+	desc = sm_smsr.5.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			faction_in_power = mal_democrat_faction
+			faction_in_power = mal_reformist_faction
+		}
+		OR = {
+			faction_influence = {
+				faction = mal_reformist_faction
+				influence = 85
+			}
+			faction_influence = {
+				faction = mal_democrat_faction
+				influence = 85
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = sm_smsr.5.a
+		country_event = {
+			id = sm_smsr.4
+		}
+	}
+}
+
+country_event = {
+	id = sm_smsr.6
+	title = sm_smsr.6.t
+	desc = sm_smsr.6.d
+	picture = REVOLUTION_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes # ?
+	
+	trigger = {
+		tag = SUM
+		is_subject = no
+		is_at_war = no
+		NOT = { stability = 2 }
+		faction_in_power = mal_totalitarian_faction
+		faction_influence = {
+			faction = mal_totalitarian_faction
+			influence = 75
+		}
+		faction_influence = {
+			faction = mal_reformist_faction
+			influence = 15
+		}
+		any_owned_province = {
+			is_core = DMF
+			unrest = 4
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 0 }
+		}
+		
+		modifier = {
+			factor = 0.75
+			NOT = { republican_tradition = 0.5 }
+		}
+		
+		modifier = {
+			factor = 0.5
+			NOT = { republican_tradition = 0.25 }
+		}
+		
+		modifier = {
+			factor = 0.75
+			faction_influence = {
+				faction = mal_reformist_faction
+				influence = 20
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			faction_influence = {
+				faction = mal_reformist_faction
+				influence = 24
+			}
+		}
+	}
+	
+	option = {
+		name = sm_smsr.6.a
+		ai_chance = { factor = 90 }
+		release = DMF
+		add_faction_influence = {
+			faction = mal_democrat_faction
+			influence = -10
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					units_in_province = 10
+				}
+				#kill_units = {
+				#	who = owner
+				#	amount = 20
+				#}
+			}
+			add_country_modifier = {
+				name = civil_war_nation
+				duration = -1
+			}
+			DMF = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_country_modifier = {
+					name = civil_war_nation
+					duration = -1
+				}
+				change_government = socialist_republic
+				add_stability = 1
+				set_country_flag = sm_will_get_troops_in_civil_war
+				every_owned_province = {
+					limit = { units_in_province = 1 }
+					kill_units = {
+						who = enemy
+						amount = 20
+					}
+				}
+			}
+		}
+		declare_war_with_cb = {
+			who = DMF
+			casus_belli = cb_civil_war
+		}
+	}
+}
+
+country_event = {
+	id = sm_smsr.10
+	title = sm_smsr.10.t # Демократические реформы
+	desc = sm_smsr.10.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = SUM
+		OR = {
+			government = socialist_state
+			government = dictatorship
+			government = technocrat_dictatorship
+			government = presidental_dictatorship
+		}
+		OR = {
+			faction_in_power = mal_reformist_faction
+			faction_in_power = mal_democrat_faction
+		}
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+	}
+	
+	option = {
+		name = sm_smsr.10.a
+		if = {
+			limit = {
+				faction_in_power = mal_democrat_faction
+			}
+			change_government = presidental_republic_6
+		}
+		if = {
+			limit = {
+				faction_in_power = mal_reformist_faction
+			}
+			change_government = socialist_republic
+		}
+		random_list = {
+			25 = {
+				add_country_modifier = {
+					name = totalitarian_regime_crushed
+					duration = 1825
+				}
+			}
+			75 = {}
+		}
+	}
+}
+
+country_event = {
+	id = sm_smsr.500
+	title = sm_smsr.500.t
+	desc = sm_smsr.500.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = SUM
+		has_factions = no
+		OR = {
+			government = socialist_republic
+			government = socialist_state
+			government = dictatorship
+			government = technocrat_dictatorship
+			government = presidental_dictatorship
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = sm_smsr.500.a
+		add_faction = mal_totalitarian_faction
+		add_faction = mal_reformist_faction
+		add_faction = mal_democrat_faction
+	}
+}
+
+country_event = {
+	id = sm_smsr.501
+	title = sm_smsr.501.t
+	desc = sm_smsr.501.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = SUM
+		OR = {
+			has_faction = mal_totalitarian_faction
+			has_faction = mal_reformist_faction
+			has_faction = mal_democrat_faction
+		}
+		NOT = {
+			OR = {
+				government = socialist_republic
+				government = socialist_state
+				government = dictatorship
+				government = technocrat_dictatorship
+				government = presidental_dictatorship
+			}
+		}
+	}
+	
+	option = {
+		name = sm_smsr.500.a
+		remove_faction = mal_totalitarian_faction
+		remove_faction = mal_reformist_faction
+		remove_faction = mal_democrat_faction
+	}
+}
+
+# Новая версия - победа ТС
+#country_event = {
+#	id = sm_smsr.150
+#	title = sm_smsr.150.t
+#	desc = sm_smsr.150.d
+#	picture = WARCAMP_eventPicture
+#	
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		ROOT = {
+#			tag = DRA
+#			is_subject = no
+#			NOT = { has_global_flag = sm_dra_won_smsr_war }
+#			has_country_flag = DRA_winning_malishian_war
+#		}
+#		FROM = {
+#			tag = DMF
+#			has_ruler = "димик5"
+#			is_subject = no
+#		}
+#	}
+#	
+#	option = {
+#		name = sm_smsr.150.a
+#		add_prestige = 25
+#		add_stability = 1
+#		country_event = {
+#			id = sm_smsr.101
+#		}
+#		set_global_flag = sm_dra_won_smsr_war
+#	}
+#}
+#
+# Для ДМФСР
+#country_event = {
+#	id = sm_smsr.151
+#	title = sm_smsr.151.t
+#	desc = sm_smsr.151.d
+#	picture = WARCAMP_eventPicture
+#	
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		tag = DMF
+#		is_subject = no
+#		NOT = { has_global_flag = sm_dmf_won_smsr_war }
+#		FROM = {
+#			tag = DRA
+#			is_subject = no
+#		}
+#		has_country_flag = DMF_winning_malishian_war
+#	}
+#
+#	
+#	option = {
+#		name = sm_smsr.151.a
+#		add_prestige = 50
+#		add_stability = 1
+#		DRA = {
+#			every_owned_province = {
+#				limit = {
+#					culture = malishian
+#				}
+#				cede_province = DMF
+#			}
+#		}
+#		set_global_flag = sm_dmf_won_smsr_war
+#	}
+#}
+#
+# Ивент, позволяющий ТС аннексировать ДМФСР.
+# Для ДМФСР
+#country_event = {
+#	id = sm_smsr.100
+#	title = sm_smsr.100.t
+#	desc = sm_smsr.100.d
+#	picture = WARCAMP_eventPicture
+#
+#	is_fire_only_once = yes
+#	major = yes
+#
+#	trigger = {
+#		is_subject = no
+#		tag = DMF
+#		has_ruler = "димик5"
+#		war_with = DRA
+#		NOT = { war_score = -55 }
+#		NOT = { has_global_flag = event_sm_smsr_100 }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 24
+#
+#		modifier = {
+#			factor = 0.5
+#			war_exhaustion = 5
+#		}
+#
+#		modifier = {
+#			factor = 0.75
+#			has_wartaxes = yes
+#		}
+#
+#		modifier = {
+#			factor = 0.25
+#			NOT = { war_score = -50 }
+#		}
+#	}
+#
+#	option = {
+#		name = OK
+#		set_global_flag = event_sm_smsr_100
+#		DRA = {
+#			country_event = {
+#				id = sm_smsr.101
+#			}
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = sm_smsr.101
+#	title = sm_smsr.101.t
+#	desc = sm_smsr.101.d
+#	picture = WARCAMP_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	major = yes
+#
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = sm_smsr.101.a
+#		inherit = DMF
+#	}
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = sm_smsr.101.b
+#		vassalize = DMF
+#	}
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = sm_smsr.101.c
+		#add_opinion = {
+		#	who = DMF
+		#	}
+#	}
+#}	
+#
+#country_event = {
+#	id = sm_smsr.102
+#	title = sm_smsr.102.t
+#	desc = sm_smsr.102.d
+#	picture = COUNTRY_COLLAPSE_eventPicture
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = DRA
+#		FROM = { tag = DMF }
+#		DMF = {
+#			has_ruler = "димик5"
+#			war_with = DRA
+#			NOT = { war_score = -25 }
+#			ai = yes
+#		}	
+#		NOT = { has_global_flag = event_sm_smsr_100 }
+#	}
+#	
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = sm_smsr.101.a
+#		white_peace = DMF
+#		inherit = DMF
+#		set_global_flag = event_sm_smsr_100
+#	}
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = sm_smsr.101.b
+#		white_peace = DMF
+#		vassalize = DMF
+#		set_global_flag = event_sm_smsr_100
+#	}
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = sm_smsr.101.c
+#		set_global_flag = event_sm_smsr_100
+#	}
+#}
+#
+# Ограничение на 75 варскора
+#country_event = {
+#	id = sm_smsr.155
+#	title = sm_smsr.155.t
+#	desc = sm_smsr.155.d
+#	picture = WARCAMP_eventPicture
+#	
+#	trigger = {
+#		OR = {
+#			AND = {
+#				tag = DRA
+#				war_with = DMF
+#				war_score_against = {
+#					who = DMF
+#					value = 75
+#				}
+#			}
+#			AND = {
+#				tag = DMF
+#				war_with = DRA
+#				war_score_against = {
+#					who = DRA
+#					value = 75
+#				}
+#			}
+#		}
+#		stability = 0
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	option = {
+#		name = sm_smsr.155.a
+#		add_prestige = 5
+#		if = {
+#			limit = {
+#				tag = DRA
+#			}
+#			set_country_flag = DRA_winning_malishian_war
+#		}
+#		if = {
+#			limit = {
+#				tag = DMF
+#			}
+#			set_country_flag = DMF_winning_malishian_war
+#		}
+#		custom_tooltip = sm_smsr.155.tt
+#	}
+#}
+
+country_event = {
+	id = sm_smsr.900
+	title = sm_smsr.900.t
+	desc = sm_smsr.900.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = SUM
+		has_country_modifier = SUM_isolation
+		any_country = {
+			war_with = SUM
+			is_great_power = yes
+			OR = {
+				war_score_against = {
+					who = SUM
+					value = 10
+				}
+				war_score_against = {
+					who = SUM
+					value = -10
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = sm_smsr.900.a
+		remove_country_modifier = SUM_isolation
+	}
+}

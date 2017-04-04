@@ -1,0 +1,52 @@
+########################################
+# Ивенты Севлефа
+########################################
+namespace = flavor_SVL
+
+# Вассализация Фонксом, конец двоевластия
+country_event = {
+	id = flavor_SVL.1
+	title = sm_ede.150.t
+	desc = sm_ede.150.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SVL
+		is_subject = no
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = sm_ede.150.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			set_country_flag = ellar_voluntary_vassal
+		#	change_government = ...
+		}
+		SMF = {
+			vassalize = SVL
+			add_prestige = 2
+		}
+		add_stability = -1
+		remove_country_modifier = SVL_dualism
+		capital_scope = {
+			noble_rebels = 1
+		}
+	}
+	option = {
+		name = sm_ede.150.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -1
+		add_dip_power = -100
+	}
+}

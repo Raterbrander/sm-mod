@@ -1,0 +1,18 @@
+namespace = sm_trade_goods
+
+province_event = {
+	id = sm_trade_goods.1
+	title = sm_trade_goods.1.t
+	desc = sm_trade_goods.1.d
+	picture = INDUSTRY_eventPicture
+	
+	trigger = {
+		NOT = { trade_goods = clothes }
+		has_building = textile
+	}
+	
+	option = {
+		name = sm_trade_goods.1.t
+		change_trade_goods = clothes
+	}
+}

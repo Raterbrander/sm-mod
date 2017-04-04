@@ -1,0 +1,214 @@
+namespace = flavor_asm
+
+normal_or_historical_nations = yes
+
+province_event = {
+	id = flavor_asm.1
+	title = flavor_asm.1.t
+	desc = flavor_asm.1.d
+	picture = KROSHELBURG_CITY_eventPicture
+	
+	trigger = {
+		province_id = 21
+		NOT = { has_province_flag = kroshelburg_founded }
+		is_year = 500
+		OR = {
+			culture = smesh_english
+			culture = anglish
+			culture = nordsmesh
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.1
+			is_year = 502
+		}
+		
+		modifier = {
+			factor = 0.01
+			is_year = 503
+		}
+	}
+	
+	option = {
+		name = flavor_asm.1.a
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+		set_province_flag = kroshelburg_founded
+		add_core = KRO
+	}
+}
+
+country_event = {
+	id = flavor_asm.2
+	title = flavor_asm.2.t
+	desc = flavor_asm.2.d
+	picture = CULTURE_eventPicture
+	
+	trigger = {
+		is_year = 500
+		NOT = {
+			any_province = { culture = smesh_english }
+		}
+		NOT = { has_global_flag = smesh_english_culture_appears }
+		any_owned_province = {
+			OR = {
+				culture = anglish
+				culture = nordsmesh
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 650
+		
+		modifier = {
+			factor = 0.5
+			any_country = {
+				OR = {
+					primary_culture = anglish
+					primary_culture = nordsmesh
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_province = {
+				OR = {
+					culture = anglish
+					culture = nordsmesh
+				}
+				development = 22
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_owned_province = {
+				OR = {
+					culture = anglish
+					culture = nordsmesh
+				}
+				development = 10
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_owned_province = {
+				OR = {
+					culture = anglish
+					culture = nordsmesh
+				}
+				development = 16
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_asm.1.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = anglish
+					culture = nordsmesh
+				}
+			}
+			change_culture = smesh_english
+			hidden_effect = {
+				if = {
+					limit = {
+						is_core = ANG
+						NOT = { exists = ANG }
+					}
+					remove_core = ANG
+				}
+				if = {
+					limit = {
+						is_core = NSM
+						NOT = { exists = NSM }
+					}
+					remove_core = NSM
+				}
+			}
+		}
+		set_global_flag = smesh_english_culture_appears
+	}
+}
+
+province_event = {
+	id = flavor_asm.3
+	title = flavor_asm.3.t
+	desc = flavor_asm.3.d
+	picture = CULTURE_eventPicture
+	
+	trigger = {
+		has_global_flag = smesh_english_culture_appears
+		OR = {
+			culture = anglish
+			culture = nordsmesh
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.75
+			any_country = {
+				primary_culture = smesh_english
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			development = 22
+		}
+		
+		modifier = {
+			factor = 0.75
+			development = 10
+		}
+		
+		modifier = {
+			factor = 0.75
+			development = 12
+		}
+		
+		modifier = {
+			factor = 0.7
+			development = 16
+		}
+		
+		modifier = {
+			factor = 0.65
+			development = 18
+		}
+	}
+	
+	option = {
+		name = flavor_asm.1.a
+		change_culture = smesh_english
+		hidden_effect = {
+			if = {
+				limit = {
+					is_core = ANG
+					NOT = { exists = ANG }
+				}
+				remove_core = ANG
+			}
+			if = {
+				limit = {
+					is_core = NSM
+					NOT = { exists = NSM }
+				}
+				remove_core = NSM
+			}
+		}
+	}
+}

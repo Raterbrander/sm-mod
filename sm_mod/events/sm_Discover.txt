@@ -1,0 +1,335 @@
+##########################################################################
+# »——À≈ƒŒ¬¿Õ»ﬂ
+##########################################################################
+
+namespace = sm_discover
+
+#country_event = {
+#	id = sm_discover.1
+#	title = sm_discover.1.t
+#	desc = sm_discover.1.d
+#	picture = HARBOUR_eventPicture
+#	
+	#is_triggered_only = yes
+#	fire_only_once = yes
+	#hidden = yes
+#	
+#	trigger = {
+#		start_date = 2013.7.15
+#		OR = {
+#			technology_group = domin_group
+#			technology_group = high_domin
+#			technology_group = rolevik
+#			technology_group = southern
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 4
+#		
+#		modifier = {	
+#			factor = 0.25
+#			ai = no
+#		}
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#			discovered_by_domin_rolevik_southern_2013_7 = {
+#				ROOT = {
+#					discover_province = PREV
+#				}
+#			}
+#			every_country = {
+#				limit = {
+#					OR = {
+#						technology_group = continental
+#						technology_group = imperial_group
+#					}
+#				}
+#				every_owned_province = {
+#					limit = {
+#						OR = {
+#							development = 6 # ?
+#							is_capital = yes
+#							has_port = yes
+#						}
+#					}
+#					ROOT = {
+#						discover_province = PREV
+#					}
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = sm_discover.1.a
+#		add_dip_power = 10
+#		add_prestige = 1
+#	}
+#}
+
+country_event = {
+	id = sm_discover.2
+	title = sm_discover.2.t
+	desc = sm_discover.2.d
+	picture = MERCHANTS_TALKING_eventPicture # WESTERNISATION_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_global_flag = chaepit_discovered }
+		OR = {
+			technology_group = continental
+			technology_group = ellar_tech
+		}
+		OR = {
+			is_year = 565
+			chaepit_region = {
+				has_discovered = ROOT
+			}
+		}
+		CHT = {
+			owns = 293
+			is_subject = no
+		}
+		capital_scope = {
+			NOT = { continent = malishian_island }
+		}
+		num_of_ports = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		
+		modifier = {
+			factor = 1.5
+			technology_group = ellar_tech
+		}
+	}
+	
+	option = {
+		name = sm_discover.2.a
+		if = {
+			limit = {
+				NOT = { has_discovered = 293 }
+			}
+			discover_province = 293
+		}
+		if = {
+			limit = {
+				NOT = { has_discovered = 403 }
+			}
+			discover_province = 403
+		}
+		if = {
+			limit = {
+				NOT = { has_discovered = 1286 }
+			}
+			discover_province = 1286
+		}
+		add_prestige = 10
+		hidden_effect = {
+			set_global_flag = chaepit_discovered
+			CHT = {
+				country_event = {
+					id = sm_discover.3
+					#days = 30
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_discover.3
+	title = sm_discover.3.t
+	desc = sm_discover.3.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_discover.3.a
+		FROM = {
+			capital_scope = {
+				CHT = { discover_province = PREV }
+			}
+		}
+		add_country_modifier = {
+			name = chaepit_continental_wind
+			duration = -1
+		}
+		set_country_flag = discovered_by_continentals
+	}
+}
+
+country_event = {
+	id = sm_discover.4
+	title = sm_discover.4.t
+	desc = sm_discover.4.d
+	picture = MERCHANTS_TALKING_eventPicture # WESTERNISATION_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_global_flag = utenia_discovered }
+		OR = {
+			AND = {
+				is_year = 500
+				technology_group = ellar_tech
+			}
+			AND = {
+				is_year = 600
+				technology_group = continental
+			}
+			AND = {
+				OR = {
+					technology_group = continental
+					technology_group = ellar_tech
+					technology_group = amian
+				}
+				utenia_region = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		UTN = { is_subject = no }
+		capital_scope = {
+			NOT = { continent = malishian_island }
+		}
+		num_of_ports = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = sm_discover.2.a
+		UTN = {
+			capital_scope = {
+				ROOT = { discover_province = PREV }
+			}
+		}
+		add_prestige = 10
+		hidden_effect = {
+			set_global_flag = utenia_discovered
+			UTN = {
+				country_event = {
+					id = sm_discover.5
+					#days = 30
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_discover.5
+	title = sm_discover.5.t
+	desc = sm_discover.5.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_discover.5.a
+		FROM = {
+			capital_scope = {
+				UTN = { discover_province = PREV }
+			}
+		}
+		add_country_modifier = {
+			name = chaepit_continental_wind
+			duration = -1
+		}
+		set_country_flag = discovered_by_continentals
+	}
+}
+
+country_event = {
+	id = sm_discover.6
+	title = sm_discover.6.t
+	desc = sm_discover.6.d
+	picture = LATVIA_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		technology_group = continental
+		num_of_owned_provinces_with = {
+			superregion = latvia_superregion
+			value = 16
+		}
+		OR = {
+			is_year = 700
+			adm_tech = 15
+			dip_tech = 15
+			mil_tech = 15
+		}
+		NOT = { has_global_flag = latvia_discovered_by_continentals }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		
+		modifier = {
+			factor = 0.75
+			num_of_owned_provinces_with = {
+				superregion = latvia_superregion
+				value = 21
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			num_of_owned_provinces_with = {
+				superregion = latvia_superregion
+				value = 30
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			northern_latvia_region = { type = all owned_by = ROOT }
+			southern_latvia_region = { type = all owned_by = ROOT }
+		}
+	}
+	
+	option = {
+		name = sm_discover.3.a
+		add_prestige = 10
+		hidden_effect = {
+			set_global_flag = latvia_discovered_by_continentals
+			every_province = {
+				limit = {
+					superregion = latvia_superregion
+					development = 6
+				}
+				every_country = {
+					limit = {
+						OR = {
+							technology_group = continental
+							technology_group = amian # ?
+							culture_group = yellow_group
+							culture_group = siniusdan_group
+							AND = {
+								capital_scope = { continent = kronos }
+								NOT = { technology_group = old_kronossian_tech }
+							}
+							#culture_group = old_amian_group
+							capital_scope = { continent = malishian_island }
+							capital_scope = { continent = south_main }
+							capital_scope = { province_id = 420 }
+						}
+					}
+					discover_province = PREV
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+namespace = sm_flavorORD
+normal_or_historical_nations = yes
+
+country_event = {
+	id = sm_flavorORD.1
+	title = sm_flavorORD.1.t
+	desc = sm_flavorORD.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			start_date = 2013.6.26
+			start_date = 2013.6.27
+		}
+		tag = ORD
+		is_subject_of = DRA
+		stability = 0
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		
+		modifier = {
+			factor = 0.5
+			NOT = {
+				has_opinion = {
+					who = DRA
+					value = 0
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = sm_flavorORD.1.a
+		ai_chance = { factor = 30 }
+		DRA = {
+			free_vassal = ORD
+			add_casus_belli = {
+				target = ORD
+				type = cb_annex
+				months = 120
+			}
+			add_opinion = {
+				who = ORD
+				modifier = opinion_order_ts_1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				is_core = DRA
+			}
+			remove_core = DRA
+		}
+		add_stability = -1
+		if = {
+			limit = {
+				war_with = GRU
+				war_with = USS
+			}
+			white_peace = USS
+		}
+	}
+	
+	option = {
+		name = sm_flavorORD.1.b
+		ai_chance = { factor = 30 }
+		trigger = {
+			war_with = GRU
+			war_with = USS
+		}
+		DRA = {
+			free_vassal = ORD
+			add_casus_belli = {
+				target = ORD
+				type = cb_annex
+				months = 120
+			}
+			add_opinion = {
+				who = ORD
+				modifier = opinion_order_ts_1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				is_core = DRA
+			}
+			remove_core = DRA
+		}
+		add_stability = -1
+	}
+	
+	option = {
+		name = sm_flavorORD.1.c
+		ai_chance = { factor = 40 }
+		add_prestige = -15
+		add_liberty_desire = 10
+		DRA = {
+			add_opinion = {
+				who = ORD
+				modifier = opinion_order_ts_2
+			}
+		}
+	}
+}

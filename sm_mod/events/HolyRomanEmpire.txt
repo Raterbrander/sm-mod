@@ -1,0 +1,18 @@
+# On Action: Emperor from same dynasty
+country_event = {
+	id = 900
+	title = "EVTNAME900"
+	desc = "EVTDESC900_01"
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	
+	option = {
+		name = "EVTOPTA900"
+		add_imperial_influence = 10
+	}
+}

@@ -1,0 +1,1096 @@
+##########################################################################
+#	Ивенты ИАМ
+##########################################################################
+# 1 - начало анархии
+# 100 и 101 - лишение членов прав
+# 102 и 103 - их присоединение
+# 150 и 151 - лишение статуса "курфюста"
+##########################################################################
+namespace = sm_ame
+normal_or_historical_nations = yes
+
+country_event = {
+	id = sm_ame.1
+	title = sm_ame.1.t
+	desc = sm_ame.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = eam_anarchy }
+		OR = {
+			is_emperor = yes
+			is_elector = yes
+		}
+		is_year = 460
+		NOT = {
+			OR = {
+				hre_reform_level = 2
+				emperor = { imperial_influence = 35 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			emperor = {
+				NOT = { imperial_influence = 25 }
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			emperor = {
+				NOT = { imperial_influence = 10 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.1
+			NOT = {
+				OR = {
+					technology_group = amian
+					government = AM_clan
+					government = AM_clan_rep
+					primary_culture = amian
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = sm_ame.1.a
+		set_global_flag = eam_anarchy
+	}
+}
+
+country_event = {
+	id = sm_ame.2
+	title = sm_ame.2.t
+	desc = sm_ame.2.d
+	picture = HRE_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = janv_s_in_progress }
+		NOT = { has_country_flag = had_janv_s_event }
+		is_elector = yes
+		is_emperor = no
+		has_global_flag = eam_anarchy
+		NOT = { hre_reform_level = 1 }
+		emperor = {
+			NOT = {
+				reverse_has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		
+		modifier = {
+			factor = 0.75
+			HRU = { is_emperor = yes }
+		}
+		
+		modifier = {
+			factor = 0.75
+			SMF = {
+				is_elector = yes
+				NOT = {
+					has_opinion = {
+						who = emperor
+						value = 25
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			NOT = { imperial_influence = 10 }
+		}
+		
+		modifier = {
+			factor = 0.9
+			NOT = { imperial_influence = 1 }
+		}
+	}
+	
+	immediate = {
+		set_country_flag = had_janv_s_event
+	}
+	
+	option = {
+		name = sm_ame.2.a
+		ai_chance = {
+			factor = 90
+		}
+		add_adm_power = -25
+		add_dip_power = -50
+		add_prestige = 5
+		every_country = {
+			limit = {
+				is_emperor = no
+				OR = {
+					is_elector = yes
+					primary_culture = amian
+					technology_group = amian
+					religion = ameism
+				}
+				NOT = { has_country_flag = had_janv_s_event }
+			}
+			country_event = {
+				id = sm_ame.3
+				days = 3
+			}
+		}
+		emperor = {
+			country_event = {
+				id = sm_ame.4
+			}
+		}
+		set_global_flag = janv_s_in_progress
+		set_country_flag = amian_fraction_in_s
+		set_country_flag = janv_s_org
+	}
+	
+	option = {
+		name = sm_ame.2.b
+		ai_chance = {
+			factor = 10
+		}
+		add_prestige = -5
+		clr_country_flag = had_janv_s_event
+	}
+}
+
+country_event = {
+	id = sm_ame.3
+	title = sm_ame.3.t
+	desc = sm_ame.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = had_janv_s_event
+	}
+	
+	option = {
+		name = sm_ame.3.a
+		ai_chance = {
+			factor = 55
+		}
+		set_country_flag = amian_fraction_in_s
+		add_prestige = 1
+	}
+	
+	option = {
+		name = sm_ame.3.b
+		ai_chance = {
+			factor = 45
+		}
+		add_prestige = -1
+	}
+}
+
+country_event = {
+	id = sm_ame.4
+	title = sm_ame.4.t
+	desc = sm_ame.4.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.4.a
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = sm_ame.5
+	title = sm_ame.5.t
+	desc = sm_ame.5.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = janv_s_in_progress
+		NOT = { has_global_flag = janv_s_started }
+		has_country_flag = janv_s_org
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	option = {
+		name = sm_ame.5.a
+		set_global_flag = janv_s_started
+		emperor = {
+			country_event = {
+				id = sm_ame.10
+				days = 14
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						calc_true_if = {
+							has_country_flag = amian_fraction_in_s
+							amount = 5
+						}
+					}
+				}
+				random_list = {
+					85 = {
+						country_event = {
+							id = sm_ame.6
+							days = 3
+						}
+					}
+					15 = {
+						country_event = {
+							id = sm_ame.7
+							days = 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					calc_true_if = {
+						has_country_flag = amian_fraction_in_s
+						amount = 5
+					}
+				}
+				random_list = {
+					75 = {
+						country_event = {
+							id = sm_ame.7
+							days = 3
+						}
+					}
+					25 = {
+						country_event = {
+							id = sm_ame.6
+							days = 3
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.6
+	title = sm_ame.6.t
+	desc = sm_ame.6.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = janv_s_started
+		#has_country_flag = janv_s_org
+		#NOT = {
+		#	calc_true_if = {
+		#		has_country_flag = amian_fraction_in_s
+		#		amount = 5
+		#	}
+		#}
+	}
+	
+	immediate = {
+		set_global_flag = janv_s_fail
+	}
+	
+	#mean_time_to_happen = {
+	#	days = 7
+		#
+		#modifier = {
+		#	factor = 10
+		#	has_country_flag = had_bzh_event
+		#}
+	#}
+	
+	#option = {
+	#	name = sm_ame.6.a
+	#	ai_chance = {
+	#		factor = 60
+	#	}
+	#	country_event = { id = sm_ame.50 }
+	#	add_prestige = -5
+	#}
+	
+	option = {
+		name = sm_ame.6.b
+		#ai_chance = {
+		#	factor = 40
+		#}
+		add_prestige = -5
+		#set_country_flag = had_bzh_event
+		hidden_effect = {
+			random_list = {
+				41 = {
+					country_event = {
+						id = sm_ame.17
+						days = 7
+					}
+				}
+				42 = {
+					country_event = {
+						id = sm_ame.18
+						days = 10
+					}
+				}
+				11 = {
+					country_event = {
+						id = sm_ame.16
+						days = 7
+					}
+				}
+				6 = {
+					country_event = {
+						id = sm_ame.13
+						days = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.7
+	title = sm_ame.7.t
+	desc = sm_ame.7.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	#major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = janv_s_started
+		#has_country_flag = janv_s_org
+		#calc_true_if = {
+		#	has_country_flag = amian_fraction_in_s
+		#	amount = 5
+		#}
+	}
+	#
+	#mean_time_to_happen = {
+	#	days = 3
+	#}
+	
+	immediate = {
+		set_global_flag = janv_s_sucess
+	}
+	
+	option = {
+		name = sm_ame.7.a
+		add_prestige = 5
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = janv_s_emperor_joined }
+				random_list = {
+					15 = {
+						country_event = {
+							id = sm_ame.17
+							days = 7
+						}
+					}
+					25 = {
+						country_event = {
+							id = sm_ame.18
+							days = 10
+						}
+					}
+					30 = {
+						country_event = {
+							id = sm_ame.16
+							days = 7
+						}
+					}
+					30 = {
+						country_event = {
+							id = sm_ame.13
+							days = 10
+						}
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = janv_s_emperor_joined } }
+				random_list = {
+					20 = {
+						country_event = {
+							id = sm_ame.17
+							days = 7
+						}
+					}
+					35 = {
+						country_event = {
+							id = sm_ame.18
+							days = 10
+						}
+					}
+					35 = {
+						country_event = {
+							id = sm_ame.16
+							days = 7
+						}
+					}
+					10 = {
+						country_event = {
+							id = sm_ame.13
+							days = 10
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.10
+	title = sm_ame.10.t
+	desc = sm_ame.10.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.10.join
+		ai_chance = {
+			factor = 10
+		}
+		set_global_flag = janv_s_emperor_joined
+	}
+	
+	option = {
+		name = sm_ame.10.ignore
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = sm_ame.10.razgon1
+		ai_chance = {
+			factor = 45
+		}
+		country_event = {
+			id = sm_ame.12
+		}
+		add_stability = 1
+	}
+	
+	option = {
+		name = sm_ame.10.razgon2
+		ai_chance = {
+			factor = 45
+		}
+		country_event = {
+			id = sm_ame.11
+		}
+		add_stability = 1
+	}
+}
+
+country_event = {
+	id = sm_ame.11
+	title = sm_ame.11.t
+	desc = sm_ame.11.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_ame.11.a
+		add_prestige = -10
+		every_country = {
+			limit = {
+				has_country_flag = amian_fraction_in_s
+			}
+			random_list = {
+				70 = { kill_ruler = yes }
+				30 = { }
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = janv_s_org }
+				country_event = {
+					id = sm_ame.25
+					days = 3
+				}
+			}
+			eam_js_clean_up = yes
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.12
+	title = sm_ame.11.t
+	desc = sm_ame.12.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_ame.11.a
+		add_prestige = -10
+		every_country = {
+			limit = {
+				has_country_flag = amian_fraction_in_s
+			}
+			random_list = {
+				15 = { kill_ruler = yes }
+				85 = { }
+			}
+		}
+		hidden_effect = {
+			eam_js_clean_up = yes
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.13
+	title = sm_ame.14.t
+	desc = sm_ame.13.d
+	picture = HRE_eventPicture
+	
+	trigger = {
+		has_global_flag = janv_s_started
+		has_country_flag = janv_s_org
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.25
+			has_global_flag = janv_s_emperor_joined
+		}
+	}
+	
+	option = {
+		name = sm_ame.13.a
+		ai_chance = {
+			factor = 35
+		}
+		country_event = {
+			id = sm_ame.14
+		}
+	}
+	
+	option = {
+		name = sm_ame.16.b
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = sm_ame.13.b
+		ai_chance = {
+			factor = 30
+		}
+		#custom_tooltip = janv_s_finished_tooltip
+		country_event = {
+			id = sm_ame.15
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.14
+	title = sm_ame.14.t
+	desc = sm_ame.14.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = janv_s_finished
+			eam_js_clean_up = yes
+		}
+	}
+	
+	option = {
+		name = sm_ame.14.a
+		emperor = {
+			add_imperial_influence = 90
+			add_stability = 1
+		}
+		add_prestige = 10
+	}
+}
+
+country_event = {
+	id = sm_ame.15
+	title = sm_ame.15.t
+	desc = sm_ame.15.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			eam_js_clean_up = yes
+		}
+	}
+	
+	option = {
+		name = sm_ame.15.a
+		add_prestige = -15
+	}
+}
+
+country_event = {
+	id = sm_ame.16
+	title = sm_ame.16.t
+	desc = sm_ame.16.d
+	picture = HRE_eventPicture
+	
+	trigger = {
+		has_global_flag = janv_s_started
+		has_country_flag = janv_s_org
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = sm_ame.16.a
+		ai_chance = {
+			factor = 33
+		}
+		country_event = { id = sm_ame.76 }
+	}
+	
+	option = {
+		name = sm_ame.16.b
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = sm_ame.13.b
+		ai_chance = {
+			factor = 33
+		}
+		#custom_tooltip = janv_s_finished_tooltip
+		country_event = {
+			id = sm_ame.15
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.17
+	title = sm_ame.17.t
+	desc = sm_ame.17.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.17.a
+		eam_js_clean_up = yes
+	}
+}
+
+country_event = {
+	id = sm_ame.18
+	title = sm_ame.18.t
+	desc = sm_ame.18.d
+	picture = HRE_eventPicture
+	
+	trigger = {
+		has_global_flag = janv_s_started
+		has_country_flag = janv_s_org
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = sm_ame.18.a
+		ai_chance = {
+			factor = 40
+		}
+		country_event = { id = sm_ame.20 }
+	}
+	
+	option = {
+		name = sm_ame.16.b
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = sm_ame.13.b
+		ai_chance = {
+			factor = 25
+		}
+		#custom_tooltip = janv_s_finished_tooltip
+		country_event = {
+			id = sm_ame.15
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.20
+	title = sm_ame.20.t
+	desc = sm_ame.20.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.17.a
+		dismantle_hre = yes
+		hidden_effect = {
+			eam_js_clean_up = yes
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.25
+	title = sm_ame.25.t
+	desc = sm_ame.25.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.25.a
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -10
+	}
+	
+	option = {
+		name = sm_ame.25.b
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			country_event = {
+				id = sm_ame.26
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.21
+	title = sm_ame.17.t
+	desc = sm_ame.17.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = janv_s_started
+		has_country_flag = janv_s_org
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		
+		modifier = {
+			factor = 0.5
+			has_global_flag = janv_s_fail
+		}
+	}
+	
+	option = {
+		name = sm_ame.17.a
+		eam_js_clean_up = yes
+	}
+}
+
+country_event = {
+	id = sm_ame.26
+	title = sm_ame.26.t
+	desc = sm_ame.26.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.17.a
+		dismantle_hre = yes
+	}
+}
+
+country_event = {
+	id = sm_ame.75
+	title = sm_ame.75.t
+	desc = sm_ame.75.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_ame.75.a
+		set_global_flag = am_confederacy
+	}
+}
+
+country_event = {
+	id = sm_ame.76
+	title = sm_ame.75.t
+	desc = sm_ame.76.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_ame.75.a
+		hidden_effect = {
+			set_global_flag = am_confederacy
+			eam_js_clean_up = yes
+			set_global_flag = janv_s_finished
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.100
+	title = sm_ame.100.t
+	desc = sm_ame.100.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sm_ame.100.a
+		add_prestige = 50
+	}
+}
+
+country_event = {
+	id = sm_ame.101
+	title = sm_ame.101.t
+	desc = sm_ame.101.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9074"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				will_back_next_reform = no
+			}			
+			
+		}
+		emperor = {
+			vassalize = ROOT
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9074"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				will_back_next_reform = yes
+			}			
+			
+		}
+		every_owned_province = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			add_claim = emperor
+		}
+		if = {
+			limit = { is_elector = yes }
+			elector = no
+		}
+		every_owned_province = {
+			set_in_empire = no
+		}
+		emperor = {
+			add_opinion = { who = ROOT modifier = opinion_left_empire }
+		}
+		add_opinion = { who = emperor modifier = opinion_united_empire }
+	}
+}
+
+
+country_event = {
+	id = sm_ame.102
+	title = sm_ame.102.t
+	desc = sm_ame.102.d
+	picture = HRE_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.100.a
+		change_tag = EAM
+		#add_country_modifier = {
+		#	name = "ame_state"
+		#	duration = -1
+		#}
+		every_province = {
+			limit = {
+				is_part_of_hre = yes
+				OR = {
+					owned_by = ROOT
+					owner = { is_neighbor_of = ROOT }
+				}
+				NOT = { is_core = ROOT }
+			}
+			add_core = emperor
+		}
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				num_of_cities = 1
+			}
+			country_event = { id = sm_ame.103 }
+		}
+		dismantle_hre = yes
+		set_government_rank = 3
+		add_adm_power = 250
+	}
+}
+
+country_event = {
+	id = sm_ame.103
+	title = sm_ame.103.t
+	desc = sm_ame.103.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.103.a
+		EAM = {
+			inherit = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = sm_ame.150
+	title = sm_ame.150.t
+	desc = sm_ame.150.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_global_flag = eam_anarchy
+		#NOT = { hre_reform_level = }
+		is_elector = no
+		FROM = {
+			is_elector = yes
+			is_emperor = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sm_ame.150.a
+		ai_chance = {
+			factor = 90
+		}
+		FROM = {
+			hidden_effect = {
+				country_event = { id = sm_ame.151 }
+			}
+			elector = no
+			add_opinion = {
+				who = ROOT
+				modifier = revoke_elector_opinion
+			}
+		}
+		elector = yes
+	}
+	
+	option = {
+		name = sm_ame.150.b
+		ai_chance = {
+			factor = 10
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = sm_save_elector
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = sm_ame.151
+	title = sm_ame.151.t
+	desc = sm_ame.151.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_ame.151.a
+		add_stability = -1
+		add_prestige = -10
+	}
+}

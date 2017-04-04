@@ -1,0 +1,180 @@
+namespace = sm_civic_events
+
+country_event = {
+	id = sm_civic_events.1
+	title = sm_civic_events.1.t
+	desc = sm_civic_events.1.d
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_civic_events.1.a
+		add_prestige = 2
+		add_country_modifier = {
+			name = sm_slavery_abolished
+			duration = -1
+		}
+		country_event = {
+			id = sm_civic_events.2
+		}
+	}
+}
+
+country_event = {
+	id = sm_civic_events.2
+	title = sm_civic_events.2.t
+	desc = sm_civic_events.2.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_civic_events.2.only_our_culture
+		set_country_flag = no_slavery_for_our_culture
+		every_owned_province = {
+			limit = {
+				has_owner_culture = yes
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+		}
+		every_owned_province = {
+			limit = {
+				has_owner_culture = no
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+			establish_serfdom_prov = yes
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = ESTATE_NOBLES_SLAVERY_ABOLISHED_2
+			loyalty = -15
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = sm_civic_events.2.all_serfdom
+		set_country_flag = no_slavery_for_our_culture
+		every_owned_province = {
+			limit = {
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+			establish_serfdom_prov = yes
+		}
+	}
+	
+	option = {
+		name = sm_civic_events.2.all_free
+		set_country_flag = no_slavery_for_our_culture
+		every_owned_province = {
+			limit = {
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = ESTATE_NOBLES_SLAVERY_ABOLISHED
+			loyalty = -25
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = sm_civic_events.3
+	title = sm_civic_events.2.t
+	desc = sm_civic_events.3.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	#is_triggered_only = yes
+	trigger = { always = no }
+	
+	option = {
+		name = sm_civic_events.2.all_serfdom
+		every_owned_province = {
+			limit = {
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+			establish_serfdom_prov = yes
+		}
+	}
+	
+	option = {
+		name = sm_civic_events.2.all_free
+		every_owned_province = {
+			limit = {
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = ESTATE_NOBLES_SLAVERY_ABOLISHED
+			loyalty = -25
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = sm_civic_events.2.plus_bro
+		every_owned_province = {
+			limit = {
+				has_building = slavery
+				has_owner_accepted_culture = yes
+			}
+			abolish_slavery_prov = yes
+		}
+		every_owned_province = {
+			limit = {
+				has_building = slavery
+			}
+			abolish_slavery_prov = yes
+			establish_serfdom_prov = yes
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = ESTATE_NOBLES_SLAVERY_ABOLISHED_2
+			loyalty = -25
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = sm_civic_events.4
+	title = sm_civic_events.4.t
+	desc = sm_civic_events.4.d
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_civic_events.2.all_free
+		add_country_modifier = {
+			name = sm_serfdom_abolished
+			duration = -1
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = ESTATE_NOBLES_SERFDOM_ABOLISHED
+			loyalty = -25
+			duration = 7300
+		}
+		every_owned_province = {
+			limit = {
+				has_building = serfdom
+			}
+			abolish_serfdom_prov = yes
+		}
+	}
+}

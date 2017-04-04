@@ -1,0 +1,460 @@
+namespace = ealegil
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = ealegil.1
+	title = ealegil.1.t
+	desc = ealegil.1.d
+	picture = RELIGIOUS_CONVERSION_eventPicture # CHURCH_ESTATE_UPSET_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			religion = helgarn
+		}
+		NOT = {
+			any_province = { has_province_flag = helgarn_spreading_in_latvia_center }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = ealegil.1.a
+		random_owned_province = {
+			limit = {
+				religion = helgarn
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_province_modifier = religious_zeal_at_conv }
+					}
+					add_permanent_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 9000
+					}
+				}
+				set_province_flag = helgarn_spreading_in_latvia_center
+			}
+			random_neighbor_province = {
+				change_religion = helgarn
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = ealegil.2
+	title = ealegil.2.t
+	desc = ealegil.2.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+	
+	trigger = {
+		OR = {
+			religion = alklvalondie
+			religion = ross_pagan
+		}
+		is_empty = no
+		any_province = {
+			has_province_flag = helgarn_spreading_in_latvia_center
+			religion = helgarn
+		}
+		any_neighbor_province = {
+			religion = helgarn
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 900
+		
+		#modifier = {
+		#	factor = 0.1
+		#	OR = {
+		#		culture = ealegil
+		#		culture_group = yellow_group
+		#	}
+		#}
+		
+		modifier = {
+			factor = 1.25
+			NOT = { superregion = latvia_superregion }
+		}
+		
+		modifier = {
+			factor = 0.75
+			region = northern_latvia_region
+		}
+		
+		modifier = {
+			factor = 0.45
+			OR = {
+				area = north_latvia_area
+				province_id = 280
+				province_id = 284
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			owner = { has_country_modifier = antihelgarnist_laws }
+		}
+		
+		modifier = {
+			factor = 1.25
+			owner = { has_country_modifier = alklvalondie_reforms }
+		}
+		
+		modifier = {
+			factor = 10
+			is_capital = yes
+		}
+		
+		modifier = {
+			factor = 2
+			is_in_capital_area = yes
+			NOT = { province_id = 280 }
+		}
+		
+		modifier = {
+			factor = 1.25
+			religion = ross_pagan
+		}
+		
+		modifier = {
+			factor = 1.35
+			has_building = temple
+		}
+		
+		modifier = {
+			factor = 1.55
+			has_building = cathedral
+		}
+		
+		modifier = {
+			factor = 0.9
+			unrest = 5
+		}
+		
+		modifier = {
+			factor = 0.9
+			local_autonomy = 50
+		}
+		
+		modifier = {
+			factor = 2
+			has_missionary = yes
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		
+		modifier = {
+			factor = 10
+			is_year = 650
+		}
+		
+		modifier = {
+			factor = 0.5
+			all_neighbor_province = { religion = helgarn }
+		}
+	}
+	
+	option = {
+		name = ealegil.1.a
+		change_religion = helgarn
+		add_permanent_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+province_event = {
+	id = ealegil.3
+	title = ealegil.3.t
+	desc = ealegil.3.d
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		OR = {
+			culture = anarendilian
+			culture_group = yellow_group
+		}
+		any_neighbor_province = {
+			culture = ealegil
+		}
+		religion = helgarn
+		owner = {
+			NOT = { culture_group = yellow_group }
+		}
+		NOT = { is_year = 650 }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.1
+			culture_group = yellow_group
+		}
+		
+		modifier = {
+			factor = 0.25
+			OR = {
+				area = north_latvia_area
+				province_id = 280
+				province_id = 284
+			}
+		}
+	}
+	
+	option = {
+		name = ealegil.1.a
+		change_culture = ealegil
+	}
+}
+
+province_event = {
+	id = ealegil.4
+	title = ealegil.3.t
+	desc = ealegil.4.d
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		culture = ealegil
+		owner = {
+			primary_culture = anarendilian
+			religion = helgarn
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				area = north_latvia_area
+				province_id = 280
+				province_id = 284
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			is_in_capital_area = yes
+		}
+	}
+	
+	option = {
+		name = ealegil.4.a
+		change_culture = anarendilian
+	}
+}
+
+province_event = {
+	id = ealegil.5
+	title = ealegil.5.t
+	desc = ealegil.5.d
+	picture = HARBOUR_eventPicture
+	
+	trigger = {
+		NOT = { has_province_modifier = gervein_factories_northern_latvia }
+		NOT = { has_province_modifier = gervein_union_city }
+		any_neighbor_province = { has_province_modifier = gervein_factories_northern_latvia }
+		has_port = yes
+		OR = {
+			area = north_latvia_area
+			NOT = { is_year = 550 }
+		}
+		NOT = { is_year = 600 }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 5
+			owner = { has_country_modifier = antihelgarnist_laws }
+		}
+		
+		modifier = {
+			factor = 5
+			is_capital = yes
+		}
+	}
+	
+	option = {
+		name = ealegil.5.a
+		ai_chance = {
+			factor = 75
+			
+			modifier = {
+				factor = 0.5
+				owner = { has_country_modifier = antihelgarnist_laws }
+			}
+		}
+		add_permanent_province_modifier = {
+			name = gervein_factories_northern_latvia
+			duration = -1
+		}
+		owner = {
+			add_years_of_income = 0.075
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 25
+		}
+		name = ealegil.5.b
+	}
+}
+
+province_event = {
+	id = ealegil.6
+	title = ealegil.6.t
+	desc = ealegil.6.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	trigger = {
+		NOT = { has_province_flag = gervein_prov_dev }
+		has_province_modifier = gervein_factories_northern_latvia
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+	}
+	
+	option = {
+		name = ealegil.4.a
+		add_base_tax = 2
+		add_base_production = 1
+		add_base_manpower = 1
+		set_province_flag = gervein_prov_dev
+	}
+}
+
+country_event = {
+	id = ealegil.7
+	title = ealegil.7.t
+	desc = ealegil.7.d
+	picture = HARBOUR_eventPicture
+	
+	trigger = {
+		any_province = {
+			has_province_modifier = gervein_factories_northern_latvia
+			OR = {
+				culture = ealegil
+				culture_group = yellow_group
+			}
+		}
+		has_country_modifier = gervein_union_leader
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		#modifier = {
+		#	factor = 1.5
+		#	NOT = { has_province_flag = gervein_prov_dev }
+		#}
+		
+		modifier = {
+			factor = 0.5
+			any_country = {
+				has_country_modifier = antihelgarnist_laws
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 80
+		}
+		name = ealegil.7.a
+		hidden_effect = {
+			random_country = {
+				limit = {
+					any_owned_province = {
+						has_province_modifier = gervein_factories_northern_latvia
+						OR = {
+							culture = ealegil
+							culture_group = yellow_group
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_modifier = gervein_factories_northern_latvia
+						OR = {
+							culture = ealegil
+							culture_group = yellow_group
+						}
+					}
+					province_event = {
+						id = ealegil.8
+					}
+				}
+			}
+		}
+		add_prestige = 5
+		add_years_of_income = 0.05
+		add_dip_power = -50
+	}
+	
+	option = {
+		name = ealegil.7.b
+		ai_chance = {
+			factor = 20
+		}
+		add_prestige = -5
+	}
+}
+
+province_event = {
+	id = ealegil.8
+	title = ealegil.8.t
+	desc = ealegil.8.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ealegil.8.a
+		random_list = {
+			45 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			55 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+			}
+		}
+		remove_province_modifier = gervein_factories_northern_latvia
+		add_permanent_province_modifier = {
+			name = gervein_union_city
+			duration = -1
+		}
+	}
+}

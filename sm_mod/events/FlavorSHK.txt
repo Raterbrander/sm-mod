@@ -1,0 +1,109 @@
+namespace = flavor_shk
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_shk.1
+	title = flavor_shk.1.t
+	desc = flavor_shk.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SHK
+		is_subject = no
+		is_at_war = no
+		exists = ADN
+		NOT = { is_rival = ADN }
+		ADN = {
+			is_subject = no
+			NOT = { is_rival = SHK }
+			NOT = { has_country_flag = smeshiks_cooperation }
+		}
+		NOT = { alliance_with = ADN }
+		NOT = { is_year = 460 }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.01
+			is_year = 459
+		}
+	}
+	
+	option = {
+		name = flavor_shk.1.a
+		ai_chance = { factor = 75 }
+		add_dip_power = -50
+		ADN = {
+			country_event = {
+				id = flavor_shk.2
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_shk.1.b
+		ai_chance = { factor = 25 }
+		add_adm_power = 50
+	}
+}
+
+country_event = {
+	id = flavor_shk.2
+	title = flavor_shk.2.t
+	desc = flavor_shk.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = { set_country_flag = was_asked_by_smeshiks }
+	
+	option = {
+		name = flavor_shk.2.a
+		ai_chance = { factor = 75 }
+		country_event = { id = flavor_shk.3 }
+	}
+	
+	option = {
+		name = flavor_shk.2.b
+		reverse_add_opinion = {
+			who = SHK
+			modifier = opinion_confrontation_2
+		}
+	}
+}
+
+country_event = {
+	id = flavor_shk.3
+	title = flavor_shk.3.t
+	desc = flavor_shk.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = flavor_shk.3.a
+		create_alliance = SHK
+		every_owned_province = {
+			add_institution_embracement = {
+				which = "industrialisation"
+				value = 50
+			}
+		}
+		add_adm_power = 200
+		add_dip_power = 250
+		add_mil_power = 250
+		add_historical_friend = SHK
+		SHK = {
+			add_prestige = 5
+		}
+		set_country_flag = smeshiks_cooperation
+	}
+}

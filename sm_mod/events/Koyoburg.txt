@@ -1,0 +1,133 @@
+namespace = koyoburg
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = koyoburg.1
+	title = koyoburg.1.t
+	desc = koyoburg.1.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = KOY
+		NOT = { has_global_flag = koyoburg_division }
+		owns = 584
+		owns = 1102
+		owns = 1101
+		is_subject = no
+		is_at_war = no # ?
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				kill_units = {
+					who = ROOT
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = koyoburg.1.a
+		ai_chance = {
+			factor = 90
+		}
+		change_tag = KGE
+		hidden_effect = {
+			1102 = {
+				remove_core = ROOT
+				add_core = KHF
+			}
+			584 = {
+				remove_core = ROOT
+				add_core = KOG
+			}
+		}
+		release = KOG
+		release = KHF
+		KOG = {
+			define_ruler = {
+				name = "Вильгельм"
+				dynasty = "Койобург-Онрайнгарт"
+				adm = 2
+				dip = 1
+				mil = 4
+				age = 31
+				fixed = yes
+			}
+		}
+		KHF = {
+			define_ruler = {
+				name = "Франц"
+				dynasty = "Койобург-Хейнфас"
+				adm = 3
+				dip = 1
+				mil = 1
+				age = 40
+				fixed = yes
+			}
+		}
+	}
+	
+	option = {
+		name = koyoburg.1.b
+		ai_chance = {
+			factor = 10
+		}
+		random_list = {
+			50 = { }
+			50 = {
+				1102 = { cede_province = KHF }
+				hidden_effect = {
+					1102 = { add_core = KHF }
+					KHF = {
+						define_ruler = {
+							name = "Франц"
+							dynasty = "Койобург-Хейнфас"
+							adm = 3
+							dip = 1
+							mil = 1
+							age = 40
+							fixed = yes
+						}
+						set_ruler_flag = koyoburg_pretender
+						declare_war_with_cb = {
+							who = KOY
+							casus_belli = cb_annex
+						}
+					}
+				}
+			}
+		}
+		random_list = {
+			75 = { }
+			25 = {
+				584 = { cede_province = KOG }
+				hidden_effect = {
+					584 = { add_core = KOG }
+					KOG = {
+						define_ruler = {
+							name = "Вильгельм"
+							dynasty = "Койобург-Онрайнгарт"
+							adm = 2
+							dip = 1
+							mil = 4
+							age = 31
+							fixed = yes
+						}
+						set_ruler_flag = koyoburg_pretender
+						declare_war_with_cb = {
+							who = KOY
+							casus_belli = cb_annex
+						}
+					}
+				}
+			}
+		}
+	}
+}

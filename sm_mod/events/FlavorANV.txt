@@ -1,0 +1,30 @@
+namespace = flavor_anv
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_anv.1
+	title = flavor_anv.1.t
+	desc = flavor_anv.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ANV
+		dynasty = "Анвейк"
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_anv.1.a
+		add_prestige = 10
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}

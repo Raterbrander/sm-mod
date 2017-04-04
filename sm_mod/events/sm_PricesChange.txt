@@ -1,0 +1,450 @@
+namespace = sm_prices
+
+country_event = {
+	id = sm_prices.1
+	title = sm_prices.1.t
+	desc = sm_prices.1.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		start_date = 2013.6.26
+		any_owned_province = {
+			trade_goods = oil
+		}
+		NOT = { has_global_flag = oil_event_1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_global_flag = oil_event_1
+	}
+	
+	option = {
+		name = sm_prices.1.a
+		change_price = {
+			trade_goods = oil
+			key = PGW_OIL
+			value = 0.5
+			duration = 2738
+		}
+		add_years_of_income = 0.35
+		#add_prestige = 5
+		random_owned_province = {
+			limit = { trade_goods = oil }
+			add_base_production = 1 # 2
+			#add_base_tax = 1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.2
+	title = sm_prices.2.t
+	desc = sm_prices.2.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_prices.2.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_TECH
+			value = -0.075
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.3
+	title = sm_prices.3.t
+	desc = sm_prices.3.d
+	picture = TRADEGOODS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		num_of_owned_provinces_with = {
+			region = central_lands_region
+			trade_goods = oil
+			value = 3
+		}
+		NOT = { has_global_flag = oil_event_3 }
+	}
+	
+	immediate = {
+		set_global_flag = oil_event_3
+	}
+	
+	option = {
+		name = sm_prices.3.a
+		ai_chance = {
+			factor = 45
+		}
+		add_years_of_income = 0.35
+		hidden_effect = {
+			country_event = {
+				id = sm_prices.4
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sm_prices.3.b
+		ai_chance = {
+			factor = 55
+		}
+		add_prestige = 1
+		add_country_modifier = {
+			name = sm_no_oil_trade
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.4
+	title = sm_prices.4.t
+	desc = sm_prices.4.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = sm_prices.4.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_FROM_CENTRAL_LANDS
+			value = -0.55
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.5
+	title = sm_prices.5.t
+	desc = sm_prices.5.d
+	picture = TRADEGOODS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = sm_uncivilized_nation }
+		technology_group = continental
+		NOT = { has_global_flag = alternate_energy_sources }
+		adm_tech = 9
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				trade_goods = oil
+				has_building = sm_rgo
+			}
+		}
+	}
+	
+	option = {
+		name = sm_prices.5.a
+		ai_chance = {
+			factor = 60
+			
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.15 }
+			}
+		}
+		add_prestige = 5
+		add_years_of_income = -0.1
+		custom_tooltip = sm_prices.5.tooltip
+		hidden_effect = {
+			set_global_flag = alternate_energy_sources
+			country_event = {
+				id = sm_prices.2
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sm_prices.5.b
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.6
+	title = sm_prices.6.t
+	desc = sm_prices.6.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_prices.1.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_TECH_1
+			value = -0.1
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.7
+	title = sm_prices.7.t
+	desc = sm_prices.7.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_global_flag = oil_prices_cosmoflot }
+		mil_tech = 12
+		technology_group = continental
+		NOT = { has_country_modifier = sm_uncivilized_nation }
+		num_of_artillery = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.75
+			mil_tech = 13
+		}
+		
+		modifier = {
+			factor = 0.05
+			mil_tech = 18
+		}
+		
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	option = {
+		name = sm_prices.7.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_COSMOFLOT
+			value = -0.2
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.8
+	title = sm_prices.8.t
+	desc = sm_prices.8.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_prices.1.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_NEW_SOURCES
+			value = -0.05
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.9
+	title = sm_prices.9.t
+	desc = sm_prices.9.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		num_of_owned_provinces_with = {
+			trade_goods = oil
+			has_building = sm_rgo
+			NOT = { has_province_flag = had_oil_rgo_expected }
+			value = 4
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = sm_prices.9.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_NEW_SOURCES_EXTENDED
+			value = -0.05
+			duration = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = oil
+					has_building = sm_rgo
+					NOT = { has_province_flag = had_oil_rgo_expected }
+				}
+				set_province_flag = had_oil_rgo_expected
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.10
+	title = sm_prices.10.t
+	desc = sm_prices.10.d
+	picture = TRADEGOODS_eventPicture
+	
+	trigger = {
+		technology_group = continental
+		NOT = { has_country_modifier = sm_uncivilized_nation }
+		num_of_cavalry = 24
+		any_country = {
+			technology_group = continental
+			NOT = { has_country_modifier = sm_uncivilized_nation }
+			num_of_cavalry = ROOT
+			war_with = ROOT
+		}
+		NOT = { has_global_flag = oil_for_global_war }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		
+		modifier = {
+			factor = 100
+			mil_tech = 12
+			NOT = { mil_tech = 21 }
+		}
+		
+		modifier = {
+			factor = 0.85
+			mil_tech = 22
+		}
+		
+		modifier = {
+			factor = 0.75
+			mil_tech = 27
+		}
+	}
+	
+	option = {
+		name = sm_prices.10.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_FOR_GLOBAL_CONFLICTS
+			value = 0.1
+			duration = -1
+		}
+		set_global_flag = oil_for_global_war
+	}
+}
+
+country_event = {
+	id = sm_prices.11
+	title = sm_prices.11.t
+	desc = sm_prices.11.d
+	picture = TRADEGOODS_eventPicture
+	
+	trigger = {
+		OR = {
+			technology_group = continental
+			any_owned_province = {
+				trade_goods = oil
+			}
+		}
+		has_global_flag = oil_for_global_war
+		NOT = {
+			any_country = {
+				technology_group = continental
+				is_at_war = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = sm_prices.1.a
+		change_price = {
+			trade_goods = oil
+			key = OIL_FOR_GLOBAL_CONFLICTS_2
+			value = -0.075
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = sm_prices.12
+	title = sm_prices.12.t
+	desc = sm_prices.12.d
+	picture = TRADEGOODS_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = gottardian_wood_flag }
+		num_of_owned_provinces_with = {
+			area = gottardia_area
+			trade_goods = wood
+			value = 4
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.5
+			tag = GTT
+		}
+	}
+	
+	option = {
+		name = sm_prices.12.a
+		change_price = {
+			trade_goods = wood
+			key = GOTTARDIAN_WOOD_PRICE
+			value = 0.1
+			duration = -1
+		}
+		set_global_flag = gottardian_wood_flag
+	}
+}

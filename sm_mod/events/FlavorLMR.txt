@@ -1,0 +1,39 @@
+namespace = flavor_LMR
+normal_or_historical_nations = yes
+
+#country_event = {
+#	id = flavor_LMR.1
+#	title = flavor_LMR.1.t
+#	desc = flavor_LMR.1.d
+#	picture = DEBATE_REPUBLICAN_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = flavor_LMR.1.a
+#		ai_chance = {
+#			factor = 70
+#			
+#			modifier = {
+#				factor = 0.25
+#				army_size = CH2
+#			}
+#		}
+#		338 = {
+#			remove_core = LMR
+#			cede_province = CH2
+#		}
+#		CH2 = {
+#			country_event = {
+#				id = flavor_CH2.6
+#			}
+#		}
+#		add_prestige = -10
+#	}
+#	
+#	option = {
+#		name = flavor_LMR.2.a
+#		ai_chance = { factor = 30 }
+#		add_prestige = 5
+#	}
+#}

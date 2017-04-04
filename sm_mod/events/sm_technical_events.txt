@@ -1,0 +1,98 @@
+namespace = sm_te
+
+#country_event = {
+#	id = sm_te.1
+#	title = sm_te.1.t
+#	desc = sm_te.1.d
+#	picture = DIPLOMACY_eventPicture
+#	
+#	is_triggered_only = yes
+#	trigger = {
+#	}
+#	
+#	option = {
+#		name = sm_te.1.a
+#	}
+#}
+
+country_event = {
+	id = sm_te.2
+	title = sm_te.2.t
+	desc = sm_te.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		normal_or_historical_nations = yes
+		tag = TND
+		ai = no
+	}
+	
+	option = {
+		name = sm_prices.1.a
+		random_list = {
+			55 = { set_country_flag = tonder_apathy }
+			45 = { }
+		}
+	}
+}
+
+#country_event = {
+#	id = sm_te.3
+#	title = sm_te.3.t
+#	desc = sm_te.3.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#	
+#	hidden = yes
+#	
+#	fire_only_once = yes
+#	
+#	is_triggered_only = yes
+#	trigger = {
+#		normal_or_historical_nations = yes
+#		tag = YAL
+#		NOT = { is_year = 990 }
+#	}
+#	
+#	option = {
+#		name = sm_te.3.a
+#		country_event = {
+#			id = civil_war.1
+#		}
+#	}
+#}
+
+
+country_event = {
+	id = sm_te.4
+	title = sm_te.4.t
+	desc = sm_te.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = GTT
+		has_country_modifier = maximillian_laws_gottardia
+	}
+	
+	option = {
+		name = sm_prices.1.a
+		every_owned_province = {
+			limit = {
+				units_in_province = 10
+			}
+			kill_units = {
+				who = ROOT
+				amount = 15
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+##########################################################################
+#	Ивенты для славен
+##########################################################################
+namespace = slavenian
+normal_or_historical_nations = yes
+
+# Ивенты набегов
+
+# Успешный набег
+country_event = {
+	id = slavenian.1
+	title = slavenian.1.t
+	desc = slavenian.1.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = slavenian.1.a
+		add_treasury = 50
+		hidden_effect = {
+			event_target:neighbor_to_raid = {
+				country_event = { id = slavenian.10 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = slavenian.2
+	title = slavenian.1.t
+	desc = slavenian.2.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = slavenian.1.a
+		add_treasury = 75
+		add_manpower = 0.5
+		hidden_effect = {
+			event_target:neighbor_to_raid = {
+				country_event = { id = slavenian.10 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = slavenian.3
+	title = slavenian.3.t
+	desc = slavenian.3.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = slavenian.3.a
+		hidden_effect = {
+			event_target:neighbor_to_raid = {
+				country_event = { id = slavenian.11 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = slavenian.10
+	title = slavenian.10.t
+	desc = slavenian.10.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = slavenian.10.a
+		add_opinion = {
+			who = FROM
+			modifier = sm_raid
+		}
+		add_casus_belli = {
+			target = FROM
+			type = cb_defeat_raiders
+			months = 12
+		}
+		random_list = {
+			75 = {
+				add_treasury = -50
+			}
+			20 = {
+				random_owned_province = {
+					limit = {
+						any_neighbor_province = {
+							owner = { is_tribal = yes }
+						}
+					}
+					add_base_tax = -1
+				}
+			}
+			5 = {
+				add_treasury = -50
+				random_owned_province = {
+					limit = {
+						any_neighbor_province = {
+							owner = { is_tribal = yes }
+						}
+					}
+					add_base_tax = -1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = slavenian.11
+	title = slavenian.11.t
+	desc = slavenian.11.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = slavenian.11.a
+		add_opinion = {
+			who = FROM
+			modifier = sm_raid
+		}
+		add_casus_belli = {
+			target = ROOT
+			type = cb_insult
+			months = 12
+		}
+		add_prestige = 1
+	}
+}

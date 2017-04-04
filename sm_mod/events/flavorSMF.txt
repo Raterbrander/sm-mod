@@ -1,0 +1,12 @@
+namespace = fonks
+
+normal_or_historical_nations = yes
+
+#country_event = {
+#	id = fonks.1
+#	title = fonks.1.title
+#	desc = fonks.1.desc
+#
+#	picture = GOOD_WITH_MONARCH_eventPicture
+#	
+#}

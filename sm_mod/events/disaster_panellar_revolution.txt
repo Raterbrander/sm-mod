@@ -1,0 +1,149 @@
+namespace = panellar_revolution
+
+country_event = {
+	id = panellar_revolution.1
+	title = panellar_revolution.1.t
+	desc = panellar_revolution.1.d
+	picture = REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			add_stability = -2
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 35
+		}
+		name = panellar_revolution.100.a # ќбратитьс¤ в бегство
+		country_event = { id = panellar_revolution.100 }
+	}
+	option = {
+		ai_chance = {
+			factor = 65
+		}
+		name = panellar_revolution.100.b # —окрушить м¤тежников!
+		capital_scope = {
+			spawn_rebels = {
+				type = panellar_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = panellar_rebels
+				size = 2
+				win = yes
+			}
+		}
+	}
+}
+	
+# —вержение правительства
+country_event = {
+	id = panellar_revolution.100
+	title = panellar_revolution.100.t
+	desc = panellar_revolution.100.d
+	picture = REVOLUTION_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = panellar_revolution.100.a
+		kill_ruler = yes
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = yes
+		}
+		change_government = people_provisional_government
+		define_ruler = {
+			adm = 2
+			dip = 0
+			mil = 2
+		}
+		add_stability = -1
+		if = {
+			limit = {
+				has_disaster = panellar_revolution
+			}
+			end_disaster = panellar_revolution
+		}
+		every_neighbor_country = {
+			limit = {
+				OR = {
+					AND = {
+						government = monarchy
+						NOT = {
+							OR = {
+								government = constitutional_monarchy
+								government = karteval_monarchic
+							}
+						}
+					}
+					government = theocracy
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = sm_ellar_danger
+			}
+		}
+		every_neighbor_country = {
+			limit = {
+				OR = {
+					government = people_provisional_government
+					has_country_modifier = ellar_national_leader
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = sm_ellar_revolutionary_country_too
+			}
+			hidden_effect = {
+				reverse_add_opinion = {
+					who = THIS
+					modifier = sm_ellar_revolutionary_country_too
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_country = {
+					vassal_of = ROOT
+				}
+			}
+			every_country = {
+				limit = {
+					vassal_of = ROOT
+				}
+				ROOT = { free_vassal = THIS }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = panellar_revolution.101
+	title = panellar_revolution.101.t
+	desc = panellar_revolution.101.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = panellar_revolution.101.a
+		add_stability = 3
+		add_prestige = 25
+		set_country_flag = had_panellar_revolution
+	}
+}

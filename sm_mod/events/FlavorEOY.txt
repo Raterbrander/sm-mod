@@ -1,0 +1,327 @@
+##########################################################################
+# Общие ивенты ИЖ
+#
+##########################################################################
+namespace = flavor_EOY
+normal_or_historical_nations = yes
+
+# Начало СМовского антикоммунизма
+country_event = {
+	id = flavor_EOY.1
+	title = flavor_EOY.1.t
+	desc = flavor_EOY.1.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = EOY
+		NOT = { government = socialist_republic }
+		NOT = { government = communist_dictatorship }
+		start_date = 2013.6.26
+		has_country_flag = EOE_anticommunist_campagn
+		NOT = { has_country_flag = had_fleoe1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = flavor_EOY.1.a
+		add_legitimacy = 5
+		add_prestige = -5
+		set_country_flag = had_fleoe1
+	}
+}
+
+# Девятый Тирхенд
+#country_event = {
+#	id = flavor_EOY.2
+#	title = flavor_EOY.1.t
+#	desc = flavor_EOY.1.d
+#	picture = RELIGION_eventPicture
+#	
+
+country_event = {
+	id = flavor_EOY.2
+	title = flavor_EOY.2.t
+	desc = flavor_EOY.2.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EOY
+		start_date = 2013.6.26
+		stability = 1
+		any_owned_province = {
+			culture = miscilian
+		}
+		any_owned_province = {
+			culture = mescil
+		}
+		NOT = { has_country_flag = miscilian_aferhengard }
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+		
+		modifier = {
+			factor = 0.75
+			religion = helgarn
+		}
+	}
+	
+	option = {
+		name = flavor_EOY.2.a
+		add_prestige = 5
+		random_owned_province = {
+			limit = {
+				culture = miscilian
+			}
+			change_culture = mescil
+			if = {
+				limit = {
+					NOT = { religion = helgarn }
+				}
+				change_religion = helgarn
+			}
+			random_list = {
+				34 = { add_base_tax = 1 }
+				22 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				9 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				9 = {
+					add_base_tax = 3
+					add_base_production = 2
+					add_base_manpower = 1
+				}
+				26 = {
+					add_base_tax = 1
+					add_base_production = 1
+				}
+			}
+		}
+		set_country_flag = miscilian_aferhengard
+	}
+}
+
+province_event = {
+	id = flavor_EOY.3
+	title = flavor_EOY.3.t
+	desc = flavor_EOY.3.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	trigger = {
+		owner = {
+			tag = EOY
+			has_country_flag = miscilian_aferhengard
+		}
+		culture = miscilian
+		any_neighbor_province = {
+			culture = mescil
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.85
+			NOT = { religion = helgarn }
+			NOT = { religion = tolerance }
+		}
+	}
+	
+	option = {
+		name = flavor_EOY.3.a
+		change_culture = mescil
+		if = {
+			limit = {
+				NOT = { religion = helgarn }
+			}
+			change_religion = helgarn
+		}
+		random_list = {
+			34 = { add_base_tax = 1 }
+			22 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			9 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			9 = {
+				add_base_tax = 3
+				add_base_production = 2
+				add_base_manpower = 1
+			}
+			26 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+		}
+		EOY = {
+			add_prestige = 5
+		}
+	}
+	option = {
+		name = flavor_EOY.3.b
+		change_culture = mescil
+		if = {
+			limit = {
+				NOT = { religion = helgarn }
+			}
+			change_religion = helgarn
+		}
+		random_list = {
+			24 = { add_base_tax = 1 }
+			22 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			19 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			19 = {
+				add_base_tax = 3
+				add_base_production = 2
+				add_base_manpower = 1
+			}
+			16 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+		}
+		EOY = {
+			add_prestige = 5
+			add_adm_power = -50
+			add_years_of_income = -0.075
+		}
+	}
+}
+
+# Великое восстание
+country_event = {
+	id = flavor_EOY.4
+	title = flavor_EOY.4.t
+	desc = flavor_EOY.4.d
+	picture = LAND_MILITARY_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EOY
+		is_neighbor_of = LMR
+		any_owned_province = {
+			OR = {
+				is_core = LMR
+				culture = sinius
+				culture = altras
+			}
+		}
+		NOT = { stability = 2 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 104
+						province_id = 105
+						province_id = 106
+						province_id = 338
+						province_id = 109
+						province_id = 126
+						province_id = 107
+						province_id = 125
+						province_id = 101
+					}
+				}
+				add_claim = LMR
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_EOY.4.a
+		ai_chance = { factor = 75 }
+		add_adm_power = 100
+		add_dip_power = 100
+		add_prestige = -5
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 104
+					province_id = 105
+					province_id = 106
+					province_id = 338
+					province_id = 109
+					province_id = 126
+					province_id = 107
+					province_id = 125
+					province_id = 101
+				}
+			}
+			cede_province = LMR
+			remove_core = EOY
+			add_core = LMR
+		}
+	}
+	
+	option = {
+		name = flavor_EOY.4.b
+		ai_chance = { factor = 25 }
+		add_stability = -1
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 104
+					province_id = 338
+					province_id = 109
+					province_id = 126
+					province_id = 107
+					province_id = 125
+					province_id = 101
+				}
+			}
+			nationalist_rebels = 1
+		}
+		106 = { nationalist_rebels = 4 }
+		105 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 3
+				win = yes
+			}
+		}
+		LMR = {
+			declare_war_with_cb = {
+				who = EOY
+				casus_belli = cb_border_war
+			}
+		}
+	}
+}

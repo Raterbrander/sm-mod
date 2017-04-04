@@ -1,0 +1,120 @@
+namespace = sm_cc
+
+country_event = {
+	id = sm_cc.10
+	title = sm_cc.10.t
+	desc = sm_cc.10.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = itlanian_culture_converted }
+		OR = {
+			AND = {
+				tag = ITL
+				primary_culture = itlanian
+				has_country_flag = ITL_SIN_cooperation_flag
+			}
+			AND = {
+				primary_culture = sinius
+				NOT = {
+					any_country = {
+						primary_culture = itlanian
+					}
+				}
+				any_owned_province = {
+					culture = itlanian
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 1.25
+			NOT = { stability = 0 }
+		}
+	}
+	
+	option = {
+		name = sm_cc.10.a
+		trigger = {
+			NOT = { tag = ITL }
+		}
+		custom_tooltip = sm_cc.10.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = { culture = itlanian }
+				change_culture = SIN_itlanian
+			}
+			set_global_flag = itlanian_culture_converted
+		}
+	}
+	option = {
+		name = sm_cc.10.b
+		trigger = {
+			tag = ITL
+		}
+		ai_chance = { factor = 75 }
+		custom_tooltip = sm_cc.10.tooltip
+		hidden_effect = {
+			change_primary_culture = SIN_itlanian
+			every_province = {
+				limit = { culture = itlanian }
+				change_culture = SIN_itlanian
+			}
+		}
+		add_adm_power = -100
+	}
+	option = {
+		name = sm_cc.10.c
+		trigger = {
+			tag = ITL
+		}
+		ai_chance = { factor = 25 }
+		custom_tooltip = sm_cc.10.tooltip.2
+		hidden_effect = {
+			capital_scope = { change_culture = SIN_itlanian }
+			random_owned_province = {
+				limit = {
+					is_in_capital_area = yes
+					is_capital = no
+				}
+				change_culture = SIN_itlanian
+			}
+		}
+	}
+}
+
+province_event = {
+	id = sm_cc.11
+	title = sm_cc.11.t
+	desc = sm_cc.11.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	trigger = {
+		culture = itlanian
+		owner = {
+			culture_group = siniusdan_group
+			has_global_flag = itlanian_culture_converted
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.85
+			owner = { stability = 2 }
+		}
+	}
+	
+	option = {
+		name = sm_discover.2.a
+		custom_tooltip = sm_cc.10.tooltip
+		hidden_effect = {
+			change_culture = SIN_itlanian
+		}
+	}
+}

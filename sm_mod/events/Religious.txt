@@ -1,0 +1,771 @@
+namespace = religious_events
+
+# Cleanup from Counter Reformed
+country_event = {
+	id = 2050
+	title = "EVTNAME2050"
+	desc = "EVTDESC2050"
+	picture = POPE_PREACHING_eventPicture
+	
+	major = no
+	
+	trigger = {
+		has_country_modifier = "counter_reformation"
+		NOT = { religion = catholic	}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA2050"
+		remove_country_modifier = "counter_reformation"
+	}
+}
+
+# The Counter-Reformation Ends
+country_event = {
+	id = 2051
+	title = "EVTNAME2050"
+	desc = "EVTDESC2051"
+	picture = POPE_PREACHING_eventPicture
+	
+	major = no
+	
+	trigger = {
+		has_country_modifier = "counter_reformation"
+		religion_years = { protestant = 150 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA2050"
+		remove_country_modifier = "counter_reformation"
+	}
+}
+
+# The Counter-Reformation Ends (Ecumenism)
+country_event = {
+	id = 2053
+	title = "EVTNAME2050"
+	desc = "EVTDESC2053"
+	picture = POPE_PREACHING_eventPicture
+	
+	major = no
+	
+	trigger = {
+		has_country_modifier = "counter_reformation"
+		has_idea = ecumenism
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA2050"
+		remove_country_modifier = "counter_reformation"
+	}
+}
+
+# His Holiness is concerned
+province_event = {
+	id = 6163
+	title = "EVTNAME6163"
+	desc = "EVTDESC6163"
+	picture = POPE_PREACHING_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = catholic
+		owner = {
+			NOT = { government = papal_government }
+			religion = catholic 
+			orthodox = 2
+		}  
+		any_neighbor_province = {
+			religion = orthodox 
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}	
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6163"
+		change_religion = orthodox
+	}
+}
+
+# His Holiness is shocked
+province_event = {
+	id = 6165
+	title = "EVTNAME6165"
+	desc = "EVTDESC6165"
+	picture = POPE_PREACHING_eventPicture
+
+	trigger = {
+		is_capital = no
+		is_religion_enabled = protestant
+		religion = catholic
+		owner = {
+			NOT = { government = papal_government }
+			religion = catholic 
+			protestant = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = protestant 
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6165"
+		change_religion = protestant
+	}
+}
+
+# The Orthodox Faith is Rocked
+province_event = {
+	id = 6166
+	title = "EVTNAME6166"
+	desc = "EVTDESC6166"
+	picture = ORTHODOX_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = orthodox
+		owner = {
+			religion = orthodox 
+			catholic = 2
+		}  
+		any_neighbor_province = {
+			religion = catholic 
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6166"
+		change_religion = catholic
+	}
+}	
+
+# The Patriarch is complaining
+province_event = {
+	id = 6167
+	title = "EVTNAME6167"
+	desc = "EVTDESC6167"
+	picture = ORTHODOX_eventPicture
+
+	trigger = {
+		is_capital = no
+		is_religion_enabled = protestant
+		religion = orthodox
+		owner = {
+			religion = orthodox 
+			protestant = 2
+		} 
+		
+		any_neighbor_province = {
+			religion = protestant 
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6167"
+		change_religion = protestant
+	}
+}
+
+# Bishops feel we are losing ground
+province_event = {
+	id = 6169
+	title = "EVTNAME6169"
+	desc = "EVTDESC6169"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = protestant
+		owner = {
+			religion = protestant 
+			catholic = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+		is_reformation_center = no
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = catholic 
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6169"
+		change_religion = catholic
+	}
+}
+
+# Bishops shocked
+province_event = {
+	id = 6170
+	title = "EVTNAME6170"
+	desc = "EVTDESC6170"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = protestant
+		owner = {
+			religion = protestant 
+			orthodox = 2
+		} 
+		any_neighbor_province = {
+			religion = orthodox
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+		is_reformation_center = no
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6170"
+		change_religion = orthodox
+	}
+}
+
+# The Spirits of Nature are concerned
+province_event = {
+	id = 6189
+	title = "EVTNAME6189"
+	desc = "EVTDESC6189"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = animism
+		owner = {
+			religion = animism
+			totemism = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = totemism
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6189"
+		change_religion = totemism
+	}
+}
+
+# The Spirits of Nature are concerned
+province_event = {
+	id = 8000
+	title = "EVTNAME8000"
+	desc = "EVTDESC8000"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = animism
+		owner = {
+			religion = animism
+			totemism = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = totemism
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA8000"
+		change_religion = totemism
+	}
+}
+
+# Unhappy news from the hunting ground
+province_event = {
+	id = 6190
+	title = "EVTNAME6190"
+	desc = "EVTDESC6190"
+	picture = RELIGION_eventPicture 
+
+	trigger = {
+		is_capital = no
+		religion = totemism
+		owner = {
+			religion = totemism
+			animism = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = animism
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA6190"
+		change_religion = animism
+	}
+}
+
+# Unhappy news from the hunting ground
+province_event = {
+	id = 8001
+	title = "EVTNAME8001"
+	desc = "EVTDESC8001"
+	picture = RELIGION_eventPicture 
+
+	trigger = {
+		is_capital = no
+		religion = totemism
+		owner = {
+			religion = totemism
+			totemism = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = totemism
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA8001"
+		change_religion = totemism
+	}
+}
+
+# Spiritual connection in Danger
+province_event = {
+	id = 8002
+	title = "EVTNAME8002"
+	desc = "EVTDESC8002"
+	picture = RELIGION_eventPicture 
+
+	trigger = {
+		is_capital = no
+		religion = totemism
+		owner = {
+			religion = totemism
+			animism = 2
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+		modifier = {
+			factor = 0.95
+			any_neighbor_province = {
+				religion = animism
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "EVTOPTA8002"
+		change_religion = animism
+	}
+}
+
+country_event = {
+	id = religious_events.17
+	title = "religious_events.17.t"
+	desc = "religious_events.17.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "religious_events.17.a" #This is an Outrage!
+		trigger = { NOT = { religion_group = muslim } }
+	}
+	option = {
+		name = "religious_events.17.b" #Excellent
+		trigger = { religion_group = muslim }
+	}
+}
+
+#Conversion to Christianity
+country_event = {
+	id = religious_events.18
+	title = "religious_events.18.t"
+	desc = "religious_events.18.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "religious_events.18.a" #
+		ai_chance = { factor = 100 }
+		trigger = { any_owned_province = { religion = catholic } }
+		change_religion = catholic
+		add_stability = -4
+	}
+	option = {
+		name = "religious_events.18.b" #
+		ai_chance = { factor = 100 }
+		trigger = { any_owned_province = { religion = orthodox } }
+		change_religion = orthodox
+		add_stability = -4
+	}
+	option = {
+		name = "religious_events.18.e" #
+		ai_chance = { factor = 100 }
+		trigger = { any_owned_province = { religion = protestant } }
+		change_religion = protestant
+		add_stability = -4
+	}
+	option = {
+		name = "religious_events.18.f" #
+		ai_chance = { factor = 1 } #AI should pick this if the event somehow triggers despite none of the above being possible.
+	}
+}
+
+#Conversion to Islam
+country_event = {
+	id = religious_events.19
+	title = "religious_events.19.t"
+	desc = "religious_events.19.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "religious_events.19.a" #
+		ai_chance = { factor = 100 }
+		trigger = { any_owned_province = { religion = sunni } }
+		change_religion = sunni
+		add_stability = -4
+	}
+	option = {
+		name = "religious_events.18.f" #
+		ai_chance = { factor = 1 } #AI should pick this if the event somehow triggers despite none of the above being possible.
+	}
+}
+
+#Conversion to Judaism
+country_event = {
+	id = religious_events.23
+	title = "religious_events.23.t"
+	desc = "religious_events.23.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "religious_events.23.a" #
+		ai_chance = { factor = 100 }
+		trigger = { any_owned_province = { religion = jewish } }
+		change_religion = jewish
+		add_stability = -4
+	}
+	option = {
+		name = "religious_events.18.f" #
+		ai_chance = { factor = 1 } #AI should pick this if the event somehow triggers despite none of the above being possible.
+	}
+}

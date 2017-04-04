@@ -1,0 +1,60 @@
+namespace = sm_tech_event
+
+country_event = {
+	id = sm_tech_event.1
+	title = sm_tech_event.1.t
+	desc = sm_tech_event.1.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_tech_event.1.a
+		add_country_modifier = {
+			name = sm_country_modernization
+			duration = 1825
+		}
+		custom_tooltip = sm_tech_event.1.tt
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = sm_tech_event.2
+	title = sm_tech_event.2.t
+	desc = sm_tech_event.2.d
+	picture = INVENTION_eventPicture
+	
+	trigger = {
+		has_country_flag = country_modernization_in_progress
+		NOT = { has_country_modifier = sm_country_modernization }
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sm_tech_event.2.a
+		change_technology_group = continental
+		change_unit_type = continental
+		if = {
+			limit = { government = AM_clan }
+			change_government = administrative_monarchy
+		}
+		if = {
+			limit = { government = AM_clan_rep }
+			change_government = administrative_republic
+		}
+		add_prestige = 35
+		add_adm_power = 250
+		add_dip_power = 200
+		add_mil_power = 250
+		add_country_modifier = {
+			name = sm_grow_of_reformed_state
+			duration = 1825
+		}
+		clr_country_flag = country_modernization_in_progress
+	}
+}

@@ -1,0 +1,76 @@
+namespace = flavor_adn
+
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_adn.1
+	title = flavor_adn.1.t
+	desc = flavor_adn.1.d
+	picture = RAILROAD2_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ADN
+		NOT = { is_year = 470 }
+		lavrida_area = {
+			OR = {
+				owned_by = ROOT
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		386 = {
+			NOT = { has_building = railroad_1 }
+		}
+		387 = {
+			NOT = { has_building = railroad_1 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+		
+		modifier = {
+			factor = 0.1
+			is_year = 465
+		}
+		
+		modifier = {
+			factor = 0.01
+			is_year = 467
+		}
+	}
+	
+	option = {
+		name = flavor_adn.1.a
+		ai_chance = { factor = 75 }
+		add_stability = -1
+		386 = {
+			add_building_construction = {
+				building = railroad_1
+				speed = 0.75
+				cost = 0.15
+			}
+		}
+		387 = {
+			add_building_construction = {
+				building = railroad_1
+				speed = 0.75
+				cost = 0.15
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_adn.1.b
+		ai_chance = { factor = 25 }
+		add_corruption = 2
+	}
+}

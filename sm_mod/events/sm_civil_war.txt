@@ -1,0 +1,123 @@
+namespace = sm_civil_war
+
+province_event = {
+	id = sm_civil_war.1
+	title = sm_civil_war.1.t
+	desc = sm_civil_war.1.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { controlled_by = owner }
+		NOT = { controlled_by = REB }
+		owner = { has_country_modifier = civil_war_nation }
+		controller = { has_country_modifier = civil_war_nation }
+		has_siege = no
+		is_capital = no
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = sm_fgw_event.1.a
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { is_core = controller }
+				}
+				add_core = controller
+				set_province_flag = only_civil_war_core
+			}
+		}
+		cede_province = controller
+	}
+}
+
+country_event = {
+	id = sm_civil_war.2
+	title = sm_civil_war.2.t
+	desc = sm_civil_war.2.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		has_country_modifier = civil_war_nation
+		FROM = { has_country_modifier = civil_war_nation }
+	}
+	
+	option = {
+		name = sm_civil_war.2.a
+		hidden_effect = {
+			FROM = {
+				every_owned_province = {
+					limit = {
+						NOT = { is_core = ROOT }
+						is_core = FROM
+					}
+					add_core = ROOT
+				}
+				every_owned_province = {
+					limit = {
+						is_core = FROM
+						has_province_flag = only_civil_war_core
+					}
+					remove_core = FROM
+					clr_province_flag = only_civil_war_core
+				}
+				remove_country_modifier = civil_war_nation
+			}
+			if = {
+				limit = {
+					has_global_flag = altras_civil_war
+				}
+				clr_global_flag = altras_civil_war
+				set_global_flag = no_kaydgedanate
+			}
+		}
+		remove_country_modifier = civil_war_nation
+		if = {
+			limit = {
+				NOT = { has_country_flag = sm_willnt_annex_cw_nation }
+			}
+			inherit = FROM
+		}
+	}
+}
+
+country_event = {
+	id = sm_civil_war.3
+	title = sm_civil_war.3.t
+	desc = sm_civil_war.3.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	trigger = {
+		has_country_flag = sm_will_get_troops_in_civil_war
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = sm_civil_war.3.a
+		clr_country_flag = sm_will_get_troops_in_civil_war
+		random_owned_province = {
+			limit = {
+				OR = {
+					development = 10
+					is_capital = yes
+				}
+			}
+			build_to_forcelimit = {
+				infantry = 0.8
+				cavalry = 0.2
+			}
+		}
+	}
+}

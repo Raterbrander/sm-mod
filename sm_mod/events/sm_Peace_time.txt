@@ -1,0 +1,114 @@
+namespace = sm_peace_time_events
+
+country_event = {
+	id = sm_peace_time_events.1
+	title = sm_peace_time_events.1.t
+	desc = sm_peace_time_events.1.d
+	picture = EEEE_ROCK_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			AND = {
+				start_date = 978.5.7
+				is_year = 485
+			}
+			AND = {
+				start_date = 1002.1.2
+				is_year = 505
+			}
+		}
+		NOT = { has_global_flag = pisto_letov }
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = south_main
+				continent = kronos
+				continent = malishian_island
+			}
+		}
+		OR = {
+			NOT = { has_global_flag = no_pisto_letov }
+			had_global_flag = {
+				flag = no_pisto_letov
+				days = 18250
+			}
+		}
+	}
+	
+	option = {
+		name = sm_peace_time_events.1.a
+		add_stability = 2
+		add_prestige = 5
+		hidden_effect = {
+			set_global_flag = pisto_letov
+			set_country_flag = had_pisto_letov_event
+			random_neighbor_country = {
+				country_event = {
+					id = sm_peace_time_events.2
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_peace_time_events.2
+	title = sm_peace_time_events.1.t
+	desc = sm_peace_time_events.2.d
+	picture = EEEE_ROCK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_peace_time_events.1.a
+		add_stability = 1
+		hidden_effect = {
+			set_country_flag = had_pisto_letov_event
+			if = {
+				limit = { has_global_flag = pisto_letov }
+				random_neighbor_country = {
+					limit = {
+						NOT = { has_country_flag = had_pisto_letov_event }
+					}
+					country_event = {
+						id = sm_peace_time_events.2
+						days = 35
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sm_peace_time_events.3
+	title = sm_peace_time_events.3.t
+	desc = sm_peace_time_events.3.d
+	picture = EEEE_ROCK_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_country_flag = had_pisto_letov_event
+		had_global_flag = {
+			flag = pisto_letov
+			days = 365
+		}
+	}
+	
+	option = {
+		name = sm_peace_time_events.3.a
+		clr_global_flag = pisto_letov
+		set_global_flag = no_pisto_letov
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = had_pisto_letov_event }
+				clr_country_flag = had_pisto_letov_event
+			}
+		}
+	}
+}

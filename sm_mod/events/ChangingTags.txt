@@ -1,0 +1,57 @@
+namespace = changing_tags
+
+country_event = {
+	id = changing_tags.1
+	title = changing_tags.1.t
+	desc = changing_tags.1.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		tag = BRN
+		NOT = { exists = BR1 }
+		OR = {
+			government = socialist_republic
+			government = socialist_state
+			government = communist_dictatorship
+		}
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = changing_tags.1.a
+		change_tag = BR1
+	}
+}
+
+country_event = {
+	id = changing_tags.2
+	title = changing_tags.2.t
+	desc = changing_tags.2.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		tag = BR1
+		NOT = { exists = BRN }
+		NOT = {
+			OR = {
+				government = socialist_republic
+				government = socialist_state
+				government = communist_dictatorship
+			}
+		}
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = changing_tags.2.a
+		change_tag = BRN
+	}
+}

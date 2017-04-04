@@ -1,0 +1,98 @@
+namespace = integration_event
+
+country_event = {
+	id = integration_event.1
+	title = integration_event.1.t
+	desc = integration_event.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = integration_event.1.a
+		ai_chance = {
+			factor = 90
+			
+			modifier = {
+				factor = 0.05
+				tag = CHT
+				alliance_with = UTN
+				FROM = { tag = ECH }
+			}
+		}
+		FROM = {
+			country_event = { id = integration_event.3 }
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						NOT = { is_core = ROOT }
+					}
+					add_core = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = CHT
+				FROM = { tag = ECH }
+				exists = UTN
+			}
+			UTN = {
+				country_event = {
+					id = flavor_utn.1
+					days = 1
+				}
+			}
+		}
+		add_prestige = 5
+	}
+	option = {
+		name = integration_event.1.b
+		ai_chance = {
+			factor = 10
+		}
+		FROM = {
+			country_event = {
+				id = integration_event.2
+			}
+			tooltip = {
+				add_opinion = {
+					who = FROM
+					modifier = sm_refused_integration
+				}
+			}
+		}
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = integration_event.2
+	title = integration_event.2.t
+	desc = integration_event.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = integration_event.2.a
+		add_opinion = {
+			who = FROM
+			modifier = sm_refused_integration
+		}
+	}
+}
+
+country_event = {
+	id = integration_event.3
+	title = integration_event.3.t
+	desc = integration_event.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = integration_event.3.a
+		FROM = { inherit = ROOT }
+	}
+}

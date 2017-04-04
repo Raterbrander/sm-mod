@@ -1,0 +1,208 @@
+namespace = sm_government
+
+country_event = {
+	id = sm_government.1
+	title = sm_government.1.title
+	desc = sm_government.1.desc
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		government = free_city_aristocratical
+		OR = {
+			num_of_cities = 2
+			total_development = 32
+		}
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = sm_government.1.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0.1
+				OR = {
+					adm_tech = 12
+					is_year = 550
+				}
+			}
+		}
+		change_government = oligarchic_republic
+	}
+	
+	option = {
+		name = sm_government.1.b
+		ai_chance = {
+			factor = 35
+			
+			modifier = {
+				factor = 2
+				has_idea_group = trade_ideas
+			}
+			modifier = {
+				factor = 2
+				trade_income_percentage = 0.5
+			}
+			modifier = {
+				factor = 2
+				trade_income_percentage = 0.75
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					adm_tech = 12
+					is_year = 550
+				}
+			}
+		}
+		change_government = merchant_republic
+	}
+	
+	option = {
+		name = sm_government.1.c
+		ai_chance = {
+			factor = 30
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		change_government = parliamentary_republic
+	}
+	
+	option = {
+		name = sm_government.1.d
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		change_government = presidental_dictatorship
+	}
+	
+	option = {
+		name = sm_government.1.e
+		ai_chance = {
+			factor = 30
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		change_government = presidental_republic_4
+	}
+	
+	option = {
+		name = sm_government.1.f
+		ai_chance = {
+			factor = 35
+		}
+		trigger = {
+			adm_tech = 12
+		}
+		change_government = karteval_republic
+	}
+}
+
+country_event = {
+	id = sm_government.2
+	title = sm_government.1.title
+	desc = sm_government.2.desc
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		government = free_city_base
+		OR = {
+			num_of_cities = 2
+			total_development = 32
+		}
+		is_at_war = no
+	}
+	
+	option = {
+		name = sm_government.2.a
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.1
+				OR = {
+					adm_tech = 12
+					is_year = 550
+				}
+			}
+		}
+		change_government = oligarchic_republic
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.1
+				OR = {
+					adm_tech = 12
+					is_year = 550
+				}
+			}
+		}
+		trigger = {
+			NOT = { adm_tech = 5 }
+		}
+		name = sm_government.2.nn
+		change_government = noble_republic
+	}
+	
+	option = {
+		name = sm_government.2.b
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		change_government = parliamentary_republic
+	}
+	
+	option = {
+		name = sm_government.1.d
+		ai_chance = {
+			factor = 20
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		change_government = presidental_dictatorship
+	}
+	
+	option = {
+		name = sm_government.2.e
+		ai_chance = {
+			factor = 45
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		change_government = presidental_republic_4
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.1
+				OR = {
+					adm_tech = 12
+					is_year = 550
+				}
+			}
+		}
+		trigger = {
+			adm_tech = 5
+		}
+		name = sm_government.2.n
+		change_government = noble_republic
+	}
+}
