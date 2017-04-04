@@ -1,0 +1,278 @@
+#sm_controlling_elder_city = {
+#	potential = {
+#		OR = {
+#			has_discovered = 196
+#			has_discovered = 202
+#			has_discovered = 298
+#		}
+#		is_tribal = no
+#	}
+#
+#	trigger = {
+#		OR = {
+#			owns_core_province = 196
+#			owns_core_province = 202
+#			owns_core_province = 298
+#		}
+#	}
+#
+#	prestige = 1
+#	legitimacy = 0.25
+#}
+
+malishian_cities = {
+	potential = {
+		OR = {
+			has_discovered = 196
+			has_discovered = 202
+		}
+		OR = {
+			culture_group = yellow_group
+			primary_culture = smesh_english
+			culture_group = siniusdan_group
+			culture_group = kronossian_group
+			culture_group = imp_smesh_group
+			culture_group = latvian_group
+			primary_culture = chaepit
+			religion = ameism
+		}
+	}
+	
+	trigger = {
+		owns_core_province = 196
+		owns_core_province = 202
+	}
+	
+	prestige = 1
+	diplomatic_reputation = 1
+}
+
+okian_controlling = {
+	potential = {
+		has_discovered = 1256
+	}
+	trigger = {
+		owns_or_vassal_of = 142
+		owns_or_vassal_of = 141
+		owns_or_vassal_of = 30
+		owns_or_vassal_of = 29
+		owns_or_vassal_of = 97
+	}
+
+	global_trade_power = 0.1
+	merchants = 1
+	trade_efficiency = 0.075
+}
+
+sm_tolerance = {
+	potential = {
+		NOT = { government = theocracy }
+		religion_group = non_religious_group
+	}
+	trigger = {
+		OR = {
+			religion = tolerance
+			religion = ameism
+		}
+	}
+	
+	global_missionary_strength = -0.25
+	global_unrest = -1
+	religious_unity = 0.5
+}
+
+uss_crisis_for_other = {
+	potential = {
+		NOT = { tag = USS }
+		exists = USS
+		OR = {
+			is_subject_of = USS
+			technology_group = domin_group
+			culture_group = domin_group
+		}
+		USS = {
+			has_country_modifier = sm_uss_crisis
+		}
+	}
+	trigger = {
+		OR = {
+			is_subject_of = USS
+			technology_group = domin_group
+			culture_group = domin_group
+		}
+		USS = { has_country_modifier = sm_uss_crisis }
+		NOT = { total_development = 225 }
+		NOT = { inflation = 2 }
+		NOT = { num_of_loans = 3 }
+	}
+	
+	trade_efficiency = -0.35
+	global_tax_modifier = -0.25
+	production_efficiency = -0.15
+	global_regiment_cost = 0.15
+	inflation_reduction = 0.075
+	inflation_action_cost = 0.15
+}
+
+gru_crisis_for_subjects = {
+	potential = {
+		normal_or_historical_nations = yes
+		is_subject_of = GRU
+		GRU = { has_country_modifier = sm_gru_crisis }
+	}
+	trigger = {
+		vassal_of = GRU
+		GRU = {
+			has_country_modifier = sm_gru_crisis
+			NOT = { has_country_modifier = sm_almaz_soyuz }
+		}
+	}
+	
+	global_manpower_modifier = -0.25
+	land_forcelimit_modifier = -0.45
+	global_regiment_cost = 0.55
+	global_tax_modifier = -0.25
+	land_morale = -0.05
+	discipline = -0.05
+	global_unrest = -2
+}
+
+controlling_estuary_of_smeshpr = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			has_discovered = 565
+			has_discovered = 401
+		}
+	}
+	trigger = {
+		owns = 565
+		owns = 401
+	}
+	
+	global_trade_power = 0.1
+	trade_efficiency = 0.075
+	merchants = 1
+}
+
+sm_end_of_religions_era = {
+	potential = {
+		NOT = { religion_group = non_religious_group }
+	}
+	trigger = {
+		adm_tech = 14
+	}
+	
+	global_missionary_strength = -0.01
+	global_unrest = -1
+	religious_unity = 0.55
+}
+
+ellar_national_leader = {
+	potential = {
+		NOT = { exists = EOY }
+		NOT = { exists = ELL }
+		OR = {
+			primary_culture = yellow
+			primary_culture = tardian
+			primary_culture = gottardian
+			primary_culture = tonderros
+			primary_culture = arvabian
+		}
+		is_nomad = no
+		is_tribal = no
+		has_global_flag = panellarism
+	}
+	trigger = {
+		stability = 0
+		prestige = 5
+		legitimacy = 55
+		dip = 2
+		adm_tech = 10
+		is_subject = no
+		all_country = {
+			OR = {
+				NOT = {
+					OR = {
+						primary_culture = yellow
+						primary_culture = tardian
+						primary_culture = gottardian
+						primary_culture = tonderros
+						primary_culture = arvabian
+					}
+				}
+				AND = {
+					#is_subject = no
+					NOT = { prestige = ROOT }
+					NOT = { army_size = ROOT }
+				}
+			}
+		}
+	}
+	
+	prestige = 0.05
+	#legitimacy = 0.05
+	diplomatic_upkeep = 4
+	diplomatic_reputation = 1
+	ae_impact = -0.25
+}
+
+eam_anarchy = {
+	potential = {
+		is_part_of_hre = yes
+		has_global_flag = anarchy_in_eam
+		NOT = { has_global_flag = am_confederacy }
+	}
+	
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { hre_reform_level = 2 }
+	}
+	
+	imperial_authority = -0.1
+	stability_cost_modifier = 0.1
+}
+
+#altras_supremacy = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		primary_culture = altras
+#		NOT = { technology_group = continental }
+#	}
+#	
+#	trigger = {
+#		OR = {
+#			government = altras_horde
+#			overlord = { government = altras_horde }
+#		}
+#		OR = {
+#			technology_group = southern
+#			technology_group = middle_land_group
+#		}
+#	}
+#	
+#	adm_tech_cost_modifier = -0.35
+#	dip_tech_cost_modifier = -0.35
+#	mil_tech_cost_modifier = -0.655
+#	land_morale = 0.25
+#}
+
+smeshes_supremacy = {
+	potential = {
+		normal_or_historical_nations = yes
+		tag = SHK
+		NOT = { technology_group = continental }
+	}
+	
+	trigger = {
+		technology_group = southern
+		all_country = {
+			NOT = { tech_difference = 4 }
+		}
+	}
+	
+	adm_tech_cost_modifier = -0.75
+	dip_tech_cost_modifier = -0.75
+	mil_tech_cost_modifier = -0.35
+	#land_morale = 0.15
+}

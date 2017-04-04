@@ -1,0 +1,164 @@
+# Order here is the priority for taking them, if trigger is true.
+
+SMF = {
+	NOT = { 
+		exists = ELL 
+		exists = EOY
+	}
+}
+
+ELL = {
+	NOT = {
+		#exists = SMF
+		exists = EOY
+	}
+}
+
+EOY = {
+	NOT = {
+		#exists = SMF
+		exists = ELL
+	}
+}
+
+ZMR = {
+	NOT = { is_year = 535 }
+}
+
+NGI = {
+	NOT = { exists = SME }
+}
+
+SME = {
+	NOT = { exists = NGI }
+}
+
+NGR = {
+	NOT = {
+		exists = CH2
+		is_year = 850
+	}
+}
+
+CHT = {
+	NOT = {
+		exists = CH2
+		is_year = 850
+	}
+	is_year = 500
+}
+
+CH2 = {
+	NOT = {
+		is_year = 850
+	}
+}
+
+SUM = {
+	NOT = { exists = DRA }
+}
+
+DRA = {
+	NOT = { exists = SUM }
+}
+
+MRT = {
+	NOT = {
+		OR = {
+			exists = BEL
+			exists = GRU
+		is_year = 850
+		}
+	}
+}
+
+BEL = {
+	NOT = {
+		exists = MRT
+		exists = GRU
+		is_year = 850
+	}
+}
+
+GRU = {
+	NOT = {
+		exists = MRT
+		exists = BEL
+		is_year = 850
+	}
+}
+
+#KRN = {
+#	NOT = {
+#		is_year = 1250 # ?
+#		exists = TEU
+#	}
+#}
+
+SIN = {
+	NOT = {
+		exists = GRX
+	}
+	OR = {
+		NOT = {
+			is_year = 600
+		}
+		is_year = 1200
+	}
+}
+
+#ORD = {
+#	NOT = { exists = SIN }
+#}
+
+KRO = {
+	NOT = { exists = ASM }
+	is_year = 850
+}
+
+ASM = {
+	NOT = { exists = KRO }
+	is_year = 850
+}
+
+ALR = {
+	is_year = 1650
+	NOT = { exists = AL1 }
+}
+
+UKI = {
+	NOT = {
+		exists = AFE
+		is_year = 500
+	}
+}
+
+AFE = {
+	NOT = {
+		exists = UKI
+		is_year = 500
+	}
+}
+
+VNR = {
+	NOT = {
+		exists = GRV
+		is_year = 500
+	}
+}
+
+GRV = {
+	NOT = { is_year = 500 }
+}
+
+HLC = {
+	NOT = { is_year = 555 }
+}
+
+ERT = {
+	NOT = { is_year = 600 }
+}
+
+TRU = {
+	always = yes
+}

@@ -1,0 +1,256 @@
+gervein_union_forces_1 = {
+	potential = {
+		has_global_flag = gervein_forces_created
+		calc_true_if = {
+			all_country = {
+				has_country_modifier = gervein_union_member
+			}
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					has_country_modifier = gervein_union_member
+				}
+				amount = 5
+			}
+		}
+	}
+	trigger = {
+		has_country_modifier = gervein_union_leader
+	}
+	
+	land_forcelimit_modifier = 0.15
+	global_manpower_modifier = 0.15
+	land_maintenance_modifier = 0.055
+}
+
+gervein_union_forces_2 = {
+	potential = {
+		has_global_flag = gervein_forces_created
+		calc_true_if = {
+			all_country = {
+				has_country_modifier = gervein_union_member
+			}
+			amount = 5
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					has_country_modifier = gervein_union_member
+				}
+				amount = 9
+			}
+		}
+	}
+	trigger = {
+		has_country_modifier = gervein_union_leader
+	}
+	
+	land_forcelimit_modifier = 0.25
+	global_manpower_modifier = 0.25
+	land_maintenance_modifier = 0.1
+}
+
+gervein_union_forces_3 = {
+	potential = {
+		has_global_flag = gervein_forces_created
+		calc_true_if = {
+			all_country = {
+				has_country_modifier = gervein_union_member
+			}
+			amount = 9
+		}
+	}
+	trigger = {
+		has_country_modifier = gervein_union_leader
+	}
+	
+	land_forcelimit_modifier = 0.35
+	global_manpower_modifier = 0.35
+	land_maintenance_modifier = 0.225
+}
+
+gervein_union_forces_members_1 = {
+	potential = {
+		has_country_modifier = gervein_union_member
+		has_global_flag = gervein_forces_created
+		event_target:gervein_union_leader_target = {
+			has_country_modifier = gervein_union_forces_1
+		}
+	}
+	trigger = {
+		NOT = { has_country_modifier = gervein_union_leader }
+	}
+	
+	land_forcelimit_modifier = -0.15
+	global_manpower_modifier = -0.15
+}
+
+gervein_union_forces_members_2 = {
+	potential = {
+		has_country_modifier = gervein_union_member
+		has_global_flag = gervein_forces_created
+		event_target:gervein_union_leader_target = {
+			has_country_modifier = gervein_union_forces_2
+		}
+	}
+	trigger = {
+		NOT = { has_country_modifier = gervein_union_leader }
+	}
+	
+	land_forcelimit_modifier = -0.25
+	global_manpower_modifier = -0.25
+}
+
+gervein_union_forces_members_3 = {
+	potential = {
+		has_country_modifier = gervein_union_member
+		has_global_flag = gervein_forces_created
+		event_target:gervein_union_leader_target = {
+			has_country_modifier = gervein_union_forces_3
+		}
+	}
+	trigger = {
+		NOT = { has_country_modifier = gervein_union_leader }
+	}
+	
+	land_forcelimit_modifier = -0.35
+	global_manpower_modifier = -0.35
+}
+
+
+gervein_authority_lvl1 = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_country_modifier = gervein_union_member
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 10
+			}
+		}
+	}
+	trigger = {
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 10
+			}
+		}
+	}
+	
+	prestige = 0.005
+}
+
+gervein_authority_lvl2 = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_country_modifier = gervein_union_member
+		check_variable = {
+			which = gervein_authority
+			value = 10
+		}
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 20
+			}
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = gervein_authority
+			value = 10
+		}
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 20
+			}
+		}
+	}
+	
+	prestige = 0.01
+}
+
+gervein_authority_lvl3 = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_country_modifier = gervein_union_member
+		check_variable = {
+			which = gervein_authority
+			value = 20
+		}
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 35
+			}
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = gervein_authority
+			value = 20
+		}
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 35
+			}
+		}
+	}
+	
+	prestige = 0.025
+}
+
+gervein_authority_lvl4 = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_country_modifier = gervein_union_member
+		check_variable = {
+			which = gervein_authority
+			value = 35
+		}
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 70
+			}
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = gervein_authority
+			value = 35
+		}
+		NOT = {
+			check_variable = {
+				which = gervein_authority
+				value = 70
+			}
+		}
+	}
+	
+	prestige = 0.05
+}
+
+gervein_authority_lvl5 = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_country_modifier = gervein_union_member
+		check_variable = {
+			which = gervein_authority
+			value = 70
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = gervein_authority
+			value = 70
+		}
+	}
+	
+	prestige = 0.05
+}

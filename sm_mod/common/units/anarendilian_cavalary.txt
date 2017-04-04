@@ -1,0 +1,17 @@
+# Анарендильская кавалерия
+
+type = cavalry
+unit_type = anarendilian_tech
+
+trigger = {
+	primary_culture = anarendilian
+}
+
+# 6
+maneuver = 2
+offensive_morale = 0
+defensive_morale = 0
+offensive_fire = 1
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 1

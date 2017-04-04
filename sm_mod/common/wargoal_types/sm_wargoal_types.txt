@@ -1,0 +1,137 @@
+take_capital_throne_gottardia = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1.5
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = no
+		}
+
+		po_form_personal_union = yes
+		po_annex = yes
+		
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			OR = {
+				culture = gottardian
+				is_core = FROM
+				area = gottardia_area
+			}
+		}
+		
+		po_demand_provinces = yes
+		po_change_religion = yes
+		po_gold = yes
+		po_annul_treaties = yes
+		po_humiliate = yes
+		
+	}
+	
+	prov_desc = PROVS_GOTTARDIA
+	war_name = GOTTARDIAN_WAR_NAME
+}
+
+superiority_amian_war = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			always = yes # ?
+		}
+		
+		po_demand_provinces = yes
+		
+		country_desc = ALL_AMIAN_COUNTRIES
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		po_demand_provinces = yes
+		
+		country_desc = ALL_AMIAN_COUNTRIES
+	}
+	
+	
+	war_name = AMIAN_WAR_NAME	
+}
+
+superiority_civil_war = {
+	type = superiority
+	
+	badboy_factor = 0.1
+	prestige_factor = 0.5
+	peace_cost_factor = 0.1
+	
+	allowed_provinces = {
+		always = yes
+	}
+	
+	po_demand_provinces = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	
+	allow_annex = yes
+	
+	prov_desc = ALL_PROVS
+	war_name = CIVIL_WAR_NAME	
+}
+
+take_capital_throne_sm = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1.5
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = no
+		}
+		
+		po_annex = yes
+		po_demand_provinces = yes
+		
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			is_core = FROM
+		}
+		
+		po_demand_provinces = yes
+		po_change_religion = yes
+		po_gold = yes
+		po_annul_treaties = yes
+		po_humiliate = yes
+		
+	}
+	
+	allow_annex = yes
+	
+	prov_desc = PROVS_OUR_LANDS_SM
+	war_name = FEUDAL_WAR_NAME
+}

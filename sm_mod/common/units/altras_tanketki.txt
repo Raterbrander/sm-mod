@@ -1,0 +1,12 @@
+# Альтрасские танкетки
+
+type = cavalry
+unit_type = old_altras_tech
+# 10
+maneuver = 2
+offensive_morale = 0
+defensive_morale = 0
+offensive_fire = 3
+defensive_fire = 1
+offensive_shock = 3
+defensive_shock = 1

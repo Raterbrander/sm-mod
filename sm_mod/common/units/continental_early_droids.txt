@@ -1,0 +1,12 @@
+# Ранние дроиды
+
+type = infantry
+unit_type = continental
+# 4
+maneuver = 0
+offensive_morale = 0
+defensive_morale = 0
+offensive_fire = 1
+defensive_fire = 1
+offensive_shock = 1
+defensive_shock = 1

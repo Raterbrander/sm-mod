@@ -1,0 +1,48 @@
+oil = {
+	color = { 0.23 0.23 0.23 }
+	modifier = {
+		global_tax_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = { adm_tech = 3 } # 9?
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { region = western_lem_region }
+			NOT = { region = south_west_lemindland_region }
+			NOT = { region = kebabian_region }
+			NOT = { region = rannudia_region }
+			#NOT = { region = nagora_region }
+			NOT = { region = south_kronos_region }
+			NOT = { region = central_lands_region }
+			NOT = { region = eastern_roles_region }
+		}
+		modifier = {
+			factor = 2.0
+			OR = {
+				region = central_lands_region
+				region = kebabian_region
+			}
+		}
+		modifier = {
+			factor = 4.0
+			OR = {
+				region = south_kronos_region
+				region = south_west_lemindland_region
+				region = rannudia_region
+			}
+		}
+		modifier = {
+			factor = 8.0
+			OR = {
+				region = eastern_roles_region
+				region = western_lem_region
+			}
+		}
+	}
+}

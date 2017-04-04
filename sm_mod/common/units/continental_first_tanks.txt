@@ -1,0 +1,12 @@
+# Ранние континентальные танки
+
+type = cavalry
+unit_type = continental
+# 5
+maneuver = 1
+offensive_morale = 0
+defensive_morale = 0
+offensive_fire = 2
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 0

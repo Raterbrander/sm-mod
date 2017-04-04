@@ -1,0 +1,12 @@
+# Альтрасская конница
+
+type = cavalry
+unit_type = old_altras_tech
+# 8
+maneuver = 3
+offensive_morale = 1
+defensive_morale = 0
+offensive_fire = 2
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 0

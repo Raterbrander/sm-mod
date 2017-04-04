@@ -1,0 +1,151 @@
+sm_uncivilized_nation = {
+	potential = {
+		OR = {
+			is_tribal = yes
+			NOT = { has_institution = statehood }
+		}
+	}
+	
+	trigger = {
+		OR = {
+			is_tribal = yes
+			NOT = { has_institution = statehood }
+		}
+	}
+	
+	stability_cost_modifier = 0.25
+	#technology_cost = 0.1
+	discipline = -0.05
+	diplomatic_reputation = -1
+	all_power_cost = 0.25
+	global_spy_defence = -0.25
+	spy_offence = -0.25
+	build_cost = 0.5
+	development_cost = 0.50
+	production_efficiency = -0.33
+	global_tax_modifier = -0.25
+	
+	yearly_corruption = -0.15
+	global_unrest = -1
+	unjustified_demands = -0.25
+	ae_impact = -0.1
+	prestige = -0.5
+}
+
+#sm_backward_nation = {
+#	potential = {
+#		always = yes
+#	}
+#	
+#	trigger = {
+#		NOT = {
+#			OR = {
+#				technology_group = continental
+#				technology_group = high_domin
+#				technology_group = imperial_group
+#			}
+#		}
+#		OR = {
+#			AND = {
+#				is_tribal = no
+#				is_nomad = no
+#			}
+#			government = altras_ulus
+#			government = altras_enzelkhanate
+#			government = altras_horde
+#			technology_group = old_zmooromfian
+#		}
+#		any_country = {
+#			technology_group = continental
+#			tech_difference = 12
+#		}
+#	}
+#	
+	#technology_cost = -0.075
+#	production_efficiency = -0.15
+#	global_tax_modifier = -0.075
+#	development_cost = 0.25
+#	build_cost = 0.25
+#	prestige = -0.25
+#}
+#
+#sm_backward_nation_2 = {
+#	potential = {
+#		always = yes
+#	}
+#	
+#	trigger = {
+		#OR = {
+			#technology_group = southern
+			#technology_group = amian
+			#technology_group = ellar_tech
+			#technology_group = old_altras_tech
+			#technology_group = rolevik
+			#
+			#technology_group = continental
+			#technology_group = imperial_group
+			#technology_group = high_domin
+		#}
+#		NOT = {
+#			OR = {
+#				technology_group = continental
+#				technology_group = high_domin
+#				technology_group = imperial_group
+#			}
+#		}
+#		any_country = {
+#			technology_group = continental
+#			NOT = { tech_difference = 12 }
+#			tech_difference = 7
+#		}
+#		OR = {
+#			AND = {
+#				is_tribal = no
+#				is_nomad = no
+#			}
+#			government = altras_ulus
+#			government = altras_enzelkhanate
+#			government = altras_horde
+#		}
+#	}
+#	
+	#technology_cost = -0.05
+#	production_efficiency = -0.075
+#	prestige = -0.125
+	#idea_cost = 0.1
+#	development_cost = 0.125
+#}
+#
+#sm_civilized_nation = {
+#	potential = {
+#		always = yes
+#	}
+#	
+#	trigger = {
+#		OR = {
+#			technology_group = continental
+#			technology_group = imperial_group
+#			technology_group = high_domin
+			#AND = {
+			#	technology_group = ellar_tech
+			#	has_country_modifier = sm_industrialization_3
+			#}
+#			all_country = {
+#				NOT = { tech_difference = 7 }
+#			}
+#		}
+#		OR = {
+#			AND = {
+#				is_tribal = no
+#				is_nomad = no
+#			}
+#			government = altras_ulus
+#			government = altras_enzelkhanate
+#			government = altras_horde
+#		}
+#	}
+#	
+#	prestige_decay = -0.01
+#	stability_cost_modifier = -0.1
+	#development_cost = -0.1
+#}

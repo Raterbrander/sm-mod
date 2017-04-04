@@ -1,0 +1,263 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+# Armies get a insufficient support penalty when the ratio cav / (inf+cav) is _higher_ than "cav_to_inf_ratio". This applies for the "unit_type" of a country.
+
+# Groups must be defined BEFORE tables.
+
+#Nation Designer Cost is set to match triggers for starting institutions.
+
+groups = {
+	continental = {
+		start_level = 7
+		start_cost_modifier = 0
+		cav_to_inf_ratio = 0.5
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							continent = europe
+							continent = kronos
+							continent = malishian_island
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	amian = {
+		start_level = 6
+		start_cost_modifier = 0.50 # ?
+		cav_to_inf_ratio = 0.65
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							continent = europe
+							continent = kronos
+							continent = malishian_island
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	southern = {
+		start_level = 5
+		start_cost_modifier = 0.75 # ?
+		cav_to_inf_ratio = 0.5
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							continent = europe
+							continent = kronos
+							continent = malishian_island
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	rolevik = {
+		start_level = 2
+		start_cost_modifier = 0.85 # ?
+		cav_to_inf_ratio = 0.45
+		nation_designer_trigger = {
+			government = role_gov
+			capital_scope = {
+				OR = {
+					region = old_roles_region
+					region = south_roles_region
+					region = eastern_roles_region
+					region = wolf_lands_region
+					region = central_lands_region
+				}
+			}
+		}
+		#is_primitive = yes
+	}
+	imperial_group = {
+		start_level = 7
+		start_cost_modifier = 0.15 # ?
+		cav_to_inf_ratio = 0.5 # 45
+		nation_designer_trigger = {
+			is_year = 850
+		}
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							region = eastern_roles_region
+							region = wolf_lands_region
+							region = central_lands_region
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	domin_group = {
+		start_level = 3 # 2
+		start_cost_modifier = 0.55 # ?
+		cav_to_inf_ratio = 0.65
+		#nation_designer_trigger = {
+		#	always = no
+		#}
+	}
+	high_domin = {
+		start_level = 7
+		start_cost_modifier = 0.05
+		cav_to_inf_ratio = 0.75
+		nation_designer_trigger = {
+			always = no
+			is_year = 850
+		}
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							region = eastern_roles_region
+							region = wolf_lands_region
+							region = central_lands_region
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	ellar_tech = {
+		start_level = 6
+		start_cost_modifier = 0.2 # 0.25
+		cav_to_inf_ratio = 0.40
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							culture_group = yellow_group
+							region = bezantoks_region
+							region = general_ellar_region
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	anarendilian_tech = {
+		start_level = 2
+		start_cost_modifier = 0.35 # 0.5 ?
+		cav_to_inf_ratio = 0.5
+		nation_designer_trigger = {
+			capital_scope = {
+				OR = {
+					region = western_latvia_region
+					region = vsam_region
+					region = southern_latvia_region
+					region = northern_latvia_region
+				}
+			}
+		}
+	}
+	old_kronossian_tech = {
+		start_level = 2
+		start_cost_modifier = 0.75 # 1.0
+		cav_to_inf_ratio = 0.5
+		nation_designer_trigger = {
+			OR = {
+				capital_scope = {
+					OR = {
+						region = ellin_kronos_region
+						region = south_kronos_region
+					}
+				}
+				culture_group = kronossian_group
+			}
+		}
+	}
+	taifalian = {
+		start_level = 2
+		start_cost_modifier = 2.0
+		cav_to_inf_ratio = 0.5
+		nation_designer_trigger = {
+			always = no
+		}
+	}
+	middle_land_group = {
+		start_level = 4
+		start_cost_modifier = 0.5 # 0.75
+		cav_to_inf_ratio = 0.5
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							continent = europe
+							continent = kronos
+							continent = malishian_island
+						}
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	lem_group = {
+		start_level = 0
+		start_cost_modifier = 2.5
+		cav_to_inf_ratio = 0.25
+		nation_designer_trigger = {
+			always = no
+			capital_scope = { continent = lemindland }
+		}
+		is_primitive = yes
+	}
+	
+	old_altras_tech = {
+		start_level = 6
+		start_cost_modifier = 0.35
+		cav_to_inf_ratio = 0.5
+		nation_designer_trigger = {
+			OR = {
+				government = altras_horde
+				government = altras_enzelkhanate
+				government = altras_ulus
+			}
+		}
+	}
+	old_zmooromfian = {
+		start_level = 4
+		start_cost_modifier = 1.0
+		cav_to_inf_ratio = 0.5
+		nation_designer_trigger = {
+			primary_culture = zmooromfian
+		}
+		#is_primitive = yes
+	}
+	
+	######
+	#
+	#western = {
+	#	modifier = 0
+	#	start_level = 3
+	#	cav_to_inf_ratio = 0.5
+	#	trade_company = yes
+	#}
+}
+
+tables = {
+	adm_tech = "technologies/adm.txt"
+	dip_tech = "technologies/dip.txt"
+	mil_tech = "technologies/mil.txt"
+}

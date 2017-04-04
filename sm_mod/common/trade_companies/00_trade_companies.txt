@@ -1,0 +1,108 @@
+trade_company_rantayzia = {
+	color = { 116 178 122 }
+	
+	provinces = {
+		397 400 565 598 599 600 601 614 615 617 618
+		619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634
+		636
+		# rantoteini
+		341 513 514 515 516
+		294 295 296
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_RANTAYZIA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_RANTAYZIA_rantzyzia_Trade_Company"
+	}
+}
+
+#trade_company_rantotei = {
+#	color = { 165 24 90 }
+#	
+#	provinces = {
+#		341 513 514 515 516
+#		294 295 296
+#		386 387 563
+#	}
+#	
+	# Specific
+	# Generic
+#	names = {
+#		name = "TRADE_COMPANY_RANTOTEINI_Root_Culture_GetName"
+#	}
+#	names = {
+#		name = "TRADE_COMPANY_RANTOTEINI_rantoteini_Trade_Company"
+#	}
+#}
+
+trade_company_chaepit = {
+	color = { 75 185 0 }
+	
+	provinces = {
+		386 387 563 # Kochegora Rantotei
+		388 389 390 293 409 1152 391 393 408 392 394 396 395 401 635 398 410 399 404 405 406 402 403 407
+	}
+	
+	# Specific
+		names = {
+		trigger = {
+			tag = ADN
+		}
+		name = "TRADE_COMPANY_CHAEPIT_Aredeynian_Rantotei"
+	}
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_CHAEPIT_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_CHAEPIT_Chaepit_Trade_Company"
+	}
+}
+
+trade_company_utenia = {
+	color = { 173 175 38 }
+	
+	provinces = {
+		308 309 310 311 312 313 314 315 316 317 318 319 320 321
+		555 556 557 558 559 560 561 562
+	}
+	
+	names = {
+		name = "TRADE_COMPANY_UTENIA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_UTENIA_Utenia_Trade_Company"
+	}
+}
+
+trade_company_kronos = {
+	color = { 173 31 0 }
+	
+	provinces = {
+		26 45 46 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150
+		151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172
+		173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 191 93 884
+	}
+	
+	names = {
+		trigger = {
+			OR = {
+				tag = SME
+				tag = YIA
+				tag = PEH
+			}
+		}
+		name = "KRONOS_ITC"
+	}
+	
+	names = {
+		name = "TRADE_COMPANY_KRONOS_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_KRONOS_Kronos_Trade_Company"
+	}
+}

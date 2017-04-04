@@ -1,0 +1,15 @@
+type = infantry
+unit_type = anarendilian_tech
+
+trigger = {
+	culture_group = levon_group
+}
+
+# 6
+maneuver = 1
+offensive_morale = 1
+defensive_morale = 1
+offensive_fire = 1
+defensive_fire = 1
+offensive_shock = 1
+defensive_shock = 0

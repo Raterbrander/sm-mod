@@ -1,0 +1,16 @@
+# Домино-монгольская кавалерия
+
+type = cavalry
+unit_type = domin_group
+# 6
+maneuver = 1
+offensive_morale = 2
+defensive_morale = 0
+offensive_fire = 1
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 0
+
+trigger = {
+	primary_culture = domin_mongol
+}
