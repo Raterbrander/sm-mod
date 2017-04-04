@@ -1,0 +1,40 @@
+owner = NHN
+controller = NHN
+add_core = NHN
+
+is_city = yes
+
+capital = "Ôåá"
+culture = role_nipponian
+religion = tolerance
+hre = no
+base_tax = 7
+base_production = 6
+base_manpower = 6
+trade_goods = iron
+
+traditional_factories = yes
+weapons = yes
+spaceport = yes
+
+discovered_by = rolevik
+discovered_by = high_domin
+discovered_by = imperial_group
+discovered_by = NGR
+discovered_by = TCH
+discovered_by = NHN
+
+725.1.1 = { # èØ ¦ÖÆ
+	base_tax = 5
+	base_production = 4
+	base_manpower = 4
+}
+790.1.1 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+1000.1.1 = {
+	spaceport = no
+	weapons = no
+}

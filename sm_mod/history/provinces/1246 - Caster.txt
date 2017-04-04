@@ -1,0 +1,70 @@
+native_size = 32
+native_ferocity = 3
+native_hostileness = 3
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Кастер"
+
+base_tax = 4
+base_production = 2
+base_manpower = 2
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+
+450.1.1 = {
+	owner = BLU
+	controller = BLU
+	add_core = BLU
+	is_city = yes
+	culture = bs_culture
+	trade_goods = oil
+}
+632.8.2 = { # Элларский протекторат
+	owner = TND
+	controller = TND
+	add_core = TND
+	add_core = EOY
+}
+633.1.1 = {
+	sm_rgo = yes
+	traditional_factories = yes
+}
+635.1.1 = {
+	owner = SUM
+	controller = SUM
+	add_core = SUM
+}
+650.1.1 = {
+	owner = XXX
+	controller = XXX
+	remove_core = SUM
+	remove_core = TND
+	is_city = no
+	base_tax = 3
+	traditional_factories = no
+	sm_rgo = no
+	culture = rolevik_culture
+}
+863.1.1 = {
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+	is_city = yes
+}
+900.1.12 = { # Распад
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+925.1.1 = {
+	culture = smesh_imp
+	religion = orakul
+}
+950.1.1 = { religion = imperial_faith }

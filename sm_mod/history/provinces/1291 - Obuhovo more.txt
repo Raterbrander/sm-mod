@@ -1,0 +1,3 @@
+discovered_by = anarendilian_tech
+discovered_by = high_domin
+discovered_by = imperial_group

@@ -1,0 +1,4 @@
+discovered_by = continental
+discovered_by = amian
+discovered_by = high_domin
+discovered_by = imperial_group

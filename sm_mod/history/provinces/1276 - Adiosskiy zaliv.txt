@@ -1,0 +1,8 @@
+discovered_by = continental
+discovered_by = amian
+discovered_by = high_domin
+discovered_by = imperial_group
+discovered_by = ellar_tech
+discovered_by = old_kronossian_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech

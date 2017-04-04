@@ -1,0 +1,89 @@
+native_size = 32
+native_ferocity = 3
+native_hostileness = 3
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "xxx"
+ 
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+
+23.4.1 = { # Основание
+	capital = "Общалка"
+	base_tax = 3
+	base_production = 2
+	base_manpower = 2
+}
+391.9.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 3
+}
+487.1.1 = {
+	owner = NGR
+	controller = NGR
+	add_core = NGR
+	is_city = yes
+	trade_goods = oil
+}
+550.1.1 = {
+	base_tax = 5
+	base_production = 4
+	base_manpower = 4
+}
+642.8.12 = {
+	owner = NHN
+	controller = NHN
+	add_core = NHN
+}
+645.1.1 = { fort_17th = yes }
+650.1.1 = {
+	base_tax = 6
+	base_production = 6
+	base_manpower = 7
+	add_core = BLU
+}
+652.1.28 = {
+	capital = "Копия Общалки"
+	owner = BLU
+	controller = BLU
+	base_tax = 4
+	base_production = 3
+	base_manpower = 4
+}
+700.1.1 = { # Переселение в Рио
+	owner = XXX
+	controller = XXX
+	remove_core = BLU
+	native_size = 32
+	native_ferocity = 3
+	native_hostileness = 3
+	capital = "Общалка"
+}
+862.5.26 = {
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+}
+882.7.18 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+	remove_core = SRE
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}

@@ -1,0 +1,83 @@
+owner = RDT
+controller = RDT
+add_core = BAK
+
+is_city = yes
+hre = no # ?
+
+culture = yellow
+religion = ellar_pagan
+capital = "Донтхойрос"
+
+trade_goods = naval_supplies
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+shipyard = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+
+442.3.4 = {
+	owner = BAK
+	controller = BAK
+	add_claim = RDT
+}
+#446.1.1 = {
+#	owner = YAL
+#	controller = YAL
+#	add_core = YAL
+#	remove_core = VNR
+#}
+#449.5.14 = {
+#	owner = BAK
+#	controller = BAK
+#	add_core = VNR
+#}
+450.4.28 = { controller = RDT }
+451.2.9  = { controller = BAK }
+#453.6.21 = { remove_core = RDT }
+464.6.3 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+}
+#471.6.4 = { remove_core = ALI }
+#482.1.2 = { hre = no }
+546.3.1 = { religion = helgarn }
+570.1.1 = { railroad_1 = yes }
+571.4.7 = {
+	owner = BAK
+	controller = BAK
+	remove_core = ZMR
+}
+574.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+576.5.17 = { # ?
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = BAK
+}
+582.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
