@@ -1,0 +1,49 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 235  140  185 }
+
+historical_idea_groups = {
+	administrative_ideas
+	exploration_ideas
+	quality_ideas
+	naval_ideas
+	economic_ideas
+	expansion_ideas
+	trade_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	amian_base_armies
+	amian_tanks
+	amian_sharsik_armies
+}
+
+monarch_names = {
+	"Обух #1" = 100
+	"Какол #0" = 60
+	"Украинец #0" = 40
+	"Дмитро #0" = 30
+	"Петро #0" = 30
+	"Тарас #0" = 30
+}
+
+leader_names = {
+	Обух Обухенятко Киевский "из Киева" Русин Украинец Украинский УТСовский
+}
+
+ship_names = {
+	Украина Киев УТС Утсовский Империя Обухенятко "Слава Украине" Майдан Величие
+	"Величие Украины" ТС ВС
+}
+
+army_names = {
+	"Украинские Турбо Стрелки" "Первая армия УТС" "2-ая армия УТС"
+}
+
+fleet_names = {
+	"Флот УТС" "Украинский флот" 
+}
+
