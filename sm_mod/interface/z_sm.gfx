@@ -1,0 +1,330 @@
+spriteTypes = {
+	
+	
+	spriteType = {
+		name = "GFX_colony_terrain_major_city"
+		texturefile = "gfx/interface/unique_terrain/1_major_city.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_major_city"	
+		texturefile = "gfx//interface//unique_terrain//2_major_city.tga"
+	}
+	spriteType = {
+		name = "GFX_colony_terrain_major_city_coastal"
+		texturefile = "gfx/interface/unique_terrain/colony_terrain_unique_aileiv.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_major_city_coastal"
+		texturefile = "gfx//interface//unique_terrain//combat_terrain_unique_aileiv.tga"
+	}
+	
+	# Unique terrain
+	spriteType = {
+		name = "GFX_colony_terrain_unique_narkutsk"
+		texturefile = "gfx/interface/unique_terrain/colony_terrain_unique_narkutsk.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_unique_kosgrad"
+		texturefile = "gfx/interface/unique_terrain/colony_terrain_unique_kosgrad.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_unique_belius"
+		texturefile = "gfx/interface/unique_terrain/colony_terrain_unique_belius.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_unique_aileiv"
+		texturefile = "gfx/interface/unique_terrain/colony_terrain_unique_aileiv.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_unique_chaepitie"
+		texturefile = "gfx/interface/unique_terrain/colony_terrain_unique_chaepitie.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_unique_taris"
+		texturefile = "gfx//interface//unique_terrain//taris1.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_unique_narkutsk"	
+		texturefile = "gfx//interface//unique_terrain//combat_terrain_unique_narkutsk.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_unique_kosgrad"	
+		texturefile = "gfx//interface//unique_terrain//combat_terrain_unique_kosgrad.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_unique_belius"	
+		texturefile = "gfx//interface//unique_terrain//combat_terrain_unique_belius.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_unique_aileiv"	
+		texturefile = "gfx//interface//unique_terrain//combat_terrain_unique_aileiv.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_unique_chaepitie"	
+		texturefile = "gfx//interface//unique_terrain//combat_terrain_unique_chaepitie.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_unique_taris"	
+		texturefile = "gfx//interface//unique_terrain//taris2.tga"
+	}
+
+	# Event pictures
+	spriteType = {
+		name = "ORDER_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/ORDER_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "USS_COALITION_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/USS_COALITION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "INDUSTRY_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/INDUSTRY_eventPicture.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ANTI_SMESHIKS_COALITION_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/ANTI_SMESHIKS_COALITION_eventPicture.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "LATVIA_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/LATVIA.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "AZAD_CHAEPIT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/AZAD_CHAEPIT_eventPicture.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "RAILROAD1_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/RAILROAD1_eventPicture.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "RAILROAD2_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/RAILROAD2_eventPicture.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "KROSHELBURG_CITY_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/KAKOY_TO_GOROD.tga"
+		allwaystransparent = yes
+	}
+	
+	# Factions
+	spriteType = {
+		name = "GFX_faction_bg_sin_racist_faction"	
+		texturefile = "gfx//interface//factions//faction_blue_frame.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_sin_tolerance_faction"	
+		texturefile = "gfx//interface//factions//faction_blue_frame.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_sin_racist_faction"	
+		texturefile = "gfx//interface//factions//sin_racist_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_sin_tolerance_faction"	
+		texturefile = "gfx//interface//factions//sin_tolerance_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_CHT_azad_chaepit"	
+		texturefile = "gfx//interface//factions//faction_green_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_CHT_people_party"	
+		texturefile = "gfx//interface//factions//faction_green_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_CHT_independents"	
+		texturefile = "gfx//interface//factions//faction_green_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_CHT_azad_chaepit"	
+		texturefile = "gfx//interface//factions//CHT_azad_chaepit.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_CHT_people_party"	
+		texturefile = "gfx//interface//factions//CHT_people_party.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_CHT_independents"	
+		texturefile = "gfx//interface//factions//CHT_independents.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_mal_totalitarian_faction"	
+		texturefile = "gfx//interface//faction_red_frame.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_mal_reformist_faction"	
+		texturefile = "gfx//interface//factions//faction_green_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_mal_democrat_faction"	
+		texturefile = "gfx//interface//faction_blue_frame.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_mal_totalitarian_faction"	
+		texturefile = "gfx//interface//factions//mal_totalitarian_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_mal_reformist_faction"	
+		texturefile = "gfx//interface//factions//mal_reformist_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_mal_democrat_faction"	
+		texturefile = "gfx//interface//factions//mal_democrat_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_CH3_neutral_faction"	
+		texturefile = "gfx//interface//faction_blue_frame.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_CH3_NGR_faction"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_CH3_nihon_faction"	
+		texturefile = "gfx//interface//faction_blue_frame.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_CH3_neutral_faction"	
+		texturefile = "gfx//interface//factions//CH3_neutral_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_CH3_NGR_faction"	
+		texturefile = "gfx//interface//factions//CH3_NGR_faction.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_CH3_nihon_faction"	
+		texturefile = "gfx//interface//factions//CH3_nihon_faction.tga"
+	}
+	
+	# CB
+	spriteType = {
+		name = "GFX_cb_gottardian_throne"
+		texturefile = "gfx/interface/casus_bellis/cb_claim_throne.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	# Disasters
+	spriteType = {
+		name = "GFX_disaster_panellar_revolution"
+		texturefile = "gfx//interface//disasters//panellar_revolution.tga"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	
+	# Modifiers
+	spriteType = {
+		name = "GFX_historical_unavailable_prov_pic"
+		texturefile = "gfx//interface//ideas_EU4//historical_unavailable_prov_pic.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	
+	# Other
+	spriteType = {
+		name = "GFX_resource_icon_transparent"
+		texturefile = "gfx//interface//resources.tga"
+		noOfFrames = 24
+		loadType = "INGAME"
+		
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_resource_icon"
+		texturefile = "gfx//interface//resources.tga"
+		noOfFrames = 24
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_icon_small"
+		texturefile = "gfx//interface//resources_small.tga"
+		noOfFrames = 24
+		loadType = "INGAME"
+	}
+	
+	# Institutions
+	spriteType = {
+		name = "GFX_icon_institution_statehood"
+		texturefile = "gfx//interface//institutions//statehood.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_icon_institution_industrialisation"
+		texturefile = "gfx//interface//institutions//industrialisation.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_icon_institution_modern_i"
+		texturefile = "gfx//interface//institutions//modern_i.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	
+	spriteType = {
+		name = "GFX_institution_tab_statehood"
+		texturefile = "gfx/interface/institutions//institution_tab_statehood.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_institution_tab_industrialisation"
+		texturefile = "gfx/interface/institutions//institution_tab_industrialisation.tga"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_institution_tab_modern_i"
+		texturefile = "gfx/interface/institutions//institution_tab_modern_i.tga"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+}

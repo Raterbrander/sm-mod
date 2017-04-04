@@ -1,0 +1,13 @@
+/см/-модом модифицированы:
+provinceview.gui
+macrobuildinterface.gfx
+z_sm.gfx
+eventwindow.gfx
+eventwindow.gui
+building_icons.gfx
+macrobuildinterface.gui
+hre.gui
+load_screen.gfx
+macrobuildinterface.gfx
+
+Остальное - не важно.
