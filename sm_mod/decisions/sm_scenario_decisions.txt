@@ -1,0 +1,297 @@
+##########################################################################
+# Общие решения для настройки сценариев в моде, прописываемые в истории
+# стран
+##########################################################################
+# 2011_scenarion_dec
+# Настройка сценария 2011 года
+# establish_distra_neimadika_EOY
+# Базовое решение для ИЖ на создание дистры неимадики как типа владений
+# Принятие его в ИЖ даёт другим странам создавать эти автономии у себя
+# Как - пока не придумал
+# Будут сословия - можно подумать о даровании земель кочевникам
+#
+# FoGU_scenario_balance - выпилено, но можно использовать на будущее
+# Баланс и историзм для сценария 2013-ого
+#
+# sm_USS_crisis_dec
+# Ослабление ССРШ - кризис после удаления форумов 31 мая 2013-ого
+# 
+# sm_rise_of_DRA_dec
+# Усиливает ТС на 25 лет с 25 июня 2013-ого
+#
+# clr_sm_USS_crisis_dec
+# Убирает кризис у ССРШ
+##########################################################################
+country_decisions = {
+
+	#2011_scenarion_dec = {
+	#	potential = {
+	#		always = no
+	#	}
+	#	allow = {
+	#		always = no
+	#	}
+	#	effect = {
+	#		every_country = {
+	#			limit = {
+	#				NOT = {
+	#					OR = {
+	#						tag = SIN
+	#						tag = SME
+	#					}
+	#				}
+	#				is_tribal = no
+	#				is_nomad = no
+	#			}
+	#			add_country_modifier = {
+	#				name = sm_slavery_abolished
+	#				duration = -1
+	#			}
+	#		}
+	#		every_country = {
+	#			limit = {
+	#				OR = {
+	#					tag = LRK
+	#					has_country_modifier = gervein_union_member
+	#				}
+	#			}
+	#			add_country_modifier = {
+	#				name = sm_serfdom_abolished
+	#				duration = -1
+	#			}
+	#		}
+	#	}
+	#}
+
+	#establish_distra_neimadika_EOY = {
+	#	potential = {
+			#tag = EOY
+			#ai = yes
+			#NOT = { has_global_flag = distra_neimadika_established }
+	#		always = no
+	#	}
+	#	allow = {
+	#		always = no
+	#	}
+	#	effect = {
+	#		set_global_flag = distra_neimadika_established
+	#		add_country_modifier = {
+	#			name = distra_neimadika_state
+	#			duration = -1
+	#		}
+	#	}
+	#}
+	#
+	#FoGU_scenario_balance = {
+	#	potential = {
+	#		always = no
+	#	}
+	#	allow = {
+	#		always = no
+	#	}
+	#	effect = {
+	#		USS = {
+	#			add_country_modifier = {
+	#				name = sm_uss_crisis
+	#				duration = -1
+	#				desc = "END_OF_CRISIS"
+	#			}
+	#		}
+	#		DRA = {
+	#			add_country_modifier = {
+	#				name = sm_rise_of_dra
+	#				duration = 9125
+	#			}
+	#		}
+	#	}
+	#}
+	
+	sm_USS_crisis_dec = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm_uss_crisis
+				duration = -1
+				desc = "END_OF_CRISIS"
+			}
+		}
+	}
+	
+	sm_rise_of_DRA_dec = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm_rise_of_dra
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = sm_rise_of_dra_2
+				duration = 3650
+			}
+			USS = {
+				every_owned_province = {
+					limit = {
+						NOT = {
+							is_core = DRA
+							is_claim = DRA
+						}
+					}
+					add_permanent_claim = DRA
+				}
+				random_owned_province = {
+					limit = {
+						controlled_by = DRA
+					}
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					cavalry = DRA
+					cavalry = DRA
+					cavalry = DRA
+					cavalry = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+				}
+				64 = {
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					infantry = DRA
+					cavalry = DRA
+					cavalry = DRA
+					cavalry = DRA
+					cavalry = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+					artillery = DRA
+				}
+			}
+			set_global_flag = tolerance_state
+		}
+	}
+	
+	sm_DMF_DRA_war_dec = {
+		potential = {
+			always = no
+		}
+		allow = {
+			tag = DMF
+		}
+		effect = {
+			DRA = {
+				every_owned_province = {
+					limit = {
+						culture = malishian
+						NOT = { is_claim = DMF }
+						NOT = { is_core = DMF }
+					}
+					add_permanent_claim = DMF
+				}
+			}
+		}
+	}
+	
+	clr_sm_USS_crisis_dec = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			remove_country_modifier = sm_uss_crisis
+		}
+	}
+	
+	sm_GRU_crisis_dec = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm_gru_crisis
+				duration = -1
+				desc = "END_OF_CRISIS"
+			}
+		}
+	}
+	
+	clr_sm_GRU_crisis_dec = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			remove_country_modifier = sm_gru_crisis
+		}
+	}
+	
+	discover_latvia = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			set_global_flag = latvia_discovered_by_continentals
+			every_province = {
+				limit = {
+					superregion = latvia_superregion
+					development = 6
+				}
+				every_country = {
+					limit = {
+						OR = {
+							technology_group = continental
+							technology_group = amian # ?
+							culture_group = yellow_group
+							culture_group = siniusdan_group
+							AND = {
+								capital_scope = { continent = kronos }
+								NOT = { technology_group = old_kronossian_tech }
+							}
+							#culture_group = old_amian_group
+							capital_scope = { continent = malishian_island }
+							capital_scope = { continent = south_main }
+							capital_scope = { province_id = 420 }
+						}
+					}
+					discover_province = PREV
+				}
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,43 @@
+# Переименование провинций по закладкам
+country_decisions = {
+	
+	rename_482 = {
+		potential = {
+			always = no
+		}
+		allow = {
+			NOT = { has_global_flag = rename_482_flag }
+		}
+		effect = {
+			set_global_flag = rename_482_flag
+			238 = {
+				change_province_name = "Белиус"
+			}
+			112 = {
+				change_province_name = "Рифлотаун"
+			}
+		}
+	}
+	
+	rename_2013 = {
+		potential = {
+			always = no
+		}
+		allow = {
+			NOT = { has_global_flag = rename_2013_flag }
+		}
+		effect = {
+			set_global_flag = rename_2013_flag
+			873 = {
+				change_province_name = "Логова Ордера"
+			}
+			873 = {
+				change_province_name = "Маверхолд"
+			}
+			280 = {
+				change_province_name = "Хельгарновы земли"
+			}
+		}
+	}
+	
+}

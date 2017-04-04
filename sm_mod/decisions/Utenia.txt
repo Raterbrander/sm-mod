@@ -1,0 +1,127 @@
+country_decisions = {
+	
+	create_karteval_utenia = {
+		potential = {
+			normal_or_historical_nations = yes
+			is_subject = no
+			NOT = { exists = KTN }
+			any_owned_province = {
+				region = utenia_region
+				is_overseas = yes
+			}
+			OR = {
+				government = karteval
+				government = karteval_monarchic
+				government = karteval_republic
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			OR = {
+				num_of_owned_provinces_with = {
+					region = utenia_region
+					value = 5
+				}
+				any_subject_country = {
+					num_of_owned_provinces_with = {
+						region = utenia_region
+						value = 5
+					}
+					capital_scope = { region = utenia_region }
+				}
+			}
+			stability = 1
+		}
+		effect = {
+			utenia_region = {
+				limit = {
+					OR = {
+						owned_by = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+				hidden_effect = { add_core = KTN }
+				cede_province = KTN
+			}
+			hidden_effect = {
+				KTN = {
+					change_primary_culture = ROOT
+					change_government = karteval_republic
+				}
+				utenia_region = {
+					limit = {
+						NOT = { owned_by = KTN }
+					}
+					add_claim = KTN
+				}
+				vassalize = KTN
+				create_march = KTN
+			}
+			KTN = {
+				random_owned_province = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_karteval_utenia = {
+		major = yes
+		potential = {
+			tag = UTN
+			NOT = { exists = KTN }
+			OR = {
+				government = karteval
+				government = karteval_monarchic
+				government = karteval_republic
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = KTN
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	KTN_to_UTN = {
+		major = yes
+		potential = {
+			tag = KTN
+			NOT = { exists = UTN }
+			NOT = {
+				OR = {
+					government = karteval
+					government = karteval_monarchic
+					government = karteval_republic
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = utenian
+		}
+		effect = {
+			change_tag = UTN
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

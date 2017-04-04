@@ -1,0 +1,189 @@
+country_decisions = {
+	
+	zmooromf_unification_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			#all_country = {
+			#	NOT = { has_country_modifier = zmooromf_unification }
+			#}
+			NOT = { has_country_flag = zmooromf_unification_flag }
+			primary_culture = zmooromfian
+			#is_tribal = yes
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			zmooromfland = {
+				type = all
+				owned_by = ROOT
+			}
+			has_idea = zmooromfian_uniting
+			stability = 1
+			legitimacy = 75
+		}
+		effect = {
+			add_prestige = 15
+			#add_country_modifier = {
+			#	name = zmooromf_unification
+			#	duration = -1
+			#}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			kornisonaks_region = {
+				limit = {
+					culture = zmooromfian
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			kornisonaks_region = {
+				limit = {
+					NOT = { culture = zmooromfian }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = zmooromf_unification_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+	
+	return_of_alivarjaks = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = ALI
+			NOT = { has_country_flag = ALI_claims }
+			primary_culture = zmooromfian
+		}
+		allow = {
+			is_subject = no
+			num_of_cities = 4
+			legitimacy = 90
+			stability = 1
+			prestige = 15
+		}
+		effect = {
+			kornisonaks_region = {
+				limit = {
+					culture = zmooromfian
+					NOT = { is_core = ALI }
+				}
+				add_permanent_claim = ALI
+			}
+			set_country_flag = ALI_claims
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	use_animals_in_army = {
+		potential = {
+			normal_or_historical_nations = yes
+			primary_culture = zmooromfian
+			NOT = { has_country_modifier = using_animals_in_wars }
+		}
+		allow = {
+			primary_culture = zmooromfian
+			technology_group = old_zmooromfian
+			is_subject = no
+			stability = 1
+			num_of_cities = 3
+			has_country_modifier = using_zmooromf_power
+			OR = {
+				mil = 2
+				has_advisor = army_reformer
+				has_advisor = army_organiser
+				has_advisor = recruitmaster
+			}
+			mil_power = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = using_animals_in_wars
+				duration = -1
+			}
+			add_mil_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+	use_battle_zmoor = {
+		potential = {
+			normal_or_historical_nations = yes
+			primary_culture = zmooromfian
+			NOT = { has_country_modifier = using_zmooromf_power }
+		}
+		allow = {
+			primary_culture = zmooromfian
+			technology_group = old_zmooromfian
+			is_subject = no
+			stability = 1
+			OR = {
+				mil = 2
+				has_advisor = army_reformer
+				has_advisor = army_organiser
+				has_advisor = recruitmaster
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = using_zmooromf_power
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+	use_battle_magic = {
+		potential = {
+			normal_or_historical_nations = yes
+			primary_culture = zmooromfian
+			NOT = { has_country_modifier = using_zmooromf_magic }
+		}
+		allow = {
+			primary_culture = zmooromfian
+			technology_group = old_zmooromfian
+			is_subject = no
+			stability = 2
+			num_of_cities = 7
+			has_country_modifier = using_zmooromf_power
+			OR = {
+				mil = 4
+				has_advisor = army_reformer
+				has_advisor = army_organiser
+				has_advisor = recruitmaster
+			}
+			adm_power = 100
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = using_zmooromf_magic
+				duration = -1
+			}
+			add_adm_power = -100
+			add_mil_power = -250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+}

@@ -1,0 +1,235 @@
+country_decisions = {
+	
+	form_SME_general = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SME }
+			#OR = {
+			#	primary_culture = smesh_imp
+			#	primary_culture = eurasian
+			#}
+			OR = {
+				culture_group = imp_smesh_group
+				tag = AVE
+			}
+			is_year = 850
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			NOT = { has_country_flag = ngi_historical }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			is_nomad = no
+			owns_core_province = 490
+			owns_or_vassal_of = 350
+			#OR = {
+			#	owns_or_vassal_of = 491
+			#	owns_or_vassal_of = 487
+			#}
+			OR = {
+				owns_or_vassal_of = 482
+				owns_or_vassal_of = 463
+			}
+			OR = {
+				owns_or_vassal_of = 485
+				owns_or_vassal_of = 486
+			}
+			OR = {
+				owns_or_vassal_of = 483
+				owns_or_vassal_of = 484
+			}
+			#
+			OR = {
+				num_of_cities = 25
+				total_development = 500
+			}
+		}
+		effect = {
+			change_tag = SME
+			set_government_rank = 3
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			# claims
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 300
+	}
+	
+	form_SME_NGI = {
+		major = yes
+		potential = {
+			tag = NGI
+			has_country_flag = ngi_historical
+			OR = {
+				primary_culture = smesh_imp
+				primary_culture = eurasian
+			}
+		}
+		allow = {
+			stability = 2
+			CH2 = {
+				years_in_union_under = {
+					who = NGI
+					years = 10
+				}
+			}
+			is_subject = no
+			is_at_war = no
+			is_nomad = no
+			owns_core_province = 490
+			owns_or_vassal_of = 350
+			#OR = {
+			#	owns_or_vassal_of = 491
+			#	owns_or_vassal_of = 487
+			#}
+			OR = {
+				owns_or_vassal_of = 482
+				owns_or_vassal_of = 463
+			}
+			OR = {
+				owns_or_vassal_of = 485
+				owns_or_vassal_of = 486
+			}
+			OR = {
+				owns_or_vassal_of = 483
+				owns_or_vassal_of = 484
+			}
+			#
+			OR = {
+				num_of_cities = 25
+				total_development = 500
+			}
+		}
+		effect = {
+			change_tag = SME
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			# claims
+			add_prestige = 25
+			hidden_effect = { # 3
+				random_owned_province = {
+					set_province_flag = sme_prov_will_not_be_upgraded
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { has_province_flag = sme_prov_will_not_be_upgraded }
+					}
+					set_province_flag = sme_prov_will_not_be_upgraded_2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	relocate_capital_to_imperial_town = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				primary_culture = smesh_imp
+				primary_culture = eurasian
+			}
+			NOT = { has_country_flag = capital_relocated_to_imperial_town }
+			NOT = { has_country_flag = was_generated_in_imperial_town }
+			NOT = { capital = 490 }
+			owns = 490
+		}
+		allow = {
+			is_at_war = no
+			owns_core_province = 490
+			stability = 1
+			adm_power = 100
+		}
+		effect = {
+			set_country_flag = capital_relocated_to_imperial_town
+			set_capital = 490
+			add_years_of_income = -0.35
+			add_adm_power = -100
+			add_prestige = 10
+			490 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = owner
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.5 }
+			}
+		}
+	}
+	
+	#establish_imperial_lordships_system = {
+	#	potential = {
+	#		tag = SME
+	#		NOT = { has_country_modifier = sm_imperial_lordships }
+	#	}
+	#	allow = {
+	#		NOT = { has_country_modifier = sm_imperial_lordships }
+	#		OR = {
+	#			num_of_cities = 30
+	#			total_development = 3
+	#		}
+	#		government_rank = 3
+	#		OR = {
+	#			government = monarchy
+	#			government = religion
+	#		}
+	#		num_of_vassals = 3
+	#		stability = 0
+	#		prestige = 25
+	#		legitimacy = 75
+	#	}
+	#	effect = {
+	#		add_prestige = 10
+	#		add_country_modifier = {
+	#			name = sm_imperial_lordships
+	#			duration = -1
+	#		}
+			#add_stability = 1
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	
+}

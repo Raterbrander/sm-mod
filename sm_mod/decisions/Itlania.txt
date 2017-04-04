@@ -1,0 +1,79 @@
+country_decisions = {
+
+	cooperation_with_SIN = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = ITL
+			exists = SIN
+			NOT = { has_country_modifier = ITL_SIN_cooperation }
+			NOT = { has_country_flag = ITL_SIN_cooperation_flag }
+			NOT = { technology_group = continental }
+		}
+		allow = {
+			is_subject = no
+			OR = {
+				dip = 3
+				adm = 3
+			}
+			adm_power = 50
+			#prestige = 5
+			stability = 1
+			SIN = {
+				is_subject = no
+				OR = {
+					AND = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						alliance_with = ROOT
+					}
+					has_country_flag = SIN_itlanian_mission
+				}
+			}
+			has_opinion = {
+				who = SIN
+				value = 0
+			}
+		}
+		effect = {
+			add_adm_power = -50
+			add_country_modifier = {
+				name = ITL_SIN_cooperation
+				duration = 3650
+			}
+			set_country_flag = ITL_SIN_cooperation_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+	ITL_continental = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = ITL
+			has_country_flag = ITL_SIN_cooperation_flag
+			NOT = { technology_group = continental }
+		}
+		allow = {
+			OR = {
+				is_subject = no
+				is_subject_of = SIN
+			}
+			NOT = { has_country_modifier = ITL_SIN_cooperation }
+			stability = 2
+			adm_power = 100
+		}
+		effect = {
+			change_technology_group = continental
+			change_unit_type = continental
+			add_stability = -2
+			add_adm_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

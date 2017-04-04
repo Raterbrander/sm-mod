@@ -1,0 +1,107 @@
+country_decisions = {
+
+	form_UOS = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = UOS }
+			OR = {
+				AND = {
+					tag = DSH
+					has_country_flag = DSH_in_bakenrou
+				}
+				tag = AGA
+			}
+			exists = DSH
+			exists = AGA
+		}
+		allow = {
+			is_at_war = no
+			is_nomad = no
+			stability = 2
+			adm_power = 200
+			dip_power = 100
+			prestige = 20
+			OR = {
+				AND = {
+					DSH = { is_subject = no }
+					AGA = { is_subject = no }
+				}
+				AND = {
+					DSH = { vassal_of = CH2 }
+					AGA = { vassal_of = CH2 }
+				}
+			}
+			OR = {
+				AND = {
+					tag = DSH
+					AGA = {
+						has_opinion = {
+							who = DSH
+							value = 175
+						}
+						is_at_war = no
+					}
+				}
+				AND = {
+					tag = AGA
+					DSH = {
+						has_opinion = {
+							who = AGA
+							value = 175
+						}
+						is_at_war = no
+					}
+				}
+				AND = {
+					tag = DSH
+					AGA = { is_subject_of = DSH }
+				}
+				AND = {
+					tag = AGA
+					DSH = { is_subject_of = AGA }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = DSH
+				}
+				inherit = AGA
+			}
+			if = {
+				limit = {
+					tag = AGA
+				}
+				inherit = DSH
+			}
+			change_tag = UOS
+			CH2 = { free_vassal = UOS }
+			change_government = consul_republic
+			if = {
+				limit = { primary_culture = dobroshar_culture }
+				add_accepted_culture = amga_culture
+			}
+			if = {
+				limit = { primary_culture = amga_culture }
+				add_accepted_culture = dobroshar_culture
+			}
+			if = {
+				limit = {
+					NOT = { technology_group = continental }
+				}
+				change_technology_group = continental
+				change_unit_type = continental
+			}
+			add_adm_power = -200
+			add_dip_power = -100
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

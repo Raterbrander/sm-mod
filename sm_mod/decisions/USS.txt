@@ -1,0 +1,79 @@
+country_decisions = {
+
+	xt_15 = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				tag = USS
+				#AND = {
+				#	culture_group = domin_group
+				#	NOT = { primary_culture = domin_mongol }
+				#}
+				tag = DOM
+			}
+			#OR = {
+			#	government = communist_dictatorship
+			#	government = socialist_state
+			#}
+			technology_group = high_domin
+			mil_tech = 22
+			#NOT = { mil_tech = 28 }
+			NOT = { has_global_flag = xt_15_d_gf }
+			NOT = { has_country_modifier = xt_15_tanks }
+		}
+		allow = {
+			is_subject = no
+			mil_tech = 22
+			#has_country_modifier = sm_mil_economy
+			num_of_cities = 8
+			stability = 1
+			years_of_income = 0.25
+			adm_power = 75
+		}
+		effect = {
+			add_years_of_income = -0.3
+			add_adm_power = -150
+			add_mil_power = 500
+			add_country_modifier = {
+				name = xt_15_tanks
+				duration = -1
+			}
+			set_global_flag = xt_15_d_gf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_uss = {
+		major = yes
+		potential = {
+			tag = DOM
+			NOT = { exists = USS }
+		}
+		allow = {
+			OR = {
+				government = communist_dictatorship
+				government = socialist_republic
+			}
+			is_at_war = no
+			is_subject = no
+			stability = 0
+		}
+		effect = {
+			change_tag = USS
+			if = {
+				limit = {
+					NOT = { religion = tolerance }
+				}
+				change_religion = tolerance
+			}
+			add_prestige = 25
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

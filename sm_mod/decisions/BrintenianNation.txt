@@ -1,0 +1,177 @@
+country_decisions = {
+	
+	form_brintenian_nation = {
+		major = yes
+		potential = {
+			NOT = { tag = SRE }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			NOT = { exists = BRN }
+			NOT = { exists = BR1 }
+			primary_culture = brintenian
+			NOT = { government = mercenaries_clan }
+			NOT = { government = role_gov }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = brintenian
+			owns_core_province = 459
+			OR = {
+				AND = {
+					num_of_cities = 18
+					dominant_culture = brintenian
+				}
+				AND = {
+					owns_core_province = 447
+					owns_core_province = 449
+					owns_core_province = 448
+					owns_core_province = 451
+					owns_core_province = 454
+					OR = {
+						owns_core_province = 467
+						owns_core_province = 469
+					}
+				}
+			}
+			NOT = { government = AM_clan }
+			NOT = { government = AM_clan_rep }
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							government = socialist_republic
+							government = socialist_state
+							government = communist_dictatorship
+						}
+					}
+				}
+				change_tag = BRN
+			}
+			if = {
+				limit = {
+					OR = {
+						government = socialist_republic
+						government = socialist_state
+						government = communist_dictatorship
+					}
+				}
+				change_tag = BR1
+			}
+			add_prestige = 10
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					NOT = { technology_group = continental }
+					NOT = { technology_group = high_domin }
+					NOT = { technology_group = imperial_group }
+				}
+				change_technology_group = imperial_group
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+
+	form_brintenian_nation_sre = {
+		major = yes
+		potential = {
+			tag = SRE
+			NOT = { exists = BRN }
+			NOT = { exists = BR1 }
+			normal_or_historical_nations = yes
+			primary_culture = brintenian
+			NOT = { government = mercenaries_clan }
+			NOT = { government = role_gov }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = brintenian
+			owns_core_province = 459
+			owns_core_province = 447
+			owns_core_province = 449
+			owns_core_province = 448
+			owns_core_province = 451
+			owns_core_province = 454
+			OR = {
+				owns_core_province = 467
+				owns_core_province = 469
+			}
+			NOT = { government = AM_clan }
+			NOT = { government = AM_clan_rep }
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							government = socialist_republic
+							government = socialist_state
+							government = communist_dictatorship
+						}
+					}
+				}
+				change_tag = BRN
+			}
+			if = {
+				limit = {
+					OR = {
+						government = socialist_republic
+						government = socialist_state
+						government = communist_dictatorship
+					}
+				}
+				change_tag = BR1
+			}
+			add_prestige = 10
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					NOT = { technology_group = continental }
+					NOT = { technology_group = high_domin }
+					NOT = { technology_group = imperial_group }
+				}
+				change_technology_group = imperial_group
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

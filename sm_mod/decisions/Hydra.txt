@@ -1,0 +1,172 @@
+country_decisions = {
+	
+	dec_ozanvalt_reforms = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = RLH
+			NOT = { has_country_modifier = ozanvalt_reforms }
+			NOT = { has_country_flag = had_ozanvalt_reforms }
+		}
+		allow = {
+			stability = 2
+			adm = 5
+			adm_power = 100
+			NOT = { has_country_modifier = ozanvalt_reforms }
+		}
+		effect = {
+			change_government = feudal_monarchy
+			add_country_modifier = {
+				name = ozanvalt_reforms
+				duration = 3650
+			}
+			add_adm_power = 250
+			add_dip_power = 350
+			add_mil_power = 350
+			add_stability = -3
+			set_country_flag = had_ozanvalt_reforms
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_hydra = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = GDR }
+			NOT = { has_global_flag = hydra_was_formed }
+			tag = RLH
+			OR = {
+				ai = no
+				has_country_flag = had_ozanvalt_reforms
+			}
+		}
+		allow = {
+			OR = {
+				is_subject = no
+				overlord = { culture_group = altras_culture_group }
+			}
+			owns_core_province = 343
+			OR = {
+				adm = 5
+				mil = 5
+			}
+			OR = {
+				adm_tech = 7
+				dip_tech = 7
+				mil_tech = 7
+				is_year = 500
+			}
+		}
+		effect = {
+			change_tag = GDR
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			swap_free_idea_group = yes
+			change_primary_culture = hydra_altras
+			set_capital = 343
+			343 = {
+				change_culture = hydra_altras
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+			if = {
+				limit = { has_country_modifier = ozanvalt_reforms }
+				remove_country_modifier = ozanvalt_reforms
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				overlord = { free_vassal = GDR }
+			}
+			set_global_flag = hydra_was_formed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_hydra_later = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = GDR }
+			has_global_flag = hydra_was_formed
+			OR = {
+				primary_culture = hydra_altras
+				capital_scope = { area = hydra_area }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 343
+		}
+		effect = {
+			change_tag = GDR
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			swap_free_idea_group = yes
+			change_primary_culture = hydra_altras
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	finish_onzanvalt_reforms = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = GDR
+			had_country_flag = {
+				flag = had_ozanvalt_reforms
+				days = 9125
+			}
+			NOT = { has_country_modifier = ozanvalt_reforms }
+			NOT = { technology_group = continental }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			adm = 4
+			num_of_cities = 4
+			stability = 2
+			adm_power = 100
+			any_country = {
+				technology_group = continental
+				is_subject = no
+				num_of_cities = 3
+				OR = {
+					AND = {
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+						is_neighbor_of = ROOT
+					}
+					alliance_with = ROOT
+				}
+			}
+		}
+		effect = {
+			change_technology_group = continental
+			#change_unit_type = continental
+			add_adm_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

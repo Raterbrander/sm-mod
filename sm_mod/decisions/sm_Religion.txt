@@ -1,0 +1,351 @@
+country_decisions = {
+
+	adopt_tolerance = {
+		potential = {
+			NOT = { government = AM_clan }
+			NOT = { government = AM_clan_rep }
+			NOT = { government = theocracy }
+			OR = {
+				NOT = { religion_group = non_religious_group }
+				religion = ameism
+			}
+			adm_tech = 4 # ?
+			has_institution = industrialisation
+		}
+		allow = {
+			NOT = { religion = tolerance }
+			stability = 0
+			OR = {
+				is_subject = no
+				overlord = {
+					religion = tolerance
+				}
+			}
+			is_at_war = no
+		}
+		effect = {
+			change_religion = tolerance
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				OR = {
+					technology_group = imperial_group
+					religion_group = smesharikov_group
+				}
+				NOT = { government = republic }
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					tag = GRU
+					tag = BEL
+					tag = MRT
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					tag = KRO
+					tag = ASM
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				religion = ameism
+				is_part_of_hre = yes
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					is_elector = yes
+					is_emperor = yes
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				technology_group = ellar_tech
+				#NOT = { government = republic }
+				NOT = { is_year = 575 }
+			}
+		}
+	}
+	
+	abadon_tolerance = {
+		potential = {
+			religion = tolerance
+			any_core_province = {
+				NOT = { religion = tolerance }
+				NOT = { religion = atheism }
+			}
+			OR = {
+				NOT = { has_country_flag = no_tolerance_sm_rel }
+				had_country_flag = {
+					flag = no_tolerance_sm_rel
+					days = 365
+				}
+			}
+		}
+		allow = {
+			stability = 2
+			NOT = { government = communist_dictatorship }
+			NOT = { government = socialist_republic }
+			OR = {
+				religious_unity = 0.55
+				government = republican_dictatorship
+				government = absolute_monarchy
+				government = despotic_monarchy
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { religious_unity = 0.65 }
+				}
+				add_stability = -3
+			}
+			if = {
+				limit = {
+					religious_unity = 0.65
+					NOT = { religious_unity = 0.95 }
+				}
+				add_stability = -1
+			}
+			set_country_flag = no_tolerance_sm_rel
+			country_event = {
+				id = sm_tolerance.1
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	adopt_secondary_religion_ameism = {
+		potential = {
+			religion = ameism
+			NOT = { secondary_religion = ameism }
+			NOT = { secondary_religion = tolerance }
+		}
+		allow = {
+			#dominant_religion = secondary
+			stability = 2
+		}
+		effect = {
+			change_to_secondary_religion = yes
+			add_stability = -3
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				OR = {
+					technology_group = amian
+					government = AM_clan
+					government = AM_clan_rep
+				}
+				NOT = { tag = KRO }
+				#NOT = { tag = BEL }
+			}
+			
+			modifier = {
+				factor = 0
+				is_part_of_hre = yes
+			}
+		}
+	}
+	
+	adopt_totemism = {
+		potential = {
+			NOT = { religion = totemism }
+			OR = {
+				religion_group = pagan
+				religion_group = lemindland_group
+				#religion_group = altras_rel_group
+			}
+			OR = {
+				any_owned_province = { religion = totemism }
+				any_neighbor_country = {
+					NOT = { is_rival = ROOT }
+					religion = totemism
+				}
+			}
+			NOT = { government = theocracy }
+		}
+		allow = {
+			NOT = { religion = totemism }
+			OR = {
+				any_owned_province = { religion = totemism }
+				any_neighbor_country = {
+					NOT = { is_rival = ROOT }
+					religion = totemism
+				}
+				tag = AVE
+			}
+			stability = 1
+		}
+		effect = {
+			change_religion = totemism
+			add_stability = -3
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				change_religion = totemism
+			}
+			capital_scope = { change_religion = totemism }
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 2
+				tag = AVE
+			}
+		}
+	}
+	
+	adopt_helgarn_pagan = {
+		potential = {
+			OR = {
+				religion_group = pagan
+				religion = kronos_pagan
+				religion = central_land_paganism
+				religion_group = lemindland_group
+				religion_group = altras_rel_group
+				religion = alklvalondie
+			}
+			OR = {
+				any_owned_province = { religion = helgarn }
+				any_neighbor_country = {
+					NOT = { is_rival = ROOT }
+					religion = helgarn
+				}
+			}
+			NOT = { government = theocracy }
+		}
+		allow = {
+			NOT = { religion = helgarn }
+			OR = {
+				any_owned_province = { religion = helgarn }
+				any_neighbor_country = {
+					NOT = { is_rival = ROOT }
+					religion = helgarn
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+			stability = 1
+		}
+		effect = {
+			change_religion = helgarn
+			add_stability = -2
+			random_owned_province = {
+				limit = { is_capital = no }
+				change_religion = helgarn
+			}
+			capital_scope = { change_religion = helgarn }
+		}
+	}
+	
+	alklvalondie_church_reforms = {
+		potential = {
+			religion = alklvalondie
+			NOT = { has_country_modifier = alklvalondie_reforms }
+			num_of_owned_provinces_with = {
+				NOT = { religion = alklvalondie }
+				NOT = { religion = ross_pagan }
+				value = 2
+			}
+		}
+		allow = {
+			is_at_war = no
+			OR = {
+				num_of_cities = 20
+				any_country = { has_country_modifier = alklvalondie_reforms }
+			}
+			NOT = { religious_unity = 0.55 }
+			stability = 1
+			OR = {
+				adm = 3
+				advisor = theologian
+				advisor = inquisitor
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = alklvalondie_reforms
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	antihelgarnist_laws_dec = {
+		potential = {
+			religion = alklvalondie
+			NOT = { has_country_modifier = antihelgarnist_laws }
+			any_owned_province = {
+				religion = helgarn
+			}
+		}
+		allow = {
+			stability = 0
+			OR = {
+				has_country_modifier = alklvalondie_reforms
+				adm_power = 100
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_modifier = alklvalondie_reforms }
+				}
+				add_adm_power = 100
+			}
+			every_owned_province = {
+				limit = {
+					religion = helgarn
+				}
+				add_province_modifier = {
+					name = add_unrest_5_modifier
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_owned_provinces_with = {
+						religion = helgarn
+						value = 5
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					num_of_loans = 2
+					NOT = { years_of_income = 0.35 }
+				}
+			}
+		}
+	}
+}

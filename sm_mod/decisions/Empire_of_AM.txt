@@ -1,0 +1,112 @@
+country_decisions = {
+
+	empire_to_confederation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			is_emperor = yes
+			NOT = { has_global_flag = am_confederacy }
+		}
+		allow = {
+			is_emperor = yes
+			NOT = { hre_reform_level = 3 }
+			#NOT = { has_country_modifier = am_confederacy_modifier }
+		}
+		effect = {
+			country_event = { id = sm_ame.75 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	leave_amian_confederation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			is_part_of_hre = yes
+			has_global_flag = am_confederacy
+			is_emperor = no
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			add_stability = -1
+			hidden_effect = {
+				if = {
+					limit = {
+						is_elector = yes
+					}
+					elector = no
+				}
+				every_owned_province = {
+					limit = { is_part_of_hre = yes }
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						is_subject_of = ROOT
+						any_owned_province = { is_part_of_hre = yes }
+					}
+				}
+				every_subject_country = {
+					every_owned_province = { set_in_empire = no }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				OR = {
+					is_emperor = yes
+					is_elector = yes
+					has_opinion = {
+						who = emperor
+						value = 0
+					}
+					technology_group = amian
+				}
+			}
+			
+			modifier = {
+				factor = 4
+				culture_group = yellow_group
+				NOT = { primary_culture = bezantokian }
+				OR = {
+					is_year = 500
+					adm_tech = 10
+				}
+				NOT = {
+					has_opinion = {
+						who = emperor
+						value = 25
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 8
+				primary_culture = bezantokian
+			}
+			
+			modifier = {
+				factor = 8
+				NOT = {
+					OR = {
+						religion = ameism
+						primary_culture = amian
+						technology_group = amian
+					}
+				}
+				government_rank = 3
+			}
+		}
+	}
+	
+}

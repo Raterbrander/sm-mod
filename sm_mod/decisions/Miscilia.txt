@@ -1,0 +1,143 @@
+country_decisions = {
+	
+	restore_miscilia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = MSC }
+			OR = {
+				primary_culture = miscilian
+				primary_culture = mescil
+			}
+			NOT = { has_global_flag = miscilian_feudal_wars_flag }
+			capital_scope = {
+				area = miscilia_area
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 38
+			owns_core_province = 39
+			owns_core_province = 330
+		}
+		effect = {
+			change_tag = MSC
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	establish_our_rule_in_miscilia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			has_global_flag = miscilian_feudal_wars_flag
+			has_country_flag = is_in_miscilian_war
+			government = monarchy
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = miscilian_feudal_war_winning_tooltip
+				all_province = {
+					OR = {
+						NOT = { has_province_flag = great_miscilia_province }
+						owner = {
+							has_country_flag = is_in_miscilian_war
+						}
+					}
+				}
+			}
+			stability = 1
+			legitimacy = 75
+			prestige = 10
+			adm_power = 100
+			dip_power = 100
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = MSC
+				}
+				inherit = MSC
+			}
+			change_tag = MSC
+			set_government_rank = 2
+			add_adm_power = -100
+			add_dip_power = -100
+			country_event = {
+				id = miscilian_events.4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	become_east_miscilia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = MSC }
+			NOT = { exists = EMI }
+			NOT = { tag = WMI }
+			OR = {
+				primary_culture = miscilian
+				primary_culture = mescil
+			}
+			NOT = { has_global_flag = miscilian_feudal_wars_flag }
+			capital_scope = {
+				area = miscilia_area
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			capital_scope = {
+				province_id = 39
+			}
+		}
+		effect = {
+			change_tag = EMI
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_west_miscilia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = MSC }
+			NOT = { exists = WMI }
+			NOT = { tag = EMI }
+			OR = {
+				primary_culture = miscilian
+				primary_culture = mescil
+			}
+			NOT = { has_global_flag = miscilian_feudal_wars_flag }
+			capital_scope = {
+				province_id = 38
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = WMI
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

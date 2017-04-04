@@ -1,0 +1,123 @@
+country_decisions = {
+
+	form_dominionia = {
+		major = yes
+		potential = {
+			NOT = { exists = DOM }
+			NOT = { tag = USS }
+			culture_group = domin_group
+			NOT = { primary_culture = domin_mongol }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = DOM }
+			OR = {
+				NOT = { exists = USS }
+				AND = {
+					exists = USS
+					NOT = { primary_culture = dominionian }
+				}
+			}
+			is_nomad = no
+			owns_core_province = 51
+			owns_core_province = 61
+			owns_core_province = 64
+			owns_core_province = 68
+			owns_core_province = 70
+			owns_core_province = 73
+			owns_core_province = 74
+			owns_core_province = 76
+			OR = {
+				AND = {
+					owns_core_province = 57
+					owns_core_province = 58
+				}
+				AND = {
+					owns_core_province = 50
+					owns_core_province = 52
+				}
+			}
+			OR = {
+				owns_core_province = 85
+				owns_core_province = 86
+				owns_core_province = 87
+			}
+		}
+		effect = {
+			change_tag = DOM
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			star_island_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DOM
+			}
+			igores_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DOM
+			}
+			volkodav_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = DOM
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	become_dominionia = {
+		major = yes
+		potential = {
+			tag = USS
+			NOT = { exists = DOM }
+		}
+		allow = {
+			NOT = { government = communist_dictatorship }
+			NOT = { government = socialist_republic }
+			is_subject = no
+			is_at_war = no
+			primary_culture = dominionian
+			capital_scope = {
+				culture = dominionian
+			}
+			stability = 0
+		}
+		effect = {
+			change_tag = DOM
+			if = {
+				limit = {
+					NOT = { religion = tolerance }
+				}
+				change_religion = tolerance
+			}
+			add_prestige = 25
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

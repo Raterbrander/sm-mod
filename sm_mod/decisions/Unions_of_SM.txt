@@ -1,0 +1,217 @@
+country_decisions = {
+
+	join_uss = {
+		major = yes
+	
+		potential = {
+			culture_group = domin_group
+			exists = USS
+			NOT = { tag = USS }
+			NOT = { tag = DOM }
+			NOT = { tag = NFE }
+			is_subject = no
+			OR = {
+				NOT = { has_country_flag = domin_ask_about_integration }
+				had_country_flag = {
+					flag = domin_ask_about_integration
+					days = 1825
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			OR = {
+				government = socialist_republic
+				government = communist_dictatorship
+			}
+			culture_group = domin_group
+			NOT = { num_of_cities = 5 }
+			stability = 1
+			USS = {
+				is_at_war = no
+				is_subject = no
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+		}
+		effect = {
+			set_country_flag = domin_ask_about_integration
+			USS = {
+				country_event = {
+					id = integration_event.1 # sm_domin.100
+					days = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.25
+				NOT = { primary_culture = dominionian }
+			}
+		}
+	}
+	
+	join_nfe = {
+		major = yes
+	
+		potential = {
+			culture_group = domin_group
+			exists = NFE
+			NOT = { tag = USS }
+			NOT = { tag = DOM }
+			NOT = { tag = NFE }
+			NFE = {
+				government = republic
+			}
+			is_subject = no
+			OR = {
+				NOT = { has_country_flag = domin_ask_about_integration }
+				had_country_flag = {
+					flag = domin_ask_about_integration
+					days = 1825
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			OR = {
+				government = republic
+				government = constitutional_monarchy
+			}
+			#NOT = { government = socialist_republic }
+			culture_group = domin_group
+			NOT = { num_of_cities = 5 }
+			stability = 1
+			NFE = {
+				is_at_war = no
+				is_subject = no
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+		}
+		effect = {
+			set_country_flag = domin_ask_about_integration
+			NFE = {
+				country_event = {
+					id = integration_event.1 # sm_domin.110
+					days = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 0.5
+				primary_culture = volkdau
+			}
+		}
+	}
+	
+	integrate_dmfsr = {
+		potential = {
+			tag = DRA
+			has_global_flag = event_sm_smsr_100
+			DMF = {
+				overlord = {
+					tag = DRA
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			DMF = {
+				vassal_of = DRA
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			stability = 1
+		}
+		effect = {
+			inherit = DMF
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#join_smsr = {
+	#	potential = {
+	#		exists = DRA
+	#		DRA = {
+	#			num_of_cities = 8
+	#			primary_culture = malishian
+	#		}
+	#		primary_culture = malishian
+	#		NOT = { tag = DRA }
+	#		is_subject = no
+	#		OR = {
+	#			NOT = { has_country_flag = smsr_ask_about_integration }
+	#			had_country_flag = {
+	#				flag = smsr_ask_about_integration
+	#				days = 1825
+	#			}
+	#		}
+	#	}
+	#}
+	
+	# For ECH
+	join_chaepit = {
+		potential = {
+			primary_culture = chaepit
+			exists = CHT
+			NOT = { tag = CH2 }
+			NOT = { tag = CHT }
+			is_subject = no
+			NOT = { has_country_modifier = asking_about_integration_timer }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = chaepit
+			NOT = { num_of_cities = 5 }
+			stability = 1
+			CHT = {
+				is_at_war = no
+				is_subject = no
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = asking_about_integration_timer
+				duration = 1825
+				hidden = yes
+			}
+			CHT = {
+				country_event = {
+					id = integration_event.1
+					days = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1.25
+				tag = ECH
+			}
+		}
+	}
+
+}

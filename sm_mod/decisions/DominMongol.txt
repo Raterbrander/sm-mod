@@ -1,0 +1,63 @@
+country_decisions = {
+
+	make_nagora_great_again = {
+		major = yes
+		potential = {
+			tag = NGO
+			NOT = { exists = NG2 }
+			primary_culture = domin_mongol
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			primary_culture = domin_mongol
+			NOT = { government = socialist_republic }
+			NOT = { government = communist_dictatorship }
+			stability = 0
+			mil = 3
+			NOT = { alliance_with = USS }
+		}
+		effect = {
+			change_tag = NG2
+			add_prestige = 10
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nagora_claims = {
+		potential = {
+			tag = NG2
+			NOT = { has_country_flag = nagora_claims_gained }
+		}
+		allow = {
+			primary_culture = domin_mongol
+			dominant_culture = domin_mongol
+			dominant_religion = sunni
+			any_neighbor_country = {
+				culture_group = domin_group
+				NOT = { primary_culture = domin_mongol }
+				any_owned_province = { culture = domin_mongol }
+			}
+			stability = 1
+			mil = 3
+		}
+		effect = {
+			every_neighbor_country = {
+				limit = {
+					culture_group = domin_group
+					NOT = { primary_culture = domin_mongol }
+					any_owned_province = { culture = domin_mongol }
+				}
+				every_owned_province = {
+					limit = { culture = domin_mongol }
+					add_core = ROOT
+				}
+			}
+			add_prestige = -5
+		}
+	}
+	
+}

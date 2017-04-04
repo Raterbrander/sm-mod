@@ -1,0 +1,120 @@
+country_decisions = {
+	
+	HLC_february_act = {
+		potential = {
+			tag = HLC
+			NOT = { has_country_flag = february_act }
+		}
+		allow = {
+			is_at_war = no
+			stability = 2
+			dip = 5
+			legitimacy = 90
+			OR = {
+				is_subject = no
+				army_size = GTT
+			}
+			NOT = { government_rank = 2 }
+			dip_power = 150
+		}
+		effect = {
+			set_government_rank = 2
+			change_government = absolute_monarchy
+			if = {
+				limit = {
+					is_subject_of = GTT
+				}
+				GTT = {
+					free_vassal = HLC
+				}
+			}
+			add_prestige = 10
+			add_dip_power = -150
+			set_country_flag = february_act
+		}
+	}
+	
+	create_parantolia = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = HLC
+			NOT = { has_country_flag = parantolia_created }
+			num_of_owned_provinces_with = {
+				OR = {
+					area = parantolia_area
+					province_id = 909
+					province_id = 767
+				}
+				value = 3
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = PRT }
+			stability = 0
+			any_owned_province = {
+				area = parantolia_area
+				OR = {
+					unrest = 3
+					local_autonomy = 75
+				}
+			}
+		}
+		effect = {
+			parantolia_area = {
+				add_core = PRT
+			}
+			909 = { add_core = PRT }
+			767 = { add_core = PRT }
+			release_vassal = PRT
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	move_capital_to_anieva = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = HLC
+			NOT = { has_country_flag = capital_moved_to_anieva }
+			900 = {
+				is_capital = no
+				owned_by = HLC
+			}
+			OR = {
+				ai = no
+				is_year = 500
+			}
+		}
+		allow = {
+			owns_core_province = 900
+			OR = {
+				adm = 3
+				dip = 3
+			}
+			adm_power = 100
+		}
+		effect = {
+			set_capital = 900
+			add_adm_power = -100
+			add_prestige = 10
+			add_legitimacy = 10
+			900 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			set_country_flag = capital_moved_to_anieva
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { is_year = 524 }
+			}
+		}
+	}
+
+}

@@ -1,0 +1,423 @@
+country_decisions = {
+
+	#state_of_emergency = {
+	#	potential = {
+	#		NOT = { has_country_modifier state_of_emergency_modifier }
+			# SM flavour
+	#		NOT = { has_country_modifier = sm_gru_crisis }
+	#		is_tribal = no
+	#		is_nomad = no
+	#		adm_tech = 11
+	#	}
+	#	allow = {
+	#		NOT = { has_country_modifier = state_of_emergency_modifier }
+	#		OR = {
+	#			AND = {
+	#				is_at_war = yes
+	#				NOT = { war_score = -35 }
+	#			}
+	#			num_of_rebel_controlled_provinces = 1
+	#		}
+	#		OR = {
+	#			government = monarchy
+	#			government = dictatorship
+	#			revolt_percentage = 0.15
+	#		}
+	#		NOT = { stability = 2 }
+	#	}
+	#	effect = {
+	#		add_country_modifier = {
+	#			name = state_of_emergency_modifier
+	#			duration = -1
+	#		}
+	#		add_stability = -1
+	#		add_adm_power = -50
+	#		add_mil_power = -50
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#		
+	#		modifier = {
+	#			factor = 0
+	#			NOT = { stability = 0 }
+	#		}
+	#	}
+	#}
+	#
+	#cancel_state_of_emergency = {
+	#	potential = {
+	#		has_country_modifier = state_of_emergency_modifier
+	#	}
+	#	allow = {
+	#		has_country_modifier = state_of_emergency_modifier
+	#		is_at_war = no
+	#		NOT = { num_of_rebel_controlled_provinces = 1 }
+	#	}
+	#	effect = {
+	#		remove_country_modifier = state_of_emergency_modifier
+	#	}
+	#}
+	
+	dominion_parliament = {
+		potential = {
+			OR = {
+				tag = USS
+				tag = DOM
+			}
+			has_parliament = no
+			government = communist_dictatorship
+		}
+		allow = {
+			is_at_war = no
+			OR = {
+				num_of_cities = 35
+				total_development = 350
+			}
+			stability = 1
+			republican_tradition = 0.25
+			NOT = { republican_tradition = 0.75 }
+			adm_power = 100
+		}
+		effect = {
+			change_government = socialist_republic
+			add_adm_power = -100
+			add_stability = 1
+			add_republican_tradition = 0.35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	parliament_in_dictatorship_country = {
+		potential = {
+			#OR = {
+			#	government = republican_dictatorship
+			#	government = communist_dictatorship
+			#}
+			government = dictatorship
+			NOT = { tag = USS }
+			NOT = { tag = DOM }
+			has_parliament = no
+		}
+		allow = {	
+			is_at_war = no
+			stability = 1
+			republican_tradition = 0.25
+			NOT = { republican_tradition = 0.75 }
+			adm_power = 100
+			OR = {
+				AND = {
+					adm = 4
+					dip = 2
+				}
+				AND = {
+					dip = 4
+					adm = 2
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { government = republican_dictatorship }
+				change_government = constitutional_republic
+			}
+			if = {
+				limit = { government = communist_dictatorship }
+				change_government = socialist_republic
+			}
+			add_adm_power = -100
+			add_stability = 1
+			add_republican_tradition = 0.35
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				mil = 2
+			}
+			
+			modifier = {
+				factor = 2
+				tag = NKF
+			}
+		}
+	}
+	
+	convert_to_amian_republic = {
+		potential = {
+			government = AM_clan
+		}
+		allow = {
+			government = AM_clan
+			is_at_war = no
+			stability = 1
+			NOT = { has_country_modifier = state_of_emergency_modifier }
+		}
+		effect = {
+			change_government = AM_clan_rep
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_amian_monarchy = {
+		potential = {
+			government = AM_clan_rep
+		}
+		allow = {
+			government = AM_clan_rep
+			is_at_war = no
+			stability = 1
+			NOT = { republican_tradition = 0.2 }
+		}
+		effect = {
+			change_government = AM_clan
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	emergency_powers = {
+		potential = {
+			government = republic
+			OR = {
+				technology_group = continental
+				technology_group = domin_group
+				technology_group = high_domin
+				technology_group = imperial_group
+			}
+			is_nomad = no
+			is_tribal = no
+		}
+		allow = {
+			OR = {
+				is_at_war = yes
+				num_of_rebel_controlled_provinces = 1
+			}
+			NOT = { republican_tradition = 0.55 }
+			stability = -2
+			NOT = { stability = 1 }
+			army_size_percentage = 0.75
+			is_monarch_leader = yes
+			mil = 3
+			has_country_modifier = state_of_emergency_modifier
+		}
+		effect = {
+			change_government = militarist_dictatorship
+			#add_stability = -1
+			add_adm_power = -1
+			add_mil_power = -50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	convert_to_communist_dictatorship = {
+		potential = {
+			government = socialist_state
+		}
+		allow = {
+			government = socialist_state
+			stability = 0
+			OR = {
+				adm = 4
+				mil = 4
+			}
+		}
+		effect = {
+			change_government = communist_dictatorship
+			add_stability = -1
+			add_prestige = -10
+			add_republican_tradition = -0.25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mercenaries_clan_to_republic = {
+		potential = {
+			government = mercenaries_clan
+		}
+		allow = {
+			total_development = 50
+			stability = 3
+			OR = {
+				adm = 3
+				dip = 3
+			}
+			OR = {
+				num_of_cities = 6
+				total_development = 150
+			}
+		}
+		effect = {
+			add_stability = -4
+			change_government = administrative_republic
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { tag = ORD }
+			}
+		}
+	}
+	
+	mercenaries_clan_to_monarchy = {
+		potential = {
+			government = mercenaries_clan
+		}
+		allow = {
+			total_development = 50
+			stability = 3
+			OR = {
+				adm = 3
+				mil = 3
+			}
+		}
+		effect = {
+			add_stability = -4
+			change_government = administrative_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { tag = ORD }
+			}
+		}
+	}
+	
+	#consul_republic_reform = {
+	#	potential = {
+	#		government = consul_republic
+	#	}
+	
+	zanaveski_v_dvortse_chaepitia = {
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_modifier = zanaveski_v_dvortse_chaepitia_m }
+			420 = {
+				OR = {
+					owned_by = ROOT
+					controlled_by = ROOT
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			#government = monarchy
+			420 = {
+				OR = {
+					owned_by = ROOT
+					controlled_by = ROOT
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_country = {
+					limit = { has_country_modifier = zanaveski_v_dvortse_chaepitia_m }
+					remove_country_modifier = zanaveski_v_dvortse_chaepitia_m
+				}
+			}
+			add_country_modifier = {
+				name = zanaveski_v_dvortse_chaepitia_m
+				duration = -1
+			}
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	south_closed_country = {
+		potential = {
+			normal_or_historical_nations = yes
+			has_country_flag = discovered_by_continentals
+			NOT = { has_country_modifier = south_closed_country }
+		}
+		allow = {
+			has_country_modifier = chaepit_continental_wind
+			stability = 1
+			OR = {
+				legitimacy = 75
+				republican_tradition = 0.75
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = south_closed_country
+				duration = -1
+			}
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_prestige = -5
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 4
+				tag = UTN
+			}
+		}
+	}
+	
+	otmenit_vladet = {
+		potential = {
+			government = monarchy
+			has_estate = estate_nobles
+			NOT = { has_country_flag = estate_nobles_willnt_have_lands }
+			num_of_cities = 16
+		}
+		allow = {
+			is_at_war = no
+			num_of_cities = 16
+			OR = {
+				government = constitutional_monarchy
+				government = karteval_monarchic
+				government = theocratic_monarchy
+			}
+			stability = 2
+			adm_power = 100
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 50
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = estate_nobles_willnt_have_lands_tooltip
+			set_country_flag = estate_nobles_willnt_have_lands
+			add_stability = -1
+			add_adm_power = -100
+			#add_estate_loyalty = {
+			#	estate = estate_nobles
+			#	loyalty = -15
+			#}
+			add_estate_loyalty_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_WILLNT_HAVE_LANDS
+				loyalty = -25
+				duration = 9125
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

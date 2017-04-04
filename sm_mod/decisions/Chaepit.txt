@@ -1,0 +1,44 @@
+country_decisions = {
+	
+	move_capital_to_sentshark = {
+		potential = {
+			tag = CHT
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = sentshark_capital }
+			owns_core_province = 293
+			NOT = { capital = 293 }
+			has_country_flag = discovered_by_continentals
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			NOT = { has_country_modifier = south_closed_country }
+			owns_core_province = 293
+			adm_power = 125
+		}
+		effect = {
+			set_capital = 293
+			293 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			add_country_modifier = {
+				name = chaepit_continental_contacts
+				duration = 9125
+			}
+			add_adm_power = -125
+			add_prestige = 10
+			set_country_flag = sentshark_capital
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 4
+				NOT = { owns = 403 }
+			}
+		}
+	}
+	
+}

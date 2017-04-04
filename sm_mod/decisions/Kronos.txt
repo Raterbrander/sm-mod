@@ -1,0 +1,95 @@
+country_decisions = {
+
+	become_west_kronos = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = NKF
+			NOT = { exists = WKR }
+		}
+		allow = {
+			NOT = { government = socialist_republic }
+			NOT = { government = communist_dictatorship }
+			OR = {
+				legitimacy = 75
+				republican_tradition = 75
+			}
+		}
+		effect = {
+			change_tag = WKR
+			add_prestige = 25
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	united_kronos = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+			NOT = { exists = KRN }
+			culture_group = kronossian_group
+			capital_scope = { continent = kronos }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			NOT = { tag = NKF }
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			culture_group = kronossian_group
+			#adm_tech = 10
+			prestige = 50
+			stability = 2
+			owns_core_province = 131
+			owns_core_province = 146
+			owns_core_province = 139
+			owns_core_province = 140
+			owns_core_province = 157
+			owns_core_province = 163
+			owns_core_province = 150
+			owns_core_province = 148
+			owns_core_province = 149
+		}
+		effect = {
+			change_tag = KRN
+			add_prestige = 10
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			KRN = { set_capital = 131 }
+			ellin_kronos_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_core = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 300
+	}
+	
+}

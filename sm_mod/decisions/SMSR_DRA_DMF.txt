@@ -1,0 +1,82 @@
+country_decisions = {
+
+	DMF_form_SMSR = {
+		major = yes
+		potential = {
+			NOT = { exists = SUM }
+			tag = DMF
+			normal_or_historical_nations = yes
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			NOT = { exists = SUM }
+			OR = {
+				NOT = { exists = DRA }
+				AND = {
+					exists = DRA
+					DRA = {
+						NOT = { any_owned_province = { culture = malishian } }
+					}
+				}
+				AND = {
+					exists = DRA
+					DRA = { is_subject_of = ROOT }
+				}
+			}
+			primary_culture = malishian
+			stability = 1
+			#has_ruler = "димик5"
+			owns = 192
+			owns = 202
+			owns = 196
+			owns = 194
+			owns = 207
+			owns = 214
+		}
+		effect = {
+			change_tag = SUM
+			every_owned_province = {
+				limit = {
+					is_core = DRA
+				}
+				remove_core = DRA
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = ROOT }
+					culture = malishian
+				}
+				add_core = ROOT
+			}
+			if = {
+				limit = {
+					exists = DRA
+					DRA = { is_subject_of = ROOT }
+				}
+				inherit = DRA
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			hidden_effect = {
+				add_faction = mal_totalitarian_faction
+				add_faction = mal_reformist_faction
+				add_faction = mal_democrat_faction
+				add_faction_influence = {
+					faction = mal_reformist_faction
+					influence = 55
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+	
+}

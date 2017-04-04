@@ -1,0 +1,1049 @@
+country_decisions = {
+
+	form_ellaria = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes	
+			NOT = { exists = ELL }
+			NOT = { exists = EOY }
+			#NOT = { tag = AME }
+			OR = {
+				primary_culture = yellow
+				primary_culture = tardian
+				primary_culture = gottardian
+				primary_culture = tonderros
+				primary_culture = arvabian
+			}
+			OR = {
+				ai = no
+				has_global_flag = panellarism
+			}
+		}
+		allow = {
+			NOT = { exists = ELL }
+			NOT = { exists = EOY }
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			legitimacy = 75
+			OR = {
+				is_part_of_hre = no
+				is_elector = yes
+			}
+			298 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			912 = { 
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			927 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			899 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			297 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			354 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			373 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			#765 = {
+			#	OR = {
+			#		owned_by = ROOT
+			#		owner = { is_subject_of = ROOT }
+			#	}
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					any_subject_country = {
+						culture_group = yellow_group
+					}
+				}
+				every_subject_country = {
+					limit = {
+						OR = {
+							culture_group = yellow_group
+							capital_scope = { region = general_ellar_region }
+						}
+						#has_country_flag = ellar_voluntary_vassal # ?
+						is_march = no
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								government = monarchy
+								OR = {
+									total_development = 75
+									num_of_cities = 5
+								}
+								ROOT = { has_estate = estate_nobles }
+							}
+							capital_scope = { set_province_flag = ELL_local_dukes }
+						}
+						if = {
+							limit = {
+								government = theocratic_government
+								ROOT = { has_estate = estate_church }
+							}
+							capital_scope = { set_province_flag = ELL_local_church_lands }
+						}
+					}
+					ROOT = { inherit = PREV }
+				}
+				hidden_effect = {
+					every_owned_province = {
+						limit = { has_province_flag = ELL_local_dukes }
+						set_estate = estate_nobles
+						clr_province_flag = ELL_local_dukes
+					}
+					every_owned_province = {
+						limit = { has_province_flag = ELL_local_church_lands }
+						set_estate = estate_church
+						clr_province_flag = ELL_local_church_lands
+					}
+					every_owned_province = {
+						remove_core = VNR
+						remove_core = RDT
+						remove_core = AIL
+						# etc.
+					}
+				}
+				add_dip_power = -50
+				add_adm_power = -100
+			}
+			change_tag = ELL
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			general_ellar_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ELL
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	#form_EOY
+	
+	join_ellaria = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			exists = ELL
+			ELL = {
+				num_of_cities = 10
+				is_subject = no
+			}
+			NOT = { tag = ELL }
+			NOT = { exists = EOY }
+			OR = {
+				primary_culture = yellow
+				primary_culture = tardian
+				primary_culture = gottardian
+				primary_culture = tonderros
+				primary_culture = arvabian
+			}
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject_of = ELL
+					has_country_flag = ellar_voluntary_vassal
+				}
+			}
+			NOT = { has_country_modifier = asking_about_integration_timer }
+			OR = {
+				ai = no
+				NOT = { is_year = 745 }
+			}
+			has_global_flag = panellarism
+		}
+		allow = {
+			is_at_war = no
+			exists = ELL
+			OR = {
+				AND = {
+					NOT = { num_of_cities = ELL }
+					stability = 0
+					ELL = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+					has_opinion = {
+						who = ELL
+						value = 0
+					}
+				}
+				government = people_provisional_government
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = asking_about_integration_timer
+				duration = 1825
+				hidden = yes
+			}
+			ELL = {
+				country_event = {
+					id = sm_ede.105
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						government = monarchy
+						NOT = { government = karteval_monarchic }
+						NOT = { government = constitutional_monarchy }
+					}
+					government = theocracy
+				}
+			}
+			modifier = {
+				factor = 2
+				government = republic
+			}
+			modifier = {
+				factor = 5
+				government = people_provisional_government
+			}
+		}
+	}
+	
+	join_EOY = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			exists = EOY
+			EOY = {
+				num_of_cities = 20
+				is_subject = no
+			}
+			NOT = { tag = EOY }
+			culture_group = yellow_group
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject_of = EOY
+					has_country_flag = ellar_voluntary_vassal
+				}
+			}
+			NOT = { has_country_modifier = asking_about_integration_timer }
+			OR = {
+				ai = no
+				NOT = { is_year = 745 }
+			}
+			adm_tech = 21
+		}
+		allow = {
+			is_at_war = no
+			exists = EOY
+			NOT = { num_of_cities = EOY }
+			stability = 1
+			has_opinion = {
+				who = EOY
+				value = 0
+			}
+			EOY = {
+				has_opinion = {
+					who = ROOT
+					value = 0
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = asking_about_integration_timer
+				duration = 1825
+				hidden = yes
+			}
+			EOY = {
+				country_event = {
+					id = sm_ede.105
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						government = monarchy
+						NOT = { government = karteval_monarchic }
+						NOT = { government = constitutional_republic }
+					}
+					government = theocracy
+				}
+			}
+			modifier = {
+				factor = 2
+				government = republic
+			}
+			modifier = {
+				factor = 5
+				government = people_provisional_government
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					primary_culture = terendian
+					primary_culture = tetirian
+				}
+			}
+		}
+	}
+	
+	vassal_of_ellar_nation_leader = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = ELL }
+			NOT = { exists = EOY }
+			any_neighbor_country = {
+				OR = {
+					has_country_modifier = ellar_national_leader
+					overlord = { has_country_modifier = ellar_national_leader }
+				}
+				#OR = {
+				#	AND = {
+				#		has_country_modifier = ellar_national_leader
+				#		NOT = { num_of_cities = ROOT }
+				#	}
+				#	overlord = {
+				#		has_country_modifier = ellar_national_leader
+				#		NOT = { num_of_cities = ROOT }
+				#	}
+				#	any_neighbor_country = {
+				#		has_country_modifier = ellar_national_leader
+				#		NOT = { num_of_cities = ROOT }
+				#	}
+				#}
+			}
+			NOT = { has_country_modifier = ellar_national_leader }
+			OR = {
+				primary_culture = yellow
+				primary_culture = tardian
+				primary_culture = gottardian
+				primary_culture = tonderros
+				primary_culture = arvabian
+			}
+			is_subject = no
+			NOT = { has_country_modifier = asking_about_integration_timer }
+			has_global_flag = panellarism
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			stability = 1
+			any_country = {
+				has_country_modifier = ellar_national_leader
+				is_at_war = no
+				OR = {
+					AND = {
+						NOT = { num_of_cities = ROOT }
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+						ROOT = { has_opinion = { who = PREV value = 0 } }
+					}
+					government = people_provisional_government
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = asking_about_integration_timer
+				duration = 1825
+				hidden = yes
+			}
+			every_country = {
+				limit = { has_country_modifier = ellar_national_leader }
+				country_event = {
+					id = sm_ede.106
+					days = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+				NOT = { adm_tech = 21 }
+			}
+			
+			modifier = {
+				factor = 3
+				government = republic
+				NOT = { num_of_cities = 4 }
+			}
+			
+			modifier = {
+				factor = 2
+				NOT = { num_of_cities = 2 }
+			}
+			modifier = {
+				factor = 5
+				government = people_provisional_government
+			}
+		}
+	}
+	
+	leave_sphere_of_former_leader = {
+		major = yes
+		potential = {
+			is_subject = yes
+			has_country_flag = ellar_voluntary_vassal
+			has_global_flag = panellarism
+		}
+		allow = {
+			OR = {
+				overlord = {
+					NOT = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = -50
+						}
+					}
+				}
+				overlord = {
+					NOT = { has_country_modifier = ellar_national_leader }
+				}
+			}
+			stability = 1
+			prestige = 0
+		}
+		effect = {
+			overlord = {
+				free_vassal = ROOT
+				country_event = { id = sm_ede.107 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				#tag = SVL
+				overlord = { tag = SMF }
+			}
+		}
+	}
+	
+	###########################################################
+	# GENERAL ELLARIA
+	###########################################################
+	tabeslar_sucession = {
+		#major = yes
+		potential = {
+			tag = SMF
+			TBS = {
+				ai = yes
+				exists = yes
+				NOT = { junior_union_with = SMF }
+				has_regency = yes
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			stability = 1
+			legitimacy = 75
+			#prestige = 10
+			dip_power = 100
+			has_regency = no
+			TBS = {
+				has_regency = yes
+				is_subject = no
+			}
+		}
+		effect = {
+			add_dip_power = -100
+			TBS = {
+				country_event = { id = sm_ede.50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	establish_ellar_vexillary = {
+		potential = {
+			normal_or_historical_nations = yes
+			culture_group = yellow_group
+			NOT = { primary_culture = terendian }
+			OR = {
+				technology_group = ellar_tech
+				tag = SMF
+			}
+			NOT = { has_country_modifier = ellar_vexillary_guard }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			mil_tech = 11
+			NOT = { mil_tech = 22 }
+			is_subject = no
+			government = monarchy
+		}
+		allow = {
+			is_monarch_leader = yes
+			mil = 3
+			mil_power = 100
+			stability = 1
+			prestige = 15
+			OR = {
+				treasury = 150
+				capital_scope = {
+					has_building = conscription_center
+					has_building = training_fields
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ellar_vexillary_guard
+				duration = -1
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							OR = {
+								has_building = training_fields
+								has_building = conscription_center
+							}
+						}
+					}
+				}
+				add_treasury = -175
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							AND = {
+								has_building = training_fields
+								NOT = { has_building = conscription_center }
+							}
+							AND = {
+								has_building = conscription_center
+								NOT = { has_building = training_fields }
+							}
+						}
+					}
+				}
+				add_treasury = -125
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						has_building = conscription_center
+						has_building = training_fields
+					}
+				}
+				add_treasury = -75
+			}
+			add_mil_power = -100
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	create_amian_legions = {
+		potential = {
+			normal_or_historical_nations = yes
+			culture_group = yellow_group
+			NOT = { primary_culture = terendian }
+			OR = {
+				technology_group = ellar_tech
+				technology_group = continental
+			}
+			NOT = { has_country_modifier = ellar_amian_legions }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_subject = no
+			OR = {
+				any_owned_province = {
+					OR = {
+						culture = amian
+						religion = ameism
+					}
+				}
+				any_neighbor_country = {
+					OR = {
+						primary_culture = amian
+						religion = ameism
+						technology_group = amian
+					}
+				}
+			}
+		}
+		allow = {
+			mil = 2
+			years_of_income = 0.35
+			stability = 1
+			prestige = 5
+			OR = {
+				any_owned_province = {
+					OR = {
+						culture = amian
+						religion = ameism
+					}
+				}
+				any_neighbor_country = {
+					OR = {
+						primary_culture = amian
+						religion = ameism
+						technology_group = amian
+					}
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+			capital_scope = { has_building = training_fields }
+		}
+		effect = {
+			add_years_of_income = -0.35
+			add_mil_power = -50
+			add_country_modifier = {
+				name = ellar_amian_legions
+				duration = -1
+			}
+			capital_scope = {
+				owner = {
+					amian_legions = PREV
+					amian_legions = PREV
+					amian_legions = PREV
+					amian_legions = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rebuild_fonks = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				tag = SMF
+				tag = ELL
+				tag = EOY
+			}
+			owns_core_province = 912
+			NOT = { has_country_flag = fonks_rebuilded_flag }
+			912 = {
+				NOT = { has_province_modifier = fonks_rebuilded }
+			}
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+			adm = 4
+			treasury = 75
+			adm_power = 100
+			adm_tech = 20
+		}
+		effect = {
+			set_country_flag = fonks_rebuilded_flag
+			912 = {
+				add_permanent_province_modifier = {
+					name = fonks_rebuilded
+					duration = -1
+				}
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+			add_adm_power = -100
+			add_treasury = -75
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	construct_golden_city = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				tag = SMF
+				tag = ELL
+				tag = EOY
+			}
+			owns_core_province = 912
+			912 = {
+				NOT = { has_province_modifier = ellar_golden_city }
+			}
+			NOT = { has_global_flag = ellar_golden_city_flag }
+		}
+		allow = {
+			912 = { has_province_modifier = fonks_rebuilded }
+			is_at_war = no
+			adm = 4
+			treasury = 150
+			adm_power = 50
+			stability = 1
+			legitimacy = 90
+		}
+		effect = {
+			912 = {
+				add_permanent_province_modifier = {
+					name = ellar_golden_city
+					duration = -1
+				}
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building_construction = {
+						building = university
+						speed = 1.25
+						cost = 0.75
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_building = town_hall }
+					}
+					add_building = town_hall
+				}
+			}
+			add_treasury = -150
+			add_adm_power = -50
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	esemberg_agreement = {
+		potential = {
+			normal_or_historical_nations = yes
+			tag = SMF
+			NOT = { has_country_flag = esemberg_agreement_used_flag }
+			has_global_flag = TND_surrenders_early
+			TND = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			TND = {
+				is_subject = no
+				is_at_war = no
+				has_opinion = {
+					who = SMF
+					value = 50
+				}
+			}
+			dip_power = 100
+		}
+		effect = {
+			add_dip_power = -100
+			set_country_flag = esemberg_agreement_used_flag
+			TND = {
+				country_event = {
+					id = fonks_tonderros.12
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	###########################################################
+	# GOTTARDIA
+	###########################################################
+	united_gottardia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = GTT
+			NOT = { has_country_flag = united_gottardia_flag }
+			has_country_modifier = maximillian_laws_gottardia
+			num_of_vassals = 1
+		}
+		allow = {
+			is_at_war = no
+			all_subject_country = {
+				OR = {
+					NOT = { primary_culture = gottardian }
+					capital_scope = { NOT = { area = gottardia_area } }
+					AND = {
+						NOT = { num_of_cities = ROOT }
+						NOT = { army_size = ROOT }
+						has_opinion = {
+							who = GTT
+							value = 50
+						}
+					}
+				}
+			}
+			stability = 2
+			legitimacy = 85
+			owns_core_province = 899
+			owns_core_province = 903
+			adm = 3
+			dip = 2
+			mil = 2
+			adm_power = 250
+			dip_power = 200
+		}
+		effect = {
+			change_government = absolute_monarchy
+			remove_country_modifier = maximillian_laws_gottardia
+			set_country_flag = united_gottardia_flag
+			every_subject_country = {
+				limit = {
+					primary_culture = gottardian
+				}
+				GTT = { inherit = PREV }
+			}
+			add_stability = -1
+			add_adm_power = -250
+			add_dip_power = -200
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			random_owned_province = {
+				limit = {
+					culture = gottardian
+					is_capital = no
+				}
+				random_list = {
+					50 = {
+						add_base_tax = 2
+					}
+					50 = {
+						add_base_tax = 1
+						add_base_manpower = 1
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					remove_core = HLC
+					remove_core = RVS
+					remove_core = ORG
+					remove_core = ERT
+					remove_core = KDP
+					remove_core = SVR
+					remove_core = NBR
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { is_year = 540 }
+			}
+			
+			modifier = {
+				factor = 5
+				is_year = 560
+			}
+		}
+	}
+	
+	united_gottardia_2 = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = GTT
+			NOT = { has_country_flag = united_gottardia_flag }
+			NOT = { num_of_vassals = 1 }
+		}
+		allow = {
+			is_at_war = no
+			stability = 2
+			legitimacy = 85
+			gottardia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			adm_power = 100
+		}
+		effect = {
+			change_government = absolute_monarchy
+			if = {
+				limit = { has_country_modifier = maximillian_laws_gottardia }
+				remove_country_modifier = maximillian_laws_gottardia
+			}
+			set_country_flag = united_gottardia_flag
+			add_stability = -1
+			add_adm_power = -100
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			random_owned_province = {
+				limit = {
+					culture = gottardian
+					is_capital = no
+				}
+				random_list = {
+					50 = {
+						add_base_tax = 2
+					}
+					50 = {
+						add_base_tax = 1
+						add_base_manpower = 1
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					remove_core = HLC
+					remove_core = RVS
+					remove_core = ORG
+					remove_core = ERT
+					remove_core = KDP
+					remove_core = SVR
+					remove_core = NBR
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_gottardia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			primary_culture = gottardian
+			NOT = { tag = GTT }
+			NOT = { has_country_flag = february_act }
+		}
+		allow = {
+			NOT = { exists = GTT }
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 899
+			owns_core_province = 903
+			stability = 1
+			legitimacy = 85
+			#OR = {
+			#	dip = 3
+			#	mil = 4
+			#}
+		}
+		effect = {
+			change_tag = GTT
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_dip_power = -150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_vendreya = {
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = VED }
+			OR = {
+				tag = VRU
+				tag = VKN
+				tag = VTS
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			legitimacy = 75
+			vendreya_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = VED
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 15
+			random_owned_province = {
+				add_base_tax = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+}

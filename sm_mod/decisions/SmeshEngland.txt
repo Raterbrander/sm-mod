@@ -1,0 +1,281 @@
+country_decisions = {
+
+	form_smesh_england = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = ASM }
+			OR = {
+				primary_culture = smesh_english
+				primary_culture = anglish
+				primary_culture = nordsmesh
+			}
+			NOT = { tag = KRO }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 21
+			owns_core_province = 22
+			owns_core_province = 25
+			OR = {
+				owns_core_province = 885
+				owns_core_province = 1742
+				owns_core_province = 1743
+			}
+		}
+		effect = {
+			change_tag = ASM
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	form_smesh_england_KRO = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = ASM }
+			tag = KRO
+			primary_culture = smesh_english
+			has_country_flag = gregorian_reforms_flag
+			is_colonial_nation = no
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 21
+			owns_core_province = 22
+			owns_core_province = 25
+			OR = {
+				owns_core_province = 885
+				owns_core_province = 1742
+				owns_core_province = 1743
+			}
+		}
+		effect = {
+			change_tag = ASM
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	# 2013
+	#gregorian_reforms = {
+	#	potential = {
+	#		normal_or_historical_nations = yes
+	#		tag = KRO
+	#		NOT = { has_country_flag = gregorian_reforms_flag }
+	#	}
+	#	allow = {
+	#		owns_core_province = 21
+	#		is_at_war = no
+	#		stability = 0
+	#		adm_power = 150
+	#		legitimacy = 75
+	#		prestige = 15
+	#		religion = protestant
+	#	}
+	#	effect = {
+	#		set_country_flag = gregorian_reforms_flag
+	#		add_stability = -2
+	#		add_adm_power = -200
+	#		add_prestige = 25
+	#		add_legitimacy = 25
+	#		change_technology_group = continental
+	#		change_government = absolute_monarchy
+	#		add_country_modifier = {
+	#			name = "centralization_modifier"
+	#			duration = 7300
+	#		}
+	#		set_government_rank = 2
+	#		21 = {
+	#			change_province_name = "Лондон"
+	#			rename_capital = "Лондон"
+	#			add_base_tax = 6
+	#			add_base_production = 6
+	#			add_base_manpower = 3
+	#		}
+	#		every_owned_province = {
+	#			limit = {
+	#				is_capital = no
+	#			}
+	#			add_base_tax = 2
+	#			add_base_production = 2
+	#			add_base_manpower = 1
+	#		}
+	#		hidden_effect = {
+	#			random_list = {
+	#				70 = {
+	#					random_owned_province = {
+	#						limit = {
+	#							is_capital = no
+	#						}
+	#						add_base_tax = 2
+	#					}
+	#				}
+	#				30 = { }
+	#			}
+	#			random_list = {
+	#				75 = {
+	#					random_owned_province = {
+	#						limit = {
+	#							is_capital = no
+	#						}
+	#						add_base_production = 3
+	#					}
+	#				}
+	#				25 = { }
+	#			}
+	#			random_list = {
+	#				50 = {
+	#					random_owned_province = {
+	#						add_base_manpower = 1
+	#					}
+	#				}
+	#				50 = { }
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	ai_importance = 200
+	#}
+	
+	establish_november_constitution = {
+		potential = {
+			tag = ASM
+			OR = {
+				has_country_flag = gregorian_reforms_flag
+				technology_group = continental
+			}
+			NOT = { has_country_flag = ASM_november_constitution }
+			government = monarchy
+			NOT = { government = AM_clan }
+			government_rank = 2
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			OR = {
+				religion = protestant
+				religion = tolerance
+			}
+			stability = 1
+			legitimacy = 85
+			adm_power = 50
+		}
+		effect = {
+			set_country_flag = ASM_november_constitution
+			change_government = constitutional_monarchy
+			if = {
+				limit = {
+					NOT = { religion = tolerance }
+				}
+				change_religion = tolerance
+			}
+			add_stability = 1
+			add_adm_power = -50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#resledar_convention = {
+	#	potential = {
+	#		normal_or_historical_nations = yes
+	#		OR = {
+	#			tag = ASM
+	#			AND = {
+	#				tag = KRO
+	#				NOT = { exists = ASM }
+	#			}
+	#		}
+	#		OR = {
+	#			NOT = { has_country_flag = resledar_convention_flag }
+	#			had_country_flag = {
+	#				flag = resledar_convention_flag
+	#				days = 3650
+	#			}
+	#		}
+	#		exists = EOY
+	#		31 = {
+	#			owned_by = EOY
+	#			controlled_by = EOY
+	#		}
+	#	}
+	#	allow = {
+	#		is_at_war = no
+	#		is_subject = no
+	#		31 = {
+	#			owned_by = EOY
+	#			controlled_by = EOY
+	#		}
+	#		EOY = {
+	#			has_opinion = {
+	#				who = ROOT
+	#				value = 150
+	#			}
+	#		}
+	#		stability = 1
+	#		OR = {
+	#			legitimacy = 75
+	#			republican_tradition = 0.75
+	#		}
+	#		dip_power = 100
+	#		adm_power = 100
+	#		treasury = 150
+	#	}
+	#	effect = {
+	#		set_country_flag = resledar_convention_flag
+	#		add_adm_power = -100
+	#		add_dip_power = -100
+	#		EOY = {
+	#			country_event = {
+	#				id = smesh_england.3
+	#			}
+	#		}
+	#	}
+	#}
+}
+

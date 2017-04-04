@@ -1,0 +1,75 @@
+country_decisions = {
+
+	EOE_anticommunist = {
+		potential = {
+			always = no
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = EOE_anticommunist_campagn }
+			has_country_flag = ermer_government_defeated
+			start_date = 2013.6.26
+			NOT = { government = socialist_republic }
+			NOT = { government = communist_dictatorship }
+			tag = EOY
+		}
+		allow = {
+			NOT = { government = socialist_republic }
+			NOT = { government = communist_dictatorship }
+			OR = {
+				any_neighbor_country = {
+					OR = {
+						government = communist_dictatorship
+						government = socialist_republic
+					}
+				}
+				any_country = {
+					is_rival = ROOT
+					OR = {
+						government = communist_dictatorship
+						government = socialist_republic
+					}
+				}
+			}
+			stability = 1
+			prestige = 0
+		}
+		effect = {
+			add_stability = -1
+			set_country_flag = EOE_anticommunist_campagn
+			add_treasury = 250
+		}
+	}
+	
+	EOY_financial_reform = {
+		potential = {
+			always = no
+			normal_or_historical_nations = yes
+			tag = EOY
+			start_date = 2013.6.26
+			NOT = { government = socialist_republic }
+			NOT = { government = communist_dictatorship }
+			NOT = { has_country_modifier = EOY_finance_reforms_modifier }
+		}
+		allow = {
+			NOT = { government = socialist_republic }
+			NOT = { government = communist_dictatorship }
+			stability = 1
+			adm = 3
+			adm_power = 150
+			years_of_income = 0.5
+			NOT = { num_of_loans = 3 }
+		}
+		effect = {
+			add_stability = -1
+			add_adm_power = -150
+			add_years_of_income = -0.55
+			add_inflation = 3.5
+			add_country_modifier = {
+				name = EOY_finance_reforms_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,136 @@
+country_decisions = {
+
+	rantayzian_dominion_1 = {
+		major = yes
+		potential = {
+			OR = {
+				tag = ELL
+				tag = EOY
+			}
+			is_subject = no
+			num_of_owned_provinces_with = {
+				region = western_chaepit_region
+				value = 5
+			}
+			NOT = {
+				num_of_owned_provinces_with = {
+					region = western_chaepit_region
+					value = 16
+				}
+			}
+			NOT = { has_global_flag = rantayzian_dominion_formed }
+			NOT = { exists = FRC }
+			OR = {
+				exists = CH2
+				exists = CHT
+			}
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				region = western_chaepit_region
+				value = 12
+			}
+			stability = 1
+			#prestige = 10
+			adm_power = 100
+			dip_tech = 9
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = western_chaepit_region
+							region = chaepit_region
+						}
+					}
+					add_core = FRC
+				}
+			}
+			release_vassal = FRC
+			create_march = FRC
+			add_prestige = 15
+			add_adm_power = 200
+			add_stability = -1
+			hidden_effect = {
+				FRC = {
+					add_country_modifier = {
+						name = sm_pre_loyal_colony
+						duration = -1
+					}
+				}
+				set_global_flag = rantayzian_dominion_formed
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	rantayzian_dominion_2 = {
+		major = yes
+		potential = {
+			OR = {
+				tag = EOY
+				tag = ELL
+			}
+			is_subject = no
+			num_of_owned_provinces_with = {
+				region = western_chaepit_region
+				value = 5
+			}
+			NOT = {
+				num_of_owned_provinces_with = {
+					region = western_chaepit_region
+					value = 16
+				}
+			}
+			NOT = { has_global_flag = rantayzian_dominion_formed }
+			NOT = { exists = FRR }
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				region = western_chaepit_region
+				value = 12
+			}
+			stability = 1
+			#prestige = 10
+			adm_power = 100
+			dip_tech = 9
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = western_chaepit_region
+							region = chaepit_region
+						}
+					}
+					add_core = FRR
+				}
+			}
+			release_vassal = FRR
+			create_march = FRR
+			add_prestige = 15
+			add_adm_power = 200
+			add_stability = -1
+			hidden_effect = {
+				FRC = {
+					add_country_modifier = {
+						name = sm_pre_loyal_colony
+						duration = -1
+					}
+				}
+				set_global_flag = rantayzian_dominion_formed
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

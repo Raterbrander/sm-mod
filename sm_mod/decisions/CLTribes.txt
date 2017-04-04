@@ -1,0 +1,38 @@
+country_decisions = {
+
+	AVE_smeshenfongs_assimilation = {
+		major = yes
+		potential = {
+			tag = AVE
+			#has_country_flag = AVE_in_Alveria
+			has_discovered = 350
+			is_nomad = yes
+			primary_culture = central_lands_culture
+		}
+		allow = {
+			is_nomad = yes
+			primary_culture = central_lands_culture
+			religion = totemism
+			owns_core_province = 350
+			stability = 0
+		}
+		effect = {
+			change_government = tribal_kingdom
+			change_primary_culture = smeshesfongs
+			add_stability = -3
+			add_prestige = 5
+			every_owned_province = {
+				limit = {
+					culture = central_lands_culture
+				}
+				change_culture = smeshesfongs
+				add_base_tax = 1
+				add_base_manpower = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 250
+	}
+}

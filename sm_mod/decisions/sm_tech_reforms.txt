@@ -1,0 +1,234 @@
+country_decisions = {
+
+	am_convert_to_continental_tech = {
+		major = yes
+		potential = {
+			technology_group = amian
+			NOT = { has_country_flag = country_modernization_in_progress }
+			OR = {
+				normal_or_historical_nations = no
+				AND = {
+					normal_or_historical_nations = yes
+					NOT = { tag = KRO }
+				}
+				AND = {
+					normal_or_historical_nations = yes
+					OR = {
+						ai = no
+						NOT = { tag = BEL }
+					}
+				}
+			}
+		}
+		allow = {
+			technology_group = amian
+			is_at_war = no
+			adm_tech = 8
+			stability = 2
+			adm = 4
+			adm_power = 100
+			OR = {
+				overlord = { technology_group = continental }
+				any_neighbor_country = {
+					technology_group = continental
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = sm_tech_event.1
+			}
+			add_stability = -3
+			add_adm_power = -100
+			set_country_flag = country_modernization_in_progress
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	cancel_modernization = {
+		potential = {
+			has_country_flag = country_modernization_in_progress
+			#can_spawn_rebels = reactionary_rebels
+		}
+		allow = {
+			#can_spawn_rebels = reactionary_rebels
+			always = yes
+		}
+		effect = {
+			disband_rebels = reactionary_rebels
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	domin_reforms = {
+		major = yes
+		potential = {
+			technology_group = domin_group
+			is_year = 725
+		}
+		allow = {
+			technology_group = domin_group
+			is_at_war = no
+			stability = 2
+			adm = 4
+			adm_power = 200
+			years_of_income = 0.55
+			OR = {
+				overlord = {
+					OR = {
+						technology_group = continental
+						technology_group = high_domin
+					}
+				}
+				any_neighbor_country = {
+					OR = {
+						technology_group = continental
+						technology_group = high_domin
+					}
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_adm_power = -150
+			add_mil_power = 50
+			add_dip_power = 50
+			add_years_of_income = -0.6
+			change_technology_group = high_domin
+			change_unit_type = high_domin
+			add_country_modifier = {
+				name = sm_country_modernization_2
+				duration = 912
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	old_zmooromfian_to_ellar_tech = {
+		major = yes
+		potential = {
+			technology_group = old_zmooromfian
+		}
+		allow = {
+			OR = {
+				AND = {
+					has_idea = zmr_ellar
+					legitimacy = 75
+					adm_power = 350
+					stability = 2
+				}
+				AND = {
+					adm_power = 250
+					#tech_difference = 5
+					OR = {
+						overlord = {
+							technology_group = ellar_tech
+						}
+						any_neighbor_country = {
+							technology_group = ellar_tech
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_idea = zmr_ellar }
+				}
+				add_stability = -5
+				add_adm_power = -250
+			}
+			if = {
+				limit = {
+					has_idea = zmr_ellar
+				}
+				add_adm_power = -350
+			}
+			if = {
+				limit = {
+					OR = {
+						government = steppe_horde
+						government = tribal_kingdom
+						government = tribal_despotism
+						government = tribal_federation
+					}
+				}
+				change_government = feudal_monarchy
+			}
+			if = {
+				limit = { government = tribal_democracy }
+				change_government = administrative_republic
+			}
+			change_technology_group = ellar_tech
+			add_country_modifier = {
+				name = sm_country_modernization_2
+				duration = 912
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	middle_land_to_ellar = {
+		major = yes
+		potential = {
+			technology_group = middle_land_group
+		}
+		allow = {
+			adm_power = 200
+			legitimacy = 75
+			stability = 2
+			OR = {
+				overlord = {
+					technology_group = ellar_tech
+				}
+				any_neighbor_country = {
+					technology_group = ellar_tech
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+			}
+		}
+		effect = {
+			add_stability = -2
+			add_adm_power = -200
+			change_technology_group = ellar_tech
+			change_unit_type = ellar_tech
+			add_country_modifier = {
+				name = sm_country_modernization_2
+				duration = 912
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 10
+				tag = MSC
+			}
+		}
+	}
+	
+}

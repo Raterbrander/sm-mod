@@ -1,0 +1,310 @@
+country_decisions = {
+
+	gervein_info = {
+		potential = {
+			ai = no
+			OR = {
+				has_country_modifier = gervein_union_member
+				has_country_modifier = gervein_union_associated_member
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			hidden_effect = {
+				every_country = {
+					limit = { has_country_modifier = gervein_union_leader }
+					country_event = {
+						id = gervein.3
+					}
+				}
+			}
+		}
+	}
+	
+	ai_gervein_options = {
+		potential = {
+			ai = yes
+			has_country_modifier = gervein_union_member
+		}
+		allow = {
+			stability = 1
+			adm_power = 25
+			dip_power = 50
+			prestige = 10
+		}
+		effect = {
+			country_event = {
+				id = gervein.2
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						adm_power = 50
+						dip_power = 100
+						prestige = 20
+					}
+				}
+			}
+		}
+	}
+	
+	united_gervein = {
+		potential = {
+			normal_or_historical_nations = yes
+			has_country_modifier = gervein_union_leader
+			NOT = {
+				any_country = {
+					has_country_modifier = gervein_union_state
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			calc_true_if = {
+				has_country_modifier = gervein_union_member
+				amount = 3
+			}
+			check_variable = {
+				which = gervein_leader_authority
+				value = 100
+			}
+			check_variable = {
+				which = gervein_authority
+				value = 100
+			}
+			all_subject_country = {
+				OR = {
+					NOT = { has_country_modifier = gervein_union_member }
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			adm = 4
+		}
+		effect = {
+			change_tag = GRV
+			set_global_flag = gervein_union_united
+			add_country_modifier = {
+				name = gervein_union_state
+				duration = -1
+			}
+			every_subject_country = {
+				limit = { has_country_modifier = gervein_union_member }
+				ROOT = { inherit = PREV }
+			}
+			random_owned_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_prestige = 15
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { tag = VNR }
+			}
+		}
+		ai_importance = 300
+	}
+	
+	create_gervein_forces = {
+		potential = {
+			normal_or_historical_nations = yes
+			has_country_modifier = gervein_union_leader
+			NOT = { has_global_flag = gervein_forces_created }
+		}
+		allow = {
+			check_variable = {
+				which = gervein_authority
+				value = 10
+			}
+			check_variable = {
+				which = gervein_leader_authority
+				value = 10
+			}
+			all_country = {
+				OR = {
+					NOT = { has_country_modifier = gervein_union_member }
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
+			mil = 2
+			mil_power = 250
+			years_of_income = 0.55
+		}
+		effect = {
+			set_global_flag = gervein_forces_created
+			custom_tooltip = gervein_forces_created_tooltip
+			add_years_of_income = -0.55
+			add_mil_power = -250
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	establish_gervein_guard = {
+		potential = {
+			normal_or_historical_nations = yes
+			has_country_modifier = gervein_union_member
+			capital_scope = {
+				has_province_modifier = gervein_union_city
+				NOT = { has_province_modifier = gervein_guard }
+			}
+			has_global_flag = gervein_forces_created
+		}
+		allow = {
+			NOT = { num_of_cities = 2 }
+			has_country_modifier = gervein_union_member
+			check_variable = {
+				which = gervein_authority
+				value = 5
+			}
+			prestige = 10
+			mil = 2
+			mil_power = 50
+			all_country = {
+				has_country_modifier = gervein_union_leader
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_permanent_province_modifier = {
+					name = gervein_guard
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	abolish_gervein_elections = {
+		potential = {
+			normal_or_historical_nations = yes
+			has_country_modifier = gervein_union_leader
+			NOT = { has_global_flag = gervein_elections_abolished }
+			check_variable = {
+				which = gervein_country_was_leader
+				value = 4
+			}
+		}
+		allow = {
+			check_variable = {
+				which = gervein_leader_authority
+				value = 50
+			}
+			check_variable = {
+				which = gervein_authority
+				value = 55
+			}
+			OR = {
+				dip = 5
+				mil = 5
+			}
+			prestige = 5
+			stability = 2
+		}
+		effect = {
+			set_global_flag = gervein_elections_abolished
+			custom_tooltip = gervein_elections_abolished_tooltip
+			change_variable = {
+				which = gervein_authority
+				value = -10
+			}
+			change_variable = {
+				which = gervein_leader_authority
+				value = 10
+			}
+			every_subject_country = {
+				limit = {
+					has_country_modifier = gervein_union_member
+				}
+				add_liberty_desire = 50
+				add_stability = -1
+			}
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 3
+				tag = VNR
+			}
+		}
+	}
+	
+	###
+	create_alobon = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				owns = 575
+				any_subject_country = {
+					owns = 575
+				}
+			}
+			has_country_modifier = gervein_union_leader
+			575 = {
+				NOT = { culture_group = yellow_group }
+			}
+			num_of_cities = 2
+			NOT = { exists = ALN }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			OR = {
+				owns_core_province = 575
+				any_subject_country = {
+					owns_core_province = 575
+				}
+			}
+			stability = 1
+		}
+		effect = {
+			575 = { cede_province = ALN }
+			vassalize = ALN
+			hidden_effect = {
+				575 = {
+					add_core = ALN
+					remove_core = ROOT
+				}
+			}
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				575 = {
+					NOT = { unrest = 10 }
+				}
+			}
+		}
+	}
+	
+}

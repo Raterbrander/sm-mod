@@ -1,0 +1,439 @@
+country_decisions = {
+	
+	###########################################################
+	# ANARENDILIAN
+	###########################################################
+	form_anor = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = AFE }
+			primary_culture = anarendilian
+			NOT = { tag = GRU }
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+			legitimacy = 75
+			owns_core_province = 229
+			owns_core_province = 251
+			owns_core_province = 252
+			owns_core_province = 254
+			owns_core_province = 279
+			owns_core_province = 286
+			owns_core_province = 287
+			OR = {
+				owns_core_province = 276
+				owns_core_province = 277
+			}
+			OR = {
+				owns_core_province = 223
+				owns_core_province = 224
+			}
+		}
+		effect = {
+			change_tag = AFE
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			latvia_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AFE
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 300
+	}
+	
+	
+	establish_mornluth = {
+		potential = {
+			normal_or_historical_nations = yes
+			#NOT = { has_global_flag = mornluth_established }
+			NOT = { has_country_modifier = mornluth }
+			tag = AFE
+			primary_culture = anarendilian
+		}
+		allow = {
+			#is_subject = no
+			NOT = { has_country_modifier = mornluth }
+			mil_tech = 19
+			stability = 0
+			army_tradition = 35
+			adm = 3
+			mil = 3
+			adm_power = 100
+			mil_power = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = mornluth
+				duration = -1
+			}
+			add_adm_power = -100
+			add_mil_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { is_year = 1300 }
+			}
+		}
+	}
+	
+	slavenian_defend = {
+		potential = {
+			normal_or_historical_nations = yes
+			primary_culture = anarendilian
+			religion = alklvalondie
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = slavenian_margr
+				}
+			}
+			any_owned_province = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					culture = slavenian
+					religion = ross_pagan
+					has_owner_accepted_culture = no
+					OR = {
+						is_empty = yes
+						owner = {
+							primary_culture = slavenian
+						}
+					}
+				}
+				NOT = { development = 16 }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				culture = slavenian
+			}
+			adm = 2
+			mil = 3
+			stability = 1
+			mil_power = 100
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					culture = slavenian
+					any_neighbor_province = {
+						NOT = { owned_by = ROOT }
+						culture = slavenian
+						OR = {
+							is_empty = yes
+							owner = {
+								primary_culture = slavenian
+							}
+						}
+					}
+					NOT = { development = 16 }
+				}
+				set_estate = estate_nobles
+				add_province_modifier = {
+					name = slavenian_margr
+					duration = -1
+				}
+			}
+			add_mil_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	###########################################################
+	# SLAVENIAN
+	###########################################################
+	form_slavenia = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SLV }
+			primary_culture = slavenian
+			NOT = { tag = GRU }
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+			OR = {
+				is_tribal = no
+				stability = 3
+			}
+			owns_core_province = 228
+			228 = { culture = slavenian }
+			owns_core_province = 226
+			226 = { culture = slavenian }
+			OR = {
+				AND = {
+					owns_core_province = 230
+					230 = { culture = slavenian }
+				}
+				AND = {
+					owns_core_province = 232
+					232 = { culture = slavenian }
+				}
+				AND = {
+					owns_core_province = 235
+					235 = { culture = slavenian }
+				}
+			}
+			western_latvia_region = { owned_by = ROOT }
+			num_of_cities = 12
+		}
+		effect = {
+			change_tag = SLV
+			if = {
+				limit = { is_tribal = yes }
+				change_government = despotic_monarchy
+				add_stability = -4
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			latvia_superregion = {
+				limit = {
+					culture = slavenian
+					NOT = { owned_by = ROOT }
+				}
+				add_core = ROOT
+			}
+			latvia_superregion = {
+				limit = {
+					NOT = { culture = slavenian }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 300
+	}
+	
+	
+	found_novagrad = {
+		potential = {
+			primary_culture = slavenian
+			NOT = { has_global_flag = novagrad_founded }
+			owns = 228
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			is_tribal = no
+			owns_core_province = 228
+		}
+		effect = {
+			228 = {
+				add_base_tax = 8
+				add_base_production = 6
+				add_base_manpower = 5
+				change_province_name = "Новаград"
+				rename_capital = "Новаград"
+				if = {
+					limit = {
+						NOT = { religion = owner }
+					}
+					change_religion = owner
+				}
+				if = {
+					limit = {
+						NOT = { culture = owner }
+					}
+					change_culture = owner
+				}
+			}
+			if = {
+				limit = {
+					228 = { is_capital = no }
+				}
+				set_capital = 228
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	organize_big_raid = {
+		potential = {
+			primary_culture = slavenian
+			religion = ross_pagan
+			is_tribal = yes
+			NOT = { has_country_modifier = slavenian_raid_timer }
+			any_owned_province = {
+				any_neighbor_province = {
+					owner = {
+						is_tribal = no
+					}
+					NOT = { fort_level = 1 }
+				}
+			}
+		}
+		allow = {
+			is_tribal = yes
+			is_at_war = no
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject = yes
+					overlord = { is_tribal = yes }
+				}
+			}
+			any_neighbor_country = {
+				is_tribal = no
+			}
+			mil = 2
+			mil_power = 50
+			manpower = 2
+		}
+		effect = {
+			add_mil_power = -50
+			add_manpower = -2
+			custom_tooltip = slavenian_raid_tooltip
+			hidden_effect = {
+				random_neighbor_country = {
+					limit = {
+						is_tribal = no
+					}
+					save_event_target_as = neighbor_to_raid
+				}
+				set_country_flag = slavenian_raid_in_progress
+				add_country_modifier = {
+					name = slavenian_raid_timer
+					duration = 730
+					hidden = yes
+				}
+				if = {
+					limit = {
+						event_target:neighbor_to_raid = {
+							any_owned_province = {
+								any_neighbor_province = {
+									owned_by = ROOT
+								}
+								OR = {
+									fort_level = 1
+									has_province_modifier = slavenian_margr
+								}
+							}
+						}
+					}
+					random_list = {
+						85 = {
+							country_event = {
+								id = slavenian.1
+								days = 7
+							}
+						}
+						10 = {
+							country_event = {
+								id = slavenian.2
+								days = 7
+							}
+						}
+						5 = {
+							country_event = {
+								id = slavenian.3
+								days = 7
+							}
+						}
+					}
+					hidden_effect = {
+						event_target:neighbor_to_raid = {
+							clear_global_event_target = neighbor_to_raid
+						}
+						clr_country_flag = slavenian_raid_in_progress
+					}
+				}
+				if = {
+					limit = {
+						event_target:neighbor_to_raid = {
+							any_owned_province = {
+								any_neighbor_province = {
+									owned_by = ROOT
+								}
+								NOT = {
+									OR = {
+										fort_level = 1
+										has_province_modifier = slavenian_margr
+									}
+								}
+							}
+						}
+					}
+					random_list = {
+						10 = {
+							country_event = {
+								id = slavenian.3
+								days = 7
+							}
+						}
+						65 = {
+							country_event = {
+								id = slavenian.2
+								days = 7
+							}
+						}
+						25 = {
+							country_event = {
+								id = slavenian.3
+								days = 7
+							}
+						}
+					}
+				}
+			}
+			add_prestige = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,136 @@
+# Формирование РС
+country_decisions = {
+
+	form_SIN = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			NOT = { exists = SIN }
+			primary_culture = sinius
+			NOT = { tag = ORD }
+			NOT = { government = mercenaries_clan }
+			NOT = { government = role_gov }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = sinius
+			owns_core_province = 106
+			owns_core_province = 108
+			owns_core_province = 112
+			#owns_core_province = 117
+			owns_core_province = 121
+			owns_core_province = 122
+			owns_core_province = 129
+		}
+		effect = {
+			change_tag = SIN
+			add_prestige = 25
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	form_SIN_ORD_monarchy = {
+		major = yes
+		potential = {
+			tag = ORD
+			NOT = { exists = SIN }
+			normal_or_historical_nations = yes
+			primary_culture = sinius
+		}
+		allow = {
+			NOT = { exists = SIN }
+			primary_culture = sinius
+			is_subject = no
+			is_at_war = no
+			NOT = { government = mercenaries_clan }
+			owns_core_province = 106
+			owns_core_province = 108
+			owns_core_province = 112
+			#owns_core_province = 117
+			owns_core_province = 121
+			owns_core_province = 122
+			owns_core_province = 129
+		}
+		effect = {
+			change_tag = SIN
+			add_prestige = 25
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			change_government = constitutional_monarchy
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_SIN_ORD_republic = {
+		major = yes
+		potential = {
+			tag = ORD
+			NOT = { exists = SIN }
+			normal_or_historical_nations = yes
+			primary_culture = sinius
+		}
+		allow = {
+			NOT = { exists = SIN }
+			primary_culture = sinius
+			is_subject = no
+			is_at_war = no
+			NOT = { government = mercenaries_clan }
+			owns_core_province = 106
+			owns_core_province = 108
+			owns_core_province = 112
+			#owns_core_province = 117
+			owns_core_province = 121
+			owns_core_province = 122
+			owns_core_province = 129
+		}
+		effect = {
+			change_tag = SIN
+			add_prestige = 25
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			change_government = constitutional_republic
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

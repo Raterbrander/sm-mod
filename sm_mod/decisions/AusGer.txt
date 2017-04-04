@@ -1,0 +1,74 @@
+country_decisions = {
+
+	agi_main_laws = {
+		potential = {
+			tag = AGI
+			primary_culture = ausger
+			NOT = { has_country_flag = agi_main_laws_flag }
+			government = monarchy
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			government = monarchy
+			religion = tolerance
+			stability = 1
+			legitimacy = 85
+			adm_power = 50
+		}
+		effect = {
+			set_country_flag = agi_main_laws_flag
+			add_adm_power = -50
+			add_stability = 1
+			if = {
+				limit = {
+					NOT = { government = enlightened_despotism }
+					NOT = { government = constitutional_monarchy }
+				}
+				change_government = enlightened_despotism
+			}
+			add_prestige = 15
+		}
+	}
+	
+	swiss_empire = {
+		potential = {
+			tag = SWI
+			NOT = { government = monarchy }
+			NOT = { has_country_flag = fsd_to_fse }
+		}
+		allow = {
+			is_at_war = no
+			government = republican_dictatorship
+			stability = 1
+			adm_power = 50
+			dip_power = 50
+			OR = {
+				num_of_cities = 5
+				total_development = 125
+			}
+		}
+		effect = {
+			add_prestige = 5
+			set_government_rank = 3
+			change_government = enlightened_despotism
+			define_ruler = {
+				name = "Лосьоптимист"
+				dynasty = "Гогенцоллерн-Романов-Бурбон-Валуа-Глюксбург-Саксен Кобург де Гота-Габсбург Лорд Веллингтон фон Кримс ван Маар де Луа д'Опеан цу Риксайц О'Релли МакДональд Тишпан ду Ксан душ Вакс"
+				adm = 4
+				dip = 3
+				mil = 3
+				age = 22
+				fixed = yes
+			}
+			add_adm_power = -50
+			add_dip_power = -50
+			set_country_flag = fsd_to_fse
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+
+}
