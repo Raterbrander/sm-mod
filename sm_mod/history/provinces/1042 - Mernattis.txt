@@ -1,0 +1,47 @@
+native_size = 27
+native_ferocity = 3
+native_hostileness = 2
+
+hre = yes # ?
+
+capital = "Мернаттис"
+culture = banhad
+religion = central_land_paganism
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = unknown
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+482.1.2 = { hre = no }
+586.5.11 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	capital = "Мернаттис"
+	culture = yellow
+	religion = helgarn
+	trade_goods = cloth
+	is_city = yes
+}
+600.1.1 = { road_2 = yes }
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

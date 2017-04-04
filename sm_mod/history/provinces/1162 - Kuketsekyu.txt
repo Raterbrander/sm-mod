@@ -1,0 +1,44 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+capital = "Кукецекю"
+culture = utenian
+religion = orthodox
+trade_goods = fish
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	#remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+821.1.1 = { railroad_1 = no railroad_2 = yes }
+864.2.3 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	#add_core = EOY
+} # Аннексия
+872.1.1 = { capital = "Кунсермайер" }
+900.1.1 = {
+	base_tax = 3
+	base_production = 2
+	base_manpower = 3
+}

@@ -1,0 +1,75 @@
+owner = KHS
+controller = KHS
+add_core = HLB
+add_core = KHS
+add_core = GTT
+
+is_city = yes
+hre = yes
+
+culture = gottardian
+religion = yutonsenit
+capital = "ױוכüסמכעבונד"
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = salt
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+428.1.1 = {
+	owner = HLB
+	controller = HLB
+}
+482.1.2 = { hre = no }
+488.2.17 = {
+	owner = ERT
+	controller = ERT
+	add_core = ERT
+}
+500.1.1 = { religion = ellar_pagan }
+506.1.1 = { serfdom = no }
+525.1.1 = {
+	base_tax = 2
+	base_production = 2
+}
+543.1.1 = { religion = helgarn }
+549.9.28 = {
+	owner = GTT
+	controller = GTT
+	remove_core = ERT
+}
+557.1.1 = { railroad_2 = yes }
+561.3.21 = {
+	remove_core = KHS
+	remove_core = HLB
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	discovered_by = southern
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

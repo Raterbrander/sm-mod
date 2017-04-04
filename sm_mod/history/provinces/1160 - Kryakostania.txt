@@ -1,0 +1,43 @@
+owner = KST
+controller = KST
+add_core = KST
+
+is_city = yes
+
+capital = "Крякольтания"
+culture = utenian
+religion = tolerance
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = fish
+
+discovered_by = southern
+
+625.3.18 = { controller = EOY }
+627.3.28 = {
+	controller = KST
+	add_core = UTN
+	add_core = EOY
+}
+639.1.1 = {
+	owner = EOY
+	controller = EOY
+}
+700.1.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 4
+	remove_core = KST
+}
+750.1.1 = {
+	modernised_factories = yes
+	base_tax = 5
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}

@@ -1,0 +1,58 @@
+owner = LKF
+controller = LKF
+add_core = LKF
+
+is_city = yes
+hre = yes
+
+capital = "‹икенф"
+culture = turbalhian
+religion = ellar_pagan
+
+trade_goods = fish
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+shipyard = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+475.8.29 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+}
+544.1.1 = { religion = helgarn }
+555.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+559.2.11 = {
+	owner = LKF
+	controller = LKF
+}
+568.12.7 = {
+	owner = TRB
+	controller = TRB
+	add_core = TRB
+	remove_core = ZMR
+	remove_core = LKF
+}
+576.4.6 = { add_core = ELL }
+589.3.17 = {
+	owner = ELL
+	controller = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

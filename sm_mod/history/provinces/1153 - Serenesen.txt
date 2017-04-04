@@ -1,0 +1,40 @@
+native_size = 24
+native_ferocity = 2
+native_hostileness = 2
+
+hre = no
+is_city = yes
+
+culture = kosoy_culture
+religion = animism
+capital = "Серенесен"
+ 
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+527.1.1 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+	is_city = yes
+	trade_goods = fish
+	culture = chaepit
+	religion = tolerance
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+864.2.3 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	#add_core = EOY
+	#remove_core = CH2
+} # Аннексия
+900.1.1 = {
+	railroad_2 = yes
+}

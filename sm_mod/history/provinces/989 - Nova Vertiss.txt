@@ -1,0 +1,30 @@
+native_size = 44
+native_ferocity = 3
+native_hostileness = 4
+
+is_city = no
+
+culture = tarsek
+religion = totemism
+capital = "Нова Вертисс"
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = unknown
+
+698.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	is_city = yes
+	trade_goods = copper
+	culture = yellow
+	religion = helgarn
+}
+884.1.1 = {
+	owner = FRC
+	controller = FRC
+	add_core = FRC
+	remove_core = EOY
+}

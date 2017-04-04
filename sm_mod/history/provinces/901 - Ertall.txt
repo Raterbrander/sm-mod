@@ -1,0 +1,77 @@
+owner = ERT
+controller = ERT
+add_core = ERT
+add_core = GTT
+
+is_city = yes
+hre = yes
+
+culture = gottardian
+religion = ellar_pagan
+capital = "Эртайл"
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+trade_goods = wood
+
+temple = yes
+university = yes
+courthouse = yes
+serfdom = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+997.1.1 = { railroad_1 = yes }
+482.1.2 = { hre = no }
+506.1.1 = { serfdom = no }
+510.1.1 = {
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+542.1.14 = { religion = helgarn }
+549.9.28 = {
+	owner = GTT
+	controller = GTT
+	remove_core = ERT
+}
+555.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+568.1.1 = {
+	base_tax = 5
+	temple = no
+	cathedral = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+615.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+680.1.1 = {
+	discovered_by = southern
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

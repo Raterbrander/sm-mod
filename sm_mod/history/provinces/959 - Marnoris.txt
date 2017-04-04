@@ -1,0 +1,61 @@
+owner = WDS # ERC
+controller = WDS
+add_core = WDS
+add_core = ERC
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+base_tax = 3
+base_production = 1
+trade_goods = grain
+base_manpower = 2
+capital = "Калехейн"
+
+courthouse = yes
+#serfdom = no
+
+estate = estate_nobles
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+
+460.1.1 = { base_manpower = 2 }
+465.12.19 = {
+	estate = noestate
+	#owner = WDS
+	#controller = WDS
+	#add_core = WDS
+	remove_core = ERC
+}
+500.1.1 = { railroad_1 = yes }
+482.1.2 = { hre = no }
+541.5.1 = { religion = helgarn }
+554.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = WDS
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

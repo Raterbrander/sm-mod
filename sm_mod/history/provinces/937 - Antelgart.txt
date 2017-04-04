@@ -1,0 +1,67 @@
+owner = HNF
+controller = HNF
+add_core = LDR
+add_core = HNF
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Àםעוכüדאנע"
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = cloth
+
+serfdom = yes
+railroad_1 = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+533.10.2 = { controller = LDR }
+534.3.2 = {
+	owner = LDR
+	controller = LDR
+	remove_core = HNF
+}
+541.4.6 = { religion = helgarn }
+555.1.1 = {
+	railroad_1 = yes
+	railroad_2 = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = LDR
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	discovered_by = southern
+}
+755.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

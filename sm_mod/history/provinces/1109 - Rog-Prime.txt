@@ -1,0 +1,39 @@
+owner = NGR
+controller = NGR
+add_core = NGR
+
+is_city = yes
+hre = no
+
+culture = chaepitian
+religion = chaecan
+capital = "Рог-Прайм"
+base_tax = 4
+base_production = 5
+base_manpower = 4
+trade_goods = iron
+
+town_hall = yes
+modernised_factories = yes
+training_fields = yes
+
+weapons = yes
+
+discovered_by = rolevik
+discovered_by = continental
+
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

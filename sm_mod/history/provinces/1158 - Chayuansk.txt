@@ -1,0 +1,52 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+capital = "Чайуанск"
+culture = chaepit
+religion = orthodox
+trade_goods = fish
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	#remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+864.2.3 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	#add_core = EOY
+} # Аннексия
+870.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+872.1.1 = { capital = "Энрейменсхейл" }
+900.5.1 = {
+	culture = yellow
+	religion = helgarn
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+	grand_shipyard = yes
+	modernised_factories = yes
+	trade_goods = naval_supplies
+}

@@ -1,0 +1,65 @@
+owner = SMF
+controller = SMF
+add_core = SMF
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Хейнграт"
+
+base_tax = 4
+base_production = 5
+base_manpower = 4
+trade_goods = iron
+
+railroad_1 = yes
+traditional_factories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+500.1.1 = {
+	base_production = 8
+	base_manpower = 5
+	weapons = yes
+}
+482.1.2 = { hre = no }
+501.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+541.4.6 = { religion = helgarn }
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SMF
+}
+580.1.1 = {
+	base_tax = 7
+	base_production = 10
+	base_manpower = 6
+	traditional_factories = no
+	modernised_factories = yes
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	modernised_factories = no
+	robotic_production = yes
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

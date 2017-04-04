@@ -1,0 +1,28 @@
+owner = DVI
+controller = DVI
+add_core = DVI
+
+is_city = yes
+
+capital = "Деревня димика"
+culture = malishian
+religion = orthodox
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = grain
+
+discovered_by = southern
+discovered_by = DVI
+discovered_by = SUM
+discovered_by = rolevik
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = elder_city_modifier
+		duration = -1
+	}
+}
+
+804.3.25 = { add_core = DRA }

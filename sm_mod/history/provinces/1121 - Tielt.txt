@@ -1,0 +1,52 @@
+owner = BZN
+controller = BZN
+add_core = BZN
+
+is_city = yes
+hre = no
+
+capital = "Òθύλός"
+culture = bezantokian
+religion = astransenit
+
+base_tax = 4
+base_production = 2
+base_manpower = 3
+trade_goods = naval_supplies
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+492.3.18 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+	remove_core = SIN
+}

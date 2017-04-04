@@ -1,0 +1,71 @@
+owner = HNF
+controller = HNF
+add_core = HNF
+
+is_city = yes
+hre = yes
+
+culture = tardian
+religion = ellar_pagan
+capital = "Кевель"
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = luxury_goods
+
+serfdom = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+432.3.14 = {
+	owner = WDS # ERC
+	controller = WDS # ERC
+	add_core = WDS # ERC
+	add_core = ERC
+	estate = estate_nobles
+}
+450.1.1 = { railroad_1 = yes }
+465.12.19 = {
+#	estate = noestate
+#	owner = WDS
+#	controller = WDS
+#	add_core = WDS
+	remove_core = ERC
+}
+482.1.2 = { hre = no }
+525.2.26 = { controller = HNF }
+525.4.11 = { owner = HNF }
+534.2.3 = { controller = TBS }
+534.3.2 = {
+	owner = TBS
+	add_core = TBS
+	remove_core = WDS
+	remove_core = HNF
+}
+541.4.6 = { religion = helgarn }
+550.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+	discovered_by = southern
+}

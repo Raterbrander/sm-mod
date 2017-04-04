@@ -1,0 +1,48 @@
+owner = TND
+controller = TND
+add_core = TND
+
+capital = "Тондеров город"
+culture = tonderros
+religion = ameism
+trade_goods = iron
+base_tax = 4
+base_production = 3
+base_manpower = 5
+
+hre = yes
+is_city = yes
+
+fort_15th = yes
+traditional_factories = yes
+serfdom = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+474.5.14 = { serfdom = no }
+482.1.2 = { hre = no }
+560.1.1 = { religion = helgarn }
+562.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+680.1.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 6
+}
+787.5.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = TND
+	traditional_factories = no
+	modernised_factories = yes
+}
+#850.1.1 = { fort_15th = no }

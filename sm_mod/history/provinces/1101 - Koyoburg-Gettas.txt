@@ -1,0 +1,50 @@
+owner = KOY
+controller = KOY
+add_core = KOY
+
+is_city = yes
+hre = yes
+
+capital = "Геттас"
+culture = yellow
+religion = ellar_pagan
+
+trade_goods = copper
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+temple = yes
+courthouse = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+474.5.3 = {
+	owner = KGE
+	controller = KGE
+	add_core = KGE
+	remove_core = KOY
+}
+482.1.2 = { hre = no }
+541.5.1 = { religion = helgarn }
+569.1.1 = { serfdom = no }
+574.1.1 = { railroad_2 = yes }
+576.4.6 = { add_core = ELL }
+576.4.9 = {
+	owner = ELL
+	controller = ELL
+	add_core = KOY
+	remove_core = KGE
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

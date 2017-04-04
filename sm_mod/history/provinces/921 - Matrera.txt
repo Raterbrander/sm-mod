@@ -1,0 +1,73 @@
+owner = MAT
+controller = MAT
+add_core = MAT
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Хонвиллер"
+
+base_tax = 2
+base_production = 1
+base_manpower = 3 # 2
+trade_goods = grain
+
+temple = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+528.1.21 = {
+	owner = HNF
+	controller = HNF
+	add_core = HNF
+}
+525.1.1 = { religion = astransenit }
+533.4.20 = { controller = SMF }
+534.3.2 = {
+	owner = KNV
+	controller = KNV
+	remove_core = HNF
+}
+535.1.1 = {
+	owner = MAT
+	controller = MAT
+}
+542.8.5 = { religion = helgarn }
+576.5.3 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	add_local_autonomy = 25
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+596.1.1 = {
+	remove_core = MAT
+	add_local_autonomy = -25
+}
+634.1.1 = {
+	temple = no
+	cathedral = yes
+}
+680.1.1 = {
+	discovered_by = southern
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

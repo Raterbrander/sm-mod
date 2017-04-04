@@ -1,0 +1,51 @@
+owner = ECH
+controller = ECH
+add_core = ECH
+add_core = UTN
+
+is_city = yes
+
+capital = "Чихкугоанх"
+culture = chaepit
+religion = orthodox
+trade_goods = iron
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+discovered_by = southern
+
+580.1.1 = {
+	owner = UTN
+	controller = UTN
+}
+627.2.17 = {
+	owner = ECH
+	controller = ECH
+}
+627.7.20 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+	remove_core = ECH
+	#remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+864.2.3 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	#add_core = EOY
+} # Аннексия
+875.1.1 = { railroad_1 = yes }
+900.1.1 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 3
+	railroad_1 = no
+	railroad_2 = yes
+}

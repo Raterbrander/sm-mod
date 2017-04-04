@@ -1,0 +1,62 @@
+owner = HLC
+controller = HLC
+add_core = HLC
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Орсалл"
+base_tax = 5
+base_production = 5
+base_manpower = 5
+trade_goods = luxury_goods
+
+primitive_manufactories = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+464.2.24 = {
+	owner = PRT
+	controller = PRT
+	add_core = PRT
+}
+482.1.2 = { hre = no }
+545.1.1 = { religion = helgarn }
+552.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = HLC
+	remove_core = PRT
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+615.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

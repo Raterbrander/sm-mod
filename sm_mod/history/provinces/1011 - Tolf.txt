@@ -1,0 +1,53 @@
+owner = TND
+controller = TND
+add_core = TND
+
+is_city = yes
+hre = yes
+
+culture = tonderros
+religion = ellar_pagan
+capital = "Тольф"
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = copper
+
+railroad_1 = yes
+serfdom = yes
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = old_zmooromfian
+
+474.5.14 = { serfdom = no }
+482.1.2 = { hre = no }
+541.4.10 = { religion = helgarn }
+562.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+576.4.6 = { add_core = ELL }
+594.2.12 = {
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	discovered_by = southern
+}
+754.2.21 = {
+	owner = EOY
+	controller = EOY
+}
+787.5.1 = { remove_core = TND }
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

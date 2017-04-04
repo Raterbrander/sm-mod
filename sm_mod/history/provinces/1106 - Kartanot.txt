@@ -1,0 +1,80 @@
+owner = KRT
+controller = KRT
+add_core = KRT
+
+is_city = yes
+hre = yes
+
+capital = "Картан"
+culture = yellow
+religion = ellar_pagan
+
+trade_goods = fish
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+temple = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+478.10.16 = {
+	owner = GRV
+	controller = GRV
+	add_core = GRV
+}
+482.1.2 = { hre = no }
+482.6.4 = {
+	owner = KRT
+	controller = KRT
+	add_core = HLC
+	remove_core = GRV
+	remove_province_modifier = gervein_union_city
+}
+482.11.12 = { controller = HLC }
+482.11.23 = { owner = HLC }
+541.5.1 = { religion = helgarn }
+549.4.25 = {
+	revolt = {
+		type = nationalist_rebels
+		size = 1
+		leader = "Кардельт Стефлен"
+	}
+	controller = REB
+}
+550.3.11 = {
+	revolt = { }
+	owner = KRT
+	controller = KRT
+	remove_core = HLC
+}
+567.6.21 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = KRT
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

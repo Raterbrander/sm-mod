@@ -1,0 +1,89 @@
+owner = VKN
+controller = VKN
+add_core = VKN
+
+is_city = yes
+hre = yes
+
+capital = "Консфальт"
+culture = tardian
+religion = ellar_pagan
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = grain
+
+temple = yes
+town_hall = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+discovered_by = high_domin
+discovered_by = imperial_group
+
+482.1.2 = { hre = no }
+520.4.12 = {
+	owner = TBS
+	controller = TBS
+	add_core = TBS
+	serfdom = no
+}
+522.1.1 = {
+	owner = VKN
+	controller = VKN
+}
+524.1.1 = { railroad_1 = yes }
+541.4.6 = { religion = helgarn }
+557.9.21 = {
+	owner = TBS
+	controller = TBS
+}
+558.3.24 = {
+	owner = VRU
+	controller = VRU
+	add_core = VRU
+}
+560.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+564.3.4 = {
+	owner = TBS
+	controller = TBS
+	add_core = TBS
+}
+568.3.25 = {
+	owner = VRU
+	controller = VRU
+}
+571.6.4 = {
+	owner = VED
+	controller = VED
+	add_core = VED
+	remove_core = VRU
+	remove_core = VKN
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+#580.1.1 = { remove_core = VED }
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+655.1.1 = {
+	discovered_by = southern
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

@@ -1,0 +1,25 @@
+native_size = 72
+native_ferocity = 7
+native_hostileness = 5
+
+#add_core = MDV
+
+capital = "Медведовск"
+culture = medvedian
+religion = old_shamanism
+trade_goods = fish
+base_tax = 5
+base_production = 4
+base_manpower = 5
+
+688.10.18 = {
+	owner = MDV
+	controller = MDV
+	add_core = MDV
+	is_city = yes
+}
+750.1.1 = {
+	is_city = no
+	owner = XXX
+	controller = XXX
+}

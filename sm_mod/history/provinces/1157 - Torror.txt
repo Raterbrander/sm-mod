@@ -1,0 +1,41 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+trade_goods = fish
+
+capital = "Торроргеун"
+culture = utenian
+religion = orthodox
+
+railroad_2 = yes
+grand_shipyard = yes
+
+discovered_by = southern
+
+626.4.14 = { controller = EOY }
+627.7.25 = {
+	owner = NGR
+	controller = NGR
+	add_core = NGR
+}
+655.9.4 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = NGR
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+}
+900.1.1 = {
+	base_tax = 5
+	base_production = 5
+}

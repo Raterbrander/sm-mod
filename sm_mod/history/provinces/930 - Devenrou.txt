@@ -1,0 +1,48 @@
+owner = TBS
+controller = TBS
+add_core = TBS
+
+is_city = yes
+hre = yes
+
+capital = "Доуресса"
+culture = tardian
+religion = ellar_pagan
+
+base_tax = 4
+base_production = 2
+base_manpower = 3
+trade_goods = fur
+
+railroad_1 = yes
+serfdom = yes
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = imperial_group
+discovered_by = high_domin
+
+477.8.12 = { serfdom = no }
+482.1.2 = { hre = no }
+498.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+525.1.1 = { temple = yes }
+541.4.6 = { religion = helgarn }
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+600.8.1 = {
+	base_production = 3 
+	traditional_factories = yes
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

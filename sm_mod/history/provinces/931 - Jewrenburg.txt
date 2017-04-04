@@ -1,0 +1,79 @@
+owner = TBS
+controller = TBS
+add_core = JEW
+add_core = TBS
+
+is_city = yes
+hre = yes
+
+culture = tardian
+religion = jewish
+capital = "Джевренбург"
+
+base_tax = 3
+base_production = 4
+base_manpower = 2
+trade_goods = luxury_goods
+
+temple = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+discovered_by = imperial_group
+
+457.1.1 = {
+	owner = JEW
+	controller = JEW
+	remove_core = TBS
+	add_claim = TBS
+}
+470.6.21 = { add_core = TBS }
+482.1.2 = { hre = no }
+528.7.28 = {
+	owner = HNF
+	controller = HNF
+	add_core = HNF
+}
+528.12.22 = { controller = WDS }
+529.11.30 = { controller = HNF }
+533.11.8 = { controller = TBS }
+534.3.2 = {
+	owner = JEW
+	controller = JEW
+	remove_core = HNF
+}
+574.4.16 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SMF
+}
+580.1.1 = {
+	remove_core = TBS
+	remove_claim = TBS
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+655.1.1 = {
+	discovered_by = southern
+}
+850.1.1 = {
+	discovered_by = high_domin
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+#1200.1.1 = { remove_core = JEW }

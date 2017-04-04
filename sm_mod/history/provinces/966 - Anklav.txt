@@ -1,0 +1,50 @@
+owner = HRU
+controller = HRU
+add_core = HRU
+
+is_city = yes
+hre = yes
+
+culture = amian
+religion = ameism
+capital = "Ставка Хрюмина"
+trade_goods = iron
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+fort_15th = yes
+traditional_factories = yes
+
+discovered_by = amian
+discovered_by = continental
+discovered_by = ellar_tech
+
+482.1.2 = { hre = no }
+580.1.1 = {
+	is_city = no
+	owner = XXX
+	controller = XXX
+	remove_core = HRU
+	native_size = 9
+	native_ferocity = 4
+	native_hostileness = 6
+	fort_15th = no
+	traditional_factories = no
+}
+630.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	is_city = yes
+	capital = "Кальнир"
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

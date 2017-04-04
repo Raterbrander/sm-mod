@@ -1,0 +1,98 @@
+owner = SVR
+controller = SVR
+add_core = NBR
+add_core = SVR
+
+is_city = yes
+hre = yes
+
+culture = gottardian
+religion = ellar_pagan
+capital = "Намбоур"
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = fur
+
+primitive_manufactories = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+478.8.17 = {
+	owner = NBR
+	controller = NBR
+	serfdom = no
+}
+479.1.1 = { controller = SVR }
+482.1.2 = { hre = no }
+482.10.6 = {
+	remove_core = SVR
+	controller = NBR
+}
+490.1.1 = { railroad_1 = yes }
+535.11.17 = {
+	owner = HLC
+	controller = HLC
+	add_core = HLC
+}
+543.3.2 = {
+	owner = ERT
+	controller = ERT
+	add_core = ERT
+	remove_core = HLC
+}
+544.1.1 = { religion = helgarn }
+549.9.28 = {
+	owner = GTT
+	controller = GTT
+	remove_core = ERT
+} # Захват Эрталлами власти в Готтардии
+551.11.15 = {
+	owner = NBR
+	controller = NBR
+}
+554.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+560.7.1 = {
+	owner = GTT
+	controller = GTT
+	add_core = GTT
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = NBR
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+606.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+680.1.1 = {
+	discovered_by = southern
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

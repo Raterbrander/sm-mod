@@ -1,0 +1,52 @@
+owner = BLF
+controller = BLF
+add_core = BLF
+
+is_city = yes
+hre = yes
+
+culture = tardian
+religion = ellar_pagan
+capital = "Αΰλότϋ"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+railroad_1 = yes
+temple = yes
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+529.5.21 = {
+	owner = TBS
+	controller = TBS
+	add_core = TBS
+}
+541.4.10 = { religion = helgarn }
+545.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+555.1.1 = {
+	base_production = 4
+	base_manpower = 4
+	#fort_15th = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = BLF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

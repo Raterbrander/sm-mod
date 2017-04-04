@@ -1,0 +1,47 @@
+owner = HNF
+controller = HNF
+add_core = HNF
+
+is_city = yes
+hre = yes
+
+culture = tardian
+religion = ellar_pagan
+capital = "Υΰντΰλός"
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = grain
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+522.1.1 = { railroad_1 = yes }
+541.9.1 = { religion = helgarn }
+534.2.25 = { controller = TBS }
+534.3.2 = { controller = HNF }
+570.3.3 = {
+	owner = WDS
+	controller = WDS
+	add_core = WDS
+	serfdom = no
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = HNF
+	remove_core = WDS
+	add_core = TBS
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

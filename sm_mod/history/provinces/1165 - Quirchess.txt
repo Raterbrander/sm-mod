@@ -1,0 +1,54 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+capital = "Кирчесс"
+culture = utenian
+religion = orthodox
+trade_goods = iron
+base_tax = 5
+base_production = 5
+base_manpower = 5
+
+traditional_factories = yes
+grand_shipyard = yes
+railroad_2 = yes
+
+discovered_by = SHK
+discovered_by = southern
+
+343.6.24 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+	remove_core = UTN
+}
+350.1.1 = { culture = chaepit }
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	#remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+840.1.1 = {
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+}
+850.1.1 = { religion = tolerance }
+864.2.3 = { add_core = KTN } # Аннексия - не вышло
+1024.2.7 = {
+	owner = KTN
+	controller = KTN
+} # Аннексия после захвата Чаепита СМ

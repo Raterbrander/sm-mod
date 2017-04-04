@@ -1,0 +1,83 @@
+owner = SHK
+controller = SHK
+add_core = SHK
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = tolerance
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 4
+capital = "ָמאסעמכüפ"
+
+fort_15th = yes
+grand_shipyard = yes
+railroad_1 = yes
+traditional_factories = yes
+
+discovered_by = southern
+discovered_by = old_altras_tech
+
+500.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+484.12.29 = { controller = UTN traditional_factories = no }
+485.1.10 = { owner = UTN }
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+711.1.1 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+#2014.1.1 = { culture = zalesian add_core = ZLS base_manpower = 3 }
+#2014.7.11 = {
+#	owner = ZLS
+#	controller = ZLS
+#	add_core = SIN
+#}
+#2014.8.27 = {
+#	owner = SIN
+#	controller = SIN
+#}
+#2014.12.16 = {
+#	owner = ALR
+#	controller = ALR
+#}
+#2015.1.1 = {
+#	base_tax = 4
+#	base_production = 4
+#	base_manpower = 4
+#}
+#2015.9.18 = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#}
+#2015.9.20 = {
+#	owner = SIN
+#	controller = SIN
+#	add_core = SME
+#	remove_core = BRN
+#}

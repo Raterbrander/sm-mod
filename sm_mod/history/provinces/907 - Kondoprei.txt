@@ -1,0 +1,96 @@
+owner = SVR
+controller = SVR
+add_core = KDP
+add_core = SVR
+
+is_city = yes
+hre = yes
+
+culture = gottardian
+religion = astransenit
+capital = "Кондопреи"
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+457.12.27 = {
+	revolt = {
+		type = nationalist_rebels
+		name = "Восстание Кондопреиской Стражи"
+		leader = "Кристофер Лензерфон"
+		size = 1
+	}
+	controller = REB
+}
+459.2.21 = { serfdom = yes }
+459.5.15 = {
+	revolt = { }
+	owner = KDP
+	controller = KDP
+}
+482.1.2 = { hre = no }
+500.1.1 = { railroad_1 = yes }
+532.6.18 = {
+	owner = HLC
+	controller = HLC
+	add_core = HLC
+}
+533.1.1 = {
+	owner = SVR
+	controller = SVR
+	remove_core = HLC
+} # Передано Савардейрисским Хальсценбургам
+542.12.11 = { religion = helgarn }
+543.3.2 = {
+	owner = KDP
+	controller = KDP
+} # Итоги война за Намбоурен
+555.3.21 = {
+	owner = NBR
+	controller = NBR
+	add_core = NBR
+}
+560.7.1 = {
+	owner = GTT
+	controller = GTT
+	add_core = GTT
+}
+1084.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SVR
+	remove_core = KDP
+	remove_core = NBR
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	discovered_by = southern
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

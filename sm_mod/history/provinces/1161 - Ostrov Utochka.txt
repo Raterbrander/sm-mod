@@ -1,0 +1,39 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = fish
+
+capital = "Дакманту"
+culture = utenian
+religion = orthodox
+
+temple = yes
+grand_shipyard = yes
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = southern
+
+626.1.4 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+850.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+	base_tax = 6
+	base_production = 5
+}

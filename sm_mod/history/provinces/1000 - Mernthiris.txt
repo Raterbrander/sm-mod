@@ -1,0 +1,72 @@
+owner = MRH
+controller = MRH
+add_core = MRH
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Мернистах"
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = copper
+
+courthouse = yes
+serfdom = yes
+fort_15th = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+542.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+545.1.1 = { religion = helgarn }
+548.11.13 = {
+	owner = GRL
+	controller = GRL
+	add_core = GRL
+}
+561.2.7 = {
+	owner = MRH
+	controller = MRH
+	add_core = MRH
+	remove_core = GRL
+}
+568.1.1 = { serfdom = no }
+570.2.24 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 2
+	}
+	controller = REB
+}
+570.5.21 = {
+	revolt = { }
+	owner = GTR
+	controller = GTR
+	add_core = GTR
+}
+576.4.6 = { add_core = ELL }
+576.4.17 = {
+	owner = ELL
+	controller = ELL
+	remove_core = MRH
+}
+580.1.1 = { remove_core = GTR } # ?
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

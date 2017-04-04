@@ -1,0 +1,36 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = fish
+
+capital = "Гыунилында"
+culture = utenian
+religion = orthodox
+
+grand_shipyard = yes
+
+discovered_by = southern
+
+625.3.11 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+	capital = "Геанланта"
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+850.1.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 5
+}

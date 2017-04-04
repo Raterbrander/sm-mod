@@ -1,0 +1,67 @@
+owner = SVR
+controller = SVR
+add_core = SVR
+add_core = GTT
+
+is_city = yes
+hre = yes
+
+culture = gottardian
+religion = yutonsenit
+capital = "Γπώντεπρ"
+
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = cloth
+
+courthouse = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+450.1.1 = { railroad_1 = yes primitive_manufactories = yes }
+475.1.1 = { religion = ellar_pagan }
+481.5.1 = { controller = ERT }
+482.1.2 = { hre = no }
+482.10.6 = { controller = SVR }
+557.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+559.1.1 = { religion = helgarn }
+1083.10.17 = {
+	owner = GTT
+	controller = GTT
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SVR
+}
+#577.1.29 = { remove_core = SVR }
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+600.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+680.1.1 = { discovered_by = southern }
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

@@ -1,0 +1,69 @@
+owner = RVS
+controller = RVS
+add_core = RVS
+add_core = GTT
+
+is_city = yes
+hre = yes
+
+culture = gottardian
+religion = ellar_pagan
+capital = "Ревендстар"
+
+base_tax = 3
+base_production = 2
+base_manpower = 4
+trade_goods = wood
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+482.1.2 = { hre = no }
+504.7.16 = {
+	owner = ERT
+	controller = ERT
+	add_core = ERT
+	serfdom = no
+}
+525.1.1 = { railroad_1 = yes }
+542.1.14 = { religion = helgarn }
+549.9.28 = {
+	owner = GTT
+	controller = GTT
+	remove_core = ERT
+}
+550.1.1 = { traditional_factories = no }
+557.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+577.1.29 = { remove_core = RVS }
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	discovered_by = southern
+	traditional_factories = no
+	modernised_factories = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

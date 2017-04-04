@@ -1,0 +1,55 @@
+owner = AL1
+controller = AL1
+add_core = AL1
+
+is_city = yes
+
+culture = altras
+religion = solaris_religion
+capital = "Кастем"
+
+base_tax = 5
+base_production = 3
+base_manpower = 4
+trade_goods = copper
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = amian
+
+500.1.1 = {
+	base_tax = 6
+	base_production = 4
+	base_manpower = 8
+}
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_claim = SIN
+	remove_core = AL1
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+750.1.1 = {
+	base_tax = 7
+	base_production = 5
+	base_manpower = 10
+}
+872.6.26 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = IOD
+}

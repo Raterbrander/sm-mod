@@ -1,0 +1,68 @@
+owner = GIE
+controller = GIE
+add_core = SVL
+add_core = GIE
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = astransenit
+capital = "Севлеф"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+serfdom = yes
+town_hall = yes
+temple = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+
+456.7.22 = {
+	owner = SVL
+	controller = SVL
+	serfdom = no
+}
+461.2.16 = { remove_core = GIE }
+482.1.2 = { hre = no primitive_manufactories = yes }
+541.4.14 = { religion = helgarn }
+567.3.11 = { # 5.30
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+570.1.1 = {
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SMF
+	remove_core = SVL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+630.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

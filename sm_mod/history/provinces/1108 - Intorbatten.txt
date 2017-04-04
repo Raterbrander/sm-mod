@@ -1,0 +1,78 @@
+owner = INT
+controller = INT
+add_core = INT
+
+is_city = yes
+hre = yes
+
+capital = "Инторбаттен"
+culture = yellow
+religion = ellar_pagan
+
+trade_goods = naval_supplies
+base_tax = 2
+base_production = 2
+base_manpower = 1
+
+primitive_manufactories = yes
+university = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+478.10.16 = {
+	owner = GRV
+	controller = GRV
+	add_core = GRV
+}
+481.10.6 = { controller = ERM }
+482.1.2 = { hre = no }
+482.6.4 = {
+	owner = ERM
+	controller = ERM
+	add_core = ERM
+	remove_core = GRV
+	remove_province_modifier = gervein_union_city
+}
+541.5.1 = { religion = helgarn }
+549.10.6 = {
+	revolt = {
+		type = nationalist_rebels
+		size = 1
+	}
+	controller = REB
+}
+551.4.5 = {
+	revolt = { }
+	owner = INT
+	controller = INT
+	remove_core = ERM
+}
+554.11.30 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = INT
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

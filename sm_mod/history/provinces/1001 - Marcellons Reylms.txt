@@ -1,0 +1,52 @@
+owner = MRC
+controller = MRC
+add_core = MRC
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Конмарцелл"
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = copper
+
+courthouse = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+500.1.1 = { railroad_1 = yes }
+545.1.1 = { religion = helgarn }
+546.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+554.1.1 = { serfdom = no }
+570.5.21 = {
+	owner = GTR
+	controller = GTR
+	add_core = GTR
+	remove_core = MRC
+}
+576.4.6 = { add_core = ELL }
+576.4.17 = {
+	owner = ELL
+	controller = ELL
+}
+580.1.1 = { remove_core = GTR } # ?
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

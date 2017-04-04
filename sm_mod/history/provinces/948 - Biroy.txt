@@ -1,0 +1,53 @@
+owner = BIR
+controller = BIR
+add_core = BIR
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Бирой"
+
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = fur
+
+temple = yes
+fort_15th = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+
+482.1.2 = { hre = no }
+542.1.1 = { religion = helgarn }
+544.1.1 = { railroad_1 = yes }
+551.1.1 = { serfdom = no }
+553.11.21 = { serfdom = yes }
+555.1.1 = { base_manpower = 3 }
+571.11.23 = { serfdom = no }
+576.5.17 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = BIR
+}
+582.1.1 = { railroad_2 = yes }
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

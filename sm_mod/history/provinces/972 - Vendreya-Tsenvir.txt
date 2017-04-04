@@ -1,0 +1,59 @@
+owner = VTS
+controller = VTS
+add_core = VTS
+
+is_city = yes
+hre = yes
+
+culture = tardian
+religion = ellar_pagan
+capital = "Ценвир"
+base_tax = 3
+base_production = 2
+base_manpower = 2
+trade_goods = cloth
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+528.1.1 = { railroad_1 = yes }
+542.1.1 = { religion = helgarn }
+548.1.11 = {
+	owner = GRL
+	controller = GRL
+	add_core = GRL
+}
+563.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+571.5.6 = {
+	owner = VRU
+	controller = VRU
+	add_core = VRU
+	remove_core = GRL
+	serfdom = no
+}
+571.6.4 = {
+	owner = VED
+	controller = VED
+	add_core = VED
+	remove_core = VRU
+	remove_core = VTS
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

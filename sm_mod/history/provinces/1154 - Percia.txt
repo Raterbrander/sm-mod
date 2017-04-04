@@ -1,0 +1,45 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = fish
+
+capital = "Сонносо"
+culture = utenian
+religion = orthodox
+
+railroad_1 = yes
+
+discovered_by = southern
+
+550.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+625.9.5 = { controller = EOY }
+626.1.14 = { controller = TND }
+627.7.25 = {
+	owner = TND
+	add_core = TND
+	add_core = EOY
+}
+787.5.1 = {
+	owner = EOY
+	controller = EOY
+	remove_core = TND
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+930.1.1 = {
+	base_tax = 2
+	base_manpower = 3
+}

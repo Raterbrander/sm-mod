@@ -1,0 +1,48 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = fish
+
+capital = "Тринглгеун"
+culture = utenian
+religion = orthodox
+
+grand_shipyard = yes
+railroad_1 = yes
+
+discovered_by = southern
+
+500.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+626.4.18 = { controller = EOY }
+627.7.25 = {
+	owner = NGR
+	controller = NGR
+	add_core = NGR
+}
+655.9.4 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = NGR
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+854.11.1 = { capital = "Трингелтауэн" }
+885.1.1 = {
+	base_tax = 5
+	base_production = 4
+	base_manpower = 5
+}
