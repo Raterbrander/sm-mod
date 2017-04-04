@@ -1,0 +1,456 @@
+estate_capitalists =
+{
+	icon = 3
+	
+	color = { 255 178 35 }
+	
+	# Is estate kept in control of province on conquest?
+	keep_on_conquest = yes
+	
+	min_provinces_to_want_territory = 3
+
+	# If true, country will get estate
+	trigger = {
+		has_institution = industrialisation
+		NOT = {
+			OR = {
+				government = socialist_state
+				government = communist_dictatorship
+				government = merchant_republic
+				government = administrative_republic
+				government = oligarchic_republic
+				government = technocrat_dictatorship
+			}
+		}
+		any_owned_province = {
+			OR = {
+				has_building = traditional_factories
+				has_building = modernised_factories
+				has_building = robotic_production
+			}
+		}
+		adm_tech = 7
+		NOT = { technology_group = amian }
+		is_nomad = no
+		is_tribal = no
+		#is_colonial_nation = no
+	}
+	
+	# If true, province can be granted to estate
+	province_trigger = {
+		always = yes
+	}
+	
+	# Min autonomy in estate provinces
+	min_autonomy = 10
+
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_production_efficiency
+	autonomy_does_not_affect = province_trade_power_modifier
+	#autonomy_does_not_affect = local_tax_modifier
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		production_efficiency = 0.25
+		global_trade_goods_size_modifier = 0.2
+		#development_cost = -0.1
+	}
+	country_modifier_neutral = {
+		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}	
+	country_modifier_angry = {
+		production_efficiency = -0.1
+		global_trade_goods_size_modifier = -0.1
+		#development_cost = 0.1
+	}
+	
+	# These do not scale, but only applied in provinces owned by the estate
+	province_modifier_happy = {
+		trade_goods_size_modifier = 0.25
+		local_production_efficiency = 0.25
+	}
+	province_modifier_neutral = {
+		trade_goods_size_modifier = 0.1
+		local_production_efficiency = 0.1
+	}		
+	province_modifier_angry = {
+		trade_goods_size_modifier = -0.1
+		local_production_efficiency = -0.1
+		local_unrest = 5
+	}	
+	
+	# Influence modifiers
+	base_influence = 35
+	influence_modifier = {	
+		desc = EST_HIGH_DEVELOPMENT_PROVINCE
+		trigger = {
+			any_owned_province = {
+				development = 30
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {	
+		desc = EST_VAL_COT
+		trigger = {
+			is_free_city = no
+			any_owned_province = {
+				OR = {
+					has_province_modifier = inland_center_of_trade_modifier
+					has_province_modifier = center_of_trade_modifier
+				}
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_LOW_INDUSTRIAL
+		trigger = {
+			NOT = { production_efficiency = 0.25 }
+		}
+		influence = -10
+	}
+	influence_modifier = {
+		desc = EST_VAL_MEDIUM_INDUSTRIAL
+		trigger = {
+			production_efficiency = 0.5
+			NOT = { production_efficiency = 0.75 }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_HIGH_INDUSTRIAL
+		trigger = {
+			production_efficiency = 0.75
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_SOCIALIST
+		trigger = {
+			government = socialist_republic
+		}
+		influence = -15
+	}
+	influence_modifier = {
+		desc = EST_VAL_SOUTHERN_TECH
+		trigger = {
+			technology_group = southern
+		}
+		influence = -5
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+			}
+		}
+		loyalty = -20
+	}
+	
+	#Custom Names
+	# -
+	
+	# For province assignment
+	ai_grant_province = {
+		factor = 1		
+		modifier = {
+			factor = 1.5
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.5
+			base_production = 6
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { development = 6 }
+		}		
+	}	
+	
+	# Does the AI want to give any extra territory beyond the minimum?
+	#ai_territory_modifier = {
+	#	trigger = {
+	#		has_idea_group = plutocracy_ideas
+	#		num_of_cities = 10
+	#	}	
+	#	value = 5		
+	#}
+
+	interaction = {
+		name = "ASK_FOR_CONTRIBUTION"
+		icon = 6
+		
+		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_capitalists
+				loyalty = 30
+			}				
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_capitalists
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = 0.25
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_capitalists
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_capitalists
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = 0.5
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_capitalists
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_capitalists
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = 0.75
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_capitalists
+						influence = 100
+					}
+				}
+				add_years_of_income = 1
+			}				
+			add_estate_loyalty = {
+				estate = estate_capitalists
+				loyalty = -10
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					estate_loyalty = {
+						estate = estate_capitalists
+						loyalty = 50
+					}	
+				}
+			}
+			modifier = {
+				factor = 0
+				treasury = 1
+				is_at_war = no
+			}
+		}
+	}
+	
+	interaction = {
+		name = "DEMAND_CONVERSION"
+		icon = 3
+		
+		years_between_use = 20
+		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
+		trigger = {
+			is_at_war = yes
+			estate_loyalty = {
+				estate = estate_capitalists
+				loyalty = 35
+			}	
+			estate_influence = {
+				estate = estate_capitalists
+				influence = 40
+			}
+			any_owned_province = {
+				has_estate = estate_capitalists
+				OR = {
+					has_building = traditional_factories
+					has_building = modernised_factories
+					has_building = robotic_production
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_capitalists
+							influence = 50
+						}	
+					}
+				}
+				add_dip_power = 50
+			}
+			add_country_modifier = {
+				name = sm_factories_conversion_country
+				duration = 3650
+			}
+			every_owned_province = {
+				limit = {
+					has_estate = estate_capitalists
+					OR = {
+						has_building = traditional_factories
+						has_building = modernised_factories
+						has_building = robotic_production
+					}
+				}
+				add_province_modifier = {
+					name = sm_factories_conversion
+					duration = 3650
+				}
+			}
+			add_estate_loyalty = {
+				estate = estate_capitalists
+				loyalty = -20
+			}
+			add_estate_influence_modifier = {
+				estate = estate_capitalists
+				desc = EST_VAL_CONVERSION
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#interaction = {
+	#	name = "RECRUIT_MINISTER"
+	#	icon = 10
+	#	
+	#	years_between_use = 30
+	#	
+	#	potential = {
+	#		NOT = { has_disaster = estate_church_disaster }
+	#		NOT = { has_disaster = estate_nobility_disaster }
+	#	}
+	#	
+	#	trigger = {
+	#		estate_influence = {
+	#			estate = estate_capitalists
+	#			influence = 40
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				monthly_income = 25
+	#			}
+	#			define_advisor = {
+	#				type = master_of_mint
+	#				skill = 3
+	#				discount = yes
+	#			}
+	#		}
+	#		if = {
+	#			limit = { NOT = { monthly_income = 25 } }
+	#			define_advisor = {
+	#				type = master_of_mint
+	#				skill = 2
+	#				discount = yes
+	#			}
+	#		}
+	#		add_estate_influence_modifier = {
+	#			estate = estate_capitalists
+	#			desc = EST_VAL_BURGHER_MINISTER
+	#			influence = 15
+	#			duration = 10950
+	#		}
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	
+	interaction = {
+		name = "GRANT_NEW_WORLD_CHARTER"
+		icon = 16
+		
+		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+			has_idea_group = exploration_ideas
+		}
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_capitalists
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_capitalists
+				influence = 40
+			}			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "new_world_company"
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_capitalists
+				desc = EST_VAL_NEW_WORLD_CHARTER
+				influence = 15
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
