@@ -1,0 +1,49 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+#add_core = TEU
+#add_core = EOY
+capital = "Старый Уткин"
+culture = utenian
+religion = orthodox # catholic
+trade_goods = iron
+base_tax = 1
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = UTN
+
+#1265.1.1 = { religion = orthodox }
+626.12.3 = { controller = NGR }
+627.7.25 = {
+	owner = TEU
+	controller = TEU
+	add_core = TEU
+	capital = "Утен-Теваттен"
+}
+635.1.1 = {
+	base_tax = 2
+	base_production = 2
+	base_manpower = 3
+	railroad_1 = no
+	railroad_2 = yes
+}
+652.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = TEU
+	religion = tolerance
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 3
+} # Улучшения при Картевальской Утении

@@ -1,0 +1,57 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Зоошар"
+culture = utenian
+religion = atheism
+trade_goods = iron
+base_tax = 8
+base_production = 9
+base_manpower = 8
+is_city = yes
+
+fort_16th = yes
+traditional_factories = yes
+town_hall = yes
+railroad_2 = yes
+
+discovered_by = southern
+discovered_by = SHK
+
+626.12.5 = { controller = NGR }
+627.7.25 = {
+	owner = NGR
+	add_core = NGR
+	base_tax = 6
+	base_production = 5
+	base_manpower = 5
+	fort_16th = no
+}
+640.1.1 = {
+	base_production = 6
+	fort_16th = yes
+}
+655.9.4 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = NGR
+}
+700.1.1 = {
+	base_tax = 8
+	base_production = 8
+	base_manpower = 8
+	traditional_factories = no
+	modernised_factories = yes
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 12
+	base_production = 12
+	base_manpower = 10
+} # УлучшениЯ при Картевальской Утении

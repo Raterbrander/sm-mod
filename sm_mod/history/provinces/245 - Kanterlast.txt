@@ -1,0 +1,22 @@
+native_size = 38
+native_ferocity = 10
+native_hostileness = 12
+
+is_city = no
+
+culture = slavenian
+religion = tolerance
+capital = "Кантерласт"
+trade_goods = iron
+base_tax = 8
+base_production = 6
+base_manpower = 10
+
+discovered_by = anarendilian_tech
+
+#2013.6.26 = { add_core = DRA }
+#870.1.1 = { remove_core = DRA discovered_by = domin_group }
+#2013.11.1 = { remove_core = GRU }
+#1228.10.15 = { add_core = SLV }
+#1228.11.19 = { owner = TDA controller = TDA add_core = TDA remove_core = SLV }
+#2015.1.1 = { remove_core = VAM }

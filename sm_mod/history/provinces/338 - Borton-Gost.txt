@@ -1,0 +1,100 @@
+owner = SNS
+controller = SNS
+add_core = SNS
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+capital = "Бортон-Гост"
+trade_goods = fish
+base_tax = 2
+base_production = 2
+base_manpower = 3
+
+discovered_by = old_altras_tech
+
+567.5.24 = {
+	owner = AL1
+	controller = AL1
+	add_core = AL1
+	remove_core = SNS
+}
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = AL1
+	discovered_by = continental
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY
+}
+873.3.6 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+	remove_core = LMR
+}
+#2014.1.1 = { culture = zalesian add_core = ZLS base_manpower = 3 religion = tolerance }
+#2014.7.11 = {
+#	owner = ZLS
+#	controller = ZLS
+#	add_core = SIN
+#}
+2014.8.27 = {
+	owner = SIN
+	controller = SIN
+}
+2014.12.16 = {
+	owner = ALR
+	controller = ALR
+}
+#2015.2.15 = {
+#	owner = NIF
+#	controller = NIF
+#	add_core = NIF
+#}
+2015.2.17 = {
+	owner = ALR
+	controller = ALR
+#	remove_core = NIF
+}
+2015.5.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 6
+	culture = altras
+#	remove_core = ZLS
+}
+2015.9.19 = {
+	owner = BRN
+	controller = BRN
+	add_core = BRN
+}
+2015.9.20 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = BRN
+}
+2015.10.2 = {
+	owner = SIN
+	controller = SIN
+#	add_core = ZLS
+}

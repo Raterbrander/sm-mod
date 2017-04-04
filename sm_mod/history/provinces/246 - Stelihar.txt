@@ -1,0 +1,23 @@
+native_size = 38
+native_ferocity = 10
+native_hostileness = 13
+
+is_city = no
+
+culture = slavenian
+religion = tolerance
+capital = "Стелихар"
+trade_goods = iron
+base_tax = 6
+base_production = 4
+base_manpower = 8
+
+discovered_by = anarendilian_tech
+
+#2013.6.25 = { add_core = DRA }
+#870.1.1  = { discovered_by = domin_group }
+#2013.8.12 = { remove_core = DRA }
+#2013.11.1 = { remove_core = GRU }
+#1228.10.15 = { add_core = SLV }
+#1228.11.19 = { owner = TDA controller = TDA add_core = TDA remove_core = SLV }
+#2015.1.1 = { remove_core = VAM }

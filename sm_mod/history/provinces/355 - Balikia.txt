@@ -1,0 +1,77 @@
+owner = BAK
+controller = BAK
+add_core = BAK
+#add_core = ALI
+
+is_city = yes
+hre = no # ?
+
+culture = tardian
+religion = ellar_pagan
+capital = "Цинхаза"
+
+trade_goods = wine
+base_tax = 2
+base_production = 2
+base_manpower = 3
+
+fort_15th = yes
+temple = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+442.3.4 = {
+	owner = BAK
+	controller = BAK
+}
+#446.1.1 = {
+#	owner = YAL
+#	controller = YAL
+#	add_core = YAL
+#	remove_core = VNR
+#}
+#449.5.14 = {
+#	owner = BAK
+#	controller = BAK
+#	add_core = VNR
+#}
+450.4.28 = { controller = VNR }
+451.2.9  = { controller = BAK }
+#453.6.21 = { remove_core = VNR }
+464.6.3 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+}
+#471.6.4 = { remove_core = ALI }
+#482.1.2 = { hre = no }
+552.6.1 = { religion = helgarn }
+570.1.1 = { railroad_1 = yes }
+571.4.7 = {
+	owner = BAK
+	controller = BAK
+	remove_core = ZMR
+}
+574.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+576.5.17 = { # ?
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = BAK
+}
+582.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

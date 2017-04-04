@@ -1,0 +1,35 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+capital = "Нью-Сентшарк"
+culture = chaepit
+religion = orthodox
+trade_goods = tea
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = SHK
+discovered_by = southern
+
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	remove_core = UTN
+}
+781.2.23 = { owner = CH2 controller = CH2 add_core = CH2 }
+840.1.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 2
+}
+864.2.3 = { owner = KTN controller = KTN add_core = KTN }
+1005.1.1  = { religion = tolerance }

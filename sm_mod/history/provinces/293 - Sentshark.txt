@@ -1,0 +1,104 @@
+# Сентшарк
+# Он же Сейнт-Шеррад
+# До времён СРЧ таки не являлся крупнейшим городом Чаепита
+# Старые данные по развитию: 16/13/15
+
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = "Сентшарк"
+culture = chaepit
+religion = tolerance
+trade_goods = naval_supplies
+base_tax = 6
+base_production = 7
+base_manpower = 6
+
+seat_in_parliament = yes
+
+fort_16th = yes
+traditional_factories = yes
+grand_shipyard = yes
+town_hall = yes
+temple = yes
+railroad_1 = yes
+
+discovered_by = southern
+discovered_by = AL1
+discovered_by = rolevik
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = center_of_trade_modifier
+		duration = -1
+	}
+}
+
+500.1.1 = { base_manpower = 7 } # Беженцы из других районов
+525.1.1 = {
+	base_tax = 7
+	base_production = 8
+}
+565.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+600.1.1 = {
+	base_tax = 9
+	base_production = 11
+	base_manpower = 10
+} # Рост в МС
+650.1.1 = {
+	base_tax = 13
+	base_production = 16
+	base_manpower = 14
+} # Рост в МС и чуть позже
+700.1.1 = {
+	base_tax = 15
+	base_manpower = 16
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+800.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+	base_tax = 17
+	base_production = 19
+	base_manpower = 18
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+900.1.1 = {
+	base_tax = 13
+	base_production = 15
+	base_manpower = 14
+} # Упадок
+#1228.1.28 = {
+#	owner = EOY
+#	controller = EOY
+#	add_core = EOY
+	#remove_core = CH2
+#}
+#2015.1.1 = {
+#	culture = yellow
+#	capital = "Сейнт-Шеррад"
+#	base_tax = 19
+#	base_production = 18
+#	base_manpower = 16
+#	temple = no
+#	cathedral = yes
+#}

@@ -1,0 +1,75 @@
+owner = BDR
+controller = BDR
+add_core = BDR
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+capital = "Маверхолд"
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = cloth
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = middle_land_group
+discovered_by = imperial_group
+discovered_by = high_domin
+
+# Проверить, когда появился Империум
+# На ПГВ:
+#base_tax = 6
+#base_production = 4
+#base_manpower = 10
+#cathedral = yes
+#fort_17th = yes
+#culture = smeshi_imp
+#religion = imperial_faith
+#core: IOD, MVH
+
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = BDR
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+872.6.26 = {
+	base_tax = 2
+	base_production = 1
+	base_manpower = 4
+	owner = MVH
+	controller = MVH
+	add_core = EOY
+	#remove_core = IOD
+	#fort_17th = no
+	#cathedral = no
+}
+875.2.22 = {
+	owner = EOY
+	controller = EOY
+}
+900.1.1 = {
+	culture = altras
+	religion = tolerance
+	#remove_core = MVH
+} # Заселение Альтрасами
+610.1.1 = {
+	base_tax = 5
+	base_production = 3
+	base_manpower = 5
+	capital = "Новый Маверхолд"
+}

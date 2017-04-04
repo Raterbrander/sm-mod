@@ -1,0 +1,72 @@
+owner = LRT
+controller = LRT
+add_core = LRT
+#add_core = BZN
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Лертаб"
+
+trade_goods = naval_supplies
+base_tax = 5
+base_production = 5
+base_manpower = 5
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = anarendilian_tech
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+508.11.5 = { # 507.6.21-508.7.29 - Энхельдис, 508.9.2 - Лейфенгер, 508.9.17 - Имелия, 509.1.9 - Колеймангарт
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+550.1.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 3
+}
+552.1.1 = { religion = helgarn }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+600.1.1 = { culture = yellow }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+659.4.21 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = SIN
+}
+#870.7.3 = { remove_core = DRA }
+892.8.1  = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ORD
+}

@@ -1,0 +1,79 @@
+owner = RDT
+controller = RDT
+add_core = RDT
+
+is_city = yes
+hre = yes
+
+capital = "Рейдата"
+culture = yellow
+religion = ellar_pagan
+trade_goods = dyes
+base_tax = 7
+base_production = 6
+base_manpower = 6
+
+shipyard = yes
+temple = yes
+town_hall = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_zmooromfian
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+478.10.16 = {
+	owner = GRV
+	controller = GRV
+	add_core = GRV
+}
+479.10.3 = { controller = ZMR }
+482.1.2 = { hre = no }
+482.6.4 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = GRV
+	remove_province_modifier = gervein_union_city
+}
+546.1.1 = { religion = helgarn }
+565.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+571.4.7 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+	remove_core = ZMR
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = RDT
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+1130.1.1 = {
+	modernised_factories = no
+	robotic_production = yes
+}

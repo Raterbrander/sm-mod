@@ -1,0 +1,78 @@
+owner = RTR
+controller = RTR
+add_core = RTR
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "ָמאסעמכüפ" 
+
+discovered_by = old_altras_tech
+
+458.1.1 = { add_claim = SHK }
+485.1.10 = { remove_claim = SHK }
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = RTR
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+# IOD!
+#870.1.1 = {
+#	owner = CH2
+#	controller = CH2
+#	add_core = CH2
+#	remove_core = IOD
+#} # ׀אחהוכ
+#2014.1.1 = { culture = zalesian add_core = ZLS base_manpower = 3 }
+#2014.7.11 = {
+#	owner = ZLS
+#	controller = ZLS
+#	add_core = SIN
+#}
+#2014.8.27 = {
+#	owner = SIN
+#	controller = SIN
+#}
+#2014.12.16 = {
+#	owner = ALR
+#	controller = ALR
+#}
+#2015.1.1 = {
+#	base_tax = 4
+#	base_production = 4
+#	base_manpower = 4
+#}
+#2015.9.18 = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#}
+#2015.9.20 = {
+#	owner = SIN
+#	controller = SIN
+#	add_core = SME
+#	remove_core = BRN
+#}

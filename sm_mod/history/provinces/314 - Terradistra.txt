@@ -1,0 +1,33 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Мелководск"
+culture = utenian
+religion = atheism
+trade_goods = salt
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+railroad_2 = yes
+
+discovered_by = UTN
+
+626.10.22 = { controller = SIN }
+627.7.25 = {
+	capital = "Терралт"
+	owner = EOY
+	add_core = EOY
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 2
+	base_production = 3
+	base_manpower = 3
+} # Улучшения при Картевальской Утении, хотя мб при ком-то из Союзников

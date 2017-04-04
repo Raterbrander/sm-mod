@@ -1,0 +1,29 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Малый Порт"
+culture = utenian
+religion = orthodox
+trade_goods = fish
+base_tax = 2
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+
+#626.6.2 = { controller = TDA }
+627.7.25 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+} # Альянс
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+850.1.1 = { religion = atheism }

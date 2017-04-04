@@ -1,0 +1,59 @@
+owner = BDR
+controller = BDR
+add_core = BDR
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Энъестандт"
+
+fort_15th = yes
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = middle_land_group
+
+540.10.1 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.1.26 = {
+	owner = BDR
+	controller = BDR
+}
+549.4.6 = { add_core = VSK }
+585.5.26 = { remove_core = VSK }
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = BDR
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

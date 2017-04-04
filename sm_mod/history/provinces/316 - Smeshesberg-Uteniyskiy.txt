@@ -1,0 +1,59 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+capital = "Уткоград"
+culture = utenian
+religion = tolerance
+
+trade_goods = grain
+base_tax = 10
+base_production = 9
+base_manpower = 9
+
+fort_16th = yes
+town_hall = yes
+grand_shipyard = yes
+traditional_factories = yes
+railroad_2 = yes
+
+discovered_by = southern
+
+627.7.20 = { controller = TEU }
+627.7.25 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+}
+635.1.1 = {
+	base_tax = 7
+	base_production = 4
+	base_manpower = 5
+	fort_16th = no
+	town_hall = no
+	grand_shipyard = no
+	traditional_factories = no
+}
+650.1.1 = {
+	capital = "Смешесберг-Утенийский"
+	fort_17th = yes
+	grand_shipyard = yes
+	town_hall = yes
+	base_tax = 10
+	base_production = 8
+	base_manpower = 8
+	modernised_factories = yes
+} # Смешесберг-Утенийский отстроен неподалёку от разрушенного Уткограда
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 18
+	base_production = 12
+	base_manpower = 16
+} # УлучшениЯ при Картевальской Утении

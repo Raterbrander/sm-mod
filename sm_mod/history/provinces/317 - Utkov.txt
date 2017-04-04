@@ -1,0 +1,47 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "”тков"
+culture = utenian
+religion = orthodox
+trade_goods = grain
+base_tax = 4
+base_production = 3
+base_manpower = 4
+is_city = yes
+
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = SHK
+discovered_by = southern
+
+626.9.14 = { controller = SIN }
+627.7.25 = {
+	owner = SIN
+	add_core = SIN
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+	remove_core = SIN
+}
+650.5.11 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 8
+	base_production = 6
+	base_manpower = 7
+	religion = tolerance
+} # Улучшения при Картевальской Утении

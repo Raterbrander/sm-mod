@@ -1,0 +1,83 @@
+owner = UKI
+controller = UKI
+add_core = AMN
+add_core = UKI
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = alklvalondie
+capital = "јман-—ул"
+trade_goods = copper
+base_tax = 7
+base_production = 6
+base_manpower = 6
+
+fort_15th = yes
+temple = yes
+courthouse = yes
+primitive_manufactories = yes
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+	discovered_by = BEL
+}
+693.2.16 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = AMN
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.1 = {
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+879.7.10 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+}
+#2013.7.12 = { controller = NGI }
+#2013.7.20 = {
+#	owner = NGI
+#	add_core = NGI
+#}
+#2013.8.1 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#	remove_core = NGI
+#}
+#2013.8.12 = {
+#	owner = GRU
+#	controller = GRU
+#	remove_core = DRA
+#	remove_core = SME
+#}

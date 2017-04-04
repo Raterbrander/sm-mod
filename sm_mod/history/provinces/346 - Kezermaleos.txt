@@ -1,0 +1,41 @@
+native_size = 32
+native_ferocity = 10
+native_hostileness = 12
+
+is_city = no
+hre = no
+
+culture = central_lands_culture
+religion = central_land_paganism
+capital = "Кесермалеос"
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = unknown
+
+discovered_by = middle_land_group
+
+533.1.1 = {
+	owner = GDR
+	controller = GDR
+	add_core = GDR
+	is_city = yes
+	trade_goods = cloth
+	culture = hydra_altras
+	religion = solaris_religion
+}
+559.11.21 = {
+	owner = XXX
+	controller = XXX
+	remove_core = GDR
+	is_city = no
+	native_size = 32
+	native_ferocity = 10
+	native_hostileness = 12
+}
+2013.6.27 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+2014.8.1 = { religion = hiyalegama }

@@ -1,0 +1,41 @@
+owner = VLK
+controller = VLK
+add_core = VLK
+
+is_city = yes
+
+capital = "รเ๐๒"
+culture = volkdau
+religion = domin_pagan
+
+base_tax = 5
+base_production = 5
+base_manpower = 3
+trade_goods = gold
+
+fort_15th = yes
+shipyard = yes
+
+discovered_by = domin_group
+discovered_by = high_domin
+
+760.2.24 = { add_core = NFE }
+765.2.17 = {
+	owner = NFE
+	controller = NFE
+	remove_core = VLK
+}
+#2013.7.4 = { controller = DRA }
+#2013.7.5 = {
+#	owner = DRA 
+#	add_core = DRA
+#}
+#2013.7.10 = { owner = VLK controller = VLK add_core = VLK }
+#2013.7.30 = { owner = PEH controller = PEH add_core = PEH remove_core = VLK }
+#2014.5.15 = { owner = NFE controller = NFE remove_core = PEH discovered_by = amian }
+#2014.8.1 = {
+#	base_tax = 8
+#	base_production = 12
+#	base_manpower = 6
+#	fort_16th = yes
+#}

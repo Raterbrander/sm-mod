@@ -1,0 +1,54 @@
+owner = PLV
+controller = PLV
+add_core = PLV
+
+is_city = yes
+hre = no
+
+culture = slavenian
+religion = ross_pagan
+capital = "Россово поле"
+
+trade_goods = grain
+base_tax = 1 #2
+base_production = 1 #2
+base_manpower = 2 #3
+
+temple = yes
+
+discovered_by = anarendilian_tech
+
+1221.3.7 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = PLV
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+869.2.24 = { controller = GRU }
+892.8.1 = {
+	owner = DRA
+	controller = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+	discovered_by = high_domin
+}
+882.5.29 = { controller = GRU }
+890.1.1 = { owner = GRU }
+902.9.14 = { remove_core = DRA clr_province_flag = GRU_was_ceded_to_DRA }
+1057.8.17 = {
+	cathedral = yes
+	base_manpower = 3
+}

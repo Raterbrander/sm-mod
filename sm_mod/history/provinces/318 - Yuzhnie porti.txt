@@ -1,0 +1,48 @@
+# 318
+# Южно-утенийские порты
+# Включает Порт-Клюв и Просто-Порт
+
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+capital = "Просто-Порт"
+culture = utenian
+religion = tolerance
+trade_goods = naval_supplies
+base_tax = 3
+base_production = 2
+base_manpower = 3
+
+railroad_2 = yes
+grand_shipyard = yes
+
+discovered_by = southern
+
+626.12.6 = { controller = TEU }
+627.7.25 = {
+	capital = "Порт-Сириус"
+	owner = TEU
+	add_core = TEU
+}
+652.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = TEU
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	culture = yellow
+	religion = helgarn
+	base_tax = 4
+	base_production = 3
+	base_manpower = 4
+} # Улучшения при Картевальской Утении

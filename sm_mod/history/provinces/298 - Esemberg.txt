@@ -1,0 +1,74 @@
+owner = TND
+controller = TND
+add_core = TND
+
+capital = "Эсемберг"
+culture = tonderros
+religion = yutonsenit
+trade_goods = cloth
+base_tax = 10
+base_production = 8
+base_manpower = 8
+
+hre = yes
+is_city = yes
+
+fort_15th = yes
+town_hall = yes
+railroad_1 = yes
+serfdom = yes
+traditional_factories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+#100.1.1 = {
+#	add_permanent_province_modifier = {
+#		name = elder_city_modifier
+#		duration = -1
+#	}
+#}
+
+474.5.14 = { serfdom = no }
+482.1.2 = {
+	hre = no
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+	railroad_2 = yes
+}
+541.4.7 = { religion = helgarn }
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+590.1.1 = {
+	base_tax = 12
+	base_production = 12
+	base_manpower = 11
+	traditional_factories = no
+	modernised_factories = yes
+}
+594.2.12 = {
+	culture = yellow
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+1300.1.1 = {
+	fort_15th = no
+	fort_17th = yes
+	temple = no
+	cathedral = yes
+	university = yes
+	base_tax = 21
+	base_production = 20
+	base_manpower = 20
+}
+1307.5.1 = { remove_core = TND }

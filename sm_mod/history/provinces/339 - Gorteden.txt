@@ -1,0 +1,49 @@
+owner = RLH
+controller = RLH
+add_core = RLH
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+base_tax = 3
+base_production = 3
+base_manpower = 3
+capital = "Гортеден"
+trade_goods = iron
+
+discovered_by = old_altras_tech
+discovered_by = middle_land_group
+
+483.5.12 = { controller = AL1 }
+483.5.22 = {
+	owner = GDR
+	add_core = GDR
+	remove_core = RLH
+}
+483.6.4 = { controller = GDR }
+500.1.1 = { culture = hydra_altras }
+559.11.21 = {
+	owner = VSK
+	controller = VSK
+	add_core = SIN
+	add_core = VSK
+}
+580.1.1 = { remove_core = GDR }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}

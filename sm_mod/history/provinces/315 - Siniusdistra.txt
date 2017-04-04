@@ -1,0 +1,58 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Синеводск"
+culture = utenian
+religion = atheism
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+railroad_2 = yes
+
+discovered_by = UTN
+
+626.3.7 = { controller = SIN }
+627.7.25 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+	remove_core = SIN
+}
+635.1.1 = {
+	base_tax = 2
+	base_production = 2
+	base_manpower = 2
+} # Улучшение при Синих-Гроксах
+650.5.9 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+738.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = SIN
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+850.1.1  = { religion = atheism }
+882.8.1 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 3
+} # Улучшения при Картевальской Утении
+1005.1.1  = { capital = "Эрвелизард" religion = helgarn }

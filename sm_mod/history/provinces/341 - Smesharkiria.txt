@@ -1,0 +1,54 @@
+owner = ADN
+controller = ADN
+add_core = ADN
+
+is_city = yes
+hre = no
+
+capital = "Смешаркирия"
+culture = ardenian
+religion = solaris_religion
+trade_goods = cloth
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+shipyard = yes
+traditional_factories = yes
+railroad_1 = yes
+
+discovered_by = southern
+
+484.12.23 = { controller = CHT }
+485.1.10 = {
+	owner = CHT
+	add_core = CHT
+}
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+	seat_in_parliament = yes
+}
+680.1.1 = { discovered_by = old_altras_tech }
+750.1.1 = {
+	culture = chaepit
+	religion = tolerance
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+805.1.1 = {
+	base_tax = 5
+	base_production = 4
+	base_manpower = 4
+	shipyard = no
+	grand_shipyard = yes
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	seat_in_parliament = no
+}

@@ -1,0 +1,51 @@
+owner = VLK
+controller = VLK
+add_core = VLK
+
+is_city = yes
+
+capital = " римигорд"
+religion = totemism
+culture = nerazc
+base_tax = 3
+base_production = 2
+base_manpower = 1
+trade_goods = gold
+
+discovered_by = domin_group
+discovered_by = high_domin
+discovered_by = imperial_group
+
+550.1.1 = { # јссимил€ци€
+	culture = volkdau
+	religion = domin_pagan
+}
+700.1.1 = { add_core = NRZ }
+743.1.9 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 2
+	}
+	controller = REB
+}
+746.1.11 = {
+	revolt = { }
+	owner = NRZ
+	controller = NRZ
+}
+765.2.17 = { remove_core = VLK }
+#850.1.1 = { discovered_by = continental }
+#2013.7.5 = {
+#	owner = DRA 
+#	controller = DRA
+#	add_core = DRA
+#}
+#2013.7.10 = { owner = VLK controller = VLK add_core = VLK }
+#2013.7.30 = { owner = PEH controller = PEH add_core = PEH remove_core = VLK }
+#2014.1.1 = { discovered_by = amian }
+#2014.5.15 = { owner = NFE controller = NFE remove_core = PEH }
+#2014.6.5 = {
+#	base_tax = 5
+#	base_production = 7
+#	base_manpower = 4
+#}

@@ -1,0 +1,39 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Мусоргород"
+culture = utenian
+religion = atheism
+trade_goods = unknown
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = UTN
+
+625.3.14 = { controller = NGR }
+627.7.25 = {
+	owner = NGR
+	add_core = NGR
+}
+655.9.4 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = NGR
+}
+652.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = TEU
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}

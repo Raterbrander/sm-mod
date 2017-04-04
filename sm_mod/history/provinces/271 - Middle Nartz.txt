@@ -1,0 +1,58 @@
+native_size = 38
+native_ferocity = 3
+native_hostileness = 4
+
+is_city = no
+
+capital = "Тастехув"
+culture = nerazc
+religion = totemism
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = gold
+
+discovered_by = domin_group
+discovered_by = high_domin
+
+465.1.1 = {
+	owner = VLK
+	controller = VLK
+	add_core = VLK
+	is_city = yes
+}
+550.1.1 = {
+	culture = volkdau
+	religion = domin_pagan
+}
+700.1.1 = { add_core = NRZ }
+743.1.11 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 3
+		leader = "Нарц Кирась-Вольхионд"
+	}
+	controller = REB
+	add_core = NRZ
+}
+746.1.11 = {
+	revolt = { }
+	owner = NRZ
+	controller = NRZ
+}
+758.1.24 = { fort_16th = yes }
+765.2.17 = { remove_core = VLK }
+#2013.7.2 = { controller = DRA }
+#2013.7.5 = {
+#	owner = DRA 
+#	add_core = DRA
+#}
+#2013.7.10 = { owner = VLK controller = VLK add_core = VLK }
+#2013.7.30 = { owner = PEH controller = PEH add_core = PEH remove_core = VLK }
+#2014.5.15 = { owner = NFE controller = NFE remove_core = PEH }
+#2014.6.5 = {
+#	base_tax = 6
+#	base_production = 8
+#	base_manpower = 5
+#}

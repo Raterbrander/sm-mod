@@ -1,0 +1,40 @@
+owner = NMD
+controller = NMD
+add_core = NMD
+
+is_city = yes
+hre = yes
+
+culture = mescil
+religion = miscilian_pagan
+capital = "Нермадика"
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = copper
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = middle_land_group
+discovered_by = amian
+
+482.1.2 = { hre = no }
+508.1.9 = {
+	owner = ANV
+	controller = ANV
+	add_core = ANV
+}
+552.1.1 = {
+	owner = NMD
+	controller = NMD
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = NMD
+	remove_core = ANV
+}

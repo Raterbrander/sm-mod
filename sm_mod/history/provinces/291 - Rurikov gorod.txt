@@ -1,0 +1,63 @@
+owner = IRI
+controller = IRI
+add_core = IRI
+add_core = UKI
+
+is_city = yes
+
+culture = slavenian
+religion = ross_pagan
+capital = "яльев"
+trade_goods = grain
+base_tax = 2
+base_production = 2
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+}
+677.10.14 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = IRI
+	discovered_by = continental
+	discovered_by = amian
+}
+655.1.1 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 4
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+	discovered_by = high_domin
+}
+879.7.10 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}
+1230.11.17 = { culture = anarendilian religion = alklvalondie capital = "–юренштадт" }

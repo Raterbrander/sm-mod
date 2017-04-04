@@ -1,0 +1,52 @@
+# 319
+# Кабо-Дако
+# Включает также Форт-Йеллоу и пр. элларские поселения
+
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Кабо-Дако"
+culture = utenian
+religion = orthodox
+trade_goods = iron
+base_tax = 5
+base_production = 4
+base_manpower = 4
+is_city = yes
+
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = southern
+
+625.3.18 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+	fort_16th = yes
+	spaceport = yes
+	grand_shipyard = yes
+}
+675.1.1 = {
+	base_tax = 6
+	base_production = 6
+	base_manpower = 5
+	religion = tolerance
+}
+725.5.1 = {
+	base_tax = 7
+	base_production = 7
+	modernised_factories = yes
+	traditional_factories = no
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 8
+	base_production = 8
+	base_manpower = 6
+}

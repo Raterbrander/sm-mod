@@ -1,0 +1,59 @@
+native_size = 53
+native_ferocity = 5
+native_hostileness = 7
+
+is_city = no
+
+#owner = MMA
+#controller = MMA
+add_core = MMA
+
+culture = smeshesfongs
+religion = totemism
+capital = "Меренмар"
+
+base_tax = 4
+base_production = 3
+base_manpower = 5
+trade_goods = cloth
+
+discovered_by = middle_land_group
+
+#2013.4.15 = { add_core = LTP }
+#2013.5.1 = {
+#	owner = LTP
+#	controller = LTP
+#}
+#2013.6.20 = { add_core = EOY } # Вассалитет
+#2013.7.1 = { religion = helgarn }
+#2013.7.8 = { remove_core = EOY }
+#2013.7.11 = {
+#	owner = MMA
+#	controller = MMA
+#	add_core = MMA
+#	remove_core = LTP
+#}
+#2013.8.3 = {
+#	owner = ORD
+#	controller = ORD
+#	add_core = ORD
+#	remove_core = EOY
+#}
+#2013.8.10 = { religion = tolerance }
+#2013.9.1 = {
+#	owner = SIN
+#	controller = SIN
+#	add_core = SIN
+#	remove_core = ORD
+#}
+#2013.10.1 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#}
+#2013.11.1 = {
+#	culture = smesh_imp
+#	religion = imperial_faith
+#	remove_core = MMA
+#}
+#2013.12.31 = { remove_core = SIN }

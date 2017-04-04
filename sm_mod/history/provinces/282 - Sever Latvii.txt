@@ -1,0 +1,77 @@
+owner = UKI
+controller = UKI
+add_core = AMN
+add_core = UKI
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = alklvalondie
+capital = "Гецманд"
+trade_goods = fish
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+discovered_by = anarendilian_tech
+discovered_by = domin_group
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+}
+535.1.1 = {
+	culture = ealegil
+	religion = helgarn
+}
+693.2.16 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = AMN
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = domin_group
+}
+896.6.6 = { controller = NGI }
+879.7.10 = {
+	owner = GRU
+	clr_province_flag = GRU_was_ceded_to_DRA
+}
+886.4.16 = {
+	owner = NGI
+	add_core = NGI
+}
+894.7.1 = {
+	owner = GRU
+	controller = GRU
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+923.9.12 = {
+	remove_core = DRA
+	remove_core = SME
+}
+1005.1.1 = { base_tax = 4 base_manpower = 3 } # Переселение Хельгарнистов

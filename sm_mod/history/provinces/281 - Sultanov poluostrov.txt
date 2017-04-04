@@ -1,0 +1,92 @@
+owner = UKI
+controller = UKI
+add_core = AMN
+add_core = UKI
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = tolerance
+capital = "ױוכüהונדאלמנה"
+trade_goods = naval_supplies
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+discovered_by = domin_group
+
+
+470.1.1 = {
+	culture = yellow
+	religion = ellar_pagan
+	add_permanent_province_modifier = {
+		name = gervein_factories_northern_latvia
+		duration = -1
+	}
+}
+475.1.1 = {
+	shipyard = yes
+	#marketplace = yes
+}
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+	culture = ealegil
+}
+482.6.4 = { remove_province_modifier = gervein_factories_northern_latvia }
+525.1.1 = { religion = helgarn }
+693.2.16 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = AMN
+	discovered_by = continental
+	discovered_by = amian
+}
+705.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = domin_group
+}
+877.7.8 = { controller = NGI }
+879.7.10 = {
+	owner = GRU
+	clr_province_flag = GRU_was_ceded_to_DRA
+}
+886.4.16 = {
+	owner = NGI
+	add_core = NGI
+}
+894.7.1 = {
+	owner = GRU
+	controller = GRU
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+923.9.12 = {
+	remove_core = DRA
+	remove_core = SME
+}

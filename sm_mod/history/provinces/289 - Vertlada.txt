@@ -1,0 +1,60 @@
+owner = UKI
+controller = UKI
+add_core = KAY
+add_core = UKI
+
+is_city = yes
+
+culture = anarendilian
+religion = alklvalondie
+capital = "Вертлада"
+trade_goods = grain
+base_tax = 3
+base_production = 2
+base_manpower = 2
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+}
+693.2.15 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = KAY
+	discovered_by = continental
+	discovered_by = amian
+}
+700.1.1 = { base_production = 3 base_manpower = 3 }
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+	discovered_by = high_domin
+}
+873.11.19 = { controller = GRU }
+876.10.27 = { controller = DRA }
+879.7.10 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}

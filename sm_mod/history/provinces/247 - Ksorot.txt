@@ -1,0 +1,28 @@
+native_size = 40
+native_ferocity = 12
+native_hostileness = 14
+
+is_city = no
+
+culture = amian
+religion = ameism
+capital = "Ксорот"
+trade_goods = slaves
+base_tax = 2
+base_production = 1
+base_manpower = 4
+
+discovered_by = anarendilian_tech
+
+#2013.6.25 = { add_core = DRA controller = DRA }
+#2013.6.28 = { controller = VAM }
+#870.1.1 = { discovered_by = high_domin }
+#2013.8.1 = {
+#	discovered_by = domin_group
+#	discovered_by = southern
+#}
+#2013.8.12 = { remove_core = DRA }
+#2013.11.1 = { remove_core = GRU }
+#1228.10.15 = { add_core = SLV }
+#1228.11.19 = { owner = TDA controller = TDA add_core = TDA remove_core = SLV }
+#2015.1.1 = { remove_core = VAM }

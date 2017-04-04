@@ -1,0 +1,61 @@
+owner = UKI
+controller = UKI
+add_core = MIL
+add_core = UKI
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = alklvalondie 
+capital = "Корсдорн"
+trade_goods = iron
+base_tax = 4
+base_production = 4
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+}
+612.9.17 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = MIL
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	controller = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+	discovered_by = high_domin
+}
+887.6.29 = { controller = NGI }
+890.1.1 = { controller = GRU }
+894.7.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+}
+923.9.12 = { remove_core = DRA }

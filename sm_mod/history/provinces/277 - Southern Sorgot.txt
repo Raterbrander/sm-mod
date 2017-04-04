@@ -1,0 +1,88 @@
+owner = UKI
+controller = UKI
+add_core = SRG
+add_core = UKI
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = alklvalondie
+capital = "‘аргдар"
+
+trade_goods = fur
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = UKI
+}
+482.1.2 = {
+	revolt = {
+		name = "Восстание Трувора Безумного"
+		leader = "Трувор Аркх"
+		type = pretender_rebels
+		size = 4
+	}
+	controller = REB
+}
+496.2.15 = {
+	revolt = { }
+	controller = AFE
+}
+684.9.13 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = SRG
+	remove_core = AFE
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	controller = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+# ?
+#890.1.1 = { # 2013.7.10
+#	owner = GRU
+#	controller = NGI
+#	clr_province_flag = GRU_was_ceded_to_DRA
+#}
+#2013.7.20 = {
+#	owner = NGI
+#	add_core = NGI
+#}
+#2013.8.1 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#	remove_core = NGI
+#}
+923.9.12 = {
+	owner = GRU
+	controller = GRU
+#	remove_core = DRA
+#	remove_core = SME
+}

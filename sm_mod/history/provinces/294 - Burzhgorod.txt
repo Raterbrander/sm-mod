@@ -1,0 +1,64 @@
+owner = ADN
+controller = ADN
+add_core = ADN
+add_core = CHT
+
+is_city = yes
+
+capital = "Бурежа"
+culture = ardenian
+religion = solaris_religion
+trade_goods = tea # fur
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+discovered_by = southern
+
+461.6.29 = { controller = ADN }
+470.1.1 = { owner = ADN }
+476.5.10 = { owner = CHT controller = CHT }
+485.1.10 = { remove_core = ADN }
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+	discovered_by = old_altras_tech
+}
+680.1.1 = { discovered_by = old_altras_tech }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+#1024.2.7 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#}
+#1228.6.1  = {
+#	owner = DRS
+#	controller = DRS
+#	add_core = DRS
+#	base_tax = 2
+#	base_production = 2
+#	culture = shararamean
+#}
+#1228.8.31 = {
+#	controller = MDV
+#	add_core = MDV
+#}
+#1228.11.19 = {
+#	owner = MDV
+#	culture = chaepit
+#	remove_core = DRS
+#}
+#2015.1.11 = { owner = CH2 controller = CH2 remove_core = MDV }

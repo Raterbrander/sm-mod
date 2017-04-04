@@ -1,0 +1,30 @@
+native_size = 35
+native_ferocity = 9
+native_hostileness = 11
+
+is_city = no
+
+culture = old_rannudian
+religion = lemindland_paganism
+capital = "Странгрот"
+base_tax = 4
+base_production = 4
+base_manpower = 5
+
+discovered_by = lem_group
+
+810.4.4 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	culture = anarendilian
+	religion = alklvalondie
+	is_city = yes
+	trade_goods = copper
+	discovered_by = SRM
+	discovered_by = EOY
+	discovered_by = CH2
+	discovered_by = GRU
+}
+868.5.4 = { add_core = DRA }
+872.5.29 = { owner = CH2 controller = CH2 add_core = CH2 remove_core = DRA }

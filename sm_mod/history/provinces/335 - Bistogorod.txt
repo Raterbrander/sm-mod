@@ -1,0 +1,107 @@
+owner = SHK
+controller = SHK
+add_core = SHK
+
+is_city = yes
+hre = no
+
+culture = smeshiks
+religion = tolerance
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 5
+capital = "Ѕистогород"
+
+railroad_1 = yes
+
+discovered_by = southern
+discovered_by = old_altras_tech
+
+484.9.3 = { controller = UTN }
+485.1.10 = { owner = UTN }
+# Переход к ИЖ - когда закончился Утэр Райман?
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+1231.1.1 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+} # Условно
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	#culture = chaepit
+	base_tax = 3
+	base_production = 3
+	base_manpower = 2
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	culture = altras
+	religion = solaris_religion
+	remove_core = SHK
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+#2014.1.1 = { culture = zalesian add_core = ZLS }
+#2014.7.11 = {
+#	owner = ZLS
+#	controller = ZLS
+#	add_core = SIN
+#}
+#2014.8.5 = {
+#	owner = CH2
+#	controller = CH2
+#}
+#2014.8.14 = {
+#	owner = ZLS
+#	controller = ZLS
+#	remove_core = CH2
+#	remove_core = CHT
+#}
+#2014.8.27 = {
+#	owner = SIN
+#	controller = SIN
+#}
+#2014.12.16 = {
+#	owner = ALR
+#	controller = ALR
+#}
+#2015.1.1 = {
+#	base_tax = 3
+#	base_production = 3
+#	base_manpower = 4
+#	culture = altras
+#	remove_core = ZLS
+#}
+#2015.2.15 = {
+#	owner = NIF
+#	controller = NIF
+#	add_core = NIF
+#}
+#2015.2.17 = {
+#	owner = ALR
+#	controller = ALR
+#	remove_core = NIF
+#}
+#2015.9.18 = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#}
+#2015.9.20 = {
+#	owner = SIN
+#	controller = SIN
+#	add_core = SME
+#	remove_core = BRN
+#	add_core = ZLS
+#}

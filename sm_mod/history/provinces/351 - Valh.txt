@@ -1,0 +1,62 @@
+native_size = 49
+native_ferocity = 5
+native_hostileness = 6
+hre = no
+
+culture = smeshesfongs
+religion = totemism
+capital = "Âאכüץ"
+ 
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = iron
+
+discovered_by = middle_land_group
+
+458.1.1 = {
+	add_permanent_province_modifier = {
+		name = historical_unavailable_prov
+		duration = 135780
+	}
+}
+
+580.1.1 = {
+	culture = smeshesfongs
+	religion = totemism
+	native_size = 32
+	native_ferocity = 2
+	native_hostileness = 2
+}
+850.1.1 = {
+	culture = central_lands_culture
+	religion = central_land_paganism
+	native_size = 52
+	native_ferocity = 5
+	native_hostileness = 6
+	remove_province_modifier = historical_unavailable_prov
+}
+873.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	capital = "Âאיכüנמץ"
+}
+881.7.1 = {
+	fort_15th = yes
+	base_manpower = 5
+}
+894.8.1 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = EOY
+	culture = smesh_imp
+	religion = imperial_faith
+	capital = "Âאכüץ"
+}
+915.1.1 = {
+	base_tax = 4
+	#fort_15th = no
+	#fort_17th = yes
+}

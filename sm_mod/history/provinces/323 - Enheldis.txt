@@ -1,0 +1,68 @@
+owner = ENH
+controller = ENH
+add_core = ENH
+
+is_city = yes
+hre = no
+
+capital = "ένυελόδθρ"
+culture = bezantokian
+religion = astransenit
+
+trade_goods = gold
+base_tax = 7
+base_production = 6
+base_manpower = 6
+
+cathedral = yes
+fort_15th = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = anarendilian_tech
+discovered_by = old_zmooromfian
+
+508.7.24 = { controller = SIN }
+508.7.29 = {
+	owner = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+553.1.1 = { religion = helgarn }
+560.1.1 = { base_tax = 6 }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+659.4.21 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = SIN
+}
+#870.7.3 = { remove_core = DRA }
+892.8.1  = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ORD
+}

@@ -1,0 +1,39 @@
+owner = BDR
+controller = BDR
+add_core = BDR
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+capital = "Брандеросс"
+base_tax = 5
+base_production = 5
+base_manpower = 5
+trade_goods = grain
+
+fort_15th = yes
+temple = yes
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = middle_land_group
+
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = BDR
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}

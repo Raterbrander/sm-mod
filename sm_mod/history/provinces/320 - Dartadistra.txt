@@ -1,0 +1,56 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+capital = "Кряков-Нагорный"
+culture = utenian
+religion = orthodox
+trade_goods = iron
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+railroad_1 = yes
+
+discovered_by = southern
+
+600.1.1 = {
+	base_tax = 3
+	base_production = 2
+	trade_goods = oil
+}
+625.4.7 = { controller = EOY }
+627.7.25 = {
+	owner = NGR
+	controller = NGR
+	add_core = NGR
+}
+630.1.1 = {
+	base_tax = 4
+	railroad_1 = no
+	railroad_2 = yes
+	sm_rgo = yes
+}
+655.9.4 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = NGR
+}
+723.1.1 = { capital = "Эрменхельм" }
+800.1.1 = {
+	culture = yellow
+	religion = helgarn
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+850.1.1 = {
+	base_production = 3
+	base_manpower = 4
+}

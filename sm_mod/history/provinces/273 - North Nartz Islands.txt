@@ -1,0 +1,58 @@
+native_size = 32
+native_ferocity = 2
+native_hostileness = 3
+
+is_city = no
+
+capital = "ֽאנצולמכüע"
+culture = nerazc
+religion = totemism
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = gold
+
+discovered_by = NRZ
+discovered_by = VLK
+discovered_by = NFE
+
+490.1.1 = {
+	owner = VLK
+	controller = VLK
+	add_core = VLK
+	is_city = yes
+}
+700.1.1 = { add_core = NRZ }
+743.1.9 = {
+	revolt = {
+		type = revolutionary_rebels
+	}
+	controller = REB
+}
+746.1.11 = {
+	revolt = { }
+	owner = NRZ
+	controller = NRZ
+}
+765.2.17 = { remove_core = VLK }
+#2013.7.1 = { controller = DRA }
+#2013.7.5 = {
+#	owner = DRA 
+#	add_core = DRA
+#}
+#2013.7.10 = { owner = VLK controller = VLK add_core = VLK }
+#2013.7.15 = {
+#	discovered_by = domin_group
+#	discovered_by = high_domin
+#}
+#2013.7.30 = { owner = PEH controller = PEH add_core = PEH remove_core = VLK }
+#2013.9.1 = {
+#	discovered_by = continental
+#	discovered_by = imperial_group
+#}
+#2014.5.15 = { owner = NFE controller = NFE remove_core = PEH  discovered_by = amian }
+#2014.6.15 = {
+#	base_tax = 2
+#	base_production = 3
+#}
