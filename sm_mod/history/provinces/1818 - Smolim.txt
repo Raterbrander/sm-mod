@@ -1,0 +1,24 @@
+native_size = 10
+native_ferocity = 3
+native_hostileness = 4
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = "Бенсон"
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+1460.1.1 = {
+	owner = BRN
+	controller = BRN
+	add_core = BRN
+	is_city = yes
+	trade_goods = fish
+	culture = brintenian
+	religion = protestant
+}

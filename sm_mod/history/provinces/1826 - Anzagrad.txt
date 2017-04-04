@@ -1,0 +1,14 @@
+native_size = 4
+native_ferocity = 2
+native_hostileness = 5
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = "Анзаград"
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown

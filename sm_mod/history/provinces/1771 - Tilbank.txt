@@ -1,0 +1,26 @@
+native_size = 35
+native_ferocity = 4
+native_hostileness = 4
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = "Тильбанк"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+1171.7.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	is_city = yes
+	trade_goods = naval_supplies
+}
+1225.1.1 = {
+	culture = yellow
+	religion = helgarn
+}

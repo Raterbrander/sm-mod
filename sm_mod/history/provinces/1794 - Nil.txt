@@ -1,0 +1,24 @@
+native_size = 32
+native_ferocity = 4
+native_hostileness = 3
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = "Нил"
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+1504.6.1 = {
+	owner = BRN
+	controller = BRN
+	add_core = BRN
+	is_city = yes
+	trade_goods = fur
+	culture = brintenian
+	religion = protestant
+}

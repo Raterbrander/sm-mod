@@ -1,0 +1,14 @@
+native_size = 6
+native_ferocity = 2
+native_hostileness = 6
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = "Витин-бург"
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = unknown

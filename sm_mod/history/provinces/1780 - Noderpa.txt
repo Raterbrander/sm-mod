@@ -1,0 +1,31 @@
+native_size = 39
+native_ferocity = 4
+native_hostileness = 6
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = "Нодерпа"
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+1257.6.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	is_city = yes
+	trade_goods = iron
+	base_tax = 5
+	base_production = 4
+	base_manpower = 4
+	weapons = yes
+	modernised_factories = yes
+}
+1600.1.1 = {
+	culture = yellow
+	religion = helgarn
+}

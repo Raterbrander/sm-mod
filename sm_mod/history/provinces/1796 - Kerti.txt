@@ -1,0 +1,33 @@
+native_size = 57
+native_ferocity = 4
+native_hostileness = 5
+
+is_city = no
+
+culture = kebabian_natives
+religion = old_shamanism
+capital = " ерти"
+
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = unknown
+
+1499.12.1 = { # Брайанитское завоение, Киния
+	owner = BKI
+	controller = BKI
+	add_core = BKI
+	is_city = yes
+	trade_goods = fur
+	culture = brintenian
+	religion = protestant
+	base_tax = 5
+	base_production = 4
+	base_manpower = 6
+}
+1506.1.1 = {
+	owner = BRN
+	controller = BRN
+	add_core = BRN
+	remove_core = BKI
+} # Ликвидация Кинии
