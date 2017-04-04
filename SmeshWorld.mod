@@ -1,7 +1,7 @@
 name="SmeshWorld Mod"
-path="mod/SmeshWorld"
+path="mod/sm_mod"
 
-#disable_time_widget = yes
+disable_time_widget = yes
 disallow_random_new_world = yes
 
 # Common
