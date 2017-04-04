@@ -1,0 +1,133 @@
+government = tribal_federation
+#mercantilism = 0.25
+technology_group = old_altras_tech
+religion = solaris_religion
+primary_culture = altras
+capital = 344
+
+#1200.1.1 = {
+#	monarch = {
+#		name = "(Орды Альтрасов)"
+#		regent = yes
+#		adm = 0
+#		dip = 0
+#		mil = 0
+#	}
+#}
+
+1747.11.12 = { # ?
+	technology_group = continental
+	unit_type = continental # ?
+	monarch = {
+		name = "Хианлукс"
+		dynasty = "Хианлуксайан"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+#2014.12.16 = { government_rank = 3 }
+#
+#2014.11.26 = {
+#	monarch = {
+#		name = "Зельнхенбарт II"
+#		dynasty = "Хианлуксайан"
+#		adm = 5
+#		dip = 5
+#		mil = 5
+#	}
+#}
+#
+#2014.12.6 = {
+#	monarch = {
+#		name = "Эгиль"
+#		dynasty = "Хианлуксайан"
+#		adm = 4
+#		dip = 4
+#		mil = 5
+#	}
+#}
+#
+#2014.12.14 = {
+#	monarch = {
+#		name = "Хианлукс II"
+#		dynasty = "Хианлуксайан"
+#		adm = 6
+#		dip = 5
+#		mil = 5
+#	}
+#}
+#
+#2014.12.17 = { government = altras_holgurate_2 }
+#
+#2014.12.20 = {
+#	monarch = {
+#		name = "Мейердас"
+#		dynasty = "Хианлуксайан"
+#		adm = 2
+#		dip = 2
+#		mil = 3
+#	}
+#}
+#
+#2014.12.28 = {
+#	monarch = {
+#		name = "Вальд"
+#		dynasty = "Хианлуксайан"
+#		adm = 2
+#		dip = 3
+#		mil = 3
+#	}
+#}
+#
+#2014.12.31 = {
+#	government = republican_dictatorship # Фашистская диктатура
+#	monarch = {
+#		name = "Цебельтас Эдарх"
+#		adm = 4
+#		dip = 2
+#		mil = 5
+#	}
+#}
+#
+#2015.1.11 = {
+#	government = constitutional_republic
+#	monarch = {
+#		name = "(Временное правительство)"
+#		adm = 0
+#		dip = 0
+#		mil = 0
+#	}
+#}
+#
+#2015.1.12 = {
+#	government = altras_holgurate_2
+#	monarch = {
+#		name = "Эфельс Ардес"
+#		dynasty = "Хианлуксайан"
+#		adm = 4
+#		dip = 4
+#		mil = 4
+#	}
+#}
+#
+#2015.4.21 = {
+#	monarch = {
+#		name = "Альфонес"
+#		dynasty = "Хианлуксайан"
+#		adm = 3
+#		dip = 4
+#		mil = 3
+#	}
+#}
+#
+#2015.7.17 = {
+#	monarch = {
+#		name = "Эгиль II"
+#		dynasty = "Хианлуксайан"
+#		adm = 4
+#		dip = 4
+#		mil = 3
+#	}
+#}

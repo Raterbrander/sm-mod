@@ -1,0 +1,32 @@
+government = oligarchic_republic
+government_rank = 2
+primary_culture = yellow
+religion = tolerance
+technology_group = ellar_tech
+capital = 297
+
+mercantilism = 0.25
+
+100.1.1 = {
+	decision = abolish_slavery
+	decision = no_serfdom_for_primary_culture
+}
+
+478.10.16 = {
+	monarch = {
+		name = "(Гервейнское управление)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	set_global_flag = gervein_union_united
+	add_country_modifier = {
+		name = gervein_union_state
+		duration = -1
+	}
+}
+
+481.1.1 = { decision = abolish_serfdom }
+
+482.6.4 = { set_global_flag = gervein_union_abolished }

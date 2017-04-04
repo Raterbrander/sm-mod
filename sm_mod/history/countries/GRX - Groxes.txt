@@ -1,0 +1,5 @@
+government = absolute_monarchy
+technology_group = continental
+religion = tolerance
+primary_culture = grox
+capital = 102

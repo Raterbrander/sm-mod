@@ -1,0 +1,27 @@
+government = republican_dictatorship
+technology_group = amian
+primary_culture = brintenian
+religion = protestant
+capital = 469
+
+855.1.1 = {
+	monarch = {
+		name = "ֱנאיאם"
+		dynasty = "״עמכüצ"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+898.8.10 = { changed_tag_from = SRE }
+
+900.8.12 = { government = socialist_republic religion = tolerance }
+
+922.9.13 = { government = presidental_republic_6 }
+
+# ??????????, 2015
+1453.9.27 = {
+	technology_group = continental
+	capital = 1817
+}

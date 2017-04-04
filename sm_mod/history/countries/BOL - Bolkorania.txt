@@ -1,0 +1,43 @@
+primary_culture = smeshesfongs
+religion = totemism
+government = feudal_monarchy
+government_rank = 1
+technology_group = middle_land_group
+capital = 874
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Мартин"
+		dynasty = "ди Болхоран"
+		adm = 3
+		dip = 3
+		mil = 1
+		birth_date = 413.1.1
+	}
+	heir = {
+		name = "Маркус"
+		monarch_name = "Маркус II"
+		dynasty = "ди Болхоран"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 439.5.11
+		death_date = 506.9.21
+	}
+}
+
+480.1.1 = { decision = abolish_serfdom }
+
+529.9.22 = {
+	monarch = {
+		name = "Маркус II"
+		dynasty = "ди Болхоран"
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 439.5.11
+	}
+}

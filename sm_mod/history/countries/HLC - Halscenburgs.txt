@@ -1,0 +1,169 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = gottardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 897
+
+historical_rival = ERT
+
+10.1.1 = { decision = abolish_serfdom }
+
+434.4.17 = {
+	monarch = {
+		name = "Фредерик II"
+		dynasty = "вон Хальсценбург"
+		birth_date = 395.1.15
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
+#455.11.12 = {
+#	add_casus_belli = {
+#		target = GTT
+#		type = cb_claim_throne
+#		months = 120
+#	}
+#}
+
+458.1.1 = {
+	heir = {
+		name = "Альберик"
+		monarch_name = "Альберик I"
+		dynasty = "вон Хальсценбург"
+		birth_date = 431.2.21
+		death_date = 499.3.10
+		claim = 75
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+	leader = {
+		name = "Фредерик Версенгейр"
+		type = general		
+		rank = 2
+		fire = 4
+		shock = 3	
+		manuever = 4	
+		siege = 4
+		death_date = 486.11.14
+	} 
+}
+
+467.9.23 = {
+	monarch = {
+		name = "Альберик I"
+		dynasty = "вон Хальсценбург"
+		birth_date = 431.2.21
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+499.3.10 = {
+	monarch = {
+		name = "Виктор I"
+		dynasty = "вон Хальсценбург"
+		birth_date = 446.3.14
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл III"
+		dynasty = "вон Хальсценбург"
+		birth_date = 484.5.7
+		death_date = 526.2.17
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+508.1.21 = {
+	monarch = {
+		name = "Карл III"
+		dynasty = "вон Хальсценбург"
+		birth_date = 484.5.7
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+	heir = {
+		name = "Георг"
+		monarch_name = "Георг"
+		dynasty = "вон Хальсценбург"
+		birth_date = 508.1.12
+		death_date = 529.5.17
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+524.1.16 = {
+	capital = 900
+	decision = move_capital_to_anieva
+}
+
+526.2.17 = {
+	monarch = {
+		name = "Георг"
+		dynasty = "вон Хальсценбург"
+		birth_date = 508.1.12
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+529.5.17 = {
+	monarch = {
+		name = "Альберхт III"
+		dynasty = "вон Хальсценбург"
+		birth_date = 487.7.20
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+	heir = {
+		name = "Маттеас"
+		monarch_name = "Маттеас"
+		dynasty = "вон Хальсценбург"
+		claim = 55
+		birth_date = 525.3.25
+		death_date = 609.1.2
+		adm = 3
+		dip = 6
+		mil = 1
+	}
+}
+
+535.2.26 = {
+	government = absolute_monarchy
+	government_rank = 2
+}
+
+554.6.14 = {
+	monarch = {
+		name = "Маттеас"
+		dynasty = "вон Хальсценбург"
+		birth_date = 525.3.25
+		adm = 3
+		dip = 6
+		mil = 1
+	}
+}
+
+575.7.12 = {
+	government = constitutional_monarchy
+	religion = helgarn
+}
+
+#577.1.29 - объединение Элларии

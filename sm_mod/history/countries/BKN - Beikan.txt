@@ -1,0 +1,27 @@
+government = free_city_aristocratical
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 377
+fixed_capital = 377
+
+100.1.1 = {
+	add_country_modifier = {
+		name = gervein_union_member
+		duration = -1
+	}
+	monarch = {
+		name = "(Высшее собрание)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+# Выход из Гервейна
+476.1.27 = { remove_country_modifier = gervein_union_member }
+
+541.7.1 = { religion = helgarn }

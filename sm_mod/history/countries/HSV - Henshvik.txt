@@ -1,0 +1,73 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 765
+fixed_capital = 765
+
+451.1.1 = {
+	monarch = {
+		name = "Эртон II"
+		dynasty = "Хельтф"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 412.1.1
+	}
+	heir = {
+		name = "Маттеас"
+		monarch_name = "Маттеас"
+		dynasty = "Хельтф"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 443.1.1
+		death_date = 500.9.2
+	}
+}
+
+478.7.24 = {
+	monarch = {
+		name = "Маттеас"
+		dynasty = "Хельтф"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 443.1.1
+	}
+	heir = {
+		name = "Альберхт"
+		monarch_name = "Альберхт"
+		dynasty = "Хельтф"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 476.12.11
+		death_date = 537.3.26
+	}
+}
+
+500.9.2 = {
+	monarch = {
+		name = "Альберхт"
+		dynasty = "Хельтф"
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 476.12.11
+	}
+}
+
+537.3.26 = {
+	monarch = {
+		name = "Александр III"
+		dynasty = "Хельтф"
+		adm = 2
+		dip = 1
+		mil = 1
+		birth_date = 490.1.1
+	}
+}

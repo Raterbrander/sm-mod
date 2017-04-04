@@ -1,0 +1,151 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 948
+fixed_capital = 948
+
+438.1.1 = {
+	monarch = {
+		name = "Бирой XIV"
+		dynasty = "Бирой"
+		adm = 2
+		dip = 2
+		mil = 1
+		birth_date = 401.1.1
+	}
+	heir = {
+		name = "Бирой"
+		monarch_name = "Бирой XV"
+		dynasty = "Бирой"
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 429.12.19
+		death_date = 495.1.4
+	}
+}
+
+468.10.25 = {
+	monarch = {
+		name = "Бирой XV"
+		dynasty = "Бирой"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 429.12.19
+	}
+	heir = {
+		name = "Бирой"
+		monarch_name = "Бирой XVI"
+		dynasty = "Бирой"
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 0
+		birth_date = 468.9.9
+		death_date = 532.4.4
+	}
+}
+
+495.1.4 = {
+	monarch = {
+		name = "Бирой XVI"
+		dynasty = "Бирой"
+		adm = 2
+		dip = 3
+		mil = 0
+		birth_date = 468.9.9
+	}
+}
+
+501.12.14 = {
+	heir = {
+		name = "Бирой"
+		monarch_name = "Бирой XVII"
+		dynasty = "Бирой"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 0
+		birth_date = 501.12.14
+		death_date = 523.4.3
+	}
+}
+
+532.4.4 = {
+	monarch = {
+		name = "Экельберхт"
+		dynasty = "Бирой"
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 493.10.23
+	}
+	heir = {
+		name = "Франц"
+		monarch_name = "Франц"
+		dynasty = "Бирой"
+		claim = 50
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 530.5.14
+		death_date = 550.2.11
+	}
+}
+
+534.1.1 = { decision = abolish_slavery }
+
+549.12.26 = {
+	religion = helgarn
+	monarch = {
+		name = "Франц"
+		dynasty = "Бирой"
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 530.5.14
+	}
+}
+
+550.2.11 = {
+	government = noble_republic
+	monarch = {
+		name = "Бирой XVII"
+		dynasty = "Бирой"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 493.5.14
+	}
+}
+
+571.7.27 = {
+	monarch = {
+		name = "Бирой XVIII"
+		dynasty = "Бирой"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 525.3.7
+	}
+}
+
+571.11.23 = { decision = abolish_serfdom }
+
+575.9.9 = {
+	government = constitutional_monarchy
+	monarch = {
+		name = "Франц II"
+		dynasty = "Бирой"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 548.10.29
+	}
+}
+
+# Ђннексия Элларским царством

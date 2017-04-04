@@ -1,0 +1,108 @@
+government = socialist_republic # ЧСР
+government_rank = 2
+mercantilism = 0.25
+primary_culture = chaepit
+religion = tolerance
+technology_group = southern
+capital = 403
+
+historical_friend = UTN
+historical_rival = SHK
+
+10.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+# Я не могу долореизировать это, пока Луд не даст инфы
+
+68.6.1 = {
+	monarch = {
+		name = "Лайд"
+		dynasty = "Смешвебович"	
+		adm = 3
+		dip = 2
+		mil = 2
+		leader = {
+			name = "Лайд"
+			type = general
+			rank = 1
+			fire = 2
+			shock = 0
+			manuever = 0
+			siege = 2
+		} # Более подходит для второй войны
+	}
+}
+
+338.6.13 = { government = presidental_republic_6 government_rank = 2 } # ЧСР --> Чаепит
+
+350.7.1 = { government = constitutional_monarchy government_rank = 3 }
+# Чаепит --> Смешариковская империя (Ч-СИ)
+# Как отдельное государство оно в моде не рассматривается
+
+377.8.8 = { government = constitutional_republic government_rank = 2 }
+# В традиционной историографии ИЖ конец Ч-СИ рассматривается по 1-ому взлому
+# О реальной дате преобразования имперки назад в республику данных нет
+
+380.1.1 = {
+	leader = {
+		name = "Шарарамош"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 1
+		manuever = 3
+		siege = 2
+		death_date = 460.1.1
+	} 
+}
+
+458.1.1 = {
+	#form_coalition_against = SHK
+	add_faction = CHT_people_party
+	add_faction = CHT_independents
+}
+
+#460.11.5 = {
+	#add_stability = -3
+	#add_country_modifier = {
+	#	name = chaepit_smeshinternet_destroyed
+	#	duration = 5475
+	#}
+	#kill_units = {
+	#	who = CHT
+	#	amount = 41
+	#}
+	#add_yearly_manpower = -0.55
+#}
+
+#475.1.1 = {
+#	remove_country_modifier = chaepit_smeshinternet_destroyed
+#	add_stability = 2
+#}
+
+#485.1.10 = { add_stability = 2 }
+
+570.1.1 = { add_faction = CHT_azad_chaepit }
+
+635.1.1 = { remove_historical_friend = UTN }
+
+745.1.1 = { government = republican_dictatorship }
+
+# С февраля 2013-ого - составная часть СРЧ, но всё же самостоятельная
+# Посему республиканская диктатура и Лайд как правитель сохраняются на случай
+# выделения Чаепита
+
+# Во второй половине 2014-ого Лайд неактив, 
+# поэтому Чаепит можно будет выделить как свободную республику.
+1090.5.1 = {
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	government = constitutional_monarchy
+}

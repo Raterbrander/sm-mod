@@ -1,0 +1,77 @@
+government = distraseyem_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 366
+
+100.1.1 = {
+	add_country_modifier = {
+		name = gervein_union_member
+		duration = -1
+	}
+	decision = abolish_serfdom
+	set_country_flag = no_serfdom_for_our_culture
+	set_country_flag = no_serfdom_for_accepted_cultures
+}
+
+454.1.1 = {
+	monarch = {
+		name = "Ясон III"
+		dynasty = "Консхейли"
+		adm = 4
+		dip = 4
+		mil = 2
+		birth_date = 421.1.1
+	}
+	heir = {
+		name = "Франц"
+		monarch_name = "Франц II"
+		dynasty = "Консхейли"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 443.1.1
+		death_date = 516.7.2
+	}
+}
+
+478.10.16 = { remove_country_modifier = gervein_union_member }
+
+489.4.21 = {
+	monarch = {
+		name = "Франц II"
+		dynasty = "Консхейли"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 443.1.1
+	}
+	heir = { # ?
+		name = "Генрих"
+		monarch_name = "Генрих II"
+		dynasty = "Консхейли"
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 467.1.1
+		death_date = 541.12.14
+	}
+}
+
+516.7.2 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "Консхейли"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 467.1.1
+	}
+}
+
+541.5.12 = { religion = helgarn }
+
+# Воссоздано после отвоевания. Позднее управляется Эрвецелларами

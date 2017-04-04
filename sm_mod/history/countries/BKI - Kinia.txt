@@ -1,0 +1,19 @@
+government = fascist_dictatorship
+government_rank = 3
+technology_group = continental
+primary_culture = brintenian
+religion = protestant
+capital = 1815
+
+historical_friend = BRN
+
+1499.12.1 = {
+	capital = 1796
+	monarch = {
+		name = "(Брайанитский совет)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

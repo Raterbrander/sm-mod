@@ -1,0 +1,30 @@
+government = socialist_republic
+government_rank = 1
+primary_culture = utenian
+add_accepted_culture = chaepit
+add_accepted_culture = malishian
+religion = tolerance
+technology_group = southern
+capital = 1159
+
+400.1.1 = {
+	monarch = {
+		name = "(Правительство согласия)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+627.2.17 = {
+	primary_culture = chaepit
+	government = militarist_dictatorship
+	monarch = {
+		name = "(Совет Восточной Чайуы)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

@@ -1,0 +1,135 @@
+government = elective_monarchy
+government_rank = 2
+primary_culture = tardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 355
+fixed_capital = 355
+
+442.3.4 = {
+	monarch = {
+		name = "Таслербак"
+		dynasty = "Силитройн"	
+		adm = 6
+		dip = 3
+		mil = 6
+		birth_date = 419.1.1
+	}
+}
+
+# 446 - 449 - захвачена змооромфами
+
+# Баликийская республика
+449.5.14 = {
+	government = oligarchic_republic
+	government_rank = 1
+	monarch = {
+		name = "(Гервэйнское управление)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+449.7.23 = {
+	government = militarist_dictatorship
+	monarch = {
+		name = "Байдон Лихадс"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 424.1.1
+		leader = {
+			name = "Байдон Лихадс"
+			type = general
+			rank = 2
+			fire = 4
+			shock = 3
+			manuever = 2
+			siege = 0
+		}
+	}
+}
+
+449.10.28 = {
+	government = feudal_monarchy
+	government_rank = 2
+	monarch = {
+		name = "Адольф"
+		dynasty = "Схайпас"
+		adm = 3
+		dip = 5
+		mil = 2
+		birth_date = 417.1.1
+		leader = {
+			name = "Адольф Схайпас"
+			type = general
+			rank = 0
+			fire = 2
+			shock = 2
+			manuever = 1
+			siege = 0
+		}
+	}
+	heir = {
+		name = "Сидилир"
+		monarch_name = "Сидилир"
+		dynasty = "Схайпас"
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+		birth_date = 443.1.1
+		death_date = 458.5.27
+	}
+}
+
+450.1.1 = { government = absolute_monarchy }
+
+454.3.24 = {
+	monarch = {
+		name = "Сидилир"
+		dynasty = "Схайпас"
+		adm = 1
+		dip = 2
+		mil = 1
+		birth_date = 443.1.1
+	}
+}
+
+458.5.27 = {
+	monarch = {
+		name = "Янос"
+		dynasty = "Сицейл"
+		adm = 4
+		dip = 4
+		mil = 6
+		birth_date = 426.1.1
+		leader = {
+			name = "Янос Сицейл"
+			type = general
+			rank = 0
+			fire = 4
+			shock = 3
+			manuever = 5
+			siege = 2
+		}
+	}
+}
+
+# 462 - захват змооромфами
+
+552.6.1 = { religion = helgarn }
+
+571.4.7 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Свободное государство Баликия)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+

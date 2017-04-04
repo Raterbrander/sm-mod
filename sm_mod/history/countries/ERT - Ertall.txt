@@ -1,0 +1,110 @@
+government = theocratic_government
+government_rank = 1
+primary_culture = gottardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 901
+
+historical_rival = HLC
+
+430.1.1 = {
+	monarch = {
+		name = "Конрад III"
+		birth_date = 902.2.11
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+455.10.9 = {
+	monarch = {
+		name = "Дитрих II"
+		birth_date = 922.12.22
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+# Эртальский князь захватывает всю полноту власти у епископа
+456.2.21 = {
+	government = feudal_monarchy
+	add_legitimacy = -35
+	monarch = {
+		name = "Франц"
+		dynasty = "Эрталл"
+		birth_date = 414.8.5
+		adm = 4
+		dip = 3
+		mil = 5
+		leader = {
+			name = "Франц Эрталл"
+			type = general		
+			rank = 0
+			fire = 6
+			shock = 6	
+			manuever = 4
+			siege = 0
+		}
+	}
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл II"
+		dynasty = "Эрталл"
+		claim = 95
+		birth_date = 446.2.8
+		death_date = 518.6.21
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+
+479.9.29 = {
+	monarch = {
+		name = "Карл II"
+		dynasty = "Эрталл"
+		birth_date = 446.2.8
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+	heir = {
+		name = "Густав"
+		monarch_name = "Густав"
+		dynasty = "Эрталл"
+		claim = 95
+		birth_date = 479.6.7
+		death_date = 551.11.15
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+518.6.21 = {
+	monarch = {
+		name = "Густав"
+		dynasty = "Эрталл"
+		birth_date = 479.6.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+	heir = {
+		name = "Стефан"
+		monarch_name = "Стефан II"
+		dynasty = "Эрталл"
+		claim = 95
+		birth_date = 517.7.8
+		death_date = 595.5.17
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+542.1.14 = { religion = helgarn }
+
+# С 549.9.28 Эрталлы являются правителями Готтардии

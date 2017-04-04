@@ -1,0 +1,35 @@
+government = absolute_monarchy
+government_rank = 2
+technology_group = continental
+primary_culture = smesh_english
+religion = protestant
+capital = 21
+#national_focus = DIP
+
+historical_friend = SWI
+historical_friend = AGI
+
+2012.6.1 = {
+	monarch = {
+		name = "Фридрих I"
+		dynasty = " рошельбургский"
+		birth_date = 1985.12.6
+		adm = 4
+		dip = 3
+		mil = 3
+		leader = {
+			name = "Фридрих"
+			type = general
+			rank = 1
+			fire = 3
+			shock = 1
+			manuever = 2
+			siege = 1
+			death_date = 2014.4.1
+		}
+	}
+}
+
+2013.8.9  = { changed_tag_from = KRO }
+
+2013.11.19 = { government = constitutional_monarchy }

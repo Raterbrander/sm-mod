@@ -1,0 +1,17 @@
+government = free_city_aristocratical
+technology_group = old_kronossian_tech
+religion = kronos_ellin
+primary_culture = kro_greek
+capital = 156
+fixed_capital = 156
+
+737.5.12 = {
+	monarch = {
+		name = "Феодорис"
+		dynasty = "Каламос"
+		birth_date = 1301.8.2
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}

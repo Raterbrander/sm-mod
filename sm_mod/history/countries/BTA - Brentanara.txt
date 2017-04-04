@@ -1,0 +1,87 @@
+primary_culture = smeshesfongs
+religion = totemism
+government = feudal_monarchy
+government_rank = 1
+technology_group = middle_land_group
+capital = 127
+fixed_capital = 127
+
+100.1.1 = { decision = abolish_slavery }
+
+431.1.1 = {
+	monarch = {
+		name = "Анджей"
+		dynasty = "Брентайр"
+		adm = 3
+		dip = 2
+		mil = 3
+		birth_date = 389.1.1
+	}
+	heir = {
+		name = "Темош"
+		monarch_name = "Темош"
+		dynasty = "Брентайр"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 413.1.1
+		death_date = 476.11.2
+	}
+}
+
+446.4.11 = {
+	monarch = {
+		name = "Темош"
+		dynasty = "Брентайр"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 413.1.1
+	}
+	heir = {
+		name = "Пауль"
+		monarch_name = "Пауль"
+		dynasty = "Брентайр"
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+		birth_date = 440.1.1
+		death_date = 483.10.27
+	}
+}
+
+476.11.2 = {
+	monarch = {
+		name = "Пауль"
+		dynasty = "Брентайр"
+		adm = 0
+		dip = 0
+		mil = 2
+		birth_date = 440.1.1
+	}
+}
+
+483.10.27 = {
+	monarch = {
+		name = "(Смута)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+484.1.1 = {
+	government = free_city_aristocratical
+	monarch = {
+		name = "(Высший Совет)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# В 483 - 489 годах в составе Итлании

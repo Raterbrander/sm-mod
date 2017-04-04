@@ -1,0 +1,118 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = tardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 1101
+fixed_capital = 1101
+
+100.1.1 = { decision = abolish_slavery }
+
+474.2.21 = {
+	monarch = {
+		name = "Франц"
+		dynasty = "Койобург-Хейнфас"
+		adm = 3
+		dip = 1
+		mil = 1
+		birth_date = 434.1.1
+	}
+	heir = {
+		name = "Эрран"
+		monarch_name = "Эрран"
+		dynasty = "Койобург-Хейнфас"
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 456.1.1
+		death_date = 518.12.23
+	}
+}
+
+496.1.1 = { decision = abolish_serfdom }
+
+502.1.4 = {
+	monarch = {
+		name = "Эрран"
+		dynasty = "Койобург-Хейнфас"
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 456.1.1
+	}
+	heir = {
+		name = "Ормонт"
+		monarch_name = "Ормонт"
+		dynasty = "Койобург-Хейнфас"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 482.1.1
+		death_date = 551.10.14
+	}
+}
+
+504.1.1 = { government = administrative_monarchy }
+
+518.12.23 = {
+	monarch = {
+		name = "Ормонт"
+		dynasty = "Койобург-Хейнфас"
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 482.1.1
+	}
+	heir = {
+		name = "Хелен"
+		monarch_name = "Хелен"
+		dynasty = "Койобург-Хейнфас"
+		claim = 95
+		female = yes
+		adm = 5
+		dip = 3
+		mil = 1
+		birth_date = 506.1.1
+		death_date = 579.11.3
+	}
+}
+
+541.5.22 = { religion = helgarn }
+
+551.10.14 = {
+	monarch = {
+		name = "Хелен"
+		dynasty = "Койобург-Хейнфас"
+		female = yes
+		adm = 5
+		dip = 3
+		mil = 1
+		birth_date = 506.1.1
+	}
+	heir = {
+		name = "Эдвард"
+		monarch_name = "Эдвард"
+		dynasty = "Койобург-Хейнфас"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+		birth_date = 534.1.1
+		death_date = 608.2.27
+	}
+}
+
+554.1.1 = { government = constitutional_monarchy }
+
+562.12.22 = {
+	monarch = {
+		name = "Эдвард"
+		dynasty = "Койобург-Хейнфас"
+		adm = 3
+		dip = 2
+		mil = 1
+		birth_date = 534.1.1
+	}
+}

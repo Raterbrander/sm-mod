@@ -1,0 +1,233 @@
+government = altras_horde
+#mercantilism = 0.25
+technology_group = old_altras_tech
+religion = tolerance
+primary_culture = altras
+capital = 893
+
+historical_rival = SIN
+
+# Ханы из рода Кастеманнов
+294.4.12 = {
+	monarch = {
+		name = "Бартон"
+		dynasty = "Кастеманн"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+	heir = {
+		name = "Алензер"
+		monarch_name = "Алензер"
+		dynasty = "Кастеманн"
+		birth_date = 273.2.22
+		death_date = 327.4.11
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+345.6.23 = {
+	monarch = {
+		name = "Алензер"
+		dynasty = "Кастеманн"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 273.2.22
+	}
+	leader = {
+		name = "Алензер Кастеманн"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 5
+		manuever = 5
+		siege = 0
+	}
+}
+
+358.7.12 = {
+	monarch = {
+		name = "Оленайве"
+		dynasty = "Кастеманн"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+369.10.9 = {
+	monarch = {
+		name = "Кольхур"
+		dynasty = "Кастеманн"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 332.9.9
+	}
+	heir = {
+		name = "Алензер"
+		monarch_name = "Алензер"
+		dynasty = "Кастеманн"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 364.3.11
+		death_date = 412.9.27
+	}
+}
+
+386.1.21 = {
+	monarch = {
+		name = "Алензер"
+		dynasty = "Кастеманн"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 364.3.11
+	}
+}
+
+390.1.1 = { religion = solaris_religion }
+
+412.9.27 = {
+	monarch = {
+		name = "Ельгов"
+		dynasty = "Кастеманн"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+449.11.14 = {
+	monarch = {
+		name = "Альврахт"
+		dynasty = "Кастеманн"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 432.10.17
+	}
+}
+
+465.6.15 = {
+	heir = {
+		name = "Зельгорхт"
+		monarch_name = "Зельгорхт"
+		dynasty = "Кастеманн"
+		claim = 55
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 465.6.15
+		death_date = 496.1.20
+	}
+}
+
+481.12.28 = {
+	monarch = {
+		name = "Зельгорхт"
+		dynasty = "Кастеманн"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 465.6.15
+	}
+}
+
+# Кербекская династия
+482.1.20 = {
+	monarch = {
+		name = "Кербек"
+		dynasty = "Кербек"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 453.8.3
+	}
+}
+
+502.9.30 = {
+	heir = {
+		name = "Ройвал"
+		monarch_name = "Ройвал"
+		dynasty = "Кербек"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 502.9.30
+		death_date = 533.3.14
+	}
+}
+
+524.10.6 = {
+	monarch = {
+		name = "Ройвал"
+		dynasty = "Кербек"
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 502.9.30
+	}
+}
+
+533.3.14 = {
+	monarch = {
+		name = "(Великая смута)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+555.4.11 = {
+	monarch = {
+		name = "Мархон"
+		dynasty = "Амагелай"
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+# Сенсал-Кербекская династия
+557.4.23 = {
+	monarch = {
+		name = "Кердеймайр"
+		dynasty = "Сенсал-Кербек"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 522.3.3
+	}
+	heir = {
+		name = "Симаил"
+		monarch_name = "Симаил"
+		dynasty = "Сенсал-Кербек"
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 556.4.12
+		death_date = 599.1.1
+	}
+}
+
+#2012.4.12 = { capital = 107 }
+
+592.6.3 = {
+	monarch = {
+		name = "Симаил"
+		dynasty = "Сенсал-Кербек"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

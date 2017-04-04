@@ -1,0 +1,112 @@
+government = distraseyem_monarchy
+government_rank = 2
+primary_culture = bezantokian
+religion = astransenit
+technology_group = ellar_tech
+capital = 323
+fixed_capital = 323
+
+10.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+427.1.16 = {
+	monarch = {
+		name = "Зенхельдис"
+		dynasty = "Танистриес"
+		female = yes
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 405.1.1
+		#death_date = 471
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = benevolent_personality
+	clear_scripted_personalities = yes
+}
+
+432.3.22 = {
+	heir = {
+		name = "Андреа"
+		monarch_name = "Андреа"
+		dynasty = "Танистриес"
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 432.3.22
+		death_date = 503.1.10
+	}
+	clear_scripted_personalities = yes
+	add_heir_personality = benevolent_personality
+}
+
+458.2.21 = {
+	monarch = {
+		name = "Андреа"
+		dynasty = "Танистриес"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 432.3.22
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = just_personality
+	add_ruler_personality = calm_personality
+	clear_scripted_personalities = yes
+	heir = {
+		name = "Хелена"
+		monarch_name = "Хелена III"
+		female = yes
+		dynasty = "Танистриес"
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 1
+		birth_date = 456.1.1
+		death_date = 522.9.23
+	}
+	add_heir_personality = benevolent_personality
+	queen = {
+		country_of_origin = RBZ
+		name = "Анна"
+		female = yes
+		dynasty = "Эрместикартис"
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 431.1.1
+		death_date = 484.3.21
+	}
+}
+
+503.1.10 = {
+	monarch = {
+		name = "Хелена III"
+		female = yes
+		dynasty = "Танистриес"
+		adm = 5
+		dip = 4
+		mil = 1
+		birth_date = 456.1.1
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = just_personality
+	add_ruler_personality = calm_personality
+	heir = {
+		name = "Юлиана"
+		monarch_name = "Юлиана II"
+		female = yes
+		dynasty = "Танистриес"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 1
+		birth_date = 480.1.1
+		death_date = 544.2.16
+	}
+	clear_scripted_personalities = yes
+}

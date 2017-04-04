@@ -1,0 +1,18 @@
+government = despotic_monarchy
+government_rank = 3
+primary_culture = smesh_imp
+religion = tolerance # imperial_faith
+technology_group = imperial_group
+capital = 340
+
+2013.6.10 = {
+	monarch = {
+		name = "Тайбер Уриэль"
+		dynasty = "Депачо"
+		birth_date = 1985.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+

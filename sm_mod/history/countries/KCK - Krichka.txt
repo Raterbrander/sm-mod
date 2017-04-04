@@ -1,0 +1,69 @@
+government = tribal_kingdom
+government_rank = 1
+primary_culture = kebabian_natives
+religion = animism
+technology_group = domin_group
+capital = 1760
+fixed_capital = 1760
+
+100.1.1 = { decision = abolish_slavery }
+
+# 869 - 871 - власть косистов на острове
+# 871-894 - власть доминионцев
+
+871.3.24 = { # Провозглашение СР Кричка
+	primary_culture = dominionian
+	religion = atheism
+	government = socialist_republic
+	monarch = {
+		name = "Верховный совет"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+880.4.23 = { religion = tolerance }
+
+891.9.21 = {
+	government = presidental_republic_6
+	monarch = {
+		name = "Томас Элорти"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 844.1.1
+	}
+}
+
+# Продажа острова
+894.3.27 = {
+	primary_culture = tardian
+	religion = helgarn
+	government = absolute_monarchy
+	government_rank = 2
+	monarch = {
+		name = "Исаак"
+		dynasty = "Кельменх"
+		adm = 5
+		dip = 5
+		mil = 1
+		birth_date = 838.1.1
+	}
+}
+
+900.1.1 = { technology_group = continental unit_type = continental }
+
+903.1.2 = {
+	government = parliamentary_republic
+	government_rank = 1
+	religion = tolerance
+	monarch = {
+		name = "Ассамблея Крички"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

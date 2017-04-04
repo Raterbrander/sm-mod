@@ -1,0 +1,33 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = middle_land_group
+religion = totemism
+primary_culture = itlanian
+capital = 122
+
+100.1.1 = { decision = abolish_serfdom }
+
+495.4.16 = {
+	capital = 112
+	technology_group = continental
+	unit_type = continental
+	primary_culture = SIN_itlanian
+	historical_friend = ITL
+}
+
+700.1.1 = {
+	government = administrative_monarchy
+	religion = tolerance
+}
+
+#2012.1.1 = {
+#	monarch = {
+#		name = "Зуб"
+#		dynasty = "да Вироне"
+#		adm = 4
+#		dip = 4
+#		mil = 2
+#	}
+#}
+
+1000.1.1 = { government = constitutional_monarchy }

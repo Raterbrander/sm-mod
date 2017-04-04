@@ -1,0 +1,121 @@
+government = altras_ulus
+technology_group = old_altras_tech
+religion = solaris_religion
+primary_culture = altras
+capital = 889
+
+452.7.29 = {
+	monarch = {
+		name = "Эфельс"
+		dynasty = "Амагелай"
+		birth_date = 935.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		name = "Мархон"
+		monarch_name = "Мархон"
+		dynasty = "Амагелай"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 447.1.1
+		death_date = 485.6.21
+	}
+}
+
+478.2.23 = {
+	monarch = {
+		name = "Мархон"
+		dynasty = "Амагелай"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 447.1.1
+	}
+}
+
+485.6.21 = {
+	monarch = {
+		name = "Эрдон"
+		dynasty = "Амагелай"
+		adm = 3
+		dip = 2
+		mil = 3
+		birth_date = 447.1.1
+	}
+	heir = {
+		name = "Янос"
+		monarch_name = "Янос"
+		dynasty = "Амагелай"
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 483.1.1
+		death_date = 551.5.27
+	}
+}
+
+512.11.2 = {
+	monarch = {
+		name = "Янос"
+		dynasty = "Амагелай"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 483.1.1
+	}
+}
+
+521.1.1 = {
+	heir = {
+		name = "Мархон"
+		monarch_name = "Мархон II"
+		dynasty = "Амагелай"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 521.1.1
+		death_date = 579.1.11
+	}
+}
+
+551.5.27 = {
+	monarch = {
+		name = "Мархон II"
+		dynasty = "Амагелай"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 521.1.1
+	}
+}
+
+557.12.1 = {
+	heir = {
+		name = "Эгиль"
+		monarch_name = "Эгиль II"
+		dynasty = "Амагелай"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 557.12.1
+		death_date = 596.7.13
+	}
+}
+
+579.1.11 = {
+	monarch = {
+		name = "Эгиль II"
+		dynasty = "Амагелай"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 557.12.1
+	}
+}

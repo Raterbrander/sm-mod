@@ -1,0 +1,101 @@
+government = free_city_aristocratical
+mercantilism = 0.10
+technology_group = amian
+primary_culture = smesh_english
+religion = catholic
+capital = 21
+fixed_capital = 21
+#national_focus = DIP
+
+# аааа я не могу долореизировать Крошельбург фридрехх дай лоре аааа
+
+historical_friend = SWI
+#historical_friend = AGI
+
+502.1.1 = {
+	monarch = {
+		name = "(Городской совет)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+635.5.1 = {
+	government = AM_clan
+	monarch = {
+		name = "Фридрих I"
+		dynasty = "Крошельбургский"
+		birth_date = 608.6.15
+		adm = 1
+		dip = 1
+		mil = 2
+		leader = {
+			name = "Фридрих"
+			type = general
+			rank = 1
+			fire = 3
+			shock = 1
+			manuever = 2
+			siege = 1
+			death_date = 746.4.2
+		}
+	}
+}
+
+741.7.14 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "Дольд"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 1223.9.26
+	}
+}
+
+746.4.2 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "де Блюфорт"
+		adm = 2
+		dip = 1
+		mil = 1
+		birth_date = 667.10.6
+	}
+}
+
+779.2.12 = {
+	government = AM_clan_rep
+	monarch = {
+		name = "(Национальная ассамблея)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+850.6.6 = {
+	government = AM_clan
+	monarch = {
+		name = "Фридрих II"
+		dynasty = "Крошельбургский"
+		birth_date = 1277.12.6
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+875.8.1 = { religion = protestant }
+
+901.1.1 = {
+	#decision = gregorian_reforms
+	government = absolute_monarchy
+	government_rank = 2
+	technology_group = continental
+} # Превращение в более цивилизованное государство
+
+# 9 августа 2013-ого или ранее --> Англо-Смешия

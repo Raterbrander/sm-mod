@@ -1,0 +1,62 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = tonderros
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 922
+fixed_capital = 922
+
+450.1.1 = {
+	monarch = {
+		name = "Фрейнел"
+		dynasty = "Тарнот"
+		adm = 3
+		dip = 1
+		mil = 4
+		birth_date = 397.1.1
+	}
+	heir = {
+		name = "Кристофер"
+		monarch_name = "Кристофер"
+		dynasty = "Тарнот"
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 3
+		birth_date = 433.1.1
+		death_date = 498.1.1
+	}
+}
+
+462.3.12 = {
+	monarch = {
+		name = "Кристофер"
+		dynasty = "Тарнот"
+		adm = 2
+		dip = 0
+		mil = 3
+		birth_date = 433.1.1
+	}
+	heir = {
+		name = "Борис"
+		monarch_name = "Борис"
+		dynasty = "Тарнот"
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 2
+		birth_date = 461.12.22
+		death_date = 529.1.1
+	}
+}
+
+498.1.1 = {
+	monarch = {
+		name = "Борис"
+		dynasty = "Тарнот"
+		adm = 5
+		dip = 2
+		mil = 2
+		birth_date = 461.12.22
+	}
+}

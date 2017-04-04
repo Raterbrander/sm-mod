@@ -1,0 +1,15 @@
+government = constitutional_republic
+government_rank = 2
+primary_culture = rifonian
+technology_group = continental
+religion = tolerance
+capital = 871
+
+2012.1.1 = {
+	monarch = {
+		name = "Болтуш Димитрич"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

@@ -1,0 +1,186 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = tardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 969
+fixed_capital = 969
+
+historical_rival = LDR
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Вильгельм II"
+		dynasty = "вон Ханфальт"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 412.1.1
+	}
+	heir = {
+		name = "Тердрим"
+		monarch_name = "Тердрим II"
+		dynasty = "вон Ханфальт"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 444.1.1
+		death_date = 500.6.15
+	}
+}
+
+476.2.22 = {
+	monarch = {
+		name = "Тердрим II"
+		dynasty = "вон Ханфальт"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 444.1.1
+	}
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм II"
+		dynasty = "вон Ханфальт"
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 474.1.1
+		death_date = 518.11.13
+	}
+}
+
+500.6.15 = {
+	monarch = {
+		name = "Вильгельм II"
+		dynasty = "вон Ханфальт"
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 474.1.1
+	}
+}
+
+507.1.1 = { decision = abolish_serfdom }
+
+508.1.1 = {
+	heir = {
+		name = "Ормонт"
+		monarch_name = "Ормонт III"
+		dynasty = "вон Ханфальт"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 508.1.1
+		death_date = 534.3.2
+	}
+}
+
+518.11.13 = {
+	monarch = {
+		name = "Ормонт III"
+		dynasty = "вон Ханфальт"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 508.1.1
+		leader = {
+			name = "Ормонт III"
+			type = general
+			rank = 0
+			fire = 6
+			shock = 6
+			manuever = 2
+			siege = 2
+		}
+	}
+}
+
+530.1.1 = { government = absolute_monarchy }
+
+534.3.2 = {
+	add_stability = -2
+	monarch = {
+		name = "(Междуцарствие)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+534.3.18 = {
+	add_stability = 1
+	monarch = {
+		name = "Карл"
+		dynasty = "Готторн-Рилан"
+		adm = 2
+		dip = 1
+		mil = 2
+		birth_date = 508.1.1
+	}
+}
+
+534.9.21 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Конвент)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+534.11.18 = {
+	government = feudal_monarchy
+	monarch = {
+		name = "Карл"
+		dynasty = "Готторн-Рилан"
+		adm = 2
+		dip = 1
+		mil = 2
+		birth_date = 508.1.1
+	}
+}
+
+534.12.7 = {
+	monarch = {
+		name = "Фридрих II"
+		dynasty = "вон Ханфальт"
+		adm = 3
+		dip = 1
+		mil = 4
+		birth_date = 523.1.1
+	}
+}
+
+541.9.1 = { religion = helgarn }
+
+549.9.23 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Конвент)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+570.1.29 = {
+	monarch = {
+		name = "Смута"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# 570.3.3 - аннексия Табесларом

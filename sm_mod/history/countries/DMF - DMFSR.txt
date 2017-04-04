@@ -1,0 +1,21 @@
+government = socialist_republic
+government_rank = 1
+mercantilism = 0.35
+technology_group = southern
+unit_type = continental
+religion = tolerance # orthodox
+primary_culture = malishian
+capital = 211
+
+2013.5.5 = {
+	monarch = {
+		name = "димик5"
+		dynasty = "Димикович"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	decision = sm_DMF_DRA_war_dec
+}
+
+2014.7.1 = { religion = tolerance }

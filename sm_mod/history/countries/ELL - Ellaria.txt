@@ -1,0 +1,42 @@
+government = karteval_monarchic
+government_rank = 3
+technology_group = continental
+primary_culture = yellow
+religion = helgarn
+capital = 298 # Смешесберг, временно
+# Тогда столицей был Нью-Смешесберг
+
+100.1.1 = {
+	decision = abolish_slavery
+	set_country_flag = no_serfdom_for_our_culture
+	set_country_flag = no_serfdom_for_accepted_cultures
+}
+
+557.11.6 = {
+	monarch = {
+		name = "Хансерус I"
+		dynasty = "Элапейриен"
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 545.9.18
+	}
+}
+
+576.4.6 = { changed_tag_from = SMF }
+
+587.10.6 = {
+	heir = {
+		name = "Санармайр"
+		monarch_name = "Санармайр I"
+		dynasty = "Элапейриен"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+		birth_date = 587.10.6
+		death_date = 596.8.17
+	}
+}
+
+# 604.2.12 - ИЖ

@@ -1,0 +1,25 @@
+government = administrative_republic # role_gov
+government_rank = 1
+primary_culture = chaepitian
+religion = chaecan
+technology_group = rolevik
+capital = 445
+fixed_capital = 445
+
+458.1.1 = {
+	add_country_modifier = {
+		name = demilitarised_country
+		duration = -1
+	}
+	#set_country_flag = demilitarised_chaypitie
+	add_faction = CH3_neutral_faction
+	add_faction = CH3_NGR_faction
+	add_faction = CH3_nihon_faction
+	monarch = {
+		name = "(Ассамблея Чайпития)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

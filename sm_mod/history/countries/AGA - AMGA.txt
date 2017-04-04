@@ -1,0 +1,38 @@
+government = AM_clan_rep
+government_rank = 2
+primary_culture = amga_culture
+religion = ameism
+technology_group = amian
+capital = 604
+
+historical_friend = DSH
+
+482.1.1 = {
+	monarch = {
+		name = "Джирджис"
+		dynasty = "ди Плутон"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+745.1.1 = {
+	monarch = {
+		name = "Тилирон"
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+
+857.6.10 = {
+	government = AM_clan #_rep
+	monarch = {
+		name = "Джирджис"
+		dynasty = "ди Плутон"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

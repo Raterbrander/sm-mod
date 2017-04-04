@@ -1,0 +1,76 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = gottardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 898
+fixed_capital = 898
+
+100.1.1 = { decision = abolish_slavery }
+
+432.1.1 = {
+	monarch = {
+		name = "Ормонт"
+		dynasty = "Коранхастар"
+		birth_date = 929.8.26
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+463.2.27 = {
+	heir = {
+		name = "Эйрам"
+		monarch_name = "Эйрам II"
+		dynasty = "Коранхастар"
+		birth_date = 463.2.27
+		death_date = 510.3.5
+		claim = 95
+		adm = 3
+		dip = 0
+		mil = 3
+	}
+}
+
+481.6.22 = {
+	monarch = {
+		name = "Эйрам II"
+		dynasty = "Коранхастар"
+		birth_date = 463.2.27
+		adm = 3
+		dip = 0
+		mil = 3
+	}
+}
+
+499.9.26 = {
+	heir = {
+		name = "Эртон"
+		monarch_name = "Эртон"
+		dynasty = "Коранхастар"
+		claim = 95
+		birth_date = 499.9.26
+		death_date = 571.5.23
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+510.3.5 = {
+	monarch = {
+		name = "Эртон"
+		dynasty = "Коранхастар"
+		birth_date = 499.9.26
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+543.7.15 = { religion = helgarn }
+
+553.1.1 = { decision = abolish_serfdom }
+
+# После смерти Эртона Коранхастара по его завещанию интегрирован в состав Готтардии

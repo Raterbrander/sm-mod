@@ -1,0 +1,20 @@
+primary_culture = anarendilian
+religion = alklvalondie
+government = feudal_monarchy
+government_rank = 2
+technology_group = anarendilian_tech
+capital = 279
+
+100.1.1 = { decision = abolish_slavery }
+
+482.1.1 = {
+	monarch = {
+		name = "Ильдур II Рагнест"
+		dynasty = "Ар-Гамильзор де Ла Гелио Итильген Арконт"
+		adm = 2
+		dip = 5
+		mil = 2
+		birth_date = 461.1.17
+	}
+	add_stability = -2
+}

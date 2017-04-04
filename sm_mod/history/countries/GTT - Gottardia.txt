@@ -1,0 +1,218 @@
+government = feudal_monarchy
+government_rank = 2 # Великое герцогство
+primary_culture = gottardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 899
+
+100.1.1 = {
+	add_country_modifier = {
+		name = maximillian_laws_gottardia
+		duration = -1
+	}
+	decision = abolish_slavery
+}
+
+437.9.17 = {
+	religion = yutonsenit
+	monarch = {
+		name = "Фредерик II"
+		dynasty = "вон Хальсценбург"
+		birth_date = 394.4.14
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		name = "Яков"
+		monarch_name = "Яков I"
+		dynasty = "вон Хальсценбург"
+		birth_date = 432.6.4
+		death_date = 475.4.11
+		claim = 75
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+455.3.2 = {
+	monarch = {
+		name = "Яков I"
+		dynasty = "вон Хальсценбург"
+		birth_date = 432.6.4
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+455.11.12 = {
+	monarch = {
+		name = "Анхен"
+		dynasty = "Кавендайр"
+		birth_date = 430.1.6
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+	add_legitimacy = -35
+	add_stability = -2
+}
+
+456.5.16 = {
+	monarch = {
+		name = "Максимиллиан"
+		dynasty = "вон Оргейл"
+		birth_date = 427.12.5
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+457.1.10 = { religion = ellar_pagan }
+
+458.4.7 = {
+	monarch = {
+		name = "Людвиг"
+		dynasty = "вон Кьюда"
+		birth_date = 432.2.26
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+464.2.28 = {
+	monarch = {
+		name = "Фредерик"
+		dynasty = "вон Оргейл"
+		birth_date = 445.8.9
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+	capital = 896
+}
+
+465.1.1 = {
+	add_legitimacy = 35
+	add_stability = 3
+}
+
+476.3.4 = {
+	heir = {
+		name = "Стефан"
+		monarch_name = "Стефан II"
+		dynasty = "вон Оргейл"
+		claim = 95
+		birth_date = 476.3.4
+		death_date = 547.9.6
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+526.6.2 = {
+	monarch = {
+		name = "Стефан II"
+		dynasty = "вон Оргейл"
+		birth_date = 476.3.4
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "Густав"
+		monarch_name = "Густав II"
+		dynasty = "Готторн-Рилан"
+		birth_date = 510.1.5
+		death_date = 594.6.16
+		claim = 85
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+547.9.6 = {
+	monarch = {
+		name = "Густав II"
+		dynasty = "Готторн-Рилан"
+		birth_date = 508.1.5
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+549.9.28 = {
+	religion = helgarn
+	monarch = {
+		name = "Густав III"
+		dynasty = "Эрталл"
+		birth_date = 479.6.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+	heir = {
+		name = "Стефан"
+		monarch_name = "Стефан III"
+		dynasty = "Эрталл"
+		claim = 95
+		birth_date = 517.7.8
+		death_date = 595.5.17
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+550.3.28 = { decision = abolish_serfdom }
+
+551.11.15 = {
+	monarch = {
+		name = "Стефан III"
+		dynasty = "Эрталл"
+		birth_date = 517.7.8
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+553.1.14 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл"
+		dynasty = "Эрталл"
+		claim = 95
+		birth_date = 553.1.14
+		death_date = 618.7.16
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+
+554.12.10 = { government = constitutional_monarchy }
+
+# Объединение Готтардии
+561.3.21 = { remove_country_modifier = maximillian_laws_gottardia }
+
+# Отречение
+572.6.15 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Эрталл"
+		birth_date = 553.1.14
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+
+#577.1.29 - объединение Элларии

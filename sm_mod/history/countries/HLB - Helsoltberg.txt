@@ -1,0 +1,50 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = gottardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 974
+fixed_capital = 974
+
+428.1.1 = {
+	monarch = {
+		name = "Альфред"
+		dynasty = "Хельсолтберг"
+		birth_date = 401.1.1
+		adm = 4 
+		dip = 3
+		mil = 3
+	}
+}
+
+458.1.1 = {
+	heir = {
+		name = "Фредерик"
+		monarch_name = "Фредерик II"
+		dynasty = "Хельсолтберг"
+		birth_date = 431.1.1
+		death_date = 488.2.17
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+467.10.10 = {
+	monarch = {
+		name = "Фредерик II"
+		dynasty = "Хельсолтберг"
+		birth_date = 431.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+# После смерти Фредерика II включён в состав владений Эрталлов
+
+506.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}

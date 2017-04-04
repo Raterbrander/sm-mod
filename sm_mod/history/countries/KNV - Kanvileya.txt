@@ -1,0 +1,80 @@
+government = theocratic_government
+government_rank = 2 # 1 ?
+primary_culture = yellow
+religion = astransenit
+technology_group = ellar_tech
+capital = 935
+
+468.3.5 = {
+	monarch = {
+		name = "Ормонт"
+		adm = 3
+		dip = 4
+		mil = 0
+		birth_date = 415.1.1
+	}
+}
+
+487.2.26 = {
+	monarch = {
+		name = "Конрад"
+		adm = 4
+		dip = 4
+		mil = 1
+		birth_date = 424.1.1
+	}
+}
+
+500.4.23 = {
+	monarch = {
+		name = "Иоаким"
+		adm = 3
+		dip = 2
+		mil = 0
+		birth_date = 435.1.1
+	}
+}
+
+509.3.16 = {
+	monarch = {
+		name = "Йозеф"
+		adm = 3
+		dip = 3
+		mil = 1
+		birth_date = 447.1.1
+	}
+}
+
+525.12.3 = {
+	monarch = {
+		name = "Йозеф II"
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 471.8.2
+	}
+}
+
+541.4.10 = { religion = helgarn }
+
+545.12.23 = {
+	monarch = {
+		name = "Ормонт II"
+		adm = 2
+		dip = 1
+		mil = 0
+		birth_date = 488.1.1
+	}
+}
+
+555.3.14 = {
+	government = parliamentary_republic
+	government_rank = 1
+	monarch = {
+		name = "(Дистрасобойр)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

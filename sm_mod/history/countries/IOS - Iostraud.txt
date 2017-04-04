@@ -1,0 +1,20 @@
+government = free_city_base
+primary_culture = turbalhian
+religion = tolerance
+technology_group = ellar_tech
+capital = 915
+fixed_capital = 915
+
+100.1.1 = {
+	monarch = {
+		name = "(Ассамблея Иострауда)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+550.1.1 = { religion = helgarn }

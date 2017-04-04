@@ -1,0 +1,168 @@
+# Тиэльтская империя
+government = feudal_monarchy
+government_rank = 3
+technology_group = ellar_tech
+primary_culture = bezantokian
+religion = astransenit
+capital = 1121
+
+# Династия Келанов
+426.1.1 = {
+	leader = {
+		name = "Лертон Вистир"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 3
+		siege = 0
+		death_date = 449.7.15
+	}
+}
+
+439.7.21 = {
+	monarch = {
+		name = "Каленард"
+		dynasty = "Келан"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 406.12.18
+	}
+	heir = {
+		name = "Теодориос"
+		monarch_name = "Теодориос III"
+		dynasty = "Келан"
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 4
+		birth_date = 429.2.8
+		death_date = 467.5.29
+	}
+}
+
+447.1.1 = {
+	leader = {
+		name = "Деитроникос Гуистиниани"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 3
+		siege = 0
+		death_date = 482.2.21
+	}
+}
+
+458.10.30 = {
+	monarch = {
+		name = "Теодориос III"
+		dynasty = "Келан"
+		adm = 4
+		dip = 5
+		mil = 4
+		birth_date = 429.2.8
+	}
+	heir = {
+		name = "Флавий"
+		monarch_name = "Флавий V"
+		dynasty = "Келан"
+		claim = 75
+		adm = 2
+		dip = 4
+		mil = 1
+		birth_date = 451.3.16
+		death_date = 488.12.11
+	}
+}
+
+476.4.20 = {
+	monarch = {
+		name = "Флавий V"
+		dynasty = "Келан"
+		adm = 2
+		dip = 4
+		mil = 1
+		birth_date = 451.3.16
+	}
+}
+
+# Большая смута
+488.12.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# 492.3.18 - захват Тиэльта Синими, окончательная ликвидация Империи
+
+#499.2.25 = {
+#	monarch = {
+#		name = "Лертон"
+#		dynasty = "Келан"
+#		adm = 3
+#		dip = 3
+#		mil = 3
+#		birth_date = 451.1.1
+#	}
+#	heir = {
+#		name = "Ленгат"
+#		monarch_name = "Ленгат III"
+#		dynasty = "Келан"
+#		claim = 75
+#		adm = 4
+#		dip = 3
+#		mil = 2
+#		birth_date = 477.1.1
+#		death_date = 530.1.6
+#	}
+#}
+#
+#517.7.23 = {
+#	monarch = {
+#		name = "Ленгат III"
+#		dynasty = "Келан"
+#		adm = 4
+#		dip = 3
+#		mil = 2
+#		birth_date = 477.1.1
+#	}
+#	heir = {
+#		name = "Нирдас"
+#		monarch_name = "Нирдас VIII"
+#		dynasty = "Келан"
+#		claim = 75
+#		adm = 3
+#		dip = 2
+#		mil = 1
+#		birth_date = 502.1.1
+#		death_date = 568.9.14
+#	}
+#}
+#
+#530.1.6 = {
+#	monarch = {
+#		name = "Нирдас VIII"
+#		dynasty = "Келан"
+#		adm = 3
+#		dip = 2
+#		mil = 1
+#		birth_date = 502.1.1
+#	}
+#}
+#
+#575.4.14 = {
+#	monarch = {
+#		name = "Мерастас II"
+#		dynasty = "Анвейк-ди-Зепсар"
+#		adm = 2
+#		dip = 2
+#		mil = 2
+#		birth_date = 539.5.12
+#	}
+#}

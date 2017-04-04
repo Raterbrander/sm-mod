@@ -1,0 +1,30 @@
+government = role_gov
+primary_culture = bs_culture
+religion = tolerance
+technology_group = rolevik
+capital = 444
+
+361.1.1 = {
+	monarch = {
+		name = "Клан Блудного сна"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+450.1.1 = { capital = 473 }
+
+650.1.1 = { capital = 1247 }
+
+700.1.1 = { capital = 421 }
+
+#1000.1.1 = {
+#	monarch = {
+#		name = "Сейлим Хеверт"
+#		adm = 3
+#		dip = 3
+#		mil = 2
+#	}
+#}

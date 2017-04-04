@@ -1,0 +1,49 @@
+government = communist_dictatorship
+mercantilism = 0.25
+technology_group = continental
+religion = atheism
+primary_culture = malishian
+#culture_group_union = malishian_g
+historical_friend = SRM
+capital = 196
+
+#historical_neutral = EOY
+
+2013.3.25 = {
+	monarch = {
+		name = "Кени"
+		dynasty = "Дианич"
+		dip = 4
+		adm = 3
+		mil = 4
+	}
+}
+
+2013.6.2 = {
+	monarch = {
+		name = "Иреза"
+		dynasty = "Зери"
+		female = yes
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+2013.6.7 = {
+	monarch = {
+		name = "Кени"
+		dynasty = "Дианич"
+		dip = 4
+		adm = 3
+		mil = 4
+	}
+}
+
+# Исторический старт
+2013.6.25 = {
+	decision = sm_rise_of_DRA_dec
+	add_treasury = 250
+	add_stability = 1
+	add_republican_tradition = -0.35
+}

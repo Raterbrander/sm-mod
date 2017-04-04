@@ -1,0 +1,16 @@
+government = free_city_base
+technology_group = continental
+religion = orthodox
+primary_culture = malishian
+capital = 1163
+fixed_capital = 1163
+
+100.1.1 = {
+	monarch = {
+		name = "(Димиковский сельсовет)"
+		regent = yes
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}

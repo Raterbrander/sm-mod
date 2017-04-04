@@ -1,0 +1,14 @@
+government = free_city_base
+primary_culture = yellow
+religion = astransenit
+technology_group = ellar_tech
+capital = 373
+
+100.1.1 = {
+	add_country_modifier = {
+		name = gervein_union_member
+		duration = -1
+	}
+}
+
+541.5.12 = { religion = helgarn }

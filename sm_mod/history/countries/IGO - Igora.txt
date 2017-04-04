@@ -1,0 +1,106 @@
+government = constitutional_monarchy
+government_rank = 2
+primary_culture = igorian
+religion = tolerance
+technology_group = domin_group
+capital = 86
+
+512.4.23 = {
+	monarch = {
+		name = "Нихор III"
+		dynasty = "ойль Ильмава"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 473.1.1
+	}
+	heir = {
+		name = "Ольмак"
+		monarch_name = "Ольмак III"
+		dynasty = "ойль Ильмава"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 495.1.1
+		death_date = 559.3.26
+	}
+}
+
+518.9.24 = { changed_tag_from = ILM }
+
+545.9.27 = {
+	monarch = {
+		name = "Ольмак III"
+		dynasty = "ойль Ильмава"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 495.1.1
+	}
+	heir = {
+		name = "Томас"
+		monarch_name = "Томас"
+		dynasty = "ойль Ильмава"
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+		birth_date = 523.1.1
+		death_date = 595.2.24
+	}
+}
+
+559.3.26 = {
+	monarch = {
+		name = "Томас"
+		dynasty = "ойль Ильмава"
+		adm = 3
+		dip = 1
+		mil = 1
+		birth_date = 523.1.1
+	}
+}
+
+800.1.1 = {
+	government = constitutional_republic
+	government_rank = 1
+	monarch = {
+		name = "(Статхарнт)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+850.1.1 = {
+	monarch = {
+		name = "(Комитет Национального Спасения)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+869.6.28 = {
+	government = republican_dictatorship
+	monarch = {
+		name = "Альбош Рангодув"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+880.1.1 = {
+	government = constitutional_republic
+	monarch = {
+		name = "(Статхарнт)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

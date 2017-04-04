@@ -1,0 +1,82 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = ellar_tech
+primary_culture = yellow
+religion = astransenit
+capital = 1105
+fixed_capital = 1105
+
+458.1.1 = {
+	monarch = {
+		name = "Эрик"
+		dynasty = "Хаунфеллис"
+		adm = 4
+		dip = 1
+		mil = 1
+		birth_date = 396.1.1
+	}
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих"
+		dynasty = "Хаунфеллис"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 426.1.1
+		death_date = 493.2.23
+	}
+}
+
+# В 468 году владения Хаунфеллис захвачены Дерхельмом
+# Возвращены только 566.3.11
+
+467.1.11 = {
+	government = absolute_monarchy
+	monarch = {
+		name = "Генрих"
+		dynasty = "Хаунфеллис"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 426.1.1
+	}
+	heir = {
+		name = "Олаф"
+		monarch_name = "Олаф II"
+		dynasty = "Хаунфеллис"
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 0
+		birth_date = 457.1.1
+		death_date = 531.2.4
+	}
+}
+
+493.2.23 = {
+	monarch = {
+		name = "Олаф II"
+		dynasty = "Хаунфеллис"
+		adm = 3
+		dip = 1
+		mil = 0
+		birth_date = 457.1.1
+	}
+}
+
+# 493 - 547 - нет известных законных правителей
+
+547.1.1 = {
+	religion = helgarn
+	monarch = {
+		name = "Карл"
+		dynasty = "Хаунфеллис"
+		adm = 2
+		dip = 3
+		mil = 4
+		birth_date = 527.1.1
+	}
+}
+
+# После смерти в 568-ом Хаунфелл наследуется Хаунфеллисами в Таберинии

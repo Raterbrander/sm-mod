@@ -1,0 +1,9 @@
+government = fascist_dictatorship
+technology_group = continental
+primary_culture = malishian # arulavahian
+religion = tolerance
+capital = 868
+
+482.1.2 = { decision = rename_482 }
+
+867.6.26 = { decision = rename_2013 }

@@ -1,0 +1,128 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = tardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 1101
+fixed_capital = 1101
+
+100.1.1 = { decision = abolish_slavery }
+
+474.5.3 = {
+	monarch = {
+		name = "Генрих"
+		dynasty = "Койобург-Геттас"
+		adm = 3
+		dip = 1
+		mil = 1
+		birth_date = 434.1.1
+	}
+	heir = {
+		name = "Рихард"
+		monarch_name = "Рихард"
+		dynasty = "Койобург-Геттас"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 458.1.1
+		death_date = 525.10.12
+	}
+}
+
+507.3.15 = {
+	monarch = {
+		name = "Рихард"
+		dynasty = "Койобург-Геттас"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 458.1.1
+	}
+	heir = {
+		name = "Эрран"
+		monarch_name = "Эрран"
+		dynasty = "Койобург-Геттас"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 480.1.1
+		death_date = 534.1.21
+	}
+}
+
+525.10.12 = {
+	monarch = {
+		name = "Эрран"
+		dynasty = "Койобург-Геттас"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 480.1.1
+	}
+	heir = {
+		name = "Готтфрид"
+		monarch_name = "Готтфрид"
+		dynasty = "Койобург-Геттас"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 506.1.1
+		death_date = 545.1.23
+	}
+}
+
+531.1.1 = { government = absolute_monarchy }
+
+534.1.21 = {
+	monarch = {
+		name = "Готтфрид"
+		dynasty = "Койобург-Геттас"
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 506.1.1
+	}
+}
+
+535.1.1 = {
+	heir = {
+		name = "Тельмунд"
+		monarch_name = "Тельмунд"
+		dynasty = "Койобург-Геттас"
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+		birth_date = 535.1.1
+		death_date = 603.1.1
+	}
+}
+
+541.5.22 = { religion = helgarn }
+
+545.1.23 = {
+	monarch = {
+		name = "Тельмунд"
+		dynasty = "Койобург-Геттас"
+		adm = 1
+		dip = 2
+		mil = 1
+		birth_date = 535.1.1
+	}
+}
+
+569.1.1 = { decision = abolish_serfdom }
+
+574.7.24 = {
+	government = people_provisional_government
+	monarch = {
+		name = "(Революционное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

@@ -1,0 +1,48 @@
+government = despotic_monarchy
+government_rank = 1
+technology_group = ellar_tech
+primary_culture = arvabian
+religion = astransenit
+capital = 370
+
+445.3.8 = {
+	monarch = {
+		name = "ֲאכüסונה"
+		dynasty = "״ויכאם"
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+	heir = {
+		name = "ְיהוכפמנס"
+		monarch_name = "ְיהוכפמנס"
+		dynasty = "״ויכאם"
+		birth_date = 424.10.14
+		death_date = 469.9.28
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+456.7.16 = {
+	monarch = {
+		name = "ְיהוכפמנס"
+		dynasty = "״ויכאם"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+	heir = {
+		name = "ֳüמנד"
+		monarch_name = "ֳüמנד"
+		dynasty = "״ויכאם"
+		birth_date = 438.1.28
+		death_date = 461.6.11
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}

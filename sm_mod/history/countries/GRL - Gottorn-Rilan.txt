@@ -1,0 +1,134 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 999
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Фредерик"
+		dynasty = "Готторн-Рилан"
+		adm = 2
+		dip = 4
+		mil = 1
+		birth_date = 429.1.1
+	}
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл V"
+		dynasty = "Готторн-Рилан"
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+		birth_date = 451.1.1
+		death_date = 518.9.25
+	}
+}
+
+500.1.30 = {
+	monarch = {
+		name = "Карл V"
+		dynasty = "Готторн-Рилан"
+		adm = 3
+		dip = 5
+		mil = 2
+		birth_date = 451.1.1
+	}
+	heir = {
+		name = "Фердинант"
+		monarch_name = "Фердинант"
+		dynasty = "Готторн-Рилан"
+		claim = 95
+		adm = 5
+		dip = 6
+		mil = 3
+		birth_date = 476.1.1
+		death_date = 533.2.3
+	}
+}
+
+518.9.25 = {
+	monarch = {
+		name = "Фердинант"
+		dynasty = "Готторн-Рилан"
+		adm = 5
+		dip = 6
+		mil = 3
+		birth_date = 476.1.1
+	}
+	heir = {
+		name = "Эрнст"
+		monarch_name = "Готторн-Рилан"
+		dynasty = "Готторн-Рилан"
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+		birth_date = 502.1.1
+		death_date = 540.3.14
+	}
+}
+
+530.1.1 = { government = absolute_monarchy }
+
+533.2.3 = {
+	monarch = {
+		name = "Готторн-Рилан"
+		dynasty = "Готторн-Рилан"
+		adm = 2
+		dip = 3
+		mil = 1
+		birth_date = 502.1.1
+	}
+}
+
+540.3.14 = {
+	monarch = {
+		name = "Карл VI"
+		dynasty = "Готторн-Рилан"
+		adm = 4
+		dip = 3
+		mil = 2
+		birth_date = 491.1.1
+	}
+}
+
+548.1.11 = {
+	religion = helgarn
+	monarch = {
+		name = "Рихард"
+		dynasty = "Готторн-Рилан"
+		adm = 3
+		dip = 4
+		mil = 1
+		birth_date = 502.4.23
+	}
+	heir = {
+		name = "Дейдор"
+		monarch_name = "Дейдор"
+		dynasty = "Готторн-Рилан"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+		birth_date = 524.1.1
+		death_date = 571.5.6
+	}
+}
+
+568.1.1 = { decision = abolish_serfdom }
+
+570.1.12 = {
+	monarch = {
+		name = "Дейдор"
+		dynasty = "Готторн-Рилан"
+		adm = 2
+		dip = 2
+		mil = 1
+		birth_date = 524.1.1
+	}
+}

@@ -1,0 +1,9 @@
+government = socialist_state
+technology_group = amian
+primary_culture = brintenian
+religion = tolerance
+capital = 449
+
+#1422.8.12 obr
+
+#1444.9.13 likv

@@ -1,0 +1,13 @@
+primary_culture = kro_greek # Временно
+religion = orthodox
+government = absolute_monarchy
+government_rank = 3
+technology_group = continental
+capital = 642
+
+100.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+930.9.25 = { government = constitutional_monarchy }

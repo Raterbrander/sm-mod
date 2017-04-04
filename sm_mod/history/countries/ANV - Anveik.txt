@@ -1,0 +1,93 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = mescil
+religion = miscilian_pagan
+technology_group = ellar_tech
+capital = 952
+fixed_capital = 952
+
+10.1.1 = {
+	decision = abolish_slavery
+	#decision = abolish_serfdom
+	# Ограниченное крепостное право на территории марки, свободно применявшееся позднее
+}
+
+# Анвейкская марка Мисцилии
+452.1.1 = {
+	monarch = {
+		name = "Николас"
+		dynasty = "Сильмурис"
+		adm = 4
+		dip = 2
+		mil = 5
+		birth_date = 398.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
+	heir = {
+		name = "Крестофф"
+		monarch_name = "Крестофф"
+		dynasty = "Анвейк"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 427.1.1
+		death_date = 483.2.14
+	}
+	add_heir_personality = tactical_genius_personality
+}
+
+# В ходе второй великой смуты и феодальной войны отделяется от Мисцилии
+# 462-463 - безуспешное участие в феодальной войне
+# 463 - поглощение западных орденских владений (в ходе мисцильский войн)
+461.5.27 = {
+	monarch = {
+		name = "Крестофф"
+		dynasty = "Анвейк"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 427.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = strict_personality
+	heir = {
+		name = "Энрик"
+		monarch_name = "Энрик"
+		dynasty = "Анвейк"
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 452.1.1
+		death_date = 511.1.11
+	}
+}
+
+483.2.14 = {
+	monarch = {
+		name = "Энрик"
+		dynasty = "Анвейк"
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 452.1.1
+	}
+}
+
+# Din s Senvariei 1475.5.7, glavnii v unii s 1484.6.24
+484.1.23 = {
+	heir = {
+		name = "Маттис"
+		monarch_name = "Маттис"
+		dynasty = "Анвейк"
+		birth_date = 484.1.23
+		death_date = 555.5.2
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}

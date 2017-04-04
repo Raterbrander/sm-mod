@@ -1,0 +1,63 @@
+government = constitutional_republic
+#mercantilism = 0.1
+technology_group = domin_group
+primary_culture = domin
+religion = tolerance
+capital = 64
+
+2013.1.1 = { primary_culture = dominionian }
+
+2013.5.1 = {
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+2013.5.4 = {
+	monarch = {
+		name = "Кося"
+		dynasty = "Косевич"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+2013.6.1 = {
+	technology_group = high_domin
+	capital = 74
+}
+
+#2013.8.10 = { technology_group = continental }
+#
+#2014.1.1 = { technology_group = imperial_group }
+
+2014.1.1 = { 
+	leader = {	
+		name = "Корд"	
+		type = general	
+		rank = 2	
+		fire = 1	
+		shock = 3	
+		manuever = 3
+		siege = 1
+		death_date = 2014.8.1	
+	} 
+}
+
+#2015.1.1 = { technology_group = continental }
+
+2015.9.17 = {
+	government = constitutional_monarchy 
+	monarch = {
+		name = "Кортилиан I"
+		dynasty = "Кортилиан"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

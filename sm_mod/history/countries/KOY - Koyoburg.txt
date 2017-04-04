@@ -1,0 +1,48 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = tardian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 1102
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Иофрид"
+		dynasty = "Койобург"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 406.1.1
+	}
+	heir = {
+		name = "Франц"
+		monarch_name = "Франц IV"
+		dynasty = "Койобург"
+		claim = 50
+		adm = 3
+		dip = 1
+		mil = 1
+		birth_date = 434.1.1
+		death_date = 500.5.7
+	}
+}
+
+# 474.2.21 - смерть Иофрида Койобурга
+474.2.21 = {
+	monarch = {
+		name = "Франц IV"
+		dynasty = "Койобург"
+		adm = 3
+		dip = 1
+		mil = 1
+		birth_date = 434.1.1
+	}
+}
+
+# 474.5.3 - раздел страны
+
+541.4.6 = { religion = helgarn }
+
+#570.1.1 = { decision = abolish_serfdom }

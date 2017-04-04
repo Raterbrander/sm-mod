@@ -1,0 +1,111 @@
+# Чаепитие "2"
+# В /см/-моде и СРЧ, и королевство 2015-ого рассматриваются как эта страна
+
+government = chaepitian_monarchy # constitutional_monarchy
+government_rank = 2 # Королевство
+primary_culture = chaepitian
+religion = tolerance
+technology_group = continental
+capital = 420
+
+2013.2.23 = {
+	monarch = {
+		name = "Лайд"
+		dynasty = "Смешвебович"	
+		adm = 3
+		dip = 2
+		mil = 2
+		leader = {
+			name = "Лайд Смешвебович"
+			type = general
+			rank = 1
+			fire = 2
+			shock = 1
+			manuever = 1
+			siege = 4
+		}
+	}
+	set_country_flag = lyd_CH2
+}
+
+2013.2.23 = {
+	leader = {
+		name = "Рогатулыч кос Палпатин"
+		type = general
+		rank = 3
+		fire = 4
+		shock = 5
+		manuever = 6
+		siege = 4
+		#birth_date = 1981.2.1
+		death_date = 2015.12.12
+	}
+}
+
+2013.7.15 = { historical_friend = NGI }
+
+# Во второй половине 2014-ого Лайд неактив, 
+# поэтому СРЧ становится республикой под Рогом
+2014.5.1 = {
+	monarch = {
+		name = "Рогатулыч"
+		dynasty = "кос Палпатин"
+		birth_date = 1981.2.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	#government = constitutional_republic
+}
+
+# Раздел и уничтожение СРЧ
+2014.8.14 = {
+	monarch = {
+		name = "(Interregnum)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	capital = 403
+}
+
+# Кратковременное возрождение СРЧ
+2014.11.19 = {
+	monarch = {
+		name = "Рогатулыч"
+		dynasty = "кос Палпатин"
+		birth_date = 1981.2.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+# Чайная республика
+2014.12.14 = {
+	monarch = {
+		name = "Мар"
+		dynasty = "де Голь"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+2014.12.26 = { government = constitutional_monarchy government_rank = 3 }
+# Провозглашение СИЧ
+
+# Королевство Чаепития - реставрация
+2015.1.11 = {
+	monarch = {
+		name = "Диал XVII"
+		dynasty = "Диалид"
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	government_rank = 2
+}
+

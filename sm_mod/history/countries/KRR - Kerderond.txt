@@ -1,0 +1,42 @@
+government = absolute_monarchy
+government_rank = 1
+technology_group = ellar_tech
+primary_culture = yellow
+religion = ellar_pagan
+capital = 580
+fixed_capital = 580
+
+458.1.1 = {
+	monarch = {
+		name = "Готтфрид IV"
+		dynasty = "Келейдарис"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 421.1.1
+	}
+	heir = {
+		name = "Ормонт"
+		monarch_name = "Ормонт III"
+		dynasty = "Келейдарис"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 445.1.1
+		death_date = 504.1.1
+	}
+}
+
+493.4.23 = {
+	monarch = {
+		name = "Ормонт III"
+		dynasty = "Келейдарис"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 445.1.1
+	}
+}
+
+# 497.3.30 -  захват Змооромфами

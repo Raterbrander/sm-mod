@@ -1,0 +1,19 @@
+government = free_city_confederation
+government_rank = 1
+technology_group = ellar_tech
+religion = tolerance
+primary_culture = gottardian
+capital = 1038
+fixed_capital = 1038
+
+100.1.1 = {
+	monarch = {
+		name = "(Бальфское собрание)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}

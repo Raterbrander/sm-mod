@@ -1,0 +1,18 @@
+government = communist_dictatorship # AM_clan_rep
+#government_rank = 2
+primary_culture = dobroshar_culture
+religion = tolerance
+technology_group = amian
+capital = 591
+
+historical_friend = AGA
+
+2012.1.1 = {
+	monarch = {
+		name = "Эрнан"
+		dynasty = "фон Роликист"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

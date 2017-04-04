@@ -1,0 +1,30 @@
+government = enlightened_despotism
+government_rank = 3
+technology_group = continental
+religion = tolerance
+primary_culture = ausger
+capital = 435
+
+historical_friend = KRO
+historical_friend = ASM
+
+100.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+2013.7.5 = {
+	government = enlightened_despotism
+	monarch = {
+		name = "Лосьоптимист"
+		dynasty = "Гогенцоллерн-Романов-Бурбон-Валуа-Глюксбург-Саксен Кобург де Гота-Габсбург Лорд Веллингтон фон Кримс ван Маар де Луа д'Опеан цу Риксайц О'Релли МакДональд Тишпан ду Ксан душ Вакс"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 1991.1.3
+	}
+}
+
+2013.9.20 = { changed_tag_from = SWI } 
+
+# 2 октября - Большая Монархическая зачистка

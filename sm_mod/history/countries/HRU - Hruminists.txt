@@ -1,0 +1,40 @@
+government = AM_clan
+government_rank = 3
+primary_culture = amian
+religion = ameism
+technology_group = amian
+capital = 966
+
+elector = yes
+
+historical_rival = KRN
+historical_rival = SIN
+
+10.1.1 = {
+	set_hre_religion = ameism
+	set_hre_religion_locked = yes
+}
+
+458.1.1 = {
+	monarch = {
+		name = "’рюмин"
+		dynasty = "’рюминский"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 426.10.18
+	}
+}
+
+482.1.2 = {
+	elector = no
+	dismantle_hre = yes
+	monarch = {
+		name = "якоб"
+		dynasty = "’рюминский"
+		adm = 2
+		dip = 3
+		mil = 2
+		birth_date = 448.5.27
+	}
+}

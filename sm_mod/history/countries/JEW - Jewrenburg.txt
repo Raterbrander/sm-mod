@@ -1,0 +1,91 @@
+government = administrative_monarchy
+government_rank = 1
+technology_group = ellar_tech
+religion = jewish
+primary_culture = tardian
+add_accepted_culture = yellow
+capital = 931
+fixed_capital = 931
+
+435.5.14 = {
+	monarch = {
+		name = "Давид"
+		dynasty = "вон Джевренбург"
+		adm = 4
+		dip = 6
+		mil = 3
+	}
+}
+
+447.5.16 = {
+	monarch = {
+		name = "Израэль II"
+		dynasty = "вон Джевренбург"
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 902.1.1
+	}
+	heir = {
+		name = "Фислер"
+		monarch_name = "Фислер"
+		dynasty = "вон Джевренбург"
+		claim = 95
+		adm = 6
+		dip = 6
+		mil = 2
+		birth_date = 446.9.11
+		death_date = 470.3.23
+	}
+}
+
+464.12.16 = {
+	monarch = {
+		name = "Фислер"
+		dynasty = "вон Джевренбург"
+		adm = 6
+		dip = 6
+		mil = 2
+		birth_date = 446.9.11
+	}
+}
+
+470.1.26 = {
+	heir = {
+		name = "Маркел"
+		monarch_name = "Маркел II"
+		dynasty = "вон Джевренбург"
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 470.1.26
+		death_date = 538.10.30
+	}
+}
+
+493.9.3 = {
+	monarch = {
+		name = "Маркел II"
+		dynasty = "вон Джевренбург"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 470.1.26
+	}
+}
+
+506.1.1 = {
+	government = oligarchic_republic
+	monarch = {
+		name = "(Восемь семей)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+570.1.1 = { religion = tolerance }
+
+572.1.1 = { decision = abolish_slavery }

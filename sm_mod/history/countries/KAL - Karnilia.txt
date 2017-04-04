@@ -1,0 +1,39 @@
+primary_culture = smeshesfongs
+religion = totemism
+government = feudal_monarchy
+government_rank = 2
+technology_group = middle_land_group
+capital = 99
+
+458.1.1 = {
+	monarch = {
+		name = "Ольбрахт II"
+		dynasty = "Карнилиен"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 404.1.1
+	}
+	heir = {
+		name = "Карнилия"
+		monarch_name = "Карнилия II"
+		dynasty = "Карнилиен"
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 1
+		birth_date = 444.8.31
+		death_date = 501.12.19
+	}
+}
+
+481.6.10 = {
+	monarch = {
+		name = "Карнилия II"
+		dynasty = "ди Болхоран"
+		adm = 4
+		dip = 5
+		mil = 1
+		birth_date = 444.8.31
+	}
+}

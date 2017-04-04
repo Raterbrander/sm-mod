@@ -1,0 +1,33 @@
+government = oligarchic_republic
+government_rank = 2
+technology_group = southern # rolevik? middle_land_group? rantayzian_group?
+religion = solaris_religion
+primary_culture = ardenian
+capital = 515
+
+historical_rival = CHT
+historical_friend = SHK
+
+# Историю надо будет прописать потом.
+# Лоре
+
+100.1.1 = {
+	decision = abolish_slavery
+	decision = no_serfdom_for_primary_culture
+}
+
+200.1.1 = {
+	monarch = {
+		name = "(Высший Совет)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+650.1.1 = {
+	government = constitutional_republic
+	religion = tolerance
+	decision = abolish_serfdom
+}
