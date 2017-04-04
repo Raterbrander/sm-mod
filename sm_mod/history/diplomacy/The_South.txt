@@ -1,0 +1,62 @@
+alliance = {
+	first = CHT
+	second = UTN
+	start_date = 458.1.1
+	end_date = 597.1.1
+}
+
+alliance = {
+	first = SHK
+	second = ADN
+	start_date = 458.10.18
+	end_date = 485.1.10
+}
+
+vassal = {
+	first = ADN
+	second = LAV
+	start_date = 472.5.7
+	end_date = 485.1.10
+}
+
+vassal = {
+	first = ADN
+	second = SPM
+	start_date = 472.4.25
+	end_date = 476.5.12
+}
+
+vassal = {
+	first = UTN
+	second = KST
+	start_date = 458.1.1
+	end_date = 627.3.27
+}
+
+vassal = {
+	first = EOY
+	second = KST
+	start_date = 627.3.28
+	end_date = 639.1.1
+}
+
+vassal = {
+	first = SUM
+	second = DVI
+	start_date = 300.1.1
+	end_date = 804.3.25
+}
+
+vassal = {
+	first = DRA
+	second = DVI
+	start_date = 804.3.25
+	end_date = 805.5.5
+}
+
+vassal = {
+	first = DMF
+	second = DVI
+	start_date = 805.5.5
+	end_date = 879.7.10
+}

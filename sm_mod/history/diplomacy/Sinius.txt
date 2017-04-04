@@ -1,0 +1,27 @@
+alliance = {
+	first = SIN
+	second = KRN
+	start_date = 380.1.1
+	end_date = 549.4.6
+}
+
+alliance = {
+	first = SIN
+	second = ZMR
+	start_date = 538.1.1
+	end_date = 549.4.6
+}
+
+alliance = {
+	first = VSK
+	second = ZMR
+	start_date = 549.4.6
+	end_date = 585.5.26
+}
+
+alliance = {
+	first = VSK
+	second = ELL
+	start_date = 583.5.24
+	end_date = 585.5.26
+}

@@ -1,0 +1,13 @@
+union = {
+	first = ILM
+	second = NOB
+	start_date = 510.1.24
+	end_date = 518.9.24
+}
+
+vassal = {
+	first = ILM
+	second = SLR
+	start_date = 517.9.26
+	end_date = 518.9.24
+}

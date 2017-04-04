@@ -1,0 +1,6 @@
+vassal = {
+	first = ASR
+	second = BRD
+	start_date = 453.7.15
+	end_date = 482.1.2
+}

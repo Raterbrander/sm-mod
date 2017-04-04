@@ -1,0 +1,59 @@
+# Clans 2012
+vassal = {
+	first = AL1
+	second = RLH
+	start_date = 458.1.1
+	end_date = 483.5.22
+}
+
+vassal = {
+	first = AL1
+	second = AML
+	start_date = 458.1.1
+	end_date = 555.4.10
+}
+
+vassal = {
+	first = AL1
+	second = AML
+	start_date = 557.4.24
+	end_date = 596.7.13
+}
+
+union = {
+	first = AML
+	second = AL1
+	start_date = 555.4.11
+	end_date = 557.4.23
+}
+
+vassal = {
+	first = AL1
+	second = SNS
+	start_date = 458.1.1
+	end_date = 567.5.24
+}
+
+vassal = {
+	first = AL1
+	second = RTR
+	start_date = 458.1.1
+	end_date = 596.7.13
+}
+
+vassal = {
+	first = AL1
+	second = BDR
+	start_date = 458.1.1
+	end_date = 596.7.13
+}
+
+# Clans 2014
+# -
+
+vassal = {
+	first = GDR
+	second = LTP
+	start_date = 532.7.25
+	end_date = 559.11.21
+}

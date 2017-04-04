@@ -1,0 +1,30 @@
+# Ñîşçû Şãà
+# ÄØ-ÀÌÃÀ
+alliance = {
+	first = DSH
+	second = AGA
+	start_date = 2013.1.1
+	end_date = 2013.7.1
+}
+
+# ÄØ è ÀÌÃÀ â ñîñòàâå ÑĞ×
+vassal = { # march
+	first = CH2
+	second = DSH
+	start_date = 2013.5.1
+	end_date = 2013.7.1
+}
+
+vassal = {
+	first = CH2
+	second = AGA
+	start_date = 2013.6.13
+	end_date = 2013.7.1
+}
+
+alliance = {
+	first = UOS
+	second = CH2
+	start_date = 2013.7.1
+	end_date = 2014.1.1
+}

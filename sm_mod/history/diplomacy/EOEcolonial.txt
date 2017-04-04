@@ -1,0 +1,26 @@
+###########################
+# Колонии и сателлиты ИЖ
+###########################
+# Картевальская Утения
+march = {
+	first = EOY
+	second = KTN
+	start_date = 820.4.21
+	end_date = 2500.1.1
+}
+
+# ФРЗЧ
+march = {
+	first = EOY
+	second = FRC
+	start_date = 889.1.1
+	end_date = 2500.1.1
+}
+
+# Марионеточный режим в Нагоре
+#vassal = {
+#	first = EOY
+#	second = NGO
+#	start_date = 2013.6.30
+#	end_date = 2013.7.2
+#}

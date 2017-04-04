@@ -1,0 +1,41 @@
+vassal = {
+	first = NGR
+	second = TCH
+	start_date = 458.1.1
+	end_date = 634.1.1
+}
+
+guarantee = {
+	first = NGR
+	second = CH3
+	start_date = 458.1.1
+	end_date = 543.2.11
+}
+
+guarantee = {
+	first = NHN
+	second = CH3
+	start_date = 458.1.1
+	end_date = 543.2.11
+}
+
+vassal = {
+	first = CH2
+	second = BLU
+	start_date = 781.2.23
+	end_date = 1000.1.1
+}
+
+protectorate = {
+	first = EOY
+	second = BLU
+	start_date = 632.8.2
+	end_date = 635.1.1
+}
+
+vassal = {
+	first = NHN
+	second = BLU
+	start_date = 635.1.1
+	end_date = 700.1.1
+}

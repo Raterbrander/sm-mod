@@ -1,0 +1,20 @@
+alliance = {
+	first = NKF
+	second = SRM
+	start_date = 2013.4.18
+	end_date = 2014.1.1
+}
+
+guarantee = {
+	first = SRM
+	second = NKF
+	start_date = 2013.4.18
+	end_date = 2013.7.1
+}
+
+vassal = {
+	first = SRM
+	second = KLS
+	start_date = 2013.6.28
+	end_date = 2013.7.8
+}

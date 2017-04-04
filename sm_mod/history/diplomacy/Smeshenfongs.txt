@@ -1,0 +1,135 @@
+vassal = {
+	first = IRL
+	second = NRL
+	start_date = 458.1.1
+	end_date = 495.4.16
+}
+
+royal_marriage = {
+	first = MSC
+	second = KAL
+	start_date = 431.7.12
+	end_date = 457.11.22
+}
+
+alliance = {
+	first = MSC
+	second = KAL
+	start_date = 431.7.12
+	end_date = 457.11.22
+}
+
+alliance = {
+	first = KRO
+	second = SWI
+	start_date = 2013.7.15
+	end_date = 2013.8.9
+}
+
+# Линтапия
+protectorate = {
+	first = EOY
+	second = LTP
+	start_date = 2013.6.20
+	end_date = 2013.7.8
+}
+
+protectorate = {
+	first = ORD
+	second = LTP
+	start_date = 2013.7.8
+	end_date = 2013.7.12
+}
+
+vassal = {
+	first = ORD
+	second = LTP
+	start_date = 2013.7.12
+	end_date = 2013.7.20
+}
+
+protectorate = {
+	first = SME
+	second = LTP
+	start_date = 2013.8.6
+	end_date = 2013.8.11
+}
+
+vassal = {
+	first = ORD
+	second = LTP
+	start_date = 2013.8.11
+	end_date = 2013.8.12
+}
+
+# Линтапия и Меренмар
+union = {
+	first = LTP
+	second = MMA
+	start_date = 2013.4.15
+	end_date = 2013.4.20
+}
+
+union = {
+	first = LTP
+	second = MMA
+	start_date = 2013.4.23
+	end_date = 2013.5.1
+}
+
+vassal = {
+	first = MSC
+	second = SDB
+	start_date = 400.1.1
+	end_date = 462.2.20
+}
+
+vassal = {
+	first = MSC
+	second = NMD
+	start_date = 427.1.1
+	end_date = 462.2.20
+}
+
+vassal = {
+	first = MSC
+	second = ERG
+	start_date = 427.1.1
+	end_date = 462.2.20
+}
+
+vassal = { # march
+	first = MSC
+	second = ANV
+	start_date = 425.1.1
+	end_date = 462.2.24
+}
+
+# Вассальные Англо-смешские племена
+vassal = {
+	first = MSC
+	second = ANG
+	start_date = 458.1.1
+	end_date = 462.6.1
+}
+
+vassal = {
+	first = MSC
+	second = NSM
+	start_date = 458.1.1
+	end_date = 462.6.1
+}
+
+vassal = {
+	first = KAL
+	second = ANG
+	start_date = 466.1.1
+	end_date = 479.6.1
+}
+
+vassal = {
+	first = KAL
+	second = NSM
+	start_date = 466.1.1
+	end_date = 479.6.1
+}

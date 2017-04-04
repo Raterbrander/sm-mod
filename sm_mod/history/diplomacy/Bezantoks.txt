@@ -1,0 +1,48 @@
+union = {
+	first = ANV
+	second = EMI
+	start_date = 527.6.12
+	end_date = 599.3.24 # Донисмхольский акт
+}
+
+vassal = {
+	first = ANV
+	second = NMD
+	start_date = 542.1.1
+	end_date = 600.1.1
+}
+
+march = {
+	first = ENH
+	second = IML
+	start_date = 458.1.1
+	end_date = 508.7.29
+}
+
+march = {
+	first = ENH
+	second = LRT
+	start_date = 458.1.1
+	end_date = 508.7.29
+}
+
+march = {
+	first = ENH
+	second = LFG
+	start_date = 458.1.1
+	end_date = 508.7.29
+}
+
+royal_marriage = {
+	first = ENH
+	second = RBZ
+	start_date = 458.2.21
+	end_date = 484.3.21
+}
+
+alliance = {
+	first = ENH
+	second = RBZ
+	start_date = 458.2.21
+	end_date = 508.7.29
+}

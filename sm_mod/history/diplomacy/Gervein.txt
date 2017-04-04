@@ -1,0 +1,182 @@
+# Члены
+vassal = {
+	first = RDT
+	second = VNR
+	start_date = 458.1.1
+	end_date = 464.1.1
+}
+
+vassal = {
+	first = RDT
+	second = AIL
+	start_date = 458.1.1
+	end_date = 464.1.1
+}
+
+alliance = {
+	first = RDT
+	second = KRG
+	trade_league = 1
+	start_date = 458.1.1
+	end_date = 464.1.1
+}
+
+vassal = {
+	first = VNR
+	second = RDT
+	start_date = 464.1.1
+	end_date = 478.10.16
+}
+
+vassal = {
+	first = VNR
+	second = AIL
+	start_date = 464.1.1
+	end_date = 478.10.16
+}
+
+alliance = {
+	first = VNR
+	second = KRG
+	trade_league = 1
+	start_date = 464.1.1
+	end_date = 478.10.16
+}
+
+vassal = {
+	first = RDT
+	second = KRT
+	start_date = 458.1.1
+	end_date = 464.1.1
+}
+
+vassal = {
+	first = VNR
+	second = KRT
+	start_date = 464.1.1
+	end_date = 478.10.16
+}
+
+vassal = {
+	first = RDT
+	second = OLN
+	start_date = 458.1.1
+	end_date = 464.1.1
+}
+
+vassal = {
+	first = VNR
+	second = OLN
+	start_date = 464.1.1
+	end_date = 478.10.16
+}
+
+vassal = {
+	first = RDT
+	second = INT
+	start_date = 458.1.1
+	end_date = 464.1.1
+}
+
+vassal = {
+	first = VNR
+	second = INT
+	start_date = 464.1.1
+	end_date = 478.10.16
+}
+
+# Ассоциированные члены
+alliance = {
+	first = RDT
+	second = TNL
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 457.10.22
+}
+
+alliance = {
+	first = RDT
+	second = LRK
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 464.1.1
+}
+
+alliance = {
+	first = VNR
+	second = LRK
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 478.10.16
+}
+
+alliance = {
+	first = RDT
+	second = BKN
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 464.1.1
+}
+
+alliance = {
+	first = VNR
+	second = BKN
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 476.1.27
+}
+
+alliance = {
+	first = RDT
+	second = HSV
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 464.1.1
+}
+
+alliance = {
+	first = VNR
+	second = HSV
+	trade_league = 1
+	start_date = 400.1.1
+	end_date = 476.1.27
+}
+
+alliance = {
+	first = GRV
+	second = HSV
+	trade_league = 1
+	start_date = 476.1.27
+	end_date = 482.6.4
+}
+
+# Отношения после унификации
+alliance = {
+	first = GRV
+	second = LRK
+	start_date = 478.11.2
+	end_date = 479.3.16
+}
+
+alliance = {
+	first = GRV
+	second = KRG
+	trade_league = 1
+	start_date = 478.10.16
+	end_date = 482.6.4
+}
+
+alliance = {
+	first = GRV
+	second = BKN
+	start_date = 478.4.4
+	end_date = 480.3.6
+}
+
+# Прочее
+guarantee = {
+	first = YAL
+	second = RDT
+	start_date = 458.1.1
+	end_date = 463.9.3
+}

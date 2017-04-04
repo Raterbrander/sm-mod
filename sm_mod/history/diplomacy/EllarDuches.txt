@@ -1,0 +1,319 @@
+# Main Ellaria
+union = {
+	first = SMF
+	second = TBS
+	start_date = 459.1.16
+	end_date = 576.4.6
+}
+
+alliance = {
+	first = SVL
+	second = SMF
+	start_date = 456.10.4
+	end_date = 461.3.7
+}
+
+vassal = {
+	first = SMF
+	second = SVL
+	start_date = 461.3.7
+	end_date = 567.3.11
+}
+
+vassal = {
+	first = SMF
+	second = KNV
+	start_date = 468.3.5
+	end_date = 565.1.5
+}
+
+vassal = {
+	first = TBS
+	second = VKN
+	start_date = 517.1.1
+	end_date = 519.6.27
+}
+
+vassal = {
+	first = TBS
+	second = VRU
+	start_date = 508.6.1
+	end_date = 564.3.4
+}
+
+#vassal = {
+#	first = WDS
+#	second = ERC
+#	start_date = 950.1.1
+#	end_date = 465.12.19
+#}
+#
+#royal_marriage = {
+#	first = ERC
+#	second = ERT
+#	start_date = 456.6.14
+#	end_date = 465.12.19
+#}
+
+royal_marriage = {
+	first = WDS
+	second = ERT
+	start_date = 465.12.19
+	end_date = 468.3.21
+}
+
+vassal = {
+	first = TBS
+	second = WDS
+	start_date = 533.6.1
+	end_date = 540.6.24
+}
+
+vassal = {
+	first = SMF
+	second = WDS
+	start_date = 540.6.24
+	end_date = 576.4.6
+}
+
+alliance = {
+	first = SMF
+	second = TBS
+	start_date = 200.1.1
+	end_date = 459.1.16
+}
+
+march = {
+	first = SMF
+	second = TND
+	start_date = 482.1.2
+	end_date = 576.4.6
+}
+
+march = {
+	first = ELL
+	second = TND
+	start_date = 576.4.6
+	end_date = 594.2.12
+}
+
+march = {
+	first = EOY
+	second = TND
+	start_date = 594.2.12
+	end_date = 787.5.1
+}
+
+vassal = {
+	first = SMF
+	second = LDR
+	start_date = 471.1.1
+	end_date = 576.4.6
+}
+
+vassal = {
+	first = SMF
+	second = RDL
+	start_date = 463.1.1
+	end_date = 573.6.11
+}
+
+union = {
+	first = TND
+	second = TRU
+	start_date = 558.4.16
+	end_date = 787.5.1
+}
+
+union = {
+	first = EOY
+	second = TRU
+	start_date = 787.5.1
+	end_date = 9000.1.1
+}
+
+vassal = {
+	first = TBS
+	second = BLF
+	start_date = 481.1.1
+	end_date = 529.5.21
+}
+
+union = {
+	first = TND
+	second = TED
+	start_date = 420.1.1
+	end_date = 487.1.13
+}
+
+union = {
+	first = SMF
+	second = TED
+	start_date = 487.1.14
+	end_date = 576.4.8
+}
+
+union = {
+	first = ELL
+	second = TED
+	start_date = 576.4.8
+	end_date = 582.5.19
+}
+
+alliance = {
+	first = HLC
+	second = ZMR
+	start_date = 479.6.1
+	end_date = 532.1.1 # ?
+}
+
+vassal = {
+	first = TBS
+	second = JEW
+	start_date = 470.6.21
+	end_date = 482.1.1
+}
+
+vassal = {
+	first = TBS
+	second = JEW
+	start_date = 534.3.2
+	end_date = 574.4.16
+}
+
+vassal = {
+	first = SMF
+	second = BAK
+	start_date = 571.4.7
+	end_date = 576.4.6
+}
+
+vassal = {
+	first = ELL
+	second = BAK
+	start_date = 576.4.6
+	end_date = 576.5.17
+}
+
+guarantee = {
+	first = ELL
+	second = ALN
+	start_date = 576.9.22
+	end_date = 578.5.19
+}
+
+vassal = {
+	first = ELL
+	second = ALN
+	start_date = 578.5.19
+	end_date = 579.11.3 
+}
+
+vassal = {
+	first = ZMR
+	second = TLV
+	start_date = 458.1.1
+	end_date = 475.8.11
+}
+
+vassal = {
+	first = ZMR
+	second = TRB
+	start_date = 568.12.7
+	end_date = 579.1.1
+}
+
+march = {
+	first = ZMR
+	second = TRB
+	start_date = 579.1.2
+	end_date = 589.3.17
+}
+
+
+vassal = {
+	first = ZMR
+	second = VNB
+	start_date = 489.3.21
+	end_date = 554.5.4
+}
+
+union = {
+	first = SMF
+	second = VNB
+	start_date = 560.2.16
+	end_date = 571.6.21
+}
+
+# Arvabia
+#vassal = {
+#	first = TED
+#	second = RTZ
+#	start_date = 380.1.1
+#	end_date = 458.11.28
+#}
+
+#vassal = {
+#	first = RDT
+#	second = RTZ
+#	start_date = 462.4.16
+#	end_date = 468.10.3
+#}
+
+vassal = {
+	first = ZMR
+	second = RTZ
+	start_date = 468.10.3 # 469.9.28
+	end_date = 473.6.16
+}
+
+
+royal_marriage = {
+	first = HFL
+	second = TBR
+	start_date = 458.1.1
+	end_date = 468.2.21
+}
+
+royal_marriage = {
+	first = HFL
+	second = TBR
+	start_date = 566.3.11
+	end_date = 568.2.3
+}
+
+alliance = {
+	first = ERM
+	second = HLC
+	start_date = 481.12.5
+	end_date = 562.1.1 # ~
+}
+
+# Ellaria - Kornisonaks
+vassal = {
+	first = ELL
+	second = ZMR
+	start_date = 578.6.22
+	end_date = 594.2.12
+}
+
+vassal = {
+	first = EOY
+	second = ZMR
+	start_date = 594.2.12
+	end_date = 595.5.27
+}
+
+# Tonderros subjects
+vassal = {
+	first = TND
+	second = TSR
+	start_date = 450.1.1
+	end_date = 475.8.29
+}
+vassal = {
+	first = TND
+	second = IOS
+	start_date = 450.1.1
+	end_date = 475.8.29
+}

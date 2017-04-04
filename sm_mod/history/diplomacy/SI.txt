@@ -1,0 +1,115 @@
+# Союз ССРШ и Депачо
+alliance = {
+	first = IOD
+	second = USS
+	start_date = 849.5.31
+	end_date = 890.1.1
+}
+
+# Союз ИД и НКФ
+alliance = {
+	first = IOD
+	second = NKF
+	start_date = 850.1.1
+	end_date = 890.1.1
+}
+
+# Союз ДШ и СИ по Имперской партии
+#alliance = {
+#	first = IOD
+#	second = DSH
+#	start_date = 2013.6.1
+#	end_date = 2013.7.1
+#}
+
+union = {
+	first = NGI
+	second = CH2
+	start_date = 872.7.3
+	end_date = 892.7.31
+}
+
+vassal = {
+	first = NGI
+	second = NKF
+	start_date = 872.7.3
+	end_date = 887.2.12
+}
+
+alliance = {
+	first = NGI
+	second = TRR
+	start_date = 872.1.1
+	end_date = 880.1.15
+}
+
+vassal = {
+	first = NGI
+	second = TRR
+	start_date = 880.1.16
+	end_date = 892.7.31
+}
+
+vassal = {
+	first = NGI
+	second = YIA
+	start_date = 872.7.3
+	end_date = 892.7.31
+}
+
+vassal = {
+	first = SME
+	second = YIA
+	start_date = 892.7.31
+	end_date = 915.1.1
+}
+
+vassal = {
+	first = SME
+	second = PEH
+	start_date = 915.1.1
+	end_date = 1915.1.1
+}
+
+vassal = {
+	first = NGI
+	second = SRE
+	start_date = 882.7.18
+	end_date = 892.7.31
+}
+
+vassal = {
+	first = SME
+	second = SRE
+	start_date = 882.7.18
+	end_date = 898.8.10 # Провозглашение Бринтении
+}
+
+vassal = {
+	first = SME
+	second = BRN
+	start_date = 898.8.10
+	end_date = 917.9.6
+}
+
+march = {
+	first = SME
+	second = CH2
+	start_date = 892.7.31
+	end_date = 918.9.8
+}
+
+march = {
+	first = SME
+	second = EOY
+	start_date = 892.12.22
+	end_date = 921.12.19 # Полная независимость
+}
+
+# Nagora
+#union = {
+#	first = YIA
+#	second = NG2
+#	start_date = 2013.7.15
+#	end_date = 2013.7.20
+#}
