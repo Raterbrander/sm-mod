@@ -1,0 +1,48 @@
+# Кравилон
+
+graphical_culture = westerngfx
+
+color = { 198  186  116 }
+
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	anarendilian_levonian_warriors
+	anarendilian_levonian_horse_warriors
+}
+
+monarch_names = {
+	"Артемиос #0" = 30
+	"Ханс #0" = 30
+	"Амадеос #0" = 30
+	"Йохан #0" = 20
+	"Романио #0" = 10
+	"Лука #0" = 30
+	"Люцио #0" = 15
+	"Флавий #0" = 20
+	"Гай #0" = 10
+	"Базилик #0" = 10
+	
+	"Юлия #0" = -1
+}
+
+leader_names = {
+	Кравилонский Смешсапотамский Кимери Юльдис Кардери
+}
+
+ship_names = {
+	Кравилон Боги Смешепотамия
+	Левон Упоротоград
+	Купец Башня "Пан Дордон" Флорцей Быстрый Хитрый
+	Еврей Хитрец Делец "Хитрый делец" Запад Восток Восход Закат Имперец
+	Свобода Воля Царь Деспот
+}
