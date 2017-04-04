@@ -58,7 +58,7 @@ maximillian_laws_gottardia = {
 	vassal_forcelimit_bonus = -1
 	land_maintenance_modifier = 0.35
 	diplomatic_upkeep = 4
-	reduced_liberty_desire = -55
+	reduced_liberty_desire = 55
 }
 
 chaepit_smeshinternet_destroyed = {

@@ -12,6 +12,19 @@ take_capital_throne_gottardia = {
 
 		po_form_personal_union = yes
 		po_annex = yes
+		po_demand_provinces = no
+		po_revoke_cores = no
+		po_release_vassals = no
+		po_release_annexed = no
+		po_change_religion = no
+		po_gold = no
+		po_become_vassal = no
+		po_become_protectorate = no
+		po_concede_defeat = no
+		po_annul_treaties = no
+		po_change_government = no
+		po_trade_power = no
+		po_humiliate = no
 		
 	}
 	
@@ -109,7 +122,19 @@ take_capital_throne_sm = {
 		}
 		
 		po_annex = yes
-		po_demand_provinces = yes
+		po_demand_provinces = no
+		po_revoke_cores = no
+		po_release_vassals = no
+		po_release_annexed = no
+		po_change_religion = no
+		po_gold = no
+		po_become_vassal = no
+		po_become_protectorate = no
+		po_concede_defeat = no
+		po_annul_treaties = no
+		po_change_government = no
+		po_trade_power = no
+		po_humiliate = no
 		
 	}
 	
