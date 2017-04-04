@@ -1,0 +1,5 @@
+discovered_by = continental
+discovered_by = imperial_group
+discovered_by = rolevik
+discovered_by = southern
+discovered_by = amian

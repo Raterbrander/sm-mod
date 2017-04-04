@@ -1,0 +1,3 @@
+discovered_by = southern
+discovered_by = imperial_group
+discovered_by = high_domin

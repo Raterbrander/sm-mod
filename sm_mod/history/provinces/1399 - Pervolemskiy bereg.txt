@@ -1,0 +1,10 @@
+discovered_by = lem_group
+
+1331.4.5 = {
+	discovered_by = EOY
+	discovered_by = GRU
+	discovered_by = SRM
+	discovered_by = CH2
+	discovered_by = VAM
+	discovered_by = UKS
+}

@@ -1,0 +1,4 @@
+discovered_by = SUM
+discovered_by = DMF
+discovered_by = imperial_group
+discovered_by = high_domin

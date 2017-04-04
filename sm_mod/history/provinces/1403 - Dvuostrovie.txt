@@ -1,0 +1,3 @@
+discovered_by = southern
+discovered_by = SHK
+discovered_by = old_altras_tech

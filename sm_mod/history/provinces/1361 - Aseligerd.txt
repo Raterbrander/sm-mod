@@ -1,0 +1,2 @@
+discovered_by = domin_group
+discovered_by = high_domin

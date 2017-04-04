@@ -1,0 +1,9 @@
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}

@@ -1,0 +1,3 @@
+discovered_by = ADN
+discovered_by = SHK
+discovered_by = old_altras_tech
