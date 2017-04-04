@@ -1,0 +1,16 @@
+name = "Завоевание Алверии"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+	#province = 238
+}
+
+2013.8.5 = {
+	add_attacker = SME
+	add_defender = AVE
+}
+
+2013.8.12 = {
+	rem_attacker = SME
+	rem_defender = AVE
+}

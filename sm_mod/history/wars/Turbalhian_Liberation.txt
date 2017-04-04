@@ -1,0 +1,22 @@
+name = "Турбальхейские освободительные войны"
+
+war_goal = {
+	type = take_province_nationalist
+	casus_belli = cb_nationalist
+	province = 915
+}
+
+559.2.11 = {
+	add_attacker = LKF
+	add_defender = ZMR
+}
+
+563.3.27 = {
+	add_attacker = TLV
+}
+
+568.12.7 = {
+	rem_attacker = LKF
+	rem_attacker = TLV
+	rem_defender = ZMR
+}

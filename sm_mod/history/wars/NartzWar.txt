@@ -1,0 +1,30 @@
+name = "Восстание Нарца"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = NRZ
+}
+
+# Независимость Республики Нарц
+2013.1.11 = {
+	add_attacker = NRZ
+	add_defender = VLK
+}
+
+# Признание независимости Временным правительством
+2013.1.20 = {
+	rem_attacker = NRZ
+	rem_defender = VLK
+}
+
+# Атака Вольхонда под коммунистическим правительством
+2013.1.21 = {
+	add_attacker = NRZ
+	add_defender = VLK
+}
+
+# Завершение Волкодавской гражданской войны
+2013.2.17 = {
+	rem_attacker = NRZ
+	rem_defender = VLK
+}

@@ -1,0 +1,21 @@
+name = "Арвабские войны"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 371
+}
+
+446.6.14 = {
+	add_attacker = BGT
+	add_defender = RTZ
+	add_defender = TED
+	add_defender = TND
+}
+
+458.11.28 = {
+	rem_attacker = BGT
+	rem_defender = RTZ
+	rem_defender = TED
+	rem_defender = TND
+}

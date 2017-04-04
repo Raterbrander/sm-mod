@@ -1,0 +1,36 @@
+name = "Вторая Великая война"
+
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 411
+}
+
+460.11.5 = {
+	add_attacker = SHK
+	add_attacker = ADN
+	add_defender = CHT
+	add_defender = UTN
+	add_defender = KST
+}
+
+472.4.25 = {
+	add_attacker = SPM
+}
+
+472.5.7 = {
+	add_attacker = LAV
+}
+
+476.5.12 = {
+	rem_attacker = SPM
+}
+
+485.1.10 = {
+	rem_attacker = SHK
+	rem_attacker = ADN
+	rem_attacker = LAV
+	rem_defender = CHT
+	rem_defender = UTN
+	rem_defender = KST
+}

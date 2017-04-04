@@ -1,0 +1,16 @@
+name = "Окианская война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 30
+}
+
+586.1.15 = {
+	add_attacker = KRN
+	add_defender = SIN
+}
+
+589.11.3 = {
+	rem_attacker = KRN
+	rem_defender = SIN
+}

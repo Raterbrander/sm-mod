@@ -1,0 +1,17 @@
+name = "Интервенция в Империю Гроксов"
+war_goal = {
+	type = superiority_punitive
+	casus_belli = cb_super_badboy
+}
+
+650.1.1 = {
+	add_attacker = EOY
+	add_attacker = KRN # GLT
+	add_defender = GRX
+}
+
+658.9.6 = {
+	rem_attacker = EOY
+	rem_attacker = KRN
+	rem_defender = GRX
+}

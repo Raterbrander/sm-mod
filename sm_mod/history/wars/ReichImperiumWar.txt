@@ -1,0 +1,37 @@
+name = "Первая Имперско-Рейховская война"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+
+2013.6.10 = {
+	add_attacker = IOD
+	add_defender = SRE
+}
+
+2013.6.13 = {
+	battle = {
+		name = "Серпухов"
+		location = 472
+		attacker = {
+			infantry = 1500
+			cavalry = 50000
+			losses = 12	# percent
+			country = IOD
+			commander = "Депачо"
+		}
+		defender = {
+			infantry = 4500
+			cavalry = 50000
+			losses = 11	# percent
+			country = SRE
+			commander = "Брайан Штольц"
+		}
+		result = no
+	}
+}
+
+2013.6.13 = {
+	rem_attacker = IOD
+	rem_defender = SRE
+}

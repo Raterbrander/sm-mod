@@ -1,0 +1,39 @@
+advisor = {
+	advisor_id = 1
+	name = "Иоганн Турасский"
+	location = 919
+	skill = 1
+	type = quartermaster 
+	date = 456.1.1
+	death_date = 1003.1.1
+}
+
+advisor = {
+	advisor_id = 2
+	name = "Карл Фойбфорд" # Дипломат, один из отцов единого Элларского царства
+	location = 912
+	skill = 3
+	type = statesman 
+	date = 516.1.1 # род. 494
+	death_date = 578.5.21
+}
+
+advisor = {
+	advisor_id = 3
+	name = "Теодорик Эспийский"
+	location = 928
+	skill = 3
+	type = philosopher # theologian
+	date = 526.1.1 # род. 507
+	death_date = 595.3.11
+}
+
+advisor = {
+	advisor_id = 4
+	name = "Франц Гюрхельнайер" # Великий архитектор, основоположенник архитектуры Гюрхельнайерской эпохи, создатель Золотого города
+	location = 912
+	skill = 3
+	type = statesman
+	date = 511.1.1 # род. 487
+	death_date = 559.1.1
+}

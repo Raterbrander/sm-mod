@@ -1,0 +1,15 @@
+name = "Корнисонакское вторжение в Сюркфию"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+442.5.14 = {
+	add_attacker = ZMR
+	add_defender = ALI
+}
+
+447.7.13 = {
+	rem_attacker = ZMR
+	rem_defender = ALI
+}

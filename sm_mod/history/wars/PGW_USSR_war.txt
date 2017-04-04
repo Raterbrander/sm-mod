@@ -1,0 +1,113 @@
+name = "ПГВ: ТСовское вторжение в ССРШ"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 64
+}
+
+2013.6.25 = {
+	add_attacker = DRA
+	add_attacker = SRM
+	#add_attacker = CH2
+	add_defender = USS
+}
+
+2013.6.25 = {
+	battle = {
+		name = "Смеш-град"
+		location = 64
+		attacker = {
+			infantry = 12000
+			losses = 15
+			country = DRA
+			commander = "???"
+		}
+		defender = {
+			infantry = 20000
+			losses = 64
+			country = USS
+			commander = "Кося52"
+		}
+		result = yes
+	}
+}
+
+2013.6.25 = {
+	battle = {
+		name = "Занск"
+		location = 61
+		attacker = {
+			infantry = 15000
+			losses = 5
+			country = SRM
+			commander = "Дэйви Джонс"
+		}
+		defender = {
+			infantry = 22000
+			losses = 70
+			country = USS
+			commander = "Кося52"
+		}
+		result = yes
+	}
+}
+
+2013.6.26 = {
+	add_defender = NGO
+}
+
+2013.6.27 = {
+	battle = {
+		name = "Победоград"
+		location = 74
+		attacker = {
+			infantry = 35000
+			losses = 12
+			country = DRA
+			commander = "Дэйви Джонс"
+		}
+		defender = {
+			infantry = 55000
+			losses = 75
+			country = USS
+			commander = "Кося52"
+		}
+		result = yes
+	}
+}
+
+2013.6.28 = {
+#	add_attacker = EOY
+	rem_defender = NGO
+	add_defender = NG2
+}
+
+2013.6.28 = {
+	battle = {
+		name = "Очиши"
+		location = 74
+		attacker = {
+			infantry = 20000
+			losses = 25
+			country = DRA
+			commander = "???"
+		}
+		defender = {
+			infantry = 15500
+			losses = 35
+			country = NG2
+			commander = "Рейямальх Найхар"
+		}
+		result = yes
+	}
+}
+
+2013.6.30 = {
+	rem_defender = NG2
+}
+
+2013.7.1 = {
+	rem_defender = USS
+	rem_attacker = DRA
+	rem_attacker = SRM
+}

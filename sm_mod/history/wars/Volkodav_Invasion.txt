@@ -1,0 +1,28 @@
+name = "ТСовское вторжение на Волкодав"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 64
+}
+
+2013.6.27 = {
+	add_attacker = DRA
+	add_attacker = SRM
+	add_defender = NFE
+}
+
+2013.6.28 = {
+	add_defender = NRZ
+	add_defender = IGO
+}
+
+2013.7.1 = {
+	rem_defender = IGO
+}
+
+2013.7.5 = {
+	rem_defender = NFE
+	rem_defender = NRZ
+	rem_attacker = DRA
+	rem_attacker = SRM
+}

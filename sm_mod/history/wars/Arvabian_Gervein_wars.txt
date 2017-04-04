@@ -1,0 +1,23 @@
+name = "Арвабско-Гервейнская война"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 768
+}
+
+459.2.3 = {
+	add_attacker = ARV
+	add_defender = RDT
+	add_defender = VNR
+	add_defender = AIL
+	add_defender = KRG
+}
+
+462.4.16 = {
+	rem_attacker = ARV
+	rem_defender = RDT
+	rem_defender = VNR
+	rem_defender = AIL
+	rem_defender = KRG
+}

@@ -1,0 +1,80 @@
+name = "Гражданская война на Волкодаве"
+war_goal = {
+	type = take_province_nationalist
+	casus_belli = cb_nationalist
+	province = 269
+}
+
+2013.1.25 = {
+	add_attacker = NFE
+	add_defender = VLK
+}
+
+2013.2.5 = {
+	battle = {
+		name = "Сражение за Фардонг"
+		location = 265
+		attacker = {
+			infantry = 8500
+			cavalry = 1000
+			losses = 35	# percent
+			country = NFE
+			commander = "Джефферсон Оргаст"
+		}
+		defender = {
+			infantry = 16000
+			losses = 75
+			country = VLK
+			commander = "Тельгош Кильмер"
+		}
+		result = yes
+	}
+}
+
+2013.2.9 = {
+	battle = {
+		name = "Бардольское сражение"
+		location = 262
+		attacker = {
+			infantry = 19000
+			cavalry = 1500
+			losses = 12
+			country = NFE
+			commander = "Дикельд Сорсон"
+		}
+		defender = {
+			infantry = 21000
+			cavalry = 1000
+			losses = 55	# percent
+			country = VLK
+			commander = "Тельгош Кильмер"
+		}
+		result = yes
+	}
+}
+
+2013.2.15 = {
+	battle = {
+		name = "Осада Гарта"
+		location = 269
+		attacker = {
+			infantry = 18000
+			cavalry = 2000
+			losses = 21
+			country = NFE
+			commander = "Джефферсон Оргаст"
+		}
+		defender = {
+			infantry = 24000
+			losses = 27	# percent
+			country = VLK
+			commander = "Эвари Кольфорд"
+		}
+		result = no
+	}
+}
+
+2013.2.17 = {
+	rem_attacker = NFE
+	rem_defender = VLK
+}

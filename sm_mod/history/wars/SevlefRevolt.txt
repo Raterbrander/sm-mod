@@ -1,0 +1,32 @@
+name = "Севлефское восстание"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = SVL
+}
+
+456.7.22 = {
+	add_attacker = SVL
+	add_defender = GIE
+	add_defender = TAT
+}
+
+456.10.4 = {
+	add_attacker = SMF
+	add_attacker = RDL
+	add_attacker = LDR
+}
+
+459.1.16 = {
+	add_attacker = TBS
+}
+
+461.2.16 = {
+	rem_attacker = SVL
+	rem_attacker = SMF
+	rem_attacker = RDL
+	rem_attacker = LDR
+	rem_attacker = TBS
+	rem_defender = GIE
+	rem_defender = TAT
+}

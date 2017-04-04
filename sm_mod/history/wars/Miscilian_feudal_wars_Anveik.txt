@@ -1,0 +1,47 @@
+name = "Вергуртский поход Крестоффа Анвейкского"
+
+war_goal = {
+	type = take_capital_throne_sm
+	casus_belli = cb_sm_throne
+	tag = MSC
+}
+
+462.2.25 = {
+	add_attacker = ANV
+	add_defender = MSC
+}
+
+# Карл Тирмельтисс присоединяется к походу
+#462.3.2 = {}
+
+# Ордена объединяются с Анвейком после смерти Карла Тирмельтисса
+#463.6.7 = {}
+
+463.10.18 = {
+	battle = {
+		name = "Юнисфа"
+		location = 39
+		attacker = {
+			commander = "Крестофф Анвейк"
+			infantry = 12000
+			cavalry = 4000
+			losses = 56	# percent
+			country = ANV
+		}
+		
+		defender = {
+			commander = "Ферран Дольмитис"
+			infantry = 17000
+			losses = 35	# percent
+			country = MSC
+		}
+
+		result = no
+	}
+}
+
+# Прекращение боевых действий
+463.10.23 = {
+	rem_attacker = ANV
+	rem_defender = MSC
+}

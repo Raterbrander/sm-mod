@@ -1,0 +1,16 @@
+name = "Кроносская война"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = KRN
+}
+
+580.5.12 = {
+	add_attacker = KRN
+	add_defender = VSK
+}
+
+584.3.21 = {
+	rem_attacker = KRN
+	rem_defender = VSK
+}

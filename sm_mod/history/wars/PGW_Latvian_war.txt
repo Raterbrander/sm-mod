@@ -1,0 +1,25 @@
+name = "ПГВ: Латвийский театр"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 238
+}
+
+2013.6.25 = {
+	add_attacker = DRA
+	add_attacker = SRM
+	add_defender = GRU
+	add_defender = VAM
+	add_defender = UKS
+}
+
+2013.6.28 = {
+	rem_defender = UKS
+}
+
+2013.7.1 = {
+	rem_attacker = DRA
+	rem_attacker = SRM
+	rem_defender = GRU
+	rem_defender = VAM
+}

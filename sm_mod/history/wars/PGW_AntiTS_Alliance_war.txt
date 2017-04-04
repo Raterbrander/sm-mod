@@ -1,0 +1,47 @@
+name = "Война АнтиТСовской лиги"
+war_goal = {
+	type = take_border
+	casus_belli = cb_border_war
+	province = 422
+}
+
+2013.6.25 = {
+	add_attacker = SRE
+	add_attacker = KRO
+	add_defender = DRA
+	add_defender = CH2
+	add_defender = SRM
+}
+
+2013.6.26 = {
+	add_defender = BLU
+}
+
+#2013.6.28 = {
+#	add_attacker = GRU
+#	add_attacker = VAM
+#	add_attacker = UKS
+#}
+
+2013.6.29 = {
+	add_attacker = LMR
+}
+
+2013.6.30 = {
+	rem_attacker = SRE
+}
+
+2013.7.1 = {
+	rem_defender = SRM
+	rem_defender = CH2
+	rem_defender = BLU
+#	rem_attacker = GRU
+#	rem_attacker = VAM
+#	rem_attacker = UKS
+}
+
+2013.7.5 = {
+	rem_attacker = KRO
+	rem_attacker = LMR
+	rem_defender = DRA
+}

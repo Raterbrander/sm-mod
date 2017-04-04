@@ -1,0 +1,37 @@
+name = "Завоевание Междуморья"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+
+507.6.21 = {
+	add_attacker = SIN
+	add_attacker = ZMR
+	add_defender = ENH
+	add_defender = LRT
+	add_defender = IML
+	add_defender = RBZ
+	add_defender = LFG
+}
+
+508.7.29 = {
+	rem_defender = ENH
+}
+
+508.9.2 = {
+	rem_defender = LFG
+}
+
+508.9.17 = {
+	rem_defender = IML
+}
+
+508.11.5 = {
+	rem_defender = LRT
+}
+
+509.1.28 = { # Окончательный конец - хз
+	rem_defender = RBZ
+	rem_attacker = SIN
+	rem_attacker = ZMR
+}

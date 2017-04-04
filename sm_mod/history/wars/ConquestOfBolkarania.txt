@@ -1,0 +1,17 @@
+name = "Завоевание Болкарании"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 108
+}
+
+429.10.11 = {
+	add_attacker = SIN
+	add_defender = BOL
+}
+
+
+430.1.1 = {
+	rem_attacker = SIN
+	rem_defender = BOL
+}

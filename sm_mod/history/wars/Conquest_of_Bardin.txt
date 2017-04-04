@@ -1,0 +1,21 @@
+name = "Покорение Бардиничей"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 227
+}
+
+449.6.10 = {
+	add_attacker = ASR
+	add_defender = BRD
+}
+
+451.9.12 = {
+	add_defender = PLV
+}
+
+453.7.15 = {
+	rem_attacker = ASR
+	rem_defender = BRD
+	rem_defender = PLV
+}

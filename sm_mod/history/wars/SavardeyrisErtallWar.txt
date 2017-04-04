@@ -1,0 +1,28 @@
+name = "Война за сдерживание Хальсценбургов"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 904
+}
+
+472.11.17 = {
+	add_attacker = ERT
+	add_attacker = HLB
+	add_defender = SVR
+}
+
+478.8.17 = {
+	add_attacker = NBR
+}
+
+480.3.7 = {
+	add_defender = HLC
+}
+
+482.10.6 = {
+	rem_attacker = ERT
+	rem_attacker = NBR
+	rem_attacker = HLB
+	rem_defender = SVR
+	rem_defender = HLC
+}

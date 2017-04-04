@@ -1,0 +1,22 @@
+name = "Нагорская война"
+
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 48
+}
+
+2013.6.28 = {
+	add_attacker = NG2
+	add_defender = USS
+}
+
+2013.7.1 = {
+	add_defender = DRA
+	rem_defender = USS
+}
+
+2013.7.2 = {
+	rem_attacker = NG2
+	rem_defender = DRA
+}

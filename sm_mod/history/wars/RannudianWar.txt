@@ -1,0 +1,49 @@
+name = "Раннудийские войны"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 814
+}
+
+2013.5.12 = {
+	add_attacker = RNL
+	add_defender = SRM
+}
+
+2013.5.28 = {
+	rem_attacker = RNL
+	rem_defender = SRM
+}
+
+2013.6.18 = {
+	add_attacker = RNL
+	add_defender = SRM
+}
+
+2013.6.25 = {
+	battle = {
+		name = "Рейяколь"
+		location = 618
+		attacker = { 
+			infantry = 12500
+			cavalry = 2500
+			losses = 32			# percent 
+			country = RNL
+			commander = "Тарак Маскиган"
+		}
+		defender = { 
+			infantry = 4500
+			cavalry = 1000
+			losses = 27			# percent 
+			country = SRM
+			commander = "Джефферсон Койсоль"
+		} 
+		result = yes
+	} 
+}
+
+
+2013.7.13 = {
+	rem_attacker = RNL
+	rem_defender = SRM
+}

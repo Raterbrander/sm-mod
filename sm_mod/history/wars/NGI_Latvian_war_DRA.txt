@@ -1,0 +1,28 @@
+name = "Имперская вторжение в ТСовскую Латвию"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 238
+}
+
+# Захват Белиуса фанатиками Депачо
+2013.6.27 = {
+	add_attacker = IOD
+	add_defender = DRA
+}
+
+# Раздел Империума Депачо
+2013.7.1 = {
+	rem_attacker = IOD
+	rem_defender = DRA
+}
+
+2013.7.3 = {
+	add_attacker = NGI
+	add_defender = DRA
+}
+
+2013.7.22 = {
+	rem_attacker = NGI
+	rem_defender = DRA
+}

@@ -1,0 +1,38 @@
+name = "Кевельгатская война"
+
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 970
+}
+
+# Вторжение в Кевельгат
+525.2.4 = {
+	add_attacker = HNF
+	add_defender = WDS
+}
+
+525.3.1 = {
+	battle = {
+		name = "Вельмерт"
+		location = 929
+		attacker = {
+			commander = "Ормонт III"
+			infantry = 17000
+			losses = 7	# percent
+			country = HNF
+		}
+		defender = {
+			commander = "Отто Кельмис"
+			infantry = 22300
+			losses = 23	# percent
+			country = WDS
+		}
+		result = yes
+	}
+}
+
+525.4.11 = {
+	rem_attacker = HNF
+	rem_defender = WDS
+}

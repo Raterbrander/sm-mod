@@ -1,0 +1,41 @@
+name = "Игорский конфликт"
+war_goal = {
+	type = take_border
+	casus_belli = cb_border_war
+	province = 85
+}
+
+2013.1.20 = {
+	add_attacker = USS
+	add_defender = VLK
+}
+
+2013.1.24 = {
+	rem_attacker = USS
+	rem_defender = VLK
+}
+
+2013.2.21 = {
+	add_attacker = NFE
+	add_defender = USS
+}
+
+2013.2.25 = {
+	rem_attacker = NFE
+	rem_defender = USS
+}
+
+2013.6.27 = {
+	add_attacker = IGO
+	add_defender = USS
+	add_defender = NFE
+}
+
+2013.7.1 = {
+	rem_defender = USS
+}
+
+2013.7.5 = {
+	rem_attacker = IGO
+	rem_defender = NFE
+}

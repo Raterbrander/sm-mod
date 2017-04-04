@@ -1,0 +1,38 @@
+name = "Шестая Мировая война"
+war_goal = {
+	type = superiority_insult
+	casus_belli = cb_dishonored_call
+}
+
+2013.5.14 = {
+	add_attacker = DRA
+	#add_attacker = UKS
+	add_attacker = ORD
+	add_defender = GRU
+	add_defender = VAM
+}
+
+2013.5.15 = {
+	add_attacker = SRM
+}
+
+2013.5.26 = {
+	add_attacker = UKS
+}
+
+2013.6.18 = {
+	rem_attacker = UKS
+}
+
+2013.6.20 = {
+	add_defender = UKS
+}
+
+2013.6.24 = {
+	rem_attacker = DRA
+	rem_attacker = ORD
+	rem_attacker = SRM
+	rem_defender = GRU
+	rem_defender = VAM
+	rem_defender = UKS
+}

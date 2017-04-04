@@ -1,0 +1,68 @@
+name = "Леркитанская война"
+# Война из-за восстания Леркитана против господства Хальсценбургов.
+# Итог: присоединение Леркитана к Гервейну, Гервейн захватывает Уэленкар
+# На втором этапе войны присоединяются Змооромфы, и Хальсценбургам удаётся вернуть всё + Айлейв
+# Змооромфы начинают экспансию на континент
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 374
+}
+
+478.7.12 = {
+	add_attacker = HLC
+	add_attacker = PRT
+	add_defender = LRK
+}
+
+478.11.2 = {
+	add_defender = GRV
+	add_defender = KRG
+}
+
+479.3.16 = {
+	rem_defender = LRK
+}
+
+479.4.24 = {
+	rem_attacker = HLC
+	rem_attacker = PRT
+	rem_defender = GRV
+	rem_defender = KRG
+}
+
+479.9.2 = {
+	add_attacker = HLC
+	add_attacker = PRT
+	add_attacker = SVR
+	add_attacker = ZMR
+	add_defender = GRV
+	add_defender = KRG
+}
+
+479.9.4 = {
+	add_defender = VRU
+}
+
+481.9.26 = {
+	add_attacker = ERM
+}
+
+481.12.14 = {
+	rem_defender = VRU
+}
+
+482.6.4 = {
+	rem_defender = GRV
+	rem_defender = KRG
+	rem_attacker = SVR
+	rem_attacker = ZMR
+	rem_attacker = ERM
+	add_defender = AIL
+}
+
+482.11.23 = {
+	rem_defender = AIL
+	rem_attacker = HLC
+	rem_attacker = PRT
+}

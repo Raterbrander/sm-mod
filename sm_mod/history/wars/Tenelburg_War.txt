@@ -1,0 +1,16 @@
+name = "Тенелбургская война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 375
+}
+
+458.4.25 = {
+	add_attacker = VNR
+	add_defender = TNL
+}
+
+459.4.16 = {
+	rem_attacker = VNR
+	rem_defender = TNL
+}

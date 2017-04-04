@@ -1,0 +1,47 @@
+name = "Война ДМФСР с СМСР"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = DMF
+}
+
+2013.5.5 = {
+	add_attacker = DMF
+	add_defender = DRA
+}
+
+2013.5.20 = {
+	rem_attacker = DMF
+	rem_defender = DRA
+}
+
+2013.6.20 = {
+	add_attacker = DMF
+	add_defender = DRA
+}
+
+2013.6.25 = {
+	battle = {
+		name = "Сражение за Водномалыш"
+		location = 215
+		attacker = {
+			infantry = 40000
+			losses = 95	# percent
+			country = DMF
+			commander = "димик5"
+		}
+		defender = {
+			infantry = 32000
+			losses = 5
+			country = DRA
+			commander = "Кени"
+		}
+		result = no
+	}
+}
+
+2013.7.1 = {
+	rem_attacker = DMF
+	rem_defender = DRA
+}
+

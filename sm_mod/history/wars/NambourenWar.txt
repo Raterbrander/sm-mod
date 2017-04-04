@@ -1,0 +1,26 @@
+name = "Война за Намбоур"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 906
+}
+
+535.11.17 = {
+	add_attacker = ERT
+	add_defender = HLC
+}
+
+535.11.24 = {
+	add_defender = SVR
+}
+
+535.12.5 = {
+	add_attacker = GTT
+}
+
+543.3.2 = {
+	rem_attacker = ERT
+	rem_attacker = GTT
+	rem_defender = HLC
+	rem_defender = SVR
+}

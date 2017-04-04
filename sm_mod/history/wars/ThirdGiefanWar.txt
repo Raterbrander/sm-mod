@@ -1,0 +1,32 @@
+name = "Третья Гиефско-Фонкская война"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 922
+}
+
+501.6.2 = {
+	add_attacker = SMF
+	add_attacker = SVL
+	add_attacker = RDL
+	add_attacker = LDR
+	add_defender = GIE
+	add_defender = TAT
+}
+
+501.7.16 = {
+	add_attacker = TND
+}
+
+502.1.12 = {
+	rem_defender = TAT
+}
+
+502.3.14 = {
+	rem_attacker = SMF
+	rem_attacker = SVL
+	rem_attacker = RDL
+	rem_attacker = LDR
+	rem_attacker = TND
+	rem_defender = GIE
+}

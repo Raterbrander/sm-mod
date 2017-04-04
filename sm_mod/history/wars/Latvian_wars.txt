@@ -1,0 +1,18 @@
+name = "Противостояние в Латвии"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 228
+}
+
+2013.7.10 = {
+	add_attacker = GRU
+	add_attacker = VAM
+	add_defender = DRA
+}
+
+2013.8.1 = {
+	rem_attacker = GRU
+	rem_attacker = VAM
+	rem_defender = DRA
+}

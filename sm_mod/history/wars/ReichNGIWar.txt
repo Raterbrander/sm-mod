@@ -1,0 +1,15 @@
+name = "Вторая Имперско-Рейховская война"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+
+2013.7.1 = {
+	add_attacker = NGI
+	add_defender = SRE
+}
+
+2013.7.3 = {
+	rem_attacker = NGI
+	rem_defender = SRE
+}

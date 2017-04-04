@@ -1,0 +1,26 @@
+name = "Хальсценбургская война за Ренфертайр"
+
+war_goal = {
+	type = take_capital_throne_gottardia
+	casus_belli = cb_gottardian_throne
+	tag = GTT
+}
+
+455.11.25 = {
+	add_attacker = HLC
+	add_defender = GTT
+}
+
+# Максимиллиан вон Оргейл захватывает Готтардский престол
+456.5.16 = {
+	add_defender = ORG
+}
+
+458.9.7 = {
+	rem_defender = ORG
+}
+
+465.3.25 = {
+	rem_attacker = HLC
+	rem_defender = GTT
+}

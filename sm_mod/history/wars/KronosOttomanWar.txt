@@ -1,0 +1,15 @@
+name = "Кроносско-Османская война"
+war_goal = {
+	type = superiority_crusade
+	casus_belli = cb_crusade
+}
+
+530.5.7 = { # ?
+	add_attacker = KRN
+	add_defender = TUR
+}
+
+547.5.26 = {
+	rem_attacker = KRN
+	rem_defender = TUR
+}

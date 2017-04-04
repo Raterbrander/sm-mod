@@ -1,0 +1,47 @@
+name = "Змооромфское вторжение в Арвабию"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 293
+}
+
+468.7.12 = {
+	add_attacker = ZMR
+	add_defender = ARV
+}
+
+468.7.29 = {
+	add_defender = RTZ
+}
+
+468.10.3 = {
+	rem_defender = RTZ
+}
+
+469.9.28 = {
+	rem_attacker = ZMR
+	rem_defender = ARV
+}
+
+# Подавление восстания в Бангасте
+477.1.1 = {
+	add_attacker = ZMR
+	add_defender = BGT
+}
+
+# Перемирие для ведения войны с Гервейном
+479.6.12 = {
+	rem_attacker = ZMR
+	rem_defender = BGT
+}
+
+482.9.6 = {
+	add_attacker = ZMR
+	add_defender = BGT
+}
+
+486.1.1 = {
+	rem_attacker = ZMR
+	rem_defender = BGT
+}

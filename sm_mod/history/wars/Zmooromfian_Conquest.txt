@@ -1,0 +1,15 @@
+name = " орнисонакское завоевание яль€рЄхаребе"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+455.9.2 = {
+	add_attacker = ZMR
+	add_defender = YAL
+}
+
+463.9.3 = {
+	rem_attacker = ZMR
+	rem_defender = YAL
+}

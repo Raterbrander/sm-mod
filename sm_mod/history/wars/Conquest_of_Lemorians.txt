@@ -1,0 +1,17 @@
+name = "Покорение леморцев"
+war_goal = {
+	type = superiority_primitives
+	casus_belli = cb_primitives_sm
+}
+
+401.1.1 = {
+	add_attacker = SIN
+	add_attacker = KRN
+	add_defender = LMR
+}
+
+427.6.10 = {
+	rem_attacker = SIN
+	rem_attacker = KRN
+	rem_defender = LMR
+}

@@ -1,0 +1,102 @@
+name = "Ханфальтские войны"
+
+war_goal = {
+	type = superiority_punitive
+	casus_belli = cb_super_badboy
+}
+
+528.11.26 = {
+	add_attacker = WDS
+	add_defender = HNF
+}
+
+530.3.15 = {
+	rem_attacker = WDS
+	rem_defender = HNF
+}
+
+533.4.9 = {
+	add_attacker = SMF
+	add_attacker = TBS
+	add_attacker = LDR
+	add_attacker = RDL
+	add_defender = HNF
+	add_defender = WDS
+}
+
+533.4.18 = {
+	battle = {
+		name = "Ормилетта"
+		location = 921
+		attacker = {
+			commander = "Альберхт Шермер"
+			infantry = 42000
+			losses = 3	# percent
+			country = SMF
+		}
+		defender = {
+			commander = "Ормонт III"
+			infantry = 34000
+			losses = 33	# percent
+			country = HNF
+		}
+		result = yes
+	}
+}
+
+533.10.1 = {
+	battle = {
+		name = "Антельгарт"
+		location = 937
+		attacker = {
+			commander = "Альберхт Шермер"
+			infantry = 37000
+			losses = 7	# percent
+			country = SMF
+		}
+		defender = {
+			commander = "Ормонт III"
+			infantry = 35250
+			losses = 41	# percent
+			country = HNF
+		}
+		result = yes
+	}
+}
+
+533.10.2 = {
+	rem_defender = WDS
+}
+
+533.10.12 = {
+	add_attacker = WDS
+}
+
+534.3.1 = {
+	battle = {
+		name = "Меттих"
+		location = 969
+		attacker = {
+			commander = "Альберхт Шермер"
+			infantry = 34000
+			losses = 11	# percent
+			country = SMF
+		}
+		defender = {
+			commander = "Ормонт III"
+			infantry = 21000
+			losses = 79	# percent
+			country = HNF
+		}
+		result = yes
+	}
+}
+
+534.3.2 = {
+	rem_defender = HNF
+	rem_attacker = SMF
+	rem_attacker = TBS
+	rem_attacker = LDR
+	rem_attacker = RDL
+	rem_attacker = WDS
+}

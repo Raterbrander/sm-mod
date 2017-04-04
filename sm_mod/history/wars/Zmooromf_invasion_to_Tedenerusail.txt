@@ -1,0 +1,19 @@
+name = "Змооромфское вторжение в Теденерусаил"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 293
+}
+
+464.6.3 = {
+	add_attacker = ZMR
+	add_defender = TED
+	add_defender = TND
+}
+
+465.4.4 = {
+	rem_attacker = ZMR
+	rem_defender = TED
+	rem_defender = TND
+}
