@@ -1,0 +1,15 @@
+sound = {
+	name = religion_helgarn
+	file = "tab_religion_hellerdian_group.wav"
+}
+
+sound = {
+	name = religion_hiyalegama
+	file = "tab_religion_hellerdian_group.wav"
+}
+
+sound = {
+	name = city_sound
+	file = "amb/general/amb_city_loop.wav"
+	always_load = yes
+}
