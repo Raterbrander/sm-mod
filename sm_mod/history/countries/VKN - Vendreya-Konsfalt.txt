@@ -1,0 +1,59 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = tardian
+religion = yutonsenit
+technology_group = ellar_tech
+capital = 947
+fixed_capital = 947
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Керанс"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 432.1.1
+	}
+}
+
+# 520.4.12 - интеграция в состав Табеслара, далее было выделено во владение Готторн-Риланам
+
+522.1.1 = {
+	religion = ellar_pagan
+	decision = abolish_serfdom
+	monarch = {
+		name = "Фридрих II"
+		dynasty = "Готторн-Рилан"
+		adm = 5
+		dip = 5
+		mil = 1
+		birth_date = 464.4.7
+	}
+	heir = {
+		name = "Эрих"
+		monarch_name = "Эрих II"
+		dynasty = "Готторн-Рилан"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 498.1.24
+		death_date = 557.9.21
+	}
+}
+
+553.10.8 = {
+	monarch = {
+		name = "Эрих II"
+		dynasty = "Готторн-Рилан"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 498.1.24
+	}
+}
+
+# 557.9.21 - интеграция в состав Табеслара

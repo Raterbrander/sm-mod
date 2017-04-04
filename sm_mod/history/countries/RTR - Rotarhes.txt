@@ -1,0 +1,82 @@
+government = altras_ulus
+technology_group = old_altras_tech
+religion = solaris_religion
+primary_culture = altras
+capital = 344
+
+456.1.1 = {
+	monarch = {
+		name = "Эфельс"
+		dynasty = "Ротайрх"
+		birth_date = 425.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		name = "Мархон"
+		monarch_name = "Мархон"
+		dynasty = "Ротайрх"
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+		birth_date = 447.1.1
+		death_date = 489.2.4
+	}
+}
+
+480.10.3 = {
+	monarch = {
+		name = "Мархон"
+		dynasty = "Ротайрх"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 447.1.1
+	}
+	heir = {
+		name = "Эгиль"
+		monarch_name = "Эгиль II"
+		dynasty = "Ротайрх"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 471.1.1
+		death_date = 490.12.3
+	}
+}
+
+489.2.4 = {
+	monarch = {
+		name = "Эгиль II"
+		dynasty = "Ротайрх"
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 471.1.1
+	}
+	heir = {
+		name = "Йамонн"
+		monarch_name = "Йамонн III"
+		dynasty = "Ротайрх"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 4
+		birth_date = 471.1.1
+		death_date = 531.1.1
+	}
+}
+
+490.12.3 = {
+	monarch = {
+		name = "Йамонн III"
+		dynasty = "Ротайрх"
+		adm = 5
+		dip = 5
+		mil = 4
+		birth_date = 471.1.1
+	}
+}

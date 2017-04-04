@@ -1,0 +1,60 @@
+government = tribal_federation
+government_rank = 2
+primary_culture = old_rannudian
+religion = lemindland_paganism
+technology_group = lem_group
+capital = 816
+
+# Лига Маскигана
+2013.5.12 = {
+	monarch = {
+		name = "Тарак"
+		dynasty = "Маскиган"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1974.2.2
+		leader = {
+			name = "Тарак Маскиган"
+			type = general
+			rank = 0
+			fire = 3
+			shock = 5
+			manuever = 4
+			siege = 2
+		}
+	}
+}
+
+2013.5.12 = {
+	heir = {
+		name = "Мохан"
+		monarch_name = "Мохан"
+		dynasty = "Моханид"
+		claim = 75
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1987.2.16
+		death_date = 2013.7.13
+		leader = {
+			name = "Мохан"
+			type = general
+			rank = 0
+			fire = 6
+			shock = 6
+			manuever = 4
+			siege = 0
+		}
+	}
+}
+
+2013.6.30 = {
+	monarch = {
+		name = "Мохан"
+		dynasty = "Моханид"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}

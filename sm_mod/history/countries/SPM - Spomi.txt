@@ -1,0 +1,31 @@
+government = tribal_democracy
+government_rank = 1
+technology_group = rolevik # southern? middle_land_group? rantayzian_group?
+religion = totemism
+primary_culture = spomi
+capital = 391
+
+460.1.1 = {
+	government = tribal_despotism
+	government_rank = 2
+	monarch = {
+		name = "Рьятдак"
+		dynasty = "Споми"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 418.2.12
+	}
+}
+
+530.1.1 = {
+	government = tribal_democracy
+	government_rank = 1
+	monarch = {
+		name = "(Совет старейшин)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

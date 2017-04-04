@@ -1,0 +1,22 @@
+government = AM_clan_rep
+technology_group = amian
+primary_culture = brintenian
+religion = protestant
+capital = 469
+
+2013.6.9 = {
+	monarch = {
+		name = "ֱנאיאם"
+		dynasty = "״עמכüצ"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+2013.7.1 = {
+	government = republican_dictatorship
+	#technology_group = continental
+}
+
+#

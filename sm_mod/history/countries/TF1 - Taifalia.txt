@@ -1,0 +1,7 @@
+government = absolute_monarchy
+technology_group = continental
+primary_culture = old_taifalian
+religion = tolerance
+capital = 675
+
+# На додел

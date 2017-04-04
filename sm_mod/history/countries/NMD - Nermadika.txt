@@ -1,0 +1,146 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = ellar_tech
+primary_culture = mescil
+religion = miscilian_pagan
+capital = 329
+
+historical_rival = MSC
+
+450.1.1 = {
+	monarch = {
+		name = "Алессандер II"
+		dynasty = "Неймартис"
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 419.1.1
+	}
+	heir = {
+		name = "Гай Энрик"
+		monarch_name = "Гай II Энрик"
+		dynasty = "Неймартис"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 446.1.1
+		death_date = 505.8.23
+	}
+}
+
+477.1.18 = {
+	monarch = {
+		name = "Гай II Энрик"
+		dynasty = "Неймартис"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 446.1.1
+	}
+	heir = {
+		name = "Андриан"
+		monarch_name = "Андриан II"
+		dynasty = "Неймартис"
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+		birth_date = 470.1.1
+		death_date = 534.6.11
+	}
+}
+
+505.8.23 = {
+	monarch = {
+		name = "Андриан II"
+		dynasty = "Неймартис"
+		adm = 2
+		dip = 1
+		mil = 1
+		birth_date = 470.1.1
+	}
+}
+
+# С 508 - завоевание Анвейком. Правят только в Монтеррис
+
+512.6.11 = {
+	monarch = {
+		name = "Йозеф"
+		dynasty = "Неймартис"
+		adm = 1
+		dip = 3
+		mil = 2
+		birth_date = 479.1.1
+	}
+}
+
+# Продажа
+517.4.23 = {
+	monarch = {
+		name = "Франц"
+		dynasty = "Тейлимер"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 481.1.1
+	}
+}
+
+529.1.7 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Сюнсгейр"
+		adm = 3
+		dip = 3
+		mil = 2
+		birth_date = 483.1.1
+	}
+}
+
+538.2.17 = {
+	monarch = {
+		name = "Маттеас"
+		dynasty = "Сюнсгейр"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 510.1.1
+	}
+}
+
+# Выкуп
+538.6.11 = {
+	monarch = {
+		name = "Эманоил II"
+		dynasty = "Неймартис"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 497.1.1
+	}
+	heir = {
+		name = "Юлиан"
+		monarch_name = "Юлиан II"
+		dynasty = "Неймартис"
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+		birth_date = 522.1.1
+		death_date = 588.3.24
+	}
+}
+
+# C 552-ого - возвращение в Нермадику
+
+563.1.14 = {
+	monarch = {
+		name = "Юлиан II"
+		dynasty = "Неймартис"
+		adm = 3
+		dip = 4
+		mil = 2
+		birth_date = 522.1.1
+	}
+}

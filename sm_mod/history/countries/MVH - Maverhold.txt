@@ -1,0 +1,16 @@
+government = oligarchic_republic
+government_rank = 1
+primary_culture = smesh_imp
+religion = tolerance
+technology_group = imperial_group
+capital = 340
+
+100.1.1 = {
+	monarch = {
+		name = "(Городской совет)"
+		regent = yes
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}

@@ -1,0 +1,26 @@
+government = tribal_federation
+mercantilism = 0.1
+technology_group = southern
+religion = tolerance
+primary_culture = old_kochegorian
+add_accepted_culture = ardenian
+add_accepted_culture = chaepit
+capital = 150
+
+460.1.1 = {
+	primary_culture = ardenian
+	add_accepted_culture = old_kochegorian
+	government = militarist_dictatorship
+	monarch = {
+		name = "(Аредейнское правительство)"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+485.1.10 = {
+	government = tribal_federation
+	primary_culture = old_kochegorian
+}

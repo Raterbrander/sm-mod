@@ -1,0 +1,30 @@
+government = parliamentary_republic
+government_rank = 1
+mercantilism = 0.25
+primary_culture = utenian
+religion = tolerance
+technology_group = southern
+capital = 1160
+fixed_capital = 1160
+
+300.1.1 = {
+	monarch = {
+		name = "(Ассамблея Крякостании)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# 625.3.11 - начало войны
+
+625.3.18 = {
+	monarch = {
+		name = "(Демократическая лига Крякостании)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

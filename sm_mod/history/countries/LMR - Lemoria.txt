@@ -1,0 +1,36 @@
+government = tribal_democracy
+primary_culture = lemor
+religion = animism
+technology_group = middle_land_group
+capital = 100
+fixed_capital = 100
+
+458.1.1 = {
+	monarch = {
+		name = "(Леморские племена)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+800.1.1 = {
+	government = absolute_monarchy
+	government_rank = 3
+	religion = tolerance
+	technology_group = continental
+	unit_type = continental
+}
+
+830.1.1 = {
+	monarch = {
+		name = "Дарт Левириус"
+		dynasty = "Леморский"
+		birth_date = 804.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	religion = atheism
+}

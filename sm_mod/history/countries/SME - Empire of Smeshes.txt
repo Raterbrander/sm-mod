@@ -1,0 +1,49 @@
+government = despotic_monarchy
+government_rank = 3
+primary_culture = smesh_imp
+religion = tolerance
+technology_group = imperial_group
+capital = 490
+
+historical_friend = PEH
+historical_friend = YIA
+
+2013.7.31 = {
+	monarch = {
+		name = "(Interregnum)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}	
+}
+
+2013.8.2 = {
+	monarch = {
+		name = "Тайбер Уриэль"
+		dynasty = "фон Депачо"
+		birth_date = 1985.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+2013.8.27 = { religion = orakul }
+
+2013.9.15 = {
+	government = theocratic_monarchy 
+	religion = imperial_faith
+}
+
+2014.11.19 = {
+	monarch = {
+		name = "Годин"
+		dynasty = "Хоу-Тинг"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+# Далее лень

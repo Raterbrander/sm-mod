@@ -1,0 +1,65 @@
+government = despotic_monarchy
+government_rank = 1
+technology_group = ellar_tech
+primary_culture = arvabian
+religion = astransenit
+capital = 369
+
+#historical_rival = BGT
+#historical_friend = TED
+
+458.1.1 = {
+	monarch = {
+		name = "Ильватар"
+		dynasty = "Сильвас"
+		adm = 3
+		dip = 3
+		mil = 0
+		birth_date = 432.1.1
+	}
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл"
+		dynasty = "Сильвас"
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 456.1.1
+		death_date = 473.6.21
+	}
+}
+
+473.6.16 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Сильвас"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 456.1.1
+	}
+}
+
+# Из старого мода - 2014
+#1445.3.18 = { government = merchant_republic }
+#
+#1445.3.18 = {
+#	monarch = {
+#		name = "(Временное правительство)"
+#		regent = yes
+#		adm = 3
+#		dip = 3
+#		mil = 3
+#	}
+#}
+#
+#1447.1.1 = {
+#	monarch = {
+#		name = "(Гервэйнское управление)"
+#		regent = yes
+#		adm = 3
+#		dip = 4
+#		mil = 1
+#	}
+#}

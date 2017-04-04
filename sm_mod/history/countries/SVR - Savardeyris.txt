@@ -1,0 +1,79 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = ellar_tech
+religion = yutonsenit
+primary_culture = gottardian
+capital = 904
+
+443.7.23 = {
+	monarch = {
+		name = "Франц II"
+		dynasty = "Берфесфонт"
+		adm = 3
+		dip = 3
+		mil = 2
+		birth_date = 402.3.30
+	}
+}
+
+447.6.21 = {
+	heir = {
+		name = "Франц"
+		monarch_name = "Франц III"
+		dynasty = "вон Хальсценбург"
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 1
+		birth_date = 447.6.21
+		death_date = 509.7.12
+	}
+}
+
+478.6.3 = {
+	monarch = {
+		name = "Франц III"
+		dynasty = "вон Хальсценбург"
+		adm = 3
+		dip = 5
+		mil = 1
+		birth_date = 447.6.21
+	}
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд II"
+		dynasty = "вон Хальсценбург"
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+		birth_date = 475.7.16
+		death_date = 556.9.14
+	}
+}
+
+493.1.1 = { religion = ellar_pagan }
+
+509.7.12 = {
+	monarch = {
+		name = "Фердинанд II"
+		dynasty = "вон Хальсценбург"
+		adm = 3
+		dip = 4
+		mil = 2
+		birth_date = 475.7.16
+	}
+}
+
+556.9.14 = {
+	monarch = {
+		name = "Карл I Густав"
+		dynasty = "вон Хальсценбург"
+		adm = 2
+		dip = 3
+		mil = 1
+		birth_date = 509.11.17
+	}
+}
+	
+# В октябре 563 года Савардейрис были завоёваны Готтардией

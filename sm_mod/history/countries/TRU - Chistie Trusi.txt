@@ -1,0 +1,7 @@
+government = presidental_dictatorship
+government_rank = 3
+primary_culture = tonderros
+religion = tolerance
+technology_group = continental
+capital = 982
+fixed_capital = 982

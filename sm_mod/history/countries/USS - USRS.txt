@@ -1,0 +1,50 @@
+government = communist_dictatorship 
+government_rank = 2
+mercantilism = 0.15
+technology_group = high_domin
+primary_culture = dominionian
+religion = tolerance
+capital = 74
+
+historical_friend = NGO
+
+#2013.5.1 = {
+#	monarch = {
+#		name = "Кося52"
+#		dynasty = "Косевич"
+#		adm = 4
+#		dip = 2
+#		mil = 3
+#	}
+#}
+#
+# Исторический старт
+#2013.5.31 = { decision = sm_USS_crisis_dec }
+#2013.6.26 = {
+#	add_treasury = -250
+#	add_stability = -1
+#	add_republican_tradition = -0.35
+#	add_inflation = 55
+#	decision = state_of_emergency
+#}
+#
+#2013.7.10 = {
+#	decision = clr_sm_USS_crisis_dec
+#	decision = cancel_state_of_emergency
+#	add_inflation = -50
+#	add_treasury = 250
+#	government_rank = 1
+#	set_country_flag = am_union_USS
+#}
+#
+#2014.1.1 = { 
+#	leader = {	
+#		name = "Kord"	
+#		type = general	
+#		rank = 2	
+#		fire = 1	
+#		shock = 3	
+#		manuever = 3
+#		siege = 1	
+#	} 
+#}

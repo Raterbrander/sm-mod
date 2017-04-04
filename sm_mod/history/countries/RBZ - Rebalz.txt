@@ -1,0 +1,47 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = bezantokian
+religion = astransenit
+technology_group = ellar_tech
+capital = 327
+fixed_capital = 327
+
+100.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+458.1.1 = {
+	monarch = {
+		name = "Хельвеик"
+		dynasty = "Эрместикартис"
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 432.1.1
+	}
+	heir = {
+		name = "Андреан"
+		monarch_name = "Андреан IV"
+		dynasty = "Эрместикартис"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 455.1.1
+		death_date = 522.1.1
+	}
+}
+
+495.10.6 = {
+	monarch = {
+		name = "Андреан IV"
+		dynasty = "Эрместикартис"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 455.1.1
+	}
+}
+
+551.1.1 = { religion = helgarn }

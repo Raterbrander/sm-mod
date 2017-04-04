@@ -1,0 +1,23 @@
+government = theocratic_government
+government_rank = 1
+primary_culture = yellow
+religion = astransenit
+technology_group = ellar_tech
+capital = 375
+fixed_capital = 375
+
+100.1.1 = { decision = abolish_slavery }
+
+451.1.1 = { decision = abolish_serfdom }
+
+458.1.1 = {
+	monarch = {
+		name = "»оганн IV"
+		adm = 3
+		dip = 2
+		mil = 1
+		birth_date = 401.10.10
+	}
+}
+
+541.5.12 = { religion = helgarn }

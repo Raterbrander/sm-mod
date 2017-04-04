@@ -1,0 +1,26 @@
+government = free_city_base # free_city_aristocratical?
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 1107
+fixed_capital = 1107
+
+100.1.1 = {
+	add_country_modifier = {
+		name = gervein_union_member
+		duration = -1
+	}
+	monarch = {
+		name = "(Городское собрание)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+478.10.16 = { remove_country_modifier = gervein_union_member }
+
+541.5.1 = { religion = helgarn }

@@ -1,0 +1,58 @@
+government = despotic_monarchy
+government_rank = 3
+primary_culture = kro_turk
+religion = sunni
+technology_group = old_kronossian_tech
+capital = 146
+
+historical_rival = KRN
+
+national_focus = MIL
+
+430.4.16 = {
+	monarch = {
+		name = "Махмуд II"
+		dynasty = "Осман"
+		birth_date = 401.3.30
+		adm = 5
+		dip = 5
+		mil = 6
+		leader = {
+			name = "Махмуд II"
+			type = general
+			rank = 0
+			fire = 6
+			shock = 4
+			manuever = 5
+			siege = 2
+		}
+	}
+}
+
+430.4.17 = {
+	heir = {
+		name = "Баязид"
+		monarch_name = "Баязид II"
+		dynasty = "Осман"
+		birth_date = 409.7.11
+		death_date = 551.2.13
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+# Уничтожены Республикой Кронос во главе с Никодисеасом
+547.5.26 = {
+	government_rank = 2
+	#monarch = {
+	#	name = "(Interregnum)"
+	#	regent = yes
+	#	adm = 0
+	#	dip = 0
+	#	mil = 0
+	#}
+}
+
+745.1.1 = { government = absolute_monarchy }

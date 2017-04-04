@@ -1,0 +1,62 @@
+government = presidental_republic_6
+government_rank = 3
+elector = yes
+technology_group = continental
+religion = ameism
+primary_culture = sinius
+capital = 106
+
+historical_rival = AL1
+#historical_rival = ALR (?)
+historical_rival = HRU
+
+427.6.10 = { set_country_flag = lemorian_mission_finished }
+
+444.1.1 = {
+	government = presidental_dictatorship
+	monarch = {
+		name = "Дербим Валлен"
+		adm = 4
+		dip = 1
+		mil = 4
+		birth_date = 430.1.15
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = greedy_personality
+}
+
+#444.1.1 = {
+#	monarch = {
+#		name = "Йортайс Чячуря-Оувенс"
+#		adm = 3
+#		dip = 3
+#		mil = 3
+#		birth_date = 947.1.15
+#	}
+#}
+
+482.1.2 = {
+	religion = tolerance
+	elector = no
+	set_country_flag = had_sinius_racism_event
+	add_faction = sin_racist_faction
+	add_faction = sin_tolerance_faction
+	add_faction_influence = {
+		faction = sin_racist_faction
+		influence = 45
+	}
+	add_faction_influence = {
+		faction = sin_tolerance_faction
+		influence = 55
+	}
+}
+
+495.4.16 = { historical_friend = ITL }
+
+1069.2.7 = { government = karteval_monarchic }
+
+1087.1.9 = { government = socialist_republic }
+
+1130.5.1 = { government = constitutional_republic }

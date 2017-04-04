@@ -1,0 +1,60 @@
+government = parliamentary_republic
+government_rank = 1
+primary_culture = volkdau
+add_accepted_culture = nerazc
+add_accepted_culture = domin
+religion = tolerance
+technology_group = domin_group
+capital = 271
+
+745.1.1 = {
+	government = presidental_republic_4
+	monarch = {
+		name = "Нарц Кирась-Вольхионд"
+		adm = 5
+		dip = 5
+		mil = 4
+		birth_date = 703.3.24
+	}
+}
+
+757.1.11 = { government = presidental_dictatorship }
+
+776.2.27 = {
+	government = presidental_republic_4
+	monarch = {
+		name = "Эмонд Сарнде"
+		adm = 2
+		dip = 3
+		mil = 2
+		birth_date = 719.6.21
+	}
+}
+
+780.2.28 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Статхарнт)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1099.5.16 = {
+	monarch = {
+		name = "(Статхарнт)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	historical_friend = NFE
+}
+
+1125.1.1 = {
+	decision = domin_reforms
+	technology_group = high_domin
+	unit_type = high_domin
+}

@@ -1,0 +1,15 @@
+government = tribal_democracy
+primary_culture = ramzahian
+religion = ramzahololiya
+technology_group = middle_land_group
+capital = 550
+
+10.1.1 = {
+	monarch = {
+		name = "(Рамзахские племенные собрания)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

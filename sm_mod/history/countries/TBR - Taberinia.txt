@@ -1,0 +1,151 @@
+government = feudal_monarchy
+government_rank = 2
+technology_group = ellar_tech
+primary_culture = yellow
+religion = astransenit
+capital = 376
+#fixed_capital = 376
+
+458.1.1 = {
+	monarch = {
+		name = "Ормонт II"
+		dynasty = "Девейнаугур"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 415.1.1
+	}
+	heir = {
+		name = "Александер"
+		monarch_name = "Александер III"
+		dynasty = "Девейнаугур"
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 436.1.1
+		death_date = 487.1.1
+	}
+}
+
+473.1.1 = {
+	monarch = {
+		name = "Александер III"
+		dynasty = "Девейнаугур"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 436.1.1
+	}
+	heir = {
+		name = "Каленард"
+		monarch_name = "Каленард II"
+		dynasty = "Девейнаугур"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 455.1.1
+		death_date = 496.10.23
+	}
+}
+
+487.1.1 = {
+	monarch = {
+		name = "Каленард II"
+		dynasty = "Девейнаугур"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 455.1.1
+	}
+	heir = {
+		name = "Олаф"
+		monarch_name = "Олаф"
+		dynasty = "Девейнаугур"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 479.1.1
+		death_date = 537.12.6
+	}
+}
+
+496.10.23 = {
+	capital = 1041 # Захват основной Таберинии, изгнание
+	monarch = {
+		name = "Олаф"
+		dynasty = "Девейнаугур"
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 479.1.1
+	}
+}
+
+505.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл"
+		dynasty = "Девейнаугур"
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 1
+		birth_date = 505.1.1
+		death_date = 538.5.29
+	}
+}
+
+537.12.6 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "Девейнаугур"
+		adm = 2
+		dip = 4
+		mil = 1
+		birth_date = 505.1.1
+	}
+}
+
+538.5.29 = {
+	monarch = {
+		name = "Готтфрид"
+		dynasty = "Хаунфеллис"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 505.1.1
+	}
+	heir = {
+		name = "Хелен"
+		monarch_name = "Хелен"
+		female = yes
+		dynasty = "Хаунфеллис"
+		claim = 85
+		adm = 5
+		dip = 5
+		mil = 1
+		birth_date = 532.1.1
+		death_date = 590.1.1
+	}
+}
+
+542.1.1 = { religion = helgarn }
+
+566.3.11 = { capital = 376 }
+
+566.7.21 = { government = constitutional_monarchy }
+
+568.3.2 = {
+	monarch = {
+		name = "Хелен"
+		female = yes
+		dynasty = "Хаунфеллис"
+		adm = 5
+		dip = 5
+		mil = 1
+		birth_date = 532.1.1
+	}
+}

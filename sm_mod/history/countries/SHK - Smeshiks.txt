@@ -1,0 +1,90 @@
+primary_culture = smeshiks
+religion = tolerance
+government = consul_republic
+technology_group = southern
+capital = 337
+
+historical_rival = CHT
+
+100.1.1 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+#2010.11.18 = {
+#	monarch = {
+#		name = "Misha2000"
+#		birth_date = 1976.2.2
+#		adm = 4
+#		dip = 3
+#		mil = 4
+#	}
+#}
+#
+#2011.6.18 = {
+#	monarch = {
+#		name = "Kaligary"
+#		birth_date = 1980.8.31
+#		adm = 5
+#		dip = 4
+#		mil = 3
+#	}
+#}
+
+350.7.1 = { capital = 333 }
+
+458.1.1 = {
+	monarch = {
+		name = "Kaligary"
+		birth_date = 947.8.31
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+	add_adm_power = 1750
+	add_dip_power = 1500
+	add_mil_power = 480
+}
+
+460.1.1 = {
+	#398 = {
+	#	build_to_forcelimit = {
+	#		infantry = 0.6
+	#		cavalry = 0.3
+	#		artillery = 0.1
+	#	}
+	#}
+	409 = {
+		infantry = SHK
+		infantry = SHK
+		infantry = SHK
+		infantry = SHK
+		infantry = SHK
+		infantry = SHK
+		infantry = SHK
+		infantry = SHK
+		cavalry = SHK
+		cavalry = SHK
+		artillery = SHK
+		artillery = SHK
+		artillery = SHK
+		artillery = SHK
+	}
+}
+
+#485.1.10 = {
+#	kill_units = {
+#		who = SHK
+#		amount = 100
+#	}
+#}
+
+#2012.7.1 = {
+#	monarch = {
+#		name = "Анархия"
+#		regent = yes
+#		adm = 0
+#		dip = 0
+#		mil = 0
+#	}
+#}

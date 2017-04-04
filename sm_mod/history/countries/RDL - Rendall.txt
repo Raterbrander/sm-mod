@@ -1,0 +1,77 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 920
+
+100.1.1 = { decision = abolish_slavery }
+
+453.6.12 = {
+	monarch = {
+		name = "Керастиан"
+		dynasty = "Элапейриен"
+		adm = 3
+		dip = 1
+		mil = 4
+		birth_date = 437.2.24
+	}
+}
+
+471.3.3 = {
+	heir = {
+		name = "Эрик"
+		monarch_name = "Эрик II"
+		dynasty = "Элапейриен"
+		claim = 95
+		adm = 5
+		dip = 6
+		mil = 2
+		birth_date = 471.3.3
+		death_date = 528.4.30
+	}
+}
+
+484.9.6 = {
+	monarch = {
+		name = "Эрик II"
+		dynasty = "Элапейриен"
+		adm = 5
+		dip = 6
+		mil = 2
+		birth_date = 471.3.3
+	}
+}
+
+490.1.1 = { government = absolute_monarchy }
+
+506.4.22 = {
+	heir = {
+		name = "Александер"
+		monarch_name = "Александер II"
+		dynasty = "Элапейриен"
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 5
+		birth_date = 506.4.22
+		death_date = 573.6.11
+	}
+}
+
+528.4.30 = {
+	monarch = {
+		name = "Александер II"
+		dynasty = "Элапейриен"
+		adm = 5
+		dip = 1
+		mil = 5
+		birth_date = 506.4.22
+	}
+}
+
+530.2.21 = { decision = abolish_serfdom }
+
+532.6.1 = { government = constitutional_monarchy }
+
+541.4.6 = { religion = helgarn }

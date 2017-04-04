@@ -1,0 +1,120 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = ellar_tech
+religion = ellar_pagan
+primary_culture = gottardian
+capital = 906
+
+443.7.23 = {
+	monarch = {
+		name = "Франц II"
+		dynasty = "Берфесфонт"
+		adm = 3
+		dip = 3
+		mil = 2
+		birth_date = 402.3.30
+	}
+}
+
+478.8.17 = {
+	monarch = {
+		name = "Юлиана"
+		female = yes
+		dynasty = "Эрталл" # Намбоур-Эрталл
+		birth_date = 457.8.10
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+493.11.6 = {
+	heir = {
+		name = "Маттеас"
+		monarch_name = "Маттеас"
+		dynasty = "Эрталл"
+		claim = 85
+		birth_date = 493.11.6
+		death_date = 535.10.14
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+522.7.26 = {
+	monarch = {
+		name = "Маттеас"
+		dynasty = "Эрталл"
+		birth_date = 493.11.6
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+535.10.14 = {
+	monarch = {
+		name = "Эртон"
+		dynasty = "вон Намбоур"
+		birth_date = 493.6.23
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд"
+		dynasty = "вон Хальсценбург"
+		claim = 75
+		birth_date = 508.7.17
+		death_date = 543.2.27
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+544.1.1 = { religion = helgarn }
+
+# 543.3.2 - 551.11.15 - в составе владений Эрталлов
+
+551.11.15 = {
+	monarch = {
+		name = "Готфрик"
+		dynasty = "Эрталл"
+		birth_date = 518.9.21
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	heir = {
+		name = "Хелена"
+		monarch_name = "Хелена"
+		female = yes
+		dynasty = "Эрталл"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 550.5.31
+		death_date = 592.7.7
+	}
+}
+
+560.12.18 = {
+	monarch = {
+		name = "Хелена"
+		female = yes
+		dynasty = "Эрталл"
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 550.5.31
+	}
+}
+
+574.4.25 = { government = constitutional_monarchy }
+
+# Намбоур оставался независимым вплоть до вхождения в состав Элларии 577.1.29
+# Ибо не являлся вассалом Готтардии

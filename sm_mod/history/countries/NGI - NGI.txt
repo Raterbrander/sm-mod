@@ -1,0 +1,63 @@
+government = despotic_monarchy
+government_rank = 3
+primary_culture = smesh_imp
+religion = tolerance
+technology_group = imperial_group
+capital = 490
+
+872.7.3 = {
+	monarch = {
+		name = "(Совет Высших Лордов)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	leader = {
+		name = "Стеван Драгович"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 1
+		manuever = 4
+		siege = 3
+		death_date = 875.1.22
+	}
+}
+
+872.7.10 = { # Лорд-регент Депачо, формальным императором был Рогатулыч
+	monarch = {
+		name = "Тайбер Уриэль"
+		dynasty = "фон Депачо"
+		#regent = yes
+		birth_date = 834.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	set_country_flag = depacho_regentship_in_NGI
+}
+
+875.1.17 = { # Переворот
+	monarch = {
+		name = "Яков"
+		dynasty = "Собеский"
+		adm = 2
+		dip = 3
+		mil = 4
+		birth_date = 843.1.1
+	}
+}
+
+879.1.1 = {
+	monarch = {
+		name = "(Совет Высших Лордов)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# 892.7.31 - преобразование в СИ
+892.7.31 = { clr_country_flag = depacho_regentship_in_NGI }

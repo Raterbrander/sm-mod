@@ -1,0 +1,20 @@
+government = feudal_monarchy
+#government_rank = 2
+technology_group = continental
+primary_culture = terendian
+religion = helgarn
+capital = 169
+
+2013.4.20 = { government = karteval_monarchic }
+
+2013.12.24 = {
+	government_rank = 2
+	monarch = {
+		name = "Рикардо"
+		dynasty = "де Терревинд "
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1983.1.1
+	}
+}

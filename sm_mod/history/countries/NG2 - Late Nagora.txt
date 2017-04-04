@@ -1,0 +1,61 @@
+government = theocratic_government
+government_rank = 2
+technology_group = domin_group
+religion = sunni
+primary_culture = domin_mongol
+capital = 47
+
+historical_rival = DOM
+
+2013.6.26 = { government = constitutional_republic religion = tolerance }
+
+2013.6.27 = {
+	monarch = {
+		name = "Аргод Найхойар"
+		birth_date = 1980.11.21
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+2013.6.28 = { government = republican_dictatorship }
+
+2013.6.30 = { government = karteval_republic }
+
+2013.7.2 = { government = constitutional_republic }
+
+2013.7.10 = {
+	monarch = {
+          name = "(PEH government)"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+2014.1.2 = { government = steppe_horde religion = sunni } # Специальная ФП?
+
+2014.1.2 = {
+	monarch = {
+		name = "Долкородн"
+		dynasty = "Айзенс"
+		adm = 4
+		dip = 1
+		mil = 6
+	}
+}
+2014.7.11 = {
+	heir = {
+		name = "Ализар"
+		monarch_name = "Ализар"
+		dynasty = "Айзенс"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 6
+		birth_date = 1996.1.1
+		death_date = 2014.12.1
+	}
+}

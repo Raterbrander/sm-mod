@@ -1,0 +1,33 @@
+government = parliamentary_republic
+government_rank = 2
+primary_culture = chaepitian
+religion = tolerance
+technology_group = continental
+capital = 572
+
+historical_rival = NHN
+historical_friend = CHT
+
+458.1.1 = {
+	monarch = {
+		name = "Рогатулыч"
+		dynasty = "кос Палпатин"
+		birth_date = 421.2.1
+		adm = 4
+		dip = 4
+		mil = 4
+		leader = {
+			name = "Рогатулыч кос Палпатин"
+			type = general
+			rank = 0
+			fire = 3
+			shock = 1
+			manuever = 2
+			siege = 1
+			death_date = 505.12.12
+		}
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = scholar_personality
+}

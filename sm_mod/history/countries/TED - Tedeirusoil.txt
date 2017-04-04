@@ -1,0 +1,102 @@
+government = theocratic_monarchy
+government_rank = 2
+primary_culture = yellow
+add_accepted_culture = amian
+add_accepted_culture = tonderros
+add_accepted_culture = arvabian
+religion = ameism
+secondary_religion = astransenit
+technology_group = amian
+capital = 364
+fixed_capital = 364
+
+# Из старого мода - 2014
+#1400.1.1 = {
+#	monarch = {
+#		name = "ЭЛПР II Великий"
+#		dynasty = "вон ЭЛПРонт"
+#		adm = 6
+#		dip = 6
+#		mil = 6
+#	}
+#}
+#
+#1416.1.1 = {
+#	monarch = {
+#		name = "(Interregnum)"
+#		regent = yes
+#		adm = 0
+#		dip = 0
+#		mil = 0
+#	}
+#}
+#
+#1425.1.1 = { government = feudal_monarchy }
+#
+#1425.1.1 = {
+#	monarch = {
+#		name = "Тондер"
+#		dynasty = "Тондеррос"
+#		adm = 2
+#		dip = 5
+#		mil = 3
+#	}
+#}
+#
+#1432.1.1 = {
+#	monarch = {
+#		name = "Альфешт"
+#		dynasty = "Тондеррос"
+#		adm = 4
+#		dip = 4
+#		mil = 3
+#	}
+#}
+#
+#1441.1.1 = {
+#	monarch = {
+#		name = "Русальд"
+#		dynasty = "Тондеррос"
+#		adm = 4
+#		dip = 5
+#		mil = 2
+#	}
+#}
+#
+#1441.1.1 = {
+#	heir = {
+#		name = "Вальганд"
+#		monarch_name = "Вальганд"
+#		dynasty = "Тондеррос"
+#		birth_date = 1418.1.1
+#		deat_date = 1453.1.1
+#		adm = 4
+#		dip = 3
+#		mil = 1
+#		claim = 50
+#	}
+#}
+#
+458.1.1 = {
+	leader = {
+		name = "Тифальд вон-ат Риппен"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 0
+		death_date = 1027.4.7
+	}
+}
+#
+#1449.1.1 = {
+#	monarch = {
+#		name = "Вальганд"
+#		dynasty = "Тондеррос"
+#		birth_date = 1418.1.1
+#		adm = 4
+#		dip = 3
+#		mil = 1
+#	}
+#}

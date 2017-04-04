@@ -1,0 +1,37 @@
+government = free_city_base # merchant_republic
+primary_culture = yellow
+#add_accept_culture = zmooromfian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 354
+fixed_capital = 354
+
+mercantilism = 0.1
+
+100.1.1 = {
+	add_country_modifier = {
+		name = gervein_union_member
+		duration = -1
+	}
+	decision = abolish_slavery
+	decision = no_serfdom_for_primary_culture
+}
+
+458.1.1 = {
+	gervein_leader_effect = yes
+	change_variable = {
+		which = gervein_authority
+		value = 15
+	}
+	change_variable = {
+		which = gervein_leader_authority
+		value = 15
+	}
+	monarch = {
+		name = "(Патрициат)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

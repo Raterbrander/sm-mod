@@ -1,0 +1,61 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = gottardian
+religion = astransenit
+technology_group = ellar_tech
+capital = 896
+fixed_capital = 896
+
+455.1.1 = {
+	monarch = {
+		name = "Максимиллиан II"
+		dynasty = "вон Оргейл"
+		birth_date = 947.12.5
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+#458.4.7 = {
+#	add_casus_belli = {
+#		target = GTT
+#		type = cb_claim_throne
+#		months = 120
+#	}
+#	896 = {
+#		infantry = ROOT
+#		infantry = ROOT
+#		infantry = ROOT
+#		infantry = ROOT
+#		infantry = ROOT
+#		infantry = ROOT
+#		infantry = ROOT
+#		infantry = ROOT
+#	}
+#}
+
+464.2.28 = {
+	religion = ellar_pagan
+	monarch = {
+		name = "Фредерик IV"
+		dynasty = "вон Оргейл"
+		birth_date = 445.8.9
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+# С отречения Максимиллиана II в пользу Фредерика IV Оргейл находится в составе Готтардии
+# Свержение вон Оргейлов
+547.9.6 = {
+	monarch = {
+		name = "Густав II"
+		dynasty = "Готторн-Рилан"
+		birth_date = 508.1.5
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}

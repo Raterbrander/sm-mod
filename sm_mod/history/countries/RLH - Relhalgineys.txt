@@ -1,0 +1,40 @@
+government = altras_ulus
+technology_group = old_altras_tech
+religion = solaris_religion
+primary_culture = altras
+add_accepted_culture = hydra_altras
+capital = 339
+
+452.7.29 = {
+	monarch = {
+		name = "Альврахт II"
+		dynasty = "Рельхайгинейс"
+		birth_date = 411.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+	heir = {
+		name = "Озанвальт"
+		monarch_name = "Озанвальт"
+		dynasty = "Рельхайгинейс"
+		claim = 95
+		birth_date = 447.1.1
+		death_date = 525.11.12
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+480.2.21 = {
+	decision = dec_ozanvalt_reforms
+	monarch = {
+		name = "Озанвальт"
+		dynasty = "Рельхайгинейс"
+		birth_date = 447.1.1
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}

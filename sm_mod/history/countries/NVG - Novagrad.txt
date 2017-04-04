@@ -1,0 +1,17 @@
+government = novagrad_republic
+government_rank = 2
+primary_culture = slavenian
+religion = ross_pagan
+technology_group = anarendilian_tech
+capital = 228
+fixed_capital = 228
+
+100.1.1 = {
+	monarch = {
+		name = "(Новаградская сотня)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

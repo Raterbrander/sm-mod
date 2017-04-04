@@ -1,0 +1,58 @@
+primary_culture = medvedian
+religion = tolerance
+government = constitutional_republic
+government_rank = 2
+capital = 216
+technology_group = southern
+
+# ВМГ 2012
+2012.10.18 = {
+	government = absolute_monarchy
+	government_rank = 3
+	monarch = {
+		name = "бибидон"
+		dynasty = "бибидон"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+2013.1.1 = { government = constitutional_republic government_rank = 2 }
+
+2014.8.17 = {
+	monarch = {
+		name = "димик5"
+		dynasty = "Димикович"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+2015.1.1 = { government = constitutional_monarchy government_rank = 3 }
+
+# Распад
+# Здесь же обозначается ВМГ 2015
+2015.1.2 = {
+	government = constitutional_republic
+	government_rank = 2
+	monarch = {
+		name = "(Национальное собрание)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# Восстановление
+2015.1.28 = {
+	monarch = {
+		name = "димик5"
+		dynasty = "Димикович"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

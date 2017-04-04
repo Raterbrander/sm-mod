@@ -1,0 +1,58 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = turbalhian
+add_accepted_culture = tonderros
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 917
+
+100.1.1 = { decision = abolish_slavery }
+
+446.6.14 = {
+	monarch = {
+		name = "Генрих III"
+		dynasty = "Хесехфар"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 411.1.1
+	}
+	heir = {
+		name = "Эрран"
+		monarch_name = "Эрран IV"
+		dynasty = "Хесехфар"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 444.1.1
+		death_date = 501.3.21
+	}
+}
+
+474.2.12 = {
+	monarch = {
+		name = "Эрран IV"
+		dynasty = "Хесехфар"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 444.1.1
+	}
+}
+
+479.1.17 = {
+	heir = {
+		name = "Эртон"
+		monarch_name = "Эртон"
+		dynasty = "Хесехфар"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 479.1.1
+		death_date = 552.10.12
+	}
+}
+
+550.1.1 = { religion = helgarn }

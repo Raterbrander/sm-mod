@@ -1,0 +1,39 @@
+government = tribal_democracy
+primary_culture = levonian
+religion = totemism
+technology_group = anarendilian_tech
+capital = 44
+
+458.1.1 = {
+	monarch = {
+		name = "(Левонские племена)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+850.6.1 = {
+	government = merchant_republic
+	religion = tolerance
+	technology_group = continental
+	unit_type = continental
+	monarch = {
+		name = "(Национальное собрание)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1104.10.27 = {
+	monarch = {
+		name = "Пан"
+		dynasty = "Дордон"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

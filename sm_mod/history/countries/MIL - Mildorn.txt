@@ -1,0 +1,8 @@
+primary_culture = anarendilian
+religion = alklvalondie
+government = feudal_monarchy
+government_rank = 1
+technology_group = anarendilian_tech
+capital = 254
+
+100.1.1 = { decision = abolish_serfdom }

@@ -1,0 +1,19 @@
+government = despotic_monarchy
+government_rank = 3
+primary_culture = mixed_kronossian
+religion = tolerance
+technology_group = continental
+historical_friend = NKF
+capital = 149
+
+2013.4.5 = {
+	monarch = {
+		name = "Дэйви"
+		dynasty = "Джонс"
+		birth_date = 1965.7.25
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+

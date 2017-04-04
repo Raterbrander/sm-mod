@@ -1,0 +1,216 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ameism
+secondary_religion = yutonsenit
+technology_group = continental
+capital = 912
+fixed_capital = 912
+
+elector = yes
+
+historical_friend = TBS
+historical_rival = HRU
+
+100.1.1 = {
+	#set_hre_religion_treaty = yes
+	#decision = 2011_scenarion_dec
+	set_country_flag = no_serfdom_for_our_culture
+	set_country_flag = no_serfdom_for_accepted_cultures
+}
+
+458.5.7 = {
+	add_prestige = 25
+	monarch = {
+		name = "Альберхт"
+		dynasty = "Элапейриен"
+		birth_date = 406.2.17
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	heir = {
+		name = "Конрад"
+		monarch_name = "Конрад"
+		dynasty = "Элапейриен"
+		claim = 95
+		birth_date = 441.10.12
+		death_date = 529.2.12
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+	queen = {
+		country_of_origin = RDL
+		name = "Агнес"
+		dynasty = "Элапейриен"
+		birth_date = 413.1.1
+		death_date = 480.1.1
+		female = yes
+		adm = 3
+		dip = 1
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = tactical_genius_personality
+	add_queen_personality = calm_personality
+	add_heir_personality = charismatic_negotiator_personality
+}
+
+482.1.2 = {
+	elector = no
+	decision = establish_ellar_vexillary
+}
+
+487.4.5 = {
+	monarch = {
+		name = "Конрад"
+		dynasty = "Элапейриен"
+		birth_date = 441.10.12
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+	heir = {
+		name = "Ормонт"
+		monarch_name = "Ормонт"
+		dynasty = "Элапейриен"
+		claim = 95
+		birth_date = 478.12.16
+		death_date = 549.12.14
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	queen = {
+		country_of_origin = RDL
+		name = "Эльма"
+		dynasty = "Элапейриен"
+		birth_date = 479.1.1
+		death_date = 536.1.1
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_heir_personality = midas_touched_personality
+	add_queen_personality = incorruptible_personality
+}
+
+514.1.1 = {
+	decision = rebuild_fonks
+	decision = construct_golden_city
+	add_prestige = 25
+}
+
+529.2.12 = {
+	religion = ellar_pagan
+	monarch = {
+		name = "Ормонт"
+		dynasty = "Элапейриен"
+		birth_date = 478.12.16
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	heir = {
+		name = "Тердирм"
+		monarch_name = "Тердирм"
+		dynasty = "Элапейриен"
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+		birth_date = 510.5.27
+		death_date = 557.11.6
+	}
+	queen = {
+		country_of_origin = TBR
+		name = "Катерина"
+		dynasty = "Девейнаугур"
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 2
+		birth_date = 478.1.1
+		death_date = 546.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
+	add_queen_personality = secretive_personality
+	add_heir_personality = obsessive_perfectionist_personality
+}
+
+541.4.6  = { religion = helgarn }
+
+549.12.14 = {
+	monarch = {
+		name = "Тердирм"
+		dynasty = "Элапейриен"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 510.5.27
+	}
+	heir = {
+		name = "Хансеруc"
+		monarch_name = "Хансеруc I"
+		dynasty = "Элапейриен"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 545.9.18
+		death_date = 619.10.15
+	}
+	queen = {
+		country_of_origin = TBS
+		name = "Зенхельдис"
+		dynasty = "Элапейриен"
+		female = yes
+		adm = 4
+		dip = 6
+		mil = 3
+		birth_date = 515.1.1
+		death_date = 571.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = bold_fighter_personality
+	add_heir_personality = charismatic_negotiator_personality
+	add_queen_personality = tactical_genius_personality
+}
+
+557.11.6 = {
+	monarch = {
+		name = "Хансеруc I"
+		dynasty = "Элапейриен"
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 545.9.18
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = tactical_genius_personality
+}
+
+566.7.11 = {
+	queen = {
+		country_of_origin = WDS
+		name = "Эллис"
+		dynasty = "Уэнделл"
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 0
+		birth_date = 550.1.1
+		death_date = 612.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+}

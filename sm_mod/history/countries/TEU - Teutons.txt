@@ -1,0 +1,15 @@
+primary_culture = teuton
+religion = catholic
+government = mercenaries_clan
+technology_group = continental
+capital = 163 # ?
+
+2012.5.1 = {
+	historical_friend = EOY
+	monarch = {
+		name = "Дарт Кнайт"
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}

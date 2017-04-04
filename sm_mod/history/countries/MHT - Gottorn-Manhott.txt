@@ -1,0 +1,126 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 998
+
+100.1.1 = { decision = abolish_slavery }
+
+458.1.1 = {
+	monarch = {
+		name = "Стефан"
+		dynasty = "ат Манхотт"
+		adm = 4
+		dip = 3
+		mil = 1
+		birth_date = 421.1.1
+	}
+	heir = {
+		name = "Фредерик"
+		monarch_name = "Фредерик III"
+		dynasty = "ат Манхотт"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 448.1.1
+		death_date = 510.3.2
+	}
+}
+
+476.9.21 = {
+	monarch = {
+		name = "Фредерик III"
+		dynasty = "ат Манхотт"
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 448.1.1
+	}
+	heir = {
+		name = "Оскар"
+		monarch_name = "Оскар"
+		dynasty = "ат Манхотт"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 1
+		birth_date = 474.1.1
+		death_date = 508.9.4
+	}
+}
+
+508.10.5 = { government = distraseyem_monarchy }
+
+510.3.2 = {
+	monarch = {
+		name = "Маттеас"
+		dynasty = "ат Манхотт"
+		adm = 5
+		dip = 3
+		mil = 2
+		birth_date = 473.1.1
+	}
+	heir = {
+		name = "Фердинант"
+		monarch_name = "Фердинант II"
+		dynasty = "ат Манхотт"
+		claim = 95
+		adm = 6
+		dip = 4
+		mil = 3
+		birth_date = 496.1.1
+		death_date = 568.1.1
+	}
+}
+
+530.1.1 = {
+	monarch = {
+		name = "Фердинант II"
+		dynasty = "ат Манхотт"
+		adm = 6
+		dip = 4
+		mil = 3
+		birth_date = 496.1.1
+	}
+	heir = {
+		name = "Франц"
+		monarch_name = "Франц"
+		dynasty = "ат Манхотт"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 524.1.1
+		death_date = 592.1.1
+	}
+}
+
+542.6.1 = { decision = abolish_serfdom }
+
+545.5.18 = { religion = helgarn }
+
+549.2.24 = { government = constitutional_monarchy }
+
+553.11.7 = {
+	monarch = {
+		name = "Франц"
+		dynasty = "ат Манхотт"
+		adm = 4
+		dip = 2
+		mil = 1
+		birth_date = 524.1.1
+	}
+	heir = {
+		name = "Йохан"
+		monarch_name = "Йохан II"
+		dynasty = "ат Манхотт"
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 1
+		birth_date = 549.1.1
+		death_date = 620.1.1
+	}
+}

@@ -1,0 +1,22 @@
+government = technocrat_dictatorship
+government_rank = 2
+primary_culture = role_nipponian
+religion = tolerance
+technology_group = continental
+capital = 476
+#fixed_capital = 476
+
+historical_rival = NGR
+
+458.1.1 = {
+	monarch = {
+		name = "Агент080"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = strict_personality
+	add_ruler_personality = scholar_personality
+}

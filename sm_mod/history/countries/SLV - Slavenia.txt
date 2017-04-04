@@ -1,0 +1,6 @@
+primary_culture = slavenian
+religion = ross_pagan
+government = despotic_monarchy
+government_rank = 3
+technology_group = anarendilian_tech
+capital = 255

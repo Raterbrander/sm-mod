@@ -1,0 +1,19 @@
+government = technocrat_dictatorship
+government_rank = 2
+primary_culture = rolevik_culture
+religion = tolerance
+technology_group = continental
+capital = 480
+fixed_capital = 480
+
+historical_friend = NGR
+
+458.1.1 = {
+	monarch = {
+		name = "Àýô"
+		birth_date = 432.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}

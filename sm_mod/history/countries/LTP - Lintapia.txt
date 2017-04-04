@@ -1,0 +1,238 @@
+primary_culture = smeshesfongs
+religion = totemism
+government = tribal_democracy
+technology_group = middle_land_group
+capital = 119
+
+458.1.1 = {
+	monarch = {
+		name = "(Линтапские племена)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+773.2.12 = {
+	government = feudal_monarchy
+	monarch = {
+		name = "Темош I"
+		dynasty = "Темошара"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+779.12.11 = {
+	monarch = {
+		name = "Маркус"
+		dynasty = "Темошара"
+		adm = 6
+		dip = 5
+		mil = 4
+	}
+}
+
+791.3.7 = {
+	monarch = {
+		name = "Аугустус"
+		dynasty = "Темошара"
+		adm = 5
+		dip = 6
+		mil = 3
+	}
+	government = despotic_monarchy
+}
+
+797.5.30 = {
+	monarch = {
+		name = "Темош II"
+		dynasty = "Темошара"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+} # Свергнут в 21 год
+
+801.3.21 = {
+	government = feudal_monarchy
+	monarch = {
+		name = "Джордан"
+		dynasty = "Хольд"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+806.1.28 = {
+	monarch = {
+		name = "Маттеас"
+		dynasty = "ди Каларман"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+815.4.11 = {
+	monarch = {
+		name = "Кристофф"
+		dynasty = "ди Каларман"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+820.9.3 = {
+	monarch = {
+		name = "(Смута)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+823.4.22 = { government = elective_monarchy }
+
+823.5.6 = {
+	monarch = {
+		name = "Самуэль"
+		dynasty = "Мельгош-Каларман"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+828.4.29 = {
+	monarch = {
+		name = "Самуэль"
+		dynasty = "Мельгош"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+837.5.12 = {
+	monarch = {
+		name = "Анджей"
+		dynasty = "ди Брандт"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+845.10.22 = {
+	monarch = {
+		name = "Темош III"
+		dynasty = "ди Брандт"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+850.5.29 = {
+	monarch = {
+		name = "Эддард"
+		dynasty = "Мельгош"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+851.6.1 = { government = despotic_monarchy }
+
+852.2.18 = {
+	monarch = {
+		name = "Маркус II"
+		dynasty = "Мельгош"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+	religion = helgarn
+}
+
+865.6.21 = {
+	monarch = {
+		name = "Темош IV"
+		dynasty = "Мельгош"
+		birth_date = 1980.7.12
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+868.1.1 = {
+	heir = {
+		name = "Эддард"
+		monarch_name = "Эддард II Слабый"
+		dynasty = "Мельгош"
+		claim = 75
+		birth_date = 857.5.11
+		death_date = 898.6.27
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+880.7.11 = {
+	monarch = {
+		name = "Эддард II Слабый"
+		dynasty = "Мельгош"
+		birth_date = 857.5.11
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+883.7.16 = { government = elective_monarchy religion = tolerance }
+
+889.3.24 = {
+	monarch = {
+		name = "Валтерс"
+		dynasty = "ди Линтап"
+		birth_date = 852.6.12
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+897.7.26 = {
+	monarch = {
+		name = "Аугустус"
+		dynasty = "Депачо"
+		birth_date = 856.4.24
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+897.7.30 = { religion = imperial_faith }
+
+901.8.11 = {
+	government = noble_republic
+	religion = helgarn
+	monarch = {
+		name = "Ольбрахт"
+		dynasty = "ди Тарга"
+		birth_date = 864.8.28
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

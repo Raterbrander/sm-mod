@@ -1,0 +1,236 @@
+government = distraseyem_monarchy
+government_rank = 2
+technology_group = ellar_tech
+religion = ellar_pagan
+primary_culture = tardian
+add_accepted_culture = yellow
+capital = 927
+
+historical_friend = SMF
+
+100.1.1 = { decision = abolish_slavery }
+
+276.3.21 = {
+	monarch = {
+		name = "Дерув"
+		dynasty = "де Деруин Эспе"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 239.1.1
+	}
+}
+
+292.4.27 = {
+	monarch = {
+		name = "Тельмунд"
+		dynasty = "де Деруин Эспе"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 261.1.1
+	}
+	heir = {
+		name = "Эрих"
+		monarch_name = "Эрих"
+		dynasty = "де Деруин Эспе"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 285.1.1
+		death_date = 307.1.1
+	}
+}
+
+317.3.22 = {
+	monarch = {
+		name = "Вильхельм"
+		dynasty = "де Деруин Эспе"
+		adm = 3
+		dip = 4
+		mil = 2
+		birth_date = 264.1.1
+	}
+	heir = {
+		name = "Александер"
+		monarch_name = "Александер"
+		dynasty = "де Деруин Эспе"
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 3
+		birth_date = 288.1.1
+		death_date = 332.1.4
+	}
+}
+
+331.2.18 = {
+	monarch = {
+		name = "Александер"
+		dynasty = "де Деруин Эспе"
+		adm = 4
+		dip = 5
+		mil = 3
+		birth_date = 288.1.1
+	}
+}
+
+332.1.4 = {
+	monarch = {
+		name = "Эрих"
+		dynasty = "де Деруин Эспе"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 290.1.1
+	}
+}
+
+335.7.24 = {
+	monarch = {
+		name = "Рихард"
+		dynasty = "де Деруин Эспе"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 310.1.1
+	}
+}
+
+336.4.14 = {
+	monarch = {
+		name = "Эрих"
+		dynasty = "де Деруин Эспе"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 290.1.1
+	}
+}
+
+340.3.25 = { # Убит при осаде
+	monarch = {
+		name = "Эрран"
+		dynasty = "де Деруин Эспе"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 291.1.1
+	}
+	heir = {
+		name = "Фредерик"
+		monarch_name = "Фредерик"
+		dynasty = "де Деруин Эспе"
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 316.1.1
+		death_date = 378.11.21
+	}
+}
+
+346.7.18 = {
+	monarch = {
+		name = "Фредерик"
+		dynasty = "де Деруин Эспе"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 316.1.1
+	}
+	heir = {
+		name = "Рихард"
+		monarch_name = "Рихард II"
+		dynasty = "де Деруин Эспе"
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 339.1.1
+		death_date = 381.11.4
+	}
+}
+
+359.5.2 = {
+	monarch = {
+		name = "Рихард II"
+		dynasty = "де Деруин Эспе"
+		dip = 6
+		adm = 6
+		mil = 5
+		birth_date = 339.1.1
+	}
+}
+
+372.3.22 = {
+	monarch = {
+		name = "Сигизмунд"
+		dynasty = "де Деруин Эспе"
+		adm = 5
+		dip = 3
+		mil = 3
+		birth_date = 334.1.1
+	}
+	heir = {
+		name = "Иофрид"
+		monarch_name = "Иофрид"
+		dynasty = "де Деруин Эспе"
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 360.1.1
+		death_date = 396.2.12
+	}
+}
+
+395.12.24 = {
+	monarch = {
+		name = "Иофрид"
+		dynasty = "де Деруин Эспе"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 360.1.1
+	}
+	heir = {
+		name = "Тельмунд"
+		monarch_name = "Тельмунд II"
+		dynasty = "де Деруин Эспе"
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 5
+		birth_date = 392.1.1
+		death_date = 457.10.12
+	}
+}
+
+396.2.12 = {
+	monarch = {
+		name = "Тельмунд II Ужасный"
+		dynasty = "де Деруин Эспе"
+		adm = 0
+		dip = 0
+		mil = 5
+	}
+}
+
+#384.6.1 = { government = feudal_monarchy }
+
+457.10.12 = {
+	#government = distraseyem_monarchy
+	monarch = {
+		name = "(Interregnum)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+477.8.12 = { decision = abolish_serfdom }
+
+541.4.6 = { religion = helgarn }

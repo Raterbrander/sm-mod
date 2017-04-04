@@ -1,0 +1,17 @@
+government = free_city_confederation
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 764
+
+464.2.24 = {
+	monarch = {
+		name = "(Ассамблея Парантолии)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+541.5.1 = { religion = helgarn }

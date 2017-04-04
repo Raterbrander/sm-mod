@@ -1,0 +1,180 @@
+# ВСАМ и Рипарсская Империя АМ
+
+government = AM_clan
+primary_culture = amian
+religion = tolerance
+technology_group = amian
+capital = 245
+
+2013.1.1 = {
+	monarch = {
+		name = "Рипарс"
+		dynasty = "Рипарсский"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 1990.1.1 # Да так прост
+		#death_date = 2014.12.1
+	}
+	leader = {
+		name = "Рипарс"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 4
+		manuever = 2
+		siege = 2
+		death_date = 2014.12.1
+	}
+}
+
+2013.1.1 = {
+	heir = {
+		name = "Кошарик"
+		monarch_name = "Кошарик"
+		dynasty = "Кошариковский"
+		claim = 50
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1990.5.6 # Тоже для реалистичного возраста правителей
+		death_date = 2014.11.19
+	}
+	leader = {
+		name = "Кошарик0"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 4
+		manuever = 1
+		siege = 3
+		death_date = 2014.11.19
+	}
+}
+
+2014.1.1 = { set_country_flag = total_war_series set_country_flag = total_war } # 2014-ый год в ВСАМ - это одни гражданские войны
+
+2014.1.23 = {
+	monarch = {
+		name = "Блэкэт"
+		dynasty = "Блэкэтский"
+		regent = yes
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+2014.3.1 = {
+	monarch = {
+		name = "Рипарс"
+		dynasty = "Рипарсский"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 1990.1.1
+		#death_date = 2014.12.1
+	}
+}
+
+2014.5.27 = {
+	monarch = {
+		name = "(Interregnum)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+2014.5.28 = {
+	monarch = {
+		name = "Рипарс"
+		dynasty = "Рипарсский"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 1990.1.1
+		#death_date = 2014.12.1
+	}
+}
+
+2014.6.15 = {
+	monarch = {
+		name = "Трёна"
+		dynasty = "из Трён"
+		female = yes
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+	heir = {
+		name = "Алексик"
+		monarch_name = "Алексик"
+		dynasty = "Алексикович"
+		adm = 2
+		dip = 2
+		mil = 2
+		claim = 50
+		birth_date = 2011.1.1 # )))
+		death_date = 2228.6.1
+	}
+}
+
+2014.7.1 = {
+	monarch = {
+		name = "Алексик"
+		dynasty = "Алексикович"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1993.1.1
+	}
+}
+
+2014.9.1 = {
+	monarch = {
+		name = "Рипарс"
+		dynasty = "Рипарсский"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 1990.1.1
+		#death_date = 2014.12.1
+	}
+}
+
+2014.10.2 = {
+	monarch = {
+		name = "Мышка"
+		female = yes
+		regent = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+2014.10.15 = {
+	monarch = {
+		name = "Кошарик"
+		dynasty = "Кошариковский"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1990.5.6
+		#death_date = 2014.12.1
+	}
+}
+
+2014.10.25 = {
+	monarch = {
+		name = "Нерон"
+		dynasty = "Таиидан-Ямаширо"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+# С 19 ноября 2014-ого полностью ВСАМ полностью аннексирован(а) Таииданом

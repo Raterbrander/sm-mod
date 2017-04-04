@@ -1,0 +1,106 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = igorian
+religion = domin_pagan
+technology_group = domin_group
+capital = 86
+fixed_capital = 86
+
+458.1.1 = {
+	monarch = {
+		name = "Эйган IV"
+		dynasty = "Соллиари"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 429.1.1
+	}
+	heir = {
+		name = "Комнас"
+		monarch_name = "Комнас"
+		dynasty = "Соллиари"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 450.1.1
+		death_date = 517.5.2
+	}
+}
+
+500.4.17 = {
+	monarch = {
+		name = "Комнас"
+		dynasty = "Соллиари"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 450.1.1
+	}
+	heir = {
+		name = "Ольмак"
+		monarch_name = "Ольмак"
+		dynasty = "Соллиари"
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 474.1.1
+		death_date = 539.1.22
+	}
+}
+
+517.5.2 = {
+	monarch = {
+		name = "Ольмак"
+		dynasty = "Соллиари"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 474.1.1
+	}
+	heir = {
+		name = "Эйган"
+		monarch_name = "Эйган V"
+		dynasty = "Соллиари"
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 496.1.1
+		death_date = 563.2.4
+	}
+}
+
+539.1.22 = {
+	monarch = {
+		name = "Эйган V"
+		dynasty = "Соллиари"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 496.1.1
+	}
+	heir = {
+		name = "Нихор"
+		monarch_name = "Нихор III"
+		dynasty = "Соллиари"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 525.1.1
+		death_date = 592.6.14
+	}
+}
+
+563.2.4 = {
+	monarch = {
+		name = "Нихор III"
+		dynasty = "Соллиари"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 525.1.1
+	}
+}

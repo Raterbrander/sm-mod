@@ -1,0 +1,46 @@
+government = socialist_state
+government_rank = 2
+technology_group = continental
+religion = tolerance
+primary_culture = malishian
+capital = 196
+
+100.1.1 = {
+	monarch = {
+		name = "(Правительство Кени)"
+		regent = yes
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}
+
+#2010.10.1 = {
+#	monarch = {
+#		name = "Кени"
+#		dynasty = "Дианич"
+#		dip = 4
+#		adm = 3
+#		mil = 4
+#	}
+#}
+
+458.1.1 = {
+	add_faction = mal_totalitarian_faction
+	add_faction = mal_reformist_faction
+	add_faction = mal_democrat_faction
+	add_faction_influence = {
+		faction = mal_democrat_faction
+		influence = -25
+	}
+	add_faction_influence = {
+		faction = mal_reformist_faction
+		influence = -25
+	}
+	add_country_modifier = {
+		name = SUM_isolation
+		duration = -1
+	}
+}
+
+700.1.1 = { remove_country_modifier = SUM_isolation }

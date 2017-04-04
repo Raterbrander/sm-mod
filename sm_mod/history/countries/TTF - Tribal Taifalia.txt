@@ -1,0 +1,7 @@
+government = tribal_kingdom
+technology_group = taifalian
+primary_culture = old_taifalian
+religion = old_shamanism # taifalian_religion
+capital = 675
+
+2013.1.1 = { government = tribal_federation }

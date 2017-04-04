@@ -1,0 +1,20 @@
+government = consul_republic
+government_rank = 2
+primary_culture = dobroshar_culture
+religion = tolerance
+technology_group = continental
+capital = 591
+
+2012.1.1 = {
+	monarch = {
+		name = "Эрнан"
+		dynasty = "фон Роликист"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+2014.1.17 = { government = absolute_monarchy }
+
+2014.7.1 = { government = consul_republic }

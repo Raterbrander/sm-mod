@@ -1,0 +1,43 @@
+government = AM_clan
+primary_culture = smesh_russian
+religion = ameism
+secondary_religion = orthodox
+technology_group = amian
+capital = 521
+
+#elector = yes
+
+458.1.1 = {
+	monarch = {
+		name = "Белиус"
+		dynasty = "Миротворец"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 411.1.8
+	}
+	heir = {
+		name = "Гол Кинг"
+		monarch_name = "Голд Кинг"
+		dynasty = "Голдкингович"
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 453.10.11
+		death_date = 549.12.30
+	}
+}
+
+482.1.1 = {
+	monarch = {
+		name = "Голд Кинг"
+		dynasty = "Голдкингович"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 439.10.11
+	}
+}
+
+#482.1.2 = { elector = no }

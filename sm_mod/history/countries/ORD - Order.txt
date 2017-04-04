@@ -1,0 +1,15 @@
+government = mercenaries_clan
+primary_culture = sinius
+religion = tolerance
+technology_group = continental
+capital = 121
+fixed_capital = 121
+
+2012.9.1 = {
+	monarch = {
+		name = "Ёйс"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}

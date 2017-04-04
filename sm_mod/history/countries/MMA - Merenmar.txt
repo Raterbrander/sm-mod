@@ -1,0 +1,193 @@
+primary_culture = smeshesfongs
+religion = totemism
+government = tribal_kingdom
+technology_group = middle_land_group
+capital = 119
+
+100.1.1 = {
+	monarch = {
+		name = "(Племенной совет)"
+		regent = yes
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+2013.2.26 = {
+	government = feudal_monarchy
+	monarch = {
+		name = "Меренмар"
+		dynasty = "Мермангайр"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+2013.3.11 = {
+	monarch = {
+		name = "Аргайн"
+		dynasty = "Мермангайр"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+	government = despotic_monarchy
+}
+
+2013.3.21 = {
+	monarch = {
+		name = "Айрангор"
+		dynasty = "Мермангайр"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+2013.4.5 = {
+	monarch = {
+		name = "Эмдонд"
+		dynasty = "Гноцард"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+2013.4.12 = {
+	monarch = {
+		name = "Тонгар"
+		dynasty = "Магельайрос"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+2013.4.15 = {
+	monarch = {
+		name = "Кристофф"
+		dynasty = "ди Каларман"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+2013.4.20 = {
+	monarch = {
+		name = "(Смута)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+2013.4.21 = {
+	monarch = {
+		name = "Вильхельм"
+		dynasty = "ди Каларман"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+2013.4.23 = {
+	monarch = {
+		name = "Самуэль"
+		dynasty = "Мельгош-Каларман"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+2013.4.29 = {
+	monarch = {
+		name = "Самуэль"
+		dynasty = "Мельгош"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+2013.5.12 = {
+	monarch = {
+		name = "Анджей"
+		dynasty = "ди Брандт"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+2013.5.22 = {
+	monarch = {
+		name = "Темош III"
+		dynasty = "ди Брандт"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+2013.5.29 = {
+	monarch = {
+		name = "Эддард"
+		dynasty = "Мельгош"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+2013.6.1 = { government = despotic_monarchy }
+
+2013.6.9 = {
+	monarch = {
+		name = "Маркус II"
+		dynasty = "Мельгош"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+	religion = helgarn
+}
+
+2013.6.21 = {
+	monarch = {
+		name = "Темош IV"
+		dynasty = "Мельгош"
+		birth_date = 1980.7.12
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+2013.7.11 = {
+	monarch = {
+		name = "Эддард II Коварный"
+		dynasty = "Мельгош"
+		birth_date = 2002.5.11
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+2013.7.26 = {
+	monarch = {
+		name = "Вальтерс"
+		dynasty = "Мельгош"
+		birth_date = 1996.3.14
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}

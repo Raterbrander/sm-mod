@@ -1,0 +1,49 @@
+government = constitutional_monarchy
+government_rank = 1
+primary_culture = igorian
+religion = domin_pagan
+technology_group = domin_group
+capital = 662
+
+458.1.1 = {
+	monarch = {
+		name = "Несток III"
+		dynasty = "ойль Далисл"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 430.1.1
+	}
+	heir = {
+		name = "Хенрик"
+		monarch_name = "Хенрик II"
+		dynasty = "ойль Далисл"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 3
+		birth_date = 453.1.1
+		death_date = 474.5.17
+	}
+}
+
+481.3.21 = {
+	monarch = {
+		name = "(Interregnum)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+481.6.1 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Республика Свободных Островов)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

@@ -1,0 +1,225 @@
+# Единая Мисцилия
+government = tribal_democracy
+government_rank = 1
+technology_group = middle_land_group
+primary_culture = miscilian
+religion = miscilian_pagan
+capital = 39
+
+29.3.21 = {
+	monarch = {
+		name = "Герсер"
+		dynasty = "Гобург"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+	government = despotic_monarchy
+	government_rank = 2
+}
+
+62.9.17 = {
+	monarch = {
+		name = "Амадей"
+		dynasty = "Гобург"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+83.11.6 = {
+	monarch = {
+		name = "Александер"
+		dynasty = "Гобург"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+109.2.18 = {
+	monarch = {
+		name = "Искандер"
+		dynasty = "Гобург"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+127.3.21 = {
+	monarch = {
+		name = "Эвас"
+		dynasty = "Гобург"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+148.5.12 = {
+	monarch = {
+		name = "Веринхольт"
+		dynasty = "Гобург"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+
+182.9.29 = {
+	monarch = {
+		name = "Альфирх"
+		dynasty = "Гобург"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+207.11.3 = {
+	government = feudal_monarchy
+	monarch = {
+		name = "(Столетняя смута)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+321.6.16 = {
+	monarch = {
+		name = "Эзерхонф"
+		dynasty = "Бальтерсанд"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+350.1.1 = {
+	technology_group = ellar_tech
+	unit_type = ellar_tech
+	primary_culture = mescil
+	add_accepted_culture = miscilian
+	capital = 38
+}
+
+357.4.29 = {
+	monarch = {
+		name = "Александер II"
+		dynasty = "Бальтерсанд"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+370.4.22 = {
+	monarch = {
+		name = "Эманоил"
+		dynasty = "Бальтерсанд"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+406.1.16 = {
+	monarch = {
+		name = "Мартис"
+		dynasty = "Бальтерсанд"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+420.6.18 = {
+	monarch = {
+		name = "Александер III"
+		dynasty = "Бальтерсанд"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+431.7.12 = {
+	monarch = {
+		name = "Вемальтис"
+		dynasty = "Бальтерсанд"
+		adm = 3
+		dip = 4
+		mil = 1
+		birth_date = 404.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = incorruptible_personality
+	heir = {
+		name = "Эманоил"
+		monarch_name = "Эманоил II"
+		dynasty = "Бальтерсанд"
+		claim = 75
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 398.1.1
+		death_date = 462.2.17
+	}
+	add_heir_personality = infertile_personality
+	queen = {
+		country_of_origin = KAL
+		name = "Элиз"
+		dynasty = "Карнилиен"
+		birth_date = 407.1.1
+		death_date = 458.1.21
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+457.11.22 = {
+	monarch = {
+		name = "Эманоил II"
+		dynasty = "Бальтерсанд"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 398.1.1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
+	queen = {
+		country_of_origin = MSC
+		name = "Анна"
+		dynasty = "Зенцелид-Зепсар"
+		birth_date = 427.1.1
+		death_date = 484.1.21
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+# 462.2.17
+# Вторая великая смута и феодальная война
+# Разделение на Западную (Гартониды и другие дома) и Восточную (Зепсары)
+462.2.17 = {
+	monarch = {
+		name = "(Великая смута)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+
+532.1.1 = { religion = helgarn }

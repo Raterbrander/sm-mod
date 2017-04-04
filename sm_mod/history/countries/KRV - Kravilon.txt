@@ -1,0 +1,16 @@
+government = despotic_monarchy
+primary_culture = kravilonian
+religion = totemism
+technology_group = anarendilian_tech
+capital = 37
+fixed_capital = 37
+
+2013.6.1 = {
+	monarch = {
+		name = "Пан"
+		dynasty = "Дордон"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

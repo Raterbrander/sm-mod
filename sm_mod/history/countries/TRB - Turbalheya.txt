@@ -1,0 +1,37 @@
+government = despotic_monarchy
+government_rank = 2
+primary_culture = turbalhian
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 581
+
+100.1.1 = { decision = abolish_slavery }
+
+550.1.1 = { religion = helgarn }
+
+556.1.1 = {
+	government = militarist_dictatorship
+	monarch = {
+		name = "(Комитет освобождения Турбалхеи)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+568.12.7 = {
+	changed_tag_from = LKF
+	religion = tolerance
+}
+
+569.1.13 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "Ассамблея Турбалхеи"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

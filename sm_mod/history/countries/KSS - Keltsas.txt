@@ -1,0 +1,5 @@
+primary_culture = yellow
+religion = helgarn
+government = administrative_monarchy
+technology_group = continental
+capital = 622

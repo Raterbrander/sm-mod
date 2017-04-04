@@ -1,0 +1,21 @@
+government = socialist_republic
+government_rank = 2
+technology_group = domin_group
+religion = tolerance
+primary_culture = dominionian
+capital = 47
+
+historical_friend = USS
+historical_friend = DOM
+
+2013.5.25 = { government_rank = 1 }
+
+2013.6.1 = {
+	monarch = {
+		name = "(Доминское правительство)"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

@@ -1,0 +1,53 @@
+government = feudal_monarchy
+primary_culture = yellow
+religion = astransenit
+technology_group = ellar_tech
+capital = 926
+fixed_capital = 926
+
+339.1.1 = {
+	monarch = {
+		name = "Адольф"
+		dynasty = "Ренеклантар"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+# Революция
+356.12.3 = {
+	government = free_city_aristocratical
+	monarch = {
+		name = "(Патрициат)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+456.7.22 = {
+	government = free_city_base
+	add_country_modifier = {
+		name = SVL_dualism
+		duration = -1
+	}
+	monarch = {
+		name = "(Севлефское собрание)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+463.1.1 = { remove_country_modifier = SVL_dualism }
+
+# 7 марта 461-ого Севлефское собрание принимает решение об ассоциации с Фонксом, а 12 октября 531-ого - о покровительстве и подчинении
+
+524.6.28 = { government = parliamentary_republic } # Одна из первых традиционных республик в Элларии
+
+541.4.14 = { religion = helgarn }
+
+# 567.3.11 принято решение о вхождении в состав Фонкса

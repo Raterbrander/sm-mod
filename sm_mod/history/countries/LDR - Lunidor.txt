@@ -1,0 +1,118 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = yellow
+religion = ellar_pagan
+technology_group = ellar_tech
+capital = 936
+
+457.6.27 = {
+	monarch = {
+		name = "‘редерик III"
+		dynasty = "Ёлапейриен"
+		adm = 5
+		dip = 2
+		mil = 2
+		birth_date = 415.7.21
+	}
+	#heir = {
+	#	name = "¬ильдрам"
+	#	monarch_name = "¬ильдрам Ћейшский"
+	#	dynasty = "Ёлапейриен"
+	#	claim = 95
+	#	adm = 4
+	#	dip = 2
+	#	mil = 4
+	#	birth_date = 448.4.14
+	#	death_date = 521.9.28
+	#}
+}
+
+469.4.15 = {
+	decision = abolish_slavery
+	decision = abolish_serfdom
+}
+
+472.5.4 = {
+	monarch = {
+		name = "¬ильдрам Ћейшский"
+		dynasty = "Ёлапейриен"
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 448.4.14
+	}
+}
+
+480.1.1 = { government = absolute_monarchy }
+
+489.7.21 = {
+	heir = {
+		name = "јркхольн Ћиперт"
+		monarch_name = "јркхольн Ћиперт"
+		dynasty = "Ёлапейриен"
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 2
+		birth_date = 489.7.21
+		death_date = 544.1.24
+	}
+}
+
+521.9.28 = {
+	monarch = {
+		name = "јркхольн Ћиперт"
+		dynasty = "Ёлапейриен"
+		adm = 5
+		dip = 2
+		mil = 2
+		birth_date = 489.7.21
+	}
+	heir = {
+		name = "‘редерик"
+		monarch_name = "‘редерик IV"
+		dynasty = "Ёлапейриен"
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 0
+		birth_date = 492.1.16
+		death_date = 557.10.18
+	}
+}
+
+544.1.24 = {
+	monarch = {
+		name = "‘редерик IV"
+		dynasty = "Ёлапейриен"
+		adm = 5
+		dip = 4
+		mil = 0
+		birth_date = 492.1.16
+	}
+	heir = {
+		name = "¬ильдрам"
+		monarch_name = "¬ильдрам II"
+		dynasty = "Ёлапейриен"
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 533.12.8
+		death_date = 602.3.26
+	}
+	religion = helgarn
+}
+
+552.1.1 = { government = distraseyem_monarchy }
+
+557.10.18 = {
+	monarch = {
+		name = "¬ильдрам II"
+		dynasty = "Ёлапейриен"
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 533.12.8
+	}
+}

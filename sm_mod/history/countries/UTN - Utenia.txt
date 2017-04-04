@@ -1,0 +1,166 @@
+government = presidental_republic_6
+government_rank = 2
+mercantilism = 0.25
+primary_culture = utenian
+religion = tolerance
+technology_group = southern
+capital = 316
+
+historical_friend = CHT
+
+296.4.15 = {
+	monarch = {
+		name = "(Национальная ассамблея)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+305.1.1 = {
+	monarch = {
+		name = "Утел Крякыч"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+323.1.1 = {
+	monarch = {
+		name = "Утел Гаа"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+347.1.1 = {
+	monarch = {
+		name = "Дмитрий Эстесиль"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+363.7.5 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Парламентский период)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+411.12.6 = {
+	government = presidental_republic_6
+	monarch = {
+		name = "Дональд Крямп"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+429.11.17 = {
+	monarch = {
+		name = "Утель Пагх"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+435.11.1 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Второй парламентский период)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+440.1.1 = {
+	government = presidental_republic_6
+	monarch = {
+		name = "Кряк Крякович"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+452.5.12 = {
+	monarch = {
+		name = "Утеляндио Уткович"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 435.6.8 # Да, президент в 17
+	}
+}
+
+482.1.1 = { government = republican_dictatorship }
+
+517.9.9 = {
+	monarch = {
+		name = "Утель Буль"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 475.6.1
+	}
+}
+
+542.11.1 = {
+	government = presidental_republic_6
+	monarch = {
+		name = "Утел О'Кряк"
+		adm = 3
+		dip = 3
+		mil = 2
+		birth_date = 1027.6.6
+	}
+}
+
+568.7.12 = {
+	monarch = {
+		name = "Селезень Буль"
+		adm = 2
+		dip = 1
+		mil = 1
+		birth_date = 522.4.8
+	}
+}
+
+574.7.12 = {
+	monarch = {
+		name = "Утеляндио Уткович" # Его внук (?)
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 553.2.10
+	}
+}
+
+604.7.12 = { government = republican_dictatorship }
+
+# 625.3.11 - начало войны
+
+625.6.1 = { remove_historical_friend = CHT }
+
+627.7.25 = {
+	monarch = {
+		name = "(Оккупационное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

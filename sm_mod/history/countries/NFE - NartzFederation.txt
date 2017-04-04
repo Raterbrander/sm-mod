@@ -1,0 +1,291 @@
+government = presidental_republic_4
+government_rank = 2
+mercantilism = 0.15
+primary_culture = volkdau
+add_accepted_culture = domin
+religion = tolerance
+technology_group = domin_group
+capital = 269
+
+750.1.1 = {
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+759.6.3 = {
+	capital = 264
+	government = militarist_dictatorship
+	monarch = {
+		name = "Статзешенская лига"
+		regent = yes
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+765.2.17 = {
+	government = presidental_republic_4
+	government_rank = 3
+	capital = 269
+	monarch = {
+		name = "Дикельд Сорсон"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+800.1.1 = { historical_friend = NRZ }
+
+773.2.17 = {
+	monarch = {
+		name = "Нарц Кирась-Вольхионд"
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+776.2.27 = {
+	monarch = {
+		name = "Эвари Сирцезальд"
+		adm = 6
+		dip = 5
+		mil = 4
+	}
+}
+
+780.2.26 = {
+	monarch = {
+		name = "Ардинай Цебальди"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+784.6.22 = { government = presidental_republic_6 }
+
+801.3.3 = {
+	monarch = {
+		name = "Темош Морси"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+807.3.4 = {
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+827.1.1 = { government = socialist_republic }
+
+807.3.4 = {
+	monarch = {
+		name = "(Реформированное социальное правительство)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+842.5.22 = {
+	monarch = {
+		name = "Мезрад Дольдес"
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
+849.6.3 = {
+	monarch = {
+		name = "Эвари Сирцезальд"
+		adm = 6
+		dip = 5
+		mil = 4
+	}
+}
+
+854.6.10 = { government = presidental_republic_4 }
+
+860.6.24 = {
+	monarch = {
+		name = "Окрез Шекке"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1099.5.10 = {
+	government = parliamentary_republic
+	monarch = {
+		name = "(Национальное собрание)"
+		regent = yes
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}
+
+1100.6.16 = {
+	government = presidental_republic_6
+	monarch = {
+		name = "Олаф Дордон"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1112.6.28 = {
+	monarch = {
+		name = "Сантерон Ялс"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1124.7.28 = {
+	monarch = {
+		name = "Йозеффа Хильди Миллидея"
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 3
+	}
+}
+
+2014.8.1 = {
+	decision = domin_reforms
+	technology_group = high_domin
+	unit_type = high_domin # southern
+}
+
+1136.8.29 = {
+	monarch = {
+		name = "Мариус Сецеманн"
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+1142.10.1 = {
+	monarch = {
+		name = "Йозеффа Хильди Миллидея"
+		female = yes
+		adm = 6
+		dip = 6
+		mil = 4
+	}
+}
+
+1150.1.1 = { government = karteval_republic }
+
+1154.12.6 = {
+	monarch = {
+		name = "Сацель Корманн"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+2015.1.1 = { government = constitutional_republic }
+
+1166.2.5 = {
+	monarch = {
+		name = "Эллис Вандермальт"
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 2
+	}
+}
+
+1178.3.5 = {
+	monarch = {
+		name = "Томас о'Герси"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1190.4.12 = {
+	monarch = {
+		name = "Якоб о'Наэр"
+		adm = 2
+		dip = 6
+		mil = 4
+	}
+}
+
+1202.5.18 = {
+	monarch = {
+		name = "Эллис Вандермальт"
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 2
+	}
+}
+
+1211.1.1 = {
+	government = karteval_republic
+	monarch = {
+		name = "(Статхарнт)"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1422.8.14 = {
+	monarch = {
+		name = "Барго Эльтсор"
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1436.7.17 = { government = republican_dictatorship }
+
+1443.8.23 = {
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+	government = parliamentary_republic
+}
+
+1449.8.25 = {
+	monarch = {
+		name = "Майгос Рокальд"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
