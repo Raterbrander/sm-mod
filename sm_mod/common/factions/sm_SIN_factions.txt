@@ -1,0 +1,25 @@
+sin_racist_faction = {
+	monarch_power = MIL
+	always = yes
+	
+	modifier = {
+		culture_conversion_cost = -0.15
+		global_missionary_strength = 0.01
+		
+		num_accepted_cultures = 2
+		diplomatic_reputation = -1
+	}
+}
+
+sin_tolerance_faction = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		global_unrest = -2
+		
+		culture_conversion_cost = 0.5
+		num_accepted_cultures = -1
+		global_autonomy = 0.025
+	}
+}

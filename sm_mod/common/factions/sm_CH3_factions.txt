@@ -1,0 +1,26 @@
+CH3_neutral_faction = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		#
+	}
+}
+
+CH3_NGR_faction = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		#
+	}
+}
+
+CH3_nihon_faction = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		#
+	}
+}

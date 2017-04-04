@@ -1,0 +1,36 @@
+CHT_azad_chaepit = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		stability_cost_modifier = -0.10
+		#technology_cost = -0.075
+		global_institution_spread = 0.05
+		global_autonomy = -0.05
+		
+		global_spy_defence = -0.1
+	}
+}
+
+CHT_people_party = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		global_unrest = -1
+		global_own_trade_power = 0.1
+		num_accepted_cultures = 1
+		
+		diplomatic_reputation = -1
+	}
+}
+
+CHT_independents = {
+	monarch_power = ADM
+	always = yes
+	
+	modifier = {
+		stability_cost_modifier = -0.05
+		advisor_cost = -0.25
+	}
+}
