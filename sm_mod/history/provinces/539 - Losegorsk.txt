@@ -1,0 +1,32 @@
+native_size = 12
+native_ferocity = 2
+native_hostileness = 2
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Лосегорск"
+ 
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = grain
+
+discovered_by = middle_land_group
+
+991.1.1 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+	is_city = yes
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+	culture = smesh_imp
+	religion = tolerance
+}
+950.1.1 = { religion = imperial_faith }

@@ -1,0 +1,27 @@
+native_size = 22
+native_ferocity = 8
+native_hostileness = 14
+
+culture = old_rannudian
+religion = lemindland_paganism
+capital = "ясамир€йд"
+trade_goods = iron
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+discovered_by = lem_group
+
+810.1.1 = { add_claim = SRM } # Колониальный раздел Ћэминдлэнда
+837.5.12 = {
+	owner = RNL
+	controller = RNL
+	add_core = RNL
+}
+881.7.11 = { controller = SRM }
+882.7.13 = {
+	owner = SRM
+	add_core = SRM
+	religion = tolerance
+}
+890.1.1 = { culture = rannudian_taifalian }

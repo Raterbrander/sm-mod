@@ -1,0 +1,38 @@
+native_size = 34
+native_ferocity = 6
+native_hostileness = 6
+
+is_city = no
+
+culture = tarsek
+religion = totemism
+capital = "Соицес"
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+discovered_by = southern
+
+882.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	culture = yellow
+	religion = helgarn
+	is_city = yes
+	trade_goods = fur
+}
+884.1.1 = {
+	owner = FRC
+	controller = FRC
+	add_core = FRC
+	remove_core = EOY
+}
+886.1.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 5
+	town_hall = yes
+}

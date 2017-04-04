@@ -1,0 +1,63 @@
+owner = ENH
+controller = ENH
+add_core = ENH
+
+is_city = yes
+hre = no
+
+capital = "Дормейра"
+culture = bezantokian
+religion = astransenit
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+508.7.13 = { controller = SIN }
+508.7.29 = {
+	owner = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+552.7.1 = { religion = helgarn }
+560.1.1 = { base_tax = 3 }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+659.4.21 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = SIN
+}
+#870.7.3 = { remove_core = DRA }
+892.8.1  = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ORD
+}

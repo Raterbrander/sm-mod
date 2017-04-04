@@ -1,0 +1,119 @@
+owner = NRL
+controller = NRL
+add_core = NRL
+
+is_city = yes
+
+culture = smeshesfongs
+religion = totemism
+capital = "Канзильские города"
+base_tax = 3
+base_production = 2
+base_manpower = 2
+trade_goods = cloth
+
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+458.1.1 = { add_claim = KAL }
+495.4.16 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = NRL
+	remove_claim = KAL
+	serfdom = yes
+}
+500.1.1 = {
+	railroad_1 = yes
+	religion = miscilian_pagan
+}
+515.1.1 = { serfdom = no }
+525.1.1 = { culture = miscilian }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+555.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+651.8.4 = {
+	controller = EOY
+	railroad_2 = no
+	railroad_1 = yes
+}
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+659.4.21 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = EOY
+	culture = sinius
+	religion = sinius_pagan
+	conscription_center = yes
+	training_fields = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+855.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}
+1524.12.31 = {
+	owner = ORD
+	controller = ORD
+}
+1635.6.1 = {
+	owner = SIN
+	controller = SIN
+	#remove_core = ORD
+}
+1677.8.5 = {
+	owner = ITL
+	controller = ITL
+	add_core = ITL
+}
+1693.8.27 = {
+	owner = SIN
+	controller = SIN
+	remove_core = ITL
+}
+1232.11.20 = {
+	owner = ORD
+	controller = ORD
+}
+#2015.9.19  = { owner = BRN controller = BRN add_core = BRN }
+#2015.9.20  = { owner = ORD controller = ORD remove_core = BRN }
+#2015.11.1 = { religion = sinius_pagan }

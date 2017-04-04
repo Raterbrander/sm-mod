@@ -1,0 +1,52 @@
+owner = YAL
+controller = YAL
+add_core = YAL
+
+is_city = yes
+hre = no
+
+capital = "Алобон"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = spices
+base_tax = 5
+base_production = 4
+base_manpower = 4
+
+shipyard = yes
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = old_zmooromfian
+
+457.9.2 = { controller = ZMR }
+463.9.3 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = YAL
+}
+578.6.22 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

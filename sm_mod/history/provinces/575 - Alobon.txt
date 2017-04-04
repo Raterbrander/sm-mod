@@ -1,0 +1,84 @@
+owner = BAK
+controller = BAK
+#add_core = ALI
+add_core = YAL
+add_core = BAK
+
+is_city = yes
+hre = no
+
+capital = "Алобон"
+culture = zmooromfian
+religion = tolerance
+trade_goods = spices
+base_tax = 5
+base_production = 6
+base_manpower = 6
+
+shipyard = yes
+serfdom = yes
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = old_zmooromfian
+discovered_by = high_domin
+discovered_by = imperial_group
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+
+463.9.3 = { remove_core = YAL }
+464.6.3 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+	remove_core = BAK
+	serfdom = no
+}
+#471.6.4 = { remove_core = ALI }
+482.6.4 = { remove_province_modifier = gervein_union_city }
+#2013.6.25 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 3
+#		leader = "Кайямарак айя Сюркфия"
+#	}
+#}
+#2013.6.30 = {
+#	revolt = { }
+#}
+576.9.22 = {
+	owner = ALN
+	controller = ALN
+	add_core = ALN
+	#remove_core = ZMR
+}
+1097.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+#578.5.11 = { add_core = ZMR }
+578.5.16 = { controller = ZMR }
+578.6.4 = { controller = ALN }
+579.11.3 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = ALN
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

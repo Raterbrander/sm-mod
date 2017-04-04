@@ -1,0 +1,43 @@
+owner = ZMR
+controller = ZMR
+add_core = ZMR
+
+is_city = yes
+hre = no
+
+capital = "Зонаракс"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = spices
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+595.5.27 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+}
+#2013.6.20 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 1
+#	}
+#	controller = REB
+#}
+850.1.1 = { discovered_by = imperial_group }
+892.8.1 = {
+	discovered_by = high_domin
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+#2013.7.2 = {
+#	revolt = { }
+#	controller = EOY
+#}

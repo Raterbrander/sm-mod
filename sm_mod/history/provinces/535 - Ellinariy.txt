@@ -1,0 +1,34 @@
+native_size = 33
+native_ferocity = 4
+native_hostileness = 4
+
+hre = yes
+is_city = no
+
+culture = central_lands_culture
+religion = central_land_paganism
+capital = "Ёллинарий"
+ 
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = unknown
+
+discovered_by = imperial_group
+discovered_by = middle_land_group
+
+905.1.1 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	is_city = yes
+	culture = smesh_imp
+	religion = imperial_faith
+	trade_goods = cloth
+	traditional_factories = yes
+}
+1000.1.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 5
+}

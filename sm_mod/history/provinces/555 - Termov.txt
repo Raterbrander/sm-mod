@@ -1,0 +1,40 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+capital = "Термов"
+culture = utenian
+religion = orthodox
+trade_goods = fish
+base_tax = 3
+base_production = 2
+base_manpower = 3
+
+railroad_1 = yes
+
+discovered_by = southern
+
+500.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+625.6.19 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = KTN
+}
+850.1.1 = {
+	capital = "Термувош"
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+	religion = tolerance
+}

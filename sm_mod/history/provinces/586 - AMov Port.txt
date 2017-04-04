@@ -1,0 +1,56 @@
+native_size = 6
+native_ferocity = 4
+native_hostileness = 8
+
+is_city = no
+
+culture = kosoy_culture
+religion = animism
+capital = "АМов порт"
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = unknown
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = imperial_group
+discovered_by = high_domin
+
+482.1.2 = {
+	owner = AGA
+	controller = AGA
+	add_core = AGA
+	is_city = yes
+	culture = amga_culture
+	religion = ameism
+	trade_goods = naval_supplies
+	base_tax = 4
+	base_manpower = 5
+}
+635.5.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	culture = yellow
+	religion = helgarn
+	capital = "Архиянда-де-Бакенроу"
+	base_tax = 5
+	base_production = 4
+} # Опорные точки ИЖ в западной колонизации
+850.7.1 = {
+	owner = AGA
+	controller = AGA
+	add_core = AGA
+	remove_core = EOY
+	culture = amga_culture
+	religion = tolerance
+	capital = "АМов порт"
+}
+892.8.1 = {
+	owner = UOS
+	controller = UOS
+	add_core = UOS
+	remove_core = AGA
+}
+2014.1.1 = { culture = dobroshar_culture }

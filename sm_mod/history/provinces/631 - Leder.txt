@@ -1,0 +1,47 @@
+native_size = 36
+native_ferocity = 4
+native_hostileness = 6
+
+is_city = no
+
+culture = tarsek
+religion = totemism
+capital = "Ледерь"
+
+base_tax = 10
+base_production = 10
+base_manpower = 8
+trade_goods = unknown
+
+889.1.1 = {
+	owner = FRC
+	controller = FRC
+	add_core = FRC
+	is_city = yes
+	culture = yellow
+	religion = helgarn
+	base_tax = 6
+	base_production = 6
+	base_manpower = 5
+	trade_goods = copper
+	fort_16th = yes
+	temple = yes
+}
+890.1.1 = {
+	base_tax = 8
+	base_production = 8
+	base_manpower = 6
+	town_hall = yes
+}
+892.1.1 = { traditional_factories = yes }
+900.1.1 = {
+	temple = no
+	cathedral = yes
+}
+930.1.1 = {
+	base_tax = 10
+	base_production = 10
+	base_manpower = 8
+	traditional_factories = no
+	modernised_factories = yes
+}

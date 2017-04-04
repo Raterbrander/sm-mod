@@ -1,0 +1,26 @@
+native_size = 20
+native_ferocity = 7
+native_hostileness = 10
+
+culture = old_rannudian # lem
+religion = lemindland_paganism
+capital = "Роторкай"
+trade_goods = unknown
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 5
+
+discovered_by = lem_group
+
+810.1.1 = {
+	owner = SRM
+	controller = SRM
+	add_core = SRM
+	culture = mixed_kronossian
+	religion = tolerance
+	is_city = yes
+	trade_goods = fish
+}
+850.1.1 = { grand_shipyard = yes }
+930.10.1 = { culture = rannudian_taifalian }

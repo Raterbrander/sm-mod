@@ -1,0 +1,37 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+capital = "”льнула"
+culture = utenian
+religion = orthodox
+trade_goods = fish
+base_tax = 2
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+
+625.8.3 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+}
+725.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+882.8.1 = {
+	base_tax = 3
+	base_production = 2
+	base_manpower = 2
+} # Улучшения при Картевальской Утении

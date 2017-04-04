@@ -1,0 +1,46 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+
+is_city = yes
+
+capital = "Наков"
+culture = utenian
+religion = orthodox
+trade_goods = clothes
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+grand_shipyard = yes
+traditional_factories = yes
+railroad_1 = yes
+
+discovered_by = southern
+discovered_by = SHK
+
+500.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+625.5.17 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = KTN
+}
+882.8.1 = {
+	base_tax = 6
+	base_production = 6
+	base_manpower = 7
+	religion = tolerance
+} # Улучшения при Картевальской Утении
+1405.1.1 = {
+	fort_15th = yes
+	shipyard = yes
+}

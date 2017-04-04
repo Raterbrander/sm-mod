@@ -1,0 +1,62 @@
+owner = SIN
+controller = SIN
+add_core = SIN
+
+is_city = yes
+hre = no
+
+culture = altras 
+religion = solaris_religion
+base_tax = 3
+base_production = 3
+trade_goods = oil
+base_manpower = 2
+capital = "’‡ÌıÂÒ"
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = middle_land_group
+discovered_by = high_domin
+discovered_by = imperial_group
+
+485.1.1 = { add_claim = RTR }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+596.7.13 = { remove_claim = RTR }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+#2013.11.1  = { owner = BRN controller = BRN add_core = BRN remove_core = LMR }
+#2013.11.17 = { owner = TFL controller = TFL add_core = TFL remove_core = BRN }
+#2013.12.8  = { owner = NIP controller = NIP add_core = NIP }
+#2014.1.10  = { owner = TFL controller = TFL remove_core = NIP }
+#2014.7.11  = { owner = SIN controller = SIN remove_core = TF1 }
+#2014.8.5   = { owner = ALR controller = ALR remove_core = SIN }
+#2015.9.19  = { owner = BRN controller = BRN add_core = BRN }
+#2015.9.20  = { owner = SIN controller = SIN }

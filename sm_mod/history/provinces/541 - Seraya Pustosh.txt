@@ -1,0 +1,31 @@
+native_size = 22
+native_ferocity = 2
+native_hostileness = 2
+
+hre = no
+is_city = no
+
+culture = central_lands_culture
+religion = central_land_paganism
+capital = "Серый город"
+ 
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+discovered_by = middle_land_group
+
+874.1.1 = {
+	owner = AVE
+	controller = AVE
+	add_core = AVE
+	is_city = yes
+	trade_goods = oil
+}
+907.1.1 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+1200.1.1 = { religion = imperial_faith }

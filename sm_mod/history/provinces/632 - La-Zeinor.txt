@@ -1,0 +1,37 @@
+native_size = 35
+native_ferocity = 4
+native_hostileness = 4
+
+is_city = no
+
+culture = tarsek
+religion = totemism
+capital = "‹а-‡ейнор"
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = unknown
+
+874.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	culture = yellow
+	religion = helgarn
+	base_tax = 8
+	base_production = 6
+	base_manpower = 6
+	trade_goods = copper
+	fort_16th = yes
+	cathedral = yes
+	town_hall = yes
+	shipyard = yes
+	is_city = yes
+}
+884.1.1 = {
+	owner = FRC
+	controller = FRC
+	add_core = FRC
+	remove_core = EOY
+}

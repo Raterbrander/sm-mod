@@ -1,0 +1,36 @@
+# Кипинская область
+native_size = 67
+native_ferocity = 7
+native_hostileness = 4
+
+is_city = no
+hre = no
+
+culture = smeshesfongs
+religion = totemism
+capital = "Кипин"
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = cloth # oil
+
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+472.1.1 = {
+	owner = LTP
+	controller = LTP
+	add_core = LTP
+	is_city = yes
+}
+2013.7.2 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = EOY
+	religion = tolerance
+}
+2013.8.1 = {
+	culture = sinius
+	religion = sinius_pagan
+}

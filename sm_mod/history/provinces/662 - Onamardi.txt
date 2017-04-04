@@ -1,0 +1,90 @@
+owner = ONM
+controller = ONM
+add_core = ONM
+
+is_city = yes
+
+culture = igorian
+religion = domin_pagan
+capital = "Камерикирс"
+trade_goods = fish
+base_manpower = 3
+base_tax = 3
+base_production = 2
+
+discovered_by = domin_group
+discovered_by = high_domin
+discovered_by = IRI
+
+#1038.9.24 = { add_core = IGO }
+591.9.25 = { controller = VLK }
+591.10.14 = {
+	owner = VLK
+	add_core = VLK
+}
+600.1.1 = {
+	remove_core = ONM
+	add_core = IGO
+}
+#2013.1.20 = { controller = USS }
+760.1.24 = { remove_core = VLK } # Нейтральная территория
+772.9.10 = { controller = NFE }
+776.2.17 = {
+	owner = NFE
+	add_core = NFE
+}
+777.2.18 = {
+	owner = USS
+	controller = USS
+	add_core = USS
+} # Аннексия
+800.7.23 = { controller = NFE }
+782.2.25 = { owner = NFE remove_core = USS }
+871.1.30 = { controller = IGO }
+871.5.2 = { controller = DRA }
+892.8.1  = { owner = DRA add_core = DRA remove_core = NFE }
+# Создание Великоостровных графств
+#2013.7.10 = {
+#	owner = YIA
+#	controller = YIA
+#	add_core = YIA
+#	remove_core = DRA
+#}
+#2013.9.15 = {
+#	owner = PEH
+#	controller = PEH
+#	add_core = PEH
+#	remove_core = YIA
+#}
+#2014.2.2 = {
+#	owner = IGO
+#	controller = IGO
+#	remove_core = PEH
+#}
+#2014.6.1 = {
+#	owner = DOM
+#	controller = DOM
+#	add_core = DOM
+#}
+#2014.12.17 = {
+#	owner = RPP
+#	controller = RPP
+#	add_core = RPP
+#	remove_core = DOM
+#}
+#2015.1.2 = {
+#	owner = AFE
+#	controller = AFE
+#	add_core = AFE
+#	remove_core = RPP
+#}
+#2015.10.3 = {
+#	owner = IGO
+#	controller = IGO
+#}
+#2015.11.8 = {
+#	owner = MDV
+#	controller = MDV
+#	add_core = MDV
+#	remove_core = AFE
+#}

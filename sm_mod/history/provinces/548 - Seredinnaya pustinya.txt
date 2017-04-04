@@ -1,0 +1,25 @@
+native_size = 33
+native_ferocity = 2
+native_hostileness = 2
+
+hre = no
+is_city = no
+
+culture = central_lands_culture
+religion = central_land_paganism
+capital = "Случайный монастырь"
+ 
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+discovered_by = middle_land_group
+
+925.1.1 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	is_city = yes
+}
+1200.1.1 = { religion = imperial_faith }

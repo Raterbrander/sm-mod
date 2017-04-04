@@ -1,0 +1,66 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+
+is_city = yes
+
+culture = smeshesfongs
+religion = totemism
+capital = "Мольрук"
+
+base_tax = 3
+base_production = 2
+base_manpower = 3
+trade_goods = fish # cloth
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+477.4.18 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	serfdom = no
+}
+525.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+	remove_core = BOL
+	serfdom = no
+	railroad_2 = yes
+} # “падок
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+652.1.27 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

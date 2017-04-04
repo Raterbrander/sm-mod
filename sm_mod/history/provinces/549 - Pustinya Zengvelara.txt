@@ -1,0 +1,28 @@
+native_size = 17
+native_ferocity = 2
+native_hostileness = 2
+
+hre = no
+is_city = no
+
+culture = central_lands_culture
+religion = central_land_paganism
+capital = "Зенгвеларея"
+ 
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+
+discovered_by = middle_land_group
+discovered_by = imperial_group
+discovered_by = rolevik
+
+935.1.1 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	is_city = yes
+	trade_goods = oil
+}
+1200.1.1 = { religion = imperial_faith }

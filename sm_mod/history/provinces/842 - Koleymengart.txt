@@ -1,0 +1,39 @@
+native_size = 53
+native_ferocity = 2
+native_hostileness = 5
+
+is_city = no
+
+culture = slavenian
+religion = ross_pagan
+capital = "Колема"
+
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = unknown
+
+477.1.1 = {
+	owner = ENH
+	controller = ENH
+	add_core = ENH
+	is_city = yes
+	capital = "Колмеймангарт"
+	culture = bezantokian
+	religion = astransenit
+	trade_goods = fur
+}
+508.7.29 = {
+	owner = SIN
+	add_core = SIN
+	revolt = {
+		type = nationalist_rebels
+		size = 1
+	}
+	controller = REB
+}
+509.1.9 = {
+	revolt = { }
+	controller = SIN
+	remove_core = ENH
+}

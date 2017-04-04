@@ -1,0 +1,41 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Гесемберевахале"
+culture = utenian
+religion = atheism
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+
+626.3.21 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+}
+700.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+	grand_shipyard = yes
+}
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+}
+825.1.9 = {
+	capital = "Гессембервхиль"
+	trade_goods = copper
+}
+850.8.1 = {
+	base_tax = 4
+	base_production = 4
+	base_manpower = 6
+	modernised_factories = yes
+} # Улучшения при Картевальской Утении

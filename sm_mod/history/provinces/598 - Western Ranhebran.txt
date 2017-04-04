@@ -1,0 +1,51 @@
+native_size = 12
+native_ferocity = 4
+native_hostileness = 8
+hre = no
+
+#add_core = RNB
+
+culture = tarsek
+religion = totemism
+capital = "Ранхус-Кальтори"
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+trade_goods = fish
+
+is_city = no
+
+2012.8.9 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+	is_city = yes
+}
+2013.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+# Утрата контроля после поражения в Битве за Чаепит.
+# Спорная территория
+2014.2.1 = {
+	owner = XXX
+	controller = XXX
+	remove_core = CH2
+	remove_core = CHT
+	#add_claim = CH2
+	add_claim = SME
+	native_size = 12
+	native_ferocity = 4
+	native_hostileness = 8
+	is_city = no
+}
+2014.8.17 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_claim = SME
+	base_manpower = 5
+	is_city = yes
+} # Аннексия

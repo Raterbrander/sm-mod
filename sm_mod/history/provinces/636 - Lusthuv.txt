@@ -1,0 +1,28 @@
+native_size = 8
+native_ferocity = 8
+native_hostileness = 8
+hre = no
+
+capital = "Лёрстгейнакора"
+culture = hotargonian
+religion = totemism
+trade_goods = copper
+base_tax = 4
+base_production = 3
+base_manpower = 4
+is_city = no
+
+2013.4.1 = {
+	owner = KSS
+	controller = KSS
+	add_core = KSS
+	is_city = yes
+	capital = "Люстхув"
+	culture = yellow
+	religion = helgarn
+}
+2013.6.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+}

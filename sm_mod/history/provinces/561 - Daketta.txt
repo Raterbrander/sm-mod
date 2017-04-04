@@ -1,0 +1,32 @@
+owner = UTN
+controller = UTN
+add_core = UTN
+capital = "Дагеттыгеун"
+culture = utenian
+religion = atheism
+trade_goods = salt
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+railroad_2 = yes
+
+discovered_by = southern
+
+626.3.27 = { controller = EOY }
+627.7.25 = {
+	owner = EOY
+	add_core = EOY
+}
+637.7.3 = { capital = "Дангеттаувен" }
+820.4.21 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	remove_core = EOY
+}
+850.1.1 = {
+	base_tax = 5
+	base_production = 4
+}

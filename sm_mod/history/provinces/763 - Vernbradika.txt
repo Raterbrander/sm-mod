@@ -1,0 +1,95 @@
+owner = VNB
+controller = VNB
+add_core = VNB
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = astransenit
+capital = "Вернбрадика"
+base_tax = 5
+base_production = 4
+base_manpower = 5
+trade_goods = wine
+
+fort_15th = yes
+shipyard = yes
+primitive_manufactories = yes
+temple = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+431.7.12 = { # -5
+	owner = VNR
+	controller = VNR
+	add_core = VNR
+	fort_15th = no
+}
+451.1.1 = { serfdom = no }
+478.10.16 = {
+	owner = GRV
+	controller = GRV
+	add_core = GRV
+	primitive_manufactories = no
+	traditional_factories = yes
+	railroad_1 = yes
+}
+480.7.27 = { controller = ZMR }
+482.1.2 = { hre = no }
+482.6.4 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = GRV
+	remove_province_modifier = gervein_union_city
+}
+489.3.21 = {
+	owner = VNB
+	controller = VNB
+}
+545.1.1 = { religion = helgarn }
+552.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+	railroad_1 = no
+	railroad_2 = yes
+}
+560.2.16 = { remove_core = ZMR }
+571.6.21 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = VNR
+	remove_core = VNB
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

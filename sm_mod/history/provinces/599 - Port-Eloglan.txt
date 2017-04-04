@@ -1,0 +1,67 @@
+owner = ADN
+controller = ADN
+#add_core = RNB
+add_core = ADN
+hre = no
+is_city = yes
+
+culture = ardenian
+religion = tolerance
+capital = "Элогия"
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = naval_supplies
+
+#2012.2.1 = {
+#	owner = RNB
+#	controller = RNB
+#	remove_core = ADN
+#}
+2012.6.1 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 3
+}
+2012.8.9 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+}
+2013.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+	capital = "Дальний"
+	culture = chaepit
+}
+# Утрата контроля после поражения в Битве за Чаепит.
+# Спорная территория
+2014.2.1 = {
+	owner = XXX
+	controller = XXX
+	remove_core = CH2
+	remove_core = CHT
+	add_claim = SME
+	native_size = 14
+	native_ferocity = 6
+	native_hostileness = 10
+	is_city = no
+}
+# Торговые фактории Жёлтых
+2014.7.1 = {
+	owner = EOY
+	controller = EOY
+	is_city = yes
+	base_tax = 4
+	capital = "Порт-Элоглан"
+	culture = yellow
+	religion = helgarn
+}
+2014.8.17 = { add_core = EOY } # Аннексия
+# Арденское возрождение
+2015.1.1 = {
+	capital = "Элогия"
+	culture = ardenian
+}

@@ -1,0 +1,72 @@
+owner = KAL
+controller = KAL
+add_core = KAL
+
+is_city = yes
+
+culture = smeshesfongs
+religion = miscilian_pagan
+capital = "Локормин"
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = cloth
+
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+479.7.23 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+525.1.1 = {
+	culture = miscilian
+	remove_core = KAL
+}
+555.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+659.10.3 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	culture = mescil
+	religion = helgarn
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}

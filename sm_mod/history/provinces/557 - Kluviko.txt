@@ -1,0 +1,51 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+
+capital = "Клювико"
+culture = chaepit
+religion = orthodox
+trade_goods = spices
+base_tax = 3
+base_production = 2
+base_manpower = 4
+
+railroad_1 = yes
+
+discovered_by = southern
+
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	#remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+864.2.3 = {
+	owner = KTN
+	controller = KTN
+	add_core = KTN
+	#add_core = EOY
+	#remove_core = CH2
+} # Аннексия
+865.1.1 = { fort_15th = yes }
+875.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+882.8.1 = {
+	base_tax = 6
+	base_production = 6
+	base_manpower = 7
+	religion = tolerance
+} # Улучшения при Картевальской Утении

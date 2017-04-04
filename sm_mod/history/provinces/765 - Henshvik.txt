@@ -1,0 +1,62 @@
+owner = HSV
+controller = HSV
+add_core = HSV
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = ellar_pagan
+capital = "Ìונגמכüץוםע"
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = cloth
+
+temple = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+464.2.24 = { add_core = PRT }
+472.4.23 = {
+	#owner = PRT
+	#controller = PRT
+	add_core = HLC
+}
+482.1.2 = { hre = no }
+545.1.1 = { religion = helgarn }
+569.1.22 = {
+	owner = PRT
+	controller = PRT
+	traditional_factories = yes
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = HLC
+	remove_core = PRT
+	remove_core = HSV
+}
+589.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

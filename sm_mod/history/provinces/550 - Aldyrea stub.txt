@@ -1,0 +1,21 @@
+# Большая прова на месте всей Алдыреи
+native_size = 8
+native_ferocity = 3
+native_hostileness = 6
+is_city = no
+
+culture = ramzahian
+religion = animism
+capital = "Рамзаховск"
+
+base_tax = 2
+base_production = 1
+base_manpower = 3
+trade_goods = fur
+
+2013.6.26 = {
+	owner = RZH
+	controller = RZH
+	add_core = RZH
+	is_city = yes
+}

@@ -1,0 +1,76 @@
+owner = VNB
+controller = VNB
+add_core = VNB
+
+is_city = yes
+hre = yes
+
+culture = arvabian
+religion = astransenit
+capital = "Арванзмарк"
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = wine
+
+fort_15th = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+
+431.7.12 = {
+	owner = VNR
+	controller = VNR
+	add_core = VNR
+}
+458.12.1 = { add_core = ARV }
+459.2.3 = { controller = ARV }
+459.2.18 = { controller = VNR }
+478.10.16 = {
+	owner = GRV
+	controller = GRV
+	add_core = GRV
+}
+480.3.14 = { controller = ZMR }
+482.1.2 = { hre = no }
+482.6.4 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = GRV
+}
+489.3.21 = {
+	owner = VNB
+	controller = VNB
+}
+545.1.1 = { religion = helgarn }
+560.2.16 = { remove_core = ZMR }
+571.6.21 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = VNR
+	remove_core = VNB
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

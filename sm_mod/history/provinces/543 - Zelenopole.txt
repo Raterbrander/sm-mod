@@ -1,0 +1,23 @@
+native_size = 34
+native_ferocity = 4
+native_hostileness = 4
+hre = no
+
+culture = rolevik_culture
+religion = central_land_paganism 
+capital = "форт-Зеленопольск"
+is_city = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = grain
+
+discovered_by = middle_land_group
+
+869.1.1 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+	culture = chaepit
+	religion = orthodox
+}

@@ -1,0 +1,33 @@
+native_size = 62
+native_ferocity = 5
+native_hostileness = 5
+
+is_city = no
+
+culture = harfta
+religion = totemism
+capital = "Хантайренчис"
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+800.1.1 = { trade_goods = gold }
+882.3.11 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	is_city = yes
+}
+884.1.1 = {
+	owner = FRC
+	controller = FRC
+	add_core = FRC
+	remove_core = EOY
+}
+900.1.1 = {
+	base_tax = 4
+	base_production = 5
+	base_manpower = 5
+}

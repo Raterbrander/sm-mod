@@ -1,0 +1,103 @@
+native_size = 45
+native_ferocity = 6
+native_hostileness = 3
+
+is_city = no
+hre = no
+
+culture = ausger
+religion = tolerance # catholic
+capital = "Альтер-Блё"
+
+base_tax = 6
+base_production = 5
+base_manpower = 6
+trade_goods = fish
+
+discovered_by = rolevik
+
+# До этого была ИЗЗП и СИПСО
+866.10.22 = {
+	owner = SWI
+	controller = SWI
+	add_core = SWI
+	shipyard = yes
+	is_city = yes
+}
+875.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+886.9.20 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}
+928.9.19 = {
+	remove_core = SWI
+	add_core = AGI
+}
+932.5.25 = {
+	owner = AGI
+	controller = AGI
+	remove_core = SME
+}
+937.10.1 = { capital = "Вена" }
+#2013.12.15 = { controller = DOM }
+#2013.12.16 = {
+#	owner = GRU
+#	controller = GRU
+#	add_core = GRU
+#	add_core = SME
+#	add_core = DOM
+#}
+#2013.12.20 = { controller = SME }
+#2014.1.1 = {
+#	courthouse = no
+#	cathedral = no
+#	base_tax = 4
+#	base_production = 4
+#	base_manpower = 4
+#}
+#2014.5.15 = {
+#	owner = CH2
+#	controller = CH2
+#	add_core = CH2
+#}
+#2014.7.11 = {
+#	remove_core = DOM
+#	remove_core = SME
+#	base_tax = 5
+#	base_production = 5
+#	base_manpower = 5
+#}
+#2014.7.20 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 2
+#		name = "Орсеольдское восстание" 
+#		leader = "Конрад Орсеольд" 
+#	} 
+#	controller = REB
+#}
+#2014.8.14 = {
+#	revolt = { }
+#	owner = SLV
+#	controller = SLV
+#	add_core = SLV
+#	remove_core = HNN
+#	remove_core = AGI
+#}
+#2014.11.19 = {
+#	owner = AFE
+#	controller = AFE
+#	add_core = AFE
+#	remove_core = AFE
+#	capital = "Альтер-Бейло"
+#}

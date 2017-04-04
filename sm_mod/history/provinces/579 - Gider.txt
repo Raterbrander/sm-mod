@@ -1,0 +1,56 @@
+owner = YAL
+controller = YAL
+add_core = YAL
+
+is_city = yes
+hre = no
+
+capital = "Деревня первобытных"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = cloth
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+discovered_by = old_zmooromfian
+
+458.1.1 = {
+	revolt = {
+		type = pretender_rebels
+		size = 1
+	}
+	controller = REB
+}
+459.6.14 = {
+	revolt = { }
+	controller = ZMR
+}
+463.9.3 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = YAL
+}
+500.1.1 = {
+	discovered_by = ellar_tech
+	discovered_by = continental
+	discovered_by = amian
+}
+578.6.22 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = { discovered_by = southern }
+900.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
