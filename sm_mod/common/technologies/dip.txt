@@ -1,0 +1,280 @@
+monarch_power = DIP
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
+	trade_efficiency = 0.2
+	yearly_corruption = -0.05
+}
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 10
+	
+	naval_morale = 2.0 # 2.0
+	range = 50 # 50
+	global_colonial_growth	= 	20 # 20
+	trade_range	= 100 # 100
+	
+	naval_maintenance = 0.25
+	
+	may_steal_maps = yes
+	
+	enable = primitive_trade_ships
+	enable = primitive_transport_ships
+}
+
+technology = {
+	# Tech 1
+	year = 25
+	
+	#marketplace = yes
+	
+	merchants = yes
+	trade_range = 50 # 50
+	trade_efficiency =  0.1 # 0.1
+	
+	enable = galley
+	enable = early_carrack
+}
+
+technology = {
+	# Tech 2
+	year = 50
+	
+	shipyard = yes
+	
+	range = 50 # 100
+	trade_range	= 50 # 150
+	
+	enable = cog
+	enable = medieval_trade_ships # barque ?
+}
+
+technology = {
+	# Tech 3
+	year = 100
+	may_fabricate_claims = yes
+	
+	enable = caravel
+	enable = steam_transport
+}
+
+technology = {
+	# Tech 4
+	year = 10
+	
+	may_slander_merchants = yes
+	
+	trade_range	= 50 # 10
+	trade_efficiency = 0.15 # 0.25
+}
+
+technology = {
+	# Tech 5
+	year = 300
+	
+	grand_shipyard = yes
+	
+	naval_morale = 0.5 # 2.5
+	naval_maintenance = 0.25 # 0.5
+	
+	enable = modern_transport
+}
+
+
+technology = {
+	# Tech 6
+	year = 400
+	
+	trade_efficiency = 0.05 # 0.3
+	
+	wharf = yes
+	
+	enable = sm_cruiser
+}
+
+technology = {
+	# Tech 7
+	year = 430
+	
+	global_colonial_growth = 15 # 35
+	
+	road_2 = yes
+	railroad_2 = yes
+	
+}
+
+technology = {
+	# Tech 8
+	year = 455
+	
+	trade_range	= 25 # 225
+	trade_efficiency = 0.1 # 0.4
+
+	enable = merchantman
+}
+
+technology = {
+	# Tech 9
+	year = 480
+	
+	enable = galiot
+	
+	tradecompany = yes
+}
+
+technology = {
+	# Tech 10
+	year = 505
+	
+	range = 25 # 125
+	trade_range	= 25 # 25
+	
+	enable = wargalleon
+}
+
+technology = {
+	# Tech 11
+	year = 525
+
+	trade_efficiency = 0.05 # 0.45
+}
+
+technology = {
+	# Tech 12
+	year = 565
+
+	enable = chebeck
+}
+
+technology = {
+	# Tech 13
+	year = 590
+	
+	may_agitate_for_liberty = yes
+}
+
+technology = {
+	# Tech 14
+	year = 625
+	
+	may_study_technology = yes
+	may_infiltrate_administration = yes
+	may_corrupt_officials = yes
+	may_sabotage_reputation = yes
+	
+	#enable = heavy_frigate
+}
+
+technology = {
+	# Tech 15
+	year = 680
+	
+	global_colonial_growth = 5 # 40
+}
+
+technology = {
+	# Tech 16
+	year = 725
+
+	naval_maintenance = 0.25 # 0.75
+	naval_morale = 0.25 # 2.75
+	
+	reduced_naval_attrition = yes
+	
+	enable = archipelago_frigate
+	enable = threedecker
+}
+
+technology = {
+	# Tech 17
+	year = 755
+	
+	allow_client_states = yes
+}
+
+technology = {
+	# Tech 18
+	year = 775
+	
+	trade_efficiency = 0.05 # 0.5
+}
+
+technology = {
+	# Tech 19
+	year = 800
+	
+	naval_morale = 0.25 # 3
+	naval_maintenance = 0.25 # 1
+}
+
+technology = {
+	# Tech 20
+	year = 840
+	
+	global_colonial_growth = 15 # 55
+	range = 125 # 25
+}
+
+technology = {
+	# Tech 21
+	year = 865
+	
+	range = 50 # 300
+}
+
+technology = {
+	# Tech 22
+	year = 880
+	
+	trade_range = 50 # 300
+}
+
+technology = {
+	# Tech 23
+	year = 935
+	
+	naval_maintenance = 0.1 # 1.1
+	
+	# Units
+}
+
+technology = {
+	# Tech 24
+	year = 965 # 10 Nov. 2013
+	
+	trade_efficiency = 0.05 # 0.55
+	trade_range	= 25 # 325
+}
+
+technology = {
+	# Tech 25
+	year = 1045 # 1 Mar. 2014
+	
+	naval_morale = 0.5 # 3.5
+	naval_maintenance = 0.15 # 1.25
+}
+
+technology = {
+	# Tech 26
+	year = 1100 # 15 May. 2014
+	
+	may_sow_discontent = yes
+	may_support_rebels = yes
+	
+}
+
+technology = {
+	# Tech 27
+	year = 1140 # 12 Jul. 2014
+	
+	naval_maintenance = -0.25 # 1.0
+}
+
+technology = {
+	# Tech 28
+	year = 1300 # 1 Mar. 2015
+	
+	# units
+}

@@ -1,0 +1,62 @@
+DRA = {
+	NOT = { exists = SUM }
+	#NOT = { exists = UM1 }
+	#NOT = { exists = UM2 }
+}
+
+SUM = {
+	NOT = { exists = DRA }
+}
+
+DMF = {
+	culture = malishian
+	owner = {
+		OR = {
+			government = monarchy
+			government = dictatorship
+			government = socialist_state
+			government = presidental_dictatorship
+		}
+	}
+}
+
+ELL = {
+	OR = {
+		is_core = ELL
+		owner = {
+			capital_scope = {
+				is_core = ELL
+			}
+		}
+	}
+}
+
+EOY = {
+	OR = {
+		is_core = EOY
+		owner = {
+			capital_scope = {
+				is_core = EOY
+			}
+		}
+	}
+}
+
+CH2 = {
+	OR = {
+		is_core = CH2
+		owner = {
+			capital_scope = {
+				is_core = CH2
+			}
+		}
+	}
+}
+
+CHT = {
+	NOT = { is_core = CH2 }
+}
+
+NGR = {
+	NOT = { is_core = NGR }
+}

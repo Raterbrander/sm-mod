@@ -1,0 +1,351 @@
+monarch_power = MIL
+
+# applied when a country is ahead of time in this technology
+# no bonus for MIL currently
+# ahead_of_time = {
+# }
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 10
+	
+	sprite_level = 1
+	
+	combat_width = 10 # 10
+	
+	enable = sm_lem_native_kop
+	enable = sm_lem_topor
+	enable = sm_native_kop
+	enable = sm_native_topor
+
+	infantry_fire		= 	1.0		# 1.0
+	infantry_shock 		= 	1.0		# 1.0
+	cavalry_shock  		= 	1.5		# 1.5
+	cavalry_fire		=	1.25	# 1.25
+	land_morale 		= 	1.0 	# 1.0
+	
+	military_tactics = 1			# 1.0
+}
+
+technology = {
+	# Tech 1
+	year = 25
+	
+	fort_15th = yes
+	
+	enable = amian_base_armies
+	
+	enable = domin_armies
+	enable = domin_mongol_armies
+	enable = domin_mongol_cavalry
+	enable = domin_cavalry
+	
+	enable = anarendilian_cavalary
+	enable = anarendilian_infantry
+	enable = anarendilian_slavenian_voisko
+	enable = anarendilian_slavenian_konniki
+	enable = anarendilian_levonian_warriors
+	enable = anarendilian_levonian_horse_warriors
+	
+	enable = ellar_tech_infantra_ellarta
+	enable = ellar_tech_infantra_ellarta_offensive
+	enable = ellar_tech_ellar_cavalry
+	
+	enable = smeshesfongs_infantry
+	enable = smeshesfongs_cav
+	
+	enable = zmooromf_infantry
+	enable = zmooromf_wizards
+	
+	enable = old_kronossian_turkish_infantry
+	enable = old_kronossian_greek_infantry
+	enable = old_kronossian_cav
+	
+	enable = rolevik_base_armies
+}
+
+technology = {
+	# Tech 2
+	year = 50
+	
+	infantry_fire		= 	0.5		# 1.5
+	infantry_shock		= 	0.5		# 1.5
+	
+	sprite_level = 2
+	
+	combat_width = 10 # 10
+	
+	supply_limit = 0.5 # 0.5
+	
+	enable = continental_base_infantry
+	enable = continental_base_cavalary
+	enable = amian_legions
+	
+	enable = altras_raiders
+	enable = altras_cavalary
+	
+	enable = better_zmooromf_infantry
+}
+
+technology = {
+	# Tech 3
+	
+	year = 100
+	
+	artillery_fire 		= 	0.5 # 0.5
+	artillery_shock 	=	0.5 # 0.5
+	
+	enable = continental_first_tanks
+	enable = continental_base_motorized_infantry
+	enable = amian_tanks
+	
+	#enable = amian_avia
+	
+	# ?
+	enable = southern_tanks
+	enable = southern_chaepit_infantry
+	enable = southern_smeshiks_infantry
+	enable = southern_utenian_desant
+	
+	airport = yes
+}
+
+technology = {
+	# Tech 4
+	year = 10
+	
+	weapons = yes
+	
+	enable = continental_light_tanks
+	enable = continental_heavy_tanks
+	
+	supply_limit = 	0.5 # 1.0
+}
+
+technology = {
+	# Tech 5
+	year = 300
+	
+	may_sabotage_recruitment = yes
+	
+	land_morale = 0.25 # 1.25
+	
+	enable = continental_early_droids
+	enable = amian_droids
+}
+
+technology = {
+	# Tech 6
+	year = 400
+	
+	sprite_level = 3
+	
+	conscription_center = yes
+	
+	may_force_march = yes
+	
+	#enable = okian_infantry
+	#enable = infantra_ellarta_continental
+}
+
+technology = {
+	# Tech 7
+	year = 430
+	
+	fort_16th = yes
+	
+	enable = amian_ELPRont_armies
+	enable = amian_sharsik_armies
+	enable = amian_hrumin_armies
+}
+
+technology = {
+	# Tech 8
+	year = 455
+	
+	military_tactics	=	0.25 # 1.25
+	maneuver_value 		= 	0.5 # 0.5
+	
+	# New units?
+}
+
+technology = {
+	# Tech 9
+	year = 480
+	
+	training_fields = yes
+	
+	military_tactics	=	0.25 # 1.5
+	
+	# New units?
+}
+
+technology = {
+	# Tech 10
+	year = 505
+	
+	artillery_fire 		= 	0.5 # 1.0
+	artillery_shock 	=	0.5 # 1.0
+
+	#enable = modern_amian_avia
+	#enable = first_spaceships
+	#enable = modern_avia
+	
+	spaceport = yes
+}
+
+technology = {
+	# Tech 11
+	year = 525
+	
+	infantry_fire		= 	0.25 # 1.75
+
+	# New units
+	#enable = teutonic_order_soldiers
+}
+
+technology = {
+	# Tech 12
+	year = 565
+	
+	artillery_fire 		= 	0.5 # 1.5
+	artillery_shock 	=	0.5 # 1.5
+	
+	# New art
+	#enable = hallowed_empire
+}
+
+technology = {
+	# Tech 13
+	year = 590
+	
+	artillery_fire 		= 	0.25 # 1.75
+	artillery_shock 	=	0.25 # 1.75
+}
+
+technology = {
+	# Tech 14
+	year = 625
+
+	land_morale	= 0.25 # 1.5
+	
+	infantry_fire = 0.25 # 2.0
+	infantry_shock = 0.25 # 1.75
+	
+	maneuver_value		= 	0.25 # 0.75
+	
+	combat_width = 5 # 20
+}
+
+technology = {
+	# Tech 15
+	year = 680
+	
+	fort_17th = yes
+}
+
+technology = {
+	# Tech 16
+	year = 725
+	
+	military_tactics	=	0.5 # 2.0
+}
+
+technology = {
+	# Tech 17
+	year = 755
+	
+	# New units
+}
+
+technology = {
+	# Tech 18
+	year = 775
+	
+	#artillery_fire 		= 	0.25 # 1.75
+	#artillery_shock 	=	0.45 # 1.70
+	#
+	#maneuver_value	= 0.5 # 2.5
+	
+	# New art
+}
+
+technology = {
+	# Tech 19
+	year = 800
+	
+	supply_limit = 1.0 # 2.0
+}
+
+technology = {
+	# Tech 20
+	year = 840
+	
+	land_morale = 0.25 # 1.75
+}
+
+technology = {
+	# Tech 21
+	year = 865
+	
+	sprite_level = 4
+	
+	# New units
+}
+
+technology = {
+	# Tech 22
+	year = 880
+	
+	cavalry_shock 		=	0.5 # 2.0
+	cavalry_fire		=	0.75 # 2.0
+	
+	#enable = altras_tanketki
+}
+
+technology = {
+	# Tech 23
+	year = 935
+	
+	infantry_fire		= 	0.25 # 2.25
+	infantry_shock		= 	0.25 # 2.0
+}
+
+technology = {
+	# Tech 24
+	year = 965 # 10 Nov. 2013
+	
+	maneuver_value = 0.25 # 1.0
+}
+
+technology = {
+	# Tech 25
+	year = 1045 # 1 Mar. 2014
+	
+	military_tactics = 0.5 # 2.5
+}
+
+technology = {
+	# Tech 26
+	year = 1100 # 15 May. 2014
+	
+	# Units
+}
+
+technology = {
+	# Tech 27
+	year = 1140 # 12 Jul. 2014
+	
+	cavalry_shock 		=	0.25 # 2.25
+	cavalry_fire		=	0.25 # 2.25
+}
+
+technology = {
+	# Tech 28
+	year = 1300 # 1 Mar. 2015
+	
+	sprite_level = 5
+	
+	# Units
+}

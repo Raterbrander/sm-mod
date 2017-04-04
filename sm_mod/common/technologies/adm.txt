@@ -1,0 +1,285 @@
+monarch_power = ADM
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
+	production_efficiency = 0.2
+	yearly_corruption = -0.05
+}
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 10
+	
+	tribal_despotism = yes 	
+	tribal_federation = yes 
+	tribal_democracy = yes
+	tribal_kingdom = yes
+	role_gov = yes
+	despotic_monarchy = yes	
+	
+	temple = yes
+	university = yes
+	
+	plantations = yes
+	slavery = yes
+}
+
+technology = {
+	# Tech 1
+	year = 25
+	
+	feudal_monarchy = yes
+	oligarchic_republic = yes
+	theocratic_government = yes
+	consul_republic = yes
+	
+	courthouse = yes
+	town_hall = yes
+	primitive_manufactories = yes
+	
+}
+
+technology = {
+	# Tech 2
+	year = 50
+	
+	mercenaries_clan = yes
+	militarist_dictatorship = yes
+	absolute_monarchy = yes
+	republican_dictatorship = yes
+	AM_clan = yes
+	AM_clan_rep = yes
+	
+	serfdom = yes
+}
+
+technology = {
+	# Tech 3
+	year = 100
+
+	production_efficiency = 0.05 # 0.05 + base
+	
+	traditional_factories = yes
+	#city_transport = yes
+	railroad_1 = yes
+	sm_rgo = yes
+	
+	textile = yes
+}
+
+technology = {
+	# Tech 4
+	year = 10
+	
+	communist_dictatorship = yes
+	socialist_state = yes
+	socialist_republic = yes
+}
+
+technology = {
+	# Tech 5
+	year = 300
+	
+	constitutional_republic = yes
+	constitutional_monarchy = yes
+	presidental_republic_4 = yes
+	presidental_republic_6 = yes
+	parliamentary_republic = yes
+	presidental_dictatorship = yes
+	
+	allowed_idea_groups = 1 # ?
+	
+	num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 6
+	year = 400
+	
+	max_states = 5 # 5
+	
+	# ?
+	#fascist_dictatorship = yes
+}
+
+technology = {
+	# Tech 7
+	year = 430
+	
+	bureaucratic_despotism = yes 
+	
+	max_states = 5 # 10
+}
+
+technology = {
+	# Tech 8
+	year = 455
+	
+	allowed_idea_groups = 2
+}
+
+technology = {
+	# Tech 9
+	year = 480
+	
+	production_efficiency = 0.10 # 15 + base
+	modernised_factories = yes
+}
+
+technology = {
+	# Tech 10
+	year = 505
+	
+	allowed_idea_groups = 3
+}
+
+technology = {
+	# Tech 11
+	year = 525
+	
+	production_efficiency = 0.05 # 20 + base
+}
+
+technology = {
+	# Tech 12
+	year = 565
+	
+	allowed_idea_groups = 4
+	
+	karteval_monarchic = yes
+	karteval = yes
+	karteval_republic = yes
+	
+	fascist_dictatorship = yes
+	
+	cathedral = yes # ?
+	
+	max_states = 3 # 13
+}
+
+technology = {
+	# Tech 13
+	year = 590
+	
+	development_efficiency = 0.1
+	
+	max_states = 2 # 15
+	
+	num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 14
+	year = 625
+	
+	#allowed_idea_groups = 5
+	
+	max_states = 2 # 17
+}
+
+technology = {
+	# Tech 15
+	year = 680
+	
+	robotic_production = yes
+	production_efficiency = 0.05 # 25
+}
+
+technology = {
+	# Tech 16
+	year = 725
+	
+	administrative_efficiency = 0.2
+	development_efficiency = 0.2
+}
+
+technology = {
+	# Tech 17
+	year = 755
+	
+	enlightened_despotism = yes
+}
+
+technology = {
+	# Tech 18
+	year = 775
+	
+	administrative_efficiency = 0.1
+	development_efficiency = 0.1
+	
+	production_efficiency = 0.05 # 30
+}
+
+technology = {
+	# Tech 19
+	year = 800
+	
+	allowed_idea_groups = 5
+}
+
+technology = {
+	# Tech 20
+	year = 840
+	
+	production_efficiency = 0.10 # 40
+}
+
+technology = {
+	# Tech 21
+	year = 865
+	
+	allowed_idea_groups = 6
+}
+
+technology = {
+	# Tech 22
+	year = 880
+	
+	max_states = 8 # 25
+	
+	num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 23
+	year = 935
+	
+	development_efficiency = 0.1
+	administrative_efficiency = 0.1
+}
+
+technology = {
+	# Tech 24
+	year = 965 # 10 Nov. 2013
+	
+	development_efficiency = 0.1
+}
+
+technology = {
+	# Tech 25
+	year = 1045 # 1 Mar. 2014
+	
+	administrative_efficiency = 0.1
+}
+
+technology = {
+	# Tech 26
+	year = 1100 # 15 May. 2014
+	
+	production_efficiency = 0.1 # 50
+}
+
+technology = {
+	# Tech 27
+	year = 1140 # 12 Jul. 2014
+	
+	allowed_idea_groups = 7
+}
+
+technology = {
+	# Tech 28
+	year = 1300 # 1 Mar. 2015
+	
+	max_states = 5 # 30
+}

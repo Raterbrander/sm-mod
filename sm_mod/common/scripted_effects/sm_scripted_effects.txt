@@ -1,0 +1,156 @@
+gervein_leader_effect = {
+	add_country_modifier = {
+		name = gervein_union_leader
+		duration = -1
+	}
+	add_prestige = 5
+	change_variable = {
+		which = gervein_authority
+		value = 5
+	}
+	hidden_effect = {
+		ROOT = { save_event_target_as = gervein_union_leader_target }
+	}
+}
+
+gervein_elections_check_authority = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_modifier = gervein_authority_lvl2
+				all_country = {
+					NOT = {
+						OR = {
+							has_country_modifier = gervein_authority_lvl3
+							has_country_modifier = gervein_authority_lvl4
+							has_country_modifier = gervein_authority_lvl5
+						}
+					}
+				}
+			}
+			every_country = {
+				limit = { has_country_flag = gervein_elections_leader }
+				clr_country_flag = gervein_elections_leader
+			}
+			set_country_flag = gervein_elections_leader
+		}
+		if = {
+			limit = {
+				has_country_modifier = gervein_authority_lvl3
+				all_country = {
+					NOT = {
+						OR = {
+							has_country_modifier = gervein_authority_lvl4
+							has_country_modifier = gervein_authority_lvl5
+						}
+					}
+				}
+			}
+			every_country = {
+				limit = { has_country_flag = gervein_elections_leader }
+				clr_country_flag = gervein_elections_leader
+			}
+			set_country_flag = gervein_elections_leader
+		}
+		if = {
+			limit = {
+				has_country_modifier = gervein_authority_lvl4
+				all_country = {
+					NOT = { has_country_modifier = gervein_authority_lvl5 }
+				}
+			}
+			every_country = {
+				limit = { has_country_flag = gervein_elections_leader }
+				clr_country_flag = gervein_elections_leader
+			}
+			set_country_flag = gervein_elections_leader
+		}
+	}
+}
+
+gervein_next_in_elections = {
+	hidden_effect = {
+		if = {
+			limit = {
+				any_country = {
+					has_country_modifier = gervein_union_member
+					NOT = { has_country_flag = had_gervein_elections }
+					OR = {
+						government = republic
+						government = dictatorship 
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					has_country_modifier = gervein_union_member
+					NOT = { has_country_flag = had_gervein_elections }
+					OR = {
+						government = republic
+						government = dictatorship 
+					}
+				}
+				country_event = {
+					id = gervein.11
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+eam_js_clean_up = {
+	clr_global_flag = janv_s_started
+	clr_global_flag = janv_s_in_progress
+	clr_global_flag = janv_s_sucess
+	clr_global_flag = janv_s_fail
+	clr_global_flag = janv_s_emperor_joined
+	every_country = {
+		limit = { has_country_flag = amian_fraction_in_s }
+		clr_country_flag = amian_fraction_in_s
+		if = {
+			limit = { has_country_flag = janv_s_org }
+			clr_country_flag = janv_s_org
+		}
+	}
+}
+
+abolish_slavery_prov = {
+	custom_tooltip = abolish_slavery_prov_tooltip
+	hidden_effect = {
+		remove_building = slavery
+	}
+}
+
+establish_slavery_prov = {
+	custom_tooltip = establish_slavery_prov_tooltip
+	hidden_effect = {
+		add_building = slavery
+		if = {
+			limit = {
+				has_building = serfdom
+			}
+			remove_building = serfdom
+		}
+	}
+}
+
+abolish_serfdom_prov = {
+	custom_tooltip = abolish_serfdom_prov_tooltip
+	hidden_effect = {
+		remove_building = serfdom
+	}
+}
+
+establish_serfdom_prov = {
+	custom_tooltip = establish_serfdom_prov_tooltip
+	hidden_effect = {
+		add_building = serfdom
+		if = {
+			limit = {
+				has_building = slavery
+			}
+			remove_building = slavery
+		}
+	}
+}

@@ -1,0 +1,93 @@
+standart_reformation_trigger_helgarn = {
+	OR = {
+		religion = ellar_pagan
+		religion = astransenit
+		religion = yutonsenit
+		religion = miscilian_pagan
+		religion = helgarn
+	}
+	#is_in_capital_area = yes
+	is_reformation_center = no
+	#is_island = no
+	NOT = {
+		any_neighbor_province = {
+			is_reformation_center = yes
+		}
+	}
+	NOT = {
+		any_province = {
+			area = PREV
+			religion = helgarn
+			is_reformation_center = yes
+		}
+	}
+	#NOT = { has_climate = arctic }
+	#NOT = { has_climate = arid }
+	#NOT = { has_terrain = coastline }
+	#NOT = { has_terrain = coastal_desert }
+	#NOT = { has_terrain = steppe }
+	#NOT = { has_terrain = desert }
+	#NOT = { has_terrain = glacier }
+	#NOT = { has_climate = tropical }
+}
+
+capital_on_traditional_continents = {
+	capital_scope = {
+		OR = {
+			continent = europe
+			continent = kronos
+			continent = malishian_island
+		}
+	}
+}
+
+traditional_colonial_continent = {
+	OR = {
+		continent = new_world
+		region = western_chaepit_region
+		continent = roles_continent
+		continent = kebabian
+		continent = south_islands
+		continent = lemindland
+		continent = kongorlotez
+		continent = posoh_continent
+	}
+}
+
+nomad_region = {
+	OR = {
+		region = ellar_middle_lands_region
+		region = kornisonaks_region
+		region = wolf_lands_region
+		region = central_lands_region
+		region = smeshenfongss_lands_region
+		region = far_north_region
+		region = sevroype_region
+		region = brintenia_region
+		region = austrunia_region
+		superregion = roles_superregion
+	}
+}
+
+natives_tech_groups = {
+	OR = {
+		technology_group = rolevik
+		technology_group = lem_group
+	}
+}
+
+main_technology_groups = {
+	OR = {
+		technology_group = continental
+		technology_group = imperial_group
+		technology_group = high_domin
+	}
+}
+
+is_free_city = {
+	OR = {
+		government = merchant_republic
+		government = administrative_republic
+		government = oligarchic_republic
+	}
+}
