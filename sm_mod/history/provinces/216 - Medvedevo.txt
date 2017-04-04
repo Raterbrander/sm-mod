@@ -1,0 +1,64 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+add_core = DMF
+
+is_city = yes
+
+capital = "Малышёвск-Лесной"
+culture = malishian
+religion = orthodox
+trade_goods = fur
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+
+630.1.1 = {
+	discovered_by = southern
+	discovered_by = ellar_tech
+}
+688.10.18 = {
+	owner = MDV
+	controller = MDV
+	add_core = MDV
+	culture = medvedian
+	religion = tolerance
+	capital = "Беарград"
+	base_tax = 5
+	base_production = 5
+	base_manpower = 5
+	road_2 = yes
+}
+750.1.1 = {
+	owner = SUM
+	controller = SUM
+}
+800.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+805.5.5 = {
+	owner = DMF
+	controller = DMF
+}
+870.7.18 = { controller = DRA }
+872.2.11 = { controller = DMF }
+892.8.1 = {
+	discovered_by = domin_group
+}
+879.7.10 = { owner = DRA controller = DRA }

@@ -1,0 +1,38 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+
+is_city = yes
+
+capital = "Рустогород"
+culture = malishian
+religion = tolerance
+trade_goods = grain
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+road_2 = yes
+railroad_2 = yes
+
+discovered_by = DRA
+discovered_by = DMF
+discovered_by = SUM
+
+630.1.1 = {
+	discovered_by = southern
+	discovered_by = ellar_tech
+}
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

@@ -1,0 +1,71 @@
+owner = IRI
+controller = IRI
+add_core = IRI
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = alklvalondie
+capital = "»рдесс"
+trade_goods = naval_supplies
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	capital = "Корсульд"
+}
+677.10.14 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = IRI
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+894.7.1 = {
+	owner = GRU
+	controller = GRU
+	clr_province_flag = GRU_was_ceded_to_DRA
+}
+899.8.8 = {
+	owner = AGI
+	controller = AGI
+	add_core = AGI
+	culture = ausger
+	capital = "јнтверпен"
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+}
+923.9.12 = { remove_core = DRA }
+1513.2.13 = { owner = ASM controller = ASM add_core = ASM remove_core = AGI }
+#2014.2.1 = { remove_core = GRU }
+#2014.3.1 = { owner = SLV controller = SLV add_core = SLV }
+#2014.7.1 = { culture = smesh_russian religion = ross_pagan }
+#2014.11.17 = { religion = alklvalondie culture = anarendilian capital = "»рдесс" }

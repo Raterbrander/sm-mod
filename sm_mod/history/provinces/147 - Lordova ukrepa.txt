@@ -1,0 +1,84 @@
+owner = TUR
+controller = TUR
+
+is_city = yes
+hre = yes
+
+culture = terend
+religion = astransenit
+capital = "Лордова укрепа"
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = gold
+
+fort_15th = yes
+serfdom = yes
+
+discovered_by = continental
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_kronossian_tech
+
+482.1.2 = { hre = no }
+547.5.26 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+	serfdom = no
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.5.12 = {
+	owner = KRN
+	controller = KRN
+}
+584.3.21 = {
+	owner = VSK
+	controller = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+680.1.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 3
+	religion = helgarn
+}
+850.6.1 = { # 2013.6.1
+	culture = terendian
+	base_tax = 7
+	base_production = 6
+	base_manpower = 4
+	#remove_core = EOY
+}
+#2013.6.21 = {
+#	revolt = { type = revolutionary_rebels size = 2 }
+#	controller = REB
+#}
+#2013.6.28 = { revolt = {} controller = SRM add_local_autonomy = 75 }
+874.10.7 = { add_core = NGI } # 2013.7.3
+886.6.14 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	#remove_core = SRM
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

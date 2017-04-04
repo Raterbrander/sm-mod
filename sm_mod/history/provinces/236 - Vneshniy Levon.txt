@@ -1,0 +1,49 @@
+owner = LVO
+controller = LVO
+add_core = LVO
+
+culture = levonian
+religion = totemism
+capital = "Левонд"
+trade_goods = cloth
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+
+discovered_by = anarendilian_tech
+
+662.12.15 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	discovered_by = continental
+	discovered_by = amian
+	discovered_by = imperial_group
+	discovered_by = high_domin
+}
+705.1.1 = { religion = orthodox }
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+868.5.4 = {
+	add_core = DRA
+	controller = DRA
+}
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = domin_group
+}
+925.1.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}
+1005.1.1 = { religion = ross_pagan }
+#1660.1.1  = { remove_core = LVO culture = anarendilian religion = alklvalondie }

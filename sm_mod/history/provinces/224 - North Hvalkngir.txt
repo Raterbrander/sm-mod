@@ -1,0 +1,50 @@
+owner = ASR
+controller = ASR
+add_core = HVL
+add_core = ASR
+
+is_city = yes
+hre = no
+
+culture = anarendilian
+religion = alklvalondie
+capital = "Дорвиль"
+trade_goods = fish
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = ASR
+}
+482.1.2 = {
+	revolt = {
+		type = anti_tax_rebels
+		size = 1
+	}
+	controller = REB
+}
+492.5.1 = {
+	revolt = { }
+	controller = AFE
+}
+668.7.30 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = HVL
+	remove_core = AFE
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+#1445.1.1 = { owner = GRU controller = GRU remove_core = DRA }
+#1383.6.18 = { remove_core = UKS }

@@ -1,0 +1,71 @@
+owner = BRD
+controller = BRD
+add_core = BRD
+add_core = HVL
+
+is_city = yes
+
+culture = slavenian
+religion = ross_pagan
+capital = "Бардин"
+trade_goods = cloth
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+discovered_by = anarendilian_tech
+
+453.7.15 = { add_core = ASR }
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = ASR
+	slavery = yes
+}
+482.1.2 = {
+	revolt = {
+		type = nationalist_rebels
+		size = 3
+	}
+	controller = REB
+}
+503.1.1 = {
+	revolt = { }
+	controller = AFE
+}
+668.7.30 = { # 1177.1.1
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = HVL
+	discovered_by = continental
+	discovered_by = amian
+}
+670.1.1 = { serfdom = no }
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+894.7.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+}
+923.9.12 = { remove_core = DRA }

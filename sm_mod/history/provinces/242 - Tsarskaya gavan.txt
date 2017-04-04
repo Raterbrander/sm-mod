@@ -1,0 +1,63 @@
+native_size = 10
+native_ferocity = 5
+native_hostileness = 5
+
+is_city = no
+hre = no
+
+culture = slavenian
+religion = ross_pagan
+capital = "÷арска€ гавань"
+trade_goods = unknown 
+base_tax = 5
+base_production = 4
+base_manpower = 5
+
+discovered_by = anarendilian_tech
+discovered_by = continental
+discovered_by = amian
+
+507.1.1 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	culture = smesh_russian
+	religion = orthodox
+	is_city = yes
+	trade_goods = naval_supplies
+	base_tax = 4
+	base_production = 3
+	base_manpower = 4
+	grand_shipyard = yes
+}
+630.1.1 = {
+	base_tax = 5
+	base_production = 4
+	base_manpower = 5
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	controller = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = domin_group
+	discovered_by = southern
+}
+894.7.1 = {
+	owner = GRU
+	controller = GRU
+	clr_province_flag = GRU_was_ceded_to_DRA
+}
+923.9.12 = { remove_core = DRA }
+#2013.10.1 = { religion = ross_pagan }

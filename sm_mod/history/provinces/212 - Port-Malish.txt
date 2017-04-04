@@ -1,0 +1,49 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+add_core = DMF
+
+is_city = yes
+
+capital = "Порт-Малыш"
+culture = malishian
+religion = orthodox
+trade_goods = naval_supplies
+base_tax = 5
+base_production = 5
+base_manpower = 6
+
+grand_shipyard = yes
+fort_15th = yes
+road_2 = yes
+railroad_2 = yes
+wharf = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+discovered_by = southern
+
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+805.5.5 = {
+	owner = DMF
+	controller = DMF
+}
+871.1.7 = { controller = DRA }
+872.2.11 = { controller = DMF }
+892.8.1 = {
+	discovered_by = domin_group
+}
+879.7.10 = {
+	owner = DRA
+	controller = DRA
+}

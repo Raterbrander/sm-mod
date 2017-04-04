@@ -1,0 +1,45 @@
+native_size = 36
+native_ferocity = 4
+native_hostileness = 6
+
+is_city = no
+
+capital = "Стаммердон" 
+culture = south_kronossian
+religion = kronos_pagan
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+844.1.1 = {
+	owner = SRM
+	controller = SRM
+	add_core = SRM
+	trade_goods = wood
+	is_city = yes
+}
+886.6.14 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	remove_core = SRM
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+900.1.1 = {
+	culture = eurasian
+	religion = tolerance
+	base_manpower = 4
+	add_claim = YIA
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}
+945.1.1 = { religion = imperial_faith }

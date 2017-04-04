@@ -1,0 +1,49 @@
+# Малозначимый населённый пункт до периода ШИ
+native_size = 73
+native_ferocity = 5
+native_hostileness = 7
+
+is_city = no
+hre = no
+
+capital = "Манд-Веллер"
+culture = mixed_kronossian
+religion = kronos_pagan
+trade_goods = unknown
+base_tax = 3
+base_production = 2
+base_manpower = 2
+
+discovered_by = KRN
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_kronossian_tech
+
+635.1.1 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+	is_city = yes
+	religion = tolerance
+	trade_goods = naval_supplies
+	base_tax = 7
+	base_production = 7
+	base_manpower = 7
+}
+886.6.14 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	remove_core = SRM
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

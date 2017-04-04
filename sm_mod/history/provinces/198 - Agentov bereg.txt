@@ -1,0 +1,46 @@
+native_size = 12
+native_ferocity = 2
+native_hostileness = 1
+
+is_city = no
+
+capital = "Агентгород"
+#culture = malishian
+religion = tolerance
+trade_goods = naval_supplies 
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+railroad_2 = yes
+road_2 = yes
+
+discovered_by = SUM
+discovered_by = DMF
+
+460.1.1 = {
+	owner = SUM
+	controller = SUM
+	add_core = SUM
+	culture = malishian
+	is_city = yes
+	discovered_by = continental
+	discovered_by = amian
+}
+630.1.1 = {
+	discovered_by = southern
+	discovered_by = ellar_tech
+	discovered_by = rolevik
+}
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+}

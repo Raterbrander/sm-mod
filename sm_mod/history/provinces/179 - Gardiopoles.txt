@@ -1,0 +1,71 @@
+owner = KRN
+controller = KRN
+add_core = KRN
+
+is_city = yes
+hre = yes
+
+culture = kro_greek
+religion = kronos_ellin
+base_tax = 3
+base_production = 3
+trade_goods = cloth
+base_manpower = 3
+capital = "Гардиополес"
+
+railroad_2 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_kronossian_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+482.1.2 = { hre = no }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.5.12 = {
+	owner = KRN
+	controller = KRN
+}
+584.3.21 = {
+	owner = VSK
+	controller = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+838.4.18 = {
+	owner = NKF
+	controller = NKF
+	add_core = NKF
+	remove_core = SRM
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+874.10.7 = { add_core = NGI }
+887.2.12 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	remove_core = NKF
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

@@ -1,0 +1,77 @@
+owner = BRD
+controller = BRD
+add_core = BRD
+add_core = HVL
+
+is_city = yes
+
+culture = slavenian
+religion = ross_pagan
+capital = "Дирвана"
+
+trade_goods = salt
+base_tax = 4
+base_production = 4
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+discovered_by = domin_group
+
+453.7.15 = {
+	owner = ASR
+	controller = ASR
+	add_core = ASR
+	serfdom = yes
+}
+500.1.1 = {
+	culture = anarendilian
+	religion = alklvalondie
+	capital = "Дервондстард"
+	remove_core = BRD
+}
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = ASR
+}
+500.1.1 = { serfdom = no }
+668.7.30 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = HVL
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.1 = {
+	culture = slavenian
+	religion = orthodox
+	capital = "Дирвана"
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+}
+894.7.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+}
+923.9.12 = { remove_core = DRA }
+#2013.11.1  = { religion = ross_pagan }
+#2014.12.10 = { religion = alklvalondie culture = anarendilian capital = "Дервондстард" } 

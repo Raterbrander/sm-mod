@@ -1,0 +1,79 @@
+# Белиус
+native_size = 6
+native_ferocity = 6
+native_hostileness = 4
+
+hre = no
+is_city = no
+
+capital = "Белогорск"
+culture = slavenian
+religion = ross_pagan
+
+base_tax = 4
+base_production = 3
+base_manpower = 5
+trade_goods = gold
+
+discovered_by = continental
+discovered_by = anarendilian_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+495.1.1 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	capital = "Белиус"
+	culture = smesh_russian
+	religion = orthodox
+	is_city = yes
+	base_tax = 10
+	base_production = 8
+	base_manpower = 8
+	fort_15th = yes
+	temple = yes
+	courthouse = yes
+}
+510.1.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 4
+	temple = no
+} # Атака анарендилей
+570.1.1 = {
+	base_tax = 12
+	base_production = 11
+	base_manpower = 12
+	cathedral = yes
+	university = yes
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+1315.1.1 = {
+	base_tax = 18
+	base_production = 17
+	base_manpower = 15
+	fort_16th = yes
+}
+840.5.1 = { fort_16th = no fort_17th = yes }
+868.5.4 = { controller = DRA add_core = DRA }
+870.1.14 = { controller = IOD }
+871.4.18 = { controller = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+}
+894.7.1 = {
+	owner = GRU
+	controller = GRU
+	clr_province_flag = GRU_was_ceded_to_DRA
+}
+#2013.7.14 = { controller = NGI }
+#2013.7.21 = { controller = GRU }
+923.9.12 = { remove_core = DRA }
+#1228.1.1  = { religion = tolerance }

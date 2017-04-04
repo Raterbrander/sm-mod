@@ -1,0 +1,38 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+
+is_city = yes
+
+capital = "Порт-димиковск"
+culture = malishian
+religion = tolerance
+trade_goods = naval_supplies 
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+grand_shipyard = yes
+railroad_2 = yes
+road_2 = yes
+traditional_factories = yes
+#wharf = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+discovered_by = southern
+
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+}

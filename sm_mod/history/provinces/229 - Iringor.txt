@@ -1,0 +1,57 @@
+owner = IRI
+controller = IRI
+add_core = IRI
+
+is_city = yes
+
+culture = anarendilian
+religion = alklvalondie
+capital = "Аргостолион"
+
+trade_goods = naval_supplies
+base_tax = 5
+base_production = 5
+base_manpower = 4
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+}
+677.10.14 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = IRI
+	discovered_by = continental
+	discovered_by = amian
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+868.5.4 = { controller = DRA add_core = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+878.7.22 = { controller = GRU }
+886.6.17  = { controller = DRA }
+894.7.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}

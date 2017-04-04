@@ -1,0 +1,72 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+
+is_city = yes
+hre = no
+
+culture = kro_turk
+religion = sunni
+capital = "Аталалья"
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = slaves
+
+slavery = yes
+
+add_local_autonomy = 25
+
+discovered_by = continental
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_kronossian_tech
+
+547.5.26 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.5.12 = {
+	owner = KRN
+	controller = KRN
+}
+584.3.21 = {
+	owner = VSK
+	controller = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+886.6.14 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	#remove_core = SRM
+}
+890.1.1 = {
+	capital = "Кадыровск-в-Окопах-Оврагах"
+	base_manpower = 5
+	culture = eurasian
+	#religion = tolerance
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}
+#1457.1.1 = { religion = imperial_faith } 2013.10.1

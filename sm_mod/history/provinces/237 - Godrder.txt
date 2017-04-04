@@ -1,0 +1,67 @@
+owner = LVO
+controller = LVO
+add_core = LVO
+
+is_city = yes
+hre = no
+
+culture = levonian
+religion = totemism
+capital = "Годрдер"
+trade_goods = cloth
+base_tax = 3
+base_production = 2
+base_manpower = 3
+
+discovered_by = anarendilian_tech
+
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	base_production = 3
+	discovered_by = BEL
+	serfdom = yes
+}
+656.1.1 = {
+	owner = LVO
+	controller = LVO
+	serfdom = no
+}
+662.12.15 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	discovered_by = continental
+	discovered_by = imperial_group
+	discovered_by = high_domin
+}
+680.1.1 = {
+	culture = anarendilian
+	religion = alklvalondie
+	remove_core = LVO
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+868.5.4 = {
+	add_core = DRA
+	controller = DRA
+}
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+925.1.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}

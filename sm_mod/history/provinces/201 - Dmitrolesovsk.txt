@@ -1,0 +1,41 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+add_core = DMF
+
+is_city = yes
+
+capital = "Дмитролесовск"
+culture = malishian
+religion = tolerance
+trade_goods = fur
+base_tax = 3
+base_production = 2
+base_manpower = 3
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+
+630.1.1 = {
+	discovered_by = southern
+	discovered_by = ellar_tech
+}
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = domin_group
+	railroad_2 = yes
+	road_2 = yes
+}
+1352.5.5 = {
+	owner = DMF
+	controller = DMF
+}
+870.7.24 = { controller = DRA }
+892.2.11 = { controller = DMF }
+879.7.10 = { owner = DRA controller = DRA }

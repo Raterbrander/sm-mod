@@ -1,0 +1,55 @@
+# Каламос - потерянная колония Кроносских греков
+
+owner = KLS
+controller = KLS
+add_core = KLS
+
+is_city = yes
+hre = no
+
+culture = kro_greek
+religion = kronos_ellin
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = fish
+capital = "Каламос"
+
+discovered_by = KLS
+
+870.6.28 = {
+	#owner = SRM
+	#controller = SRM
+	add_core = SRM
+	discovered_by = EOY
+	discovered_by = SRM 
+} # Вассализация Каламоса
+878.2.8 = {
+	owner = SRM
+	controller = SRM
+}
+886.6.14 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	remove_core = SRM
+}
+893.1.1 = {
+	culture = eurasian
+	religion = imperial_faith
+	base_tax = 3
+	base_production = 2
+	base_manpower = 4
+	remove_core = KLS
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

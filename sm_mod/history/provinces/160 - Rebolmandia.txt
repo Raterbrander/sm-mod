@@ -1,0 +1,39 @@
+native_size = 36
+native_ferocity = 6
+native_hostileness = 6
+
+culture = south_kronossian
+religion = kronos_pagan
+base_tax = 4
+base_production = 4
+trade_goods = unknown
+base_manpower = 4
+capital = "Реболманд"
+
+870.1.1 = {
+	owner = SRM
+	controller = SRM
+	add_core = SRM
+	trade_goods = cocoa
+	religion = helgarn
+}
+879.7.15 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	culture = eurasian
+	religion = imperial_faith
+	base_manpower = 5
+}
+886.6.14 = { remove_core = SRM }
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

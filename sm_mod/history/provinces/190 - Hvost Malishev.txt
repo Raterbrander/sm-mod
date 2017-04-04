@@ -1,0 +1,41 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+
+is_city = yes
+hre = no
+
+culture = malishian
+religion = tolerance
+capital = "Хвостовск"
+
+trade_goods = fish
+base_tax = 3
+base_production = 3
+base_manpower = 5
+
+railroad_2 = yes
+road_2 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+
+580.1.1 = {
+	base_tax = 4
+	base_production = 4
+	base_manpower = 6
+}
+630.1.1 = { discovered_by = southern }
+800.1.1 = {
+	base_tax = 5
+	base_production = 5
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+}

@@ -1,0 +1,47 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+add_core = DMF
+
+is_city = yes
+
+capital = "Малышград-Димиковский"
+culture = malishian
+religion = orthodox
+trade_goods = grain
+base_tax = 7
+base_production = 7
+base_manpower = 8
+
+#temlpe = yes
+fort_15th = yes
+road_2 = yes
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+discovered_by = southern
+
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+805.5.5 = {
+	owner = DMF
+	controller = DMF
+}
+892.8.1 = {
+	discovered_by = domin_group
+}
+879.7.10 = {
+	owner = DRA
+	controller = DRA
+}

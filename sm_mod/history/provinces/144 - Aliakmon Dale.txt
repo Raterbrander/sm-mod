@@ -1,0 +1,72 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+culture = kro_turk
+religion = sunni
+base_tax = 3
+base_production = 3
+trade_goods = sugar
+base_manpower = 3
+capital = "Альяция"
+is_city = yes
+
+slavery = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_kronossian_tech
+discovered_by = middle_land_group
+
+547.5.26 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+	slavery = no
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.1.1 = { railroad_1 = yes }
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+750.1.1 = {
+	culture = kro_greek
+	religion = kronos_ellin
+	railroad_1 = no
+	railroad_2 = yes
+}
+838.4.18 = {
+	owner = NKF
+	controller = NKF
+	add_core = NKF
+	#remove_core = SRM
+}
+840.1.1 = {
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+}
+874.10.7 = { add_core = NGI } # 2013.7.3
+887.2.12 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	remove_core = NKF
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

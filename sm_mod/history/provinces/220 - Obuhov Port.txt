@@ -1,0 +1,76 @@
+owner = HVL
+controller = HVL
+add_core = HVL
+
+#owner = UKS
+#controller = UKS
+#add_core = UKS
+#add_core = GRU
+#add_core = DRA
+
+is_city = yes
+
+culture = ukrian
+religion = orthodox
+capital = "Обухов Порт"
+trade_goods = naval_supplies
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+serfdom = yes
+
+discovered_by = anarendilian_tech
+
+450.1.1 = {
+	culture = anarendilian
+	religion = alklvalondie
+	capital = "Онбард"
+}
+482.1.1 = {
+	owner = AFE
+	controller = AFE
+	add_core = AFE
+	remove_core = ASR
+}
+668.7.30 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = AFE
+	remove_core = HVL
+	discovered_by = continental
+	discovered_by = amian
+}
+670.1.1 = { serfdom = no }
+680.1.1 = {
+	culture = ukrian
+	religion = orthodox
+	#capital = "Обухов порт"
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+#2013.6.25 = { add_core = DRA }
+#2013.6.27 = { controller = DRA }
+#2013.6.28 = { controller = UKS }
+#870.1.1  = {
+#	discovered_by = southern
+#	discovered_by = rolevik
+#	discovered_by = domin_group
+#}
+#2013.8.25 = {
+#	owner = GRU
+#	controller = GRU
+#	remove_core = DRA
+#	remove_core = UKS
+#}
+#2014.1.1  = { culture = smesh_russian religion = tolerance }
+#2015.3.10 = { culture = anarendilian religion = alklvalondie capital = "Онбард" }

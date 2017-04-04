@@ -1,0 +1,31 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+add_core = DMF
+
+is_city = yes
+
+capital = "Старомалышевск"
+culture = malishian
+religion = tolerance
+trade_goods = grain
+base_tax = 6
+base_production = 5
+base_manpower = 6
+
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+discovered_by = southern
+
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+869.2.8 = { controller = DMF }
+870.1.18 = { controller = DRA }

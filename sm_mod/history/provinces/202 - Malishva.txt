@@ -1,0 +1,52 @@
+owner = SUM
+controller = SUM
+add_core = SUM
+
+is_city = yes
+
+capital = "Малышва"
+culture = malishian
+religion = tolerance
+trade_goods = grain
+base_tax = 12
+base_production = 12
+base_manpower = 14
+
+fort_15th = yes
+road_2 = yes
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+discovered_by = southern
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = elder_city_modifier
+		duration = -1
+	}
+}
+
+804.3.25 = {
+	owner = DRA
+	controller = DRA
+	add_core = DRA
+}
+815.1.1 = {
+	base_tax = 14
+	base_production = 14
+	base_manpower = 16
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	base_tax = 16
+	base_production = 16
+	base_manpower = 18
+}
+892.8.1 = {
+	discovered_by = domin_group
+}

@@ -1,0 +1,74 @@
+owner = PLV
+controller = PLV
+add_core = PLV
+
+is_city = yes
+hre = no
+
+culture = slavenian
+religion = ross_pagan
+capital = "Тесава"
+
+trade_goods = naval_supplies
+base_tax = 4
+base_production = 3
+base_manpower = 5
+
+temple = yes
+
+discovered_by = anarendilian_tech
+
+1221.3.7 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	remove_core = PLV
+}
+750.1.1 = { religion = orthodox discovered_by = continental }
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+#850.1.1 = {
+#	base_tax = 12
+#	base_production = 9
+#	base_manpower = 10
+#}
+868.5.4 = { controller = DRA add_core = DRA }
+869.2.24 = { controller = GRU }
+871.5.17 = { controller = DRA }
+892.8.1 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+	discovered_by = high_domin
+}
+882.5.29 = { controller = GRU }
+894.7.28 = { controller = DRA }
+902.9.14 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}
+960.1.1 = { religion = ross_pagan }
+1005.1.1 = {
+	capital = "Новаград"
+	town_hall = yes
+	grand_shipyard = yes
+	base_tax = 12
+	base_production = 10
+	base_manpower = 10
+	fort_16th = yes
+	cathedral = yes
+	temple = no
+}
