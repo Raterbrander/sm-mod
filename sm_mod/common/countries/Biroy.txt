@@ -1,0 +1,49 @@
+# Бирой
+
+graphical_culture = westerngfx
+
+color = { 189 198 135 }
+
+historical_idea_groups = {
+	aristocracy_ideas
+	influence_ideas
+	defensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+	innovativeness_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	ellar_tech_infantra_ellarta
+	ellar_tech_ellar_cavalry
+}
+
+monarch_names = {
+	"Бирой #14" = 100
+	"Экельберхт #0" = 0
+	"Карл #0" = 0
+	"Франц #0" = 0
+}
+
+ship_names = {
+	"Бирой" "Бирой I" "Бирой II" "Бирой III" "Князь Бирой"
+	"Бирой IV" "Бирой V" "Бирой VI" "Бирой VII" "Бирой VIII" "Бирой IX"
+	"Бирой X" "Бирой XI" "Бирой XII" "Бирой XIII" "Бирой XIV"
+	"Герой"
+}  
+
+leader_names = {
+	"Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой"
+	"Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой" "Бирой"
+	Йомард Тусц Лекхран Эйрен Ормольд "вон Рестан" "Койобург-Геттас" Прейсарл
+}
+
+army_names = {
+	"Бирой Арме"
+}
+
+fleet_names = {
+	"Бирой Флетте"
+}

@@ -1,0 +1,43 @@
+# Гроксы
+# GRX
+
+graphical_culture = westerngfx
+
+color = { 93 14 61 }
+
+historical_idea_groups = {
+	offensive_ideas
+	expansion_ideas
+	quality_ideas
+	quantity_ideas
+	innovativeness_ideas
+	influence_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	continental_base_motorized_infantry
+	continental_light_tanks
+}
+
+monarch_names = {
+	"Грокс #0" = 100
+}
+
+leader_names = {
+	"Грокс"
+}
+
+ship_names = {
+	Грокс Империя Родина Исследователь Научный Киборг Титан Уничтожитель Разрушитель Мощь Величие
+	Держава
+}
+
+army_names = {
+	"Армия Гроксов"
+}
+
+fleet_names = {
+	"Флот Гроксов"
+}

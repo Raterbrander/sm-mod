@@ -1,0 +1,50 @@
+bookmark =
+{
+	name = "DAWN_OF_NEW_ERA_BOOKMARK"
+	desc = "DAWN_OF_NEW_ERA_BOOKMARK_DESC"
+	date = 482.1.2
+	
+	center = 238
+	
+	country = SMF
+	country = KRN
+	country = BEL
+	country = AFE
+	country = NGR
+	country = ZMR
+	country = CHT
+	country = SHK
+	
+	effect = {
+		SIN = {
+			add_stability = 1
+		}
+		KRN = {
+			add_stability = 1
+		}
+		SMF = {
+			add_stability = 1
+		}
+		NGR = {
+			add_stability = 1
+		}
+		ZMR = {
+			add_stability = 1
+		}
+		CHT = {
+			set_global_flag = gsw_start
+			add_stability = -3
+			add_country_modifier = {
+				name = chaepit_smeshinternet_destroyed
+				duration = 1098
+			}
+			every_owned_province = {
+				kill_units = {
+					who = CHT
+					amount = 20
+				}
+			}
+			add_yearly_manpower = -0.55
+		}
+	}
+}

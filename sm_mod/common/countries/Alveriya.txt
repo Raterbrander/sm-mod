@@ -1,0 +1,50 @@
+# Алверы
+
+graphical_culture = muslimgfx
+
+color = { 205 147 109 }
+
+historical_idea_groups = {
+	expansion_ideas
+	offensive_ideas
+	administrative_ideas
+	trade_ideas
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+	smeshesfongs_infantry
+	smeshesfongs_cav
+}
+
+monarch_names = {
+	"Сарьяр #0" = 40
+	"Дарстай #0" = 40
+	"Адаканад #0" = 40
+	"Асьюгос #0" = 40
+	"Беллор #0" = 40
+	"Дунбош #0" = 40
+	"Эмирис #0" = 40
+	"Карабанос #0" = 40
+	"Насугай #0" = 40
+	"Себаль #0" = 40
+	"Теридос #0" = 40
+	"Тонжак #0" = 40
+	"Урубей #0" = 40
+	"Урмад #0" = 40
+	"Арегос #0" = 40
+	
+	"Дилия #0" = -1
+}
+
+leader_names = {
+	Адаканад Альгур Тонгур Бейлар Айареген "Асергар" "Чанчжер"
+	Хунгус Дарстай Гебалирай Жегондив Урумбай
+}
+
+ship_names = {
+	Степь Пустошь Путешественник Мир Алвер "Хан Айареген"
+}

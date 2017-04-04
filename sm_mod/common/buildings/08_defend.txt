@@ -1,0 +1,151 @@
+# Традиционные укрепления
+fort_15th = {
+	cost = 200
+	time = 30
+	modifier = {
+		fort_level = 2
+	}
+	
+	onmap = yes
+	
+	influencing_fort = yes
+	
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+		}	
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}	
+		modifier = {
+			factor = 0
+			any_neighbor_province = {
+				owned_by = ROOT
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+				}
+			}
+		}		
+	}
+}
+
+# Усиленные укрепления
+fort_16th = {
+	cost = 400
+	time = 30
+	#trigger = {
+	#	FROM = {
+	#		NOT = { has_country_modifier = sm_uncivilized_nation }
+	#	}
+	#}
+	make_obsolete = fort_15th
+	modifier = {
+		fort_level = 4
+	}
+
+	onmap = yes
+	
+	influencing_fort = yes
+	
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+		}	
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}	
+		modifier = {
+			factor = 0
+			any_neighbor_province = {
+				owned_by = ROOT
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+				}
+			}
+		}		
+	}
+}
+
+# Передовая защита
+fort_17th = {
+	cost = 600
+	time = 30
+	#trigger = {
+	#	FROM = {
+	#		NOT = { has_country_modifier = sm_uncivilized_nation }
+	#	}
+	#}
+	
+	make_obsolete = fort_16th
+	
+	modifier = {
+		fort_level = 6
+	}
+
+	onmap = yes
+	
+	influencing_fort = yes
+	
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+		}	
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}	
+		modifier = {
+			factor = 0
+			any_neighbor_province = {
+				owned_by = ROOT
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+				}
+			}
+		}			
+	}
+}

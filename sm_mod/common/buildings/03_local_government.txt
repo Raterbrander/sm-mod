@@ -1,0 +1,136 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+
+
+################################################
+# Локальное правление
+################################################
+
+slavery = {
+	cost = 5
+	time = 12
+	
+	trigger = {
+		FROM = {
+			#OR = {
+				NOT = { has_country_modifier = sm_slavery_abolished }
+				#has_country_modifier = kolhoz_established
+			#}
+			is_tribal = no
+		}
+		OR = {
+			FROM = {
+				NOT = { has_country_flag = no_slavery_for_our_culture }
+			}
+			has_owner_culture = no
+		}
+	}
+	
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_manpower_modifier = -1
+		trade_goods_size_modifier = 2
+		local_development_cost = 0.75
+		local_build_cost = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 50
+		
+		modifier = {
+			factor = 0.1
+			owner = { government = republic }
+		}
+		
+		modifier = {
+			factor = 0
+			development = 13
+		}
+		
+		modifier = {
+			factor = 0.1
+			has_owner_culture = yes
+		}
+		
+		modifier = {
+			factor = 0.15
+			has_owner_accepted_culture = yes
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+	}
+}
+
+serfdom = {
+	cost = 10
+	time = 12
+	
+	trigger = {
+		FROM = {
+			#OR = {
+				NOT = { has_country_modifier = sm_serfdom_abolished }
+			#	has_country_modifier = kolhoz_established
+			#}
+			is_tribal = no
+		}
+		OR = {
+			FROM = {
+				NOT = { has_country_flag = no_serfdom_for_our_culture }
+			}
+			has_owner_culture = no
+		}
+		OR = {
+			FROM = {
+				NOT = { has_country_flag = no_serfdom_for_accepted_cultures }
+			}
+			has_owner_accepted_culture = no
+		}
+	}
+	
+	make_obsolete = slavery
+	
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_manpower_modifier = -0.55
+		trade_goods_size_modifier = 1.35
+		local_development_cost = 0.5
+		local_build_cost = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 75
+		
+		modifier = {
+			factor = 1.5
+			NOT = { development = 16 }
+		}
+		
+		modifier = {
+			factor = 0.1
+			owner = { government = republic }
+		}
+		
+		modifier = {
+			factor = 0
+			development = 20
+		}
+	}
+}
+
+#autonomous_region

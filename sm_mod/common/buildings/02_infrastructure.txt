@@ -1,0 +1,261 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+
+
+################################################
+# Железная дорога
+################################################
+
+railroad_1 = {
+	cost = 125
+	time = 24
+	trigger = {
+		FROM = {
+			is_tribal = no # NOT = { has_country_modifier = sm_uncivilized_nation }
+		}
+	}
+	
+	modifier = {
+		local_movement_speed = 0.1
+		regiment_recruit_speed = -0.075
+		#supply_limit = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 75
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+	}
+}
+
+railroad_2 = {
+	cost = 125
+	time = 24
+	trigger = {
+		FROM = {
+			is_tribal = no # NOT = { has_country_modifier = sm_uncivilized_nation }
+		}
+	}
+	
+	make_obsolete = railroad_1
+	
+	modifier = {
+		local_movement_speed = 0.25
+		regiment_recruit_speed = -0.15
+	}
+	
+	ai_will_do = {
+		factor = 75
+	}
+}
+
+################################################
+# Дорожная сеть
+################################################
+# Примитивная дорожная сеть
+#road_1 = {
+#	cost = 35
+#	time = 12
+#	
+#	modifier = {
+#		local_movement_speed = 0.10
+#	}
+#	
+#	ai_will_do = {
+#		factor = 100
+#	}
+#}
+
+road_2 = {
+	cost = 75
+	time = 12
+	trigger = {
+		FROM = {
+			is_tribal = no # NOT = { has_country_modifier = sm_uncivilized_nation }
+		}
+	}
+	
+	#make_obsolete = road_1
+	
+	modifier = {
+		local_movement_speed = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+################################################
+# Транспортная система
+################################################
+#city_transport = {
+#	cost = 50
+#	time = 24
+#	
+#	trigger = {
+#		development = 5
+#	}
+#	
+#	modifier = {
+#		local_movement_speed = 0.10
+#		supply_limit = 0.5
+#		local_tax_modifier = 0.075
+#	}
+#	
+#	ai_will_do = {
+#		factor = 100
+#		
+#		modifier = {
+#			factor = 0
+#			NOT = { development = 10 }
+#		}
+#	}
+#}
+
+airport = {
+	cost = 150
+	time = 24
+	
+	trigger = {
+		FROM = {
+			is_tribal = no # NOT = { has_country_modifier = sm_uncivilized_nation }
+		}
+		OR = {
+			development = 25
+			any_neighbor_province = {
+				development = 25
+			}
+			any_owned_province = {
+				area = ROOT
+				development = 25
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_province = {
+					has_building = airport
+				}
+				any_owned_province = {
+					area = ROOT
+					has_building = airport
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		supply_limit_modifier = 0.15
+		local_tax_modifier = 0.15
+		province_trade_power_modifier = 0.25
+		local_regiment_cost = -0.075
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					development = 32
+					any_neighbor_province = {
+						development = 32
+					}
+					any_owned_province = {
+						area = ROOT
+						development = 32
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			OR = {
+				development = 40
+				any_neighbor_province = {
+					development = 40
+				}
+				any_owned_province = {
+					area = ROOT
+					development = 40
+				}
+			}
+		}
+	}
+}
+
+spaceport = {
+	cost = 300
+	time = 36
+	
+	trigger = {
+		FROM = { is_tribal = no }
+		OR = {
+			development = 36
+			any_neighbor_province = {
+				development = 36
+			}
+			any_owned_province = {
+				area = ROOT
+				development = 36
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_province = {
+					has_building = spaceport
+				}
+				any_owned_province = {
+					area = ROOT
+					has_building = spaceport
+				}
+			}
+		}
+	}
+	
+	make_obsolete = airport
+	
+	modifier = {
+		supply_limit_modifier = 0.25
+		local_tax_modifier = 0.30
+		province_trade_power_modifier = 0.5
+		local_regiment_cost = -0.15
+	}
+	
+	ai_will_do = {
+		factor = 25
+		
+		modifier = {
+			factor = 4
+			OR = {
+				development = 42
+				any_neighbor_province = {
+					development = 42
+				}
+				any_owned_province = {
+					area = ROOT
+					development = 42
+				}
+			}
+		}
+	}
+}

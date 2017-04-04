@@ -1,0 +1,78 @@
+shipyard = {
+	cost = 100
+	time = 12
+	
+	trigger = {
+		has_port = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 2
+		ship_recruit_speed = -0.25
+		local_ship_repair = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { development = 10 }
+		}	
+		modifier = {
+			factor = 10
+			development = 10
+		}	
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}
+	}
+}
+
+grand_shipyard = {
+	cost = 300
+	time = 12
+	
+	make_obsolete = shipyard
+	
+	trigger = {
+		has_port = yes
+		FROM = {
+			is_tribal = no # NOT = { has_country_modifier = sm_uncivilized_nation }
+		}
+	}
+	
+	modifier = {
+		naval_forcelimit = 4
+		ship_recruit_speed = -0.50
+		local_ship_repair = 0.50
+	}
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { development = 10 }
+		}	
+		modifier = {
+			factor = 10
+			development = 10
+		}	
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}
+	}
+}

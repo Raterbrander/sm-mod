@@ -1,0 +1,46 @@
+bookmark = {
+	name = "END_OF_OLD_TIMES_BOOKMARK"
+	desc = "END_OF_OLD_TIMES_BOOKMARK_DESC"
+	date = 458.5.7
+	
+	center = 238
+	default = yes
+	
+	country = SMF
+	country = KRN
+	country = SIN
+	country = SUM
+	country = UKI
+	country = NGR
+	country = CHT
+	country = ZMR
+	
+	effect = {
+		SIN = {
+			add_stability = 1
+		}
+		KRN = {
+			add_stability = 1
+		}
+		SMF = {
+			add_stability = 1
+		}
+		SUM = {
+			add_stability = 1
+		}
+		NGR = {
+			add_stability = 1
+		}
+		CHT = {
+			add_stability = 1
+		}
+		YAL = {
+			add_stability = -2
+			add_horde_unity = -55
+		}
+		LMR = {
+			set_primitive = yes
+			add_stability = -1
+		}
+	}
+}

@@ -1,0 +1,110 @@
+temple = {		
+	cost = 100
+	time = 12
+	modifier = {
+		local_missionary_strength = 0.01
+		local_unrest = -1
+	}
+	
+	ai_will_do = {
+		factor = 55
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				adm_tech = 19
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { adm_tech = 4 }
+			}
+		}
+		modifier = {
+			factor = 0.1
+			owner = { religion = tolerance }
+		}
+		modifier = {
+			factor = 0
+			owner = { religion = atheism }
+		}
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				OR = {
+					has_idea_group = religious_ideas
+					religion = imperial_faith
+				}
+			}
+		}
+	}
+}
+
+cathedral = {
+	make_obsolete = temple
+	
+	cost = 300
+	time = 12
+	#trigger = {
+	#	FROM = {
+	#		NOT = { has_country_modifier = sm_uncivilized_nation }
+	#	}
+	#}
+	modifier = {
+		local_missionary_strength = 0.03
+		local_unrest = -3
+	}
+	
+	ai_will_do = {
+		factor = 50
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				adm_tech = 19
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { adm_tech = 4 }
+			}
+		}
+		modifier = {
+			factor = 0.1
+			owner = { religion = tolerance }
+		}
+		modifier = {
+			factor = 0
+			owner = { religion = atheism }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { cathedral = 4 }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				OR = {
+					has_idea_group = religious_ideas
+					religion = imperial_faith
+				}
+			}
+		}
+	}
+}

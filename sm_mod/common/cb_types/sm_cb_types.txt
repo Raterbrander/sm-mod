@@ -1,0 +1,143 @@
+cb_gottardian_throne = {
+	valid_for_subject = yes
+	#exclusive = yes
+
+	prerequisites = {
+		is_subject = yes
+		capital_scope = {
+			area = gottardia_area
+		}
+		vassal_of = FROM
+		government = monarchy
+		from = {
+			tag = GTT
+			government = monarchy
+			has_country_modifier = maximillian_laws_gottardia
+			is_revolution_target = no
+		}
+	}
+
+	war_goal = take_capital_throne_gottardia
+	
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_become_protectorate
+	}
+}
+
+cb_defeat_raiders = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+
+	months = 12
+
+	war_goal = superiority_insult_mutual
+}
+
+cb_primitives_sm = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			cb_on_primitives = yes
+			AND = {
+				is_tribal = no
+				FROM = { is_tribal = yes }
+			}
+		}
+		FROM = {
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject = yes
+					overlord = { is_tribal = yes }
+				}
+			}
+			NOT = {
+				OR = {
+					num_of_cities = ROOT
+					government = altras_horde
+				}
+			}
+			is_neighbor_of = ROOT
+		}
+		is_revolution_target = no
+	}
+
+	war_goal = superiority_primitives
+}
+
+cb_amian = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_global_flag = eam_anarchy
+		technology_group = amian
+		religion = ameism
+		is_subject = no
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			technology_group = amian
+			religion = ameism
+		}
+		is_neighbor_of = FROM
+	}
+
+	war_goal = superiority_amian_war
+}
+
+cb_civil_war = {
+	valid_for_subject = no
+	
+	is_triggered_only = yes
+	months = 12
+	
+	war_goal = superiority_civil_war
+}
+
+cb_spread_communism = {
+	valid_for_subject = no
+	
+	prerequisites = {
+		is_subject = no
+		is_revolution_target = no
+		has_active_policy = communist_exporting_revolution
+		OR = {
+			government = socialist_republic
+			government = socialist_state
+			government = communist_dictatorship
+		}
+		FROM = {
+			NOT = {
+				OR = {
+					government = socialist_republic
+					government = socialist_state
+					government = communist_dictatorship
+				}
+			}
+		}
+	}
+	
+	war_goal = war_goal_change_government	
+}
+
+cb_sm_throne = {
+	valid_for_subject = yes
+	#exclusive = yes
+
+	is_triggered_only = yes
+	months = 12
+
+	war_goal = take_capital_throne_sm
+	
+	attacker_disabled_po = {
+		po_become_vassal
+		po_become_protectorate
+	}
+}

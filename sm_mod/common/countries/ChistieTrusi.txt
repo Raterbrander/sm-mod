@@ -1,0 +1,47 @@
+graphical_culture = westerngfx
+
+color = { 201 28 45 }
+
+historical_idea_groups = {
+	aristocracy_ideas
+	influence_ideas
+	defensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+	innovativeness_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	ellar_tech_infantra_ellarta
+	ellar_tech_ellar_cavalry
+}
+
+monarch_names = {
+	"Волк #0" = 100
+	"Трын #0" = 100
+	"Трав #0" = 100
+	"Тондер #0" = 60
+	"Пенёк #0" = 60
+	"Рысь #0" = 60
+	"Костёр #0" = 20
+	"Курильщик #0" = 0
+	"Карл #0" = 0
+}
+
+ship_names = {
+	"Трын-трава" "Чистые трусы" "Пенёк" "Величие" "Трусы" "Костёр" "Лес" "Лесной"
+}
+
+leader_names = {
+	"Трын" "Трав" "Тондеррос" "с Пенька" "от Костра" "с дерева" Лесной Пеньков
+}
+
+army_names = {
+	"Силы обороны"
+}
+
+fleet_names = {
+	"Флот Чистых Трусов"
+}

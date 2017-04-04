@@ -1,0 +1,420 @@
+# New personalities cannot be added to this file
+# Do not change existing personality names!
+
+human = {
+	chance = {
+		factor = 0
+	}
+	
+	icon = 1
+}
+
+ai_capitalist = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 1 }
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}	
+		modifier = {
+			factor = 1.5
+			adm = 4
+		}		
+		modifier = {
+			factor = 1.5
+			adm = 5
+		}		
+		modifier = {
+			factor = 1.5
+			adm = 6
+		}
+		modifier = {
+			factor = 1.1
+			administrative_ideas = 1
+		}		
+		modifier = {
+			factor = 1.1
+			trade_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			economic_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			plutocracy_ideas = 1
+		}
+		modifier = {
+			factor = 1.25 
+			NOT = { total_development = 30 }
+		}
+		modifier = {
+			factor = 2
+			government = merchant_republic
+		}
+		modifier = {
+			factor = 1.5
+			tag = EOY
+		}
+		modifier = {
+			factor = 1.5
+			tag = ELL
+		}
+		modifier = {
+			factor = 1.25
+			government = altras_horde
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				government = free_city_base
+				government = free_city_aristocratical
+			}
+		}
+	}
+	icon = 2
+}
+
+ai_diplomat = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 1 }
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 3 }
+		}	
+		modifier = {
+			factor = 1.5
+			dip = 4
+		}		
+		modifier = {
+			factor = 1.5
+			dip = 5
+		}		
+		modifier = {
+			factor = 1.5
+			dip = 6
+		}
+		modifier = {
+			factor = 1.1
+			aristocracy_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			spy_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			diplomatic_ideas = 1
+		}	
+		modifier = {
+			factor = 1.1
+			innovativeness_ideas = 1
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = { total_development = 30 }
+		}	
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+			total_development = 50
+		}
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+			total_development = 100
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				tag = EOY
+				tag = ELL
+				tag = SMF
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ellar_national_leader
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				government = free_city_base
+				government = free_city_aristocratical
+			}
+		}	
+	}
+	icon = 3
+}
+
+ai_militarist = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			has_regency = yes
+		}	
+		modifier = {
+			factor = 0.5
+			government = republic
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 1 }
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			is_emperor = yes
+			total_development = 50
+		}
+		modifier = {
+			factor = 0.5
+			is_emperor = yes
+			total_development = 100
+		}			
+		modifier = {
+			factor = 1.5
+			mil = 4
+		}		
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}		
+		modifier = {
+			factor = 1.5
+			mil = 6
+		}	
+		modifier = {
+			factor = 1.1
+			offensive_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			defensive_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			quality_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			quantity_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			religious_ideas = 1
+		}		
+		modifier = {
+			factor = 1.25
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 100
+			invasion_nation = yes
+		}
+		modifier = {
+			factor = 3
+			government = steppe_horde
+		}
+		modifier = {
+			factor = 2
+			is_march = yes
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = SME
+				tag = NGI
+				tag = IOD
+			}
+		}
+		modifier = {
+			factor = 3
+			tag = ZMR
+		}
+		modifier = {
+			factor = 0.5
+			tag = EOY
+		}	
+		modifier = {
+			factor = 0.5
+			government = altras_horde
+		}
+		modifier = {
+			factor = 1.5
+			tag = TBS
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				government = AM_clan
+				government = AM_clan_rep
+			}
+		}
+		modifier = {
+			factor = 3
+			tag = SIN
+			NOT = { has_country_flag = bolkarania_conqured }
+			NOT = { has_country_flag = karnilia_conqured }
+		}
+	}
+	icon = 4
+}
+
+ai_colonialist = {
+	chance = {
+		factor = 100	
+		modifier = {
+			factor = 0.5
+			has_regency = yes
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 1 }
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}	
+		modifier = {
+			factor = 1.5
+			adm = 4
+		}		
+		modifier = {
+			factor = 1.5
+			adm = 5
+		}		
+		modifier = {
+			factor = 1.5
+			adm = 6
+		}	
+		modifier = {
+			factor = 1.1
+			trade_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			exploration_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			maritime_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			expansion_ideas = 1
+		}		
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 2
+			tag = EOY
+		}
+		modifier = {
+			factor = 1.25
+			tag = ELL
+		}
+	}
+	icon = 5
+}
+
+ai_balanced = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			always = yes # higher base chance
+		}	
+		modifier = {
+			factor = 100
+			ai = no
+		}
+		modifier = {
+			factor = 0
+			has_regency = yes
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = {
+				adm = 1
+				dip = 1
+				mil = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				adm = 2
+				dip = 2
+				mil = 2
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				adm = 3
+				dip = 3
+				mil = 3
+			}
+		}	
+		modifier = {
+			factor = 1.5
+			adm = 4
+			dip = 4
+			mil = 4
+		}
+		modifier = {
+			factor = 1.5
+			adm = 5
+			dip = 5
+			mil = 5
+		}		
+		modifier = {
+			factor = 1.5
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+		modifier = {
+			factor = 2
+			tag = EOY
+		}
+		modifier = {
+			factor = 2
+			tag = ELL
+		}
+	}
+	icon = 6
+}
