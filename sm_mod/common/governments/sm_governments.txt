@@ -1,0 +1,1131 @@
+##########################
+# Говерны неразвитых АМовских кланов
+# Да, в 2013-ом они ещё остались
+##########################
+
+AM_clan = {
+	monarchy = yes
+
+	color = { 218 65 50 }
+
+	native_mechanic = no
+	allow_migration = yes
+	
+	unique_government = yes
+	
+	valid_for_new_country = yes
+	allow_convert = no
+
+	royal_marriage = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		technology_group = amian
+	}	
+	
+	rank = {
+		1 = {
+			land_forcelimit_modifier = 0.075
+			infantry_cost = -0.1
+			global_autonomy = -0.005
+		}
+		2 = {
+			land_forcelimit_modifier = 0.15
+			infantry_cost = -0.2
+			global_autonomy = -0.075
+		}
+		3 = {
+			land_forcelimit_modifier = 0.3
+			infantry_cost = -0.3
+			global_autonomy = -0.1
+		}
+	}
+	
+	max_states = 5
+}
+
+AM_clan_rep = {
+	republic = yes
+
+	color = { 255 65 50 }
+
+	native_mechanic = no
+	allow_migration = yes
+	
+	unique_government = yes
+	
+	valid_for_new_country = yes
+	allow_convert = no
+
+	royal_marriage = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		technology_group = amian
+	}	
+	
+	rank = {
+		1 = {
+			land_forcelimit_modifier = 0.075
+			infantry_cost = -0.1
+			global_autonomy = -0.005
+		}
+		2 = {
+			land_forcelimit_modifier = 0.15
+			infantry_cost = -0.2
+			global_autonomy = -0.075
+		}
+		3 = {
+			land_forcelimit_modifier = 0.3
+			infantry_cost = -0.3
+			global_autonomy = -0.1
+		}
+	}
+	
+	max_states = 5
+}
+
+
+# Клан наёмников - ФП для Ордера и Дайто
+mercenaries_clan = {
+	republic = yes
+	
+	color = { 114 114 142 }
+
+	unique_government = yes
+
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		NOT = { num_of_cities = 5 }
+	}
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+	rank = {
+		1 = {
+			fort_maintenance_modifier = -0.25
+			land_maintenance_modifier = -0.5
+			global_autonomy = -0.15
+		}
+	}
+	fixed_rank = 1
+}
+
+# Республики вместо единой конституционной
+parliamentary_republic = {
+	republic = yes
+	
+	color = { 84 91 196 }
+
+	duration = 4
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				government = presidental_republic_4
+				government = presidental_republic_6
+				government = socialist_state
+			}
+		}
+	}
+	
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	has_parliament = yes
+	
+	rank = {
+		1 = {
+			stability_cost_modifier = -0.10
+			development_cost = -0.10
+			local_autonomy = -0.05
+		}
+		2 = {
+			stability_cost_modifier = -0.15
+			development_cost = -0.15
+			years_of_nationalism = -5
+			local_autonomy = -0.075
+		}
+		3 = {
+			stability_cost_modifier = -0.20
+			development_cost = -0.20
+			years_of_nationalism = -10
+		}
+	}
+	
+	max_states = 5
+}
+
+presidental_republic_4 = {
+	republic = yes
+	
+	color = { 93 178 225 }
+	
+	duration = 4
+	
+	has_parliament = yes
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			government = presidental_republic_6
+		}
+	}
+	
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	
+	rank = {
+		1 = {
+			stability_cost_modifier = -0.10
+			global_autonomy = -0.075
+		}
+		2 = {
+			stability_cost_modifier = -0.15
+			development_cost = -0.15
+			global_autonomy = -0.05
+		}
+		3 = {
+			stability_cost_modifier = -0.20
+			development_cost = -0.25
+			discipline = 0.05
+		}
+	}
+	
+	max_states = 5
+}
+
+presidental_republic_6 = {
+	republic = yes
+	
+	color = { 82 156 196 }
+	
+	duration = 6
+	
+	has_parliament = yes
+	
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	
+	rank = {
+		1 = {
+			stability_cost_modifier = -0.10
+			global_autonomy = -0.075
+		}
+		2 = {
+			stability_cost_modifier = -0.15
+			development_cost = -0.15
+			global_autonomy = -0.05
+		}
+		3 = {
+			stability_cost_modifier = -0.20
+			development_cost = -0.25
+			discipline = 0.05
+		}
+	}
+	
+	max_states = 5
+}
+
+presidental_dictatorship = {
+	republic = yes
+	
+	color = { 59 98 130 }
+	
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	
+	rank = {
+		1 = {
+			stability_cost_modifier = -0.10
+			global_autonomy = -0.075
+		}
+		2 = {
+			stability_cost_modifier = -0.15
+			development_cost = -0.15
+			global_autonomy = -0.05
+		}
+		3 = {
+			stability_cost_modifier = -0.20
+			development_cost = -0.25
+			discipline = 0.05
+		}
+	}
+	
+	max_states = 5
+}
+
+##########################
+# Говерны для ролок
+##########################
+
+role_gov = {
+	native_mechanic = no
+	allow_migration = yes
+
+	color = { 155 195 190 }
+
+	unique_government = yes
+	
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = rolevik
+		capital_scope = { 
+			OR = {
+				continent = roles_continent
+				continent = south_main
+			}
+		}
+	}
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+	rank = {
+		1 = {
+			diplomatic_upkeep = -1
+			hostile_attrition = 1
+			global_autonomy = -0.10
+		}
+	}
+	fixed_rank = 1
+}
+
+##########################
+# Позаимствованные ФП
+##########################
+# Для коммуняк
+
+communist_dictatorship = {
+	dictatorship = yes
+
+	color = { 200 10 10 }
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	allow_convert = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	rank = {
+		1 = {
+			global_unrest = -1
+			war_exhaustion_cost = -0.05
+			global_autonomy = -0.05
+		}
+		2 = {
+			global_unrest = -1
+			production_efficiency = 0.05
+			war_exhaustion_cost = -0.1
+			global_autonomy = -0.075
+		}
+		3 = {
+			global_unrest = -2
+			production_efficiency = 0.10
+			war_exhaustion_cost = -0.15
+			global_autonomy = -0.1
+		}
+	}
+	
+	max_states = 5
+}
+
+socialist_state = { # То же, что и выше, но без диктатуры
+	republic = yes
+	
+	color = { 213 0 0 }
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	valid_for_new_country = yes
+	allow_convert = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	
+	ai_will_do = {
+		factor = 0
+		
+		modifier = {
+			factor = 3
+			primary_culture = ramzahian
+		}
+		
+		modifier = {
+			factor = 3
+			primary_culture = malishian
+		}
+	}
+	
+	rank = {
+		1 = {
+			production_efficiency = 0.05
+			global_autonomy = -0.05
+		}
+		2 = {
+			production_efficiency = 0.10
+			land_morale = 0.05	
+			global_autonomy = -0.075
+		}
+		3 = {	
+			production_efficiency = 0.15
+			land_morale = 0.1
+			global_autonomy = -0.1
+		}
+	}
+	
+	max_states = 5
+}
+
+socialist_republic = {
+	republic = yes
+
+	color = { 200 45 10 }
+
+	duration = 6
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 35
+
+	ai_will_do = {
+		factor = 0
+		
+		modifier = {
+			factor = 3
+			primary_culture = ramzahian
+		}
+		
+		modifier = {
+			factor = 3
+			primary_culture = malishian
+		}
+		
+		modifier = {
+			factor = 0
+			government = socialist_state
+		}
+		
+		modifier = {
+			factor = 2
+			government = socialist_state
+			OR = {
+				NOT = { adm = 2 }
+				NOT = { mil = 2 }
+			}
+		}
+	}
+	
+	rank = {
+		1 = {
+			production_efficiency = 0.05
+			global_autonomy = -0.05
+		}
+		2 = {
+			production_efficiency = 0.10
+			land_morale = 0.05	
+			global_autonomy = -0.075
+		}
+		3 = {	
+			production_efficiency = 0.15
+			global_regiment_cost = -0.25
+			global_autonomy = -0.1
+		}
+	}
+	
+	max_states = 5
+}
+
+# Просто военная диктатура
+militarist_dictatorship = {
+	dictatorship = yes
+	
+	color = { 74 81 140 }
+
+	#duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	ai_will_do = {
+		factor = 0
+
+		modifier = {
+			factor = 5
+			tag = DRA
+		}
+	}
+
+	rank = {
+		1 = {
+			global_manpower_modifier = 0.1
+			army_tradition = 0.005
+			global_autonomy = -0.05
+		}
+		2 = {
+			global_regiment_cost = -0.15
+			global_manpower_modifier = 0.15
+			army_tradition = 0.01
+			global_autonomy = -0.075
+		}
+		3 = {
+			global_regiment_cost = -0.25
+			global_manpower_modifier = 0.25
+			army_tradition = 0.025
+			global_autonomy = -0.10
+		}
+	}
+	
+	max_states = 5
+}
+
+##########################
+# Самые лучшие ФП
+# Картевал!
+##########################
+
+# Монархический
+karteval_monarchic = {
+	monarchy = yes
+
+	color = { 255 186 0 }
+	
+	valid_for_new_country = no
+	
+	republican_name = no
+	royal_marriage = yes
+
+	has_parliament = yes
+
+	#bonus
+
+	rank = {
+		1 = {
+			legitimacy = 0.5
+			production_efficiency = 0.05
+			global_autonomy = -0.05
+		}
+		2 = {
+			legitimacy = 0.75
+			production_efficiency = 0.1
+			development_cost = -0.075
+			global_autonomy = -0.075
+		}
+		3 = {
+			legitimacy = 1
+			production_efficiency = 0.15
+			development_cost = -0.15
+			global_autonomy = -0.10
+		}
+	}
+	
+	max_states = 5
+}
+
+karteval = {
+	republic = yes
+
+	color = { 255 210 65 }
+	
+	valid_for_new_country = no
+	
+	republican_name = no
+	royal_marriage = yes
+
+	has_parliament = yes
+
+	#bonus
+
+	rank = {
+		1 = {
+			production_efficiency = 0.05
+			development_cost = -0.05
+			global_autonomy = -0.05
+		}
+		2 = {
+			production_efficiency = 0.1
+			development_cost = -0.075
+			global_autonomy = -0.075
+		}
+		3 = {
+			production_efficiency = 0.15
+			development_cost = -0.15
+			global_autonomy = -0.10
+		}
+	}
+	
+	max_states = 5
+}
+
+karteval_republic = {
+	republic = yes
+
+	color = { 215 210 65 }
+	
+	duration = 6
+
+	valid_for_new_country = no
+	
+	republican_name = no
+	royal_marriage = no
+
+	has_parliament = yes
+
+	#bonus
+
+	rank = {
+		1 = {
+			production_efficiency = 0.05
+			development_cost = -0.05
+			global_autonomy = -0.05
+		}
+		2 = {
+			#republic_tradition = 0.005
+			production_efficiency = 0.1
+			development_cost = -0.075
+			global_autonomy = -0.075
+		}
+		3 = {
+			#republic_tradition = 0.1
+			production_efficiency = 0.15
+			development_cost = -0.15
+			global_autonomy = -0.10
+		}
+	}
+	
+	max_states = 5
+}
+
+# СИ
+theocratic_monarchy = {
+	monarchy = yes
+
+	color = { 194 0 110 }
+
+	unique_government = yes
+	
+	valid_for_new_country = yes
+	allow_convert = no
+	
+	royal_marriage = yes
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 1
+			OR = {
+				technology_group = imperial_group
+				culture_group = imp_smesh_group
+			}
+		}
+	}
+	ai_importance = 5
+	
+	rank = {
+		1 = {
+			tolerance_own = 1
+			global_unrest = -1
+			global_autonomy = -0.025
+		}
+		2 = {
+			tolerance_own = 1
+			global_unrest = -3
+			global_autonomy = -0.05
+		}
+		3 = {
+			global_unrest = -3
+			tolerance_own = 1
+			diplomatic_upkeep = 2
+			global_autonomy = -0.1
+		}
+	}
+	
+	max_states = 5
+}
+	
+federation = {
+	republic = yes
+
+	color = { 89 132 217 }
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	min_autonomy = 25
+	
+	fixed_rank = 3
+	rank = {
+		3 = {
+			global_unrest = -3
+			num_accepted_cultures = 4
+			diplomatic_upkeep = 2
+		}
+	}
+	
+	max_states = 10
+}
+
+# Особая ФП СРЧ
+chaepitian_monarchy = {
+	republic = yes
+
+	color = { 0 113 127 }
+	
+	unique_government = yes
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	republican_name = no
+	royal_marriage = yes
+	
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+	
+	rank = {
+		2 = {
+			diplomatic_upkeep = 1
+			num_accepted_cultures = 1
+			global_unrest = -3
+		}
+	}
+	
+	fixed_rank = 2
+	
+	min_autonomy = 25 # 35
+	
+	max_states = 10
+}
+
+sm_elective_monarchy = {
+	monarchy = yes
+
+	color = { 178 0 213 }
+
+	unique_government = yes
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	republican_name = no
+	royal_marriage = yes
+	
+	nation_designer_cost = 25
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+
+	is_elective = yes
+	
+	rank = {
+		1 = {
+			vassal_income = 0.10
+			free_leader_pool = 1
+		}
+		2 = {
+			vassal_income = 0.15
+			free_leader_pool = 1
+			global_autonomy = -0.025		
+		}
+		3 = {	
+			vassal_income = 0.25
+			free_leader_pool = 1
+			global_autonomy = -0.05
+		}
+	}
+	
+	max_states = 10
+}
+
+# Для СОШ
+consul_republic = {
+	republic = yes
+	
+	color = { 118 0 173 }
+	
+	valid_for_new_country = yes
+	allow_convert = yes
+	
+	royal_marriage = yes
+	republican_name = yes
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	
+	rank = {
+		1 = {
+			stability_cost_modifier = -0.075
+			
+		}
+		2 = {
+			free_leader_pool = 1
+			stability_cost_modifier = -0.075
+		}
+		3 = {
+			free_leader_pool = 1
+			stability_cost_modifier = -0.15
+			num_accepted_cultures = 1
+		}
+	}
+	
+	max_states = 10
+}
+
+novagrad_republic = {
+	republic = yes
+	
+	color = { 75 168 0 }
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	unique_government = yes
+	
+	royal_marriage = yes
+	republican_name = yes
+	
+	has_parliament = yes
+	
+	boost_income = yes
+	can_use_trade_post = yes
+	
+	max_states = 5
+	
+	rank = {
+		1 = {
+			trade_efficiency = 0.025
+			global_autonomy = -0.025
+		}
+		2 = {
+			trade_efficiency = 0.05
+			land_morale = 0.025
+			global_autonomy = -0.05
+		}
+		3 = {
+			trade_efficiency = 0.05
+			land_morale = 0.05
+			global_autonomy = -0.075
+		}
+	}
+}
+
+technocrat_dictatorship = {
+	republic = yes
+	
+	color = { 68 54 54 }
+	
+	valid_for_new_country = yes
+	allow_convert = yes
+	
+	republican_name = yes
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 35
+	
+	max_states = 5
+	
+	rank = {
+		1 = {
+			technology_cost = -0.05
+			global_autonomy = -0.025
+		}
+		2 = {
+			technology_cost = -0.10
+			production_efficiency = 0.05
+			global_autonomy = -0.05
+		}
+		3 = {
+			technology_cost = -0.10
+			production_efficiency = 0.1
+			global_autonomy = -0.075
+		}
+	}
+}
+
+people_provisional_government = {
+	republic = yes
+	
+	color = { 214 133 40 }
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	unique_government = yes
+	
+	republican_name = yes
+	
+	max_states = 5
+	
+	fixed_rank = 1
+	rank = {
+		1 = {
+			global_unrest = -3
+			land_morale = 0.05
+		}
+	}
+}
+
+distraseyem_monarchy = {
+	monarchy = yes
+	
+	unique_government = yes
+	
+	color = { 209 114 12 }
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	nation_designer_trigger = {
+		culture_group = yellow_group
+	}
+	
+	allow_vassal_alliance = yes
+	allow_vassal_war = yes
+	
+	has_parliament = yes
+	
+	max_states = 5
+	
+	rank = {
+		1 = {
+			legitimacy = 0.5
+			stability_cost_modifier = -0.05
+		}
+		2 = {
+			legitimacy = 1
+			stability_cost_modifier = -0.1
+			global_autonomy = -0.025
+		}
+		3 = {
+			legitimacy = 1
+			stability_cost_modifier = -0.25
+			global_autonomy = -0.05
+		}
+	}
+}
+
+free_city_confederation = {
+	republic = yes
+	
+	unique_government = yes
+	
+	color = { 136 180 174 }
+	
+	duration = 4
+	
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	
+	republican_name = yes
+	royal_marriage = no
+	allow_convert = no
+	can_form_trade_league = yes
+	
+	rank = {
+		2 = {
+			merchants = 1
+			trade_efficiency = 0.1
+			development_cost = -0.1
+		}
+	}
+	fixed_rank = 2
+}
+
+fascist_dictatorship = {
+	republic = yes
+	
+	color = { 84 73 73 }
+	
+	republican_name = yes
+	
+	valid_for_new_country = no
+	allow_convert = no # ?
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+	rank = {
+		3 = {
+			army_tradition = 0.015
+			global_unrest = -1
+			culture_conversion_cost = -0.25
+			unjustified_demands = 0.25
+		}
+	}
+	fixed_rank = 3
+}
+
+free_city_aristocratical = {
+	republic = yes
+
+	color = { 206 119 47 }
+	
+	unique_government = yes
+	
+	valid_for_new_country = no # ?
+	allow_convert = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	
+	republican_name = yes
+	royal_marriage = yes
+	boost_income = yes
+	can_use_trade_post = yes
+	can_form_trade_league = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+	ai_importance = 1
+	
+	rank = {
+		1 = {
+			trade_efficiency = 0.1
+			development_cost = -0.1
+		}
+	}
+	fixed_rank = 1
+}
+
+free_city_base = {
+	republic = yes
+
+	color = { 206 119 47 }
+	
+	unique_government = yes
+	
+	valid_for_new_country = no # ?
+	allow_convert = no
+	duration = 2 # 4
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	
+	republican_name = yes
+	royal_marriage = no
+	boost_income = yes
+	can_use_trade_post = yes
+	can_form_trade_league = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+	ai_importance = 1
+	
+	rank = {
+		1 = {
+			trade_efficiency = 0.1
+			development_cost = -0.1
+		}
+	}
+	fixed_rank = 1
+}
+
+zmooromfian_government = {
+	monarchy = yes
+	
+	tribal = yes
+	nomad = yes
+	
+	allow_migration = yes
+	
+	militarised_society = yes
+	
+	color = { 108 193 193 }
+	
+	unique_government = yes
+	
+	valid_for_new_country = no # ?
+	allow_convert = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		primary_culture = zmooromfian
+		technology_group = old_zmooromfian
+	}
+	
+	royal_marriage = yes
+	
+	ai_will_do = {
+		factor = 0
+	}
+	ai_importance = 1
+	
+	max_states = 5
+	
+	rank = {
+		1 = {
+			unjustified_demands = -0.1
+			global_institution_spread = -0.05
+		}
+		2 = {
+			unjustified_demands = -0.1
+			war_exhaustion = -0.01
+			global_institution_spread = -0.05
+		}
+		3 = {
+			unjustified_demands = -0.1
+			war_exhaustion = -0.02
+			global_institution_spread = -0.05
+			#global_autonomy = -0.05
+		}
+	}
+}
