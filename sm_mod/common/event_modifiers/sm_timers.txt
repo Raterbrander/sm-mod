@@ -1,0 +1,14 @@
+slavenian_raid_timer = {
+}
+
+anarendilian_event_1_timer = {
+}
+
+asking_about_integration_timer = {
+}
+
+oil_timer = {
+}
+
+foreign_faction_boost_timer = {
+}
