@@ -1,0 +1,217 @@
+panellar_revolution = {
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = had_panellar_revolution }
+		NOT = { tag = EOY }
+		NOT = { tag = ELL }
+		culture_group = yellow_group
+		has_global_flag = panellarism
+		NOT = { government = people_provisional_government }
+		is_nomad = no
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		OR = {
+			NOT = { stability = 1 }
+			NOT = { legitimacy = 100 }
+			any_owned_province = {
+				culture_group = yellow_group
+				unrest = 5
+			}
+		}
+		NOT = { has_country_modifier = ellar_national_leader }
+		#technology_group = ellar_tech
+		OR = {
+			any_owned_province = {
+				culture_group = yellow_group
+				unrest = 1
+			}
+			NOT = { num_of_cities = 2 }
+		}
+		OR = {
+			is_subject = no
+			AND = {
+				is_subject = yes
+				overlord = {
+					NOT = { has_country_modifier = ellar_national_leader }
+				}
+			}
+		}
+	}
+	
+	can_stop = { 
+		OR = {
+			has_any_disaster = yes
+			AND = {
+				stability = 3
+				legitimacy = 95
+			}
+			AND = {
+				is_subject = yes
+				overlord = {
+					NOT = { has_country_modifier = ellar_national_leader }
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = -3
+			NOT = {
+				OR = {
+					primary_culture = yellow
+					primary_culture = tardian
+					primary_culture = gottardian
+					primary_culture = tonderros
+					primary_culture = arvabian
+				}
+				exists = EOY
+			}
+		}
+		modifier = {
+			factor = -2
+			government_rank = 3
+		}
+		modifier = {
+			factor = 1.5
+			exists = ELL
+		}
+		modifier = {
+			factor = 3
+			exists = EOY
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				AND = {
+					government = monarchy
+					NOT = { government = constitutional_monarchy }
+					NOT = { government = karteval_monarchic }
+				}
+				government = theocracy
+			}
+		}
+		modifier = {
+			factor = -1
+			government = distraseyem_monarchy
+		}
+		modifier = {
+			factor = -2
+			government = republic
+		}
+		modifier = {
+			factor = -2
+			OR = {
+				government = parliamentary_republic
+				government = presidental_republic_4
+				government = presidental_republic_6
+				government = karteval
+				government = karteval_republic
+			}
+		}
+		modifier = {
+			factor = -1.5
+			government = socialist_republic
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = -1
+			stability = 1
+		}
+		modifier = {
+			factor = -1
+			stability = 2
+		}
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 1
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 2
+			is_bankrupt = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { mil = 3 }
+		}
+		modifier = {
+			factor = -3
+			NOT = {
+				OR = {
+					is_year = 555
+					adm_tech = 10
+					dip_tech = 10
+					mil_tech = 10
+				}
+			}
+		}
+		modifier = {
+			factor = -2
+			NOT = {
+				OR = {
+					is_year = 565
+					adm_tech = 12
+					dip_tech = 12
+					mil_tech = 12
+				}
+			}
+		}
+		modifier = {
+			factor = -2
+			overlord = {
+				overlord = { has_country_modifier = ellar_national_leader }
+			}
+		}
+		modifier = {
+			factor = -2
+			hidden_trigger = {
+				tag = SMF
+			}
+		}
+	}
+	
+	can_end = {
+		stability = 2
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		capital_scope = {
+			controlled_by = ROOT
+		}
+	}
+	
+	modifier = {
+		global_unrest = 5
+		stability_cost_modifier = 0.5
+	}
+	
+	on_start = panellar_revolution.1
+	on_end = panellar_revolution.101
+	
+	on_monthly = {
+	#	random_events = { 
+	#		1000 = 0
+	#		100 = revolution.2
+	#	}
+	}
+}
+
