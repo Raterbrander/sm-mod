@@ -1,0 +1,9 @@
+#############################################################################
+# ‘–¿ ÷»» ¿Ã
+#############################################################################
+EAM = "countries/EmpireOfAMes.txt"
+
+MRT = "countries/Mirotvortsi.txt"
+BEL = "countries/Belie.txt"
+HRU = "countries/Hrumin.txt"
+BLK = "countries/Chernie.txt"

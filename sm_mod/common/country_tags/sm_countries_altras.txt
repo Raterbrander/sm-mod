@@ -1,0 +1,12 @@
+#############################################################################
+# ¿À‹“–¿—— »≈ —“–¿Õ€
+#############################################################################
+ALR = "countries/Altrases.txt"
+GDR = "countries/Gidra.txt"
+
+AL1 = "countries/AltrasKaydgedanate.txt"
+RLH = "countries/Relhalgineys.txt"
+AML = "countries/Amagel.txt"
+SNS = "countries/Sensal.txt"
+BDR = "countries/Brandeross.txt"
+RTR = "countries/Rotarhes.txt"

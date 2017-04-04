@@ -1,0 +1,14 @@
+# Special countries..
+REB = "countries/Rebels.txt"
+PIR = "countries/Pirates.txt"
+NAT = "countries/Natives.txt"
+
+TEU	= "countries/Teutonicorder.txt" # Демонский Тевтонский Орден
+TUR	= "countries/Ottomans.txt" # Лорные кроносские турки
+SWI	= "countries/Schweiz.txt" # Швейцария Лосьоптимиста
+#SER	= "countries/Serbia.txt" # Для прекола в Косово на Звёздном
+#RYA	= "countries/Ryazan.txt" # Звёздный
+#ALB	= "countries/Albania.txt" # Для прекола в Косово на Звёздном
+
+# ???
+JMN = "countries/Jan Mayen.txt"

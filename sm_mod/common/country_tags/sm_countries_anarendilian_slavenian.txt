@@ -1,0 +1,27 @@
+#############################################################################
+# ÀÍÀĞÅÍÄÈËÜÑÊÈÅ È ÑËÀÂÅÍÑÊÈÅ ÑÒĞÀÍÛ ËÀÒÂÈÈ
+#############################################################################
+VAM = "countries/VSAM.txt"
+GRU = "countries/GreatUnion.txt"
+UKS = "countries/UTS.txt"
+
+# Ñëàâåíû
+SLV = "countries/Slavenia.txt"
+
+NVG = "countries/Novagrad.txt"
+PLV = "countries/Polovichi.txt"
+BRD = "countries/Bardinichi.txt"
+
+# Àíàğåíäèëè
+AFE = "countries/Anor.txt"
+
+AMN = "countries/Amaniyar.txt"
+ELK = "countries/Elkvalonge.txt"
+HVL = "countries/Hvalkngir.txt"
+IRI = "countries/Iringor.txt"
+KAY = "countries/Kaylongir.txt"
+MIL = "countries/Mildorn.txt"
+SRG = "countries/Sorgot.txt"
+
+UKI = "countries/AnarendilianUnitedKingdom.txt"
+ASR = "countries/Astard.txt"

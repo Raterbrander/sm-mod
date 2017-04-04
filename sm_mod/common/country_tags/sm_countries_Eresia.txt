@@ -1,0 +1,9 @@
+#############################################################################
+# ĞÅÃÈÎÍ İĞÅÑÈÈ
+#############################################################################
+# Ôîíãñöû
+IRL = "countries/Irilin.txt"
+BOL = "countries/Bolkorania.txt"
+KAL = "countries/Karnilia.txt"
+NRL = "countries/Northern Irilin.txt"
+BTA = "countries/Brentanara.txt"

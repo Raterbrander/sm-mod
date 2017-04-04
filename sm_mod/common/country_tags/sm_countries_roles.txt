@@ -1,0 +1,9 @@
+#############################################################################
+# —“–¿Õ€ –ŒÀ≈¬€’
+#############################################################################
+CH2 = "countries/HolyRepublicOfTea.txt"
+CH3 = "countries/Novoe Chaepitie.txt"
+BLU = "countries/BludniySon.txt"
+NHN = "countries/AgentsNippon.txt"
+NGR = "countries/NGR.txt"
+TCH = "countries/Tehnosoyuz.txt"

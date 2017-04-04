@@ -1,0 +1,129 @@
+#############################################################################
+# ОСНОВНОЙ КОНТИНЕНТ
+#############################################################################
+# Регион ИЖ
+EOY = "countries/EmpireOfYellows.txt"
+ELL = "countries/Ellaria.txt"
+#TRB = "countries/Tardensberg.txt"
+#TRD = "countries/Tardia.txt"
+#GTT = "countries/Gottardia.txt"
+BZN = "countries/Bezantoks.txt"
+MSC = "countries/Miscilia.txt"
+
+TRU = "countries/ChistieTrusi.txt"
+
+ZMR = "countries/Kornisonaks.txt"
+
+# Англо-Смешия
+KRO = "countries/Kroshelburg.txt"
+ASM = "countries/SmeshEngland.txt"
+
+# Левония
+LVO = "countries/Levonia.txt"
+KRV = "countries/Kravilon.txt"
+
+# Синие и Альтрасы
+LMR = "countries/Lemoria.txt"
+IOD = "countries/ImperiumDepacho.txt"
+SIN = "countries/Sinie.txt"
+ORD = "countries/Order.txt"
+MVH = "countries/Maverhold.txt"
+ITL = "countries/Itlania.txt"
+GRX = "countries/Groxes.txt"
+BUS = "countries/BoltushUnitedStates.txt"
+RIF = "countries/Rifonia.txt"
+SHK = "countries/Smeshiks.txt"
+
+# Бринтения
+SRE = "countries/TheReich.txt"
+BRN = "countries/Brintenia.txt"
+
+# Запад
+AGI = "countries/AustroGermany.txt"
+HNN = "countries/Hananeya.txt"
+
+CHT = "countries/Chaepit.txt"
+
+KSS = "countries/Keltsas.txt"
+FRC = "countries/FederativeRepublicOfWesternChaepit.txt"
+FRR = "countries/FederativeRepublicOfRantayzia.txt"
+SPM = "countries/Spomi.txt"
+ADN = "countries/Aredeyna.txt"
+LAV = "countries/Lavrida.txt"
+
+# Земли СИ
+AVE = "countries/Alveriya.txt"
+TRR = "countries/Turiania.txt"
+SME = "countries/EmpireOfSmeshes.txt"
+NGI = "countries/NGI.txt"
+
+# Говно
+RZH = "countries/Ramzahia.txt"
+
+# Земли Смешенфонгсцев
+LTP = "countries/Lintapia.txt"
+MMA = "countries/Merenmar.txt"
+
+# Тайфалия
+TF1 = "countries/Taifalia.txt"
+TTF = "countries/TribalTaifalia.txt"
+
+TRN = "countries/Terendia.txt"
+
+# Косой и Бакенроу
+AGA = "countries/AMGA.txt"
+DSH = "countries/DobriyShararamovets.txt"
+UOS = "countries/SouzOkrainShararama.txt"
+
+#############################################################################
+# КРОНОС
+#############################################################################
+#KRN = "countries/Kronos.txt"
+PEH = "countries/PEH.txt"
+#ELE = "countries/EllinEmpire.txt"
+SRM = "countries/StormEmpire.txt"
+WKR = "countries/WestKronos.txt"
+NKF = "countries/NKF.txt"
+KRN = "countries/Kronos.txt"
+YIA = "countries/ImperialAMes.txt"
+KLS = "countries/Kalamos.txt"
+
+VSK = "countries/VSSK.txt"
+
+#############################################################################
+# ВОСТОЧНЫЕ ОСТРОВА
+#############################################################################
+# Звёздный
+DOM = "countries/Dominionia.txt"
+USS = "countries/USRS.txt"
+NGO = "countries/Nagora.txt"
+NG2 = "countries/LateNagora.txt"
+
+# Волкодав
+NFE = "countries/NartzFederation.txt"
+NRZ = "countries/Nartz.txt"
+VLK = "countries/Volkodav.txt"
+
+IGO = "countries/Igora.txt"
+
+#############################################################################
+# ОСТРОВ МАЛЫШЕЙ
+#############################################################################
+DRA = "countries/DarkAlliance.txt"
+DMF = "countries/DMFSR.txt"
+SUM = "countries/SMSR.txt"
+MDV = "countries/Medvedia.txt"
+
+#############################################################################
+# ЮЖНЫЕ ОСТРОВА
+#############################################################################
+UTN = "countries/Utenia.txt"
+KTN = "countries/KartevalicUtenia.txt"
+KST = "countries/Kryakostania.txt"
+ECH = "countries/EasternChayua.txt"
+DVI = "countries/DerevnyaDimika.txt"
+
+#############################################################################
+# ЛЭМИНДЛЭНД
+#############################################################################
+RNL = "countries/OldRannudia.txt"

@@ -1,0 +1,6 @@
+ILM = "countries/Ilmavia.txt"
+NOB = "countries/Nobrada.txt"
+SLR = "countries/Solliaria.txt"
+ONM = "countries/Onamards.txt"
+
+KCK = "countries/Krichka.txt"

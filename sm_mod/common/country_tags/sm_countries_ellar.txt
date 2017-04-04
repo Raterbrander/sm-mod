@@ -1,0 +1,116 @@
+# ÑÒĞÀÍÛ İËËÀĞÈÈ È ÁÅÇÀÍÒÎÊÖÀ
+#############################################################################
+# İËËÀĞÈß
+#############################################################################
+SMF = "countries/Fonks.txt"
+AIL = "countries/Aileiv.txt"
+TBS = "countries/Tabeslar.txt"
+SVL = "countries/Sevlef.txt"
+BIR = "countries/Biroy.txt"
+RDT = "countries/Redata.txt"
+VNR = "countries/Venerd.txt"
+VNB = "countries/Vernbradika.txt"
+TNL = "countries/Tenelburg.txt"
+VRU = "countries/Vendreya-Rutran.txt"
+VKN = "countries/Vendreya-Konsfalt.txt"
+VED = "countries/Vendreya.txt"
+ERC = "countries/Ervetsellar.txt"
+WDS = "countries/Wendelshleif.txt"
+GRV = "countries/Gervein.txt"
+TND = "countries/Tonderros.txt"
+LRK = "countries/Lerkitan.txt"
+PRT = "countries/Parantolia.txt"
+HSV = "countries/Henshvik.txt"
+LDR = "countries/Lunidor.txt"
+RDL = "countries/Rendall.txt"
+GIE = "countries/Giefa.txt"
+KNV = "countries/Kanvileya.txt"
+VTS = "countries/Vendreya-Tsenvir.txt"
+BLF = "countries/Balfes.txt"
+JEW = "countries/Jewrenburg.txt"
+MAT = "countries/Matrera.txt"
+TAT = "countries/Tarnot.txt"
+HNF = "countries/Hanfalt.txt"
+BAK = "countries/Balikia.txt"
+KRG = "countries/Kargedan.txt"
+TED = "countries/Tedenerusail.txt"
+KRT = "countries/Kartanot.txt"
+BNT = "countries/Benteroy.txt"
+OLN = "countries/Olenrehnes.txt"
+INT = "countries/Intorbatten.txt"
+ERM = "countries/Ermer.txt"
+BKN = "countries/Beikan.txt"
+KOY = "countries/Koyoburg.txt"
+KGE = "countries/Koyoburg-Gettas.txt"
+KHF = "countries/Koyoburg-Heinfas.txt"
+KOG = "countries/Koyoburg-Onraingart.txt"
+
+# Òóğáàëõåéÿ
+WNZ = "countries/Wainzar.txt"
+TLV = "countries/Tonleiv.txt"
+LKF = "countries/Likfand.txt"
+TRB = "countries/Turbalheya.txt"
+TSR = "countries/Tesenran.txt"
+IOS = "countries/Iostraud.txt"
+
+# Ãîòòîğí
+GTR = "countries/Gottorn.txt"
+GRL = "countries/Gottorn-Rilan.txt"
+MHT = "countries/Gottorn-Manhott.txt"
+MRH = "countries/Gottorn-Mernthiris.txt"
+VSF = "countries/Veliskorfant.txt"
+MRC = "countries/Marcellons.txt"
+
+####################################
+# Ãîòòàğäèÿ
+####################################
+HLC = "countries/Halscenburgs.txt"
+GTT = "countries/Gottardia.txt"
+ORG = "countries/Orgeyl.txt"
+KHS = "countries/Koranhastar.txt"
+ERT = "countries/Ertall.txt"
+RVS = "countries/Revendstar.txt"
+NBR = "countries/Nambouren.txt"
+SVR = "countries/Savardeyris.txt"
+KDP = "countries/Kondoprei.txt"
+HLB = "countries/Helsoltberg.txt"
+
+#############################################################################
+# ÁÅÇÀÍÒÎÊÖ
+#############################################################################
+ENH = "countries/Enheldis.txt"
+IML = "countries/Imelia.txt"
+LRT = "countries/Lertablia.txt"
+KGA = "countries/Kega.txt"
+RBZ = "countries/Rebalz.txt"
+LFG = "countries/Leifenger.txt"
+
+LKM = "countries/Lakermia.txt"
+ANV = "countries/Anveik.txt"
+
+# Ìèñöèëèÿ
+WMI = "countries/WesternMiscilia.txt"
+EMI = "countries/EasternMiscilia.txt"
+SDB = "countries/Slardeburg.txt"
+NMD = "countries/Nermadika.txt"
+ERG = "countries/Ergensburg.txt"
+
+# Àíãëî-Ñìåøèÿ
+NSM = "countries/Nordsmeshes.txt"
+ANG = "countries/Angles.txt"
+
+####################################
+# ÊÎĞÍÈÑÎÍÀÊÑ
+####################################
+ALI = "countries/Alivarjak.txt"
+YAL = "countries/Yalyareharebe.txt"
+ALN = "countries/Alobon.txt"
+
+# Àğâàáèÿ
+RTZ = "countries/Rantozs.txt"
+BGT = "countries/Bangast.txt"
+ARV = "countries/Arvabia.txt"
+
+TBR = "countries/Taberinia.txt"
+HFL = "countries/Haunfell.txt"
+KRR = "countries/Kerderond.txt"
