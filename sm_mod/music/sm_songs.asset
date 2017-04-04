@@ -1,0 +1,9 @@
+music = {
+	name = communist_marsh1
+	file = communist_marsh1.ogg
+}
+
+music = {
+	name = smagic
+	file = smagic.ogg
+}
