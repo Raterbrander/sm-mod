@@ -1,0 +1,40 @@
+# A region can only belong to one super region.
+
+latvia_superregion = {
+	western_latvia_region
+	southern_latvia_region
+	northern_latvia_region
+	vsam_region
+}
+
+star_island_superregion = {
+	dominionia_region
+	nagora_region
+}
+
+kronos_supperegion = {
+	ellin_kronos_region
+	south_kronos_region
+	eastern_kronos_region
+}
+
+taifalia_superregion = {
+	outer_taifalia_region
+	north_taifalia_region
+	general_taife_region
+}
+
+kongorlotez_superregion = {
+	east_kongorlotez_region
+	west_kongorlotez_region
+}
+
+roles_superregion = {
+	old_roles_region 
+	south_roles_region
+	eastern_roles_region
+	western_roles_region
+}
+
+new_world_superregion ={
+}

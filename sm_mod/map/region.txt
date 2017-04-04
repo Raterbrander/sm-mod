@@ -1,0 +1,1107 @@
+# A province can belong to several regions.
+
+# random_new_world_region is used for RNW. Must be first in this list.
+random_new_world_region = {
+}
+
+########################################
+#  ОСНОВНОЙ КОНТИНЕНТ
+########################################
+
+# 1 - Альтрасский регион
+altras_region = {
+	areas = {
+		brandeross_area
+		kerzendak_area
+		hydra_area
+		ergem_area
+		rotarhes_area
+		erlet_area
+		arnegel_area
+	}
+}
+
+# 2 - Смешикс
+smeshiks_region = {
+	areas = {
+		zalesie_area
+		smeshinka_area
+		smeshiks_area
+		smeshigrad_area # ДРШ
+	}
+}
+
+# 3 - Эресийский регион
+sinius_region = {
+	areas = {
+		taris_area
+		remers_area 
+		lemoria_area
+		otsroger_area
+		narkutsk_area
+		old_rifonia_area
+		grox_area 
+		virone_area
+		ormelia_area
+		hinor_order_area
+		lintapia_area
+	}
+}
+
+# 4 - Англо-Смешия
+anglo_smesh_region = {
+	areas = {
+		lakermia_area
+		kroshelburg_area
+		tervold_area
+		resorda_area
+	}
+}
+
+# 5 - Вейсцантаркс
+bezantoks_region = {
+	areas = {
+		miscilia_area
+		slardeburg_area
+		nermadica_area
+		sadarim_area
+		bezantokian_coast_area
+		anveik_area
+		tizlaria_area
+		rettagon_area
+		senvaria_area
+		gorileif_area
+		bertegast_area
+		branderia_area
+		veiscant_zaozerie_area
+		hasteria_area
+		monehoria_area
+		hawzenaria_area
+		metirika_area
+		idisteria_area
+		pentalia_area
+		nalania_area
+	}
+}
+
+# 6 - Эллария
+general_ellar_region = {
+	areas = {
+		venderd_area
+		parantolia_area
+		kerberond_area
+		gervenian_coast_area
+		smeshesberg_area
+		gottardia_area
+		tabeslar_area
+		vendreya_area
+		gottorn_area
+		fonks_area
+		south_tardian_lands_area
+		hanserus_cities_area
+		old_ellaria_area
+		ellar_south_ports_area
+		steppe_forts_area
+		tselmittellaria_area
+		marnorisland_area
+		ellar_orangelands_area
+		koyoburg_area
+		tanvaria_area
+		reotland_area
+		tunreniell_area
+		gormenlarm_area
+		nortelordskasles_area
+		hantessland_area
+		krainduksats_area
+		ortseoldland_area
+		ranferder_area
+		reypfaylia_area
+		taberinia_area
+		
+		smeshburg_area
+		
+		ellar_amian_lands_area
+	}
+}
+
+# 7 - Степной пояс
+ellar_middle_lands_region = {
+	areas = {
+		kensia_area
+		banhad_area
+		herftartland_area
+		kiohia_area
+		general_steppe_ellar_area
+	}
+}
+
+# 8 - Левония
+levonia_region = {
+	areas = {
+		kravilon_area
+		levonia_area
+	}
+}
+
+# 9 - Земли ВСАМ
+vsam_region = {
+	areas = {
+		ripars_am_area
+		kosharik_um_area
+	}
+}
+
+# 10 - Запад Сульдана / Белые земли
+western_latvia_region = {
+	areas = {
+		belius_area
+		olimpia_area
+		beliy_bereg
+	}
+}
+
+# 11 - Междуморье
+mezhdumorie_region = {
+	areas = {
+		lertablia_area
+		leifenger_area
+		enheldis_area
+	}
+}
+
+# 12 - Корнисонакс
+kornisonaks_region = {
+	areas = {
+		kornisonaks_area
+		alivarjak_surkfia_area
+		zmooromfia_area
+		am_holy_land_area
+		yellow_coast_area
+		south_arvabia_area
+		north_arvabia_area
+		balikia_area
+	}
+}
+
+# 13 - Юг Сульдана
+southern_latvia_region = {
+	areas = {
+		hvalkngir_area
+		ukria_area
+		hervilgdir_area
+		elkvalonge_area
+		novagrad_area
+		outer_levonia_area
+		niderlandi_area
+	}
+}
+
+# 14 - Север Сульдана
+northern_latvia_region = {
+	areas = {
+		iringor_area
+		sorgot_area
+		mildorn_area
+		amaniar_area
+		north_latvia_area
+		kailongir_area
+		gradz_area
+	}
+}
+
+########################################
+# ЮГ ОСНОВНОГО КОНТИНЕНТА
+########################################
+# 15 - Чаепит
+chaepit_region = {
+	areas = {
+		sentshark_area
+		lavrida_area
+		kochegora_area
+		ostrov_vostochniy_area
+		spomi_area
+		kirchess_area
+		geldebruks_area
+		riht_area
+		central_regions_of_chaepit_area
+		chaepit_area
+	}
+}
+
+# 16 - Западно-Чаепитский регион
+western_chaepit_region = {
+	areas = {
+		ardena_area
+		keltsas_area
+		ranhebran_area
+		varaldas_area
+		baigur_area
+		skolgabia_area
+		harfta_lands_area
+		tarsets_area
+		kefrenastria_area
+		secergondlia_area
+		hotarginia_area
+		merholgania_area
+		reyverstates_area
+		neunortlands_area
+		tihvenstats_area
+		east_west_coast_r_area
+	}
+}
+
+# 17 - Косой
+kosoy_region = {
+	areas = {
+		amga_lands_area
+		vainshara_area
+		tiynor_area
+		mezd_area
+		southern_kosoy_area
+		koilemannd_area
+		eastern_kosoy_area
+	}
+}
+
+# 18 - Бакенроу
+bakenrou_region = {
+	areas = {
+		east_bakenrou_area
+		west_bakenrou_area
+		tropa_islands_area
+	}
+}
+
+# 19 - Острова Тоор
+toor_islands_region = {
+	areas = {
+		west_toor_islands_area
+		east_toor_islands_area
+	}
+}
+
+# 20 - Западные острова
+ausger_west_islands_region = {
+	areas = {
+		genta_area
+		pitkern_area
+		malie_zapadnie_ostrova_area
+		o_kopengagena_area
+	}
+}
+
+# 21 - Австро-Германия
+main_ausger_region = {
+	areas = {
+		central_ausger_area
+		south_ausger_area
+		swiss_n_romania_area
+		apuli_munchen
+	}
+}
+
+# 22 - Хананея
+hananey_region = {
+	areas = {
+		central_hananeya_area
+		south_hananeya_area
+		east_hahaneya_area
+	}
+}
+
+########################################
+# РОЛЕВЫЕ
+########################################
+# 23 - Старые, общеизвестные ролевые
+old_roles_region = {
+	areas = {
+		chaepitie_area
+		rio_area
+		otel_plyazh_apteka_area
+		repablia_area
+		besedka_area
+		nihon_area
+	}
+}
+
+# 24 - Южные ролевые, слабо заселённые
+south_roles_region = {
+	areas = {
+		svobodniy_area
+		vkusniy_area
+		dom_smesharikov_area
+		novgorod_geroy_area
+		okrainnie_oteli_area
+		land_of_secrets
+		promgrad_area
+	}
+}
+
+# 25 - Восточные ролевые
+eastern_roles_region = {
+	areas = {
+		terhengart_area
+		old_brintenia_area
+		krosh_i_k_area
+		igra_chitalka_area
+		alleziorum_area
+	}
+}
+
+# 26 - Западные ролевые
+western_roles_region = {
+	areas = {
+		bludniy_son_area
+		dimikland_area
+		dimzikland_area
+		chanotigeroge_area
+		sever_area
+	}
+}
+
+# Центральные земли
+# 27 - Волчьи земли
+wolf_lands_region = {
+	areas = {
+		turiania_area
+		south_wolf_lands_area
+		north_wolf_lands_area
+	}
+}
+
+# 28 - Серединные земли
+central_lands_region = {
+	areas = {
+		imperograd_area
+		ureos_area
+		new_vegas_area
+		vorakanalia_area
+		#old_brintenia_area
+		central_plains_area
+		south_west_lands_area
+		western_desert_area
+		central_desert_area
+		imperial_lands_area
+	}
+}
+
+# 29 - Смешенфонгсские земли
+smeshenfongss_lands_region = {
+	areas = {
+		alveria_area
+		valh_area
+		sharam_area
+	}
+}
+
+# 30 - Тайфалия
+north_taifalia_region = {
+	areas = {
+		new_tabeslar_area
+		rekintos_area
+	}
+}
+
+# 31 - Временно
+general_taife_region = {
+	areas = {
+		severgrad_area
+		allians_nikolaos_area
+		urinhia_area
+		general_taife_stub_area
+	}
+}
+
+# 32 - Внешняя Тайфалия
+outer_taifalia_region = {
+	areas = {
+		outer_taifalia_south_area
+		outer_taifalia_north_area
+	}
+}
+
+# 33 - Северные пустоши
+far_north_region = {
+	areas = {
+		#trenganordia_area
+		led_pustoshi_area
+		winteria_area
+		presharie_area
+		great_north_area
+		trenganordia_area
+	}
+}
+
+# 34 - СмешЕвропа
+sevroype_region = {
+	areas = {
+		aldireya_area
+		saylend_area
+		tuva_area
+		old_mrakobor_lands_area
+		western_bilou_area
+		eastern_bilou_area
+		tel_larod_area
+		bulrakia_area
+		marekonga_area
+		newfags_lands_area
+		lietova_area
+	}
+}
+
+# 34 - Бурлакия и Мареконга
+#burlakia_n_marekonga_region = {
+#	areas = {
+#		bulrakia_area
+#		marekonga_area
+#	}
+#}
+
+# 35 - Рифония
+rifonia_region = {
+	areas = {
+		southern_rifonia_area
+		central_rifonia_area
+		eastern_rifonia_area
+	}
+}
+
+# 36 - Эдемия
+edemia_region = {
+	areas = {
+		western_edemia_area
+		eastern_edemia_area
+	}
+}
+
+########################################
+# БРИНТЕНИЯ
+########################################
+# 37
+brintenia_region = {
+	areas = {
+		memel_area
+		selenziya_area
+		brint_old_cities_area
+		south_brintentia_area
+		central_brintentia_area
+	}
+}
+
+# 38 - Авструния
+austrunia_region = {
+	areas = {
+		east_austrunia_area
+		west_austrunia_area
+	}
+}
+
+########################################
+# КРОНОС
+########################################
+# 39 - Эллинский (Западный) Кронос
+ellin_kronos_region = {
+	areas = {
+		adios_area
+		northwest_kronos_area
+		kronos_turkey_area
+		kitira_area
+		gardiopoles_area
+		donusa_area
+		barakoa_area
+	}
+}
+
+# 40 - Восточный Кронос
+eastern_kronos_region = {
+	areas = {
+		central_kronos_area
+		runisland_area
+		teutonia_area
+		lekfas_area
+		uran_area
+		terend_area
+		kronos_east_jungles_area
+		kongermelt_area
+	}
+}
+
+# 41 - Южный Кронос
+south_kronos_region = {
+	areas = {
+		rebolmandia_area
+		orlemia_area
+		transkronosseya_area
+		south_islands_area
+	}
+}
+
+########################################
+# ЮЖНЫЕ ОСТРОВА
+########################################
+# 42 - Утения
+utenia_region = {
+	areas = {
+		daketta_area
+		twins_islands_area
+		south_utenia_area
+		utkograd_area
+		zooshar_area
+		utikoburg_area
+		north_utenian_area
+		northern_islands_area
+		triangle_area
+		chauiya_area
+		small_islands_area
+	}
+}
+
+########################################
+# ВОСТОЧНЫЕ ОСТРОВА
+########################################
+## Звёздный
+# 43 - Доминиония
+dominionia_region = {
+	areas = {
+		south_star_island_area
+		zansk_area
+		west_star_island_area
+		ulkanavtsk_area
+		pobedograd_area
+		volkonsk_area
+		zelensk_area
+		mayakovsk_area
+		kettarosh_area
+	}
+}
+
+# 44 - Нагора
+nagora_region = {
+	areas = {
+		nagora_area
+		ochishi_area
+		nagoriysk_area
+	}
+}
+
+# 45 - Волкодав
+volkodav_region = {
+	areas = {
+		gartibatten_area
+		nartz_area
+		bardolia_area
+		east_volkodav_area
+		central_volkodav_area
+		sunla_area
+	}
+}
+
+# 46 - Малые восточные острова
+east_islands_region = {
+	areas = {
+		ostrova_imenem_rolikista_area
+		newstar_islands_area
+		krichka_area
+	}
+}
+
+# 47 - Игоры
+igores_region = {
+	areas = {
+		western_igores_area
+		eastern_igores_area
+	}
+}
+
+########################################
+# ОСТРОВ МАЛЫШЕЙ
+########################################
+# 48
+malishian_island_region = {
+	areas = {
+		malishinsk_area
+		malishgrad_area
+		malishva_area
+		north_malishian_coast_area
+		kenia_area
+		snegomalish_area
+		medvedia_area
+		new_malish_area
+		dimikov_area
+	}
+}
+
+########################################
+# ЛЭМИНДЛЭНД
+########################################
+# 49 - Юго-Восток Лэминдлэнда
+south_west_lemindland_region = {
+	areas = {
+		ariand_area
+		pervolemovskiy_bereg_area
+		eites_area
+		skettaria_area
+		borondia_area
+		redika_area
+	}
+}
+
+# 50 - Раннудия
+rannudia_region = {
+	areas = {
+		south_coast_of_rannudia_area
+		land_of_key_area
+		north_coast_of_rannudia_area
+		rannudian_prigorie_area
+		tyosyu_area
+		rannudian_islands_area
+		oteperse_area
+		lerkelitia_area
+		iyodi_area
+	}
+}
+
+# 51 - Запад Лэма
+western_lem_region = {
+	areas = {
+		kelgardia_area
+		verangilia_area
+		yellow_sea_coast_area
+		#land_of_key_area
+		south_west_coast_area
+		hayerko_area
+		kamakura_area
+		sinorimaria_area
+		betendia_area
+		karlas_area
+		kailernabia_area
+		bayertia_area
+		meardika_area
+	}
+}
+
+# 52 - Ойаху
+oyahu_region = {
+	areas = {
+		bonosheria_area
+		ondili_area
+		gelima_area
+		winotorozke_area
+		rentelem_islands_area
+	}
+}
+
+########################################
+# КЕБАБИЙ
+########################################
+# 53
+kebabian_region = {
+	areas = {
+		bigpig_area
+		norderlands_area
+		continental_kebabiy_area
+		kebabian_islands_area
+		shetlands_area
+		kebabostonia_area
+		sicel_area
+		zantseh_area
+		new_brintentia_area
+		shoormi_area
+		kebabian_great_nagorie_area
+		volvostk_area
+		north_east_kebabian_area
+		anaristifa_area
+		east_kebabian_area
+		kebabian_ukraina_area
+		new_gervein_area
+		north_kebabian_area
+		bonkotia_area
+	}
+}
+
+########################################
+# ОСТРОВ ПОСОХА
+########################################
+# 54
+posoh_region = {
+	areas = {
+		posoh_area
+	}
+}
+
+########################################
+# ОСТРОВА БАНДИТСКОГО МОРЯ
+########################################
+# 55 - Висберсифорс
+visbersifors_region = {
+	areas = {
+		arulavah_area
+		latveria_area
+		vulcano_islands_area
+	}
+}
+
+# 56 - Серманик и Херманних
+sermanik_hermannih_region = {
+	areas = {
+		pepel_land_area
+		rodberland_area
+		north_hermannih_area
+		south_hermannih_area
+	}
+}
+
+# 57 - Малые острова Бандитского моря
+bandit_sea_islands_region = {
+	areas = {
+		croatian_islands_area
+		dubrol_islands_area
+		bandit_smaller_islands_area
+	}
+}
+
+########################################
+# КОНГОРЛОТЕЗ
+########################################
+# 58 - Восточный Конгорлотез
+east_kongorlotez_region = {
+	areas = {
+		bauerston_area
+		monrgrad_area
+		onesttaun_area
+		central_east_kongorlotez_area
+		kongorlotezskiy_peresheek_area
+		new_rawenna_area
+		east_peninsulas_area
+		italiysk_area
+	}
+}
+
+# 59 - Западный Конгорлотез
+west_kongorlotez_region = {
+	areas = {
+		old_romey_area
+		pshbishzhenskir_area
+		center_of_west_kongorlotez_area
+		lanland_area
+	}
+}
+
+########################################
+# ГУРВАЛИЯ
+########################################
+# 60
+gurvalia_region = {
+	areas = {
+		south_kurvandia_area
+		north_kurvandia_area
+		north_gurvalia_area
+		south_gurvalia_area
+		great_andvar_area
+		andvar_area
+	}
+}
+
+#########################################################
+
+tsvetnoe_more_region = {
+	areas = {
+		tsvetnoe_more_west_area
+		tsvetnoe_more_east_area
+	}
+}
+
+okan_seas_region = {
+	areas = {
+		okian_area
+		bezantokian_sea_area
+		levonian_sea_area
+	}
+}
+
+kronossian_seas_region = {
+	areas = {
+		east_coast_of_kronos_area
+		boretellian_seas_area
+		kraken_sea_area
+		south_coast_of_kronos_area
+		skefert_sea_area
+	}
+}
+
+#ausger_west_islands_seas_region = {
+#	areas = {
+#		ausger_west_islands_seas_south_area
+#		ausger_west_islands_seas_north_area
+#	}
+#}
+
+continent_west_coast_region = {
+	areas = {
+		ausger_coast_area
+		hananey_coast_area
+		taife_bay_area
+		south_east_taifalian_coast_area
+		rantayzian_coast_area
+		british_sea_area
+		ausger_west_islands_seas_north_area
+	}
+}
+
+south_west_lemindland_sea_region = { # east
+	areas = {
+		more_monarchov_area
+		proliv_ruyku_area
+		rentelem_v_area
+	}
+}
+
+chaepit_sea_region = {
+	areas = {
+		eastern_chaepit_sea_area
+		western_chaepit_sea_area
+		#pirate_islands_sea_area
+	}
+}
+
+death_sea_region = {
+	areas = { death_sea_area }
+}
+
+more_morskoe_region = {
+	areas = {
+		coast_of_latvia_area
+		more_morskoe_area
+	}
+}
+
+kebabian_seas_region = {
+	areas = {
+		#inside_kebabian_sea_area
+		kebabian_islands_sea_area
+		norderlands_sea_area
+		kebabian_far_north_seas_area
+		shetland_sea_area
+		west_kebabian_seas_area
+		glyuksburg_sea_area
+		fanteris_sea_area
+	}
+}
+
+eastern_seas_region = {
+	areas = {
+		kornisonaks_sea_area
+		shararam_coast_area
+		winterian_coast_area
+	}
+}
+
+southern_latvia_coast_region = {
+	areas = {
+		ukrian_coast_area
+		bandera_sea_area
+		latvian_bays_1_area
+	}
+}
+
+northern_latvia_coast_region = {
+	areas = {
+		anarendilian_sea_area
+		northeast_latvian_coast_area
+	}
+}
+
+south_sredizemie_region = {
+	areas = {
+		malishian_v_area
+		west_kronossian_coast_area
+		neizv_v_area
+	}
+}
+
+north_sredizemie_region = {
+	areas = {
+		altras_seas_area
+		east_kosoy_coast_area
+		seas_of_hidden_islands_area
+	}
+}
+
+far_south_seas_region = {
+	areas = {
+		malishian_island_coast_area
+		dalneyuzhnoe_more_area
+		waflam_sea_area
+		more_izgnannikov_area
+	}
+}
+
+bakenrou_seas_region = {
+	areas = {
+		west_kosoy_coast_area
+		#bakenrou_seas_area
+		east_bakenrou_coast_area
+	}
+}
+
+hortmers_seas_region = {
+	areas = {
+		west_bakenrou_coast_area
+		tropa_sea_area
+		prostomore_area
+		tropican_seas_area
+	}
+}
+
+utenian_seas_region = {
+	areas = {
+		north_utenian_seas_area
+		middle_utenian_sea_area
+		south_utenia_sea_area
+		west_utenian_seas_area
+		east_utenian_sea_area
+	}
+}
+
+near_east_seas_region = {
+	areas = {
+		bear_island_coast_area
+		stability_sea_area
+	}
+}
+
+great_eastern_seas_region = {
+	areas = {
+		arkandra_area
+		west_zvezdniy_coast_area
+		sea_of_hope_area
+	}
+}
+
+star_seas_region = {
+	areas = {
+		igorian_seas_area
+		calibordalian_seas_area
+		rimelikel_seas_area
+		rolikist_sea_area
+		new_star_sea_area
+		north_zvezdniy_coast_area
+	}
+}
+
+rinchails_seas_region = {
+	areas = {
+		rinchails_sea_area
+		green_sea_area
+		volkodav_coast_area
+		narz_sea_area
+	}
+}
+
+atland_seas_region = {
+	areas = {
+		andvar_straits_area
+		north_atlands_area
+		vasilevsovi_morya_area
+		krinolv_sea_area
+		ausger_west_islands_seas_south_area # ?
+	}
+}
+
+temnovodie_region = {
+	areas = {
+		krichka_sea_area
+		arobdian_sea_area
+		bonorfert_sea_area
+		east_zvezdniy_coast_area
+		temnovodie_general_area
+		more_porokov_area
+		smradnoe_more_area
+		west_coast_of_kongorlotez_area
+		west_posoh_sea_area
+		vibensifa_sea_area
+		bertond_seas_area
+		east_kebabian_seas_area
+		kartumeri_sea_area
+		unsirs_sea_area
+		svinoe_more_area
+	}
+}
+
+bandit_seas_region = {
+	areas = {
+		hrvtske_vodi_area
+		repa_sea_area
+		bezimyannie_morya_area
+		orhoels_sea_area
+		arulavah_sea_area
+		antsar_sea_area
+		evola_sea_area
+		east_posoh_sea_area
+	}
+}
+
+karngart_region = {
+	areas = {
+		komlokal_area
+		south_west_lem_coast_area
+		silkertmer_area
+	}
+}
+
+lem_western_seas_region = {
+	areas = {
+		yellow_sea_area
+		kevenarikan_sea_area
+		west_coast_of_rannudia_area
+		sofist_sea_area
+	}
+}
+
+pensfens_region = {
+	areas = {
+		pensfens_sea_area
+		south_kongorlotez_coast_area
+		kongorlotez_bays_area
+	}
+}
+
+mezhduzemie_region = {
+	areas = {
+		dorkmont_area
+		turmor_area
+		arenkoy_sea_area
+		nimanessa_sea_area
+		morya_solidarnosti_area
+	}
+}
+
+neder_ocean_region = {
+	areas = {
+		rebels_sea_area
+		pristavka_sea_area
+		south_atlands_area
+		arftalo_sea_area
+		patens_sea_area
+		nostalgia_sea_area
+	}
+}
+
+zermelet_seas_region = {
+	areas = {
+		north_lem_coast_area
+		rannudian_sea_area
+		worimeltika_sea_area
+	}
+}
+
+far_north_seas_region = {
+	areas = {
+		new_tabeslar_sea_area
+		tionark_area
+		central_polar_area
+		north_taife_sea_area
+		terendian_sea_area
+		rubezhnoe_more_area
+	}
+}
