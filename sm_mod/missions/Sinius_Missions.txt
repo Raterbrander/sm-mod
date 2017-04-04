@@ -1,0 +1,762 @@
+conquer_lemorians = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = LMR
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = SIN
+			tag = KRN
+		}
+		is_subject = no
+		NOT = { has_country_flag = lemorian_mission_finished }
+		NOT = { has_country_modifier = military_victory }
+		LMR = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = conquer_lemorians }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			LMR = {
+				is_subject = yes
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = LMR }
+		all_target_province = {
+			OR = {
+				owned_by = ROOT
+				owner = {
+					alliance_with = ROOT
+				}
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = LMR value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = LMR value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = LMR
+		}
+		modifier = {
+			factor = 10
+			war_with = LMR
+		}
+		modifier = {
+			factor = 0
+			tag = KRN
+			NOT = { has_country_flag = ottomans_defeated }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = lemorian_mission_finished
+		add_prestige = 5
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+finish_bolkarania = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = BOL
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SIN
+		is_subject = no
+		has_country_flag = lemorian_mission_finished
+		NOT = { has_country_flag = bolkarania_conqured }
+		OR = {
+			NOT = { has_country_modifier = military_victory }
+			NOT = { has_country_modifier = SIN_smfngs_ambitions }
+		}
+		BOL = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = finish_bolkarania }
+	}
+	abort = {
+		
+		OR = {
+			is_subject = yes
+			AND = {
+				NOT = { exists = BOL }
+				NOT = {
+					all_target_province = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	success = {
+		NOT = { exists = BOL }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = BOL value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = BOL value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = BOL
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = bolkarania_conqured
+		add_prestige = 5
+		random_target_province = {
+			change_culture = sinius
+			change_religion = ROOT
+			add_core = SIN
+			random_list = {
+				35 = { }
+				45 = { add_base_manpower = 1 }
+				15 = {
+					add_base_tax = 1
+					add_base_manpower = 1
+				}
+				5 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = military_victory }
+					}
+					add_country_modifier = {
+						name = "military_victory"
+						duration = 3650
+					}
+				}
+			}
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = SIN_smfngs_ambitions }
+					}
+					add_country_modifier = {
+						name = SIN_smfngs_ambitions
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+}
+
+conquer_karnilia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = KAL
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SIN
+		is_subject = no
+		NOT = { has_country_flag = karnilia_conqured }
+		has_country_flag = lemorian_mission_finished
+		OR = {
+			NOT = { has_country_modifier = military_victory }
+			NOT = { has_country_modifier = SIN_smfngs_ambitions }
+		}
+		KAL = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = conquer_karnilia }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				NOT = { exists = KAL }
+				NOT = {
+					all_target_province = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	success = {
+		NOT = { exists = KAL }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = KAL value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = KAL value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = KAL
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = karnilia_conqured
+		add_prestige = 10
+		random_target_province = {
+			change_culture = sinius
+			change_religion = ROOT
+			random_list = {
+				35 = { }
+				45 = { add_base_manpower = 1 }
+				15 = {
+					add_base_tax = 1
+					add_base_manpower = 1
+				}
+				5 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = military_victory }
+					}
+					add_country_modifier = {
+						name = "military_victory"
+						duration = 3650
+					}
+				}
+			}
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = SIN_smfngs_ambitions }
+					}
+					add_country_modifier = {
+						name = SIN_smfngs_ambitions
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+}
+
+establish_footholding_in_western_miscilia = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = MSC
+		OR = {
+			province_id = 875
+			province_id = 330
+			province_id = 38
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SIN
+		is_subject = no
+		NOT = { has_country_flag = SIN_in_western_miscilia }
+		has_country_flag = lemorian_mission_finished
+		MSC = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = {
+			OR = {
+				owns = 875
+				owns = 330
+				owns = 38
+			}
+		}
+		NOT = { has_country_modifier = SIN_bezantoks_ambitions }
+		NOT = { last_mission = establish_footholding_in_western_miscilia }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		any_target_province = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = MSC value = 0 } }
+		}
+		
+		modifier = {
+			factor = 2
+			is_rival = MSC
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_country_modifier = {
+			name = "SIN_bezantoks_ambitions"
+			duration = 3650
+		}
+		set_country_flag = SIN_in_western_miscilia
+	}
+}
+
+conquer_okian_coast = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SIN
+		is_subject = no
+		NOT = { has_country_flag = SIN_okian_coast }
+		OR = {
+			NOT = { has_country_modifier = military_victory }
+			NOT = { has_country_modifier = SIN_smfngs_ambitions }
+		}
+		NOT = { last_mission = conquer_okian_coast }
+		any_neighbor_country = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = {
+				OR = {
+					area = lemoria_area
+					area = resorda_area
+				}
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		num_of_owned_provinces_with = {
+			OR = {
+				area = lemoria_area
+				area = resorda_area
+			}
+			has_port = yes
+			value = 2
+		}
+	}
+	chance = {
+		factor = 5000
+		
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				NOT = { reverse_has_opinion = { who = THIS value = 0 } }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				reverse_has_opinion = { who = THIS value = 25 }
+			}
+		}
+		modifier = {
+			factor = 3
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				is_rival = SIN
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				war_with = SIN
+			}
+		}
+	}
+	immediate = {
+		lemoria_area = {
+			add_claim = ROOT
+		}
+		resorda_area = {
+			limit = {
+				has_port = yes
+			}
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		lemoria_area = {
+			remove_claim = ROOT
+		}
+		resorda_area = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = SIN_okian_coast
+		add_prestige = 10
+		random_owned_province = {
+			limit = {
+				OR = {
+					area = lemoria_area
+					area = resorda_area
+				}
+			}
+			random_list = {
+				35 = { }
+				45 = { add_base_manpower = 1 }
+				15 = {
+					add_base_tax = 1
+					add_base_manpower = 1
+				}
+				5 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = military_victory }
+					}
+					add_country_modifier = {
+						name = "military_victory"
+						duration = 3650
+					}
+				}
+			}
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = SIN_smfngs_ambitions }
+					}
+					add_country_modifier = {
+						name = SIN_smfngs_ambitions
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+}
+
+conquer_irilin = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = IRL
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SIN
+		is_subject = no
+		NOT = { has_country_flag = irilin_conqured }
+		OR = {
+			NOT = { has_country_modifier = military_victory }
+			NOT = { has_country_modifier = SIN_smfngs_ambitions }
+		}
+		IRL = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = conquer_irilin }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				NOT = { exists = IRL }
+				NOT = {
+					all_target_province = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	success = {
+		NOT = { exists = IRL }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = IRL value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = IRL value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = IRL
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = irilin_conqured
+		add_prestige = 10
+		random_target_province = {
+			change_culture = sinius
+			change_religion = ROOT
+			random_list = {
+				35 = { }
+				45 = { add_base_manpower = 1 }
+				15 = {
+					add_base_tax = 1
+					add_base_manpower = 1
+				}
+				5 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = military_victory }
+					}
+					add_country_modifier = {
+						name = "military_victory"
+						duration = 3650
+					}
+				}
+			}
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = SIN_smfngs_ambitions }
+					}
+					add_country_modifier = {
+						name = SIN_smfngs_ambitions
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+}
+
+vassalize_itlania = {
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SIN
+		is_subject = no
+		NOT = { has_country_modifier = military_vassalization }
+		ITL = {
+			is_subject = no
+			is_neighbor_of = ROOT
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = ITL }
+			ITL = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = ITL
+				}
+			}
+		}
+	}
+	success = {
+		ITL = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 5000
+		
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = ITL value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = ITL
+		}
+		set_country_flag = SIN_itlanian_mission
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ITL
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = ITL
+			}
+		}
+	}
+}

@@ -1,0 +1,344 @@
+conquer_central_zmooromfland = {
+   
+    type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		region = kornisonaks_region
+		owned_by = YAL
+	}
+    allow = {
+		normal_or_historical_nations = yes
+        tag = ZMR
+        is_subject = no
+		NOT = { has_country_flag = central_zmooromfland_mission }
+		YAL = {
+			exists = yes
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
+    }
+    abort = {
+        is_subject = yes
+    }
+    success = {
+		NOT = { exists = YAL }
+		all_target_province = {
+			owned_by = ROOT
+		}
+    }
+    chance = {
+        factor = 5000
+        modifier = {
+           factor = 10
+           war_with = YAL
+        }
+    }
+    immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+    }
+    abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+    }
+    effect = {
+		set_country_flag = central_zmooromfland_mission
+		add_prestige = 20
+		every_target_province = {
+			limit = {
+				culture = zmooromfian
+			}
+			add_core = ZMR
+		}
+		random_target_province = {
+			limit = {
+				culture = zmooromfian
+			}
+			add_base_tax = 1
+			add_base_manpower = 1
+		}
+		hidden_effect = {
+			every_province = {
+				limit = { is_core = YAL }
+				remove_core = YAL
+			}
+		}
+    }
+}
+
+defeat_alivarjaks = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = ALI
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ZMR
+		is_subject = no
+		NOT = { has_country_flag = defeated_ALI }
+		ALI = {
+			exists = yes
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { exists = ALI }
+		all_target_province = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 10
+			is_year = 460
+		}
+		modifier = {	
+			factor = 0.5
+			war_with = YAL
+			NOT = { has_country_flag = central_zmooromfland_mission }
+		}
+	}
+	immediate = {
+		every_target_province = { add_claim = ROOT }
+	}
+	abort_effect = {
+		every_target_province = { remove_claim = ROOT }
+	}
+	effect = {
+		set_country_flag = defeated_ALI
+		add_prestige = 10
+		add_country_modifier = {
+			name = "alivarjak_mission"
+			duration = 3650
+		}
+		hidden_effect = {
+			every_province = {
+				limit = { is_core = ALI }
+				remove_core = ALI
+			}
+		}
+	}
+}
+
+take_alobon = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ZMR
+		575 = {
+			NOT = { owned_by = ROOT }
+			owner = {
+				is_neighbor_of = ROOT
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+		NOT = { has_country_modifier = gerveiner_ambition }
+		NOT = { has_country_flag = alobon_mission }
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 575
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			NOT = {
+				575 = {
+					owner = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 575
+	}
+	abort_effect = {
+		remove_claim = 575
+	}
+	effect = {
+		set_country_flag = alobon_mission
+		add_country_modifier = {
+			name = "gerveiner_ambition"
+			duration = 3650
+		}
+	}
+}
+
+defeat_gervein = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			region = kornisonaks_region
+			area = venderd_area
+		}
+		owner = {
+			OR = {
+				tag = GRV
+				has_country_modifier = gervein_union_leader
+				has_country_modifier = gervein_union_member
+			}
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ZMR
+		kornisonaks_region = {
+			owner = {
+				is_neighbor_of = ROOT
+				NOT = { is_subject_of = ROOT }
+				OR = {
+					has_country_modifier = gervein_union_member
+					has_country_modifier = gervein_union_leader
+				}
+			}
+		}
+		NOT = { has_country_modifier = gerveiner_ambition }
+		NOT = { has_country_flag = zmr_gervein_mission }
+		has_country_flag = alobon_mission
+		has_country_flag = zmr_arvabian_mission
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	immediate = {
+		every_target_province = {
+			limit = {
+				NOT = { region = kornisonaks_region }
+			}
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			limit = {
+				NOT = { region = kornisonaks_region }
+			}
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = zmr_gervein_mission
+		add_country_modifier = {
+			name = "gerveiner_ambition"
+			duration = 3650
+		}
+		add_years_of_income = 1.5
+		add_prestige = 25
+		add_stability = 1
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				has_owner_culture = yes
+			}
+			add_base_tax = 2
+			add_base_production = 1
+		}
+	}
+}
+
+conquer_arvabia = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			area = south_arvabia_area
+			area = north_arvabia_area
+		}
+		NOT = { owned_by = ROOT }
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ZMR
+		any_target_province = {
+			owner = {
+				is_neighbor_of = ROOT
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+		NOT = { has_country_modifier = military_victory }
+		NOT = { has_country_flag = zmr_arvabian_mission }
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	immediate = {
+		every_target_province = {
+			limit = {
+				NOT = { is_claim = ROOT }
+			}
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = zmr_arvabian_mission
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+		add_prestige = 10
+	}
+}

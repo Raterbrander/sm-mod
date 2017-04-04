@@ -1,0 +1,83 @@
+industrialisation_mission_1 = {
+
+	type = country
+
+	category = ADM
+	ai_mission = yes
+	
+	allow = {
+		NOT = { has_country_flag = sm_industrial_mission }
+		#NOT = { has_country_modifier = sm_production_growing }
+		NOT = { has_country_modifier = improved_industrialization }
+		NOT = { has_country_modifier = sm_uncivilized_nation }
+		#num_of_cities = 3
+		OR = {
+			AND = {
+				NOT = { num_of_cities = 2 }
+				NOT = { traditional_factories = 1 }
+			}
+			AND = {
+				num_of_cities = 2
+				NOT = { num_of_cities = 5 }
+				NOT = { traditional_factories = 2 }
+			}
+			AND = {
+				num_of_cities = 5
+				NOT = { traditional_factories = 3 }
+			}
+		}
+	}
+	abort = {
+	}
+	success = {
+		OR = {
+			AND = {
+				NOT = { num_of_cities = 2 }
+				traditional_factories = 1
+			}
+			AND = {
+				num_of_cities = 2
+				NOT = { num_of_cities = 5 }
+				traditional_factories = 2
+			}
+			AND = {
+				num_of_cities = 5
+				traditional_factories = 3
+			}
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.25
+			num_of_cities = 3
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				technology_group = old_altras_tech
+				technology_group = old_zmooromfian
+			}
+			NOT = { adm_tech = 13 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { technology_group = continental }
+			NOT = { adm_tech = 9 }
+		}
+		modifier = {
+			factor = 0
+			ai = yes
+			tag = SIN
+			NOT = { has_country_flag = bolkarania_conqured }
+			NOT = { has_country_flag = karnilia_conqured }
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "improved_industrialization"
+			duration = 3650
+		}
+		set_country_flag = sm_industrial_mission
+	}
+}

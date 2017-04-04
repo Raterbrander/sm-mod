@@ -1,0 +1,220 @@
+###########################################################
+# Княжества Жёлтых
+###########################################################
+# Gervein
+VNR_expansion_on_continent = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		tag = VNR
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = tenelburg_conquered }
+		TNL = {
+			exists = yes
+			owns = 375
+		}
+		NOT = { last_mission = VNR_expansion_on_continent }
+	}
+	abort = {
+		375 = {
+			NOT = {
+				OR = {
+					owned_by = TNL
+					owned_by = VNR
+				}
+			}
+		}
+	}
+	success = {
+		owns = 375
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = {
+		set_country_flag = tenelburg_conquered
+		add_prestige = 5
+		change_variable = {
+			which = gervein_authority
+			value = 5
+		}
+	}
+}
+
+become_gervein_leader = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		has_country_modifier = gervein_union_member
+		NOT = { has_country_modifier = gervein_union_leader }
+		check_variable = {
+			which = gervein_authority
+			value = 5
+		}
+		OR = {
+			NOT = { has_country_flag = gervein_leader_mission }
+			had_country_flag = { flag = gervein_leader_mission days = 7300 }
+		}
+		NOT = { last_mission = become_gervein_leader }
+	}
+	abort = {
+		NOT = { has_country_modifier = gervein_union_member }
+	}
+	success = {
+		has_country_modifier = gervein_union_leader
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 1.25
+			num_of_cities = 2
+		}
+		modifier = {
+			factor = 1.50
+			check_variable = {
+				which = gervein_authority
+				value = 10
+			}
+		}		
+		modifier = {
+			factor = 1.50
+			check_variable = {
+				which = gervein_authority
+				value = 20
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			which = gervein_authority
+			value = 5
+		}
+		change_variable = {
+			which = gervein_leader_authority
+			value = 5
+		}
+		add_prestige = 5
+	}
+}
+
+###########################################################
+# Единая ИЖ
+###########################################################
+
+defeat_ermer_government = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		tag = EOY
+		normal_or_historical_nations = yes
+		start_date = 2013.6.26
+		num_of_rebel_controlled_provinces = 1
+		NOT = {
+			372 = { controlled_by = ROOT }
+			377 = { controlled_by = ROOT }
+		}
+		is_at_war = no
+		NOT = { has_country_flag = ermer_government_defeated }
+	}
+	abort = {
+		is_at_war = yes
+	}
+	success = {
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		372 = { controlled_by = ROOT }
+		377 = { controlled_by = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 1.1
+			revolt_percentage = 0.25
+		}
+		modifier = {
+			factor = 1.2
+			revolt_percentage = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			revolt_percentage = 0.75
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_stability = 1
+		add_legitimacy = 5
+	}
+}
+
+defeat_zmooromf_rebellion = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		tag = EOY
+		normal_or_historical_nations = yes
+		start_date = 2013.6.26
+		num_of_rebel_controlled_provinces = 1
+		any_owned_province = {
+			culture = zmooromfian
+			controlled_by = REB
+		}
+		is_at_war = no
+		NOT = { has_country_flag = zmooromfian_revolt_defeated }
+	}
+	abort = {
+		OR = {
+			is_at_war = yes
+			exists = ZMR
+		}
+	}
+	success = {
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		all_owned_province = {
+			culture = zmooromfian
+			controlled_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 1.1
+			revolt_percentage = 0.25
+		}
+		modifier = {
+			factor = 1.2
+			revolt_percentage = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			revolt_percentage = 0.75
+		}
+	}
+	effect = {
+		add_prestige = 5
+		every_owned_province = {
+			limit = { culture = zmooromfian }
+			add_province_modifier = {
+				name = prov_zmooromfians_defeated
+				duration = 9125
+			}
+		}
+		set_country_flag = zmooromfian_revolt_defeated
+	}
+}

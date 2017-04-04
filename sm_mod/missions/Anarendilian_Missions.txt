@@ -1,0 +1,241 @@
+subjugate_iringor = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = IRI
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ASR
+			tag = UKI
+			tag = AFE
+		}
+		is_subject = no
+		NOT = { has_country_flag = iringor_subjugated }
+		NOT = { has_country_modifier = military_victory }
+		IRI = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = subjugate_iringor }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		OR = {
+			AND = {
+				NOT = { exists = IRI }
+				all_target_province = {
+					owned_by = ROOT
+				}
+			}
+			AND = {
+				exists = IRI
+				IRI = { vassal_of = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = IRI value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = IRI value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = IRI
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = iringor_subjugated
+		add_prestige = 25
+		add_legitimacy = 10
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+conquer_hvalkngir = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = HVL
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ASR
+			tag = UKI
+			tag = AFE
+		}
+		is_subject = no
+		NOT = { has_country_flag = hvalkngir_conqured }
+		NOT = { has_country_modifier = military_victory }
+		HVL = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = conquer_hvalkngir }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { exists = HVL }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = HVL value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = HVL value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = HVL
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = hvalkngir_conqured
+		add_prestige = 10
+		random_owned_province = {
+			limit = {
+				is_core = HVL
+				culture = anarendilian
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+subjugate_polovichi = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = PLV
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ASR
+			tag = UKI
+			tag = AFE
+		}
+		is_subject = no
+		NOT = { has_country_flag = PLV_subjugated }
+		NOT = { has_country_modifier = military_victory }
+		PLV = {
+			is_neighbor_of = ROOT
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+		NOT = { last_mission = subjugate_polovichi }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		OR = {
+			AND = {
+				NOT = { exists = PLV }
+				all_target_province = {
+					owned_by = ROOT
+				}
+			}
+			AND = {
+				exists = PLV
+				PLV = { vassal_of = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PLV value = 0 } }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = PLV value = 25 }
+		}
+		modifier = {
+			factor = 3
+			is_rival = PLV
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = PLV_subjugated
+		add_prestige = 15
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}

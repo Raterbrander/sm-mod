@@ -1,0 +1,517 @@
+integrate_dmsfr = {
+	
+	type = country
+
+	category = DIP
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = DMF
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DRA
+		is_subject = no
+		exists = DMF
+		DMF = {
+			is_subject_of = DRA
+		}
+		NOT = { has_country_flag = dmf_integrated_mission }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			DMF = {
+				is_subject = yes
+				NOT = { is_subject_of = DRA }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = DMF }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 150
+		set_country_flag = dmf_integrated_mission
+	}
+}
+
+occupy_pobedograd = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DRA
+		exists = USS
+		war_with = USS
+		USS = {
+			any_owned_province = { controlled_by = DRA }
+		}
+		USS = { controls = 74 }
+		#74 = { is_capital = yes }
+		NOT = { has_country_flag = has_occupied_pobedograd }
+		NOT = { has_global_flag = pgw_ended }
+	}
+	abort = {
+		NOT = { war_with = USS }
+	}
+	success = {
+		controls = 74
+	}
+	chance = {
+		factor = 6000
+	}
+	effect = {
+		74 = { add_claim = ROOT }
+		add_prestige = 10
+		set_country_flag = has_occupied_pobedograd
+	}
+}
+
+conquer_nagora = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			owned_by = NGO
+			owned_by = NG2
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DRA
+		is_subject = no
+		OR = {
+			NGO = {
+				is_neighbor_of = ROOT
+				NOT = { num_of_cities = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
+			NG2 = {
+				is_neighbor_of = ROOT
+				NOT = { num_of_cities = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+		NOT = { has_country_flag = nagora_conquered }
+		NOT = { last_mission = conquer_nagora }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		#NOT = { exists = NGO }
+		#NOT = { exists = NG2 }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 5
+			has_global_flag = pgw_ended
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		every_target_province = {
+			limit = {
+				is_claim = ROOT
+			}
+			add_core = ROOT
+		}
+		set_country_flag = nagora_conquered
+	}
+}
+
+conquer_volkodav = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			owned_by = NFE
+			owned_by = NRZ
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DRA
+		is_subject = no
+		star_island_superregion = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		#has_global_flag = pgw_ended
+		OR = {
+			exists = NFE
+			exists = NRZ
+		}
+		NOT = { has_country_flag = volkodav_conquered }
+		NOT = { last_mission = conquer_volkodav }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 5
+			OR = {
+				is_rival = NFE
+				is_rival = NRZ
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				NOT = { has_opinion = { who = NFE value = 0 } }
+				NOT = { has_opinion = { who = NRZ value = 0 } }
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				NOT = { has_opinion = { who = NFE value = -100 } }
+				NOT = { has_opinion = { who = NRZ value = -100 } }
+			}
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+		#every_target_province = {
+		#	add_core = ROOT
+		#}
+		random_target_province = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1				
+		}
+		set_country_flag = volkodav_conquered
+	}
+}
+
+conquer_belius = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DRA
+		exists = GRU
+		war_with = GRU
+		GRU = {
+			any_owned_province = { controlled_by = DRA }
+		}
+		GRU = { controls = 238 }
+		NOT = { has_country_flag = has_occupied_belius }
+		NOT = { last_mission = conquer_belius }
+	}
+	abort = {
+		NOT = { war_with = GRU }
+	}
+	success = {
+		controls = 238
+	}
+	chance = {
+		factor = 4000
+	}
+	effect = {
+		add_prestige = 5
+		set_country_flag = has_occupied_belius
+	}
+}
+
+
+finish_malishian_island_colonisation = {
+	
+	type = country
+	
+	category = ADM
+	ai_mission = yes
+	
+	target_provinces = {
+		region = malishian_island_region
+		is_empty = yes
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = SUM
+			tag = DMF
+		}
+		any_province = {
+			region = malishian_island_region
+			is_empty = yes
+		}
+		NOT = { has_country_flag = malishian_island_fully_colonised }
+		NOT = { last_mission = finish_malishian_island_colonisation }
+	}
+	abort = {
+		any_target_province = {
+			NOT = { owned_by = SUM }
+			NOT = { owned_by = DMF }
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	effect = {
+		add_prestige = 5
+		random_target_province = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1	
+		}
+		set_country_flag = malishian_island_fully_colonised
+	}
+}
+
+get_barakoa = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SUM
+		NOT = { owns = 137 }
+		NOT = { has_country_flag = barakoa_mission }
+		NOT = { last_mission = get_barakoa }
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		137 = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	effect = {
+		add_prestige = 5
+		137 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			if = {
+				limit = {
+					NOT = { culture = malishian }
+				}
+				change_culture = malishian
+			}
+		}
+		set_country_flag = barakoa_mission
+	}
+}
+
+SUM_establish_footholding_on_continent = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		capital_scope = { continent = malishian_island }
+		is_subject = no
+		NOT = { has_country_flag = SUM_footholding_on_continent }
+		NOT = { has_country_modifier = military_victory }
+		NOT = { last_mission = SUM_establish_footholding_on_continent }
+		any_neighbor_country = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = {
+				OR = {
+					area = lemoria_area
+					area = resorda_area
+				}
+			}
+		}
+		num_of_cities = 8
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		num_of_owned_provinces_with = {
+			OR = {
+				area = lemoria_area
+				area = resorda_area
+			}
+			has_port = yes
+			value = 4
+		}
+	}
+	chance = {
+		factor = 5000
+		
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				NOT = { reverse_has_opinion = { who = THIS value = 0 } }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				reverse_has_opinion = { who = THIS value = 25 }
+			}
+		}
+		modifier = {
+			factor = 3
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				any_owned_province = {
+					OR = {
+						area = lemoria_area
+						area = resorda_area
+					}
+				}
+				war_with = ROOT
+			}
+		}
+		
+		modifier = {
+			factor = 0.01
+			NOT = { faction_in_power = mal_totalitarian_faction }
+		}
+	}
+	immediate = {
+		lemoria_area = {
+			add_claim = ROOT
+		}
+		resorda_area = {
+			limit = {
+				has_port = yes
+			}
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		lemoria_area = {
+			remove_claim = ROOT
+		}
+		resorda_area = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = SUM_footholding_on_continent
+		add_prestige = 10
+		random_owned_province = {
+			limit = {
+				OR = {
+					area = lemoria_area
+					area = resorda_area
+				}
+			}
+			random_list = {
+				35 = { }
+				45 = { add_base_manpower = 1 }
+				15 = {
+					add_base_tax = 1
+					add_base_manpower = 1
+				}
+				5 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}

@@ -1,0 +1,121 @@
+expansion_in_blueland = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		is_subject = no
+		OR = {
+			tag = KRO
+			tag = ASM
+		}
+		28 = {
+			owner = {
+				NOT = {
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		NOT = { has_country_flag = expansion_in_blueland_1_flag }
+		NOT = { last_mission = expansion_in_blueland }
+	}	
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		28 = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		
+		modifier = {
+			factor = 1.5
+			28 = {
+				owner = { is_rival = ROOT }
+			}
+		}
+	}
+	effect = {
+		set_country_flag = expansion_in_blueland_1_flag
+		add_country_modifier = {
+			name = blueland_ambitions
+			duration = 3650
+		}
+		add_prestige = 5 # 10
+		#add_mil_power = 50
+	}
+}
+
+conquer_blueland = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 27
+			province_id = 30
+		}
+		NOT = { owned_by = ROOT }
+		owner = {
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		is_subject = no
+		OR = {
+			tag = KRO
+			tag = ASM
+		}
+		owns = 28
+		owns = 24
+		NOT = { has_country_flag = expansion_in_blueland_2_flag }
+		NOT = { last_mission = conquer_blueland }
+	}	
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		
+		modifier = {
+			factor = 2
+			has_country_flag = expansion_in_blueland_1_flag
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				27 = {
+					owner = { alliance_with = ROOT }
+				}
+				30 = {
+					owner = { alliance_with = ROOT }
+				}
+			}
+		}
+	}
+	effect = {
+		set_country_flag = expansion_in_blueland_2_flag
+		add_country_modifier = {
+			name = blueland_ambitions
+			duration = 3650
+		}
+		add_prestige = 10
+		add_mil_power = 50
+	}
+}

@@ -1,0 +1,130 @@
+reconquer_belius = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GRU
+		exists = DRA
+		war_with = DRA
+		238 = { controlled_by = DRA }
+		NOT = { has_country_flag = belius_is_return }
+		NOT = { has_global_flag = pgw_ended }
+	}
+	immediate = {
+		228 = {
+			infantry = GRU
+			infantry = GRU
+			infantry = GRU
+			infantry = GRU
+			infantry = GRU
+			infantry = GRU
+			cavalry = GRU
+			cavalry = GRU
+			cavalry = GRU
+			cavalry = GRU
+		}
+	}
+	abort = {
+		OR = {
+			AND = {
+				NOT = { war_with = DRA }
+				NOT = { controls = 238 }
+			}
+			is_subject = yes
+			#NOT = {	is_neighbor_of = DRA }
+		}
+	}
+	success = {
+		stability = 0
+		controls = 238
+	}
+	chance = {
+		factor = 6000
+	}
+	effect = {
+		DRA = {
+			238 = {
+				infantry = GRU
+				infantry = GRU
+				infantry = GRU
+				infantry = GRU
+				infantry = GRU
+				infantry = GRU
+				cavalry = GRU
+				cavalry = GRU
+				cavalry = GRU
+				cavalry = GRU
+			}
+		}
+		add_prestige = 5
+		set_country_flag = belius_is_return
+	}
+}
+
+reconquer_west_latvia = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			owned_by = DRA
+			controlled_by = DRA
+		}
+		is_core = GRU
+		OR = {
+			region = western_latvia_region
+			region = levonia_region
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		is_subject = no
+		tag = GRU
+		war_with = DRA
+		any_core_province = {
+			owned_by = DRA
+			controlled_by = DRA
+		}
+		NOT = { has_country_flag = western_latvia_reconquered }
+		has_country_flag = belius_is_return
+		NOT = { last_mission = reconquer_west_latvia }
+	}	
+	abort = {
+		OR = {
+			NOT = { war_with = DRA }
+			is_subject = yes
+			#NOT = { is_neighbor_of = DRA }
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+	}
+	effect = {
+		every_target_province = {
+			limit = {
+				culture = smesh_russian
+			}
+			add_province_modifier = {
+				name = GRU_triumph_prov
+				duration = 3650
+			}
+		}
+		set_country_flag = western_latvia_reconquered
+		add_country_modifier = {
+			name = GRU_triumph
+			duration = 3650
+		}
+	}
+}

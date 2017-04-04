@@ -1,0 +1,86 @@
+migrate_to_alveria = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		has_discovered = 350
+		tag = AVE
+		is_subject = no
+		is_tribal = yes
+		NOT = { num_of_cities = 2 }
+		NOT = { num_of_colonies = 1 }
+	}
+	abort = {
+		350 = { is_empty = no }
+		is_tribal = no
+		num_of_cities = 2
+		num_of_colonies = 1
+	}
+	success = {
+		owns_core_province = 350
+		350 = { is_capital = yes }
+	}
+	chance = {
+		factor = 5000
+	}
+	effect = {
+		add_prestige = 5
+		#set_country_flag = AVE_in_Alveria
+	}
+}
+
+partitions_of_ramzahia = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owner = {
+			primary_culture = ramzahian
+		}
+	}
+	
+	allow = {
+		NOT = { tag = RZH }
+		NOT = { primary_culture = ramzahian }
+		is_subject = no
+		any_neighbor_country = {
+			is_subject = no
+			primary_culture = ramzahian
+			NOT = { alliance_with = ROOT }
+			#num_of_cities = 1
+		}
+		NOT = { has_country_flag = partitions_of_ramzahia_flag }
+		NOT = { last_mission = partitions_of_ramzahia }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = partitions_of_ramzahia_flag
+		add_prestige = 5
+	}
+}
