@@ -1,0 +1,301 @@
+# For specific combinations of culture, religion and other such triggers
+# Will pick the first valid one it finds in list
+
+march_christian_monarchy = {
+	rank = {
+		1 = MARCH
+		2 = VICEROYALTY
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = MARGRAVE
+		2 = VICEROY
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = MARGRAVINE
+		2 = VICEREINE	
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		is_march = yes
+	}
+}
+
+#march_eastern_christian_monarchy = {
+#	rank = {
+#		1 = PRINCIPALITY
+#	}
+#	
+#	ruler_male = {
+#		1 = PRINCE
+#	}
+#
+#	ruler_female = {
+#		1 = PRINCESS
+#	}
+#
+#	trigger = {
+#		government = monarchy
+#		is_march = yes
+#	}
+#}
+
+muslim_tribal = {
+	rank = {
+		1 = MALIKATE
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = MALIK
+		2 = SULTAN
+		3 = GREAT_SULTAN
+	}
+
+	ruler_female = {
+		1 = MALIKAH
+		2 = SULTANA
+		3 = GREAT_SULTANA
+	}
+
+	trigger = {
+		religion_group = muslim
+		is_tribal = yes
+	}
+}
+
+serbian_feudal_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = DESPOTATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINC
+		2 = DESPOT
+		3 = CAR
+	}
+
+	ruler_female = {
+		1 = PRINCEZA
+		2 = DESPOTISSA
+		3 = CARICA
+	}
+
+	trigger = {
+		OR = {
+			government = feudal_monarchy
+			government = despotic_monarchy
+		}
+		primary_culture = serbian
+		religion = orthodox
+	}
+}
+
+serbian_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = VOJVODA
+		2 = KRALJ
+		3 = CAR
+	}
+
+	ruler_female = {
+		1 = VOJVODKINJA
+		2 = KRALJICA
+		3 = CARICA
+	}
+
+	trigger = {
+		government = monarchy #All later monarchies
+		primary_culture = serbian
+	}
+}
+
+albanian_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = MBRET
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		tag = ALB
+	}
+}
+
+muslim_monarchy = {
+	rank = {
+		1 = EMIRATE
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = EMIR
+		2 = SULTAN
+		3 = GREAT_SULTAN
+	}
+
+	ruler_female = {
+		1 = EMIR
+		2 = SULTANA
+		3 = GREAT_SULTANA
+	}
+
+	trigger = {
+		government = monarchy
+		is_nomad = no
+		religion_group = muslim
+	}
+}
+
+gov_free_city = {
+	rank = {
+		1 = FREE_CITY
+	}
+
+	ruler_male = {
+		1 = MAYOR
+	}
+
+	ruler_female = {
+		1 = MAYORESS
+	}
+
+	trigger = {
+		OR = {
+			government = imperial_city
+			government = free_city_base
+			government = free_city_aristocratical
+		}
+	}
+}
+
+sunni_theocracy = {
+	rank = {
+		1 = SHEIKHDOM
+		2 = IMAMATE
+		3 = HIGH_IMAMATE
+	}
+
+	ruler_male = {
+		1 = SHEIKH
+		2 = IMAM
+		3 = HIGH_IMAM
+	}
+
+	ruler_female = {
+		1 = SHEIKHA
+		2 = IMAM
+		3 = HIGH_IMAM
+	}
+
+	trigger = {
+		religion = sunni
+		government = theocracy
+	}
+}
+
+orthodox_theocracy = {
+	rank = {
+		1 = METROPOLIS
+		2 = GREAT_METROPOLIS
+		3 = PATRIARCHATE
+	}
+
+	ruler_male = {
+		1 = BISHOP
+		2 = ARCHBISHOP
+		3 = PATRIARCH
+	}
+
+	ruler_female = {
+		1 = BISHOP_fem
+		2 = ARCHBISHOP_fem
+		3 = MATRIARCH
+	}
+
+	trigger = {
+		religion = orthodox
+		government = theocracy
+	}
+}
+
+pagan_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRIEST
+		2 = HIGH_PRIEST
+		3 = PARAMOUNT_PRIEST
+	}
+
+	ruler_female = {
+		1 = PRIESTESS
+		2 = HIGH_PRIESTESS
+		3 = PARAMOUNT_PRIESTESS
+	}
+
+	trigger = {
+		religion_group = pagan
+		government = theocracy
+	}
+}
+
+classical_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = GRAND_REPUBLIC
+		3 = GREAT_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = CONSUL
+		2 = GRAND_CONSUL
+		3 = GREAT_CONSUL
+	}
+	
+	ruler_female = {
+		1 = CONSULESS
+		2 = GRAND_CONSULESS
+		3 = GREAT_CONSULESS
+	}
+	
+	trigger = {
+		OR = {
+			government = merchant_republic
+			government = administrative_republic
+			government = oligarchic_republic
+		}
+	}
+}

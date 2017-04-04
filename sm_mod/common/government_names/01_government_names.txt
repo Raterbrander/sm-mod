@@ -1,0 +1,1006 @@
+# For specific government types
+# Will pick the first valid one it finds in list
+
+gov_steppe_horde = {
+	rank = {
+		1 = HORDE
+		2 = KHANATE
+		3 = KHAGANATE
+	}
+	
+	ruler_male = {
+		1 = JINONG
+		2 = KHAN
+		3 = KHAGAN
+	}
+	
+	ruler_female = {
+		1 = JINONG
+		2 = KHATUN
+		3 = GREAT_KHATUN
+	}
+	
+	trigger = {
+		government = steppe_horde
+	}
+}
+
+gov_native_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = CHIEF
+	}
+	
+	ruler_female = {
+		1 = CHIEFTESS
+	}
+	
+	trigger = {
+		OR = {
+			government = native_council
+			government = siberian_native_council
+		}
+	}
+}
+
+gov_religious_order = {
+	rank = {
+		1 = MONASTIC_ORDER
+	}
+	
+	ruler_male = {
+		1 = GRAND_MASTER
+	}
+	
+	ruler_female = {
+		1 = GRAND_MISTRESS
+	}
+	
+	trigger = {
+		government = monastic_order_government
+	}
+}
+
+gov_colonial_government = {
+	rank = {
+		1 = COLONY
+	}
+	
+	ruler_male = {
+		1 = GOVERNOR
+	}
+	
+	ruler_female = {
+		1 = GOVERNESS
+	}
+	
+	trigger = {
+		government = colonial_government
+	}
+}
+
+noble_republic = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = GRAND_PRINCIPALITY
+		3 = GREAT_PRINCIPALITY
+	}
+	
+	ruler_male = {
+		1 = LORD
+		2 = PRINCE
+		3 = GREAT_PRINCE
+	}
+	
+	ruler_female = {
+		1 = LADY
+		2 = PRINCESS
+		3 = GREAT_PRINCESS
+	}
+	
+	trigger = {
+		government = noble_republic
+	}
+}
+
+gov_constitutional_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = CHANCELOR
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = CHANCELOR_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+	
+	trigger = {
+		government = constitutional_republic
+	}
+}
+
+gov_republican_dictatorship = {
+	rank = {
+		1 = DESPOTISM
+		2 = DICTATORSHIP
+		3 = PRESIDENTIAL_DICTATORSHIP
+	}
+	
+	ruler_male = {
+		1 = PROTECTOR
+		2 = LORD_PROTECTOR
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PROTECTOR_fem
+		2 = LADY_PROTECTOR
+		3 = PRESIDENT_fem
+	}
+	
+	trigger = {
+		government = republican_dictatorship
+	}
+}
+
+gov_bureaucratic_despotism = {
+	rank = {
+		1 = REPUBLIC
+		2 = GRAND_REPUBLIC
+		3 = GREAT_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = COUNCILOR
+		2 = GRAND_COUNCILOR
+		3 = HIGH_COUNCILOR
+	}
+	
+	ruler_female = {
+		1 = COUNCILOR_fem
+		2 = GRAND_COUNCILOR_fem
+		3 = HIGH_COUNCILOR_fem
+	}
+	
+	trigger = {
+		government = bureaucratic_despotism
+	}
+}
+
+gov_papal_government = {
+	rank = {
+		1 = PAPACY
+		2 = PAPACY
+		3 = PAPACY
+	}
+	
+	ruler_male = {
+		1 = POPE
+		2 = POPE
+		3 = POPE
+	}
+	
+	ruler_female  ={
+		1 = POPETTE
+		2 = POPETTE
+		3 = POPETTE
+	}
+	
+	trigger = {
+		government = papal_government
+	}
+}
+
+gov_tribal_kingdom = {
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male = {
+		1 = CHIEF
+		2 = KING
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = tribal_kingdom
+	}
+}
+
+gov_tribal = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male = {
+		1 = CHIEF
+		2 = HIGH_CHIEF
+		3 = PARAMOUNT_CHIEF
+	}
+	
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = HIGH_CHIEFTESS
+		3 = PARAMOUNT_CHIEFTESS
+	}
+	
+	trigger = {
+		government = tribal_despotism
+	}
+}
+
+gov_tribal_federation = {
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_LEAGUE
+		3 = TRIBAL_LEAGUE
+	}
+	
+	ruler_male = {
+		1 = CHIEF
+		2 = HIGH_CHIEF
+		3 = HIGH_CHIEF
+	}
+	
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = HIGH_CHIEFTESS
+		3 = HIGH_CHIEFTESS
+	}
+	
+	trigger = {
+		government = tribal_federation
+	}
+}
+
+gov_tribal_democracy = {
+	rank = {
+		1 = CHIEFDOM
+		2 = GRAND_CHIEFDOM
+		3 = GREAT_CHIEFDOM
+	}
+	
+	ruler_male = {
+		1 = ELDER
+		2 = HIGH_ELDER
+		3 = PARAMOUNT_ELDER
+	}
+	
+	ruler_female = {
+		1 = ELDER_fem
+		2 = HIGH_ELDER_fem
+		3 = PARAMOUNT_ELDER_fem
+	}
+	
+	trigger = {
+		government = tribal_democracy
+	}
+}
+
+# SM
+
+base_communist_dictatorship = {
+	rank = {
+		1 = COMMUNIST_DIC
+		2 = COMMUNIST_DIC
+		3 = COMMUNIST_UNION
+	}
+
+	ruler_male = {
+		1 = GENSEK
+		2 = GENSEK
+		3 = GENSEK
+	}
+
+	ruler_female = {
+		1 = GENSEK
+		2 = GENSEK
+		3 = GENSEK
+	}
+
+	trigger = {
+		government = communist_dictatorship
+		#NOT = { tag = USS }
+		#NOT = { primary_culture = dominionian }
+		#NOT = { culture_group = kronossian_group }
+		#NOT = { primary_culture = eurasian }
+		#NOT = { tag = DRA } # Comendor
+		#NOT = { tag = NFE }
+	}
+}
+
+socialist_republic = {
+	rank = {
+		1 = SOC_REP
+		2 = SOC_REP
+		3 = GR_SOC_REP
+	}
+
+	ruler_male = {
+		1 = PRED
+		2 = PRED
+		3 = GREAT_PRED
+	}
+
+	ruler_female = {
+		1 = PRED_F
+		2 = PRED_F
+		3 = GREAT_PRED_F
+	}
+
+	trigger = {
+		OR = {
+			government = socialist_republic
+			government = socialist_state
+		}
+		#NOT = { primary_culture = malishian }
+		#NOT = { tag = NFE }
+		#NOT = { culture_group = kronossian_group }
+		#NOT = { primary_culture = eurasian }
+	}
+}
+
+karteval_monarchic = {
+	rank = {
+		1 = KARTEVAL_STATE
+		2 = KARTEVAL_KINGDOM
+		3 = KARTEVAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = VLASTITEL
+		2 = KARTEVAL_KING
+		3 = KARTEVAL_EMPEROR
+	}
+
+	ruler_female = {
+		1 = VLASTITELNITSA
+		2 = KARTEVAL_Q
+		3 = KARTEVAL_EMPRESS
+	}
+
+	trigger = {
+		government = karteval_monarchic
+	}
+}
+
+karteval = {
+	rank = {
+		1 = KARTEVAL_STATE
+		2 = KARTEVAL_STATE
+		3 = KARTEVAL_STATE
+	}
+
+	ruler_male = {
+		1 = KARTEVAL
+		2 = KARTEVAL
+		3 = KARTEVAL
+	}
+
+	ruler_female = {
+		1 = KARTEVAL
+		2 = KARTEVAL
+		3 = KARTEVAL
+	}
+
+	trigger = {
+		government = karteval
+	}
+}
+
+karteval_rep = {
+	rank = {
+		1 = KARTEVAL_REP
+		2 = KARTEVAL_REP
+		3 = KARTEVAL_REP
+	}
+
+	ruler_male = {
+		1 = KARTEVAL
+		2 = KARTEVAL
+		3 = KARTEVAL
+	}
+
+	ruler_female = {
+		1 = KARTEVAL
+		2 = KARTEVAL
+		3 = KARTEVAL
+	}
+
+	trigger = {
+		government = karteval_republic
+	}
+}
+
+role_gov = {
+	rank = {
+		1 = ROLKA
+	}
+
+	ruler_male = {
+		1 = PRAVITEL_ROLKI
+	}
+
+	ruler_female = {
+		1 = PRAVITELNITSA_ROLKI
+	}
+
+	trigger = {
+		government = role_gov
+	}
+}
+
+mercenaries_clan = {
+	rank = {
+		1 = CLAN
+	}
+
+	ruler_male = {
+		1 = GLAVA
+	}
+
+	ruler_female = {
+		1 = GLAVA
+	}
+
+	trigger = {
+		government = mercenaries_clan
+	}
+}
+
+base_AM_clan = {
+	rank = {
+		1 = CLAN
+		2 = DIRECTORY
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = FAKE_EMPEROR
+	}
+
+	ruler_female = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = FAKE_EMPRESS
+	}
+
+	trigger = {
+		government = AM_clan
+		#NOT = { primary_culture = brintenian }
+		#NOT = { tag = KRO }
+	}
+}
+
+base_AM_clan_rep = {
+	rank = {
+		1 = CLAN
+		2 = DIRECTORY
+		3 = STATE
+	}
+
+	ruler_male = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = GLAVA
+	}
+
+	ruler_female = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = GLAVA
+	}
+
+	trigger = {
+		government = AM_clan_rep
+		#NOT = { primary_culture = brintenian }
+	}
+}
+
+altras_horde = {
+	rank = {
+		2 = HORDE
+	}
+
+	ruler_male = {
+		2 = KAIDGEDAN
+	}
+
+	ruler_female = {
+		2 = KAIDGEDAN
+	}
+
+	trigger = {
+		primary_culture = altras
+		government = altras_horde
+	}
+}
+
+altras_enzelkhanate = {
+	rank = {
+		2 = ENZELKHANATE
+	}
+
+	ruler_male = {
+		2 = ENZELKHAN
+	}
+
+	ruler_female = {
+		2 = ENZELKHAN
+	}
+
+	trigger = {
+		primary_culture = altras
+		government = altras_enzelkhanate
+	}
+}
+
+altras_ulus = {
+	rank = {
+		1 = ULUS
+	}
+
+	ruler_male = {
+		1 = KHAN
+	}
+
+	ruler_female = {
+		1 = KHAN
+	}
+
+	trigger = {
+		primary_culture = altras
+		government = altras_ulus
+	}
+}
+
+altras_holgurate = {
+	rank = {
+		1 = HOLGURATE
+	}
+
+	ruler_male = {
+		1 = HOLGURE
+	}
+
+	ruler_female = {
+		1 = HOLGURE
+	}
+
+	trigger = {
+		primary_culture = altras
+		OR = {
+			government = altras_holgurate
+			government = altras_holgurate_2
+		}
+	}
+}
+
+#sm_horde = {
+#	rank = {
+#		1 = HORDE
+#	}
+#	
+#	ruler_male = {
+#		1 = KHAN
+#	}
+#	
+#	ruler_female = {
+#		1 = KHATUN
+#	}
+#	
+#	trigger = {
+#		government = sm_horde
+#	}
+#}
+#
+#sm_smfngs_tribe = {
+#	rank = {
+#		1 = TRIBE
+#	}
+#	
+#	ruler_male = {
+#		1 = CHIEF
+#	}
+#	
+#	ruler_female = {
+#		1 = CHIEFTESS
+#	}
+#	
+#	trigger = {
+#		government = sm_smfngs_tribe
+#	}
+#}
+
+CH2_holy_republic_monarchy = {
+	rank = {
+		2 = HOLY_REPUBLIC
+	}
+	
+	ruler_male = {
+		2 = KING
+	}
+	
+	ruler_female = {
+		2 = QUEEN
+	}
+	
+	trigger = {
+		government = chaepitian_monarchy
+		has_country_flag = lyd_CH2
+	}
+}
+
+CH2_holy_republic = {
+	rank = {
+		2 = HOLY_REPUBLIC
+	}
+	
+	ruler_male = {
+		2 = PRIME_MINISTER
+	}
+	
+	ruler_female = {
+		2 = PRIME_MINISTER
+	}
+	
+	trigger = {
+		government = chaepitian_monarchy
+	}
+}
+
+gov_military_junta = {
+	rank = {
+		1 = MILITARY_DICTATORSHIP
+		2 = MILITARY_DICTATORSHIP
+		3 = MILITARY_DICTATORSHIP
+	}
+	
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	trigger = {
+		government = militarist_dictatorship
+	}
+}
+
+base_consul_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = UNION_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+	}
+	
+	ruler_female = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+	}
+	
+	trigger = {
+		government = consul_republic
+	}
+}
+
+base_parliamentary_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = PRIME_MINISTER
+		2 = PRIME_MINISTER
+		3 = PRIME_MINISTER
+	}
+	
+	ruler_female = {
+		1 = PRIME_MINISTER
+		2 = PRIME_MINISTER
+		3 = PRIME_MINISTER
+	}
+	
+	trigger = {
+		government = parliamentary_republic
+	}
+}
+
+base_presidental_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+	
+	trigger = {
+		OR = {
+			government = presidental_republic_4
+			government = presidental_republic_6
+		}
+	}
+}
+
+base_novagrad_republic = {
+	rank = {
+		1 = NVG_FREE_STATE
+		2 = NVG_FREE_STATE
+		3 = NVG_FREE_STATE
+	}
+	
+	ruler_male = {
+		1 = VOEVODA
+		2 = VOEVODA
+		3 = GREAT_VOEVODA
+	}
+	
+	ruler_female = {
+		1 = PRAVITELNITSA_ROLKI
+		2 = PRAVITELNITSA_ROLKI
+		3 = PRAVITELNITSA_ROLKI
+	}
+	
+	trigger = {
+		government = novagrad_republic
+	}
+}
+
+base_technocrat_dictatorship = {
+	rank = {
+		1 = TECHNOCRAT_DICTATORSHIP
+		2 = TECHNOCRAT_DICTATORSHIP
+		3 = TECHNOCRAT_DICTATORSHIP
+	}
+	
+	ruler_male = {
+		1 = PROTECTOR
+		2 = PROTECTOR
+		3 = LORD_PROTECTOR
+	}
+	
+	ruler_female = {
+		1 = PROTECTOR_fem
+		2 = PROTECTOR_fem
+		3 = LADY_PROTECTOR
+	}
+	
+	trigger = {
+		government = technocrat_dictatorship
+	}
+}
+
+base_people_provisional_government = {
+	rank = {
+		1 = PEOPLE_GOVERNMENT
+	}
+	
+	ruler_male = {
+		1 = PRED
+	}
+	
+	ruler_female = {
+		1 = PRED_F
+	}
+	
+	trigger = {
+		government = people_provisional_government
+	}
+}
+
+base_presidental_dictatorship = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+	
+	trigger = {
+		government = presidental_dictatorship
+	}
+}
+
+base_distraseyem_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = KNIAZ
+		2 = KING
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = distraseyem_monarchy
+	}
+}
+
+base_free_city_confederation = {
+	rank = {
+		2 = FREE_CITIES_CONFEDERATION
+	}
+	
+	ruler_male = {
+		2 = PROTECTOR
+	}
+	
+	ruler_female = {
+		2 = PROTECTOR_fem
+	}
+	
+	trigger = {
+		government = free_city_confederation
+	}
+}
+
+gov_theocratic_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = DESPOTATE
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = LORD
+		2 = DESPOT
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = LADY
+		2 = DESPOTISSA
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = theocratic_monarchy
+	}
+}
+
+gov_fascist_dictatorship = {
+	rank = {
+		3 = FASCIST_DICTATORSHIP
+	}
+	
+	ruler_male = {
+		3 = CHIEF
+	}
+	
+	ruler_female = {
+		3 = CHIEFTESS
+	}
+	
+	trigger = {
+		government = fascist_dictatorship
+	}
+}
+
+gov_free_cities_sm = {
+	rank = {
+		1 = FREE_CITY
+	}
+	
+	ruler_male = {
+		1 = MAYOR
+	}
+
+	ruler_female = {
+		1 = MAYORESS
+	}
+
+	trigger = {
+		government = free_city_base
+	}
+}
+
+gov_free_city_aristocratical = {
+	rank = {
+		1 = FREE_CITY
+	}
+	
+	ruler_male = {
+		1 = LORD
+	}
+	
+	ruler_female = {
+		1 = LADY
+	}
+	
+	trigger = {
+		government = free_city_aristocratical
+	}
+}
+
+gov_zmooromfian_government = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male = {
+		1 = CHIEF
+		2 = HIGH_CHIEF
+		3 = HIGH_CHIEF
+	}
+	
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = HIGH_CHIEFTESS
+		3 = HIGH_CHIEFTESS
+	}
+	
+	trigger = {
+		government = zmooromfian_government
+	}
+}

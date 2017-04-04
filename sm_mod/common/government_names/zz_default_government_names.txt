@@ -1,0 +1,74 @@
+# Fallback defaults
+# Will pick the first valid one it finds in list
+
+default_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}	
+	
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN	
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = monarchy
+	}
+}
+
+default_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERATIVE_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+	
+	trigger = {
+		government = republic
+	}
+}
+
+default_theocracy = {
+	rank = {
+		1 = BISHOPRIC
+		2 = ARCHBISHOPRIC
+		3 = PATRIARCHATE
+	}
+	
+	ruler_male = {
+		1 = BISHOP
+		2 = ARCHBISHOP
+		3 = PATRIARCH
+	}
+	
+	ruler_female = {
+		1 = BISHOP_fem
+		2 = ARCHBISHOP_fem
+		3 = MATRIARCH
+	}
+	
+	trigger = {
+		government = theocracy
+	}
+}

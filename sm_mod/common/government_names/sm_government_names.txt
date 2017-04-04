@@ -1,0 +1,884 @@
+AM_emperor = {
+	rank = {
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		is_emperor = yes
+	}
+}
+
+AM_clan_in_empire = {
+	rank = {
+		1 = FRACTION
+		2 = FRACTION
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = FAKE_EMPEROR
+	}
+
+	ruler_female = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = FAKE_EMPRESS
+	}
+	
+	trigger = {
+		government = AM_clan
+		is_part_of_hre = yes
+	}
+}
+
+AM_clan_rep_in_empire = {
+	rank = {
+		1 = FRACTION
+		2 = FRACTION
+		3 = STATE
+	}
+
+	ruler_male = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = GLAVA
+	}
+
+	ruler_female = {
+		1 = GLAVA
+		2 = GLAVA
+		3 = GLAVA
+	}
+
+	trigger = {
+		government = AM_clan_rep
+		is_part_of_hre = yes
+	}
+}
+
+communist_dictatorship_union = {
+	rank = {
+		1 = COMMUNIST_DIC
+		2 = COMMUNIST_UNION
+		3 = COMMUNIST_UNION
+	}
+
+	ruler_male = {
+		1 = GENSEK
+		2 = GENSEK
+		3 = GENSEK
+	}
+
+	ruler_female = {
+		1 = GENSEK
+		2 = GENSEK
+		3 = GENSEK
+	}
+
+	trigger = {
+		government = communist_dictatorship
+		OR = {
+			tag = USS
+			primary_culture = dominionian
+		}
+	}
+}
+
+com_dict_kro = {
+	rank = {
+		1 = COMMUNIST_DIC
+		2 = COMMUNIST_FEDERATION
+		3 = COMMUNIST_UNION
+	}
+	
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	trigger = {
+		OR = {
+			government = communist_dictatorship
+			government = socialist_republic
+			government = socialist_state
+		}
+		OR = {
+			culture_group = kronossian_group
+			primary_culture = eurasian
+			primary_culture = ausger
+			culture_group = siniusdan_group
+			tag = NFE
+		}
+	}
+}
+
+rolevik_sinius_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = REPUBLIC
+	}
+
+	ruler_male = {
+		1 = COUNCILOR
+		2 = COUNCILOR
+		3 = COUNCILOR
+	}
+
+	ruler_female = {
+		1 = COUNCILOR_fem
+		2 = COUNCILOR_fem
+		3 = COUNCILOR_fem
+	}
+
+	trigger = {
+		OR = {
+			AND = {
+				culture_group = siniusdan_group
+				NOT = { primary_culture = altras }
+				government = parliamentary_republic
+			}
+			AND = {
+				primary_culture = chaepitian
+				government = parliamentary_republic
+			}
+		}
+	}
+}
+
+imperial_land = {
+	rank = {
+		1 = IMPERIAL_LAND
+		2 = IMPERIAL_LAND
+		3 = IMPERIAL_LAND
+	}
+
+	ruler_male = {
+		1 = IMPERIAL_LORD
+		2 = IMPERIAL_LORD
+		3 = IMPERIAL_LORD
+	}
+
+	ruler_female = {
+		1 = IMPERIAL_LORD
+		2 = IMPERIAL_LORD
+		3 = IMPERIAL_LORD
+	}
+
+	trigger = {
+		is_march = yes
+		overlord = {
+			OR = {
+				AND = {
+					culture_group = imp_smesh_group
+					government_rank = 3
+					total_development = 750
+				}
+				tag = SME
+			}
+		}
+		NOT = { primary_culture = eurasian }
+	}
+}
+
+eurasian_monarchy = {
+	rank = {
+		1 = EMIRATE
+		2 = CALIPHATE
+		3 = TSARDOM
+	}
+	
+	ruler_male = {
+		1 = EMIR
+		2 = CALIPH
+		3 = TSAR
+	}
+	
+	ruler_female = {
+		1 = EMIRA
+		2 = CALIPHA
+		3 = TSARITSA
+	}
+	
+	trigger = {
+		government = monarchy
+		primary_culture = eurasian
+	}
+}
+
+brintenian_am_clan = {
+	rank = {
+		1 = REICH
+	}
+
+	ruler_male = {
+		1 = FURER
+	}
+
+	ruler_female = {
+		1 = REICHPRESIDENT
+	}
+
+	trigger = {
+		primary_culture = brintenian
+		OR = {
+			government = AM_clan
+			government = AM_clan_rep
+		}
+	}
+}
+
+smesh_englisg_am_clan = {
+	rank = {
+		1 = PRINCIPALITY
+	}
+
+	ruler_male = {
+		1 = KING
+	}
+
+	ruler_female = {
+		1 = QUEEN
+	}
+
+	trigger = {
+		tag = KRO
+		government = AM_clan
+	}
+}
+
+DRA_commendor = {
+	rank = {
+		1 = COMMUNIST_DIC
+		2 = COMMUNIST_UNION
+		3 = COMMUNIST_UNION
+	}
+	
+	ruler_male = {
+		1 = COMENDOR
+		2 = COMENDOR
+		3 = COMENDOR
+	}
+
+	ruler_female = {
+		1 = COMENDOR
+		2 = COMENDOR
+		3 = COMENDOR
+	}
+
+	trigger = {
+		tag = DRA
+		government = dictatorship
+	}
+}
+
+malishian_socialist_republic = {
+	rank = {
+		1 = SOC_REP
+		2 = COMMUNIST_UNION
+		3 = COMMUNIST_UNION
+	}
+
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	trigger = {
+		OR = {
+			government = socialist_republic
+			AND = {
+				NOT = { tag = DRA }
+				OR = {
+					government = communist_dictatorship
+					government = socialist_state
+				}
+			}
+		}
+		primary_culture = malishian
+	}
+}
+
+NGI_lord_regent = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = LORD_REGENT
+		2 = LORD_REGENT
+		3 = LORD_REGENT
+	}
+
+	ruler_female = {
+		1 = LORD_REGENT
+		2 = LORD_REGENT
+		3 = LORD_REGENT
+	}
+
+	trigger = {
+		tag = NGI
+		has_country_flag = depacho_regentship_in_NGI
+	}
+}
+
+ausger_dictatorship = {
+	rank = {
+		1 = DICTATORSHIP
+		2 = DICTATORSHIP
+		3 = DICTATORSHIP
+	}
+	
+	ruler_male = {
+		1 = FURERCHANCELLOR
+		2 = FURERCHANCELLOR
+		3 = FURERCHANCELLOR
+	}
+
+	ruler_female = {
+		1 = FURERCHANCELLOR
+		2 = FURERCHANCELLOR
+		3 = FURERCHANCELLOR
+	}
+
+	trigger = {
+		culture_group = ausger_group
+		government = dictatorship
+		NOT = { government = communist_dictatorship }
+	}
+}
+
+#tribal_union = {
+#	rank = {
+#		1 = CHIEFDOM
+#		2 = TRIBAL_LEAGUE
+#		3 = TRIBAL_LEAGUE
+#	}
+#	
+#	ruler_male = {
+#		1 = CHIEF
+#		2 = HIGH_CHIEF
+#		3 = HIGH_CHIEF
+#	}
+#	
+#	ruler_female = {
+#		1 = CHIEFTESS
+#		2 = HIGH_CHIEFTESS
+#		3 = HIGH_CHIEFTESS
+#	}
+#	
+#	trigger = {
+#		is_tribal = yes
+#		is_nomad = no
+#		OR = {
+#			primary_culture = old_rannudian
+#			tag = RZH
+#			tag = LVO
+#		}
+#		NOT = {
+#			OR = {
+#				government = tribal_despotism
+#				government = tribal_kingdom
+#			}
+#		}
+#	}
+#}
+
+okrain_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = UNION_REPUBLIC
+		3 = UNION_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+	}
+	
+	ruler_female = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+	}
+	
+	trigger = {
+		culture_group = okrain_group
+		government = republic
+	}
+}
+
+turianian_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = KNIAZ
+		2 = KNIAZ # GRAND_KNYAZ
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = KNIAGINIA
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		tag = TRR
+		OR = {
+			government = republic
+			government = dictatorship
+		}
+		NOT = { government = communist_dictatorship }
+	}
+}
+
+rifonian_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = GREAT_REPUBLIC
+		3 = GREAT_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	trigger = {
+		primary_culture = rifonian
+		OR = {
+			government = republic
+			government = republican_dictatorship
+		}
+		NOT = {
+			OR = {
+				government = socialist_republic
+				government = socialist_state
+				government = noble_republic
+			}
+		}
+	}
+}
+
+gottardian_grand_duchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = GRAND_DUCHY
+		3 = TSARDOM
+	}
+	
+	ruler_male = {
+		1 = DUKE
+		2 = GRAND_DUKE
+		3 = KESAR
+	}
+	
+	ruler_female = {
+		1 = DUKE
+		2 = GRAND_DUCHESS
+		3 = KESAR_fem
+	}
+	
+	trigger = {
+		primary_culture = gottardian
+		government = monarchy
+		tag = GTT
+		NOT = { has_country_flag = united_gottardia_flag }
+		is_vassal = no
+	}
+}
+
+ellar_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = KINGDOM
+		3 = TSARDOM
+	}
+	
+	ruler_male = {
+		1 = KNIAZ
+		2 = KING
+		3 = KESAR
+	}
+	
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = QUEEN
+		3 = KESAR_fem
+	}
+	
+	trigger = {
+		OR = {
+			primary_culture = yellow
+			primary_culture = arvabian
+			#primary_culture
+		}
+		government = monarchy
+		NOT = { tag = SMF }
+	}
+}
+
+SMF_grand_duchy = {
+	rank = {
+		1 = GRAND_PRINCIPALITY
+		2 = KINGDOM
+		3 = TSARDOM
+	}
+	
+	ruler_male = {
+		1 = GREAT_KNIAZ
+		2 = KING
+		3 = KESAR
+	}
+	
+	ruler_female = {
+		1 = GREAT_KNIAGINIA
+		2 = QUEEN
+		3 = KESAR_fem
+	}
+	
+	trigger = {
+		tag = SMF
+		government = monarchy
+	}
+}
+
+novagrad_fp = {
+	rank = {
+		1 = NVG_FREE_STATE
+		2 = NVG_FREE_STATE
+		3 = NVG_FREE_STATE
+	}
+	
+	ruler_male = {
+		1 = VOEVODA
+		2 = VOEVODA
+		3 = GREAT_VOEVODA
+	}
+	
+	ruler_female = {
+		1 = PRAVITELNITSA_ROLKI
+		2 = PRAVITELNITSA_ROLKI
+		3 = PRAVITELNITSA_ROLKI
+	}
+	
+	trigger = {
+		tag = NVG
+		OR = {
+			government = republic
+			government = dictatorship
+		}
+	}
+}
+
+agent_directory = {
+	rank = {
+		1 = DIRECTORY
+		2 = DIRECTORY
+		3 = DIRECTORY
+	}
+	
+	ruler_male = {
+		1 = PROTECTOR
+		2 = PROTECTOR
+		3 = LORD_PROTECTOR
+	}
+	
+	ruler_female = {
+		1 = PROTECTOR_fem
+		2 = PROTECTOR_fem
+		3 = LADY_PROTECTOR
+	}
+	
+	trigger = {
+		tag = NHN
+		OR = {
+			government = dictatorship
+			government = technocrat_dictatorship
+			government = chaepitian_monarchy
+			government = consul_republic
+		}
+	}
+}
+
+petty_kingdoms_domin = {
+	rank = {
+		1 = PETTY_KINGDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = KING
+		2 = KING
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = QUEEN
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = monarchy
+		OR = {
+			primary_culture = anarendilian
+			culture_group = domin_group
+		}
+	}
+}
+
+helgarn_theocracy = {
+	rank = {
+		1 = TSALFRAHAT
+		2 = TSALFRAHAT
+		3 = ARHITSALFRAHAT
+	}
+	
+	ruler_male = {
+		1 = TSALFRAH
+		2 = TSALFRAH
+		3 = ARHITSALFRAH
+	}
+	
+	ruler_female = {
+		1 = TSALFRAH
+		2 = TSALFRAH
+		3 = ARHITSALFRAH
+	}
+	
+	trigger = {
+		religion = helgarn
+		government = theocracy
+	}
+}
+
+pre_helgarn_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRIEST
+		2 = HIGH_PRIEST
+		3 = PARAMOUNT_PRIEST
+	}
+
+	ruler_female = {
+		1 = PRIESTESS
+		2 = HIGH_PRIESTESS
+		3 = PARAMOUNT_PRIESTESS
+	}
+
+	trigger = {
+		OR = {
+			religion = ellar_pagan
+			religion = astransenit
+			religion = yutonsenit
+			religion = miscilian_pagan
+		}
+		government = theocracy
+	}
+}
+
+smeshesfongs_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = KINGDOM
+		3 = TSARDOM
+	}
+	
+	ruler_male = {
+		1 = KNIAZ
+		2 = KING
+		3 = TSAR
+	}
+	
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		OR = {
+			primary_culture = smeshesfongs
+			primary_culture = ardenian
+		}
+		government = monarchy
+	}
+}
+
+sm_county = {
+	rank = {
+		1 = COUNTY
+	}
+	
+	ruler_male = {
+		1 = COUNT
+	}
+	
+	ruler_female = {
+		1 = COUNTESS
+	}
+	
+	trigger = {
+		government = monarchy
+		OR = {
+			AND = {
+				is_vassal = yes
+				tag = ORG
+			}
+			tag = VRU
+			tag = VKN
+			tag = VTS
+			tag = LRK
+		}
+	}
+}
+
+sm_house = {
+	rank = {
+		1 = HOUSE
+		2 = GREAT_HOUSE
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = KNIAZ
+		2 = KING
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		OR = {
+			tag = ERC
+			tag = ERT
+			tag = HFL
+		}
+		government = monarchy
+	}
+}
+
+halscenburg_grand_duchy = {
+	rank = {
+		1 = HOUSE
+		2 = GREAT_HOUSE
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = KNIAZ
+		2 = GREAT_KNIAZ
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = monarchy
+		tag = HLC
+	}
+}
+
+taifalian_ostretia_fascism = {
+	rank = {
+		3 = OSTRETIA
+	}
+	
+	ruler_male = {
+		3 = OSTRETOR
+	}
+	
+	ruler_female = {
+		3 = OSTRETOR_fem
+	}
+	
+	trigger = {
+		government = fascist_dictatorship
+		culture_group = taife_group
+	}
+}
+
+taifalian_ostretia_monarchy = {
+	rank = {
+		1 = OSTRETIA
+		2 = OSTRETIA
+		3 = OSTRETIA
+	}
+	
+	ruler_male = {
+		1 = OSTRETOR
+		2 = OSTRETOR
+		3 = OSTRETOR
+	}
+	
+	ruler_female = {
+		1 = OSTRETOR_fem
+		2 = OSTRETOR_fem
+		3 = OSTRETOR_fem
+	}
+	
+	trigger = {
+		OR = {
+			government = absolute_monarchy
+			AND = {
+				government = dictatorship
+				NOT = { government = communist_dictatorship }
+			}
+		}
+		culture_group = taife_group
+	}
+}
