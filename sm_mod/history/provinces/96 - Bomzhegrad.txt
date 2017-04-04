@@ -1,0 +1,52 @@
+owner = LVO
+controller = LVO
+add_core = LVO
+
+is_city = yes
+hre = no
+
+culture = levonian
+religion = totemism
+capital = "ֱמלזודנאה"
+
+trade_goods = slaves
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+discovered_by = anarendilian_tech
+
+662.12.15 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+	discovered_by = continental
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+850.6.6 = { religion = tolerance }
+866.10.23 = { controller = DRA add_core = DRA }
+868.5.4 = {
+	owner = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = domin_group
+}
+925.1.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}
+1104.10.27 = {
+	owner = LVO
+	controller = LVO
+	remove_core = GRU
+}

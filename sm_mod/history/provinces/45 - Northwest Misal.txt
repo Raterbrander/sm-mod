@@ -1,0 +1,80 @@
+owner = AL1
+controller = AL1
+add_core = SIN
+
+is_city = yes
+hre = yes
+
+culture = sinius
+religion = sinius_pagan
+base_tax = 4
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Тарис-Кроносский"
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_kronossian_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+458.1.1 = {
+	add_claim = KRN
+	add_claim = AL1
+}
+500.1.1 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+	remove_claim = AL1
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+482.1.2 = { hre = no }
+750.1.1 = {
+	base_tax = 7
+	base_production = 7
+	base_manpower = 6
+}
+838.4.18 = {
+	owner = NKF
+	controller = NKF
+	add_core = NKF
+	remove_core = SRM
+	add_local_autonomy = 55
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+874.10.7 = { add_core = NGI }
+887.2.12 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	remove_core = NKF
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}
+1200.1.1 = { religion = tolerance }

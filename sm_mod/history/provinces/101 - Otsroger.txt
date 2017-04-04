@@ -1,0 +1,108 @@
+owner = SIN
+controller = SIN
+add_core = BOL
+add_core = SIN
+
+is_city = yes
+
+culture = sinius
+religion = sinius_pagan
+capital = "Отсрогер"
+
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = cloth
+
+fort_15th = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+477.4.18 = { remove_core = BOL }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+560.1.1 = {
+	base_tax = 7
+	base_production = 5
+	base_manpower = 6
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+587.4.3 = { controller = KRN }
+589.11.3 = { controller = SIN }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+871.6.29 = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+957.11.1 = {
+	owner = SIN
+	controller = SIN
+	fort_17th = no
+	fort_15th = yes
+} # ђаздел
+#1228.8.5 = {
+#	owner = GRX
+#	controller = GRX
+#}
+#1228.8.24 = {
+#	owner = SIN
+#	controller = SIN
+#}
+#2015.9.17 = {
+#	owner = GRX
+#	controller = GRX
+#}
+#2015.9.18 = {
+#	owner = AMM
+#	controller = AMM
+#	add_core = AMM
+#}
+#2015.9.19 = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#	remove_core = AMM
+#}
+#2015.9.20 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#	remove_core = BRN
+#}
+#2015.10.2 = {
+#	owner = SIN
+#	controller = SIN
+#}
+#2015.11.1 = { remove_core = SME }

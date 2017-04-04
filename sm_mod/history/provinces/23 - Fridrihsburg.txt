@@ -1,0 +1,86 @@
+owner = SDB
+controller = SDB
+add_core = NSM
+add_core = SDB
+
+is_city = yes
+hre = yes
+
+culture = nordsmesh
+religion = totemism
+capital = "Фредерикстаун"
+
+base_tax = 3 
+base_production = 3
+base_manpower = 3
+trade_goods = grain
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+465.12.27 = {
+	owner = EMI
+	controller = EMI
+	add_core = EMI
+	remove_core = SDB
+}
+472.1.1 = {
+	owner = NSM
+	controller = NSM
+}
+479.9.14 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = EMI
+}
+482.1.2 = { hre = no }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+550.1.1 = {
+	culture = smesh_english
+	remove_core = NSM
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+600.1.1 = { religion = catholic }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+	religion = protestant
+}
+900.1.1 = {
+	owner = ASM
+	controller = ASM
+	add_core = ASM
+	remove_core = KRO
+	base_tax = 4
+	base_production = 5
+	base_manpower = 4
+}

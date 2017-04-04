@@ -1,0 +1,83 @@
+owner = IRL
+controller = IRL
+add_core = IRL
+
+hre = no
+is_city = yes
+
+culture = smeshesfongs
+religion = totemism
+capital = "Ормелия"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+serfdom = yes
+
+discovered_by = continental
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+495.4.16 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	slavery = yes
+}
+500.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+	remove_core = IRL
+	slavery = no
+	railroad_1 = yes
+	serfdom = no
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.1.1 = {
+	discovered_by = amian
+	railroad_1 = no
+	railroad_2 = yes
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+877.7.8 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = ORD
+}

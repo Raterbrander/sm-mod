@@ -1,0 +1,38 @@
+native_size = 42
+native_ferocity = 7
+native_hostileness = 4
+
+hre = no
+
+culture = smeshesfongs # central_lands_culture
+religion = totemism # central_land_paganism
+capital = "Маркнур"
+
+base_tax = 3
+base_production = 2
+base_manpower = 3
+trade_goods = wood
+
+#2013.3.1 = {
+#	culture = smeshesfongs
+#	religion = totemism
+#	owner = LTP
+#	controller = LTP
+#	add_core = LTP
+#}
+#2013.6.20 = { add_core = EOY } # Вассалитет
+#870.1.1 = { religion = helgarn }
+#2013.7.8 = {
+#	owner = ORD
+#	controller = ORD
+#	add_core = ORD
+#	remove_core = EOY
+#}
+#2013.8.10 = { religion = tolerance }
+#2013.9.1 = {
+#	owner = SIN
+#	controller = SIN
+#	add_core = SIN
+#	remove_core = ORD
+#}
+#2013.9.15 = { culture = sinius religion = sinius_pagan }

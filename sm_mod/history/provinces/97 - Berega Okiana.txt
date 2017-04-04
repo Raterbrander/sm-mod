@@ -1,0 +1,76 @@
+owner = LMR
+controller = LMR
+add_core = LMR
+add_claim = SIN
+
+is_city = yes
+hre = no
+
+culture = lemor
+religion = animism
+capital = "Овиньон"
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = naval_supplies
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+
+427.6.10 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+500.1.1 = { religion = tolerance }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+587.6.7 = { controller = KRN }
+589.11.3 = { owner = KRN }
+632.7.29 = { add_core = GRX }
+641.1.17 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+# Гелати?
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+	capital = "Окиангарфин"
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+	capital = "Овиньон"
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+957.11.1 = {
+	owner = SIN
+	controller = SIN
+} # Раздел
+500.1.1 = { culture = sinius religion = sinius_pagan }
+#2015.11.1 = { religion = sinius_pagan }

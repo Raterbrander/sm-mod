@@ -1,0 +1,71 @@
+owner = ITL
+controller = ITL
+add_core = ITL
+
+is_city = yes
+hre = no
+
+culture = itlanian
+religion = totemism
+capital = "Хинор"
+
+base_tax = 3
+base_production = 2
+base_manpower = 2
+trade_goods = cloth
+
+discovered_by = continental
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+495.4.16 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = ITL
+	culture = sinius
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.1.1 = { discovered_by = amian }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+600.1.1 = { religion = sinius_pagan }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+877.7.8 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = ORD
+}

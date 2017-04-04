@@ -1,0 +1,81 @@
+owner = SIN
+controller = SIN
+add_core = SIN
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = tolerance
+capital = "Синиусданбург"
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = spices
+
+railroad_2 = yes
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = middle_land_group
+discovered_by = high_domin
+discovered_by = imperial_group
+
+458.1.1 = { add_claim = AL1 }
+500.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+	remove_claim = AL1
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+#2012.5.1   = { capital = "Синиусдансберх" religion = solaris_religion }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+}
+871.4.6 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+#2013.10.13 = { owner = BRN controller = BRN add_core = BRN remove_core = LMR }
+#2013.11.17 = { owner = TFL controller = TFL add_core = TFL remove_core = BRN }
+#2013.12.8  = { owner = NIP controller = NIP add_core = NIP }
+#1228.1.10  = { owner = TFL controller = TFL remove_core = NIP }
+#1228.7.11  = { owner = SIN controller = SIN remove_core = TFL }
+#1228.8.5   = { owner = BRL controller = BRL add_core = BRL }
+#1228.8.27  = { owner = SIN controller = SIN remove_core = TTF }
+#1228.12.16 = { add_core = ALR }
+#2015.5.23  = { owner = ALR controller = ALR }
+#2015.5.28  = { owner = SIN controller = SIN }
+#2015.9.17  = { owner = ALR controller = ALR }
+#2015.9.19  = { owner = BRN controller = BRN add_core = BRN remove_core = ALR }
+#2015.9.20  = { owner = SME controller = SME add_core = SME remove_core = BRN }
+#2015.10.2  = { owner = SIN controller = SIN }
+#2015.11.1 = { religion = sinius_pagan }

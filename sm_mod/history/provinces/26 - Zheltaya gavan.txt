@@ -1,0 +1,76 @@
+### Замечание для 2013-ого
+# Раньше северо-восток Кроноса был под ИЖ.
+# Корки останутся, но это - единственная провинция Жёлтых
+
+owner = KRN
+controller = KRN
+add_core = KRN
+
+is_city = yes
+
+culture = terend
+religion = ellar_pagan
+capital = "Йель-цен-дарт"
+trade_goods = wine
+base_tax = 4
+base_production = 4
+base_manpower = 3
+
+shipyard = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_kronossian_tech
+
+500.1.1 = { railroad_2 = yes }
+542.1.1 = { religion = helgarn }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+580.5.12 = {
+	owner = KRN
+	controller = KRN
+}
+584.3.21 = {
+	owner = VSK
+	controller = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+#2013.5.5 = {
+#	owner = SRM
+#	controller = SRM
+#}
+886.6.14 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	add_core = NGI
+	remove_core = SRM
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+#2013.8.10 = {
+#	culture = teuton
+#	religion = tolerance
+#}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

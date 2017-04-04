@@ -1,0 +1,92 @@
+owner = MSC
+controller = MSC
+add_core = MSC
+
+is_city = yes
+hre = no
+
+culture = miscilian
+religion = miscilian_pagan
+capital = "Тальсин"
+base_tax = 6
+base_production = 5
+base_manpower = 5
+trade_goods = wine
+
+serfdom = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+465.12.27 = {
+	owner = WMI
+	controller = WMI
+	add_core = WMI
+	remove_core = MSC
+}
+481.2.24 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+535.1.1 = {
+	culture = mescil
+	traditional_factories = yes
+	railroad_1 = no
+	railroad_2 = yes
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+# Западная Мисцилия некоторое время входила в состав герцогства, однако была завоёвана Синими и пробыла там до Новогоднего раздела
+650.3.19 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}
+970.11.20 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = SIN
+}
+1000.1.1 = {
+	base_tax = 7
+	base_manpower = 6
+	base_production = 6
+}
+1250.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+	fort_15th = yes
+}

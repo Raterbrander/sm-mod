@@ -1,0 +1,91 @@
+owner = NRL
+controller = NRL
+add_core = ITL
+#add_core = BUS
+add_core = NRL
+
+is_city = yes
+hre = no
+
+culture = itlanian
+religion = totemism
+capital = "Рифлотаун"
+
+base_tax = 6
+base_production = 5
+base_manpower = 7
+trade_goods = copper
+
+fort_15th = yes
+railroad_1 = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = middle_land_group
+discovered_by = ellar_tech
+discovered_by = old_altras_tech
+
+495.4.16 = {
+	owner = ITL
+	controller = ITL
+	add_core = SIN
+	remove_core = NRL
+	culture = SIN_itlanian
+} # Южный договор
+500.1.1 = { religion = tolerance }
+510.1.1 = {
+	primitive_manufactories = yes
+	traditional_factories = yes
+}
+525.1.1 = {
+	owner = SIN
+	controller = SIN
+	base_tax = 7
+	base_production = 6
+	base_manpower = 8
+	railroad_1 = no
+	railroad_2 = yes
+	traditional_factories = no
+	modernised_factories = yes
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+600.1.1 = {
+	base_tax = 9
+	base_production = 8
+	base_manpower = 10
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+657.11.25 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+1005.1.1 = {
+	remove_core = BUS
+	add_core = RIF
+}
+#2015.7.1 = { owner = SIN controller = SIN remove_core = EOY }

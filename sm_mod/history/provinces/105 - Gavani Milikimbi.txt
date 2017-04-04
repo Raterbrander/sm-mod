@@ -1,0 +1,63 @@
+owner = SIN
+controller = SIN
+add_core = SIN
+
+hre = no
+is_city = yes
+
+culture = sinius
+religion = sinius_pagan
+capital = "Гавани Миликимби"
+
+base_tax = 3 # 4 4 5
+base_production = 3
+base_manpower = 4
+trade_goods = naval_supplies
+
+grand_shipyard = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+587.6.17 = { controller = KRN }
+589.11.3 = { controller = SIN }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+# Гелати?
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+871.4.6 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

@@ -1,0 +1,93 @@
+owner = LVO
+controller = LVO
+add_core = KRV
+add_core = LVO
+
+is_city = yes
+hre = no
+
+culture = kravilonian
+religion = totemism
+capital = "Кравилон"
+trade_goods = cloth
+base_tax = 6
+base_production = 5
+base_manpower = 4
+
+discovered_by = amian
+discovered_by = continental
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = LVO
+
+493.5.16 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+659.4.21 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = SIN
+}
+850.6.6 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+#870.7.3 = { remove_core = DRA }
+892.8.1  = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ORD
+}
+925.9.15 = {
+	owner = KRV
+	controller = KRV
+	add_core = KRV
+	remove_core = EOY
+	base_tax = 11
+	base_production = 9
+	base_manpower = 8
+	fort_15th = yes
+	courthouse = yes
+}
+997.12.25 = { cathedral = yes }
+1005.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	culture = levonian
+	religion = tolerance
+	add_core = LVO
+	remove_core = KRV
+}
+1104.10.27 = {
+	owner = LVO
+	controller = LVO
+	remove_core = EOY
+}

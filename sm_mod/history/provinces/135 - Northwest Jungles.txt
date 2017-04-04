@@ -1,0 +1,85 @@
+native_size = 21
+native_ferocity = 3
+native_hostileness = 4
+
+is_city = no
+
+culture = mixed_kronossian
+religion = kronos_pagan
+base_tax = 1
+base_production = 1
+trade_goods = wood
+base_manpower = 1
+capital = "Нордиджеф"
+
+discovered_by = KRN
+discovered_by = ALR
+discovered_by = SIN
+discovered_by = TUR
+
+458.1.1 = {
+	add_claim = AL1
+	add_claim = KRN
+	add_claim = SIN
+}
+482.1.1 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+	remove_claim = AL1
+	remove_claim = SIN
+	is_city = yes
+	religion = tolerance
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.5.12 = {
+	owner = KRN
+	controller = KRN
+}
+584.3.21 = {
+	owner = VSK
+	controller = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+838.4.18 = {
+	owner = NKF
+	controller = NKF
+	add_core = NKF
+	remove_core = SRM
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = continental
+}
+874.10.7 = { add_core = NGI }
+887.2.12 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	remove_core = NKF
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+	discovered_by = amian
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

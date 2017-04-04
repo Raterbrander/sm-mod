@@ -1,0 +1,85 @@
+owner = LMR
+controller = LMR
+#add_core = AMM
+add_core = LMR
+
+is_city = yes
+hre = no
+
+culture = tetirian
+religion = tolerance
+capital = "Комерс"
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = iron
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+
+427.6.10 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	#remove_core = LMR
+}
+500.1.1 = {
+	base_tax = 4
+	base_production = 5
+	base_manpower = 4
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+587.2.18 = { controller = KRN }
+589.11.3 = { controller = SIN }
+630.1.1 = {
+	base_tax = 5
+	base_production = 6
+	base_manpower = 5
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+	culture = grox
+	fort_15th = yes
+}
+654.1.6 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+	culture = tetirian
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+957.11.1 = {
+	owner = SIN
+	controller = SIN
+	remove_core = LMR
+}

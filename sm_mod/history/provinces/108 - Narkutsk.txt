@@ -1,0 +1,92 @@
+owner = SIN
+controller = SIN
+add_core = BOL
+add_core = SIN
+
+is_city = yes
+hre = no
+
+culture = smeshesfongs
+religion = totemism
+capital = "Ниркиль"
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = iron
+
+railroad_2 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+430.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+	capital = "Наркутск"
+	base_tax = 7
+	base_production = 8
+	base_manpower = 7
+	weapons = yes
+	fort_15th = yes
+	traditional_factories = yes
+}
+477.4.18 = { remove_core = BOL }
+525.1.1 = {
+	base_tax = 8
+	base_production = 10
+	base_manpower = 9
+	fort_15th = no
+	fort_16th = yes
+	religion = tolerance
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+560.1.1 = {
+	base_tax = 10
+	base_production = 14
+	base_manpower = 10
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+	traditional_factories = no
+	modernised_factories = yes
+}
+652.2.17 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}
+930.1.1 = { religion = sinius_pagan }
+937.10.1 = {
+	base_tax = 8
+	base_production = 8
+	base_manpower = 6
+}

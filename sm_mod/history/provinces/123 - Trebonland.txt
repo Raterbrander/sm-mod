@@ -1,0 +1,91 @@
+owner = AML
+controller = AML
+add_core = AML
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion
+capital = "Требозант"
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = cloth
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = middle_land_group
+discovered_by = high_domin
+discovered_by = imperial_group
+
+458.1.1 = { # 480
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+557.4.14 = {
+	owner = AML
+	controller = AML
+}
+585.5.26 = { remove_core = VSK }
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = AML
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+680.1.1 = { discovered_by = southern }
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+#2013.6.7  = { owner = IOD controller = IOD add_core = IOD remove_core = EOY }
+#870.1.1 = {
+#	owner = EOY
+#	controller = EOY
+#	add_core = EOY
+#	remove_core = IOD
+#	discovered_by = domin_group
+#}
+#2013.8.1  = {
+#	base_tax = 5
+#	base_production = 4
+#}
+#2013.9.7  = { owner = SIN controller = SIN remove_core = EOY }
+#2013.11.1 = { owner = BRN controller = BRN add_core = BRN }
+#2013.11.15 = {
+#	base_tax = 4
+#	base_production = 2
+#	base_manpower = 6
+#} # Кризис при Синих
+#2013.11.17 = { owner = TFL controller = TFL add_core = TFL remove_core = BRN }
+#2013.12.8  = { owner = NIP controller = NIP add_core = NIP }
+#1228.1.10  = { owner = TFL controller = TFL remove_core = NIP }
+#1228.7.1   = { owner = SIN controller = SIN remove_core = TFL }
+#1228.8.5   = { owner = ALR controller = ALR remove_core = SIN }
+#1228.8.19  = { religion = hiyalegama }
+#2015.1.1   = {
+#	base_tax = 8
+#	base_production = 6
+#	base_manpower = 10
+#}
+#2015.9.19  = { owner = BRN controller = BRN add_core = BRN }
+#2015.9.20  = { owner = SIN controller = SIN }

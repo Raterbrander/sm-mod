@@ -1,0 +1,87 @@
+owner = IRL
+controller = IRL
+add_core = IRL
+
+is_city = yes
+hre = no
+
+culture = smeshesfongs
+religion = totemism
+capital = "Брентанара"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = middle_land_group
+
+431.1.1 = {
+	owner = BTA
+	controller = BTA
+	add_core = BTA
+	remove_core = IRL
+	add_claim = IRL
+}
+483.12.8 = {
+	owner = ITL
+	controller = ITL
+	add_core = ITL
+}
+489.6.1 = {
+	owner = BTA
+	controller = BTA
+}
+495.4.16 = { remove_claim = IRL }
+525.1.1 = {
+	remove_core = ITL
+	add_core = SIN
+}
+530.1.1 = {
+	owner = SIN
+	controller = SIN
+	base_tax = 3
+	base_production = 2
+	base_manpower = 2
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+550.1.1 = { remove_core = BTA }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+600.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+2013.7.8 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	remove_core = EOY
+}
+2013.9.1 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = ORD
+}
+#2015.11.1 = { religion = sinius_pagan }

@@ -1,0 +1,118 @@
+# Крошельбург, он же Лондон
+# Закладка 2013
+# На карте Крошельбург появляется с 4 июля, но он существует раньше
+# В начале игры - слабо развитый центр слаборазвитого государства
+# Закладка 2011
+# Крошельбурга не существует до 502 года
+
+owner = NSM
+controller = NSM
+add_core = NSM
+#add_core = MSC
+
+is_city = yes
+hre = yes
+
+capital = "Крехель Сестер"
+culture = nordsmesh
+religion = totemism
+base_tax = 4
+base_production = 3
+base_manpower = 4
+trade_goods = fish
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+#discovered_by = rolevik - 2012-2013
+#discovered_by = imperial_group - 05.2013
+#discovered_by = domin_group - 06.2013
+#discovered_by = high_domin - 06.2013
+#discovered_by = southern - 2012-2013
+
+extra_cost = 25
+
+#462.6.1 = { remove_core = MSC }
+479.9.14 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+482.1.2 = { hre = no }
+502.1.1 = { # Заложен Крошельбург
+	fort_15th = yes
+	capital = "Санкт-Крошельбург"
+	add_core = KRO
+	set_province_flag = kroshelburg_founded
+}
+525.1.1 = {
+	base_tax = 7
+	base_production = 5
+	base_manpower = 6
+	trade_goods = naval_supplies
+	shipyard = yes
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+550.1.1 = {
+	culture = smesh_english
+	remove_core = NSM
+}
+555.1.2 = { primitive_manufactories = yes }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+597.6.11 = {
+	owner = KRO
+	controller = KRO
+}
+600.1.1 = { religion = catholic }
+632.7.29 = { add_core = GRX }
+658.9.6 = {
+	remove_core = GRX
+	remove_core = SIN
+}
+800.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}
+855.1.1 = {
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+875.8.1 = {
+	religion = protestant
+	base_tax = 14
+	base_production = 10
+	base_manpower = 10
+}
+#1415.8.1 = { wharf = yes }
+# Грегорианские реформы
+900.1.1 = {
+	capital = "Лондон"
+	base_tax = 18
+	base_production = 16
+	base_manpower = 14
+	fort_15th = no
+	fort_17th = yes
+	owner = ASM
+	controller = ASM
+	add_core = ASM
+	remove_core = KRO
+}
+915.7.7 = {
+	courthouse = yes
+	traditional_factories = no
+	modernised_factories = yes
+	base_production = 17
+	base_manpower = 15
+}

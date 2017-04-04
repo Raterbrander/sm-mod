@@ -1,0 +1,90 @@
+owner = ILM
+controller = ILM
+add_core = ILM
+
+is_city = yes
+
+culture = igorian
+religion = domin_pagan
+trade_goods = fur
+capital = "Ильмавия"
+base_manpower = 3
+base_tax = 3
+base_production = 2
+
+discovered_by = domin_group
+discovered_by = high_domin
+discovered_by = IRI
+
+# 591 - завоевание
+1038.9.24 = {
+	owner = IGO
+	controller = IGO
+	add_core = IGO
+	remove_core = ILM
+}
+591.3.20 = { controller = VLK }
+591.4.14 = {
+	owner = VLK
+	add_core = VLK
+}
+757.6.17 = { controller = USS }
+759.1.24 = {
+	owner = USS
+	add_core = USS
+	remove_core = VLK
+}
+870.10.13 = { owner = IGO } # 870.1.1
+870.12.24 = { controller = IGO }
+871.4.29 = { controller = DRA }
+892.8.1  = {
+	owner = DRA
+	add_core = DRA
+	remove_core = USS
+	discovered_by = continental
+	discovered_by = imperial_group
+}
+# Создание Великоостровных графств
+#2013.7.10 = {
+#	owner = YIA
+#	controller = YIA
+#	add_core = YIA
+#	remove_core = DRA
+#}
+#2013.9.15 = {
+#	owner = PEH
+#	controller = PEH
+#	add_core = PEH
+#	remove_core = YIA
+#}
+#1228.1.1 = { discovered_by = amian }
+#1228.2.1 = {
+#	owner = IGO
+#	controller = IGO
+#	remove_core = PEH
+#}
+#1228.5.16 = {
+#	owner = NG2
+#	controller = NG2
+#	add_core = NG2
+#}
+#2015.1.1 = {
+#	owner = PEH
+#	controller = PEH
+#	add_core = SME
+#	add_core = PEH
+#}
+#2015.4.12 = {
+#	owner = NG2
+#	controller = NG2
+#}
+#2015.10.2 = {
+#	owner = IGO
+#	controller = IGO
+#}
+#2015.11.8 = {
+#	owner = MDV
+#	controller = MDV
+#	add_core = MDV
+#	remove_core = NG2
+#}

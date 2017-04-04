@@ -1,0 +1,52 @@
+owner = LVO
+controller = LVO
+add_core = LVO
+
+is_city = yes
+hre = no
+
+culture = levonian
+religion = totemism
+capital = "Мионий"
+trade_goods = cloth
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = LVO
+discovered_by = ASR
+discovered_by = HVL
+
+662.12.15 = {
+	owner = BEL
+	controller = BEL
+	add_core = BEL
+}
+750.1.9 = {
+	owner = GRU
+	controller = GRU
+	add_core = GRU
+	remove_core = BEL
+}
+868.5.4 = {
+	owner = DRA
+	controller = DRA
+	set_province_flag = GRU_was_ceded_to_DRA
+	discovered_by = rolevik
+	discovered_by = domin_group
+	discovered_by = amian
+}
+900.1.1 = { religion = tolerance }
+925.1.1 = {
+	clr_province_flag = GRU_was_ceded_to_DRA
+	owner = GRU
+	controller = GRU
+	remove_core = DRA
+}
+1104.10.27 = {
+	owner = LVO
+	controller = LVO
+	remove_core = GRU
+}

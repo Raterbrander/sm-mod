@@ -1,0 +1,71 @@
+owner = KRN
+controller = KRN
+add_core = KRN
+
+is_city = yes
+hre = yes
+
+culture = yellow
+religion = astransenit
+capital = "Кардибос"
+trade_goods = sugar
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_kronossian_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+#discovered_by = middle_land_group
+
+482.1.2 = { hre = no }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = KRN
+	controller = KRN
+	remove_core = VSK
+}
+680.1.1 = {
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+}
+800.1.1 = {
+	culture = mixed_kronossian
+	religion = tolerance
+}
+838.4.18 = {
+	owner = NKF
+	controller = NKF
+	add_core = NKF
+	remove_core = SRM
+}
+874.10.7 = { add_core = NGI }
+887.2.12 = {
+	owner = YIA
+	controller = YIA
+	add_core = YIA
+	remove_core = NKF
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+892.7.31 = {
+	add_core = SME
+	remove_core = NGI
+}
+915.1.1 = {
+	owner = PEH
+	controller = PEH
+	add_core = PEH
+	remove_core = YIA
+}

@@ -1,0 +1,69 @@
+owner = KAL
+controller = KAL
+#add_core = AMM
+add_core = KAL
+
+is_city = yes
+
+culture = tetirian
+religion = miscilian_pagan
+capital = "Тебельта"
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+
+479.7.23 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = KAL
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+630.1.1 = { religion = helgarn }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+650.5.11 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+957.11.1 = {
+	owner = ASM
+	controller = ASM
+	add_core = ASM
+	remove_core = LMR
+} # Раздел

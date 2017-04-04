@@ -1,0 +1,77 @@
+owner = ONM
+controller = ONM
+add_core = SLR
+add_core = ONM
+
+is_city = yes
+
+culture = igorian
+religion = domin_pagan
+trade_goods = fur
+capital = "»горск"
+is_city = yes
+base_manpower = 3
+base_tax = 3
+base_production = 3
+
+discovered_by = domin_group
+discovered_by = high_domin
+discovered_by = IRI
+
+518.9.24 = { add_core = IGO }
+591.7.29 = { controller = VLK }
+591.10.14 = {
+	owner = VLK
+	add_core = VLK
+}
+600.1.1 = { remove_core = ONM }
+871.5.1 = { controller = DRA }
+892.8.1 = {
+	owner = DRA 
+	add_core = DRA
+}
+# Создание Великоостровных графств
+#2013.7.10 = {
+#	owner = YIA
+#	controller = YIA
+#	add_core = YIA
+#	remove_core = DRA
+#}
+#2013.9.15 = {
+#	owner = PEH
+#	controller = PEH
+#	add_core = PEH
+#	remove_core = YIA
+#}
+#1228.2.2 = {
+#	owner = IGO
+#	controller = IGO
+#	remove_core = PEH
+#}
+#1228.6.1 = {
+#	owner = DOM
+#	controller = DOM
+#	add_core = DOM
+#}
+#1228.12.17 = {
+#	owner = RPP
+#	controller = RPP
+#	add_core = RPP
+#	remove_core = DOM
+#}
+#2015.1.2 = {
+#	owner = AFE
+#	controller = AFE
+#	add_core = AFE
+#	remove_core = RPP
+#}
+#2015.10.3 = {
+#	owner = IGO
+#	controller = IGO
+#}
+#2015.11.8 = {
+#	owner = MDV
+#	controller = MDV
+#	add_core = MDV
+#	remove_core = AFE
+#}

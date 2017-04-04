@@ -1,0 +1,123 @@
+owner = AL1
+controller = AL1
+add_core = LMR
+#add_core = AL1
+
+is_city = yes
+hre = yes
+
+culture = lemor
+religion = tolerance
+capital = "Ледормод"
+trade_goods = wine
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+500.1.1 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+586.2.7 = { controller = KRN }
+589.11.3 = { owner = KRN }
+632.7.29 = { add_core = GRX }
+641.1.17 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+650.5.11 = { controller = EOY }
+658.9.6 = {
+	capital = "Юстани-Ледормод"
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+680.1.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 5
+	religion = helgarn
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+	capital = "Иносинт"
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+900.1.1 = { religion = tolerance }
+957.11.1 = {
+	owner = ASM
+	controller = ASM
+	add_core = ASM
+	remove_core = LMR
+	capital = "Хайтпорт"
+} # Раздел
+1000.1.1 = {
+	religion = protestant
+	culture = smesh_english
+}
+#1228.7.11 = {
+#	owner = SIN
+#	controller = SIN
+#	add_core = SIN
+#}
+#1228.7.28 = {
+#	owner = TRN
+#	controller = TRN
+#	add_core = TRN
+#}
+#1228.8.1 = {
+#	owner = PEH
+#	controller = PEH
+#	add_core = PEH
+#	remove_core = TRN
+#}
+#1228.8.27 = { owner = SIN }
+#1228.9.1 = { controller = SIN }
+#1228.11.13 = { remove_core = PEH }
+#2015.2.16 = {
+#	owner = NIF
+#	controller = NIF
+#}
+#2015.2.17 = {
+#	owner = SIN
+#	controller = SIN
+#}
+#2015.8.30 = {
+#	owner = ASM
+#	controller = ASM
+#	remove_core = SIN
+#}
+#2015.9.27 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#}
+#2015.10.1 = { remove_core = SIN }

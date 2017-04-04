@@ -1,0 +1,68 @@
+owner = SDB
+controller = SDB
+add_core = SDB
+
+is_city = yes
+hre = yes
+
+culture = mescil
+religion = miscilian_pagan
+capital = "Слардебург"
+base_tax = 7
+base_production = 6
+base_manpower = 4
+trade_goods = wine
+
+serfdom = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+465.12.27 = {
+	owner = EMI
+	controller = EMI
+	add_core = EMI
+	remove_core = SDB
+}
+481.2.24 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+482.1.2 = { hre = no }
+527.5.22 = {
+	owner = EMI
+	controller = EMI
+}
+550.1.1 = { religion = helgarn }
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = EMI
+}
+595.5.22 = { remove_core = SIN }
+#599.3.24 = {
+#	owner = ANV
+#	controller = ANV
+#	add_core = ANV
+#	remove_core = EMI
+#}
+# Присоединение к Безантокцу - неизвестно.
+630.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+1005.1.1 = { base_production = 5 }

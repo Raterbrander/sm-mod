@@ -1,0 +1,71 @@
+owner = ITL
+controller = ITL
+add_core = ITL
+
+is_city = yes
+hre = no
+
+culture = itlanian
+religion = totemism
+capital = "Вироне"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+
+fort_15th = yes
+courthouse = yes
+railroad_1 = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = middle_land_group
+discovered_by = ellar_tech
+
+495.4.16 = { add_core = SIN }
+500.1.1 = { culture = SIN_itlanian }
+525.1.1 = {
+	owner = SIN
+	controller = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+555.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+575.1.1 = { religion = sinius_pagan }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}

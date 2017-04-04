@@ -1,0 +1,77 @@
+owner = SIN
+controller = SIN
+add_core = BOL
+add_core = SIN
+
+is_city = yes
+
+culture = smeshesfongs
+religion = totemism
+
+capital = "Хеголь"
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = grain
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+500.1.1 = {
+	railroad_1 = yes
+	serfdom = no
+}
+525.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+	remove_core = BOL
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	controller = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+871.6.29 = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY	
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+900.1.1 = {
+	base_tax = 2
+	base_production = 2
+	base_manpower = 2
+}
+957.11.1 = {
+	owner = SIN
+	controller = SIN
+	remove_core = LMR
+}

@@ -1,0 +1,79 @@
+owner = KAL
+controller = KAL
+add_core = GRX
+add_core = KAL
+
+is_city = yes
+
+culture = smeshesfongs
+religion = totemism
+capital = "Родина"
+base_tax = 4
+base_production = 4
+base_manpower = 5
+trade_goods = iron
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+479.7.23 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = KAL
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+550.1.1 = {
+	culture = grox
+	religion = atheism
+}
+580.1.1 = {
+	base_tax = 5
+	base_production = 6
+	base_manpower = 7
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+	base_tax = 7
+	base_production = 7
+	base_manpower = 9
+	fort_17th = yes
+}
+654.1.3 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	base_tax = 5
+	base_production = 6
+	base_manpower = 7
+	fort_17th = no
+}
+680.1.1 = { fort_15th = yes }
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}

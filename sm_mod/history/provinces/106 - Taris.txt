@@ -1,0 +1,81 @@
+owner = SIN
+controller = SIN
+add_core = SIN
+
+is_city = yes
+hre = yes
+
+capital = "Тарис"
+culture = sinius
+religion = tolerance # sinius_pagan
+
+base_tax = 13
+base_production = 12
+base_manpower = 12
+trade_goods = iron
+
+fort_16th = yes
+grand_shipyard = yes
+town_hall = yes
+railroad_2 = yes
+traditional_factories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_kronossian_tech
+discovered_by = ellar_tech
+
+482.1.2 = { hre = no }
+500.1.1 = {
+	base_tax = 18
+	base_production = 14
+	base_manpower = 13
+	university = yes
+	traditional_factories = no
+	modernised_factories = yes
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+588.12.11 = { controller = KRN }
+589.3.21 = { controller = SIN }
+589.9.30 = { controller = KRN }
+589.11.3 = { controller = SIN }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+	capital = "Тайдарс"
+}
+#838.5.14 = {
+#	owner = EOY
+#	controller = EOY
+#	add_core = EOY
+#}
+855.1.1 = {
+	base_tax = 27
+	base_production = 25
+	base_manpower = 24
+}
+871.4.6 = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY
+}
+930.1.1 = { religion = sinius_pagan } # 2015.11.1

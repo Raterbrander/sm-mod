@@ -1,0 +1,82 @@
+owner = LMR
+controller = LMR
+add_core = LMR
+
+is_city = yes
+
+culture = lemor
+religion = animism
+capital = "Сильвена"
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = fish
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+
+427.6.10 = {
+	owner = KRN
+	controller = KRN
+	add_core = KRN
+}
+482.1.1 = { religion = tolerance }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+554.1.1 = { add_core = SIN }
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+586.1.23 = { controller = KRN }
+589.11.3 = { owner = KRN }
+591.1.1 = { capital = "Гросманд" }
+632.7.29 = { add_core = GRX }
+641.1.17 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+#117?.?.? = { controller = GLT }
+670.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+870.1.1 = {
+	discovered_by = rolevik
+	discovered_by = domin_group
+}
+957.11.1 = {
+	owner = ASM
+	controller = ASM
+	add_core = ASM
+	remove_core = LMR
+	culture = smesh_english
+	religion = protestant
+	capital = "Сильвена"
+}
+970.11.20 = { remove_core = SIN }

@@ -1,0 +1,93 @@
+owner = SNS
+controller = SNS
+add_core = SNS
+
+is_city = yes
+hre = no
+
+capital = "Реавель"
+culture = altras
+religion = tolerance
+base_tax = 6
+base_production = 6
+base_manpower = 6
+trade_goods = spices
+
+primitive_manufactories = yes
+shipyard = yes
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = middle_land_group
+discovered_by = high_domin
+discovered_by = imperial_group
+discovered_by = SHK
+
+500.1.1 = { religion = solaris_religion shipyard = no grand_shipyard = yes }
+540.10.1 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+554.5.23 = {
+	owner = SNS
+	controller = SNS
+}
+567.5.24 = {
+	owner = AL1
+	controller = AL1
+	add_core = AL1
+	remove_core = SNS
+}
+585.5.26 = { remove_core = VSK }
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = AL1
+}
+600.1.1 = { discovered_by = southern }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+800.1.1 = { religion = tolerance }
+861.6.15  = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY
+	capital = "Ренонис"
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+#2013.11.1  = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#	remove_core = LMR
+#	capital = "Реавель"
+#}
+#2013.11.17 = { owner = TFL controller = TFL add_core = TFL remove_core = BRN }
+#2013.12.8  = { owner = NIP controller = NIP add_core = NIP }
+#1228.1.10  = { owner = TFL controller = TFL remove_core = NIP }
+#1228.7.11  = { owner = SIN controller = SIN remove_core = TF1 }
+#1228.8.5   = { owner = ALR controller = ALR remove_core = SIN }
+#1228.9.1   = { religion = hiyalegama }
+#2015.9.19  = { owner = BRN controller = BRN add_core = BRN }
+#2015.9.20  = { owner = SME controller = SME add_core = SME remove_core = BRN }
+#2015.10.2  = { owner = SIN controller = SIN }

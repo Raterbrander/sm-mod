@@ -1,0 +1,72 @@
+owner = SIN
+controller = SIN
+add_core = BOL
+add_core = SIN
+
+hre = no
+is_city = yes
+
+culture = sinius
+religion = sinius_pagan
+capital = "Шарсиков город"
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = cloth
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_altras_tech
+
+477.4.18 = { remove_core = BOL }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+580.1.1 = {
+	base_tax = 2
+	base_production = 2
+	base_manpower = 3
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+587.5.11 = { controller = KRN }
+589.11.3 = { controller = SIN }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+871.6.29 = {
+	owner = LMR
+	controller = LMR
+	add_core = LMR
+	remove_core = EOY	
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+957.11.1 = {
+	owner = SIN
+	controller = SIN
+	remove_core = LMR
+}

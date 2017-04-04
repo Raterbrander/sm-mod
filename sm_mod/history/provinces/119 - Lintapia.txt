@@ -1,0 +1,62 @@
+owner = LTP
+controller = LTP
+add_core = LTP
+
+is_city = yes
+hre = no
+
+culture = smeshesfongs
+religion = totemism
+capital = "Линтапия"
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = grain
+
+discovered_by = middle_land_group
+discovered_by = SIN
+discovered_by = old_altras_tech
+
+800.1.1 = {
+	base_tax = 6
+	base_production = 5
+	fort_15th = yes
+}
+855.1.1 = {
+	religion = helgarn
+	temple = yes
+}
+865.1.1 = { add_core = EOY }
+877.7.9 = {
+	add_core = ORD
+	remove_core = EOY
+}
+886.3.20 = {
+	owner = ORD
+	controller = ORD
+}
+890.1.1 = {
+	base_tax = 4 # -2
+	base_production = 4 # -1
+}
+890.7.25 = {
+	owner = LTP
+	controller = LTP
+	remove_core = ORD
+	add_claim = ORD
+}
+897.4.6 = { add_core = SME }
+898.2.21 = { remove_core = SME }
+902.3.12 = {
+	owner = ORD
+	controller = ORD
+	add_core = ORD
+	religion = tolerance
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = ORD
+}

@@ -1,0 +1,67 @@
+owner = MSC
+controller = MSC
+add_core = NMD
+add_core = MSC
+
+is_city = yes
+hre = yes
+
+capital = "Ёлларьмель€"
+culture = mescil
+religion = miscilian_pagan
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = iron
+
+serfdom = yes
+railroad_1 = yes
+fort_15th = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+464.3.22 = {
+	owner = NMD
+	controller = NMD
+}
+465.12.27 = {
+	add_core = WMI
+	remove_core = MSC
+}
+481.2.27 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+482.1.2 = { hre = no }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+550.1.1 = {
+	religion = helgarn
+	fort_15th = yes
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+595.5.22 = {
+	owner = NMD
+	controller = NMD
+	remove_core = SIN
+}
+630.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+700.1.1 = {
+	fort_15th = no
+	fort_16th = yes
+}

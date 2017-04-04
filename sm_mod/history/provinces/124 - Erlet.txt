@@ -1,0 +1,59 @@
+owner = AML
+controller = AML
+add_core = AML
+
+is_city = yes
+hre = no
+
+culture = altras
+religion = solaris_religion 
+capital = "Επλες"
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = copper
+
+discovered_by = old_altras_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = middle_land_group
+discovered_by = high_domin
+discovered_by = imperial_group
+
+500.1.1 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+557.4.14 = {
+	owner = AML
+	controller = AML
+}
+585.5.26 = { remove_core = VSK }
+596.7.13 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+	remove_core = AML
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+680.1.1 = { discovered_by = southern }
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}

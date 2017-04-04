@@ -1,0 +1,85 @@
+owner = LMR
+controller = LMR
+add_core = LMR
+
+hre = no
+is_city = yes
+
+culture = lemor
+religion = animism
+capital = "Лихтерун"
+
+base_tax = 5
+base_production = 4
+base_manpower = 5
+trade_goods = wine
+
+fort_15th = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+
+427.6.10 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+458.12.16 = { railroad_2 = yes }
+500.1.1 = { religion = tolerance }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+587.3.24 = { controller = KRN }
+589.11.3 = { controller = SIN }
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+861.6.15 = {
+	owner = LMR
+	controller = LMR
+	remove_core = EOY
+	capital = "Лерон-де-Пари"
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+900.1.1 = {
+	base_tax = 6
+	base_production = 5
+	base_manpower = 4
+}
+930.1.1 = {
+	culture = sinius
+	religion = sinius_pagan
+} # Заселение Синими
+957.11.1 = {
+	owner = SIN
+	controller = SIN
+	capital = "Лихтерун"
+	remove_core = LMR
+} # Раздел

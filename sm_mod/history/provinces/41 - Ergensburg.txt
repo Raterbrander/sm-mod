@@ -1,0 +1,85 @@
+owner = ERG
+controller = ERG
+add_core = ERG
+
+is_city = yes
+hre = yes
+
+culture = miscilian
+religion = miscilian_pagan
+capital = "Ýðãåíñáþðõ"
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = cloth
+
+serfdom = yes
+railroad_1 = no
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+465.12.27 = {
+	owner = WMI
+	controller = WMI
+	add_core = WMI
+	remove_core = ERG
+}
+481.2.24 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+482.1.2 = { hre = no }
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+# ô Ø ¦Ô Þ Ó·ã¤·Ð·Þ Ô¨ÆÖåÖáÖ¨ ëá¨ÒÞ ëµÖ¦·Ð  ë ãÖãå ë ¬¨á¤Ö¬ãåë , Ö¦Ô ÆÖ ¢ñÐ  ó ëÖ„ë Ô  ä·Ô·Ò· · ØáÖ¢ñÐ  å Ò ¦Ö ÕÖëÖ¬Ö¦Ô¨¬Ö á ó¦¨Ð 
+556.1.1 = {
+	culture = mescil
+	religion = helgarn
+}
+630.1.1 = {
+	railroad_1 = no
+	railroad_2 = yes
+}
+650.3.20 = { controller = EOY }
+658.9.6 = {
+	owner = EOY
+	add_core = EOY
+	remove_core = GRX
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+920.9.7 = {
+	owner = SIN
+	controller = SIN
+	remove_core = EOY
+}
+970.11.20 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = SIN
+}

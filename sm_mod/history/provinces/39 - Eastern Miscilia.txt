@@ -1,0 +1,126 @@
+owner = MSC
+controller = MSC
+add_core = MSC
+
+is_city = yes
+hre = yes
+
+culture = miscilian
+religion = miscilian_pagan
+capital = "Вергурт"
+base_tax = 6
+base_production = 6
+base_manpower = 4
+trade_goods = grain
+
+primitive_manufactories = yes
+temple = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+
+462.2.20 = {
+	revolt = {
+		type = pretender_rebels
+		size = 2
+	}
+	controller = REB
+}
+462.4.5 = {
+	revolt = { }
+	controller = ANV
+}
+462.9.14 = {
+	revolt = {
+		type = pretender_rebels
+		size = 2
+	}
+	controller = REB
+}
+463.7.8 = {
+	revolt = { }
+	controller = ANV
+}
+463.10.18 = {
+	revolt = {
+		type = pretender_rebels
+		leader = "Ферран Дольмитис"
+		size = 2
+	}
+	controller = REB
+}
+464.1.1 = { # Разорение
+	base_tax = 4
+	base_production = 4
+}
+464.3.17 = {
+	revolt = { }
+	controller = SDB
+}
+464.7.18 = {
+	revolt = {
+		type = pretender_rebels
+		size = 2
+	}
+	controller = REB
+}
+465.9.23 = {
+	revolt = { }
+	controller = SDB
+}
+465.12.27 = {
+	owner = EMI
+	controller = EMI
+	add_core = EMI
+}
+481.2.24 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+527.5.22 = {
+	owner = EMI
+	controller = EMI
+}
+550.1.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 5
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ANV
+}
+595.5.22 = { remove_core = SIN }
+#599.3.24 = {
+#	owner = ANV
+#	controller = ANV
+#	add_core = ANV
+#	remove_core = EMI
+#}
+# Присоединение к Безантокцу - неизвестно.
+705.1.1 = {
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+}
+555.1.1 = { religion = helgarn }
+580.1.1 = { culture = mescil }
+890.1.1 = {
+	base_tax = 7
+	base_manpower = 5
+	traditional_factories = no
+	modernised_factories = yes
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

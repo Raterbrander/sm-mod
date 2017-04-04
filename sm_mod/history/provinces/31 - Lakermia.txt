@@ -1,0 +1,67 @@
+owner = LKM
+controller = LKM
+add_core = LKM
+add_core = BZN
+
+is_city = yes
+hre = yes
+
+culture = bezantokian
+religion = miscilian_pagan
+capital = "Ларкерм"
+trade_goods = fish
+base_tax = 5
+base_production = 6
+base_manpower = 4
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = old_kronossian_tech
+discovered_by = old_altras_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+
+488.3.10 = {
+	owner = SIN
+	controller = SIN
+	add_core = SIN
+}
+549.4.6 = {
+	owner = VSK
+	controller = VSK
+	add_core = VSK
+}
+585.5.26 = {
+	owner = SIN
+	controller = SIN
+	remove_core = VSK
+}
+632.7.29 = {
+	owner = GRX
+	controller = GRX
+	add_core = GRX
+}
+658.9.6 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = GRX
+	remove_core = SIN
+}
+874.6.23 = {
+	owner = KRO
+	controller = KRO
+	add_core = KRO
+	remove_core = EOY
+	remove_core = BZN
+	culture = smesh_english
+	religion = protestant
+}
+900.1.1 = {
+	owner = ASM
+	controller = ASM
+	add_core = ASM
+	remove_core = KRO
+}
