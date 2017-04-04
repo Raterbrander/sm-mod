@@ -1,0 +1,42 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = "Полевое"
+culture = chaepit
+religion = orthodox
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+discovered_by = southern
+discovered_by = rolevik
+
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+680.1.1 = { discovered_by = old_altras_tech }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}

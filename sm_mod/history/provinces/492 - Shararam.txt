@@ -1,0 +1,7 @@
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = rolevik
+discovered_by = high_domin
+discovered_by = southern
+discovered_by = imperial_group

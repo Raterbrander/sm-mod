@@ -1,0 +1,58 @@
+owner = YAL
+controller = YAL
+add_core = YAL
+
+is_city = yes
+hre = no
+
+capital = "Марсунбийяльярзец"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = cloth
+base_tax = 2
+base_production = 2
+base_manpower = 3
+
+discovered_by = old_zmooromfian
+discovered_by = BAK
+
+458.1.1 = {
+	revolt = {
+		type = pretender_rebels
+		size = 2
+	}
+	controller = REB
+}
+460.5.5 = { revolt = { } controller = ZMR }
+463.9.3 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = YAL
+}
+500.1.1 = {
+	discovered_by = continental
+	discovered_by = amian
+	discovered_by = ellar_tech
+}
+578.6.22 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+#2013.6.25 = {
+#	revolt = {
+#		type = nationalist_rebels
+#	}
+#	controller = REB
+#}
+#2013.6.29 = {
+#	revolt = { }
+#	controller = EOY
+#}
+#2014.5.1 = { religion = helgarn }

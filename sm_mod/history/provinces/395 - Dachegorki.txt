@@ -1,0 +1,58 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+capital = "Дачегорки"
+culture = spomi
+religion = old_shamanism
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = southern
+
+463.4.16 = { controller = ADN }
+472.4.25 = { owner = ADN }
+476.5.2 = { controller = CHT }
+476.5.10 = { owner = CHT }
+550.1.1 = {
+	culture = chaepit
+	religion = orthodox
+}
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+1230.7.3 = {
+	owner = CH2
+	controller = CH2
+	remove_core = SME
+}
+1240.7.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = CH2
+}
+1285.1.1 = {
+	culture = eurasian
+	religion = imperial_faith
+	base_manpower = 2
+}

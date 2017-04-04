@@ -1,0 +1,51 @@
+owner = TED
+controller = TED
+add_core = TED
+
+is_city = yes
+
+capital = "Керъамандапана"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = slaves
+base_tax = 6
+base_production = 5
+base_manpower = 6
+
+fort_15th = yes
+
+discovered_by = old_zmooromfian
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+
+464.6.3 = { controller = ZMR }
+465.4.4 = {
+	owner = ZMR
+	add_core = ZMR
+}
+571.4.7 = {
+	owner = TED
+	controller = TED
+}
+580.1.1 = {
+	culture = arvabian # yellow
+	religion = helgarn
+	remove_core = ZMR
+}
+582.5.19 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = TED
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	fort_15th = no
+	base_manpower = 5
+}

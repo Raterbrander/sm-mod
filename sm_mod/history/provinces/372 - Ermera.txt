@@ -1,0 +1,61 @@
+owner = ERM
+controller = ERM
+add_core = ERM
+
+is_city = yes
+hre = yes
+
+capital = "Ёрмера" # Ёрмер
+culture = yellow
+religion = yutonsenit
+trade_goods = naval_supplies
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+shipyard = yes
+courthouse = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+482.1.2 = { hre = no }
+542.1.1 = { religion = helgarn }
+571.11.24 = { add_core = SMF }
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = ERM
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+680.1.1 = {
+	base_tax = 5
+	base_production = 5
+	base_manpower = 5
+	shipyard = no
+	grand_shipyard = yes
+}
+#2013.6.20 = {
+#	revolt = {
+#		name = "Ёрмерское  оммунистическое правительство"
+#		type = communist_rebels
+#		size = 2
+#		leader = "Ћюциус ÷ейнгаллан"
+#	}
+#	controller = REB
+#}
+#2013.6.28 = {
+#	revolt = { }
+#	controller = EOY
+#}

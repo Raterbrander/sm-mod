@@ -1,0 +1,28 @@
+capital = "Олсуз"
+culture = old_taifalian
+religion = old_shamanism
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 1
+native_ferocity = 0
+native_hostileness = 1
+trade_goods = unknown
+hre = no
+discovered_by = taifalian
+
+1171.8.24 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	trade_goods = fish
+	discovered_by = continental
+	discovered_by = imperial_group
+	discovered_by = high_domin
+}
+1450.1.1 = {
+	religion = helgarn
+	discovered_by = amian
+	discovered_by = ellar_tech
+	discovered_by = southern
+}

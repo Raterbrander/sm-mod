@@ -1,0 +1,63 @@
+owner = ADN
+controller = ADN
+add_core = LAV
+add_core = ADN
+
+is_city = yes
+hre = no
+
+capital = "Лавридский город"
+culture = ardenian
+religion = solaris_religion
+trade_goods = wine
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+discovered_by = southern
+
+470.1.1 = { railroad_1 = yes }
+472.5.7 = {
+	owner = LAV
+	controller = LAV
+}
+484.3.27 = { controller = CHT }
+485.1.10 = {
+	owner = CHT
+	add_core = CHT
+	remove_core = ADN
+	remove_core = LAV
+	base_tax = 3
+	base_production = 2
+}
+580.1.1 = {
+	culture = chaepit
+	religion = orthodox
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+680.1.1 = { discovered_by = old_altras_tech }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+900.1.1 = {
+	base_tax = 2
+	base_production = 1
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+1550.1.1 = { capital = "Лавридополь" }

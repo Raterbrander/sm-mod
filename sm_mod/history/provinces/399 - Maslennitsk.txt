@@ -1,0 +1,61 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = "Масленницк"
+culture = chaepit
+religion = orthodox
+trade_goods = grain
+base_tax = 4
+base_production = 3
+base_manpower = 4
+
+railroad_1 = yes
+
+seat_in_parliament = yes
+
+discovered_by = southern
+
+981.6.2 = { controller = SHK }
+483.12.18 = { controller = CHT }
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+680.1.1 = { discovered_by = old_altras_tech }
+702.1.29 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	seat_in_parliament = no
+}
+716.11.27 = {
+	owner = CHT
+	controller = CHT
+	remove_core = EOY
+	add_claim = EOY
+	seat_in_parliament = yes
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	seat_in_parliament = no
+}

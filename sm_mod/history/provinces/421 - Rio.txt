@@ -1,0 +1,90 @@
+native_size = 54
+native_ferocity = 4
+native_hostileness = 4
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Рио"
+ 
+base_tax = 6
+base_production = 5
+base_manpower = 6
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+discovered_by = high_domin
+discovered_by = imperial_group
+
+700.1.1 = {
+	owner = BLU
+	controller = BLU
+	add_core = BLU
+	is_city = yes
+	culture = bs_culture
+	base_tax = 10
+	base_production = 9
+	base_manpower = 10
+	trade_goods = fish
+	fort_16th = yes
+	grand_shipyard = yes
+	conscription_center = yes
+}
+781.2.23 = { add_core = CH2 }
+1000.1.1 = {
+	owner = CH2
+	controller = CH2
+}
+#2014.8.14 = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#	capital = "Комучбург"
+#}
+#2014.9.21 = {
+#	owner = SME
+#	add_core = SME
+#}
+#2014.10.1 = {
+#	controller = SME
+#	remove_core = BRN
+#	capital = "Имперск"
+#}
+#2014.10.15 = {
+#	culture = smesh_imp
+#	religion = imperial_faith
+	#remove_core = BLU
+#}
+#2014.11.19 = {
+#	owner = HTI
+#	controller = HTI
+#	add_core = HTI
+#	remove_core = SME
+#}
+#2014.12.1 = {
+#	culture = bs_culture
+#	religion = tolerance
+	#add_core = BLU
+#}
+#2014.12.16 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#	remove_core = HTI
+#}
+#2014.12.27 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 4
+#	}
+#	controller = REB 
+#}
+#2014.12.28 = {
+#	revolt = { }
+#	controller = SME
+#}
+#2015.3.1 = { culture = smesh_imp }

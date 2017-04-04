@@ -1,0 +1,52 @@
+owner = TED
+controller = TED
+add_core = TED
+
+hre = yes
+is_city = yes
+
+culture = yellow # amian
+religion = ameism
+capital = "Элапейриенов город"
+trade_goods = copper
+
+base_tax = 4
+base_production = 3
+base_manpower = 6
+
+fort_15th = yes
+temple = yes
+conscription_center = yes
+training_fields = yes
+#university = yes
+weapons = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+discovered_by = imperial_group
+discovered_by = high_domin
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = elder_city_modifier
+		duration = -1
+	}
+}
+
+464.10.23 = { controller = ZMR }
+465.4.4 = { controller = TED }
+482.1.2 = { hre = no }
+582.5.19 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = TED
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

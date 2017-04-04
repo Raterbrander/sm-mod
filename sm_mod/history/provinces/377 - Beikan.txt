@@ -1,0 +1,91 @@
+owner = BKN
+controller = BKN
+add_core = BKN
+
+is_city = yes
+hre = yes
+
+capital = "Беикан"
+culture = yellow
+religion = ellar_pagan
+trade_goods = wine
+base_tax = 3
+base_production = 2
+base_manpower = 2
+
+shipyard = yes
+courthouse = yes
+temple = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = imperial_group
+discovered_by = high_domin
+discovered_by = old_zmooromfian
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = gervein_union_city
+		duration = -1
+	}
+}
+
+# 476.1.27 - выход из Гервейна
+477.6.21 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+}
+478.10.16 = { add_core = GRV }
+482.1.2 = { hre = no }
+482.6.4 = {
+	remove_core = GRV
+	remove_province_modifier = gervein_union_city
+}
+500.1.1 = { primitive_manufactories = yes }
+541.7.1 = { religion = helgarn }
+555.1.1 = {
+	railroad_2 = yes
+	road_2 = yes
+}
+556.4.18 = {
+	owner = BKN
+	controller = BKN
+}
+566.3.11 = { remove_core = ZMR }
+560.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+	primitive_manufactories = no
+	traditional_factories = yes
+}
+576.4.6 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = BKN
+}
+590.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+#2013.6.20 = {
+#	revolt = {
+#		name = "Эрмерское Коммунистическое правительство"
+#		type = communist_rebels
+#		size = 1
+#		leader = "Алоциус Сергжад"
+#	}
+#	controller = REB
+#}
+#2013.6.27 = {
+#	revolt = { }
+#	controller = EOY
+#}

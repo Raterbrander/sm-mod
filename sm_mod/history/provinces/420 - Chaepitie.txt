@@ -1,0 +1,95 @@
+owner = NGR
+controller = NGR
+add_core = NGR
+add_core = NHN
+
+is_city = yes
+hre = no
+
+capital = "Чаепитие"
+culture = chaepitian
+religion = chaecan
+trade_goods = tea
+base_tax = 18
+base_production = 17
+base_manpower = 11
+
+fort_16th = yes
+cathedral = yes
+university = yes
+grand_shipyard = yes
+traditional_factories = yes
+town_hall = yes
+
+tradecompany = yes
+
+discovered_by = rolevik
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = high_domin
+discovered_by = imperial_group
+discovered_by = middle_land_group
+discovered_by = CHT
+
+100.1.1 = {
+	add_permanent_province_modifier = {
+		name = center_of_trade_modifier
+		duration = -1
+	}
+	add_permanent_province_modifier = {
+		name = elder_city_modifier
+		duration = -1
+	}
+	add_permanent_province_modifier = {
+		name = ruined_role
+		duration = -1
+	}
+}
+
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+	remove_core = NGR
+	base_tax = 22
+	base_production = 22
+	base_manpower = 18
+	remove_province_modifier = ruined_role
+}
+#2014.8.14 = {
+#	owner = SLV
+#	controller = SLV
+#	add_core = SLV
+#}
+#2014.11.17 = {
+#	owner = AFE
+#	controller = AFE
+#	add_core = AFE
+#	remove_core = SLV
+#}
+#2014.11.19 = {
+#	owner = EOY
+#	controller = EOY
+#	add_core = EOY
+#	remove_core = AFE
+#}
+#2014.12.1 = {
+#	add_local_autonomy = 45
+#}
+#2014.12.27 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 2
+#	}
+#	controller = REB 
+#}
+#2014.12.28 = {
+#	revolt = { }
+#	controller = EOY
+#}
+#2015.1.1 = {
+#	base_tax = 24
+#	base_manpower = 22
+#}
+	

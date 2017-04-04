@@ -1,0 +1,48 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+
+capital = "Смешпровск"
+culture = spomi
+religion = old_shamanism
+trade_goods = grain
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+discovered_by = southern
+discovered_by = SHK
+
+463.6.6 = { controller = ADN }
+472.3.21 = { owner = ADN }
+476.5.10 = { owner = CHT controller = CHT }
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+#2014.2.1 = {
+#	owner = EOY # Вообще-то ЧОЗС
+#	controller = EOY
+#	add_core = EOY
+#}
+#2014.7.1 = {
+#	base_manpower = 6
+#}

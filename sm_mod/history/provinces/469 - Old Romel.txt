@@ -1,0 +1,62 @@
+native_size = 47
+native_ferocity = 4
+native_hostileness = 4
+
+hre = no
+is_city = no
+
+capital = "Старый Ромель"
+culture = rolevik_culture
+religion = tolerance
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = unknown
+
+800.1.1 = {
+	culture = brintenian
+	religion = protestant
+	base_tax = 6
+	base_production = 6
+	base_manpower = 6
+}
+855.6.10 = {
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+	is_city = yes
+	base_tax = 8
+	base_production = 7
+	base_manpower = 8
+	trade_goods = grain
+	fort_16th = yes
+}
+883.1.1 = { # Разрушение в ходе войн
+	base_tax = 5
+	base_production = 4
+	base_manpower = 5
+	fort_16th = no
+}
+898.8.10 = {
+	owner = BRN
+	controller = BRN
+	add_core = BRN
+	remove_core = SRE
+}
+900.1.12 = { # Распад
+	owner = SME
+	controller = SME
+	add_core = SME
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+}
+950.1.1 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 3
+	culture = smesh_imp
+	religion = imperial_faith
+	remove_core = BRN
+} # Потери от войн с СИ и геноцидов

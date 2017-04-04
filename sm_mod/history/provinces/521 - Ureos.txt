@@ -1,0 +1,60 @@
+native_size = 16
+native_ferocity = 6
+native_hostileness = 8
+
+hre = yes
+is_city = no
+
+culture = central_lands_culture
+religion = central_land_paganism
+capital = "Уреос"
+ 
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = iron
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = imperial_group
+discovered_by = SMF
+discovered_by = middle_land_group
+
+458.1.1 = {
+	is_city = yes
+	owner = MRT
+	controller = MRT
+	add_core = MRT
+	culture = smesh_russian
+	religion = orthodox
+	capital = "Старый Белиус"
+}
+482.1.1 = {
+	owner = XXX
+	controller = XXX
+	remove_core = MRT
+	is_city = no
+	culture = central_lands_culture
+	religion = central_land_paganism
+	capital = "Уреос"
+}
+482.1.2 = { hre = no }
+876.1.1 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+	is_city = yes
+}
+890.1.1 = {
+	base_tax = 8
+	base_production = 8
+	base_manpower = 10
+	culture = smesh_imp
+	religion = imperial_faith
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}

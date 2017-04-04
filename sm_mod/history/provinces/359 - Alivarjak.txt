@@ -1,0 +1,45 @@
+owner = ALI
+controller = ALI
+add_core = ALI
+
+is_city = yes
+hre = no
+
+capital = "Альяивайрикаджа"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = cloth # copper
+base_tax = 5
+base_production = 4
+base_manpower = 4
+
+fort_15th = yes
+courthouse = yes
+temple = yes
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = old_zmooromfian
+
+471.6.4 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+	remove_core = ALI
+}
+595.5.27 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+}
+#2013.6.25 = {
+#	revolt = {
+#		type = nationalist_rebels
+#	}
+#	controller = REB
+#}
+#2013.6.30 = {
+#	revolt =  { }
+#	controller = EOY
+#}

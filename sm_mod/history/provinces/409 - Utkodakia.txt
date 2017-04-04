@@ -1,0 +1,49 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+is_city = yes
+capital = "Утинск-на-Смешпре"
+culture = utenian
+religion = tolerance
+trade_goods = fish
+base_tax = 5
+base_production = 4
+base_manpower = 5
+
+seat_in_parliament = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+
+#458.1.1 = { add_claim = UTN }
+460.11.13 = { controller = SHK }
+484.1.4 = { controller = CHT }
+720.10.1 = {
+	base_tax = 4
+	base_production = 3
+	base_manpower = 4
+} # Вытеснение утенийцев
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+900.1.1 = { base_tax = 3 base_production = 2 base_manpower = 3 }
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	seat_in_parliament = no
+}
+1230.7.3 = {
+	owner = CH2
+	controller = CH2
+	remove_core = SME
+}
+1240.7.7 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+}
+1870.6.2 = { capital = "Смерпорт-Утенгарт" }

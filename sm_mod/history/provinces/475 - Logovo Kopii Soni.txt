@@ -1,0 +1,77 @@
+native_size = 32
+native_ferocity = 3
+native_hostileness = 3
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Логово Копии Сони"
+
+base_tax = 2
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+
+450.1.1 = {
+	owner = BLU
+	controller = BLU
+	add_core = BLU
+	is_city = yes
+	base_tax = 3
+	base_production = 3
+	base_manpower = 4
+	trade_goods = iron
+}	
+630.1.1 = {
+	owner = SUM
+	controller = SUM
+	add_core = SUM
+	traditional_factories = yes
+	conscription_center = yes
+	culture = malishian
+	base_tax = 4
+	base_production = 4
+	base_manpower = 5
+}
+650.1.1 = {
+	owner = XXX
+	controller = XXX
+	remove_core = SUM
+	is_city = no
+	base_production = 3
+	base_manpower = 3
+	conscription_center = no
+	traditional_factories = no
+	culture = rolevik_culture
+}
+863.1.1 = {
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+	is_city = yes
+}
+882.7.18 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+	remove_core = SRE
+	culture = smesh_imp
+	religion = orakul
+	capital = "Град Оракула"
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}
+950.1.1 = {
+	capital = "Пречистый"
+	religion = imperial_faith
+}

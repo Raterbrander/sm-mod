@@ -1,0 +1,50 @@
+owner = TCH
+controller = TCH
+add_core = TCH
+
+is_city = yes
+hre = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Вестлот"
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = iron
+
+fort_15th = yes
+traditional_factories = yes
+weapons = yes
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+
+580.1.1 = { discovered_by = continental }
+634.1.1 = {
+	owner = NGR
+	controller = NGR
+	add_core = NGR
+}
+680.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+	modernised_factories = no
+	robotic_production = yes
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

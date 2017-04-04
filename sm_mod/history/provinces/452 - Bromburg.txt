@@ -1,0 +1,41 @@
+owner = NHN
+controller = NHN
+add_core = NHN
+add_core = NGR
+
+is_city = yes
+
+capital = "Бромбург"
+culture = rolevik_culture
+religion = tolerance
+
+trade_goods = naval_supplies
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+traditional_factories = yes
+
+discovered_by = high_domin
+discovered_by = imperial_group
+discovered_by = NGR
+discovered_by = TCH
+discovered_by = NHN
+discovered_by = rolevik
+
+473.1.1 = {
+	owner = NHN
+	controller = NHN
+	add_core = NHN
+}
+750.1.1 = { culture = brintenian }
+850.1.1 = { # Удаление форума
+	owner = XXX
+	controller = XXX
+	remove_core = NHN
+	remove_core = NGR
+	is_city = no
+	native_size = 51
+	native_ferocity = 1
+	native_hostileness = 6
+}

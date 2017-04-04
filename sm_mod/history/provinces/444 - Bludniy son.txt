@@ -1,0 +1,94 @@
+owner = BLU
+controller = BLU
+add_core = BLU
+
+hre = no
+is_city = yes
+
+culture = bs_culture
+religion = tolerance
+capital = "Блудный сон"
+ 
+base_tax = 16
+base_production = 15
+base_manpower = 16
+trade_goods = gold
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+discovered_by = high_domin
+discovered_by = imperial_group
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = elder_city_modifier
+		duration = -1
+	}
+}
+
+361.1.1 = {
+	owner = XXX
+	controller = XXX
+	is_city = no
+	native_size = 54
+	native_ferocity = 4
+	native_hostileness = 4
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+	add_permanent_province_modifier = {
+		name = ruined_role
+		duration = -1
+	}
+}
+781.2.23 = { add_core = CH2 }
+#2014.8.14 = {
+#	owner = BRN
+#	controller = BRN
+#	add_core = BRN
+#	capital = "Комучбург"
+#}
+#2014.9.21 = {
+#	owner = SME
+#	add_core = SME
+#}
+#2014.10.1 = {
+#	controller = SME
+#	remove_core = BRN
+#	capital = "Имперск"
+#}
+#2014.10.15 = {
+#	culture = smesh_imp
+#	religion = imperial_faith
+	#remove_core = BLU
+#}
+#2014.11.19 = {
+#	owner = HTI
+#	controller = HTI
+#	add_core = HTI
+#	remove_core = SME
+#}
+#2014.12.1 = {
+#	culture = bs_culture
+#	religion = tolerance
+	#add_core = BLU
+#}
+#2014.12.16 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#	remove_core = HTI
+#}
+#2014.12.27 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 4
+#	}
+#	controller = REB 
+#}
+#2014.12.28 = {
+#	revolt = { }
+#	controller = SME
+#}
+#2015.3.1 = { culture = smesh_imp }

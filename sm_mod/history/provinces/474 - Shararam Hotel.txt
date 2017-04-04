@@ -1,0 +1,86 @@
+native_size = 32
+native_ferocity = 3
+native_hostileness = 3
+
+hre = no
+is_city = no
+
+culture = hotelian
+religion = tolerance
+capital = "Отель Шарарам"
+
+base_tax = 3
+base_production = 2
+base_manpower = 2
+trade_goods = unknown
+
+discovered_by = rolevik
+
+632.8.2 = { # Элларский протекторат
+	owner = TND
+	controller = TND
+	add_core = TND
+	add_core = EOY
+}
+633.1.1 = {
+	sm_rgo = yes
+	traditional_factories = yes
+	revolt = {
+		type = anti_tax_rebels
+		size = 2
+		name = "Хунта Трёны"
+		leader = "Трёна"
+	}
+	controller = REB
+}
+635.1.1 = {
+	add_core = NHN
+	add_core = SUM
+}
+650.1.1 = {
+	remove_core = NHN
+	remove_core = SUM
+}
+766.1.1 = {
+	revolt = { }
+	controller = TND
+}
+787.5.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = TND
+}
+800.1.1 = {
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+}
+850.5.31 = {
+	owner = XXX
+	controller = XXX
+	remove_core = EOY
+	is_city = no
+	base_tax = 3
+	base_production = 2
+	base_manpower = 2
+	sm_rgo = no
+	traditional_factories = no
+}
+866.1.1 = {
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+	is_city = yes
+	capital = "Шерарер"
+	culture = brintenian
+	religion = protestant
+}
+900.1.12 = { # Распад
+	owner = SME
+	controller = SME
+	add_core = SME
+	culture = smesh_imp
+	religion = orakul
+}
+935.1.1 = { religion = imperial_faith }

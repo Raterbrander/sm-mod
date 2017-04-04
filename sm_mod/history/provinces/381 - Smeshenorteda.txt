@@ -1,0 +1,49 @@
+owner = SHK
+controller = SHK
+add_core = SHK
+
+is_city = yes
+hre = no
+
+culture = smeshiks
+religion = tolerance
+base_tax = 4
+base_production = 4
+trade_goods = fish
+base_manpower = 3
+capital = "Смешенортеда"
+
+railroad_1 = yes
+
+discovered_by = southern
+discovered_by = old_altras_tech
+
+484.8.24 = { controller = CHT }
+485.1.10 = { owner = CHT }
+570.1.1 = {
+	culture = altras
+	religion = solaris_religion
+	capital = "Нартайд"
+	base_manpower = 4
+	remove_core = SHK
+} # Заселение Альтрасами
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+680.1.1 = { add_core = CHT }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

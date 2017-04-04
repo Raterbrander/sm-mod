@@ -1,0 +1,44 @@
+owner = YAL
+controller = YAL
+add_core = YAL
+add_core = TED
+
+is_city = yes
+hre = no
+
+capital = "Меолербазсъесанъета"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = cloth # fish
+base_tax = 5
+base_production = 4
+base_manpower = 5
+
+discovered_by = old_zmooromfian
+discovered_by = ellar_tech
+discovered_by = SMF
+
+463.7.10 = { controller = ZMR }
+463.9.3 = {
+	owner = ZMR
+	add_core = ZMR
+	remove_core = YAL
+}
+571.4.7 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+1000.1.1 = { religion = helgarn }

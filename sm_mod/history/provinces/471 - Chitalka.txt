@@ -1,0 +1,38 @@
+native_size = 27
+native_ferocity = 3
+native_hostileness = 3
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Читалка"
+ 
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = NGR
+discovered_by = NHN
+
+860.1.1 = {
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+	trade_goods = oil
+}
+882.7.18 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+	remove_core = SRE
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}

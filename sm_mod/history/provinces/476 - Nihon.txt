@@ -1,0 +1,51 @@
+owner = NHN
+controller = NHN
+add_core = NHN
+
+is_city = yes
+hre = no
+
+culture = role_nipponian
+religion = tolerance
+base_tax = 11
+base_production = 12
+trade_goods = iron
+base_manpower = 11
+capital = "Канцерон"
+
+fort_16th = yes
+traditional_factories = yes
+railroad_2 = yes
+spaceport = yes
+
+weapons = yes
+
+discovered_by = rolevik
+discovered_by = continental
+
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+862.5.26 = { # 855.6.10 обр.
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+}
+882.7.18 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}

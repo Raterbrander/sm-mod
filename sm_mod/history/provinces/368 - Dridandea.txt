@@ -1,0 +1,60 @@
+owner = TED
+controller = TED
+add_core = TED
+
+is_city = yes
+
+capital = "Вильтенс"
+culture = arvabian
+religion = astransenit
+trade_goods = fur
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+discovered_by = old_zmooromfian
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+
+458.1.1 = { add_claim = BGT }
+458.5.3 = { controller = BGT }
+458.11.28 = {
+	owner = BGT
+	add_core = BGT
+}
+458.12.1 = {
+	owner = ARV
+	controller = ARV
+	add_core = ARV
+	remove_core = BGT
+}
+468.7.12 = { controller = ZMR }
+469.9.28 = {
+	owner = ZMR
+	add_core = ZMR
+}
+551.1.1 = { religion = helgarn }
+571.4.7 = {
+	owner = TED
+	controller = TED
+	remove_core = ZMR
+}
+582.5.19 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = TED
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+870.1.1 = {
+	discovered_by = high_domin
+	discovered_by = domin_group
+	discovered_by = southern
+	discovered_by = rolevik
+}

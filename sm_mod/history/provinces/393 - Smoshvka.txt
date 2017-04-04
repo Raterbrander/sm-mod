@@ -1,0 +1,48 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+
+capital = "Смошква"
+culture = chaepit
+religion = orthodox
+trade_goods = fur
+base_tax = 4
+base_production = 3
+base_manpower = 5
+is_city = yes
+
+railroad_1 = yes
+
+seat_in_parliament = yes
+
+discovered_by = southern
+discovered_by = SHK
+
+472.11.9 = { controller = SHK }
+476.2.11 = { controller = CHT }
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+900.1.1 = {
+	base_tax = 2
+	base_production = 2
+	base_manpower = 3
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	seat_in_parliament = no
+}

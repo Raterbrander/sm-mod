@@ -1,0 +1,86 @@
+# Чаепит
+
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = "Нейтгаг"
+culture = chaepit
+religion = tolerance
+trade_goods = tea
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+seat_in_parliament = yes
+
+fort_15th = yes
+
+discovered_by = southern
+discovered_by = rolevik
+
+337.1.1 = {
+	capital = "Чай-бум"
+	base_tax = 8
+	base_production = 8
+	base_manpower = 8
+	fort_15th = no
+	fort_16th = yes
+	town_hall = yes
+	railroad_1 = yes
+}
+340.6.16 = { capital = "Чаепит" }
+436.1.1 = {
+	base_tax = 9
+	base_production = 9
+	base_manpower = 9
+	traditional_factories = yes
+}
+472.12.6 = { controller = SHK }
+475.5.10 = { controller = CHT }
+565.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+580.1.1 = {
+	base_tax = 12
+	base_production = 9
+	base_manpower = 10
+}
+680.1.1 = { discovered_by = old_altras_tech }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+800.1.1 = {
+	traditional_factories = no
+	modernised_factories = yes
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+	modernised_factories = no
+	robotic_production = yes
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+900.1.1 = {
+	base_tax = 8
+	base_production = 7
+	base_manpower = 6
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	seat_in_parliament = no
+	robotic_production = no
+}
+1100.1.1 = { traditional_factories = yes }

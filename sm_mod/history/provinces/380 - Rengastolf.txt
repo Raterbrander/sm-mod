@@ -1,0 +1,55 @@
+owner = SHK
+controller = SHK
+add_core = SHK
+
+is_city = yes
+hre = no
+
+culture = smeshiks
+religion = tolerance
+base_tax = 5
+base_production = 5
+trade_goods = iron
+base_manpower = 5
+capital = "Михельтаун"
+
+railroad_1 = yes
+
+discovered_by = southern
+discovered_by = old_altras_tech
+
+484.9.2 = {
+	controller = CHT
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
+} # Разрушения после войн
+485.1.10 = { owner = CHT }
+570.1.1 = {
+	culture = altras
+	religion = solaris_religion
+	capital = "Ренгастольф"
+	base_production = 3
+	base_manpower = 5
+} # Заселение Альтрасами
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+680.1.1 = { add_core = CHT }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	fort_15th = yes
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

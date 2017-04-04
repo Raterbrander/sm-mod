@@ -1,0 +1,37 @@
+owner = ALI
+controller = ALI
+add_core = ALI
+
+is_city = yes
+hre = no
+
+capital = "Себренайи"
+culture = zmooromfian
+religion = old_shamanism
+trade_goods = fish
+base_tax = 3
+base_production = 2
+base_manpower = 2
+
+discovered_by = ellar_tech
+discovered_by = continental
+discovered_by = amian
+discovered_by = old_zmooromfian
+
+471.6.4 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+	remove_core = ALI
+}
+578.6.22 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

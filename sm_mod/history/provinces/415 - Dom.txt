@@ -1,0 +1,65 @@
+native_size = 12
+native_ferocity = 5
+native_hostileness = 6
+
+#add_core = DM1
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Дом"
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = southern
+discovered_by = old_altras_tech
+
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+	is_city = yes
+} # Присоединение к СРЧ
+800.1.1 = {
+	base_tax = 11
+	base_production = 10
+	base_manpower = 12
+	fort_16th = yes
+	town_hall = yes
+	trade_goods = cloth
+}
+#2013.5.31 = { remove_core = DM1 }
+1024.2.7  = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+#2014.11.19 = {
+#	owner = CH2
+#	controller = CH2
+#	remove_core = SME
+#}
+#2014.11.25 = { regimental_camp = yes }
+#2014.12.17 = {
+#	owner = SME
+#	controller = SME
+#	add_core = SME
+#	remove_core = CH2
+#}
+#2014.12.27 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 4
+#	}
+#	controller = REB
+#}
+#2014.12.28 = {
+#	revolt = {}
+#	controller = SME
+#}

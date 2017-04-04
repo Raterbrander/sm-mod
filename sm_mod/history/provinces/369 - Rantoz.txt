@@ -1,0 +1,68 @@
+owner = RTZ
+controller = RTZ
+add_core = RTZ
+#add_core = TED
+
+is_city = yes
+hre = yes
+
+culture = arvabian
+religion = astransenit
+capital = "Рантозс"
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = iron
+
+fort_15th = yes
+temple = yes
+
+discovered_by = old_zmooromfian
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+
+458.1.1 = { controller = BGT }
+458.11.28 = {
+	owner = BGT
+	add_core = BGT
+}
+458.12.1 = {
+	owner = ARV
+	controller = ARV
+	add_core = ARV
+	remove_core = BGT
+}
+462.4.16 = {
+	owner = RTZ
+	controller = RTZ
+}
+#465.4.4 = { remove_core = TED }
+468.8.17 = { controller = ZMR }
+468.10.3 = { controller = RTZ }
+473.6.16 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+	remove_core = RTZ
+}
+482.1.2 = { hre = no }
+550.1.1 = { religion = helgarn }
+571.4.7 = {
+	owner = SMF
+	controller = SMF
+	add_core = SMF
+	remove_core = ZMR
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = SMF
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}

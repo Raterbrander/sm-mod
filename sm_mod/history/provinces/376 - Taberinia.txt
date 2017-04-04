@@ -1,0 +1,55 @@
+owner = TBR
+controller = TBR
+add_core = TBR
+
+is_city = yes
+hre = yes
+
+capital = "Инельсия"
+culture = yellow
+religion = astransenit # ellar_pagan
+
+trade_goods = luxury_goods
+base_tax = 6
+base_production = 5
+base_manpower = 4
+
+temple = yes
+primitive_manufactories = yes
+
+discovered_by = continental
+discovered_by = amian
+discovered_by = ellar_tech
+discovered_by = old_zmooromfian
+discovered_by = high_domin
+discovered_by = imperial_group
+
+482.1.2 = { hre = no }
+496.10.23 = {
+	owner = ZMR
+	controller = ZMR
+	add_core = ZMR
+}
+544.1.1 = { religion = helgarn }
+560.2.16 = { remove_core = ZMR }
+566.3.11 = {
+	owner = TBR
+	controller = TBR
+}
+576.4.8 = {
+	owner = ELL
+	controller = ELL
+	add_core = ELL
+	remove_core = TBR
+}
+594.2.12 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = ELL
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

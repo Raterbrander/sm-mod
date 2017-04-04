@@ -1,0 +1,85 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = "Мешарик"
+culture = chaepit
+religion = orthodox
+trade_goods = grain
+base_tax = 12
+base_production = 12
+base_manpower = 12
+
+seat_in_parliament = yes
+
+fort_15th = yes
+town_hall = yes
+railroad_2 = yes
+
+discovered_by = southern
+
+461.5.17 = { controller = SHK }
+483.11.22 = { controller = CHT }
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+650.1.1 = {
+	base_tax = 11
+	base_production = 11
+	base_manpower = 10
+} # Утрачивает значение после возвышения Сентшарка
+680.1.1 = { discovered_by = old_altras_tech }
+702.1.29 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	seat_in_parliament = no
+}
+707.12.18 = {
+	revolt = {
+		type = nationalist_rebels
+	}
+	controller = REB
+}
+710.1.1 = {
+	base_tax = 10
+	base_production = 9
+	base_manpower = 9
+}
+716.11.27 = {
+	revolt = { }
+	owner = CHT
+	controller = CHT
+	remove_core = EOY
+	add_claim = EOY
+	seat_in_parliament = yes
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+900.1.1 = {
+	base_tax = 8
+	base_production = 7
+	base_manpower = 8
+} # Упадок
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	seat_in_parliament = no
+}

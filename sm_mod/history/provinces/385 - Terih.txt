@@ -1,0 +1,53 @@
+owner = NHN
+controller = NHN
+#add_core = TRH
+add_core = NHN
+capital = "Терих"
+culture = rolevik_culture
+religion = tolerance
+trade_goods = naval_supplies
+base_tax = 5
+base_production = 4
+base_manpower = 5
+is_city = yes
+
+#fort_15th = yes
+grand_shipyard = yes
+traditional_factories = yes
+
+discovered_by = high_domin
+discovered_by = continental
+discovered_by = imperial_group
+discovered_by = amian
+discovered_by = rolevik
+discovered_by = ellar_tech
+
+872.7.3  = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}
+#2014.11.19 = {
+#	owner = TRH
+#	add_core = TRH
+#	controller = TRH
+#}
+#2014.11.30 = {
+#	owner = RPR
+#	controller = RPR
+#	add_core = RPR
+#}
+#2014.12.23 = {
+#	owner = TRH
+#	controller = TRH
+#}
+#2015.1.11 = { remove_core = RPR }
+#2015.5.1 = {
+#	remove_core = SME
+#}

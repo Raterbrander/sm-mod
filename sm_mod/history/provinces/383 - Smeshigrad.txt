@@ -1,0 +1,44 @@
+owner = SHK
+controller = SHK
+add_core = SHK
+
+is_city = yes
+hre = no
+
+culture = shararamean
+religion = tolerance
+base_tax = 3
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Смешиград"
+
+traditional_factories = yes
+railroad_1 = yes
+
+discovered_by = southern
+
+458.1.1 = { fort_15th = yes }
+484.7.17 = { controller = CHT traditional_factories = no }
+485.1.10 = { owner = CHT remove_core = SHK }
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+	#remove_core = SHK
+}
+680.1.1 = { add_core = CHT }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}

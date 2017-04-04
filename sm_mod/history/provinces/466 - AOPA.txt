@@ -1,0 +1,38 @@
+owner = NHN
+controller = NHN
+add_core = NHN
+
+is_city = yes
+
+capital = "Кон"
+culture = rolevik_culture
+religion = tolerance
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = slaves
+
+discovered_by = rolevik
+discovered_by = high_domin
+discovered_by = imperial_group
+discovered_by = NGR
+discovered_by = TCH
+discovered_by = NHN
+
+862.5.26 = { # 855.6.10 обр.
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+}
+882.7.18 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}

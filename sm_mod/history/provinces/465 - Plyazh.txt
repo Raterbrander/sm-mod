@@ -1,0 +1,46 @@
+owner = NHN
+controller = NHN
+add_core = NHN
+
+is_city = yes
+
+capital = "Пляж"
+culture = rolevik_culture
+religion = tolerance
+
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = fish
+
+grand_shipyard = yes
+
+discovered_by = rolevik
+discovered_by = continental
+discovered_by = imperial_group
+
+
+400.1.1 = {
+	add_permanent_province_modifier = {
+		name = demilitarised_province
+		duration = -1
+	}
+}
+
+470.1.1 = { remove_province_modifier = demilitarised_province }
+862.5.26 = { # 855.6.10 обр.
+	owner = SRE
+	controller = SRE
+	add_core = SRE
+}
+882.7.18 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}

@@ -1,0 +1,39 @@
+owner = CHT
+controller = CHT
+add_core = CHT
+capital = "Пеле"
+culture = chaepit
+religion = orthodox
+trade_goods = fur
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+railroad_1 = yes
+
+discovered_by = southern
+discovered_by = SHK
+
+472.12.14 = { controller = SHK }
+475.1.5 = { controller = CHT }
+702.1.29 = {
+	owner = UTN
+	controller = UTN
+	add_core = UTN
+}
+717.5.11 = {
+	owner = CHT
+	controller = CHT
+	remove_core = UTN
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}

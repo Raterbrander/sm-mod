@@ -1,0 +1,12 @@
+discovered_by = taifalian
+
+#1691.8.24 = {
+#	discovered_by = continental
+#	discovered_by = imperial_group
+#	discovered_by = high_domin
+#}
+#2000.1.1 = {
+#	discovered_by = amian
+#	discovered_by = ellar_tech
+#	discovered_by = southern
+#}

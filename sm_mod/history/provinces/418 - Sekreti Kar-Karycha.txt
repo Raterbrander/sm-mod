@@ -1,0 +1,72 @@
+native_size = 4
+native_ferocity = 2
+native_hostileness = 2
+
+#add_core = HKR
+
+hre = no
+is_city = no
+
+culture = rolevik_culture
+religion = tolerance
+capital = "Секреты Кар-Карыча"
+
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = unknown
+
+# Основание колонии Синих
+482.1.1 = { # 2012.1.15
+#	owner = HKR
+#	controller = HKR
+	add_core = KRN
+	add_core = SIN
+	base_tax = 5
+	base_production = 4
+	base_manpower = 4
+	#is_city = yes
+	#fort_15th = yes
+	trade_goods = grain
+}
+549.4.6 = { add_core = VSK }
+585.5.26 = { remove_core = VSK }
+586.1.1 = {
+	remove_core = SIN
+	remove_core = KRN
+	base_tax = 7
+	base_production = 6
+	base_manpower = 6
+} # Распад ВССК, полная независимость
+781.2.23 = { add_core = CH2 } # Вассалитет
+784.1.1 = { # Протекторат над Секретами Кар-Карыча
+	owner = CH2
+	controller = CH2
+}
+851.5.31 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 3
+#	remove_core = HKR
+	#fort_15th = no
+}
+880.1.1 = {
+	owner = NGI
+	controller = NGI
+	add_core = NGI
+	remove_core = CH2
+}
+892.7.31 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = NGI
+}
+# Хоу-Тинг потом
+#2014.12.27 = {
+#	revolt = {
+#		type = nationalist_rebels
+#		size = 2
+#	}
+#	controller = REB
+#}

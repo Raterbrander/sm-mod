@@ -1,0 +1,56 @@
+owner = CHT
+controller = CHT
+add_core = SHK
+add_core = CHT
+
+is_city = yes
+hre = no
+
+culture = utenian
+religion = tolerance
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Дакбург"
+
+shipyard = yes
+railroad_1 = yes
+
+discovered_by = southern
+
+460.11.5 = { controller = SHK }
+472.3.24 = { owner = SHK }
+484.4.27 = { controller = CHT }
+485.1.10 = {
+	owner = CHT
+	remove_core = SHK
+}
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+	discovered_by = old_altras_tech
+}
+680.1.1 = {
+	culture = shararamean
+	capital = "Тупсе"
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
+500.1.1 = {
+	shipyard = no
+	grand_shipyard = yes
+}

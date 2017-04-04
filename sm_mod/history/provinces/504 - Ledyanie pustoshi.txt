@@ -1,0 +1,8 @@
+# Ледяные пустоши
+
+575.1.1 = {
+	discovered_by = continental
+	discovered_by = amian
+	discovered_by = imperial_group
+	discovered_by = high_domin
+}

@@ -1,0 +1,69 @@
+owner = ADN
+controller = ADN
+add_core = ADN
+
+is_city = yes
+
+capital = "Горманта"
+culture = ardenian
+religion = solaris_religion
+trade_goods = iron
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+fort_15th = yes
+railroad_1 = yes
+
+discovered_by = southern
+
+485.1.10 = { add_core = CHT }
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+612.3.22 = {
+	owner = CHT
+	controller = CHT
+} # Приблизительно
+680.1.1 = { discovered_by = old_altras_tech }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+	religion = tolerance
+}
+855.1.1 = {
+	culture = chaepit
+#	religion = orthodox
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+900.1.1 = {
+	base_tax = 3
+	base_production = 3
+	base_manpower = 3
+}
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}
+1231.11.18 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	remove_core = SME
+}
+1250.1.1 = {
+	culture = ardenian
+	religion = helgarn
+	base_manpower = 4
+}

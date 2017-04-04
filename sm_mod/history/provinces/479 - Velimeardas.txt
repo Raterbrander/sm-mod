@@ -1,0 +1,28 @@
+native_size = 11
+native_ferocity = 5
+native_hostileness = 5
+
+hre = no
+is_city = no
+
+culture = central_lands_culture
+religion = tolerance
+capital = "Велимеардас"
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = unknown
+
+discovered_by = rolevik
+discovered_by = old_altras_tech
+discovered_by = southern
+
+600.1.1 = { religion = solaris_religion }
+900.1.1 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+	is_city = yes
+	trade_goods = iron
+}

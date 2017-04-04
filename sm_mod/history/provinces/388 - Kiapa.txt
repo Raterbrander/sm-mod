@@ -1,0 +1,62 @@
+owner = CHT
+controller = CHT
+add_core = LAV
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = " иапа"
+culture = old_kochegorian
+religion = solaris_religion
+trade_goods = cloth
+base_tax = 3
+base_production = 2
+base_manpower = 3
+
+railroad_1 = yes
+
+discovered_by = southern
+
+468.10.6 = { controller = ADN }
+472.5.7 = {
+	owner = LAV
+	controller = LAV
+}
+484.4.4 = { controller = CHT }
+485.1.10 = { owner = CHT }
+500.1.1 = {
+	culture = chaepit
+	religion = orthodox
+	remove_core = LAV
+	base_tax = 2
+	base_production = 1
+	base_manpower = 2
+}
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+650.1.1 = { base_tax = 3 base_production = 2 base_manpower = 3 }
+680.1.1 = { discovered_by = old_altras_tech }
+750.1.1 = { culture = chaepit }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+}
+900.1.1 = { base_tax = 2 base_manpower = 2 base_production = 1 } # ”падок
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}

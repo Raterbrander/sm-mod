@@ -1,0 +1,47 @@
+owner = CHT
+controller = CHT
+add_core = LAV
+add_core = CHT
+
+is_city = yes
+hre = no
+
+capital = "Полевое"
+culture = old_kochegorian
+religion = solaris_religion
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+discovered_by = southern
+
+468.6.23 = { controller = ADN }
+472.5.7 = {
+	owner = LAV
+	controller = LAV
+}
+484.4.6 = { controller = CHT }
+485.1.10 = { owner = CHT }
+555.1.1 = {
+	culture = chaepit
+	religion = orthodox
+	base_manpower = 2
+	remove_core = LAV
+}
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+750.1.1 = { culture = chaepit }
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+900.1.1 = { base_manpower = 1 } # Упадок
+1024.2.7 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+}

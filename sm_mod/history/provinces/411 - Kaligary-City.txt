@@ -1,0 +1,53 @@
+owner = CHT
+controller = CHT
+add_core = SHK
+add_core = CHT
+
+is_city = yes
+hre = no
+
+culture = smeshiks
+religion = tolerance
+base_tax = 4
+base_production = 4
+trade_goods = iron
+base_manpower = 3
+capital = "Калигари-Сити"
+
+railroad_1 = yes
+
+discovered_by = southern
+
+460.11.11 = { controller = SHK }
+472.3.24 = { owner = SHK } # Аннексия
+484.3.30 = { controller = CHT }
+484.7.18 = { owner = CHT }
+485.1.10 = { remove_core = SHK }
+500.1.1 = {
+	base_tax = 3
+	base_production = 2
+	base_manpower = 3
+}
+525.1.1 = {
+	culture = shararamean
+	capital = "Миньонск"
+}
+580.1.1 = {
+	discovered_by = continental
+	discovered_by = ellar_tech
+}
+781.2.23 = {
+	owner = CH2
+	controller = CH2
+	add_core = CH2
+}
+850.1.1 = {
+	discovered_by = high_domin
+	discovered_by = imperial_group
+	discovered_by = amian
+}
+892.8.1 = {
+	discovered_by = domin_group
+	discovered_by = rolevik
+	discovered_by = southern
+}
