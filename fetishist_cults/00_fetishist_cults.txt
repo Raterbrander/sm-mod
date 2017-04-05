@@ -1,0 +1,86 @@
+chaecan = {
+	sprite = 1
+	
+	global_unrest = -2
+
+	allow = {
+		OR = {
+			has_unlocked_cult = chaecan
+			technology_group = rolevik
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			primary_culture = chaepitian
+			factor = 2
+		}
+	}
+}
+
+poliamism = {
+	sprite = 2
+	
+	hostile_attrition = 1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = chaecan
+			technology_group = rolevik
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			primary_culture = bs_culture
+			factor = 2
+		}
+	}
+}
+
+role_amian = {
+	sprite = 3
+	
+	land_morale = 0.05
+
+	allow = {
+		has_unlocked_cult = role_amian
+	}
+
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			NOT = {
+				OR = {
+					tag = DSH
+					any_neighbor_country = { religion = ameism }
+				}
+			}
+			factor = 0
+		}
+	}
+}
+
+christianity_cult = {
+	sprite = 10
+	
+	global_own_trade_power = 0.25
+	
+	allow  = {
+		has_unlocked_cult = christianity_cult
+	}
+	
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			personality = ai_capitalist
+			factor = 1.5
+		}
+	}
+}

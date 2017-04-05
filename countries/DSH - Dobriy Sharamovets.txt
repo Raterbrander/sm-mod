@@ -1,0 +1,34 @@
+government = AM_clan_rep # communist_dictatorship
+government_rank = 1
+primary_culture = dobroshar_culture
+religion = rolevik_religions
+technology_group = rolevik
+capital = 427 # 591
+
+#historical_friend = AGA
+
+unlock_cult = chaecan
+unlock_cult = poliamism
+unlock_cult = role_amian
+
+450.1.1 = {
+	monarch = {
+		name = "«Добрый Шарарамовец»"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+480.1.1 = { capital = 424 }
+
+#2012.1.1 = {
+#	monarch = {
+#		name = "Эрнан"
+#		dynasty = "фон Роликист"
+#		adm = 3
+#		dip = 3
+#		mil = 2
+#	}
+#}
