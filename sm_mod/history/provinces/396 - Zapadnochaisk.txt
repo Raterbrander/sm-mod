@@ -8,7 +8,7 @@ add_core = SPM
 
 capital = "Западночайск"
 culture = spomi
-religion = old_shamanism
+religion = totemism
 trade_goods = grain
 base_tax = 1
 base_production = 1

@@ -6,7 +6,7 @@ is_city = no
 
 capital = "Сецергон"
 culture = spomi
-religion = old_shamanism
+religion = totemism
 trade_goods = unknown
 base_tax = 4
 base_production = 3

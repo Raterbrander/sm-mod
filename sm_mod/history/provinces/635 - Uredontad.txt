@@ -6,7 +6,7 @@ is_city = no
 
 capital = "Гора Уредонтад"
 culture = spomi
-religion = old_shamanism
+religion = totemism
 
 trade_goods = unknown
 base_tax = 1
