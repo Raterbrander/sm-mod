@@ -137,6 +137,8 @@
  establish_slavery_prov_tooltip:0 "Íà ïðîâèíöèþ $PROVINCENAME$ áóäåò ðàñïðîñòðàíåíî ðàáñòâî."
  abolish_serfdom_prov_tooltip:0 "Â ïðîâèíöèè $PROVINCENAME$ áóäåò îòìåíåíî êðåïîñòíîå ïðàâî."
  establish_serfdom_prov_tooltip:0 "Íà ïðîâèíöèþ $PROVINCENAME$ áóäåò ðàñïðîñòðàíåíî êðåïîñòíîå ïðàâî."
+ chaipitie_influence_tooltip:0 "Âëèÿíèå íàøåé ôðàêöèè â ×àèïèòèè ïðåâûøàåò 85"
+ chaipitie_influence_tooltip_55:0 "Âëèÿíèå íàøåé ôðàêöèè â ×àèïèòèè ïðåâûøàåò 55"
  
  NO_ANNEX_MAXIMILLIAN_LAWS:0 "Àííåêñèÿ íåâîçìîæíà, ïîêà äåéñòâóåò Ìàêñèìèëëèàíñêàÿ õàðòèÿ"
  NO_ANNEX_GERVEIN:0 "Àííåêñèÿ ÷ëåíîâ Ãåðâåéíà íåâîçìîæíà."
