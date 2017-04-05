@@ -41,6 +41,11 @@ country_event = {
 	
 	option = {
 		name = sm_ede.1.a
+		hidden_effect = {
+			GTT = {
+				release_all_subjects = yes
+			}
+		}
 		inherit = GTT
 		change_tag = GTT
 		if = {
