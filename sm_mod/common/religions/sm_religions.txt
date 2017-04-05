@@ -727,23 +727,24 @@ aldiyrey_group = {
 	crusade_name = HOLY_WAR
 }
 
-rolevik_religions = {
+rolevik_religions_group = {
 	
 	flags_with_emblem_percentage = 0
 	flag_emblem_index_range = { 1 57 }
 	
-	chaecan = {
-		color = { 0.65 0.41 0.22 }
+	rolevik_religions = {
+		color = { 0.46 0.73 0.76 }
 		icon = 17
 		
 		country = {
-			legitimacy = 1
-			global_unrest = -2
-			stability_cost_modifier = -0.1
+			defensiveness = 0.25
+			global_trade_goods_size_modifier = 0.1
 		}
-		province = {
-			local_missionary_strength = -0.01
-		}
+		#province = {
+		#	local_missionary_strength = -0.01
+		#}
+		
+		fetishist_cult = yes
 	}
 	
 	crusade_name = HOLY_WAR
