@@ -1,12 +1,16 @@
 government = technocrat_dictatorship
 government_rank = 2
 primary_culture = rolevik_culture
-religion = tolerance
+religion = rolevik_religions
 technology_group = continental
 capital = 480
 fixed_capital = 480
 
 historical_friend = NGR
+
+unlock_cult = chaecan
+unlock_cult = poliamism
+unlock_cult = christianity_cult
 
 458.1.1 = {
 	monarch = {

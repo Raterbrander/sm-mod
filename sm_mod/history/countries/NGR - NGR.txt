@@ -1,12 +1,17 @@
 government = parliamentary_republic
 government_rank = 2
 primary_culture = chaepitian
-religion = tolerance
+religion = rolevik_religions
 technology_group = continental
 capital = 572
 
 historical_rival = NHN
 historical_friend = CHT
+
+unlock_cult = chaecan
+unlock_cult = poliamism
+unlock_cult = role_amian
+unlock_cult = christianity_cult
 
 458.1.1 = {
 	monarch = {
