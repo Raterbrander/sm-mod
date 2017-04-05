@@ -1,0 +1,191 @@
+annex_chaipiitie = {
+	
+	type = country
+
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = NGR
+			tag = NHN
+		}
+		is_subject = no
+		NOT = { has_country_modifier = uniting_roles }
+		CH3 = {
+			exists = yes
+			is_subject = no
+		}
+		OR = {
+			AND = {
+				tag = NGR
+				CH3 = {
+					faction_influence = {
+						faction = CH3_NGR_faction
+						influence = 55
+					}
+				}
+			}
+			AND = {
+				tag = NHN
+				CH3 = {
+					faction_influence = {
+						faction = CH3_nihon_faction
+						influence = 55
+					}
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = CH3 }
+			CH3 = { is_subject = yes }
+		}
+	}
+	success = {
+		stability = 0
+		dip_power = 150
+		adm_power = 50
+		prestige = 10
+		custom_tooltip = chaipitie_influence_tooltip
+		hidden_trigger = {
+			OR = {
+				AND = {
+					tag = NGR
+					CH3 = {
+						faction_influence = {
+							faction = CH3_NGR_faction
+							influence = 85
+						}
+					}
+				}
+				AND = {
+					tag = NHN
+					CH3 = {
+						faction_influence = {
+							faction = CH3_nihon_faction
+							influence = 85
+						}
+					}
+				}
+			}
+		}
+	}
+	chance = {
+		factor = 4000
+	}
+	immediate = {
+		set_country_flag = chaipitie_mission # Äëÿ ÈÈ
+	}
+	abort_effect = {
+		clr_country_flag = chaipitie_mission
+	}
+	effect = {
+		add_country_modifier = {
+			name = uniting_roles
+			duration = 3650
+		}
+		#445 = {
+		#	add_base_tax = 1
+		#	add_base_production = 1
+		#	add_base_manpower = 1
+		#}
+		add_prestige = 10
+		clr_country_flag = chaipitie_mission
+	}
+}
+
+improve_chaipitie_influence = {
+	
+	type = country
+
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = NGR
+			tag = NHN
+		}
+		is_subject = no
+		NOT = { has_country_modifier = improved_dip_reputation }
+		CH3 = {
+			exists = yes
+			is_subject = no
+		}
+		NOT = {
+			OR = {
+				AND = {
+					tag = NGR
+					CH3 = {
+						faction_influence = {
+							faction = CH3_NGR_faction
+							influence = 55
+						}
+					}
+				}
+				AND = {
+					tag = NHN
+					CH3 = {
+						faction_influence = {
+							faction = CH3_nihon_faction
+							influence = 55
+						}
+					}
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = CH3 }
+			CH3 = { is_subject = yes }
+		}
+	}
+	success = {
+		custom_tooltip = chaipitie_influence_tooltip_55
+		hidden_trigger = {
+			OR = {
+				AND = {
+					tag = NGR
+					CH3 = {
+						faction_influence = {
+							faction = CH3_NGR_faction
+							influence = 55
+						}
+					}
+				}
+				AND = {
+					tag = NHN
+					CH3 = {
+						faction_influence = {
+							faction = CH3_nihon_faction
+							influence = 55
+						}
+					}
+				}
+			}
+		}
+	}
+	chance = {
+		factor = 4000
+	}
+	immediate = {
+		set_country_flag = chaipitie_mission
+	}
+	abort_effect = {
+		clr_country_flag = chaipitie_mission
+	}
+	effect = {
+		add_country_modifier = {
+			name = improved_dip_reputation
+			duration = 3650
+		}
+		clr_country_flag = chaipitie_mission
+	}
+}
