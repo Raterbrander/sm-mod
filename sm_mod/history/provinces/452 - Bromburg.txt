@@ -7,7 +7,7 @@ is_city = yes
 
 capital = "Бромбург"
 culture = rolevik_culture
-religion = tolerance
+religion = rolevik_religions
 
 trade_goods = naval_supplies
 base_tax = 4

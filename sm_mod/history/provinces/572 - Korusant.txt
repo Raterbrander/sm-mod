@@ -6,7 +6,7 @@ is_city = yes
 hre = no
 
 culture = chaepitian
-religion = tolerance
+religion = rolevik_religions
 capital = "Корусант"
 base_tax = 12
 base_production = 12

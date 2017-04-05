@@ -6,7 +6,7 @@ is_city = yes
 hre = no
 
 culture = rolevik_culture
-religion = tolerance
+religion = rolevik_religions
 capital = "Азохен"
 base_tax = 4
 base_production = 3

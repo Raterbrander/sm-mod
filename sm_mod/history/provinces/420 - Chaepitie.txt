@@ -8,7 +8,7 @@ hre = no
 
 capital = "Чаепитие"
 culture = chaepitian
-religion = chaecan
+religion = rolevik_religions
 trade_goods = tea
 base_tax = 18
 base_production = 17

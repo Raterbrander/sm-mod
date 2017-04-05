@@ -6,7 +6,7 @@ hre = no
 is_city = no
 
 culture = rolevik_culture
-religion = tolerance
+religion = rolevik_religions
 capital = "Читалка"
  
 base_tax = 3

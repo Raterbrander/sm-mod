@@ -6,7 +6,7 @@ is_city = yes
 hre = no
 
 culture = role_nipponian
-religion = tolerance
+religion = rolevik_religions
 base_tax = 11
 base_production = 12
 trade_goods = iron

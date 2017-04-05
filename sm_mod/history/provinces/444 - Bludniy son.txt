@@ -6,7 +6,7 @@ hre = no
 is_city = yes
 
 culture = bs_culture
-religion = tolerance
+religion = rolevik_religions
 capital = "Блудный сон"
  
 base_tax = 16

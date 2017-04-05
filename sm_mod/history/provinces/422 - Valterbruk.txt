@@ -6,7 +6,7 @@ is_city = yes
 
 capital = "Вальмира"
 culture = role_nipponian
-religion = tolerance
+religion = rolevik_religions
 
 trade_goods = fish
 base_tax = 3

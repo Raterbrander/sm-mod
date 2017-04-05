@@ -11,7 +11,7 @@ is_city = yes
 hre = no
 
 culture = rolevik_culture
-religion = tolerance
+religion = rolevik_religions
 capital = "Пунямыш-порт"
 base_tax = 3
 base_production = 2

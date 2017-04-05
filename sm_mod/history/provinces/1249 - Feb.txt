@@ -6,7 +6,7 @@ is_city = yes
 
 capital = "Ôåá"
 culture = role_nipponian
-religion = tolerance
+religion = rolevik_religions
 hre = no
 base_tax = 7
 base_production = 6

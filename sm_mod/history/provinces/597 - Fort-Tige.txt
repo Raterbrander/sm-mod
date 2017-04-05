@@ -7,7 +7,7 @@ is_city = yes
 
 capital = "Форт-Тиге"
 culture = rolevik_culture
-religion = tolerance
+religion = rolevik_religions
 
 trade_goods = copper
 base_tax = 3

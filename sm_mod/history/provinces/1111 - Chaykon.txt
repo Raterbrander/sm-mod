@@ -6,7 +6,7 @@ is_city = yes
 hre = no
 
 culture = chaepitian
-religion = chaecan
+religion = rolevik_religions
 capital = "Чайкон"
 base_tax = 4
 base_production = 4
