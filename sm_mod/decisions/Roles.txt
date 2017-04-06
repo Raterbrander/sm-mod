@@ -174,4 +174,223 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	restore_chaepitie = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { tag = EAM }
+			NOT = { exists = CH2 }
+			primary_culture = chaepitian
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 4
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			prestige = 50
+			420 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			445 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			421 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			OR = {
+				572 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				476 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+			OR = {
+				597 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				596 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+			OR = {
+				NOT = { exists = CHT }
+				CHT = {
+					OR = {
+						is_subject_of = ROOT
+						AND = {
+							alliance_with = ROOT
+							has_opinion = {
+								who = ROOT
+								value = 200
+							}
+						}
+						NOT = { total_development = 100 }
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					region = chaepit_region
+				}
+			}
+			total_development = 250
+			num_of_cities = 18
+		}
+		effect = {
+			change_tag = CH2
+			tooltip = {
+				add_prestige = 50
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank = 2
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavorCH2.100
+				}
+			}
+			custom_tooltip = CH3_formation_chaepit_tooltip
+			custom_tooltip = CH3_formation_roles_tooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	restore_chaepitie_CHT = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = CHT
+			NOT = { exists = CH2 }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 4
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			prestige = 75
+			420 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			445 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			421 = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+			OR = {
+				572 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				476 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+			OR = {
+				597 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				596 = {
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+			total_development = 500
+		}
+		effect = {
+			change_tag = CH2
+			tooltip = {
+				add_prestige = 50
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank = 2
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavorCH2.100
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

@@ -86,3 +86,43 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = flavor_CHT.100
+	title = flavor_CHT.100.title
+	desc = flavor_CHT.100.desc
+	picture = CHAEPITIE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_CHT.100.a
+		ai_chance = { factor = 90 }
+		CH2 = {
+			country_event = { id = flavorCH2.103 }
+		}
+		tooltip = {
+			CH2 = { inherit = CHT }
+		}
+		hidden_effect = {
+			if = {
+				limit = { ai = no }
+				switch_tag = CH2
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_CHT.100.b
+		ai_chance = { factor = 10 }
+		CH2 = {
+			country_event = { id = flavorCH2.104 }
+		}
+		tooltip = {
+			reverse_add_opinion = {
+				who = CH2
+				modifier = chaepit_traitor
+			}
+		}
+	}
+}
