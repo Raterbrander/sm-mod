@@ -5,8 +5,8 @@ add_core = SIN
 is_city = yes
 hre = no
 
-culture = altras
-religion = tolerance
+culture = sinius
+religion = ameism
 capital = "Синиусданбург"
 base_tax = 3
 base_production = 3
@@ -21,12 +21,6 @@ discovered_by = middle_land_group
 discovered_by = high_domin
 discovered_by = imperial_group
 
-458.1.1 = { add_claim = AL1 }
-500.1.1 = {
-	culture = sinius
-	religion = sinius_pagan
-	remove_claim = AL1
-}
 549.4.6 = {
 	owner = VSK
 	controller = VSK
@@ -38,6 +32,7 @@ discovered_by = imperial_group
 	remove_core = VSK
 }
 #2012.5.1   = { capital = "Синиусдансберх" religion = solaris_religion }
+600.1.1 = { religion = sinius_pagan }
 632.7.29 = {
 	owner = GRX
 	controller = GRX

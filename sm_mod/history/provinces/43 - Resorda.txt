@@ -6,7 +6,7 @@ add_core = LMR
 is_city = yes
 
 culture = tetirian
-religion = miscilian_pagan
+religion = animism
 capital = "Резерде"
 base_tax = 4
 base_production = 4
@@ -26,6 +26,7 @@ discovered_by = old_altras_tech
 	add_core = SIN
 	#remove_core = LMR
 }
+475.1.1 = { religion = miscilian_pagan }
 549.4.6 = {
 	owner = VSK
 	controller = VSK

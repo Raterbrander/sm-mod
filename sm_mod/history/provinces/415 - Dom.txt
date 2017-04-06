@@ -7,7 +7,7 @@ native_hostileness = 6
 hre = no
 is_city = no
 
-culture = rolevik_culture
+culture = hotelian
 religion = rolevik_religions
 capital = "Дом"
 

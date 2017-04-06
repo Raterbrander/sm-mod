@@ -7,7 +7,7 @@ hre = yes
 
 capital = "Тарис"
 culture = sinius
-religion = tolerance # sinius_pagan
+religion = ameism # sinius_pagan, tolerance
 
 base_tax = 13
 base_production = 12
@@ -50,6 +50,7 @@ discovered_by = ellar_tech
 589.3.21 = { controller = SIN }
 589.9.30 = { controller = KRN }
 589.11.3 = { controller = SIN }
+600.1.1 = { religion = sinius_pagan }
 632.7.29 = {
 	owner = GRX
 	controller = GRX
@@ -78,4 +79,4 @@ discovered_by = ellar_tech
 	add_core = LMR
 	remove_core = EOY
 }
-930.1.1 = { religion = sinius_pagan } # 2015.11.1
+#930.1.1 = { religion = sinius_pagan } # 2015.11.1

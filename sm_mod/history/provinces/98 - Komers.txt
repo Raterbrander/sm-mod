@@ -7,7 +7,7 @@ is_city = yes
 hre = no
 
 culture = tetirian
-religion = tolerance
+religion = miscilian_pagan
 capital = "Комерс"
 base_tax = 4
 base_production = 4
