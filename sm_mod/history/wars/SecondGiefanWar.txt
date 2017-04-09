@@ -10,8 +10,6 @@ war_goal = {
 	add_attacker = TBS
 	add_attacker = KNV
 	add_attacker = SVL
-	add_attacker = RDL
-	add_attacker = LDR
 	add_defender = GIE
 	add_defender = TAT
 }
@@ -21,8 +19,6 @@ war_goal = {
 	rem_attacker = TBS
 	rem_attacker = KNV
 	rem_attacker = SVL
-	rem_attacker = RDL
-	rem_attacker = LDR
 	rem_defender = GIE
 	rem_defender = TAT
 }

@@ -11,12 +11,12 @@ war_goal = {
 	add_defender = GTT
 }
 
-457.1.1 = {
-	add_attacker = KHS
-}
+#457.1.1 = {
+#	add_attacker = KHS
+#}
 
 464.2.28 = {
 	rem_attacker = ORG
-	rem_attacker = KHS
+	#rem_attacker = KHS
 	rem_defender = GTT
 }

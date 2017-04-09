@@ -12,13 +12,13 @@ war_goal = {
 }
 
 # Максимиллиан вон Оргейл захватывает Готтардский престол
-456.5.16 = {
-	add_defender = ORG
-}
-
-458.9.7 = {
-	rem_defender = ORG
-}
+#456.5.16 = {
+#	add_defender = ORG
+#}
+#
+#458.9.7 = {
+#	rem_defender = ORG
+#}
 
 465.3.25 = {
 	rem_attacker = HLC

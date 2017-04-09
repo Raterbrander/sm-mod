@@ -1,17 +1,60 @@
 name = "Баликийская война"
 war_goal = {
-	type = superiority_loan
-	casus_belli = cb_loan_cancelled
+	type = superiority_trade_mutual
+	casus_belli = cb_trade_war
 }
 
-449.7.31 = {
+413.7.31 = {
 	add_attacker = RDT
 	add_attacker = VNR
+	add_attacker = KRG
 	add_defender = BAK
 }
 
-453.6.21 = {
+413.8.3 = {
+	add_attacker = AIL
+	add_attacker = KRT
+	add_attacker = OLN
+	add_attacker = INT
+	add_attacker = BKN
+}
+
+449.1.27 = {
+	rem_attacker = BKN
+}
+
+# Установление Баликийской республики
+449.5.14 = {
 	rem_attacker = RDT
 	rem_attacker = VNR
+	rem_attacker = KRT
+	rem_attacker = AIL
+	rem_attacker = OLN
+	rem_attacker = KRG
+	rem_defender = BAK
+	rem_attacker = INT
+}
+
+# Переворот Схайпаса
+449.10.28 = {
+	add_attacker = RDT
+	add_attacker = VNR
+	add_defender = BAK
+	add_attacker = AIL
+	add_attacker = KRT
+	add_attacker = OLN
+	add_attacker = INT
+}
+
+451.6.24 = { rem_attacker = INT }
+
+453.9.16 = { rem_attacker = OLN }
+
+457.6.21 = {
+	rem_attacker = RDT
+	rem_attacker = VNR
+	rem_attacker = KRT
+	rem_attacker = AIL
+	rem_attacker = KRG
 	rem_defender = BAK
 }
