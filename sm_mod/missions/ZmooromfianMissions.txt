@@ -49,24 +49,12 @@ conquer_central_zmooromfland = {
     effect = {
 		set_country_flag = central_zmooromfland_mission
 		add_prestige = 20
-		every_target_province = {
-			limit = {
-				culture = zmooromfian
-			}
-			add_core = ZMR
-		}
 		random_target_province = {
 			limit = {
 				culture = zmooromfian
 			}
 			add_base_tax = 1
 			add_base_manpower = 1
-		}
-		hidden_effect = {
-			every_province = {
-				limit = { is_core = YAL }
-				remove_core = YAL
-			}
 		}
     }
 }
