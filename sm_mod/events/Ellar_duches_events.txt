@@ -54,6 +54,14 @@ country_event = {
 			}
 			set_government_rank = 2
 		}
+		every_country = {
+			limit = {
+				capital_scope = { area = gottardia_area }
+				has_country_flag = indep_for_gottardian_throne
+			}
+			GTT = { vassalize = PREV }
+			clr_country_flag = indep_for_gottardian_throne
+		}
 		add_prestige = 10
 	}
 }
@@ -81,6 +89,11 @@ country_event = {
 	
 	option = {
 		name = sm_ede.1.a
+		hidden_effect = {
+			GTT = {
+				release_all_subjects = yes
+			}
+		}
 		inherit = GTT
 		change_tag = GTT
 		#set_capital = 899
@@ -89,6 +102,14 @@ country_event = {
 				NOT = { government_rank = 2 }
 			}
 			set_government_rank = 2
+		}
+		every_country = {
+			limit = {
+				capital_scope = { area = gottardia_area }
+				has_country_flag = indep_for_gottardian_throne
+			}
+			GTT = { vassalize = PREV }
+			clr_country_flag = indep_for_gottardian_throne
 		}
 		add_prestige = 5
 	}
