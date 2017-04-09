@@ -404,6 +404,12 @@ on_hre_released_vassal = {
 	}
 }
 
+# HRE member transferred from non-HRE vassalage to Emperor
+on_hre_transfered_vassal = {
+	events = {
+	}
+}
+
 # Emperor coming to the defense of a HRE member
 on_hre_defense = {
 	events = {
@@ -418,6 +424,21 @@ on_hre_non_defense = {
 
 # HRE Member takes a HRE province from an outs100e country in a peace (province scope)
 on_hre_province_reconquest = {
+	events = {
+	}
+}
+
+on_lock_hre_religion = {
+	events = {
+	}
+}
+
+on_change_hre_religion = {
+	events = {
+	}
+}
+
+on_hre_religion_white_peace = {
 	events = {
 	}
 }
@@ -467,22 +488,22 @@ on_annexed = {
 	}
 }
 
+# When the chinese empire gets dismantled (e.g. when the emperor is annexed)
+# FROM = Emperor, ROOT = Current Nation
+on_chinese_empire_dismantled = {
+}
+
+# When a nation gains the Mandate of Heaven (becomes the Emperor of China)
+# FROM = Old Emperor, ROOT = New Emperor
+on_mandate_of_heaven_gained = {
+}
+
+# When a nation loses the Mandate of Heaven
+# FROM = New Emperor, ROOT = Old Emperor
+on_mandate_of_heaven_lost = {
+}
+
 on_dismantle_revolution = {
-}
-
-on_lock_hre_religion = {
-	events = {
-	}
-}
-
-on_change_hre_religion = {
-	events = {
-	}
-}
-
-on_hre_religion_white_peace = {
-	events = {
-	}
 }
 
 # province
@@ -651,7 +672,6 @@ on_bi_yearly_pulse = {
 		100 = 872
 		100 = 873
 		100 = 875
-		100 = 876
 		100 = 877
 		100 = 878
 		100 = 879
@@ -1008,7 +1028,6 @@ on_thri_yearly_pulse_3 = {
 		50 = subject_interaction_events.25
 		50 = subject_interaction_events.26
 		50 = subject_interaction_events.27
-		50 = subject_interaction_events.28
 		50 = subject_interaction_events.29
 		50 = subject_interaction_events.30
 		50 = subject_interaction_events.31
@@ -1666,4 +1685,43 @@ on_parliament_debate_failed = {
 
 # country
 on_parliament_debate_succeeded = {
+}
+
+# country
+on_harmonized_pagan = {
+}
+
+on_harmonized_christian = {
+}
+
+on_harmonized_muslim = {
+}
+
+on_harmonized_jewish_group = {
+}
+
+on_harmonized_zoroastrian_group = {
+}
+
+on_harmonized_dharmic = {
+}
+
+on_harmonized_mahayana = {
+}
+
+on_harmonized_buddhism = { #Theravada
+}
+
+on_harmonized_shinto = {
+}
+
+on_harmonized_vajrayana = {
+}
+
+# country. from = overlord
+on_accept_tribute = {
+}
+
+# country. from = overlord
+on_refuse_tribute = {
 }
