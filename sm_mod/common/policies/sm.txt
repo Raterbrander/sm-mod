@@ -1,0 +1,168 @@
+alternate_energy_sources_support = {
+	monarch_power = ADM
+	
+	potential = {
+		adm_tech = 9
+		#has_institution = 
+		has_global_flag = alternate_energy_sources
+	}
+	
+	allow = {
+		adm_tech = 9
+	}
+	
+	prestige = 0.25
+	global_unrest = -1
+	production_efficiency = -0.025
+	
+	ai_will_do = {
+		factor = 1
+		
+		modifier = { # ?
+			factor = 0.75
+			ai = yes
+		}
+	}
+}
+
+alternate_energy_sources_support_2 = {
+	monarch_power = ADM
+	
+	potential = {
+		NOT ={ has_country_modifier = sm_uncivilized_nation }
+		has_global_flag = alternate_energy_sources
+		NOT = { has_country_modifier = energetical_independence }
+	}
+	
+	allow = {
+		adm_tech = 9
+	}
+	
+	global_tax_modifier = -0.05
+	technology_cost = -0.025
+	idea_cost = -0.025
+	
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = ELL
+					tag = EOY
+					tag = SIN
+					tag = NGR
+					tag = CH2
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				tag = CH2
+				tag = SIN
+			}
+		}
+	}
+}
+
+search_oil = {
+	monarch_power = ADM
+	
+	potential = {
+		OR = {
+			has_institution = industrialisation
+			has_idea = UTN_oil
+		}
+		adm_tech = 3
+		NOT = { has_country_modifier = oil_timer }
+	}
+	
+	allow = {
+		adm_tech = 3
+	}
+	
+	global_tax_modifier = -0.05
+	
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			factor = 0.25
+			OR = {
+				technology_group = middle_land_group
+				technology_group = ellar_tech
+			}
+		}
+		modifier = {
+			factor = 0.55
+			has_country_flag = had_oil_policy
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 5 }
+			has_country_flag = had_oil_policy
+		}
+		modifier = {
+			factor = 0
+			technology_group = ellar_tech
+			NOT = {
+				any_owned_province = { region = kornisonaks_region }
+			}
+		}
+		modifier = {
+			factor = 0
+			num_of_owned_provinces_with = {
+				trade_goods = oil
+				value = 3
+			}
+		}
+		modifier = {
+			factor = 0.75
+			num_of_owned_provinces_with = {
+				trade_goods = oil
+				value = 1
+			}
+		}
+		modifier = {
+			factor = 0
+			has_country_modifier = energetical_independence
+		}
+	}
+}
+
+communist_exporting_revolution = {
+	monarch_power = DIP
+	
+	potential = {
+		is_revolution_target = no
+		OR = {
+			government = socialist_republic
+			government = socialist_state
+			government = communist_dictatorship
+		}
+	}
+	
+	allow = {
+		is_subject = no
+		mil = 2
+	}
+	
+	diplomatic_reputation = -1
+	
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			factor = 0.5
+			government = socialist_republic
+		}
+		
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+}
