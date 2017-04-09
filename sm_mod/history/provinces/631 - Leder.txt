@@ -8,9 +8,9 @@ culture = tarsek
 religion = totemism
 capital = "Ледерь"
 
-base_tax = 10
-base_production = 10
-base_manpower = 8
+base_tax = 4
+base_production = 4
+base_manpower = 4
 trade_goods = unknown
 
 889.1.1 = {

@@ -1,0 +1,18 @@
+owner = TRR
+controller = TRR
+add_core = TRR
+
+is_city = yes
+hre = no
+
+capital = "×àð"
+culture = turianian
+religion = rolevik_religions
+
+trade_goods = salt
+base_tax = 5
+base_production = 5
+base_manpower = 4
+
+discovered_by = rolevik
+discovered_by = middle_land_group

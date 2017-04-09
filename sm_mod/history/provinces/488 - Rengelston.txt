@@ -1,0 +1,33 @@
+native_size = 45
+native_ferocity = 4
+native_hostileness = 4
+
+hre = no
+is_city = no
+
+capital = "Ренгельстоун"
+culture = wolf_culture
+religion = rolevik_religions
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+trade_goods = unknown
+
+discovered_by = ellar_tech
+discovered_by = middle_land_group
+discovered_by = rolevik
+
+706.1.1 = {
+	owner = EOY
+	controller = EOY
+	add_core = EOY
+	is_city = yes
+	trade_goods = salt
+}
+896.1.1 = {
+	owner = SME
+	controller = SME
+	add_core = SME
+	remove_core = EOY
+}

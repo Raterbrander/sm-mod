@@ -1,0 +1,25 @@
+native_size = 64
+native_ferocity = 6
+native_hostileness = 8
+
+is_city = no
+hre = no
+
+capital = "Гаракл"
+culture = wolf_culture
+religion = rolevik_religions
+
+trade_goods = fur
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+discovered_by = rolevik
+discovered_by = middle_land_group
+
+750.1.1 = {
+	owner = TRR
+	controller = TRR
+	add_core = TRR
+	is_city = yes
+}

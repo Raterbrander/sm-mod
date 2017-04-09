@@ -1,7 +1,6 @@
 owner = ADN
 controller = ADN
 add_core = ADN
-add_core = CHT
 
 is_city = yes
 
@@ -17,7 +16,11 @@ discovered_by = southern
 
 461.6.29 = { controller = ADN }
 470.1.1 = { owner = ADN }
-476.5.10 = { owner = CHT controller = CHT }
+476.5.10 = {
+	owner = CHT
+	controller = CHT
+	add_core = CHT
+}
 485.1.10 = { remove_core = ADN }
 580.1.1 = {
 	discovered_by = continental

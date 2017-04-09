@@ -7,7 +7,7 @@ hre = yes # ?
 
 capital = "Пенёк"
 culture = wolf_culture
-religion = tolerance
+religion = rolevik_religions
 trade_goods = fur
 base_tax = 3
 base_production = 3
