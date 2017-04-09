@@ -1339,6 +1339,15 @@ zmooromf_group = {
 	
 	zmooromfian = {
 		primary = ZMR
+		country = {
+			land_forcelimit_modifier = 0.5
+			war_exhaustion = -0.1
+			naval_forcelimit_modifier = -1
+			global_unrest = -3
+		}
+		province = {
+			local_manpower = 0.5
+		}
 		male_names = {
 			Альхермейяйебейтомалазавеермайеисеамт
 			Альяз Ал Яльярёхареб Махрайб Ягальгу Хольгу Дьявас Рейякельмоян Галагайяса Хьягарзальвис
