@@ -1,0 +1,281 @@
+old_age = {
+	start = 360
+	
+	can_start = {
+		always = yes
+	}
+
+	objectives = {
+		obj_sm_emperor = {
+			custom_trigger_tooltip = {
+				tooltip = obj_sm_emperor_tooltip
+				OR = {	
+					is_emperor = yes
+					government_rank = 3
+				}
+			}
+		}
+		obj_30_development_city = {
+			custom_trigger_tooltip = {
+				tooltip = obj_30_development_city_tooltip
+				any_owned_province = {
+					is_core = ROOT
+					controlled_by = owner
+					development = 30
+				}
+			}
+		}
+		obj_5_centers_of_trade = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_province_modifier = center_of_trade_modifier
+						has_province_modifier = inland_center_of_trade_modifier
+					}
+					controlled_by = owner
+					is_core = ROOT
+				}
+				amount = 5
+			}
+		}
+		obj_true_imperialist = {
+			allow = {
+				capital_scope = {
+					OR = {
+						continent = europe
+						continent = malishian_island
+						continent = kronos
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_true_imperialist_tooltip
+				has_institution = imperialism
+				government_rank = 3
+				any_owned_province = {
+					OR = {
+						continent = south_main
+						continent = roles_continent
+						continent = south_islands
+					}
+				}
+			}
+		}
+		obj_many_vassals = {
+			allow = {
+				NOT = { religion_group = christian }
+			}
+			vassal = 5
+		}
+		obj_two_continents = {
+			num_of_continents = 2
+		}
+		obj_humiliate_rival = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
+			}
+		}
+	}
+	
+	abilities = {
+		ab_allow_feudal_de_jure_law = {
+			effect = {
+				custom_tooltip = feudal_de_jure_law
+				set_country_flag = feudal_de_jure_law
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_justified_wars = {
+			modifier = {
+				ae_impact = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}			
+		}
+		
+
+		ab_transfer_vassal_wargoal = 
+		{
+			rule = {
+				can_transfer_vassal_wargoal = yes
+				can_chain_claim = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_free_war_taxes = {
+			modifier = {
+				war_taxes_cost_modifier = -1.0
+			}
+			ai_will_do = {
+				factor = 10
+			}	
+		}
+		
+
+		ab_cavalry_armies = {
+			modifier = {
+				cav_to_inf_ratio = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_colony_boost_development = {
+			rule = {
+				can_colony_boost_development = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_attack_bonus_in_capital_terrain = {
+			rule = {
+				attack_bonus_in_capital_terrain = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}
+
+classical_age = {
+	start = 750
+	
+	can_start = {
+		calc_true_if = {
+			is_great_power = yes
+			all_ally = { is_great_power = yes }
+			amount = 2
+		}
+	}
+	
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		seat_in_parliament = -3
+		war_exhaustion = -1
+	}
+	
+	objectives = {
+		obj_colonial_empire = {
+			colony = 5
+		}
+		
+		obj_unify_culture = {	
+			has_unified_culture_group = yes
+		}
+		
+		obj_100_provinces = {
+			num_of_cities = 100
+		}
+	}
+	
+	
+	abilities = {
+		
+		ab_mercenary_discipline = {
+			modifier = {
+				mercenary_discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_ship_power_propagation = {
+			modifier = {
+				ship_power_propagation = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		
+		ab_institution_spread_from_true_faith = {
+			modifier = {
+				institution_spread_from_true_faith = 0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_prestige_per_development_from_conversion = {
+			modifier = {
+				prestige_per_development_from_conversion = 0.3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+	
+		ab_spain_tercio = {
+			allow = {
+				tag = SPA
+			}
+			modifier = {
+				shock_damage_received = -0.3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_mughal_artillery = {
+			allow = {
+				tag = MUG
+			}
+			modifier = {
+				artillery_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_polish_legitimacy = {
+			allow = {
+				OR = {
+					tag = PLC
+					tag = POL
+				}
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_persia_reinforce = {
+			allow = {
+				tag = PER
+			}
+			modifier = {
+				reinforce_cost_modifier = -0.3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	
+	}
+}
