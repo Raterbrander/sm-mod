@@ -1,5 +1,39 @@
 spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_sort_macro_manpower"
+		texturefile = "gfx//interface//sort_macro_manpower.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_sort_macro_manpower_cost"
+		texturefile = "gfx//interface//sort_macro_manpower_cost.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_sort_macro_production"
+		texturefile = "gfx//interface//sort_macro_production.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_sort_macro_production_cost"
+		texturefile = "gfx//interface//sort_macro_production_cost.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_sort_macro_tax"
+		texturefile = "gfx//interface//sort_macro_tax.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_sort_macro_tax_cost"
+		texturefile = "gfx//interface//sort_macro_tax_cost.dds"
+	}		
+	
 
+	
+	
+	
 	spriteType = {
 		name = "GFX_create_navy_template_bg"
 		texturefile = "gfx/interface/create_navy_template_bg.dds"
@@ -122,19 +156,31 @@ spriteTypes = {
 		texturefile = "gfx//interface//macro_buildings_category_strip.dds"
 		noOfFrames = 11
 	}
+			spriteType = {
+		name = "GFX_macro_buildings_category_strip"
+		texturefile = "gfx//interface//macro_buildings_category_strip.dds"
+		noOfFrames = 8
+	}
 	
 			spriteType = {
 		name = "GFX_build_interface_development_tab"
 		texturefile = "gfx//interface//build_interface_development_tab.dds"
 		noOfFrames = 2
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
 			spriteType = {
 		name = "GFX_build_interface_estates_tab"
 		texturefile = "gfx//interface//build_interface_estates_tab.dds"
 		noOfFrames = 2
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_build_interface_diplomacy_tab"
+		texturefile = "gfx//interface//build_interface_diplomacy_tab.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	
 	spriteType = {
@@ -253,6 +299,13 @@ spriteTypes = {
 		noOfFrames = 1
 		allwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_cannot_afford"
+		texturefile = "gfx//interface//cannot_afford.dds"
+		noOfFrames = 1
+		allwaystransparent = yes
+	}
 	
 	spriteType = {
 		name = "GFX_unit_banner_checkbox"
@@ -267,9 +320,24 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_sort_manpower_mod_s"
+		texturefile = "gfx//interface//sort_autonomy_s.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sort_production_mod_s"
+		texturefile = "gfx//interface//sort_autonomy_s.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sort_tax_mod_s"
+		texturefile = "gfx//interface//sort_autonomy_s.dds"
+	}
+
+	spriteType = {
 		name = "GFX_sort_autonomy_s"
 		texturefile = "gfx//interface//sort_autonomy_s.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_sort_total_s"
@@ -314,10 +382,106 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_sort_development"
 		texturefile = "gfx//interface//sort_development.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_build_category_units_banner"
 		texturefile = "gfx//interface//build_category_units_banner.dds"
-	}		
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_alliance"
+		texturefile = "gfx//interface//macro_diplomacy_tab_alliance.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_dynastic"
+		texturefile = "gfx//interface//macro_diplomacy_tab_dynastic.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_economic"
+		texturefile = "gfx//interface//macro_diplomacy_tab_economic.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_great_power"
+		texturefile = "gfx//interface//macro_diplomacy_tab_great_power.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_hre"
+		texturefile = "gfx//interface//macro_diplomacy_tab_hre.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_influence"
+		texturefile = "gfx//interface//macro_diplomacy_tab_influence.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_papal"
+		texturefile = "gfx//interface//macro_diplomacy_tab_papal.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_macro_diplomacy_tab_relations"
+		texturefile = "gfx//interface//macro_diplomacy_tab_relations.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_macro_diplomacy_overlay1"
+		texturefile = "gfx//interface//macro_diplomacy_overlay1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_overlay2"
+		texturefile = "gfx//interface//macro_diplomacy_overlay2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_line"
+		texturefile = "gfx//interface//macro_diplomacy_line.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_country_button"
+		texturefile = "gfx//interface//macro_diplomacy_country_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_country_button_2"
+		texturefile = "gfx//interface//macro_diplomacy_country_button_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_action_button"
+		texturefile = "gfx//interface//macro_diplomacy_action_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_slot"
+		texturefile = "gfx//interface//macro_diplomacy_slot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_macro_diplomacy_green_banner"
+		texturefile = "gfx//interface//macro_diplomacy_green_banner.dds"
+	}
+
+
+
+	
+	
+	
 }

@@ -136,6 +136,12 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	
+	spriteType = {
+		name = "CHAEPITIE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_SM/CHAEPITIE.tga"
+		allwaystransparent = yes
+	}
+	
 	# Factions
 	spriteType = {
 		name = "GFX_faction_bg_sin_racist_faction"	
