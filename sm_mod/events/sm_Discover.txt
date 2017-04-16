@@ -98,6 +98,14 @@ country_event = {
 			NOT = { continent = malishian_island }
 		}
 		num_of_ports = 3
+		capital_scope = {
+			NOT = {
+				OR = {
+					continent = roles_continent
+					continent = south_main
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
