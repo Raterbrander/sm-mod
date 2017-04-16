@@ -30,16 +30,6 @@ type={
 	scale=0.300000
 	time_duration=300.000000
 	object={
-		name="Seagulls_north_vietnam"
-		hidden_on_start=no
-		position={
-			4026.000 11.000 1359.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
 		name="Seagulls_west_india"
 		hidden_on_start=no
 		position={
@@ -74,16 +64,6 @@ type={
 		hidden_on_start=no
 		position={
 			3002.000 11.000 475.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_zansibar"
-		hidden_on_start=no
-		position={
-			3338.000 11.000 541.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -194,6 +174,16 @@ type={
 		hidden_on_start=no
 		position={
 			2577.000 11.000 786.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			3338.000 11.000 541.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -400,16 +390,6 @@ type={
 		}
 	}
 	object={
-		name="Seagulls_north_vietnam"
-		hidden_on_start=no
-		position={
-			4163.000 11.000 1251.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
@@ -454,6 +434,26 @@ type={
 		hidden_on_start=no
 		position={
 			2751.000 11.000 1285.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_north_vietnam"
+		hidden_on_start=no
+		position={
+			4026.000 11.000 1359.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_north_vietnam"
+		hidden_on_start=no
+		position={
+			4163.000 11.000 1251.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -1945,7 +1945,7 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
-			4236.000 10.400 1173.000 
+			3379.000 10.400 1299.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -1955,7 +1955,7 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
-			3379.000 10.400 1299.000 
+			4236.000 10.400 1173.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -2938,7 +2938,7 @@ type={
 		name="mount_fuji"
 		hidden_on_start=no
 		position={
-			3414.000 0.750 1241.000 
+			3414.000 -0.250 1241.000 
 		}
 		rotation={
 			0.000 -110.000 0.000 
