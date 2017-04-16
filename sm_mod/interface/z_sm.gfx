@@ -84,61 +84,67 @@ spriteTypes = {
 	# Event pictures
 	spriteType = {
 		name = "ORDER_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/ORDER_eventPicture.dds"
+		texturefile = "gfx/event_pictures/event_pictures_2013/ORDER_eventPicture.dds"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "USS_COALITION_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/USS_COALITION_eventPicture.dds"
+		texturefile = "gfx/event_pictures/event_pictures_2013/USS_COALITION_eventPicture.dds"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "INDUSTRY_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/INDUSTRY_eventPicture.tga"
+		texturefile = "gfx/event_pictures/event_pictures_general/INDUSTRY_eventPicture.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "ANTI_SMESHIKS_COALITION_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/ANTI_SMESHIKS_COALITION_eventPicture.tga"
+		texturefile = "gfx/event_pictures/event_pictures_2013/ANTI_SMESHIKS_COALITION_eventPicture.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "LATVIA_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/LATVIA.tga"
+		texturefile = "gfx/event_pictures/event_pictures_general/LATVIA.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "AZAD_CHAEPIT_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/AZAD_CHAEPIT_eventPicture.tga"
+		texturefile = "gfx/event_pictures/Chaepitie/AZAD_CHAEPIT_eventPicture.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "RAILROAD1_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/RAILROAD1_eventPicture.tga"
+		texturefile = "gfx/event_pictures/event_pictures_general/RAILROAD1_eventPicture.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "RAILROAD2_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/RAILROAD2_eventPicture.tga"
+		texturefile = "gfx/event_pictures/event_pictures_general/RAILROAD2_eventPicture.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "KROSHELBURG_CITY_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/KAKOY_TO_GOROD.tga"
+		texturefile = "gfx/event_pictures/event_pictures_general/KAKOY_TO_GOROD.tga"
 		allwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "CHAEPITIE_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_SM/CHAEPITIE.tga"
+		texturefile = "gfx/event_pictures/Chaepitie/CHAEPITIE.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ABADONED_PORT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_general/ABADONED_PORT_eventPicture.tga"
 		allwaystransparent = yes
 	}
 	
