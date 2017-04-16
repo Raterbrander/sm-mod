@@ -760,6 +760,7 @@ country_event = {
 	option = {
 		name = "personality_events.13.a" #Nonsense!
 		add_prestige = 10
+		add_meritocracy_effect = yes
 		add_ruler_modifier = {
 			name = "tolerance_backlash"
 			duration = 3650
@@ -792,6 +793,7 @@ country_event = {
 			name = "intolerant_tolerance"
 			duration = 3650
 		}
+		reduce_meritocracy_effect = yes
 		if = {
 			limit = {
 				advisor = inquisitor
@@ -1075,6 +1077,7 @@ country_event = {
 	
 	option = {
 		name = "personality_events.16.a" 
+		add_meritocracy_effect = yes
 		trigger_switch = {
 			on_trigger = has_country_flag
 			well_connected_statesman = {
@@ -1926,7 +1929,6 @@ country_event = {
 		has_dlc = "Rights of Man"
 		ruler_has_personality = benevolent_personality
 		any_subject_country = {
-			is_protectorate = no
 			is_colonial_nation = no
 			has_opinion = {
 				who = ROOT
@@ -1940,7 +1942,6 @@ country_event = {
 			set_variable = { which = happy_subjects value = 0 }
 			every_subject_country = {
 				limit = {
-					is_protectorate = no
 					is_colonial_nation = no
 					has_opinion = {
 						who = ROOT
@@ -1962,6 +1963,7 @@ country_event = {
 
 	option = {
 		name = "personality_events.28.a"
+		add_meritocracy_effect = yes
 		if = {
 			limit = {
 				NOT = {
@@ -1969,6 +1971,7 @@ country_event = {
 				}
 			}
 			add_prestige = 10
+			add_meritocracy_effect = yes
 			define_advisor = {
 				type = statesman
 				skill = 2
@@ -1983,6 +1986,7 @@ country_event = {
 				}
 			}
 			add_prestige = 10
+			add_meritocracy_effect = yes
 			define_advisor = {
 				type = statesman
 				skill = 3
@@ -1997,6 +2001,7 @@ country_event = {
 				}
 			}
 			add_prestige = 15
+			add_meritocracy_effect = yes
 			define_advisor = {
 				type = statesman
 				skill = 3
@@ -2678,7 +2683,7 @@ country_event = {
 
 		name = "personality_events.42.a" 
 		custom_tooltip = personality_events.42.a.tooltip
-
+		add_meritocracy_effect = yes
 		hidden_effect = {
 			define_advisor = {
 				type = army_reformer
@@ -2693,7 +2698,7 @@ country_event = {
 		trigger = { monthly_income = 25 }
 		name = "personality_events.42.b"
 		custom_tooltip = personality_events.42.b.tooltip
-
+		add_meritocracy_effect = yes
 		hidden_effect = {
 			define_advisor = {
 				type = commandant
@@ -2708,7 +2713,7 @@ country_event = {
 		trigger = { monthly_income = 25 }
 		name = "personality_events.42.c"
 		custom_tooltip = personality_events.42.c.tooltip
-
+		add_meritocracy_effect = yes
 		hidden_effect = {
 			define_advisor = {
 				type = recruitmaster
@@ -2721,10 +2726,9 @@ country_event = {
 	#Army reformer 2
 	option = {
 		trigger = { NOT = { monthly_income = 25 } }
-
 		name = "personality_events.42.a" 
 		custom_tooltip = personality_events.42.d.tooltip
-
+		add_meritocracy_effect = yes
 		hidden_effect = {
 			define_advisor = {
 				type = army_reformer
@@ -2739,7 +2743,7 @@ country_event = {
 		trigger = { NOT = { monthly_income = 25 } }
 		name = "personality_events.42.b"
 		custom_tooltip = personality_events.42.e.tooltip
-
+		add_meritocracy_effect = yes
 		hidden_effect = {
 			define_advisor = {
 				type = commandant
@@ -2754,7 +2758,7 @@ country_event = {
 		trigger = { NOT = { monthly_income = 25 } }
 		name = "personality_events.42.c"
 		custom_tooltip = personality_events.42.f.tooltip
-
+		add_meritocracy_effect = yes
 		hidden_effect = {
 			define_advisor = {
 				type = recruitmaster
@@ -3170,7 +3174,7 @@ country_event = {
 		
 		if = {
 			limit = { monthly_income = 25 }
-
+			add_meritocracy_effect = yes
 			define_advisor = {
 				type = spymaster
 				skill = 3
@@ -3213,7 +3217,7 @@ country_event = {
 		name = "personality_events.48.b"
 
 		add_prestige = -5
-
+		add_meritocracy_effect = yes
 		if = {
 			limit = { monthly_income = 25 }
 
@@ -3631,49 +3635,9 @@ country_event = {
 	}
 	option = {
 		name = "personality_events.56.b"
+		reduce_meritocracy_effect = yes
 		add_adm_power = -5
-		if = {
-			limit = {
-				advisor = inquisitor
-			}
-			remove_advisor = inquisitor
-		}
-		if = {
-			limit = {
-				advisor = natural_scientist
-			}
-			remove_advisor = natural_scientist
-		}
-		if = {
-			limit = {
-				advisor = master_of_mint
-			}
-			remove_advisor = master_of_mint
-		}
-		if = {
-			limit = {
-				advisor = theologian
-			}
-			remove_advisor = theologian
-		}
-		if = {
-			limit = {
-				advisor = artist
-			}
-			remove_advisor = artist
-		}
-		if = {
-			limit = {
-				advisor = philosopher
-			}
-			remove_advisor = philosopher
-		}
-		if = {
-			limit = {
-				advisor = treasurer
-			}
-			remove_advisor = treasurer
-		}
+		remove_advisor_adm_effect = yes
 	}
 }
 

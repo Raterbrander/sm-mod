@@ -64,7 +64,7 @@ country_event = {
 		name = sm_smsr.1.b
 		ai_chance = { factor = 35 }
 		custom_tooltip = sm_smsr.elections.tooltips
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 		hidden_effect = {
 			if = {
 				limit = {
@@ -169,7 +169,7 @@ country_event = {
 	option = {
 		name = sm_smsr.3.a
 		add_stability = -1
-		add_republican_tradition = -0.15
+		add_republican_tradition = -15
 		add_country_modifier = {
 			name = democratic_forces_unpleased
 			duration = 548
@@ -284,12 +284,12 @@ country_event = {
 		
 		modifier = {
 			factor = 0.75
-			NOT = { republican_tradition = 0.5 }
+			NOT = { republican_tradition = 50 }
 		}
 		
 		modifier = {
 			factor = 0.5
-			NOT = { republican_tradition = 0.25 }
+			NOT = { republican_tradition = 25 }
 		}
 		
 		modifier = {
@@ -409,6 +409,237 @@ country_event = {
 			}
 			75 = {}
 		}
+	}
+}
+
+###############################
+# Утрата континентального порта
+###############################
+
+# Если СМСР не владеет более чем двумя провинциями на континенте к 465, иные страны получают возможность захватить его
+country_event = {
+	id = sm_smsr.20
+	title = sm_smsr.20.title
+	desc = sm_smsr.20.desc
+	picture = ABADONED_PORT_eventPicture
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SUM
+		is_at_war = no
+		NOT = {
+			num_of_owned_provinces_with = {
+				OR = {
+					continent = europe
+					continent = kronos
+				}
+				value = 2
+			}
+		}
+		owns = 1742
+		has_country_modifier = SUM_isolation
+		is_year = 465
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.5
+			1742 = {
+				any_neighbor_province = {
+					owner = { is_rival = SUM }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = sm_smsr.20.a
+		set_global_flag = SUM_port_in_danger
+	}
+}
+
+# Организовать поход?
+country_event = {
+	id = sm_smsr.20
+	title = sm_smsr.20.title
+	desc = sm_smsr.20.desc
+	picture = ABADONED_PORT_eventPicture
+	
+	trigger = {
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = kronos
+			}
+		}
+		has_global_flag = SUM_port_in_danger
+		NOT = { has_country_flag = had_smalfort_event }
+		any_neighbor_country = {
+			tag = SUM
+			owns = 1742
+			has_country_modifier = SUM_isolation
+		}
+		1742 = {
+			NOT = { units_in_province = 5 }
+		}
+		manpower = 5
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+		
+		modifier = {
+			factor = 5
+			is_subject = yes
+		}
+		
+		modifier = {
+			factor = 0.5
+			technology_group = continental
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { set_country_flag = had_smalfort_event }
+	}
+	
+	option = {
+		name = sm_smsr.21.a
+		if = {
+			limit = { technology_group = continental }
+			random_list = {
+				80 = {
+					country_event = {
+						id = sm_smsr.22
+						days = 3
+					}
+				}
+				20 = {
+					country_event = {
+						id = sm_smsr.23
+						days = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { technology_group = continental }
+			}
+			random_list = {
+				60 = {
+					country_event = {
+						id = sm_smsr.22
+						days = 3
+					}
+				}
+				40 = {
+					country_event = {
+						id = sm_smsr.23
+						days = 3
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = sm_smsr.21.b
+		add_prestige = -5
+	}
+}
+
+# Успех похода
+country_event = {
+	id = sm_smsr.22
+	title = sm_smsr.22.title
+	desc = sm_smsr.22.desc
+	picture = ABADONED_PORT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_smsr.22.a
+		add_prestige = 5
+		1742 = {
+			cede_province = ROOT
+		}
+		hidden_effect = {
+			SUM = {
+				country_event = {
+					id = sm_smsr.24
+				}
+			}
+		}
+		add_yearly_manpower = -0.1
+	}
+}
+
+# Неудачный поход
+country_event = {
+	id = sm_smsr.23
+	title = sm_smsr.23.title
+	desc = sm_smsr.23.desc
+	picture = ABADONED_PORT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_smsr.23.a
+		add_prestige = -5
+		add_yearly_manpower = -0.1
+		hidden_effect = {
+			SUM = {
+				country_event = {
+					id = sm_smsr.25
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+# Успех похода - оповещение СМСР
+country_event = {
+	id = sm_smsr.24
+	title = sm_smsr.24.title
+	desc = sm_smsr.24.desc
+	picture = ABADONED_PORT_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = sm_smsr.24.a
+		add_prestige = -5
+		clr_global_flag = SUM_port_in_danger
+	}
+}
+
+# Провал похода - оповещение СМСР
+country_event = {
+	id = sm_smsr.25
+	title = sm_smsr.25.title
+	desc = sm_smsr.25.desc
+	picture = ABADONED_PORT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sm_smsr.25.a
+		add_prestige = 5
+		add_yearly_manpower = -0.05
 	}
 }
 

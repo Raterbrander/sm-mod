@@ -87,6 +87,7 @@ country_event = {
 			name = tonderros_decline
 			duration = -1
 		}
+		set_government_rank = 2
 		hidden_effect = {
 			set_country_flag = tonder_died
 			every_country = {
